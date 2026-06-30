@@ -1,0 +1,29 @@
+
+state={
+	id=1121
+	name="STATE_1121" #South Telangana
+	resources={
+
+	}
+
+	history={
+		owner = BHA
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 4
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		10799 5032 10208 4414 10756 10259 5104
+	}
+	manpower=10731872
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

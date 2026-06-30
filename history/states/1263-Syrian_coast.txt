@@ -1,0 +1,33 @@
+
+state={
+	id=1263
+	name="STATE_1263"
+	history={
+		victory_points = {
+			1088 10
+		}
+		victory_points = {
+			10087 5 
+		}
+		owner = SYR
+		buildings = {
+			school = 2
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+			10087 = {
+				naval_base = 2
+			}
+
+		}
+		add_core_of = SYR
+
+	}
+	provinces={
+		1088 10087 14015 14019
+	}
+	manpower=2850000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

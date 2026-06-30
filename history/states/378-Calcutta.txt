@@ -1,0 +1,32 @@
+
+state={
+	id=378
+	name="STATE_378"
+    buildings_max_level_factor = 1
+	resources={
+		steel=50.000
+		oil=50.000
+	}
+
+	history={
+		owner = NEA
+		victory_points = { 1497	5 }
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 6
+
+		}
+		add_core_of = ASM
+
+	}
+
+	provinces={
+		1497 1525 10349 10514 12322 12366 12395 13208 13934 
+	}
+	manpower=250000000
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=19
+	name="STATE_19"
+    buildings_max_level_factor = 1
+	resources = {
+	steel = 12
+	oil = 100
+	}
+	history={
+		owner = BED
+		victory_points = {
+			4952 10 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = BED
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		4952 13648 13653 13896 13897 13894 
+	}
+	manpower=6401281
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

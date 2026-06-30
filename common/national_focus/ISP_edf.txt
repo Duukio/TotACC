@@ -1,0 +1,588 @@
+shared_focus = {
+    id = ISP_the_edf_focus
+	icon = GFX_the_edf_focus
+	cost = 10
+	x = 52
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		army_experience = 25
+	}
+}
+shared_focus = {
+    id = ISP_expanding_the_sayarot
+	icon = GFX_ISP_expanding_the_sayarot
+	cost = 7
+	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_the_edf_focus
+    mutually_exclusive = { focus = ISP_modern_sadeh_doctrine }
+    prerequisite = { focus = ISP_the_edf_focus }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_SPECFORC
+			value = 3
+		}
+
+		custom_effect_tooltip = "Adds +3 special forces unit cap for templates"
+	}
+}
+shared_focus = {
+    id = ISP_modern_sadeh_doctrine
+	icon = GFX_ISP_modern_sadeh_doctrine
+	cost = 7
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_the_edf_focus
+    mutually_exclusive = { focus = ISP_expanding_the_sayarot }
+    prerequisite = { focus = ISP_the_edf_focus }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.75
+			uses = 2
+			category = cat_superior_firepower
+		}
+	}
+}
+shared_focus = {
+    id = ISP_peoples_war
+	icon = GFX_ISP_peoples_war
+	cost = 7
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_modern_sadeh_doctrine
+    prerequisite = { focus = ISP_modern_sadeh_doctrine }
+	completion_reward = {
+		add_to_variable = {
+			var =ISP_EDF_consc_factor
+			value = 0.2
+		}
+		load_oob = "ISP_PPW"
+		custom_effect_tooltip = "Mobilize 4 more Gad'am Brigades. Modifies 'The EDF' by +20% recruitable population factor."
+	}
+}
+shared_focus = {
+    id = ISP_the_ingenuity_of_man
+	icon = GFX_ISP_the_ingenuity_of_man
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_peoples_war
+    prerequisite = { focus = ISP_peoples_war }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_planningspeed
+			value = 0.15
+		}
+		custom_effect_tooltip = "Modifies 'The EDF' by +15% planning speed."
+	}
+}
+shared_focus = {
+    id = ISP_rearming_the_yishuvim
+	icon = GFX_ISP_rearming_the_yishuvim
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_peoples_war
+    prerequisite = { focus = ISP_peoples_war }
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -5000
+			producer = ISP
+		}
+		add_to_variable = {
+			var = ISP_EDF_core_def
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISP_EDF_core_resist
+			value = 0.15
+		}
+		custom_effect_tooltip = "Modifies 'The EDF' by +5% defence on core territory, +15% resistance growth in our states occupied by the enemy." 
+	}
+}
+shared_focus = {
+    id = ISP_so_every_hebrew_mother_knows
+	icon = GFX_ISP_so_every_hebrew_mother_knows
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_the_ingenuity_of_man
+    prerequisite = { focus = ISP_the_ingenuity_of_man }
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+    id = ISP_spirit_of_the_hebrew_rebellion
+	icon = GFX_ISP_spirit_of_the_hebrew_rebellion
+	cost = 7
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_the_ingenuity_of_man
+    prerequisite = { focus = ISP_the_ingenuity_of_man }
+    prerequisite = { focus = ISP_rearming_the_yishuvim }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_core_off
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISP_EDF_core_resist
+			value = 0.15
+		}
+		custom_effect_tooltip = "Modifies 'The EDF' by +5% attack on core territory, +15% resistance growth in our states occupied by the enemy."
+		
+	}
+}
+shared_focus = {
+    id = ISP_ensuring_high_morale
+	icon = GFX_ISP_ensuring_high_morale
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_spirit_of_the_hebrew_rebellion
+    prerequisite = { focus = ISP_spirit_of_the_hebrew_rebellion }
+	completion_reward = {
+		add_to_variable = {
+			var =  ISP_EDF_morale
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISP_EDF_org
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modifies 'The EDF' by +10% division organization and recovery rate."
+	}
+}
+shared_focus = {
+    id = ISP_combined_arms
+	icon = GFX_ISP_combined_arms
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_modern_sadeh_doctrine
+    prerequisite = { focus = ISP_modern_sadeh_doctrine }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 2
+			category = cat_mobile_warfare
+		}
+	}
+}
+shared_focus = {
+    id = ISP_striking_as_lightning
+	icon = GFX_ISP_striking_as_lightning
+	cost = 7
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_combined_arms
+    prerequisite = { focus = ISP_combined_arms }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_speed
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISP_EDF_break
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modifies 'The EDF' by +5% division speed and breakthrough."
+	}	
+	
+}
+shared_focus = {
+    id = ISP_art_of_fast_war
+	icon = GFX_ISP_art_of_fast_war
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_striking_as_lightning
+    prerequisite = { focus = ISP_striking_as_lightning }
+	prerequisite = { focus = ISP_overwhelming_firepower}
+	prerequisite = { focus = ISP_the_ingenuity_of_man }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_speed
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modifies 'The EDF' by +5% division speed."
+	}
+}
+shared_focus = {
+    id = ISP_towards_a_fifth_merkava
+	icon = GFX_ISP_towards_a_fifth_merkava
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_the_edf_focus
+    prerequisite = { focus = ISP_the_edf_focus }
+    prerequisite = { focus = ISP_expanding_the_sayarot focus = ISP_modern_sadeh_doctrine }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = armor
+		}		
+	}
+}
+shared_focus = {
+    id = ISP_expand_namer_production
+	icon = GFX_ISP_expand_namer_production
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_towards_a_fifth_merkava
+    prerequisite = { focus = ISP_towards_a_fifth_merkava }
+	completion_reward = {
+		add_equipment_production = {
+			equipment = {
+				
+			}
+		}
+	}
+}
+shared_focus = {
+    id = ISP_the_galil_and_beyond
+	icon = GFX_ISP_the_galil_and_beyond
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_towards_a_fifth_merkava
+    prerequisite = { focus = ISP_towards_a_fifth_merkava }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			technology = infantry_weapons
+		}		
+	}
+}
+shared_focus = {
+    id = ISP_modernizing_the_tomats
+	icon = GFX_ISP_modernizing_the_tomats
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_towards_a_fifth_merkava
+    prerequisite = { focus = ISP_towards_a_fifth_merkava }
+	completion_reward = {
+		add_tech_bonus = {
+		    bonus = 0.5
+		    uses = 3
+		    category = artillery
+		}
+	}
+}
+shared_focus = {
+    id = ISP_overwhelming_firepower
+	icon = GFX_ISP_overwhelming_firepower
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_combined_arms
+    prerequisite = { focus = ISP_modernizing_the_tomats }
+    prerequisite = { focus = ISP_combined_arms }
+	completion_reward = {
+		add_to_variable = { ISP_EDF_art_damage = 0.15 }
+		custom_effect_tooltip = "Modifies 'The EDF' by +15% artillery attack."
+	}
+}
+shared_focus = {
+    id = ISP_accelerating_lahav_introduction
+	icon = GFX_ISP_accelerating_lahav_introduction
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_modernizing_the_tomats
+    prerequisite = { focus = ISP_modernizing_the_tomats }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = rocket_artillery
+		}
+	}
+}
+shared_focus = {
+    id = ISP_only_the_best
+	icon = GFX_ISP_only_the_best
+	cost = 7
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_expanding_the_sayarot
+    prerequisite = { focus = ISP_expanding_the_sayarot }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_consc_factor
+			value = -0.1
+		}
+		add_to_variable = {
+			var = ISP_EDF_offence
+			value = 0.05
+		}
+		custom_effect_tooltip = "Adds -10% recruitable population factor and +5% division attack for the EDF national spirit"
+	}
+}
+shared_focus = {
+    id = ISP_truly_modern_warfare
+	icon = GFX_ISP_truly_modern_warfare
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_expanding_the_sayarot
+    prerequisite = { focus = ISP_expanding_the_sayarot }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_rescspeed
+			value = 0.03
+		}
+		custom_effect_tooltip = "Adds +3% research speed to The EDF national spirit."
+	}
+}
+shared_focus = {
+    id = ISP_ct_specialization
+	icon = GFX_ISP_ct_specialization
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_truly_modern_warfare
+    prerequisite = { focus = ISP_truly_modern_warfare }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_attr
+			value = -0.2
+		}
+		add_to_variable = {
+			var = ISP_EDF_supply_con
+			value = -0.1
+		}
+		add_to_variable = {
+			var = terrorism_rate_ISP
+			value = 30 #now 150
+		}
+		custom_effect_tooltip = "Lowers division attrition and supply consumption by 20% and 10% respectively for the EDF national spirit. This will also help us combat the activity of terrorists and saboteurs."
+	}
+}
+shared_focus = {
+    id = ISP_rigorous_training
+	icon = GFX_ISP_rigorous_training
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_only_the_best
+    prerequisite = { focus = ISP_only_the_best }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_train_time
+			value = 0.25
+		}
+		add_to_variable = {
+			var = ISP_EDF_offence
+			value = 0.05
+		}
+		custom_effect_tooltip = "Adds 5% division attack, at the cost of +25% training time."
+	}
+}
+shared_focus = {
+    id = ISP_cutting_edge_equip
+	icon = GFX_ISP_cutting_edge_equip
+	cost = 7
+	x = 0
+
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_only_the_best
+    prerequisite = { focus = ISP_only_the_best }
+    prerequisite = { focus = ISP_expand_namer_production }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_rescspeed
+			value = 0.02
+		}
+		add_to_variable = {
+			var = ISP_EDF_eff_retention
+			value = 0.1
+		}		
+		add_to_variable = {
+			var = ISP_EDF_supply_con
+			value = 0.1
+		}	
+		custom_effect_tooltip = "Adds +2% research speed, +10% production efficiency retention and +10% supply consumption"
+	}
+}
+shared_focus = {
+    id = ISP_importance_reconaissance
+	icon = GFX_ISP_importance_reconaissance
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_truly_modern_warfare
+    prerequisite = { focus = ISP_truly_modern_warfare }
+    prerequisite = { focus = ISP_rigorous_training }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_decryption
+			value = 0.25
+		}
+		add_to_variable = {
+			var = ISP_EDF_recon
+			value = 0.25
+		}				
+		custom_effect_tooltip = "Adds +25% reconaissance factor and +25% decryption factor"
+	}
+}
+shared_focus = {
+    id = ISP_further_spec_expansion
+	icon = GFX_ISP_further_spec_expansion
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_importance_reconaissance
+    prerequisite = { focus = ISP_importance_reconaissance }
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_EDF_SPECFORC
+			value = 3
+		}		
+		custom_effect_tooltip = "Adds +3 special forces cap"
+	}
+}
+shared_focus = {
+    id = ISP_beyond_human
+	icon = GFX_ISP_beyond_human
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_cutting_edge_equip
+    prerequisite = { focus = ISP_cutting_edge_equip }
+    prerequisite = { focus = ISP_rigorous_training }
+	completion_reward = {
+			add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = robotics
+		}
+		
+	}
+}
+shared_focus = {
+    id = ISP_hitech_war
+	icon = GFX_ISP_hitech_war
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_cutting_edge_equip
+    prerequisite = { focus = ISP_cutting_edge_equip }
+	completion_reward = {
+		add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = robotics
+		}
+	}
+}
+shared_focus = {
+    id = ISP_war_without_blood
+	icon = GFX_ISP_war_without_blood
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+    relative_position_id = ISP_beyond_human
+    prerequisite = { focus = ISP_beyond_human }
+    prerequisite = { focus = ISP_hitech_war }
+	available = {
+		ISP = {
+			has_tech = gump_10
+		}
+	}
+	completion_reward = {
+		load_oob = "ISP_GUMP"
+		custom_effect_tooltip = "Spawns 2 GUMP divisions."
+	}
+}

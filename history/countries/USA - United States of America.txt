@@ -1,0 +1,272 @@
+capital = 534
+
+set_variable = { GDP = 19000.230 } set_variable = { DEBT = 24000 } set_variable = { REAL_GROWTH = 2.3 }
+
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+set_country_flag = american_cw_polity
+
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+	gw_artillery = 1
+interwar_artillery = 1
+
+
+}
+country_event = {
+	id = USASKELETON.3
+	days = 67
+}
+country_event = {
+	id = USASKELETON.16
+	days = 69
+}
+country_event = {
+	id = USASKELETON.4
+	days = 73
+}
+country_event = {
+	id = USASKELETON.5
+	days = 77
+}
+country_event = {
+	id = USASKELETON.6
+	days = 109
+}
+country_event = {
+	id = USASKELETON.7
+	days = 113
+}
+country_event = {
+	id = USASKELETON.17
+	days = 115
+}
+country_event = {
+	id = USASKELETON.8
+	days = 111
+}
+country_event = {
+	id = USASKELETON.10
+	days = 116
+}
+country_event = {
+	id = USASKELETON.18
+	days = 117
+}
+country_event = {
+	id = USASKELETON.11
+	days = 120
+}
+country_event = {
+	id = USASKELETON.19
+	days = 123
+}
+country_event = {
+	id = USASKELETON.12
+	days = 128
+}
+country_event = {
+	id = USASKELETON.13
+	days = 135
+}
+country_event = {
+	id = USASKELETON.14
+	days = 138
+}
+country_event = {
+	id = USASKELETON.15
+	days = 140
+}
+country_event = {
+	id = USASKELETON.9
+	days = 142
+}
+#country_event = {
+#id = USADEBUG.1
+#days = 215
+#}
+
+
+add_ideas = {
+USA_big_tech_hysteria
+USA_panopticon
+USA_rural_paramil_troubles
+USA_mass_econ_inequality
+USA_the_moldy_rusty_depressed_belt
+}
+set_variable = {
+var = SOCTRENDS_DC
+value = 60
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 80
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 25
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 70
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 30
+}
+tota_variable_clamping = yes
+set_convoys = 100
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 30
+        
+        
+        
+        
+        revolutionary_right = 0
+        
+        dissident_right = 5
+        liberalism = 30
+        hardline_socialism = 0
+        
+        autocracy = 0
+        
+        
+        reformist_socialism = 0
+        socdem = 35
+        technocracy = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+#create_country_leader = {
+#	name = "Bernie Sanders"
+#	desc = "POLITICS_BERNIE_SANDERS_DESC"
+#	picture = "gfx/leaders/USA/Portrait_USA_Bernie_Sanders.png"
+#	expire = "2040.1.1"
+#	ideology = demsoc
+#	traits = {
+#	}
+#}
+recruit_character = USA_davidharry
+create_country_leader = {
+	name = "Alexander B. Johnson"
+	desc = "POLITICS_NOT_FUCKING_BORIS_DESC"
+	picture = "gfx/leaders/USA/Portrait_USA_Alexander_Johnson.png"
+	expire = "2040.1.1"
+	ideology = marlib
+	traits = { unpopular_compromise }
+}
+create_country_leader = {
+	name = "Nancy Pelosi"
+	desc = "POLITICS_NANCY_PELOSI_DESC"
+	picture = "gfx/leaders/USA/Portrait_USA_Nancy_Pelosi.png"
+	expire = "2040.1.1"
+	ideology = progano
+	traits = {
+	USA_iron_lady_america
+	}
+}
+recruit_character = USA_janeen
+recruit_character = USA_andrew_collins

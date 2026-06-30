@@ -1,0 +1,493 @@
+
+shared_focus = {
+	id = AWB_sarie_marais_calls_for_me
+	icon = GFX_AWB_Sarie_Marais_Calls_For_Me
+	cost = 4
+	x = 4
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_sarie_marais_calls_for_me"
+		add_ideas = extensive_conscription
+		add_ideas = full_apartheid
+		add_ideas = social_silencing
+		add_ideas = androcentrism
+		add_ideas = five_to_fifteen
+		add_ideas = restricted_speech
+		activate_advisor = AWB_andre_visagie
+		activate_advisor = AWB_piet_rudolph
+		activate_advisor = AWB_jan_groenewald
+		activate_advisor = AWB_willem_koos_ratte
+		activate_advisor = AWB_anton_de_waal_alberst
+	}
+}
+
+shared_focus = {
+	id = AWB_airdrops_to_orania
+	icon = GFX_AWB_Airdrops_To_Orania
+	cost = 4
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_airdrops_to_orania"
+		985 = {
+			every_state_division = {	
+				change_division_template = {
+					division_template = "Reinforced Orania Divisions"
+				}
+			}
+		}
+	}
+	relative_position_id = AWB_sarie_marais_calls_for_me
+	prerequisite = { focus = AWB_sarie_marais_calls_for_me }
+}
+
+shared_focus = {
+	id = AWB_totale_oorlog
+	icon = GFX_AWB_Totale_Oorlog
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_totale_oorlog"
+		add_ideas = war_economy
+	}
+	relative_position_id = AWB_airdrops_to_orania
+	prerequisite = { focus = AWB_airdrops_to_orania }
+}
+
+shared_focus = {
+	id = AWB_rejuvenate_the_volk
+	icon = GFX_AWB_Rejuvenate_The_Volk
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_rejuvenate_the_volk"
+		add_war_support = 0.15
+	}
+	relative_position_id = AWB_airdrops_to_orania
+	prerequisite = { focus = AWB_airdrops_to_orania }
+}
+
+shared_focus = {
+	id = AWB_die_vandeel_hog
+	icon = GFX_AWB_Die_Vaandel_Hog
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_die_vandeel_hog"
+		add_political_power = 100
+	}
+	relative_position_id = AWB_airdrops_to_orania
+	prerequisite = { focus = AWB_airdrops_to_orania }
+}
+
+shared_focus = {
+	id = AWB_a_victory_of_faust
+	icon = GFX_AWB_A_VictoryOfFaust
+	cost = 2
+	x = 2
+	y = 6
+	available = {
+		date > 2022.1.1
+		controls_state = 478
+	}
+	completion_reward = {
+		add_stability = 0.2
+		add_war_support = 0.15
+		set_country_flag = took_rustenburg
+		hidden_effect = {
+			add_to_variable = { AWB.GDP = 50 }
+		}
+		custom_effect_tooltip = "Adds 50 billion GDP to our economy"
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_a_victory_of_faust"
+	}
+}
+
+shared_focus = {
+	id = AWB_for_the_white_race
+	icon = GFX_AWB_ForTheWhiteRace
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_for_the_white_race"
+		add_manpower = 20000
+		add_stability = -0.1
+		add_ideas = AWB_pan_white_1
+	}
+	relative_position_id = AWB_a_victory_of_faust
+	prerequisite = { focus = AWB_a_victory_of_faust }
+	#prerequisite = { AWB_for_the_boers }
+	mutually_exclusive = { focus = AWB_for_the_boers }
+}
+
+shared_focus = {
+	id = AWB_for_the_boers
+	icon = GFX_AWB_ForTheBoers
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_for_the_boers"
+		add_war_support = 0.1
+		add_manpower = -2000
+	}
+	available = {
+		has_manpower > 1999
+	}
+	relative_position_id = AWB_a_victory_of_faust
+	prerequisite = { focus = AWB_a_victory_of_faust }
+	mutually_exclusive = { focus = AWB_for_the_white_race }
+}
+
+shared_focus = {
+	id = AWB_subsume_the_anglos
+	icon = GFX_AWB_SubsumeTheAnglos
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_subsume_the_anglos"
+		add_ideas = AWB_anglophone_collaboration
+	}
+	relative_position_id = AWB_for_the_boers
+	prerequisite = { focus = AWB_for_the_boers }
+}
+
+shared_focus = {
+	id = AWB_a_panwhite_front
+	icon = GFX_AWB_A_PanWhiteFront
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_a_panwhite_front"
+		swap_ideas = {
+			remove_idea = AWB_pan_white_1
+			add_idea = AWB_pan_white_2
+		}
+	}
+	relative_position_id = AWB_for_the_white_race
+	prerequisite = { focus = AWB_for_the_white_race }
+}
+
+shared_focus = {
+	id = AWB_onwards_to_greater_objectives
+	icon = GFX_AWB_OnwardsToGreaterObjectives
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_onwards_to_greater_objectives"
+		add_war_support = 0.1
+	}
+	relative_position_id = AWB_subsume_the_anglos
+	prerequisite = { focus = AWB_subsume_the_anglos  focus = AWB_a_panwhite_front }
+}
+
+shared_focus = {
+	id = AWB_a_centurys_embarassment
+	icon = GFX_AWB_a_centurys_embarassment
+	cost = 2
+	x = 8
+	y = 6
+	available = {
+		date > 2022.1.1
+		NOT = {
+			controls_state = 478
+		}
+	}
+	completion_reward = {
+		add_ideas = all_adults_serve
+		add_stability = -0.25
+		add_political_power = -200
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_a_centurys_embarassment"
+	}
+}
+
+shared_focus = {
+	id = AWB_focus_on_the_swart_bedreiging
+	icon = GFX_AWB_focus_on_the_swart_bedreiging
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = AWB_TND
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_focus_on_the_swart_bedreiging"
+	}
+	relative_position_id = AWB_a_centurys_embarassment
+	prerequisite = { focus = AWB_a_centurys_embarassment }
+	#prerequisite = { AWB_defense_first }
+	#mutually_exclusive = { focus = AWB_defense_first }
+}
+
+shared_focus = {
+	id = AWB_we_can_do_it_again
+	icon = GFX_AWB_we_can_do_it_again
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_we_can_do_it_again"
+		add_war_support = 0.15
+	}
+	relative_position_id = AWB_focus_on_the_swart_bedreiging 
+	prerequisite = { focus = AWB_focus_on_the_swart_bedreiging }
+}
+
+shared_focus = {
+	id = AWB_a_broken_sword_still_cuts
+	icon = GFX_AWB_a_broken_sword_still_cuts
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_a_broken_sword_still_cuts"
+		add_ideas = tot_economic_mobilisation
+	}
+	relative_position_id = AWB_focus_on_the_swart_bedreiging
+	prerequisite = { focus = AWB_we_can_do_it_again }
+}
+
+shared_focus = {
+	id = AWB_rustenburg_must_go
+	icon = GFX_AWB_rustenburg_must_go
+	cost = 2
+	x = 5
+	y = 11
+	available = {
+	NOT = {
+		478 = {
+			any_neighbor_state = {
+					is_owned_by = SAF
+			}
+		}
+	}
+	}
+	completion_reward = {
+		add_war_support = 0.10
+		add_ideas = AWB_rustenburg_must_go_idea
+		custom_effect_tooltip = "Enables a 25% penalty in supply for the Rustenburg exclave"
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_rustenburg_must_go"
+	}
+}
+
+shared_focus = {
+	id = AWB_annihilate_the_exclave
+	icon = GFX_AWB_annihilate_the_exclave
+	cost = 2
+	x = -2
+	y = 2
+	available = {
+	NOT = {
+		478 = {
+			any_neighbor_state = {
+			is_owned_by = SAF
+			}
+		}
+	}
+	}
+	completion_reward = {
+		every_unit_leader = {
+			limit = {
+				is_character = AWB_terreblanche
+			}
+			add_unit_leader_trait = infantry_leader
+		}	
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_annihilate_the_exclave"
+		
+	}
+	relative_position_id = AWB_rustenburg_must_go 
+	prerequisite = { focus = AWB_rustenburg_must_go }
+	#prerequisite = { AWB_negotiate_with_the_stranded }
+	mutually_exclusive = { focus = AWB_negotiate_with_the_stranded }
+}
+
+shared_focus = {
+	id = AWB_negotiate_with_the_stranded
+	icon = GFX_AWB_negotiate_with_the_stranded
+	cost = 2
+	x = 2
+	y = 2
+	available = {
+	NOT = {
+		478 = {
+			any_neighbor_state = {
+			is_owned_by = SAF
+			}
+		}
+	}
+	}
+	completion_reward = {
+		RSB = {
+			country_event = {
+				id = AWB.3
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_negotiate_with_the_stranded"
+	}
+	relative_position_id = AWB_rustenburg_must_go 
+	prerequisite = { focus = AWB_rustenburg_must_go }
+	mutually_exclusive = { focus = AWB_annihilate_the_exclave }
+}
+
+shared_focus = {
+	id = AWB_promise_concessions
+	icon = GFX_AWB_promise_concessions
+	cost = 2
+	x = 0
+	y = 1
+	available = {
+	NOT = {
+		478 = {
+			any_neighbor_state = {
+is_owned_by = SAF
+			}
+		}
+	}
+	}
+	completion_reward = {
+		RSB = {
+			add_stability = -0.2
+		}
+		AWB = {
+			add_stability = 0.2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_promise_concessions"
+	}
+	relative_position_id = AWB_negotiate_with_the_stranded
+	prerequisite = { focus = AWB_negotiate_with_the_stranded }
+}
+
+shared_focus = {
+	id = AWB_merciless_brother_war
+	icon = GFX_AWB_merciless_brother_war
+	cost = 2
+	x = 0
+	y = 1
+	available = {
+	NOT = {
+		478 = {
+			any_neighbor_state = {
+is_owned_by = SAF
+			}
+		}
+	}
+	}
+	completion_reward = {
+		add_war_support = -0.10
+		add_political_power = 100
+		add_command_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_merciless_brother_war"
+	}
+	relative_position_id = AWB_annihilate_the_exclave
+	prerequisite = { focus = AWB_annihilate_the_exclave }
+}
+
+shared_focus = {
+	id = AWB_enact_the_plan
+	icon = GFX_AWB_enact_the_plan
+	cost = 2
+	x = -2
+	y = 2
+	available = {
+	NOT = {
+		478 = {
+			any_neighbor_state = {
+is_owned_by = SAF
+			}
+		}
+	}
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				AWB = {
+					has_completed_focus = AWB_merciless_brother_war
+				}
+			}
+			add_ideas = AWB_destroy_rustenburg
+		}
+		else_if = {
+			limit = {
+				AWB = {
+					has_completed_focus = AWB_promise_concessions
+				}
+				SAF = {
+					NOT = {
+						has_completed_focus = SAF_airdrop_supplies
+					}
+				}
+			}
+			AWB = {
+				annex_country = {
+					target = RSB
+					transfer_troops = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AWB = {
+					has_completed_focus = AWB_promise_concessions
+				}
+				RSB = {
+					has_country_flag = RSB_racist_uprising
+				}
+			}
+			random_list = {
+				80 = {
+					AWB = {
+						annex_country = {
+							target = RSB
+							transfer_troops = yes
+						}
+					}
+				}
+				20 = {
+					AWB = {
+						country_event = {
+							id = AWB.6
+							days = 1
+						}
+						add_ideas = AWB_destroy_rustenburg
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				AWB = {
+					has_completed_focus = AWB_promise_concessions
+				}
+				SAF = {
+					has_completed_focus = SAF_airdrop_supplies
+				}
+			}
+			random_list = {
+				50 = {
+					AWB = {
+						annex_country = {
+							target = RSB
+							transfer_troops = yes
+						}
+					}
+				}
+				50 = {
+					AWB = {
+						country_event = {
+							id = AWB.5
+							days = 1
+						}
+						add_ideas = AWB_destroy_rustenburg
+					}
+				}
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_enact_the_plan"
+	}
+	relative_position_id = AWB_promise_concessions
+	prerequisite = { focus = AWB_promise_concessions focus = AWB_merciless_brother_war }
+}

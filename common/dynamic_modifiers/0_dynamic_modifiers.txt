@@ -1,0 +1,8 @@
+belarus_ssr = {
+	icon = GFX_modifiers_belarus_ssr
+	enable = { always = yes }
+	remove_trigger = {}	
+    local_manpower = -0.10
+    local_resources_factor = 0.15
+    state_production_speed_buildings_factor = 0.05
+}

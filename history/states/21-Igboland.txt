@@ -1,0 +1,33 @@
+
+state={
+	id=21
+	name="STATE_21"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = BIA
+		victory_points = {
+			13652 20 
+		}
+		victory_points = {
+			13637 10 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			industrial_complex = 3
+
+		}
+		add_core_of = BIA
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		13637 13652 13895 13898 13900 13899
+	}
+	manpower=22520354
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

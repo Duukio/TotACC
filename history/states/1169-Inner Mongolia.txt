@@ -1,0 +1,33 @@
+
+state={
+	id=1169
+	name="STATE_1169"
+    buildings_max_level_factor = 1
+	resources={
+		steel=25.000
+		oil=10.000
+	}
+
+	history={
+		owner = PRC
+		victory_points = {
+			8055 1
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = PRC
+
+	}
+
+	provinces={
+		4783 5031 7727 7803 8055 8127 10770 10899 12750 
+	}
+	manpower=262361
+	buildings_max_level_factor=2.000
+	state_category=rural
+	local_supplies=20.000
+}

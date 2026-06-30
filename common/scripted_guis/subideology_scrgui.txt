@@ -1,0 +1,57 @@
+scripted_gui = {
+	
+	subideology_notice = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "subideology_container"
+
+		ai_enabled = {
+			always = no
+		}
+		
+		visible = {
+			is_ai = no
+		}
+		effects = {
+		}
+		triggers = {
+			faction_icon_visible = {
+				check_variable = {
+					var = ROOT.FACTIONSTATUS
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		properties = {
+			SOCTRENDS_EA = {
+				frame = THIS.SOCTRENDS_EA
+			}
+			SOCTRENDS_TP = {
+				frame = THIS.SOCTRENDS_TP
+			}
+			SOCTRENDS_DC = {
+				frame = THIS.SOCTRENDS_DC
+			}
+			SOCTRENDS_EE = {
+				frame = THIS.SOCTRENDS_EE
+			}
+			SOCTRENDS_DE = {
+				frame = THIS.SOCTRENDS_DE
+			}
+			faction_icon = {
+				frame = ROOT.FACTIONSTATUS
+			}
+			composite_subid_one = {
+				image = "[Root.COMPOSITE_SUBID_GENERATOR_ONE]"
+			}		
+			composite_subid_two = {
+				image = "[Root.COMPOSITE_SUBID_GENERATOR_TWO]"
+			}		
+			composite_subid_three = {
+				image = "[Root.COMPOSITE_SUBID_GENERATOR_THREE]"
+			}		
+		}
+	}
+}
+

@@ -1,0 +1,32 @@
+
+state={
+	id=548
+	name="STATE_548"
+    buildings_max_level_factor = 1
+	resources={
+		oil=140.000
+		aluminium=45.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = USA
+		victory_points = {
+			10798 25 
+		}
+
+	}
+
+	provinces={
+		7762 7904 10798 11802 12624 
+	}
+	manpower=262365
+	buildings_max_level_factor=2.000
+	state_category=town
+	local_supplies=0.000
+}

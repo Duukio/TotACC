@@ -1,0 +1,20 @@
+USA_CW_DecisionCategory = {
+	visible_when_empty = yes
+	allowed = { always = yes }
+	visible = {
+		is_in_array = { array = global.USA_CW_TAGS value = THIS }
+	}
+}
+USA_CW_unify_cat = {
+	#allowed = { always = yes }
+	visible = {	is_in_array = { array = global.USA_CW_TAGS value = THIS } }
+}
+BSD_enact_TWD = {
+	visible = { original_tag = BSD }
+}
+GPR_turn_maoist = {
+	visible = { original_tag = GPR }
+}
+USA_CW_SKELE = {
+	visible = { is_ai = yes }
+}

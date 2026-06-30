@@ -1,0 +1,32 @@
+state={
+id=332
+	name="STATE_332"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	strategic_minerals = 20
+	}
+	history={
+        victory_points = { 10203 5 } 
+        owner = GRE
+		add_core_of = GRE
+        buildings = {
+            school = 2
+            infrastructure = 3
+			dockyard = 2
+			10203 = {
+			naval_base = 4
+			}
+			1106 = {
+			naval_base = 4
+			}
+        }
+    }
+	provinces={
+		1106 10203 
+	}
+	manpower=250000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

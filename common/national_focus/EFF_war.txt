@@ -1,0 +1,351 @@
+focus_tree = {
+	id = EFF_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 1000
+			tag = EFF
+		}
+	}
+	focus = {
+		id = EFF_fwd_march_imperialism
+		icon = GFX_EFF_fwd_march_imperialism
+		x = 3
+		y = 0
+		cost = 4
+		available = {
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = EFF_ethekwini
+		icon = GFX_EFF_ethekwini
+		x = 3
+		y = 1
+		cost = 4
+        prerequisite = { focus = EFF_fwd_march_imperialism  }
+		available = {
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = EFF_call_salvation
+		icon = GFX_EFF_call_salvation
+		x = 1
+		y = 2
+		cost = 4
+        prerequisite = { focus = EFF_ethekwini  }
+		available = {
+		}
+		completion_reward = {
+			load_oob = "obamna" #todo: change?
+		}
+	}
+	focus = {
+		id = EFF_black_lib_not_equal
+		icon = GFX_EFF_black_lib_not_equal
+		x = 5
+		y = 2
+		cost = 4
+        prerequisite = { focus = EFF_ethekwini  }
+		available = {
+		}
+		completion_reward = {
+			add_ideas = EFF_fuck_wypipo_bruh
+		}
+	}
+	focus = {
+		id = EFF_burn_the_world_if_need_be
+		icon = GFX_EFF_burn_the_world_if_need_be
+		x = 3
+		y = 3
+		cost = 4
+        prerequisite = { focus = EFF_ethekwini  }
+		prerequisite = { focus = EFF_call_salvation  }
+		prerequisite = { focus = EFF_black_lib_not_equal  }
+		available = {
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = EFF_fuck_wypipo_bruh
+				add_idea = EFF_fuck_wypipo_very_much
+			}
+		}
+	}
+	
+	focus = {
+		id = EFF_a_muchneeded_win
+		icon = GFX_EFF_a_muchneeded_win
+		x = 1
+		y = 4
+		cost = 4
+		available = {
+			controls_state = 930
+		}
+		completion_reward = {
+			set_capital = {
+				state = 930
+			}
+		}
+	}
+	focus = {
+		id = EFF_proletarian_revenge
+		icon = GFX_EFF_proletarian_revenge
+		x = -1
+		y = 1
+		cost = 4
+		relative_position_id = EFF_a_muchneeded_win
+        prerequisite = { focus = EFF_a_muchneeded_win  }
+		mutually_exclusive = { focus = EFF_negotiate_prisoners  }
+		available = {
+		}
+		completion_reward = {
+			930 = {
+				add_manpower = -20000
+			}
+			add_stability = -0.10
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = EFF_marx_never_spoke_of_fairness
+		icon = GFX_EFF_marx_never_spoke_of_fairness
+		x = 0
+		y = 1
+		cost = 4
+		relative_position_id = EFF_proletarian_revenge
+        prerequisite = { focus = EFF_proletarian_revenge  }
+		available = {
+		}
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = { EFF.GDP = 25 }
+				subtract_from_variable = { EFF.REAL_GROWTH = -0.15 }
+			}
+			custom_effect_tooltip = "Adds 25 billion in GDP, but removes 15% Real Growth"
+		}
+	}
+	focus = {
+		id = EFF_negotiate_prisoners
+		icon = GFX_EFF_negotiate_prisoners
+		x = 1
+		y = 1
+		cost = 4
+		relative_position_id = EFF_a_muchneeded_win
+        prerequisite = { focus = EFF_a_muchneeded_win  }
+		mutually_exclusive = { focus = EFF_proletarian_revenge  }
+		available = {
+		}
+		completion_reward = {
+			#recruit_character = EFF_racist
+		}
+	}
+	focus = {
+		id = EFF_united_front_against_white_supremacy
+		icon = GFX_EFF_united_front_against_white_supremacy
+		x = 0
+		y = 1
+		cost = 4
+		relative_position_id = EFF_negotiate_prisoners
+        prerequisite = { focus = EFF_negotiate_prisoners  }
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = EFF_more_victories_are_needed
+		icon = GFX_EFF_more_victories_are_needed
+		x = 0
+		y = 3
+		cost = 4
+		relative_position_id = EFF_a_muchneeded_win
+        prerequisite = { focus = EFF_marx_never_spoke_of_fairness focus = EFF_united_front_against_white_supremacy }
+		available = {
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	
+	focus = {
+		id = EFF_another_rorkes_drift
+		icon = GFX_EFF_another_rorkes_drift
+		x = 5
+		y = 4
+		cost = 4
+		available = {
+			date > 2022.1.1
+			NOT = {
+				controls_state = 930
+			}
+		}
+		completion_reward = {
+			add_war_support = -0.15
+			add_stability = -0.15
+		}
+	}
+	focus = {
+		id = EFF_we_havent_done_enough
+		icon = GFX_EFF_we_havent_done_enough
+		x = -1
+		y = 1
+		cost = 4
+		relative_position_id = EFF_another_rorkes_drift
+        prerequisite = { focus = EFF_another_rorkes_drift  }
+		mutually_exclusive = { focus = EFF_we_have_done_too_much  }
+		available = {
+		}
+		completion_reward = {
+			add_ideas = EFF_KILL_MORE_WHITES
+		}
+	}
+	focus = {
+		id = EFF_another_wave_of_fervor
+		icon = GFX_EFF_another_wave_of_fervor
+		x = 0
+		y = 1
+		cost = 4
+		relative_position_id = EFF_we_havent_done_enough
+        prerequisite = { focus = EFF_we_havent_done_enough  }
+		available = {
+		}
+		completion_reward = {
+			add_manpower = 20000
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 2500
+				producer = PRC
+			}
+		}
+	}
+	focus = {
+		id = EFF_we_have_done_too_much
+		icon = GFX_EFF_we_have_done_too_much
+		x = 1
+		y = 1
+		cost = 4
+		relative_position_id = EFF_another_rorkes_drift
+        prerequisite = { focus = EFF_another_rorkes_drift  }
+		mutually_exclusive = { focus = EFF_we_havent_done_enough  }
+		available = {
+		}
+		completion_reward = {
+			remove_ideas = EFF_fuck_wypipo_very_much
+		}
+	}
+	focus = {
+		id = EFF_negotiate_a_defeat
+		icon = GFX_EFF_negotiate_a_defeat
+		x = 0
+		y = 1
+		cost = 4
+		relative_position_id = EFF_we_have_done_too_much
+        prerequisite = { focus = EFF_we_have_done_too_much  }
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = EFF_end_of_the_line
+		icon = GFX_EFF_end_of_the_line
+		x = 0
+		y = 3
+		cost = 4
+		relative_position_id = EFF_another_rorkes_drift
+        prerequisite = { focus = EFF_another_wave_of_fervor focus = EFF_negotiate_a_defeat }
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = EFF_the_citadel_of_whiteness
+		icon = GFX_EFF_the_citadel_of_whiteness
+		x = 8
+		y = 0
+		cost = 1
+		available = {
+		}
+		completion_reward = {
+			add_ideas = KILL_ORANIA
+		}
+	}
+	focus = {
+		id = EFF_measured_attacks
+		icon = GFX_EFF_measured_attacks
+		x = -1
+		y = 1
+		cost = 1
+		relative_position_id = EFF_the_citadel_of_whiteness
+        prerequisite = { focus = EFF_the_citadel_of_whiteness  }
+		mutually_exclusive = { focus = EFF_prioritize_their_annihilation  }
+		available = {
+		}
+		completion_reward = {
+			add_ideas = EFF_kill_whitepeople_calmly
+		}
+	}
+	focus = {
+		id = EFF_bombardments_of_their_schools
+		icon = GFX_EFF_bombardments_of_their_schools
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EFF_measured_attacks
+        prerequisite = { focus = EFF_measured_attacks  }
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = EFF_prioritize_their_annihilation
+		icon = GFX_EFF_prioritize_their_annihilation
+		x = 1
+		y = 1
+		cost = 1
+		relative_position_id = EFF_the_citadel_of_whiteness
+        prerequisite = { focus = EFF_the_citadel_of_whiteness  }
+		mutually_exclusive = { focus = EFF_measured_attacks  }
+		available = {
+		}
+		completion_reward = {
+			add_ideas = EFF_kill_whitepeople_nonstop
+		}
+	}
+	focus = {
+		id = EFF_the_thirsty_soil_demands_it
+		icon = GFX_EFF_the_thirsty_soil_demands_it
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EFF_prioritize_their_annihilation
+        prerequisite = { focus = EFF_prioritize_their_annihilation  }
+		available = {
+		}
+		completion_reward = {	
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = EFF_the_battle_against_orania
+		icon = GFX_EFF_the_battle_against_orania
+		x = 0
+		y = 3
+		cost = 1
+		relative_position_id = EFF_the_citadel_of_whiteness
+        prerequisite = { focus = EFF_bombardments_of_their_schools focus = EFF_the_thirsty_soil_demands_it }
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+}

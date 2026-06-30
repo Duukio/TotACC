@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_terrain_shimizu"
+		textureFile = "gfx/interface/terrains/shimizu.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_washdc"
+		textureFile = "gfx/interface/terrains/North America/Washington D.C.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_tokyo"
+		textureFile = "gfx/interface/terrains/Asia/Tokyo.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_bodeleville"
+		textureFile = "gfx/interface/terrains/Africa/Bodéléville.png"
+	}
+}

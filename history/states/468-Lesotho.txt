@@ -1,0 +1,26 @@
+state={
+id=468
+	name="STATE_468" 
+	manpower = 2108328
+	
+	
+	state_category = rural
+
+
+	history={
+		owner = LST
+		victory_points = {
+			13276 5
+		}
+		add_core_of = LST
+		buildings = {
+            school = 2
+			infrastructure = 2
+			industrial_complex = 1
+		
+	}
+}
+	provinces={
+		4556 13276
+	}
+}

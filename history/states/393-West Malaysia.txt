@@ -1,0 +1,39 @@
+state={
+id=393
+	name="STATE_393"
+    buildings_max_level_factor = 1
+	state_category = megalopolis
+	
+	resources = {
+	rubber = 500
+	}
+	history={
+		owner = MLY
+		victory_points = { 10297 50 }
+		victory_points = { 7427 20 }
+		victory_points = { 4424 20 }
+		victory_points = { 12199 20 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 5
+			industrial_complex = 10
+			10297 = {
+			naval_base = 10
+			}
+			12199 = {
+			naval_base = 3
+			}
+		4424 = {
+			naval_base = 3
+			}
+		}
+		add_core_of = MLY
+	}
+	provinces={
+		1291 1348 1364 1376 1392 4310 4355 4367 4384 4412 4424 7329 7342 7399 7427 10227 10297 10313 12199 12144 12215 12255 12271 
+	}
+	manpower=27000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

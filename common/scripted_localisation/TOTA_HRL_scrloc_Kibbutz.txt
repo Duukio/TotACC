@@ -1,0 +1,35 @@
+defined_text = {
+    name = ISP_kibbutz_econ_dyn_loc
+    text = {
+        trigger = {
+            has_global_flag = ISP_hebrew_economic_miracle_flag
+        }
+        localization_key = ISP_econ_miracle_key
+    }
+    text = {
+        trigger = {
+            has_global_flag = ISP_free_socialism_flag
+        }
+        localization_key = ISP_free_socialism_key
+    }
+    text = {
+        localization_key = ISP_reformed_kibbutz_key
+    }
+}
+defined_text = {
+    name = ISPrandomCityScrloc
+    text = {
+        random_list = {
+            10 = { localization_key = Netanya }
+            10 = { localization_key = Beersheba }
+            10 = { localization_key = Haifa }
+            10 = { localization_key = Nazareth }
+            10 = { localization_key = Sderot }
+            10 = { localization_key = Jerusalem }
+            10 = { localization_key = Bethlehem }
+            10 = { localization_key = Hebron }
+            10 = { localization_key = Ashdod }
+            10 = { localization_key = Acre }
+        }
+    }
+}

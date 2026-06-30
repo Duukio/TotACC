@@ -1,0 +1,31 @@
+
+operation_AWB  = {
+     icon = generic_foreign_policy
+     visible = { 
+        original_tag = SAF
+        has_country_flag = SAF_get_AWB_decisions
+        has_war_with = AWB
+    }
+}
+operation_EFF = {
+     icon = generic_foreign_policy
+     visible = { 
+        original_tag = SAF
+        has_country_flag = SAF_get_EFF_decisions
+        has_war_with = EFF
+    }
+}
+revitalize_bantustans_dec_cat = {
+     icon = generic_foreign_policy
+     visible = { 
+        original_tag = SAF
+        has_country_flag = revitalize_bantustans_dec
+    }
+}
+end_slums_dec_cat = {
+     icon = generic_foreign_policy
+     visible = { 
+        original_tag = SAF
+        has_country_flag = anti_slum_aktion
+    }
+}

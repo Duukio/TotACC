@@ -1,0 +1,463 @@
+characters = {
+	Tullio_Moneta = {
+		name = "Tullio Moneta"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEY/Tullio Moneta.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_TULLIO_MONETA_DESC"
+			ideology = milgov
+		}
+	}
+	Tim_Spicer = {
+		name = "Tim Spicer"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEY/Tim Spicer.dds"
+			}
+			army = {
+				large = "gfx/leaders/SEY/Tim Spicer.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_SPICER_DESC"
+			ideology = manbur
+		}
+		corps_commander = {
+			traits = { brilliant_strategist }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	Eeben_Barlow = {
+		name = "Eeben Barlow"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEY/Eeben Barlow.dds"
+                small =  "gfx/interface/ideas/SEY/Eeben Barlow M.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_BARLOW_DESC"
+			ideology = anolib
+		}
+		advisor = {
+			allowed = {
+				original_tag = SEY
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				OR = {
+                has_country_flag = Moneta_Cabinet
+				has_country_flag = Spicer_Cabinet
+				}
+			}
+			idea_token = SEY_eeben_barlow 
+			traits = {
+			    head_of_government
+			    hog_old_general
+				autocracy_minister
+			}
+		}
+		field_marshal = {
+			traits = { offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	Erik_Prince = {
+		name = "Erik Prince"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEY/Erik Prince.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_PRINCE_DESC"
+			ideology = milgov
+		}
+	}
+	Viktor_Bout = {
+		name = "Viktor Bout"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SEY/Viktor Bout.dds"
+                small =  "gfx/interface/ideas/SEY/Viktor Bout M.dds"
+			}
+			army = {
+				large = "gfx/leaders/SEY/Viktor Bout.dds"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SEY
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+                has_country_flag = Moneta_Cabinet
+			}
+			idea_token = SEY_viktor_bout 
+			traits = {
+			    foreign_minister
+			    for_biased_intellectual
+				reformist_socialism_minister
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_BOUT_DESC"
+			ideology = sovmarsys
+		}
+	}
+	Yevgeny_Prigozhin = {
+		name = "Yevgeny Prigozhin"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SEY/Yevgeny Prigozhin.dds"
+			}
+		}
+	}
+	Simon_Mann = {
+			name = "Simon Mann"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Simon Mann.dds" } 
+				army = { large = "gfx/leaders/SEY/Simon Mann.dds"}
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+                has_country_flag = Moneta_Cabinet
+			}
+			idea_token = SEY_simon_mann 
+			traits = {
+			    economy_minister
+			    eco_industrial_chemist
+				autocracy_minister
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+                has_country_flag = Spicer_Cabinet
+			}
+			idea_token = SEY_simon_mann_sec 
+			traits = {
+			    security_minister
+			    sec_crime_fighter
+				autocracy_minister
+			}
+		}
+		advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+                has_country_flag = Moneta_Cabinet
+			}
+			idea_token = SEY_simon_mann_for 
+			traits = {
+			    foreign_minister
+			    for_general_staffer
+				autocracy_minister
+			}
+		}
+	}
+	Neall_Ellis = {
+			name = "Neall Ellis"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Neall Ellis.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+                has_country_flag = Moneta_Cabinet
+			}
+			idea_token = SEY_neall_ellis 
+			traits = {
+			    security_minister
+			    sec_health_and_safety
+				autocracy_minister
+			}
+		}
+	}
+	James_Michel = {
+			name = "James Michel"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/James Michel.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+                has_country_flag = Bout_Cabinet
+			}
+			idea_token = SEY_james_michel
+			traits = {
+			    head_of_government
+			    hog_ambitious_union_boss
+				reformist_socialism_minister
+			}
+		}
+	}
+	Caroline_Abel = {
+			name = "Caroline Abel"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Caroline Abel.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+                has_country_flag = Bout_Cabinet
+			}
+			idea_token = SEY_caroline_abel
+			traits = {
+			    economy_minister
+			    eco_mixed_economy
+				socdem_minister
+			}
+		}
+	}
+	Andrei_Troshev = {
+			name = "Andrei Troshev"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Andrei Troshev.dds" } 
+				army =  { large = "gfx/leaders/SEY/Andrei Troshev.dds"}
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+                has_country_flag = Bout_Cabinet
+			}
+			idea_token = SEY_andrei_troshev
+			traits = {
+			    security_minister
+			    sec_efficient_sociopath
+				reformist_socialism_minister
+			}
+		}
+	}
+	Leonid_Minin = {
+			name = "Leonid Minin"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Leonid Minin.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+                has_country_flag = Bout_Cabinet
+			}
+			idea_token = SEY_leonid_minin
+			traits = {
+			    economy_minister
+			    for_ideological_crusader
+				reformist_socialism_minister
+			}
+		}
+	}
+	Wavel_Ramkalawan = {
+			name = "Wavel Ramkalawan"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Wavel Ramkalawan.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+                has_country_flag = Barlow_Cabinet
+			}
+			idea_token = SEY_wavel_ramkalawan
+			traits = {
+			    head_of_government
+			    hog_naive_optimist
+				liberalism_minister
+			}
+		}
+	}
+	Satya_Naidu = {
+			name = "Satya Naidu"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Satya Naidu.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+                has_country_flag = Barlow_Cabinet
+			}
+			idea_token = SEY_satya_naidu
+			traits = {
+			    economy_minister
+			    eco_laissez_faire_capitalist
+				liberalism_minister
+			}
+		}
+	}
+	Mark_Thatcher = {
+			name = "Mark Thatcher"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Mark Thatcher.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+                has_country_flag = Spicer_Cabinet
+			}
+			idea_token = SEY_mark_thatcher
+			traits = {
+			    foreign_minister
+			    for_the_cloak_n_dagger_schemer
+				autocracy_minister
+			}
+		}
+	}
+	Douglas_Carswell = {
+			name = "Douglas Carswell"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Douglas Carswell.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+                has_country_flag = Spicer_Cabinet
+			}
+			idea_token = SEY_douglas_carswell
+			traits = {
+			    economy_minister
+			    eco_military_entrepreneur
+				autocracy_minister
+			}
+		}
+	}
+	Jonathan_Garratt = {
+			name = "Jonathan Garratt"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Jonathan Garratt.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+                has_country_flag = Prince_Cabinet
+			}
+			idea_token = SEY_jonathan_garratt
+			traits = {
+			    head_of_government
+			    hog_local_tyrant
+				autocracy_minister
+			}
+		}
+	}
+	Morgan_Ortagus = {
+			name = "Morgan Ortagus"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Morgan Ortagus.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+                has_country_flag = Prince_Cabinet
+			}
+			idea_token = SEY_morgan_ortagus
+			traits = {
+			    foreign_minister
+			    for_ideological_crusader
+				conservatism_minister
+			}
+		}
+	}
+	Jason_DeYonker = {
+			name = "Jason DeYonker"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Jason DeYonker.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+                has_country_flag = Prince_Cabinet
+			}
+			idea_token = SEY_jason_deyonker
+			traits = {
+			    economy_minister
+			    eco_military_entrepreneur
+				autocracy_minister
+			}
+		}
+	}
+	Craig_Williamson = {
+			name = "Craig Williamson"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/SEY/Jason DeYonker.dds" } 
+			}
+			advisor = {
+			allowed = {
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+                has_country_flag = Prince_Cabinet
+			}
+			idea_token = SEY_craig_williamson
+			traits = {
+			    security_minister
+			    sec_prince_of_terror
+				autocracy_minister
+			}
+		}
+	}
+}

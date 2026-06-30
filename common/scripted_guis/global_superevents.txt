@@ -1,0 +1,173 @@
+	scripted_gui = {
+
+	Super_Event_Window = {
+		context_type = player_context
+		window_name = "Super_Event_Window"
+
+		visible = {
+			NOT = {
+				has_global_flag = shut_up_superevents
+			}
+			has_global_flag = Super_Event_Visible
+		}
+
+		triggers = {
+			Super_Event_Image_American_Chaos_visible = {
+				check_variable = { global.current_superevent = 4 } #global is a failsafe scope
+			}			
+			Super_Event_Image_Biafra_Wins_visible = {
+				check_variable = { global.current_superevent = 1 }
+			}
+			Super_Event_Image_Nigeria_Wins_visible = {
+				check_variable = { global.current_superevent = 2 }
+			}
+			Super_Event_Image_SAF_CW_visible = {
+			check_variable = { global.current_superevent = 3 }
+			}
+			Super_Event_Image_Samson_visible = {
+			check_variable = { global.current_superevent = 43 }
+			}
+			Super_Event_Image_TCW_visible = {
+				check_variable = { global.current_superevent = 5 }
+			}
+			Super_Event_Image_PGR_win_visible = {
+				check_variable = { global.current_superevent = 6 }
+			}
+			Super_Event_Image_UAE_win_visible = {
+				check_variable = { global.current_superevent = 7 }
+			}
+			Super_Event_Image_anticiv_visible = {
+				check_variable = { global.current_superevent = 8 }
+			}
+			Super_Event_Image_avakian_visible = {
+				check_variable = { global.current_superevent = 9 }
+			}
+			Super_Event_Image_big_spence_visible = {
+				check_variable = { global.current_superevent = 10 }
+			}
+			Super_Event_Image_covington_visible = {
+				check_variable = { global.current_superevent = 11 }
+			}
+			Super_Event_Image_fsa_visible = {
+				check_variable = { global.current_superevent = 12 }
+			}
+			Super_Event_Image_gillis_visible = {
+				check_variable = { global.current_superevent = 13 }
+			}
+			Super_Event_Image_Jorjani_visible = {
+				check_variable = { global.current_superevent = 14 }
+			}
+			Super_Event_Image_logo_daedalus_visible = {
+				check_variable = { global.current_superevent = 15 }
+			}
+			Super_Event_Image_Maupin_visible = {
+				check_variable = { global.current_superevent = 16 }
+			}
+			Super_Event_Image_miscavige_visible = {
+				check_variable = { global.current_superevent = 17 }
+			}
+			Super_Event_Image_NWA_visible = {
+				check_variable = { global.current_superevent = 18 }
+			}
+			Super_Event_Image_nypd_visible = {
+				check_variable = { global.current_superevent = 19 }
+			}
+			Super_Event_Image_nyx_visible = {
+				check_variable = { global.current_superevent = 20 }
+			}
+			Super_Event_Image_obamna_visible = {
+				check_variable = { global.current_superevent = 21 }
+			}
+			Super_Event_Image_pelosi_visible = {
+				check_variable = { global.current_superevent = 22 }
+			}
+			Super_Event_Image_pence_visible = {
+				check_variable = { global.current_superevent = 23 }
+			}
+			Super_Event_Image_srnicek_visible = {
+				check_variable = { global.current_superevent = 24 }
+			}
+			Super_Event_Image_threepercenter_visible = {
+				check_variable = { global.current_superevent = 25 }
+			}
+			Super_Event_Image_Yarvin_visible = {
+				check_variable = { global.current_superevent = 26 }
+			}
+			Super_Event_Image_NWA_visible = {
+				check_variable = { global.current_superevent = 27 }
+			}
+			Super_Event_Image_opossum_visible = {
+				check_variable = { global.current_superevent = 28 }
+			}
+			Super_Event_Image_peltier_visible = {
+				check_variable = { global.current_superevent = 29 }
+			}
+			Super_Event_Image_vaush_visible = {
+				check_variable = { global.current_superevent = 30 }
+			}
+			Super_Event_Image_hoafascism_visible = {
+				check_variable = { global.current_superevent = 31 }
+			}
+			Super_Event_Image_naarp_visible = {
+				check_variable = { global.current_superevent = 32 }
+			}
+			Super_Event_Image_arlo_visible = {
+				check_variable = { global.current_superevent = 33 }
+			}
+			Super_Event_Image_cardinal_visible = {
+				check_variable = { global.current_superevent = 34 }
+			}
+			Super_Event_Image_avakian_visible = {
+				check_variable = { global.current_superevent = 35 }
+			}
+			Super_Event_Image_nikkurando_visible = {
+				check_variable = { global.current_superevent = 36 }
+			}
+			Super_Event_Image_mathews_visible = {
+				check_variable = { global.current_superevent = 37 }
+			}
+			Super_Event_Image_johnson_visible = {
+				check_variable = { global.current_superevent = 38 }
+			}
+			Super_Event_Image_mason_visible = {
+				check_variable = { global.current_superevent = 39 }
+			}
+			Super_Event_Image_mars_visible = {
+				check_variable = { global.current_superevent = 40 }
+			}
+			Super_Event_Image_mars_death_visible = {
+				check_variable = { global.current_superevent = 41 }
+			}
+			Super_Event_Image_alien_life_visible = {
+				check_variable = { global.current_superevent = 42 }
+			}
+			Super_Event_Image_augustus_visible = {
+				check_variable = { global.current_superevent = 43 }
+			}
+			Super_Event_Image_preston_visible = {
+				check_variable = { global.current_superevent = 44 }
+			}
+			Super_Event_Image_sharkey_visible = {
+				check_variable = { global.current_superevent = 45 }
+			}
+		}
+
+		properties = {
+			Super_Event_Image_Default = {
+				image = "[get_my_superevent_texture]"
+			}
+		}
+
+		effects = {
+			Super_Event_Close_click = {
+				clr_global_flag = Super_Event_Visible
+				if = {
+					limit = {
+							check_variable = { current_superevent < 100}
+					}
+					clear_variable = current_superevent
+				}
+			}
+		}
+	}
+}

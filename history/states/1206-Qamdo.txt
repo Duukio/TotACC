@@ -1,0 +1,26 @@
+
+state={
+	id=1206
+	name="STATE_1206"
+    buildings_max_level_factor = 1
+	provinces={
+		4407 5080 5102 8041 8059 10856 
+	}
+	manpower=999902
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=wasteland
+	history={
+		owner = PRC
+		add_core_of = PRC
+		add_core_of = TIB
+		buildings = {
+			school = 2
+			infrastructure = 1
+		}
+		victory_points = {
+			10856 5
+		}
+	}
+}

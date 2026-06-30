@@ -1,0 +1,62 @@
+add_namespace = genericdebt
+add_namespace = superevent_stfu
+add_namespace = ENG
+
+country_event = {
+    id = genericdebt.1 # stop getting so much debt for the love of god
+    title = genericdebt.1.t
+    desc = genericdebt.1.desc
+    picture = GFX_report_event_denbts
+    is_triggered_only = yes
+   #fire_only_once = yes 
+
+    option = {
+      name = genericdebt.1.a #default on debts (AI DOES NOT DO THIS EVER)
+      trigger = {
+          is_ai = no
+      }
+      custom_effect_tooltip = "This is a terrible idea."
+    add_ideas = defaulted_on_debt
+    add_stability = -0.25
+    clear_variable = THIS.DEBT
+    set_variable = { THIS.DEBT = 0 } #just in case
+	}
+    option = {
+      name = genericdebt.1.b #austerity programs
+    add_timed_idea = {
+        idea = austerity
+        days = 365
+    }
+	}
+    option = {
+        trigger = {
+            check_variable = {
+                has_stability > 0.33 #low stability means no ignoring the issue dumbass
+            }
+        }
+      name = genericdebt.1.c #ignore the problem
+      add_political_power = -100
+      add_stability = -0.1
+      custom_effect_tooltip = "This option will not always be available."
+	}
+}
+country_event = {
+    id = superevent_stfu.1 # stop getting so much debt for the love of god
+    title = superevent_stfu.1.t
+    desc = superevent_stfu.1.desc
+    #picture = GFX_report_event_denbts
+    is_triggered_only = yes
+   #fire_only_once = yes 
+
+    option = {
+      name = superevent_stfu.1.a #i want superevents!
+      trigger = {
+          is_ai = no
+      }
+      set_global_flag = superevents_ok
+	}
+    option = {
+        name = superevent_stfu.1.b #i dont want superevents!
+        set_global_flag = shut_up_superevents
+      }
+}

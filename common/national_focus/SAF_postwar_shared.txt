@@ -1,0 +1,16 @@
+focus_tree = {
+	id = SAF_postwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 125
+			tag = SAF
+			has_country_flag = its_over_safjak
+		}
+	}
+	shared_focus = SAF_now_leaving_frownland
+	shared_focus = SAF_a_nation_breathes_once_more
+	shared_focus = SAF_restoring_the_economy
+	shared_focus = SAF_prepare_for_democracy
+	shared_focus = SAF_elections_26
+}

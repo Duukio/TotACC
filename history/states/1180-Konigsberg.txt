@@ -1,0 +1,34 @@
+state={
+id=1180
+	name="STATE_1180"
+    buildings_max_level_factor = 1
+	state_category=city
+	
+	resources={
+	steel = 8
+	}
+
+	history={		
+		owner = DDR
+		victory_points = { 6332 25 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 4
+			arms_factory = 3
+			industrial_complex = 3
+		6332 = {
+		naval_base = 5
+		bunker = 4
+		}
+		}
+		add_core_of = DDR
+
+	}
+	provinces={
+		6332 11265
+	}
+	manpower=1600000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

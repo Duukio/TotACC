@@ -1,0 +1,37 @@
+NGA_bias_mod = {
+	icon = GFX_idea_NGA_northern_bias
+	enable = {
+        tag = NGA
+	}
+    stability_factor = ngabias_stab
+    reformist_socialism_drift = ngabias_drift
+    political_power_gain = ngabias_pp
+    consumer_goods_factor = ngabias_consumer
+    research_speed_factor = ngabias_research
+    war_support_factor = ngabiaswars
+    stability_weekly = ngaweekstab
+}
+NGA_technocrat_dynmod = {
+	icon = GFX_technocrat_dynmod
+	enable = {
+        tag = NGA
+	}
+    stability_factor = technogeria_stab
+    technocracy_drift = technogeria_drift
+    political_power_gain = technogeria_pp
+    consumer_goods_factor = technogeria_consumer
+    research_speed_factor = technogeria_research
+    war_support_factor = technogeriawars
+    stability_weekly = technogeriaweekstab
+    production_speed_buildings_factor = technogeriaproduction
+    production_speed_school_factor = schooltechnogeriapro
+    industrial_capacity_factory = technogeriacapacity
+    production_factory_max_efficiency_factor = technogeriafactorycap
+    monthly_soctrends_drift_TP_P = technogeriareformist
+    monthly_soctrends_drift_DC_C = technogeriacentralized
+    monthly_soctrends_drift_EA_A = technogeriaartificial
+    gdp_growth_modifier = technogeriaGDP
+    conscription = technogeriaconsc
+    monthly_population = technogeriamonthlypop
+    global_building_slots_factor = technogeriaslot
+}

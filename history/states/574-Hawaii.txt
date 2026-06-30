@@ -1,0 +1,32 @@
+state={
+id=574
+	
+	name="STATE_574"
+
+	manpower = 1455271
+	state_category = city
+	history={
+		owner = USA
+		add_core_of = HAW
+		buildings = {
+            school = 2
+			infrastructure = 4
+			air_base = 5
+			4180 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			4180 20
+		 }
+		victory_points = {
+			12021 5
+		 }
+	}
+
+	provinces={
+		4180 7112 7195 10048 12021 
+	}
+
+	local_supplies=0.0 
+}

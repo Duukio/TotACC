@@ -1,0 +1,43 @@
+
+state={
+	id=568
+	name="STATE_568"
+    buildings_max_level_factor = 1
+	resources={
+		oil=150.000
+	}
+
+	history={
+		owner = CAL
+		buildings = {
+			school = 2
+			infrastructure = 5
+			industrial_complex = 3
+			dockyard = 5
+			air_base = 7
+			1562 = {
+				naval_base = 10
+
+			}
+
+		}
+		add_core_of = CAL
+		add_core_of = USA
+
+		victory_points = {
+			4913 50 
+		}
+		victory_points = {
+			9814 70 
+		}
+
+	}
+
+	provinces={
+		4913 9814 11859 11757 11795 10483 9855
+	}
+	manpower=11140203
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

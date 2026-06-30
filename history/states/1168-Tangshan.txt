@@ -1,0 +1,34 @@
+
+state={
+	id=1168
+	name="STATE_1168"
+    buildings_max_level_factor = 1
+	resources={
+		tungsten=50.000
+	}
+
+	history={
+		owner = PRC
+		victory_points = {
+			12043 20 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+
+		}
+		add_core_of = PRC
+
+	}
+
+	provinces={
+		900 1052 3830 3900 12043 
+	}
+	manpower=7577284
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=20.000
+}

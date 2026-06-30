@@ -1,0 +1,25 @@
+state={
+id=466
+	name="STATE_466" 
+	manpower = 6676590
+	
+	
+	state_category = city
+
+
+	history={
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 4
+			air_base = 3
+	}
+}
+	provinces={
+		13266 13265 4822 12692 13251 13248 12547
+	}
+
+}

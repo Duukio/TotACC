@@ -1,0 +1,167 @@
+scripted_gui = {
+
+	BIA_monarchs = {
+		context_type = player_context
+		window_name = "BIA_monarchs"
+
+		visible = {
+			has_country_flag = BIA_monarchs
+		}
+
+		triggers = {
+		}
+
+		properties = {	
+		}
+
+		effects = {
+		info_button_monarchs_click = {
+				set_country_flag = BIA_needs_help_monarch
+			}
+		close_button_monarchs_click = {
+		clr_country_flag = BIA_monarchs
+		clr_country_flag = clicked_monarch
+		}
+		BIA_adamawa_click = {
+			set_variable = { BIA_monarch_frame_var = 5 }
+			set_country_flag = clicked_monarch
+			set_country_flag = adamawa
+			clr_country_flag = onitsha
+			clr_country_flag = akwa
+			clr_country_flag = owerri
+			clr_country_flag = nri_kingdom
+			clr_country_flag = elem
+			clr_country_flag = brass_kingdom
+			clr_country_flag = okrika
+			}
+		BIA_onitsha_click = {
+			set_variable = { BIA_monarch_frame_var = 6 }
+			set_country_flag = clicked_monarch
+			clr_country_flag = adamawa
+			set_country_flag = onitsha
+			clr_country_flag = akwa
+			clr_country_flag = owerri
+			clr_country_flag = nri_kingdom
+			clr_country_flag = elem
+			clr_country_flag = brass_kingdom
+			clr_country_flag = okrika
+			}
+		BIA_akwa_click = {
+			set_variable = { BIA_monarch_frame_var = 7 }
+			set_country_flag = clicked_monarch
+			clr_country_flag = adamawa
+			clr_country_flag = onitsha
+			set_country_flag = akwa
+			clr_country_flag = owerri
+			clr_country_flag = nri_kingdom
+			clr_country_flag = elem
+			clr_country_flag = brass_kingdom
+			clr_country_flag = okrika
+			}
+		BIA_owerri_click = {
+			set_variable = { BIA_monarch_frame_var = 3 }
+			set_country_flag = clicked_monarch
+			clr_country_flag = adamawa
+			clr_country_flag = onitsha
+			clr_country_flag = akwa
+			set_country_flag = owerri
+			clr_country_flag = nri_kingdom
+			clr_country_flag = elem
+			clr_country_flag = brass_kingdom
+			clr_country_flag = okrika
+			}
+		BIA_nri_click = {
+			set_variable = { BIA_monarch_frame_var = 4 }
+			set_country_flag = clicked_monarch
+			clr_country_flag = adamawa
+			clr_country_flag = onitsha
+			clr_country_flag = akwa
+			clr_country_flag = owerri
+			set_country_flag = nri_kingdom
+			clr_country_flag = elem
+			clr_country_flag = brass_kingdom
+			clr_country_flag = okrika
+			}
+		BIA_elem_click = {
+		set_variable = { BIA_monarch_frame_var = 1 }
+			set_country_flag = clicked_monarch
+			clr_country_flag = adamawa
+			clr_country_flag = onitsha
+			clr_country_flag = akwa
+			clr_country_flag = owerri
+			clr_country_flag = nri_kingdom
+			set_country_flag = elem
+			clr_country_flag = brass_kingdom
+			clr_country_flag = okrika
+			}
+		BIA_brass_click = {
+			set_variable = { BIA_monarch_frame_var = 2 }
+			set_country_flag = clicked_monarch
+			clr_country_flag = adamawa
+			clr_country_flag = onitsha
+			clr_country_flag = akwa
+			clr_country_flag = owerri
+			clr_country_flag = nri_kingdom
+			clr_country_flag = elem
+			set_country_flag = brass_kingdom
+			clr_country_flag = okrika
+			}
+		BIA_okrika_click = {
+			set_variable = { BIA_monarch_frame_var = 8 }
+			set_country_flag = clicked_monarch
+			clr_country_flag = adamawa
+			clr_country_flag = onitsha
+			clr_country_flag = akwa
+			clr_country_flag = owerri
+			clr_country_flag = nri_kingdom
+			clr_country_flag = elem
+			clr_country_flag = brass_kingdom
+			set_country_flag = okrika
+			}
+		}
+	}
+	BIA_monarch_info = {
+		context_type = player_context
+		window_name = "BIA_monarch_info"
+		visible = {
+			has_country_flag = BIA_monarchs
+			has_country_flag = BIA_needs_help_monarch
+			NOT = { has_country_flag = BIA_nnamdi_republican_soyrage }
+		}
+		triggers = {
+		}
+
+		properties = {
+		}
+
+		effects = {
+		close_button_info_click = {
+			clr_country_flag = BIA_needs_help_monarch
+			}
+		}
+	}
+	BIA_monarch_box = {
+		context_type = player_context
+		window_name = "BIA_monarch_box"
+		visible = {
+			has_country_flag = BIA_monarchs
+			has_country_flag = clicked_monarch
+			NOT = { has_country_flag = BIA_nnamdi_republican_soyrage }
+		}
+		triggers = {
+		}
+
+		properties = {
+			BIA_monarch_picture = {
+				frame = BIA_monarch_frame_var
+			}
+		}
+
+		effects = {
+
+		close_button_monarch_box_click = {
+			clr_country_flag = clicked_monarch
+			}
+		}
+	}
+}

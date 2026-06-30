@@ -1,0 +1,24 @@
+BIA_great_teardown = {
+	combat_igbo_supremacy = {
+		cost = 50
+		fire_only_once = yes
+        days_remove = 45
+		complete_effect = {
+            add_stability = 0.10
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	promote_religious_plurality = {
+		cost = 50
+		fire_only_once = yes
+        days_remove = 45
+		complete_effect = {
+            add_stability = 0.10
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+}

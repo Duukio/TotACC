@@ -1,0 +1,309 @@
+add_namespace = SDL
+
+country_event = {
+    id = SDL.1 # Chairman Gonzalo dies (cough cough, you mean LIVES FOREVER), debug event
+    title = SDL.1.t
+    desc = SDL.1.d
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SDL.1.a
+		#kill_country_leader = yes
+		create_country_leader = {
+			name = "Chairman Artemio"
+			desc = "POLITICS_ARTEMIO_LEADER_DESC"
+			picture = "gfx/leaders/SDL/Portrait_SDL_Artemio.png"
+			expire = "2040.1.1"
+			ideology = mzt
+			traits = {
+			}
+		}
+	}
+}
+country_event = {
+    id = SDL.3 # Fujimori victory
+    title = SDL.3.t
+    desc = SDL.3.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SDL.3.a
+      remove_ideas = PRU_the_final_battle
+		clear_variable = SDL.GDP
+		add_to_variable = { PRU.GDP = 20 }
+		news_event = {
+		id = WNE.10
+		days = 1
+		}
+	}
+}
+country_event = {
+    id = SDL.4 # Gonzalo victory
+    title = SDL.4.t
+    desc = SDL.4.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SDL.4.a
+      remove_ideas = {
+		SDL_temporary_alliance
+		SDL_4_decades_of_peoples_war
+		}
+		clear_variable = PRU.GDP
+		add_to_variable = { SDL.GDP = 200 }
+		country_event = {
+		id = SDL.5
+		days = 15
+		}
+		country_event = {
+		id = SDL.1
+		days = 5
+		}
+	}
+}
+country_event = {
+    id = SDL.5 # Outcome
+    title = SDL.5.t
+    desc = SDL.5.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SDL.5.a
+	  ai_chance = {
+		base = 35
+	  }
+		#kill_country_leader = yes
+		create_country_leader = {
+			name = "Chairman Artemio"
+			desc = "POLITICS_ARTEMIO_LEADER_DESC"
+			picture = "gfx/leaders/SDL/Portrait_SDL_Artemio.png"
+			expire = "2040.1.1"
+			ideology = mzt
+			traits = {
+			}
+		}
+		every_country = {
+			limit = {
+				is_ai = no 
+			}
+				news_event = {
+				id = WNE.6
+				days = 1
+				}
+	}
+	}
+    option = {
+      name = SDL.5.b
+	  ai_chance = {
+		base = 35
+	  }
+		#kill_country_leader = yes
+		create_country_leader = {
+			name = "Chairman Artemio"
+			desc = "POLITICS_ARTEMIO_LEADER_DESC"
+			picture = "gfx/leaders/SDL/Portrait_SDL_Artemio.png"
+			expire = "2040.1.1"
+			ideology = mzt
+			traits = {
+			}
+		}
+		set_politics = {
+		ruling_party = revolutionary_right
+		}
+		every_country = {
+			limit = {
+				is_ai = no 
+			}
+				news_event = {
+				id = WNE.7
+				days = 1
+				}
+	}
+	}
+    option = {
+      name = SDL.5.c
+	  ai_chance = {
+		base = 35
+	  }
+		#kill_country_leader = yes
+			create_country_leader = {
+				name = "Victor Polay"
+				desc = "POLITICS_POLAY_LEADER_DESC"
+				picture = "gfx/leaders/SDL/Portrait_SDL_Victor_Alfredo_Polay.png"
+				expire = "2040.1.1"
+				ideology = antirevml
+				traits = {
+				}
+			}
+		every_country = {
+			limit = {
+				is_ai = no 
+			}
+				news_event = {
+				id = WNE.8
+				days = 1
+				}
+	}
+	}
+    option = {
+      name = SDL.5.d
+	  ai_chance = {
+		base = 35
+	  }
+		#kill_country_leader = yes
+		create_country_leader = {
+			name = "Chairman Artemio"
+			desc = "POLITICS_ARTEMIO_LEADER_DESC"
+			picture = "gfx/leaders/SDL/Portrait_SDL_Artemio.png"
+			expire = "2040.1.1"
+			ideology = mzt
+			traits = {
+			}
+		}
+		set_politics = {
+		ruling_party = anarchism
+		}
+		set_variable = { SDL.REAL_GROWTH = -1 }
+		every_country = {
+			limit = {
+				is_ai = no 
+			}
+				news_event = {
+				id = WNE.9
+				days = 1
+				}
+	}
+		country_event = {
+		id = SDL.6
+		days = 188
+		}
+	}
+}
+country_event = {
+    id = SDL.6 # Who comes out on top from the Chaos?
+    title = SDL.6.t
+    desc = SDL.6.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = SDL.6.a
+	  ai_chance = {
+		base = 35
+	  }
+		PRU = {
+			annex_country = { 
+			target = SDL
+			transfer_troops = no
+			}
+		set_variable = { PRU.GDP = 130 }
+		set_variable = { PRU.REAL_GROWTH = 4 }
+		set_variable = { PRU.DEBT = 125 }
+		}
+			create_country_leader = {
+			name = "Walter Chacón"
+			desc = "POLITICS_CHACON_LEADER_DESC"
+			picture = "gfx/leaders/PRU/Portrait_PRU_Walter_Chacon.png"
+			expire = "2040.1.1"
+			ideology = milgov
+			traits = {
+			}
+		}
+		set_politics = {
+		ruling_party = autocracy
+		}
+		news_event = {
+		id = WNE.21
+		days = 1
+		}
+	}
+    option = {
+	name = SDL.6.b
+	  ai_chance = {
+		base = 35
+	  }
+			create_country_leader = {
+			name = "Osmán Morote"
+			desc = "POLITICS_OSMAN_LEADER_DESC"
+			picture = "gfx/leaders/SDL/Portrait_SDL_Osman_Morote.png"
+			expire = "2040.1.1"
+			ideology = mzt
+			traits = {
+			}
+		}
+		set_politics = {
+		ruling_party = hardline_socialism
+		}
+		news_event = {
+		id = WNE.22
+		days = 1
+		}
+	}
+    option = {
+	name = SDL.6.c
+	  ai_chance = {
+		base = 35
+	  }
+			PRU = {
+			transfer_state = 486
+			transfer_state = 485
+			transfer_state = 484
+			transfer_state = 994
+			}
+			BRA = {
+			puppet = SDL
+			}
+			SDL = {
+			set_cosmetic_tag = SDL_BRA
+			}
+			CHL = {
+			puppet = PRU
+			}
+		SDL = {
+		set_variable = { SDL.GDP = 20 }
+		set_variable = { SDL.REAL_GROWTH = 0.5 }
+		set_variable = { SDL.DEBT = 12 }
+			create_country_leader = {
+			name = "César Nardi"
+			desc = "POLITICS_NARDI_LEADER_DESC"
+			picture = "gfx/leaders/SDL/Portrait_SDL_Cesar_Augusto_Nardi.png"
+			expire = "2040.1.1"
+			ideology = milgov
+				traits = {
+				}
+			}
+		}
+		PRU = {
+		set_variable = { PRU.GDP = 100 }
+		set_variable = { PRU.REAL_GROWTH = 0.2 }
+		set_variable = { PRU.DEBT = 2 }
+			create_country_leader = {
+			name = "Verónika Mendoza"
+			desc = "POLITICS_VERONIKA_LEADER_DESC"
+			picture = "gfx/leaders/PRU/Portrait_PRU_Veronika_Mendoza.png"
+			expire = "2040.1.1"
+			ideology = algsoc
+				traits = {
+				}
+			}
+		
+			set_politics = {
+				ruling_party = technocracy
+			}
+		set_cosmetic_tag = PRU_CHL
+		}
+		news_event = {
+		id = WNE.23
+		days = 1
+		}
+	}
+}

@@ -1,0 +1,11 @@
+portlandian_gift_economy_in_action  = {
+     icon = generic_foreign_policy
+	 
+	 allowed = {
+		has_idea = portlandian_gift_economy
+	}
+	 
+     visible = { 
+        has_idea = portlandian_gift_economy
+    }
+}

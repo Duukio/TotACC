@@ -1,0 +1,78 @@
+add_namespace = POLflavor
+add_namespace = POLdebug
+
+country_event = {
+    id = POLflavor.1 # Urban fuckin has a stronk
+    title = POLflavor.1.t
+    desc = POLflavor.1.desc
+    picture = GFX_report_event_jerzy
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = POLflavor.1.a
+	  #kill_country_leader = yes
+		create_country_leader = {
+			name = "Central Committee of the PZPR"
+			desc = "POLITICS_POL_PZPR_DESC"
+			picture = "gfx/leaders/POL/Portrait_POL_PZPR.png"
+			expire = "2040.1.1"
+			ideology = sovmarsys
+			traits = {
+			}
+		}
+		country_event = {
+		id = POLdebug.1
+		days = 30
+		}
+	}
+}
+country_event = {
+    id = POLdebug.1 # debug event, just adds a leader
+    title = POLdebug.1.t
+    desc = POLdebug.1.desc
+    picture = GFX_report_event_jerzy
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = POLdebug.1.a
+		ai_chance = { factor = 25 }
+		create_country_leader = {
+			name = "Włodzimierz Czarzasty"
+			desc = "POLITICS_POL_PZPR_DESC"
+			picture = "gfx/leaders/POL/Portrait_POL_Wlodzimierz_Czarzasty.png"
+			expire = "2040.1.1"
+			ideology = sovmarsys
+			traits = {
+			}
+		}
+	}
+    option = {
+      name = POLdebug.1.b
+		ai_chance = { factor = 25 }
+		create_country_leader = {
+			name = "Andrzej Lepper"
+			desc = "POLITICS_POL_PZPR_DESC"
+			picture = "gfx/leaders/POL/Portrait_POL_Andrzej_Lepper.png"
+			expire = "2040.1.1"
+			ideology = lwnat
+			traits = {
+			}
+		}
+	}
+    option = {
+      name = POLdebug.1.c
+		ai_chance = { factor = 25 }
+		set_politics = {
+		ruling_party = technocracy	
+		}
+	}
+    option = {
+      name = POLdebug.1.d
+		ai_chance = { factor = 25 }
+		set_politics = {
+		ruling_party = revolutionary_right	
+		}
+	}
+}

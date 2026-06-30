@@ -1,0 +1,30 @@
+state={
+	id=1104
+	name="STATE_1104" #Surat District
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			7150 15 #Surat
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 6
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+	 7150 4187
+	}
+	manpower=6081322
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

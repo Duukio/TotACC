@@ -1,0 +1,26 @@
+state={
+id=81
+	name="STATE_81"
+    buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history={
+		owner = FRA
+		victory_points = {
+			8035 1
+		}
+		buildings = {
+            school = 2
+			infrastructure = 1
+
+		}
+		add_core_of = FRA
+
+	}
+	provinces={
+		1962 8035 10779 10814 10838 
+	}
+	manpower=300000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

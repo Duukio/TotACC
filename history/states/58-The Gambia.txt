@@ -1,0 +1,22 @@
+state={
+id=58
+	name="STATE_58"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = TGM
+		victory_points = { 4989 5 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = TGM
+	}
+	provinces={
+		4989 13213 
+	}
+	manpower=2117000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

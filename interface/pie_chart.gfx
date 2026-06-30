@@ -1,0 +1,16 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_pie_chart_segment"
+		texturefile = "gfx/interface/pie_chart_segment.dds"
+		noOfFrames = 3 # change to how many frames you have, index starts at 1
+	}
+	spriteType = {
+		name = "GFX_big_overlay"
+		texturefile = "gfx/interface/big_piechart_overlay.dds"
+	}
+	spriteType = {
+		name = "GFX_factions_spritesheet"
+		texturefile = "gfx/interface/ideas/factions/factions_spritesheet.dds"
+		noOfFrames = 18 #frames 1-5 are NATO, frames 6-8 are PAFCPG, frames 9-12 are WTO
+	}
+}

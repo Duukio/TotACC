@@ -1,0 +1,24 @@
+
+state={
+id=464
+	name="STATE_464" # Cape
+	
+	manpower = 4113776
+
+	state_category = large_city
+
+	history={
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 4
+			dockyard = 2
+	    }
+}
+	provinces={
+		10442 13244 13250 13252 4528 13245 13249 13246 10415 13247
+	}
+}

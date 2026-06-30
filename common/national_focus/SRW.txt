@@ -1,0 +1,554 @@
+focus_tree = {
+    id = SRW_focus
+    country = {
+        base = 0
+        modifier = {
+            add = 999
+            tag = SRW
+        }
+    }
+focus = {
+	id = SRW_preparations_for_the_180th
+	icon = GFX_SRW_preparations_for_the_180th
+	cost = 5
+	x = 10
+	y = 0
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_preparations_for_the_180th"
+	}
+}
+
+focus = {
+	id = SRW_the_brooke_naval_tradition
+	icon = GFX_SRW_the_brooke_naval_tradition
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.77
+			uses = 5
+			category = naval_equipment
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_the_brooke_naval_tradition"
+	}
+	relative_position_id = SRW_preparations_for_the_180th
+	prerequisite = { focus = SRW_preparations_for_the_180th }
+}
+
+focus = {
+	id = SRW_what_singapore_never_was
+	icon = GFX_SRW_what_singapore_never_was
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		add_political_power = -150
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_what_singapore_never_was"
+	}
+	relative_position_id = SRW_preparations_for_the_180th
+	prerequisite = { focus = SRW_preparations_for_the_180th }
+}
+
+focus = {
+	id = SRW_reform_the_sarawak_foreign_office
+	icon = GFX_SRW_reform_the_sarawak_foreign_office
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		JAP = {
+			add_opinion_modifier = {
+				target = SRW
+				modifier = trade_agreement
+			}
+		}	
+		QIE = {
+			add_opinion_modifier = {
+				target = SRW
+				modifier = trade_agreement
+			}
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = SRW
+				modifier = trade_agreement
+			}
+		}	
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_reform_the_sarawak_foreign_office"
+	}
+	relative_position_id = SRW_preparations_for_the_180th
+	prerequisite = { focus = SRW_preparations_for_the_180th }
+}
+
+focus = {
+	id = SRW_flourishing_our_markets
+	icon = GFX_SRW_flourishing_our_markets
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { SRW.REAL_GROWTH = 0.2 }
+		custom_effect_tooltip = "Adds 2% Real Growth"
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_flourishing_our_markets"
+	}
+	relative_position_id = SRW_what_singapore_never_was
+	prerequisite = { focus = SRW_what_singapore_never_was }
+}
+
+focus = {
+	id = SRW_masters_of_trade
+	icon = GFX_SRW_masters_of_trade
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = free_trade
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_masters_of_trade"
+	}
+	relative_position_id = SRW_the_brooke_naval_tradition
+	prerequisite = { focus = SRW_the_brooke_naval_tradition }
+}
+
+focus = {
+	id = SRW_bring_american_refugees
+	icon = GFX_SRW_bring_american_refugees
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SRW_american_refugees
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_bring_american_refugees"
+	}
+	relative_position_id = SRW_reform_the_sarawak_foreign_office
+	prerequisite = { focus = SRW_reform_the_sarawak_foreign_office }
+}
+
+focus = {
+	id = SRW_for_another_180
+	icon = GFX_SRW_for_another_180
+	cost = 8
+	x = 10
+	y = 3
+	completion_reward = {
+		country_event = {
+			id = SRW.1
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_for_another_180"
+	}
+	prerequisite = { focus = SRW_bring_american_refugees }
+	prerequisite = { focus = SRW_flourishing_our_markets }
+	prerequisite = { focus = SRW_masters_of_trade }
+}
+
+focus = {
+	id = SRW_gone_forth_beyond_the_sea
+	icon = GFX_SRW_gone_forth_beyond_the_sea
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_gone_forth_beyond_the_sea"
+	}
+	relative_position_id = SRW_for_another_180
+	prerequisite = { focus = SRW_for_another_180 }
+}
+
+focus = {
+	id = SRW_bornean_concerns
+	icon = GFX_SRW_bornean_concerns
+	cost = 8
+	x = -2
+	y = 1
+	completion_reward = {
+		IND = {
+			country_event = {
+				id = SRW.2
+				days = 1
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_bornean_concerns"
+	}
+	relative_position_id = SRW_gone_forth_beyond_the_sea
+	prerequisite = { focus = SRW_gone_forth_beyond_the_sea }
+}
+
+focus = {
+	id = SRW_the_abang_jo_plan
+	icon = GFX_SRW_the_abang_jo_plan
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		PHL = {
+			country_event = {
+				id = SRW.3
+				days = 1
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_the_abang_jo_plan"
+	}
+	relative_position_id = SRW_gone_forth_beyond_the_sea
+	prerequisite = { focus = SRW_gone_forth_beyond_the_sea }
+}
+
+focus = {
+	id = SRW_the_landlord_question
+	icon = GFX_SRW_the_landlord_question
+	cost = 8
+	x = 2
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SRW_heaven_has_a_landlord
+			add_idea = SRW_heaven_has_a_landlord_1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_the_landlord_question"
+	}
+	relative_position_id = SRW_gone_forth_beyond_the_sea
+	prerequisite = { focus = SRW_gone_forth_beyond_the_sea }
+}
+
+focus = {
+	id = SRW_request_japanese_garrisson
+	icon = GFX_SRW_request_japanese_garrisson
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		JAP = {
+			country_event = {
+				id = SRW.4
+				days = 1
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_request_japanese_garrisson"
+	}
+	relative_position_id = SRW_bornean_concerns
+	prerequisite = { focus = SRW_bornean_concerns }
+}
+
+focus = {
+	id = SRW_host_the_exiles
+	icon = GFX_SRW_host_the_exiles
+	cost = 8
+	x = 0
+	y = 1
+	available = {
+		PHL = {
+			is_subject_of = SRW
+		}
+	}
+	completion_reward = {
+		annex_country = {
+			target = PHL
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_host_the_exiles"
+	}
+	relative_position_id = SRW_the_abang_jo_plan
+	prerequisite = { focus = SRW_the_abang_jo_plan }
+}
+
+focus = {
+	id = SRW_stem_the_tides_of_populism
+	icon = GFX_SRW_stem_the_tides_of_populism
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = autocracy
+			popularity = 0.1
+		}
+		add_stability = 0.05
+		add_political_power = -50
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_stem_the_tides_of_populism"
+	}
+	relative_position_id = SRW_the_landlord_question
+	prerequisite = { focus = SRW_the_landlord_question }
+}
+
+focus = {
+	id = SRW_expand_the_rangers
+	icon = GFX_SRW_expand_the_rangers
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		add_manpower = 20000
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_expand_the_rangers"
+	}
+	relative_position_id = SRW_request_japanese_garrisson
+	prerequisite = { focus = SRW_request_japanese_garrisson }
+}
+
+focus = {
+	id = SRW_the_question_of_sabah
+	icon = GFX_SRW_the_question_of_sabah
+	cost = 8
+	x = 0
+	y = 1
+	available = {
+		395 = {
+			is_owned_by = SRW
+		}
+	}
+	bypass = {
+		395 = {
+			NOT = {
+				is_owned_by = SRW
+			}
+		}
+	}
+	completion_reward = {
+		395 = {
+			add_core_of = SRW
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_the_question_of_sabah"
+	}
+	relative_position_id = SRW_host_the_exiles
+	prerequisite = { focus = SRW_host_the_exiles }
+}
+
+focus = {
+	id = SRW_improve_urban_conditions
+	icon = GFX_SRW_improve_urban_conditions
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		every_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			hidden_effect = {
+				add_to_variable = { intreach = 10 }
+			}
+		}
+		add_stability = 0.05
+		custom_effect_tooltip = "Adds 10% Internet Penetration to every state."
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_improve_urban_conditions"
+	}
+	relative_position_id = SRW_stem_the_tides_of_populism
+	prerequisite = { focus = SRW_stem_the_tides_of_populism }
+}
+
+focus = {
+	id = SRW_improve_military_research
+	icon = GFX_SRW_improve_military_research
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 3
+			category = infantry_tech
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_improve_military_research"
+	}
+	relative_position_id = SRW_expand_the_rangers
+	prerequisite = { focus = SRW_expand_the_rangers }
+}
+
+focus = {
+	id = SRW_the_great_adventure_south
+	icon = GFX_SRW_the_great_adventure_south
+	cost = 8
+	x = 0
+	y = 1
+	available = {
+		IND = {
+			has_war_with = NWG
+		}
+	}
+	completion_reward = {
+		country_event = {
+			id = SRW.8
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_the_great_adventure_south"
+	}
+	relative_position_id = SRW_the_question_of_sabah
+	prerequisite = { focus = SRW_the_question_of_sabah }
+}
+
+focus = {
+	id = SRW_mix_the_neighborhoods
+	icon = GFX_SRW_mix_the_neighborhoods
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = -0.05
+		add_political_power = 100
+		add_ideas = multiculturalism
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_mix_the_neighborhoods"
+	}
+	relative_position_id = SRW_improve_urban_conditions
+	prerequisite = { focus = SRW_improve_urban_conditions }
+}
+
+focus = {
+	id = SRW_forwards_fair_sarawak
+	icon = GFX_SRW_forwards_fair_sarawak
+	cost = 8
+	x = 2
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_forwards_fair_sarawak"
+	}
+	relative_position_id = SRW_improve_military_research
+	prerequisite = { focus = SRW_improve_military_research }
+	prerequisite = { focus = SRW_the_great_adventure_south }
+	prerequisite = { focus = SRW_mix_the_neighborhoods }
+}
+
+focus = {
+	id = SRW_negri_elections_2025
+	icon = GFX_SRW_negri_elections_2025
+	cost = 8
+	x = 18
+	y = 1
+	available = {
+		date > 2025.5.1
+	}
+	completion_reward = {
+		country_event = {
+			id = SRW.5
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_negri_elections_2025"
+	}
+}
+
+focus = {
+	id = SRW_supp_victory
+	icon = GFX_SRW_supp_victory
+	cost = 8
+	x = -2
+	y = 1
+	available = {
+		always = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_supp_victory"
+	}
+	relative_position_id = SRW_negri_elections_2025
+	prerequisite = { focus = SRW_negri_elections_2025 }
+	mutually_exclusive = { focus = SRW_sarawa_progress_victory}
+	mutually_exclusive = { focus = SRW_spp_victory}
+
+}
+
+focus = {
+	id = SRW_spp_victory
+	icon = GFX_SRW_spp_victory
+	cost = 8
+	x = 2
+	y = 1
+	available = {
+		always = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_spp_victory"
+	}
+	relative_position_id = SRW_negri_elections_2025
+	prerequisite = { focus = SRW_negri_elections_2025 }
+	mutually_exclusive = { focus = SRW_sarawa_progress_victory}
+	mutually_exclusive = { focus = SRW_supp_victory}
+}
+
+focus = {
+	id = SRW_sarawa_progress_victory
+	icon = GFX_SRW_sarawa_progress_victory
+	cost = 8
+	x = 0
+	y = 1
+	available = {
+		always = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_sarawa_progress_victory"
+	}
+	relative_position_id = SRW_negri_elections_2025
+	prerequisite = { focus = SRW_negri_elections_2025 }
+	mutually_exclusive = { focus = SRW_spp_victory}
+	mutually_exclusive = { focus = SRW_supp_victory}
+}
+
+focus = {
+	id = SRW_steady_as_she_goes
+	icon = GFX_SRW_steady_as_she_goes
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_steady_as_she_goes"
+	}
+	relative_position_id = SRW_supp_victory
+	prerequisite = { focus = SRW_supp_victory }
+}
+
+focus = {
+	id = SRW_the_reform_package
+	icon = GFX_SRW_the_reform_package
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		set_popularities = {
+			autocracy = 35
+			conservatism = 15
+			socdem = 35
+			liberalism = 15
+		}
+		set_country_flag = has_double_leader
+		set_country_flag = srw_abang
+		custom_effect_tooltip = "Makes the current Chief Minister a secondary leader."
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_the_reform_package"
+	}
+	relative_position_id = SRW_sarawa_progress_victory
+	prerequisite = { focus = SRW_sarawa_progress_victory }
+}
+
+focus = {
+	id = SRW_kuchings_shimizu
+	icon = GFX_SRW_kuchings_shimizu
+	cost = 8
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = -100
+		1215 = {
+		add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SRW_kuchings_shimizu"
+	}
+	relative_position_id = SRW_spp_victory
+	prerequisite = { focus = SRW_spp_victory }
+}
+
+#focus = {
+#	id = SRW_negri_elections_2030
+#	icon = GFX_SRW_negri_elections_2030
+#	cost = 8
+#	x = 2
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SRW_negri_elections_2030"
+#	}
+#	relative_position_id = SRW_steady_as_she_goes
+#	prerequisite = { focus = SRW_the_reform_package focus = SRW_kuchings_shimizu focus = SRW_steady_as_she_goes  }
+#}
+}

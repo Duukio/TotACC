@@ -1,0 +1,150 @@
+scripted_gui = {
+	TOTA_soctrends_gui_proper = {
+		context_type = player_context
+		window_name = "TOTA_soctrends_gui"
+		
+		visible = {
+			has_country_flag = all_brazilian_feijoada
+		}
+		properties = {
+			SOCTRENDS_EA = {
+				frame = THIS.SOCTRENDS_EA
+			}
+			SOCTRENDS_TP = {
+				frame = THIS.SOCTRENDS_TP
+			}
+			SOCTRENDS_DC = {
+				frame = THIS.SOCTRENDS_DC
+			}
+			SOCTRENDS_EE = {
+				frame = THIS.SOCTRENDS_EE
+			}
+			SOCTRENDS_DE = {
+				frame = THIS.SOCTRENDS_DE
+			}
+		}
+		effects = {
+		closebutton_soctrend_click = {
+		clr_country_flag = all_brazilian_feijoada
+		}
+		info_soctrend_click = {
+		set_country_flag = all_german_bratwurst #i need to stop with these food flags
+		}
+		}
+		triggers = {
+		SOCTRENDS_EA_visible = {
+		has_country_flag = all_brazilian_feijoada
+		}
+		SOCTRENDS_TP_visible = {
+		has_country_flag = all_brazilian_feijoada
+		}
+		SOCTRENDS_DC_visible = {
+		has_country_flag = all_brazilian_feijoada
+		}
+		SOCTRENDS_EE_visible = {
+		has_country_flag = all_brazilian_feijoada
+		}
+		SOCTRENDS_DE_visible = {
+		has_country_flag = all_brazilian_feijoada
+		}
+		}
+	}
+		TOTA_SOCTRENDS_INFO = {
+			context_type = player_context
+			window_name = "TOTA_SOCTRENDS_INFO"
+			visible = {
+				has_country_flag = all_german_bratwurst
+			}
+			effects = {
+				closebutton_soctrend_info_click = {
+					clr_country_flag = all_german_bratwurst
+				}
+			}
+		}
+	TOTA_economy_and_soctrend_scrgui = {
+		context_type = player_context
+		window_name = "economy_and_soctrend_scrgui"
+		parent_window_token = top_bar
+
+		visible = {
+		has_dlc = "La Resistance"
+		}
+
+		triggers = {
+		soctrends_button_click_enabled = { 
+		always = yes
+		}
+		economy_button_visible = {
+			THIS = {
+				NOT = {
+					has_idea = portlandian_gift_economy
+				}
+			}
+		}
+		gift_economy_button_visible = {
+			THIS = {
+				has_idea = portlandian_gift_economy
+			}
+		}
+		}
+
+		properties = {
+		}
+
+		effects = {
+		economy_button_click = {
+		set_country_flag = all_hungarian_goulash
+		}
+		gift_economy_button_click = {
+			set_country_flag = all_american_pie
+		}
+		soctrends_button_click = {
+		set_country_flag = all_brazilian_feijoada
+		}
+		}
+	}
+	TOTA_economy_and_soctrend_scrgui_alt = {
+		context_type = player_context
+		window_name = "after_inteleconomy_and_soctrend_scrgui"
+		parent_window_token = top_bar
+
+		visible = {
+		NOT = {
+		has_dlc = "La Resistance"
+		}
+		}
+
+		triggers = {
+		soctrends_button_click_enabled = { 
+		always = yes
+		}
+		economy_button_visible = {
+			THIS = {
+				NOT = {
+					has_idea = portlandian_gift_economy
+				}
+			}
+		}
+		gift_economy_button_visible = {
+			THIS = {
+				has_idea = portlandian_gift_economy
+			}
+		}
+		}
+
+		properties = {
+		}
+
+		effects = {
+		economy_button_click = {
+		set_country_flag = all_hungarian_goulash
+		}
+		gift_economy_button_click = {
+			set_country_flag = all_american_pie
+		}
+		soctrends_button_click = {
+		set_country_flag = all_brazilian_feijoada
+		}
+		}
+	}
+}

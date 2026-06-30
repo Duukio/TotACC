@@ -1,0 +1,33 @@
+scripted_gui = {
+
+	NGA_nigeria_o_meter_gui_open = {
+		context_type = player_context
+		window_name = "NGA_nigeria_o_meter_open"
+        parent_window_token = politics_tab
+
+		visible = {
+			tag = NGA
+			has_country_flag = NGA_nga_meter
+		}
+
+		triggers = {
+		}
+
+		properties = {
+		}
+
+		effects = {
+			nigeria_o_meter_button_click = {
+				if = {
+					limit = {
+						has_country_flag = NGA_nga_meter_open
+					}
+					clr_country_flag = NGA_nga_meter_open
+				}
+				else = {
+					set_country_flag = NGA_nga_meter_open
+				}				
+			}
+		}
+	}
+}

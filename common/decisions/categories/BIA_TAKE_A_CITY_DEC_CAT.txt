@@ -1,0 +1,13 @@
+BIA_TAKE_A_CITY_DEC_CAT  = {
+     icon = generic_foreign_policy
+   #fire_only_once = yes
+     visible = { 
+        original_tag = BIA
+        BIA = {
+            OR ={
+                has_completed_focus = BIA_taking_lagos
+                has_completed_focus = BIA_towards_the_devils_nest
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+NGA_agenda_2050_dec_cat  = {
+     icon = generic_foreign_policy
+	 
+	 allowed = {
+		original_tag = NGA
+	}
+	 
+     visible = { 
+        original_tag = NGA
+        NGA = {
+            has_country_flag = NGA_agenda_2050_dec_cat_flag
+        }
+    }
+}
+NGA_cow_eugenicz = {
+    icon = generic_foreign_policy
+	 
+    allowed = {
+       original_tag = NGA
+   }
+    
+    visible = { 
+       original_tag = NGA
+       NGA = {
+           has_completed_focus = NGA_crispr_cow_commerce
+       }
+   }    
+}

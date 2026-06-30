@@ -1,0 +1,47 @@
+state={
+id=597
+	name="STATE_597"
+    buildings_max_level_factor = 1
+	manpower = 3437775
+	
+
+	state_category = city
+
+	history= {
+		owner = NWG
+		add_core_of = NWG
+		victory_points = {
+			4593 10 
+		}
+		victory_points = {
+			7542 10 
+		}
+		victory_points = {
+			4468 10 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 3
+			arms_factory = 2
+			4468 = {
+				naval_base = 2
+			}
+			7542 = {
+				naval_base = 3
+			}
+			12457 = {
+				naval_base = 1
+			}
+			7269 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		1546 1602 1617 1629 4468 4509 4524 4552 4593 7269 7487 7512 7542 7585 7627 10505 12315 12386 12457 
+	}
+
+	local_supplies=1.0 
+}

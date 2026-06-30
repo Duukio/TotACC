@@ -1,0 +1,33 @@
+
+state={
+	id=1125
+	name="STATE_1125"
+    buildings_max_level_factor = 1
+	resources={
+		oil=100.000
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			7179 2 #Rangamati
+		}
+		buildings = {
+			school = 1
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		7179 1075 7634
+	}
+	manpower=11376708
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

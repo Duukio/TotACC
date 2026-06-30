@@ -1,0 +1,139 @@
+ideas = {
+	country = {
+			AMB_falling_apart = {
+			picture = AMB_falling_apart
+			allowed = {
+				tag = AMB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			surrender_limit = -0.05
+			stability_weekly = -0.01
+			war_support_weekly = -0.01
+			command_power_gain = -0.20
+			}
+		}
+			AMB_eroding_sovereignity = {
+			picture = AMB_eroding_sovereignity
+			allowed = {
+				tag = AMB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			surrender_limit = 0.07
+			defence = 0.10
+			army_core_defence_factor = 0.15
+			dig_in_speed_factor = 0.05
+			political_power_cost = 0.3
+			gdp_growth_modifier = -0.1
+			}
+		}
+			AMB_biafra_backing = {
+			picture = AMB_biafran_backing
+			allowed = {
+				tag = AMB
+				has_war_with = CAM
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			surrender_limit = 0.03
+			defence = 0.15
+			dig_in_speed_factor = 0.05
+			equipment_capture_factor = 0.7
+			production_lack_of_resource_penalty_factor = -0.5
+			industry_repair_factor = 0.2
+			production_speed_buildings_factor = 0.15
+			weekly_debt_modifier = 0.1
+			}
+		}
+		PRA_soviet_nigerian_backing = {
+			picture = PRA_soviet_nigerian_backing
+			allowed = {
+				tag = PRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.03
+				political_power_cost = 0.15
+				reformist_socialism_drift = 0.01
+			}
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 0.77
+			}
+		}
+			CAM_forced_by_UN = {
+			picture = CAM_UN_observers
+			allowed = {
+				tag = CAM
+				has_war_with = AMB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			offence = -0.15
+			stability_weekly = -0.03
+			war_support_weekly = -0.03
+			}
+		}
+	}	
+}

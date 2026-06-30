@@ -1,0 +1,460 @@
+characters = {
+	BIA_azubuike_ihejirika = {
+		name = BIA_azubuike_ihejirika
+		portraits = {
+			army = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Azubuike_Ihejirika.png"
+			}
+		}
+		field_marshal = {
+			traits = { trait_reckless offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	BIA_ibok_ekwe_ibas = {
+		name = BIA_ibok_ekwe_ibas
+		portraits = {
+			army = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Ibok_Ekwe_Ibasa.png"
+			}
+		}
+		navy_leader = {
+			traits = { seawolf silent_hunter }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+	BIA_nnamdi_kanu = {
+		name = BIA_nnamdi_kanu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Nnamdi_Kanu.png"
+			}
+			army = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Nnamdi_Kanu_general.png"
+			}
+		}
+		corps_commander = {
+			desc = POLITICS_NNAMDI_KANU_ARMY_DESC
+			traits = { brilliant_strategist politically_connected commando harsh_leader trickster infantry_officer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		country_leader = {
+			desc = "POLITICS_NNAMDI_KANU_DESC"
+			ideology = anolib
+		}
+	}
+	BIA_usman_oyibe_jibrin = {
+		name = BIA_usman_oyibe_jibrin
+		portraits = {
+			army = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Usman_Oyibe_Jibrin.png"
+			}
+		}
+		navy_leader = {
+			traits = { gentlemanly bold }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	BIA_olatunji_lukman_olayinka = {
+		name = BIA_olatunji_lukman_olayinka
+		portraits = {
+			army = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Olatunji_Lukman_Olayink.png"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless defensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	Chukwuemeka_Osita_Onwuamaegbu = {
+		name = Chukwuemeka_Osita_Onwuamaegbu
+		portraits = {
+			army = {
+				large = "gfx/leaders/BIA/chukwumekaositaon.png"
+			}
+		}
+		corps_commander = {
+			traits = { trait_cautious offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	YOR_ganiyu_adams = {
+		name = YOR_ganiyu_adams
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/YOR/Portrait_YOR_Ganiyu_Adams.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_EMPTY_DESC"
+			ideology = soccon
+		}
+	}
+	BIA_chibuike_nebeokike = {
+			name = "Chibuike Nebeokike"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_chibuike_nebeokike" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+			    original_tag = BIU
+				original_tag = BIA
+				}
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIA_chibuike_nebeokike 
+			traits = {
+			    head_of_government
+			    hog_young_guard
+				autocracy_minister
+			}
+		}
+	}
+	BIA_kenneth_minimah = {
+			name = "Kenneth Minimah"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_kenneth_minimah" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				OR = {
+				has_country_flag = chimaroke_cabinet
+				has_country_flag = princewill_cabinet
+				}
+			}
+			idea_token = BIA_kenneth_minimah 
+			traits = {
+			    security_minister
+			    sec_health_and_safety
+				conservatism_minister
+			}
+		}
+	}
+	BIA_emma_powerful = {
+			name = "Emma Powerful"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_emma_powerful" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+			    original_tag = BIU
+				original_tag = BIA
+				}
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIA_emma_powerful 
+			traits = {
+			    foreign_minister
+			    for_ideological_crusader
+				revolutionary_right_minister
+			}
+		}
+	}
+	BIA_eunice_atuejide = {
+			name = "Eunice Atuejide"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_eunice_atuejide" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {	
+				has_country_flag = chimaroke_cabinet
+			}
+			idea_token = BIA_eunice_atuejide 
+			traits = {
+			    economy_minister
+			    eco_keynesian_economy
+				liberalism_minister
+			}
+		}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = obiakor_cabinet
+			}
+			idea_token = BIA_eunice_atuejide_hog
+			traits = {
+			    head_of_government
+			    hog_naive_optimist
+				socdem_minister
+			}
+		}
+	}
+	BIA_john_nwodo = {
+			name = "John Nnia Nwodo"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_john_nwodo" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = obiakor_cabinet
+			}
+			idea_token = BIA_john_nwodo 
+			traits = {
+			    security_minister
+			    sec_crime_fighter
+				socdem_minister
+			}
+		}
+	}
+	BIA_joy_uche_angela_ogwu = {
+			name = "Joy Uche Angela Ogwu"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_joy_uche_angela_ogwu" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = obiakor_cabinet
+			}
+			idea_token = BIA_joy_uche_angela_ogwu 
+			traits = {
+				foreign_minister
+				for_great_compromiser
+				socdem_minister
+			}
+		}
+	}
+	BIA_lawrence_ugwuanyi = {
+			name = "Lawrence Ifeanyi Ugwuanyi"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_lawrence_ugwuanyi" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+			    original_tag = BIU
+				original_tag = BIA
+				}
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = chimaroke_cabinet
+			}
+			idea_token = BIA_lawrence_ugwuanyi 
+			traits = {
+			    head_of_government
+			    hog_silent_workhorse
+				conservatism_minister
+			}
+		}
+	}
+	BIA_oby_ezekwesili = {
+			name = "Oby Ezekwesili"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_oby_ezekwesili" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = princewill_cabinet
+			}
+			idea_token = BIA_oby_ezekwesili 
+			traits = {
+			    economy_minister
+			    eco_balanced_budget_economy
+				liberalism_minister
+			}
+		}
+	}
+	BIA_okechukwu_emuchay = {
+			name = "Okechukwu Nwadiuto Emuchay"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_okechukwu_emuchay" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = chimaroke_cabinet
+			}
+			idea_token = BIA_okechukwu_emuchay 
+			traits = {
+			    foreign_minister
+			    for_biased_intellectual
+				conservatism_minister
+			}
+		}
+	}
+	BIA_peace_nnaji = {
+			name = "Peace Uzoamaka Nnaji"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_peace_nnaji" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = princewill_cabinet
+			}
+			idea_token = BIA_peace_nnaji 
+			traits = {
+				foreign_minister
+				for_great_compromiser
+				conservatism_minister
+			}
+		}
+	}
+	BIA_rochas_okorocha = {
+			name = "Rochas Okorocha"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_rochas_okorocha" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = obiakor_cabinet
+			}
+			idea_token = BIA_rochas_okorocha 
+			traits = {
+			    economy_minister
+			    eco_industrialiser
+				liberalism_minister
+			}
+		}
+	}
+	BIA_simon_ekpa = {
+			name = "Simon Ekpa"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_simon_ekpa" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = BIA
+				original_tag = BIU
+				}
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIA_simon_ekpa 
+			traits = {
+			    economy_minister
+			    eco_military_entrepreneur
+				revolutionary_right_minister
+			}
+		}
+	}
+	BIA_sofia_chineyere_kalu = {
+			name = "Sofia Chinyere Kalu"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_sofia_chineyere_kalu" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = BIA
+				original_tag = BIU
+				}
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIA_sofia_chineyere_kalu 
+			traits = {
+			    security_minister
+			    sec_health_and_safety
+				autocracy_minister
+			}
+		}
+	}
+	BIA_utazi_chukwuka = {
+			name = "Utazi Chukwuka"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_utazi_chukwuka" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = BIA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = princewill_cabinet
+			}
+			idea_token = BIA_utazi_chukwuka 
+			traits = {
+			    head_of_government
+			    hog_corporate_suit
+				liberalism_minister
+			}
+		}
+	}
+}

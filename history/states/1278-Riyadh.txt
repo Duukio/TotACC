@@ -1,0 +1,28 @@
+
+state={
+	id=1278
+	name="STATE_1278"
+	resources={
+		oil=300
+	}
+	history={
+		owner = SAU
+		buildings = {
+			school = 2
+			infrastructure = 3
+
+		}
+		victory_points = {
+			12727 50 
+		}
+		add_core_of = SAU
+
+	}
+	provinces={
+		7995 12727 12813 12870 
+	}
+	manpower=8800000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

@@ -1,0 +1,12 @@
+NGA_debug_category_dec_cat  = {
+     icon = generic_foreign_policy
+	 
+	 allowed = {
+		original_tag = NGA
+	}
+	 
+     visible = { 
+        is_debug = yes
+		is_ai = no
+    }
+}

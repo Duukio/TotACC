@@ -1,0 +1,29 @@
+state={
+id=1184
+	name="STATE_1184"
+    buildings_max_level_factor = 1
+
+	
+	history={
+		owner = CAM
+		victory_points = {
+			13712 1 #Ambam
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = CAM
+		add_core_of = EQG
+
+	}
+
+	provinces={
+	    13712 
+	}
+	manpower=73000
+	buildings_max_level_factor=2.000
+	state_category=rural
+	local_supplies=0.000
+}

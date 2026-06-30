@@ -1,0 +1,26 @@
+
+state={
+	id=1116
+	name="STATE_1116" #Aurangabad
+	provinces={
+		7250 12295 12142 7411
+	}
+	manpower=18731872
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = BHA
+		buildings = {
+			school = 3
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 1
+		}
+		victory_points = {
+			12142 10 #Aurangabad
+		}
+		add_core_of = BHA
+	}
+}

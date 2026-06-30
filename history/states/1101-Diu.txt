@@ -1,0 +1,30 @@
+state={
+	id=1101
+	name="STATE_1101" #Diu
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			4132 5 #Diu
+		}	
+		buildings = {
+			school = 1
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		4132
+	}
+	manpower=100000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

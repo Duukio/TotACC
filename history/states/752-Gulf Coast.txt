@@ -1,0 +1,40 @@
+
+state={
+id=752
+	
+	name="STATE_752"
+	manpower = 2655485
+	
+	
+	state_category = large_city
+	
+	resources={
+		aluminium=60
+		steel = 20
+	}
+
+
+	history={
+		owner = USA
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 1
+			dockyard = 2
+			6785 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			6785 20 
+		}
+
+	}
+
+	provinces={
+		2042 4884 6785 12369 12410 
+	}
+
+	local_supplies=8.0 
+}

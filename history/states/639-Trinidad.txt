@@ -1,0 +1,32 @@
+state={
+id=639
+	name="STATE_639"
+    buildings_max_level_factor = 1
+	manpower = 1367558
+	
+	resources={
+		oil=120 # was: 16
+	}
+	
+	state_category = metropolis
+
+
+	history={
+		add_core_of = WIF
+		owner = WIF
+		victory_points = {
+			3284 25
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+			3284 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={ 3284 13012 }
+
+	local_supplies=2.0 
+}

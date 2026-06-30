@@ -1,0 +1,156 @@
+ideas = {
+
+	race_relations = {
+		law = yes
+		full_apartheid = { 
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.35
+				political_power_gain = 0.08
+				political_power_cost = 0.06
+				stability_factor = 0.08
+				production_speed_buildings_factor = -0.03
+				monthly_soctrends_drift_EE_E2 = 0.01
+				#maybe drift defence
+			}
+			cancel_if_invalid = no
+		}
+		caste_system = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.5
+				monthly_population = -0.05
+				gdp_growth_modifier = -0.02
+				production_speed_buildings_factor = 0.05
+				stability_factor = -0.1
+				monthly_soctrends_drift_EE_E2 = 0.03
+			}
+			cancel_if_invalid = no
+		}
+		ethnic_testudo = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.05
+				drift_defence_factor = 0.05
+				conscription_factor = 0.35
+				monthly_population = 0.02
+				gdp_growth_modifier = -0.02
+				research_speed_factor = -0.02
+			}
+			cancel_if_invalid = no
+		}
+		legal_protections = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.01
+				monthly_population = 0.01
+				stability_factor = -0.01
+				monthly_soctrends_drift_EE_E1 = 0.01
+			}
+			cancel_if_invalid = no
+			default = yes
+		}
+		#social_cohesion = {
+		#	allowed = {
+		#		always = no
+		#	}
+		#	removal_cost = -1
+		#	modifier = {
+		#		political_power_cost = 0.01
+		#		war_support_factor = -0.02
+		#		research_speed_factor = 0.02
+		#		monthly_population = 0.02
+		#		monthly_soctrends_drift_EE_E1 = 0.01
+		#	}
+		#	cancel_if_invalid = no
+		#}
+		multiculturalism = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.02
+				war_support_factor = -0.05
+				research_speed_factor = 0.03
+				monthly_soctrends_drift_EE_E1 = 0.01
+				monthly_soctrends_drift_TP_P = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		diversity_equity_inclusion = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = -0.02
+				political_power_cost = 0.03
+				political_power_gain = -0.01
+				gdp_growth_modifier = -0.01
+				army_org_factor = 0.01
+				war_support_factor = -0.08
+				research_speed_factor = 0.03
+				monthly_soctrends_drift_EE_E1 = 0.01
+				monthly_soctrends_drift_TP_P = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		all_born_free_and_equal = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = -0.05
+				conscription_factor = 0.1
+				political_power_cost = 0.05
+				gdp_growth_modifier = -0.02
+				army_org_factor = 0.03
+				war_support_factor = -0.12
+				research_speed_factor = 0.03
+				monthly_soctrends_drift_EE_E1 = 0.02
+				monthly_soctrends_drift_TP_P = 0.02
+			}
+			cancel_if_invalid = no
+		}
+		####PRESTON-EXCLUSIVE
+		absolute_voluntary_association = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = -1
+				conscription_factor = 0.15
+				political_power_cost = 0.5
+				gdp_growth_modifier = 0.1
+				army_org_factor = -0.05
+				war_support_factor = -0.5
+				research_speed_factor = -0.05
+				stability_factor = -0.5
+				local_resources_factor = 0.5
+				local_building_slots_factor = 0.5
+				local_factories = 0.5
+				local_manpower = 0.5
+				starting_compliance = 0.8
+				resistance_growth = -0.4
+				monthly_soctrends_drift_DC_D = 0.05
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

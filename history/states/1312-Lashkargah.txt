@@ -1,0 +1,26 @@
+state={
+id=1312
+	name="STATE_1312"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = PAK
+		victory_points = {
+			2078 20 #Lashkargah
+		}
+		buildings = {
+            school = 4
+			infrastructure = 4
+			industrial_complex = 5
+		}
+		add_core_of = PAK 
+
+	}
+	provinces={
+	 2078 1948 4949
+	}
+	manpower=5000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

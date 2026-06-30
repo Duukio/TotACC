@@ -1,0 +1,484 @@
+characters = {
+	Paul_Stanton = {
+		name = "Paul Stanton"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SFL/Paul_Stanton.png"
+			}
+		}
+        country_leader = {
+            desc = ""
+            ideology = rightlib
+        }
+	}
+	SFL_Dominic_Pezzola = {
+		name = "Dominic Pezzola"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SFL/Dominic Pezzola.png"
+			}
+		}
+		field_marshal = {
+			traits = { politically_connected old_guard }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	SFL_Zachary_Rehl = {
+		name = "Zachary Rehl"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SFL/Zachary Rehl.png"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer brilliant_strategist }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SFL_Joseph_Biggs = {
+		name = "Joseph Biggs"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SFL/Joseph Biggs.png"
+			}
+		}
+		corps_commander = {
+			traits = { media_personality trait_cautious }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SFL_Ethan_Nordean = {
+		name = "Ethan Nordean"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SFL/Ethan Nordean.png"
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist adaptable }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SFL_James_Porrazzo = {
+		name = "James Porrazzo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SFL/James Porrazzo.png"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected commando }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SFL_Andrew_Yeoman = {
+		name = "Andrew \"Yeoman\" White"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_andrew_yeoman"
+			}
+			army = {
+				large = "gfx/leaders/SFL/Andrew Yeoman.png"
+			}
+		}
+		corps_commander = {
+			traits = { swamp_fox commando }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = preston_cabinet
+			}
+			idea_token = SFL_andrew_yeoman
+			traits = {
+				head_of_government
+				hog_happy_amateur
+				anarchism_minister
+			}
+		}
+	}
+	SFL_Marcus_Faella = {
+		name = "Marcus Faella"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SFL/Marcus Faella.png"
+			}
+		}
+		field_marshal = {
+			traits = { inspirational_leader logistics_wizard  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SFL_ashanti_alston = {
+		name = "Ashanti Alston"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_ashanti_alston"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = preston_cabinet
+			}
+			idea_token = SFL_ashanti_alston
+			traits = {
+				foreign_minister
+				for_great_compromiser
+				anarchism_minister
+			}
+		}
+	}
+	SFL_kristin_noble = {
+		name = "Kristin Noble"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_kristin_noble"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = preston_cabinet
+			}
+			idea_token = SFL_kristin_noble
+			traits = {
+				economy_minister
+				eco_laissez_faire_capitalist
+				dissident_right_minister
+			}
+		}
+	}
+	SFL_parker_anthony_wilson = {
+		name = "Parker Anthony Wilson"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_parker_anthony_wilson"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = preston_cabinet
+			}
+			idea_token = SFL_parker_anthony_wilson
+			traits = {
+				security_minister
+				sec_segregationist_autonomist
+				anarchism_minister
+			}
+		}
+	}
+	SFL_donald_trump = {
+		name = "Donald J. Trump"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_donald_trump"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = sharkey_cabinet
+			}
+			idea_token = SFL_donald_trump
+			traits = {
+				economy_minister
+				eco_construction_magnate
+				socdem_minister
+			}
+		}
+	}
+	SFL_pazuzu_algarad = {
+		name = "Pazuzu Algarad"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_pazuzu_algarad"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = sharkey_cabinet
+			}
+			idea_token = SFL_pazuzu_algarad
+			traits = {
+				security_minister
+				sec_prince_of_terror
+				anarchism_minister
+			}
+		}
+	}
+	SFL_ashley_s_palmer = {
+		name = "Ashley S. Palmer"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_ashley_s_palmer"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = sharkey_cabinet
+			}
+			idea_token = SFL_ashley_s_palmer
+			traits = {
+				foreign_minister
+				for_the_cloak_n_dagger_schemer
+				autocracy_minister
+			}
+		}
+	}
+	SFL_karla_lavey = {
+		name = "Karla LaVey"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_karla_lavey"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = sharkey_cabinet
+			}
+			idea_token = SFL_karla_lavey
+			traits = {
+				head_of_government
+				hog_flamboyant_tough_guy
+				dissident_right_minister
+			}
+		}
+	}
+	SFL_nathan_larson = {
+		name = "Nathan Larson"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_nathan_larson"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = asi_cabinet
+			}
+			idea_token = SFL_nathan_larson
+			traits = {
+				economy_minister
+				eco_corrupt_kleptocrat
+				revolutionary_right_minister
+			}
+		}
+	}
+	SFL_gonzalo_lira = {
+		name = "Gonzalo Lira"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_gonzalo_lira"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = asi_cabinet
+			}
+			idea_token = SFL_gonzalo_lira
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+				dissident_right_minister
+			}
+		}
+	}
+	SFL_steve_sailer = {
+		name = "Steve Sailer"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_steve_sailer"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = asi_cabinet
+			}
+			idea_token = SFL_steve_sailer
+			traits = {
+				head_of_government
+				hog_political_protege
+				dissident_right_minister
+			}
+		}
+	}
+	SFL_enrique_tarrio = {
+		name = "Enrique Tarrio"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_enrique_tarrio"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				OR = {
+				has_country_flag = SFL_starting_cabinet
+				has_country_flag = asi_cabinet
+				}
+			}
+			idea_token = SFL_enrique_tarrio
+			traits = {
+				security_minister
+				sec_crime_fighter
+				revolutionary_right_minister
+			}
+		}
+	}
+	SFL_mike_ter_maat = {
+		name = "Mike Ter Maat"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_mike_ter_maat"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = SFL_starting_cabinet
+			}
+			idea_token = SFL_mike_ter_maat
+			traits = {
+				economy_minister
+				eco_laissez_faire_capitalist
+				liberalism_minister
+			}
+		}
+	}
+	SFL_roger_stone = {
+		name = "Roger Stone"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_roger_stone"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = SFL_starting_cabinet
+			}
+			idea_token = SFL_roger_stone
+			traits = {
+				foreign_minister
+				for_great_compromiser
+				dissident_right_minister
+			}
+		}
+	}
+	SFL_adrian_wyllie = {
+		name = "Adrian Wyllie"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_SFL_adrian_wyllie"
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = SFL
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = SFL_starting_cabinet
+			}
+			idea_token = SFL_adrian_wyllie
+			traits = {
+				head_of_government
+				hog_silent_workhorse
+				dissident_right_minister
+			}
+		}
+	}
+}

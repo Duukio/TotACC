@@ -1,0 +1,445 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_coffee_texticon"
+		texturefile = "gfx/texticons/coffee_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_rifle_texticon"
+		texturefile = "gfx/texticons/infequip_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_war_support_texticon"
+		texturefile = "gfx/texticons/war_support_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_support_texticon"
+		texturefile = "gfx/texticons/support_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_capital"
+		texturefile = "gfx/texticons/capital.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_resistance_texticon"
+		textureFile = "gfx/texticons/resistance.dds"
+		legacy_lazy_load = no
+	}
+
+#ideologies
+	spriteType = {
+		name = "GFX_socdem_texticon"
+		texturefile = "gfx/texticons/socdem_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_liberalism_texticon"
+		texturefile = "gfx/texticons/liberalism_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_conservatism_texticon"
+		texturefile = "gfx/texticons/conservatism_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_autocracy_texticon"
+		texturefile = "gfx/texticons/autocracy_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_anarchism_texticon"
+		texturefile = "gfx/texticons/anarchism_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_technocracy_texticon"
+		texturefile = "gfx/texticons/technocracy_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_dissident_right_texticon"
+		texturefile = "gfx/texticons/dissident_right_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_revolutionary_right_texticon"
+		texturefile = "gfx/texticons/revolutionary_right_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hardline_socialism_texticon"
+		texturefile = "gfx/texticons/hardline_socialism_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_reformist_socialism_texticon"
+		texturefile = "gfx/texticons/reformist_socialism_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+#news graphics
+
+	spriteType = {
+		name = "GFX_GUARDIAN"
+		texturefile = "gfx/interface/event_news_bg_guardian.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_JAZEERA"
+		texturefile = "gfx/interface/event_news_bg.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_DAILYMAIL"
+		texturefile = "gfx/interface/event_news_bg_dailymail.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CRIMETHINC"
+		texturefile = "gfx/interface/event_news_bg_crimethinc.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_MONDE"
+		texturefile = "gfx/interface/event_news_bg_lemonde.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_FINANCIALTIMES"
+		texturefile = "gfx/interface/event_news_bg_financial.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BREITBART"
+		texturefile = "gfx/interface/event_news_bg_breitbart.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SECOLO"
+		texturefile = "gfx/interface/event_news_bg_secolo.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GLOBALTIMES"
+		texturefile = "gfx/interface/event_news_bg_globaltimes.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PRAVDA"
+		texturefile = "gfx/interface/event_news_bg_pravda.dds"
+		legacy_lazy_load = no
+	}
+	#natspirit graphics
+		spriteType = {
+		name = "GFX_texticon_idea_crisis_of_postmodernity"
+		texturefile = "gfx/interface/ideas/BIA/crisis_postmodernity_texticon.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_idea_robust_institutions"
+		texturefile = "gfx/interface/ideas/BIA/robust_institutions_texticon.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_idea_pockets_lined_black"
+		texturefile = "gfx/interface/ideas/BIA/pockets_black.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_idea_violent_culture"
+		texturefile = "gfx/interface/ideas/NGA/culture_of_violence_texticon.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_idea_crippling_wars"
+		texturefile = "gfx/interface/ideas/NGA/crippling_war_fatigue_texticon.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_idea_northern_bias"
+		texturefile = "gfx/interface/ideas/NGA/northern_bias_texticon.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_tahoe"
+		texturefile = "gfx/interface/ideas/CAL/tahoe.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_algodesp"
+		texturefile = "gfx/texticons/texticonsideo/AlgocraticDespotism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_algolib"
+		texturefile = "gfx/texticons/texticonsideo/AlgocraticLiberalism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_AnoDirig"
+		texturefile = "gfx/texticons/texticonsideo/AnoDirig.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_AnoLib"
+		texturefile = "gfx/texticons/texticonsideo/AnoLib.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_ClassicalTechnocracy"
+		texturefile = "gfx/texticons/texticonsideo/ClassicalTechnocracy.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_ColAnarch"
+		texturefile = "gfx/texticons/texticonsideo/ColAnarch.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_Corporocracy"
+		texturefile = "gfx/texticons/texticonsideo/Corporocracy.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_DemocraticSocialism"
+		texturefile = "gfx/texticons/texticonsideo/DemocraticSocialism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_EcoLiberalism"
+		texturefile = "gfx/texticons/texticonsideo/EcoLiberalism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_GreenAnarchism"
+		texturefile = "gfx/texticons/texticonsideo/GreenAnarchism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_GreenConservatism"
+		texturefile = "gfx/texticons/texticonsideo/GreenConservatism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_GreenPolitics"
+		texturefile = "gfx/texticons/texticonsideo/GreenPolitics.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_manbur"
+		texturefile = "gfx/texticons/texticonsideo/ManagerialBeu.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_MarketLiberal"
+		texturefile = "gfx/texticons/texticonsideo/MarketLiberal.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_MilitaryDictatorship"
+		texturefile = "gfx/texticons/texticonsideo/MilitaryDictatorship.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_Monarchism"
+		texturefile = "gfx/texticons/texticonsideo/Monarchism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_Mutualism"
+		texturefile = "gfx/texticons/texticonsideo/Mutualism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_NatAnarch"
+		texturefile = "gfx/texticons/texticonsideo/NatAnarch.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_NationalLiberalism"
+		texturefile = "gfx/texticons/texticonsideo/NationalLiberalism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_PersonalisticDictatorship"
+		texturefile = "gfx/texticons/texticonsideo/PersonalisticDictatorship.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_PopulistConserv"
+		texturefile = "gfx/texticons/texticonsideo/PopulistConserv.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_PostLeftAnarchism"
+		texturefile = "gfx/texticons/texticonsideo/PostLeftAnarchism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_Progressivism"
+		texturefile = "gfx/texticons/texticonsideo/Progressivism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_ReligiousDemocracy"
+		texturefile = "gfx/texticons/texticonsideo/ReligiousDemocracy.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_ReligiousFundamentalism"
+		texturefile = "gfx/texticons/texticonsideo/ReligiousFundamentalism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_SocialConservativsm"
+		texturefile = "gfx/texticons/texticonsideo/SocialConservativsm.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_SocialLiberalism"
+		texturefile = "gfx/texticons/texticonsideo/SocialLiberalism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_SocialLibertarianism"
+		texturefile = "gfx/texticons/texticonsideo/SocialLibertarianism.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_SocialPatriotism"
+		texturefile = "gfx/texticons/texticonsideo/SocialPatriotism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_SocPaternal"
+		texturefile = "gfx/texticons/texticonsideo/SocPaternal.png"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_texticon_ThirdWay"
+		texturefile = "gfx/texticons/texticonsideo/ThirdWay.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_lacc"
+		texturefile = "gfx/texticons/texticonsideo/LeftAccel.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_rightlib"
+		texturefile = "gfx/texticons/texticonsideo/RightLibertarian.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_natpop"
+		texturefile = "gfx/texticons/texticonsideo/NatPopulism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_newright"
+		texturefile = "gfx/texticons/texticonsideo/NewRight.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_racc"
+		texturefile = "gfx/texticons/texticonsideo/RightAccel.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_boxer_icon_small"
+		texturefile = "gfx/texticons/unit_cavalry_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_texticon_nl_s"
+		texturefile = "gfx/texticons/texticonsideo/NewLeftSocialism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_monitdem"
+		texturefile = "gfx/texticons/texticonsideo/MoniteredDemocracy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_texticon_popsoc"
+		texturefile = "gfx/texticons/texticonsideo/PopulistSocialism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_yoda_of_polish_socialism_texticon"
+		texturefile = "gfx/texticons/yoda_of_polish_socialism_texticon.dds"
+		legacy_lazy_load = no 
+	}	
+	spriteType = {
+		name = "GFX_lukashenko_texticon"
+		texturefile = "gfx/interface/ideas/SOV/state_modifier/belarus_lukashenko.png"
+		legacy_lazy_load = no 
+	}	
+	########COUNTRY SELECT TEXTICONS
+	spriteType = {
+		name = "GFX_biafraglow"
+		texturefile = "gfx/interface/lscreentexticons/biafraglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_calglow"
+		texturefile = "gfx/interface/lscreentexticons/calglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_mskglow"
+		texturefile = "gfx/interface/lscreentexticons/mskglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_portlandglow"
+		texturefile = "gfx/interface/lscreentexticons/portlandglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_idahoglow"
+		texturefile = "gfx/interface/lscreentexticons/idahoglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_usaglow"
+		texturefile = "gfx/interface/lscreentexticons/usaglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_srwglow"
+		texturefile = "gfx/interface/lscreentexticons/srwglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_pineglow"
+		texturefile = "gfx/interface/lscreentexticons/pineglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_seyglow"
+		texturefile = "gfx/interface/lscreentexticons/seyglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_safglow"
+		texturefile = "gfx/interface/lscreentexticons/safglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_naijaglow"
+		texturefile = "gfx/interface/lscreentexticons/naijaglow.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_israglow"
+		texturefile = "gfx/interface/lscreentexticons/israglow.png"
+		legacy_lazy_load = no 
+	}
+}	 

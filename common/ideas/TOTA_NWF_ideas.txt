@@ -1,0 +1,65 @@
+ideas = {
+    country = {
+		NWF_fascist_terror_state = {
+			picture = NWF_fascist_terror_state
+			allowed = {
+				tag = NWF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                opinion_gain_monthly_factor = -1
+                min_export = -0.3
+			}
+            targeted_modifier = {
+                tag = SAF
+                extra_trade_to_target_factor = 0.4
+            }
+            targeted_modifier = {
+                tag = SGF
+                extra_trade_to_target_factor = 0.4
+            }
+            targeted_modifier = {
+                tag = JAP
+                extra_trade_to_target_factor = 0.4
+            }
+		}
+		NWF_aryan_throne = {
+			picture = NWF_aryan_throne
+			allowed = {
+				tag = NWF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                trade_opinion_factor = -0.25	
+			}
+            targeted_modifier = {
+                tag = USA
+                trade_cost_for_target_factor = 0.3
+            }
+		}
+    }
+}

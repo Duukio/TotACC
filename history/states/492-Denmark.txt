@@ -1,0 +1,44 @@
+state= {
+id=492
+	name="STATE_492"
+    buildings_max_level_factor = 1
+	manpower = 3500000
+	
+
+	state_category = megalopolis
+
+	history=
+	{
+		owner = DEN
+		victory_points = { 
+			6287 50
+		}
+		victory_points = {
+			3325 25
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 8
+			dockyard = 3
+			air_base = 6
+			6287 = {
+				naval_base = 8
+			}
+			3325 = {
+				naval_base = 3
+			}
+			6361 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = DEN
+	}
+
+	provinces= {
+		3260 3305 3325 3374 6287 6361 6393 
+	}
+
+	local_supplies=15.0 
+}

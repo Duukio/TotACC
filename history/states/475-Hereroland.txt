@@ -1,0 +1,23 @@
+state={
+id=475
+	
+
+	name="STATE_475"
+
+	manpower = 450000
+	
+	state_category = wasteland
+
+	history={
+		owner = SAF
+		buildings = {
+            school = 2
+			infrastructure = 1
+		}
+		add_core_of = SAF
+	}
+
+	provinces={
+		12921 13333 13334 13220 10978 13230 2207 13231 2229 13237
+	}
+}

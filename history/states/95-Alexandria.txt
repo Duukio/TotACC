@@ -1,0 +1,29 @@
+state={
+id=95
+	name="STATE_95"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		victory_points = { 4076 40 }
+		owner = EGY
+		buildings = {
+            school = 2
+			infrastructure = 3
+			dockyard = 1
+			arms_factory = 1
+			industrial_complex = 2
+			4145 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = EGY
+
+	}
+	provinces={
+		992 1071 4076 4145 
+	}
+	manpower=5299718
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

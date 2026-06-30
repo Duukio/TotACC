@@ -1,0 +1,33 @@
+
+state={
+	id=147
+	name="STATE_147"
+	resources={
+		steel=20.000
+	}
+
+	history={
+		victory_points = {
+			12473 20 
+		}
+		owner = SYR
+		buildings = {
+			school = 2
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = SYR
+
+	}
+
+	provinces={
+		7140 7671 12473 14018 14020 14030 14031 14032
+	}
+	manpower=7833000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

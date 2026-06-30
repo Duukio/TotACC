@@ -1,0 +1,21 @@
+scripted_gui = {
+
+	BIA_wrangle_benin = {
+		context_type = decision_category
+		window_name = "BIA_wrangle_benin"
+
+		visible = {
+			tag = BIA
+			has_country_flag = BIA_wrangle_benin_flag
+		}
+
+		triggers = {
+		}
+
+		properties = {
+		}
+
+		effects = {
+		}
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=1113
+	name="STATE_1113" #Poona
+	provinces={
+		4395 10210 7232 12182 4353
+	}
+	manpower=23449049
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = BHA
+		buildings = {
+			school = 3
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 1
+		}
+		victory_points = {
+			10210 10 #Poona 
+		}
+		add_core_of = BHA
+	}
+}

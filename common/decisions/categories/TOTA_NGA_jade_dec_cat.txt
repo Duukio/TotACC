@@ -1,0 +1,9 @@
+NGA_defanging_the_fula_dec_cat  = {
+     icon = generic_foreign_policy
+	 allowed = {
+		original_tag = NGA
+	}
+	visible = {
+		has_completed_focus = NGA_the_loudest_minority
+	}
+}

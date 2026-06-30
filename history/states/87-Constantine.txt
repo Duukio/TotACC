@@ -1,0 +1,26 @@
+state={
+id=87
+	name="STATE_87"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = ALG
+		victory_points = {
+			11953 10
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = ALG
+
+	}
+	provinces={
+		1058 1141 1160 7065 7081 9943 9976 10078 11953 12034 12051 
+	}
+	manpower=4000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

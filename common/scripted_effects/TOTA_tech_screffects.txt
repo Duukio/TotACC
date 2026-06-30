@@ -1,0 +1,7 @@
+generate_mastercomp_90 = {
+    THIS = {
+        log = "THIS: [THIS.GetName]"
+        generate_character = { token_base = mastercomputer_90_idea }
+        log = "THIS: [THIS.GetName] mastercomp90created"
+    }
+}

@@ -1,0 +1,35 @@
+state={
+id=501
+	
+	name="STATE_501"
+
+	manpower = 575990
+
+	resources={
+		aluminium=300
+	}	
+	
+	state_category = town
+
+	history={
+		add_core_of = SRM
+		owner = SRM
+		victory_points = {
+			10906 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+			12828 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces={
+		1928 10906 12828 
+	}
+
+	local_supplies=0.0 
+}

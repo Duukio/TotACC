@@ -1,0 +1,96 @@
+guiTypes = {
+	containerWindowType = {
+		name = "tota_peace_popup_window"
+		position = { x = 0 y = 0 }
+		size = { width = 600 height = 300 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		show_sound = peace_summary_message
+		#hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+
+		#iconType ={
+		#	name ="peace_popup_bg"
+		#	spriteType = "GFX_peace_popup_bg"
+		#	position = { x= 14 y = 63 }
+		#	alwaystransparent = yes
+		#}
+
+		#iconType ={
+		#	name ="diplo_popup_header_bg"
+		#	spriteType = "GFX_diplo_popup_header_bg_large"
+		#	position = { x= 0 y = 8 }
+		#	alwaystransparent = yes
+		#}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 120 y = 25 }
+			textureFile = ""
+			font = "sf_30header"
+			borderSize = {x = 0 y = 0}
+			text = "TOTA_PEACE_POPUP_TITLE"
+			maxWidth = 360
+			maxHeight = 40
+			fixedsize = yes
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 50 y = 86 }
+			font = "tooltip_segoe"
+			borderSize = {x = 0 y = 0}
+			text = "TOTA_PEACE_POPUP_DESCRIPTION"
+			maxWidth = 500
+			maxHeight = 72
+			format = centre
+			vertical_alignment = centre
+		}
+
+		instantTextBoxType = {
+			name = "flavor"
+			position = { x = 50 y = 168 }
+			font = "tooltip_segoe"
+			borderSize = {x = 0 y = 0} #?
+			text = "TOTA_PEACE_POPUP_FLAVOR"
+			maxWidth = 500
+			maxHeight = 72
+			format = centre
+			vertical_alignment = centre
+		}
+		
+		iconType = {
+			name = "flag_1"
+			position = { x = 20 y = 17 }
+			quadTextureSprite = "GFX_player_flag"
+			pdx_tooltip = TOTA_PEACE_POPUP_FLAG1
+		}
+		
+		iconType = {
+			name = "flag_2"
+			position = { x = 490 y = 17 }
+			quadTextureSprite = "GFX_player_flag"
+			pdx_tooltip = TOTA_PEACE_POPUP_FLAG2
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x=213 y =260}
+			quadTextureSprite ="GFX_sort_button_140x29"
+			buttonText = "TOTA_PEACE_POPUP_CLOSE"
+			buttonFont = "tooltip_segoe"
+			shortcut = "RETURN"
+			#clicksound = click_ok
+			clicksound = click_default
+		}
+	}
+}

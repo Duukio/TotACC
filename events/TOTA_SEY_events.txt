@@ -1,0 +1,955 @@
+add_namespace = SEY
+add_namespace = SEY_DEBUG
+add_namespace = SEY_BOUT
+add_namespace = SEY_MONETA
+
+country_event = {
+    id = SEY.1 # Moneta is brought to Fiume
+    title = SEY.1.t
+    desc = SEY.1.desc
+    picture = GFX_report_event_moneta_rijeka
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.1.a
+	}
+}
+country_event = {
+    id = SEY.2 # Moneta is buried in Seychelles
+    title = SEY.2.t
+    desc = SEY.2.desc
+    picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.2.a
+	}
+}
+country_event = {
+    id = SEY.4 # Flavor event that chooses leader #1
+    title = SEY.4.t
+    desc = SEY.4.desc
+    #picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      ai_chance = { factor = 25 
+              modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BOUT
+            }
+        }
+        }
+      name = SEY.4.a
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = 15 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.4.b
+      ai_chance = { factor = 25
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = SPICER
+            }
+        }
+        }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = 15 }
+	}
+    option = {
+      name = SEY.4.c
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BARLOW
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = 15 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.4.d
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = PRINCE
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = 15 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+}
+country_event = {
+    id = SEY.5 # Flavor event that chooses leader #2
+    title = SEY.5.t
+    desc = SEY.5.desc
+    #picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.5.a
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BOUT
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = 15 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.5.b
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = SPICER
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = 15 }
+	}
+    option = {
+      name = SEY.5.c
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BARLOW
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = 15 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.5.d
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = PRINCE
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = 15 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+}
+country_event = {
+    id = SEY.6 # Flavor event that chooses leader #3
+    title = SEY.6.t
+    desc = SEY.6.desc
+    #picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.6.a
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BOUT
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = 15 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.6.b
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = SPICER
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = 15 }
+	}
+    option = {
+      name = SEY.6.c
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BARLOW
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = 15 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.6.d
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = PRINCE
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = 15 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+}
+country_event = {
+    id = SEY.7 # Flavor event that chooses leader #4
+    title = SEY.7.t
+    desc = SEY.7.desc
+    #picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.7.a
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BOUT
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = 15 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.7.b
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = SPICER
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = 15 }
+	}
+    option = {
+      name = SEY.7.c
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BARLOW
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = 15 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.7.d
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = PRINCE
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = 15 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+}
+country_event = {
+    id = SEY.8 # Flavor event that chooses leader #5
+    title = SEY.8.t
+    desc = SEY.8.desc
+    #picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.8.a
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BOUT
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = 15 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.8.b
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = SPICER
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = 15 }
+	}
+    option = {
+      name = SEY.8.c
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BARLOW
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = 15 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+    option = {
+      name = SEY.8.d
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = PRINCE
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = 15 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+	}
+}
+country_event = {
+    id = SEY.9 # Flavor event that chooses leader #6
+    title = SEY.9.t
+    desc = SEY.9.desc
+    #picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.9.a
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BOUT
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = 15 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+      #country_event = {
+      #  id = SEY.10
+      #  days = 5
+      #}
+	}
+    option = {
+      name = SEY.9.b
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = SPICER
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = 15 }
+      #country_event = {
+      #  id = SEY.3
+      #  days = 5
+      #}
+	}
+    option = {
+      name = SEY.9.c
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = BARLOW
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = -5 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = 15 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+      #country_event = {
+      #  id = SEY.3
+      #  days = 5
+      #}
+	}
+    option = {
+      name = SEY.9.d
+      ai_chance = { factor = 25 
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = SEY_ai_route
+                option = PRINCE
+            }
+        }
+      }
+      add_to_variable = { PRINCE_DRIFT = 15 }
+      add_to_variable = { VIKTOR_DRIFT = -5 }
+      add_to_variable = { BARLOW_DRIFT = -5 }
+      add_to_variable = { SPICER_DRIFT = -5 }
+      #country_event = {
+      #  id = SEY.3
+      #  days = 5
+      #}
+	}
+}
+country_event = {
+    id = SEY.10 # Flavor event that chooses leader #7
+    title = SEY.10.t
+    desc = SEY.10.desc
+    #picture = GFX_report_event_moneta_seicelle
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.10.a
+      trigger = {
+        check_variable = { VIKTOR_DRIFT > 40 }
+      }
+      mark_focus_tree_layout_dirty = yes
+      set_country_flag = BOUT_CHOSEN
+      load_focus_tree = SEY_bout
+      mark_focus_tree_layout_dirty = yes
+      set_politics = {
+        ruling_party = reformist_socialism
+      }
+      set_party_name = {
+          ideology = reformist_socialism
+          long_name = SEY_bout_party_long
+          name = SEY_bout_party
+      }
+    complete_national_focus = SEY_ready_to_rodeo 
+    set_country_flag = Bout_Cabinet
+      mark_focus_tree_layout_dirty = yes
+      mark_focus_tree_layout_dirty = yes
+      clr_country_flag = SEY_succession_flag
+      recall_volunteers_from = SAF
+      add_ideas = kosygin_liberman_econ_theory
+	}
+    option = {
+      name = SEY.10.b
+      trigger = {
+        check_variable = { SPICER_DRIFT > 40 }
+      }
+      set_politics = {
+        ruling_party = technocracy
+      }
+      set_country_flag = SPICER_CHOSEN
+      clr_country_flag = Moneta_Cabinet
+      set_country_flag = Spicer_Cabinet
+      add_ideas = mitsubishi_managerialism
+      activate_advisor = 	SEY_simon_mann_sec
+      activate_advisor = 	SEY_mark_thatcher
+      activate_advisor = 	SEY_douglas_carswell
+      clr_country_flag = SEY_succession_flag
+       load_focus_tree = SEY_spicer
+       mark_focus_tree_layout_dirty = yes
+	}
+    option = {
+      name = SEY.10.c
+      trigger = {
+        check_variable = { BARLOW_DRIFT > 40 }
+      }
+      retire_country_leader = yes
+      Eeben_Barlow = {
+        promote_character = yes
+      }
+      load_focus_tree = SEY_barlow
+      set_country_flag = BARLOW_CHOSEN
+      clr_country_flag = SEY_succession_flag
+	}
+    option = {
+      name = SEY.10.d
+      trigger = {
+        check_variable = { PRINCE_DRIFT > 40 }
+      }
+      Erik_Prince = {
+        promote_character = yes
+      }
+      load_focus_tree = SEY_prince
+      add_ideas = phoenix_model
+      set_country_flag = PRINCE_CHOSEN
+      clr_country_flag = SEY_succession_flag
+	}
+}
+country_event = {
+    id = SEY.3 # last time old man
+    title = SEY.3.t
+    desc = SEY.3.desc
+    #picture = 
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.3.a
+      country_event = {
+        id = SEY_MONETA.2
+        days = 10
+      }
+	}
+    option = {
+      name = SEY.3.b
+      country_event = {
+        id = SEY_MONETA.3
+        days = 10
+      }
+	}
+}
+country_event = {
+    id = SEY_MONETA.2 # last time old man
+    title = SEY_MONETA.2.t
+    desc = SEY_MONETA.2.desc
+    #picture = 
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY_MONETA.2.a
+      country_event = {
+        id = SEY.10
+        days = 10
+      }
+      create_country_leader = {
+      	name = "National Assembly"
+      	desc = ""
+      	picture = "gfx/leaders/SEY/National Assembly.dds"
+      	expire = "2040.1.1"
+      	ideology = milgov
+      	traits = {
+      	}
+      }
+      add_political_power = -100
+      add_war_support = 0.10
+      add_manpower = -1
+	}
+}
+country_event = {
+    id = SEY_MONETA.3 # last time old man
+    title = SEY_MONETA.3.t
+    desc = SEY_MONETA.3.desc
+    #picture = 
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY_MONETA.3.a
+      country_event = {
+        id = SEY.10
+        days = 10
+      }
+      retire_character = Tullio_Moneta
+      create_country_leader = {
+      	name = "National Assembly"
+      	desc = ""
+      	picture = "gfx/leaders/SEY/National Assembly.dds"
+      	expire = "2040.1.1"
+      	ideology = milgov
+      	traits = {
+      	}
+      }
+      add_political_power = 10
+      add_stability = 0.03
+      add_war_support = -0.03
+	}
+}
+  country_event = {
+    id = SEY_BOUT.1 # leaders
+    title = SEY_BOUT.1.t
+    desc = SEY_BOUT.1.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+   option = {
+      name = SEY_BOUT.1.a
+      add_political_power = 50
+    }
+}
+  country_event = {
+    id = SEY.910 # transvaalphone
+    title = SEY.910.t
+    desc = SEY.910.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+   option = {
+    add_stability = -0.05
+    add_political_power = 100
+      name = SEY.910.a
+    }
+}
+  country_event = {
+    id = SEY.915 # tourism
+    title = SEY.915.t
+    desc = SEY.915.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+   option = {
+      name = SEY.915.a
+    }
+   option = {
+      name = SEY.915.b
+    }
+}
+  country_event = {
+    id = SEY.888 # stalin reference
+    title = SEY.888.t
+    desc = SEY.888.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+   option = { #no purge
+      name = SEY.888.a
+      add_stability = 0.1
+      add_political_power = -100
+	      delete_units = {
+	      	division_template = "Blackwater PMC"
+	      	disband = no
+	      }
+    }
+   option = { #purge
+      name = SEY.888.b
+      add_stability = -0.2
+      add_war_support = 0.1
+      Eeben_Barlow = {
+        retire = yes
+      }
+      Tim_Spicer = {
+        retire = yes
+      }
+      add_field_marshal_role = {
+        character = Viktor_Bout
+        skill = 5
+        attack_skill = 4
+        defense_skill = 4
+        planning_skill = 4
+        logistics_skill = 5
+      }
+      add_corps_commander_role = {
+        character = Andrei_Troshev
+        skill = 3
+        attack_skill = 3
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 3
+      }
+      add_political_power = 300
+    }
+   option = { #heavy purge
+      name = SEY.888.c
+      add_stability = -0.3
+      add_political_power = 400
+      add_field_marshal_role = {
+        character = Viktor_Bout
+        skill = 5
+        attack_skill = 4
+        defense_skill = 4
+        planning_skill = 4
+        logistics_skill = 5
+      }
+      add_corps_commander_role = {
+        character = Andrei_Troshev
+        skill = 3
+        attack_skill = 3
+        defense_skill = 4
+        planning_skill = 3
+        logistics_skill = 3
+      }
+      Yevgeny_Prigozhin = {
+        add_corps_commander_role = {
+		    	skill = 4
+		    	attack_skill = 5
+		    	defense_skill = 3
+		    	planning_skill = 4
+		    	logistics_skill = 4
+        }
+      }
+      Eeben_Barlow = {
+        retire = yes
+      }
+      Tim_Spicer = {
+        retire = yes
+      }
+      Simon_Mann = {
+         retire = yes
+       }
+    }
+}
+  country_event = {
+    id = SEY.919 # elections
+    title = SEY.919.t
+    desc = SEY.919.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+   option = {
+      name = SEY.919.a
+    }
+   option = {
+      name = SEY.919.b
+    }
+}
+  country_event = {
+    id = SEY.914 # spy from teufort two
+    title = SEY.914.t
+    desc = SEY.914.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+   option = {
+    army_experience = 50
+      name = SEY.914.a
+    }
+}
+
+country_event = {
+  id = SEY_BOUT.3 # EFF DAY YOT
+  title = SEY_BOUT.3.t
+  desc = SEY_BOUT.3.desc
+  #picture =
+  is_triggered_only = yes
+  fire_only_once = yes 
+
+ option = {
+    name = SEY_BOUT.3.a
+    			add_to_variable = { seyanat_drift = 0.01 }
+          custom_effect_tooltip = "Adds +1% daily support for the ruling party to Anational Revolution."
+  }
+}
+country_event = {
+    id = SEY_DEBUG.1 # leaders
+    title = SEY_DEBUG.1.t
+    desc = SEY_DEBUG.1.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY_DEBUG.1.a
+      create_country_leader = {
+      	name = "Erik Prince"
+      	desc = ""
+      	picture = "gfx/leaders/SEY/Erik Prince.dds"
+      	expire = "2040.1.1"
+      	ideology = milgov
+      	traits = {
+      	}
+      }
+	}
+  option = {
+    name = SEY_DEBUG.1.b
+    create_country_leader = {
+    	name = "Eeben Barlow"
+    	desc = ""
+    	picture = "gfx/leaders/SEY/Eeben Barlow.dds"
+    	expire = "2040.1.1"
+    	ideology = anolib
+    	traits = {
+    	}
+    }
+  }
+  option = {
+    name = SEY_DEBUG.1.c
+    set_politics = {
+      ruling_party = reformist_socialism
+    }
+  }
+  option = {
+    name = SEY_DEBUG.1.d
+    set_politics = {
+      ruling_party = technocracy
+    }
+  }
+}
+country_event = {
+    id = SEY_DEBUG.2 # leaders
+    title = SEY_DEBUG.2.t
+    desc = SEY_DEBUG.2.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY_DEBUG.2.a
+      create_country_leader = {
+      	name = "National Assembly"
+      	desc = ""
+      	picture = "gfx/leaders/SEY/National Assembly.dds"
+      	expire = "2040.1.1"
+      	ideology = milgov
+      	traits = {
+      	}
+      }
+      add_political_power = -100
+      add_war_support = 0.10
+      add_manpower = -1
+	}
+}
+country_event = {
+    id = SEY_DEBUG.3 # leaders
+    title = SEY_DEBUG.3.t
+    desc = SEY_DEBUG.3.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY_DEBUG.3.a
+      create_country_leader = {
+      	name = "National Assembly"
+      	desc = ""
+      	picture = "gfx/leaders/SEY/National Assembly.dds"
+      	expire = "2040.1.1"
+      	ideology = milgov
+      	traits = {
+      	}
+      }
+      add_political_power = 25
+	}
+}
+country_event = {
+    id = SEY.126 # Ohio
+    title = SEY.126.t
+    desc = SEY.126.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.126.a
+      set_country_flag = diehard_agility
+	}
+    option = {
+      name = SEY.126.b
+      set_country_flag = diehard_brute
+	}
+}
+country_event = {
+    id = SEY.127 # Ohio
+    title = SEY.127.t
+    desc = SEY.127.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.127.a
+      add_stability = -0.10
+      add_popularity = {
+        ideology = autocracy
+        popularity = 0.2
+      }
+      retire_character = Viktor_Bout
+      add_manpower = -350
+	}
+}
+country_event = {
+    id = SEY.128 # Ohio
+    title = SEY.128.t
+    desc = SEY.128.desc
+    #picture =
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SEY.128.a
+      add_stability = 0.03
+      add_manpower = -1000
+      add_to_variable = { SEY.GDP = 10 }
+      custom_effect_tooltip = "Adds 10 billion USD to our GDP."
+	}
+}

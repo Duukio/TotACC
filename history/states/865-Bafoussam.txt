@@ -1,0 +1,28 @@
+state={
+id=865
+	name="STATE_865"
+    buildings_max_level_factor = 1
+
+	
+	history={
+		owner = CAM
+		victory_points = {
+			13750 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = CAM
+
+	}
+
+	provinces={
+		13729 13750
+	}
+	manpower=1875000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

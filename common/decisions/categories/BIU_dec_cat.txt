@@ -1,0 +1,20 @@
+BIU_raids_into_abuja  = {
+    icon = generic_foreign_policy
+	visible_when_empty = yes
+    visible = { 
+        tag = BIU
+		BIU = {
+		has_country_flag = BIU_raids
+		}
+    }
+}
+BIU_operation_lake  = {
+    icon = generic_foreign_policy
+	visible_when_empty = yes
+    visible = { 
+        tag = BIU
+		BIU = {
+		has_country_flag = operation_lake
+		}
+    }
+}

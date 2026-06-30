@@ -1,0 +1,53 @@
+add_namespace = DDR
+
+country_event = {
+	id = DDR.1 # Putin takes control of Prusia
+	title = DDR.1.t
+	desc = DDR.1.desc
+	picture = GFX_report_event_kurginyan
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #Embrace it
+		name = DDR.1.a
+		ai_chance = { factor = 50 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.227
+				days = 3
+			}
+		}
+		DDR = {
+			set_politics = {
+				ruling_party = autocracy
+			}
+			create_country_leader = {
+				name = "Vladimir Putin"
+				desc = "POLITICS_PUTIN_DESC"
+				picture = "gfx/leaders/DDR/Putin.png"
+				expire = "2040.1.1"
+				ideology = autocracy
+				traits = {
+				}
+			}
+			set_popularities = {
+				autocracy = 35
+			}
+		}
+	}
+	option = { #Resist it
+		name = DDR.1.b
+		ai_chance = { factor = 50 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.228
+				days = 3
+			}
+		}
+	}
+}

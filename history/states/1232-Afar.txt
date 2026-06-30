@@ -1,0 +1,28 @@
+state={
+id=1232
+	name="STATE_1232"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	}
+	history={
+			victory_points = {
+			7980 5
+		}
+		owner = BSR
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = BSR
+	}
+	provinces={
+		7980 5041 
+	}
+	manpower=2070260
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

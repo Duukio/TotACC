@@ -1,0 +1,125 @@
+guiTypes = {
+	containerWindowType = {
+		name = "SEY_succession"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height = 1200 }
+		Orientation = center
+
+		iconType = {
+			name = "Barlow_portrait"
+			spriteType = "GFX_leader_background_Barlow"
+			position = { x = 92 y = 30 }
+			pdx_tooltip = "BARLOW_DESC_SUC"
+		}
+		instantTextboxType = {
+			name = "barlow_name"
+			position = { x = 186 y = 253 }
+			font = "sf_18mbs"
+			text = "Eeben Barlow"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+			#vertical_alignment = center
+		}
+        iconType = {
+            name = "BARLOW_BG"
+            spriteType = "GFX_SEY_prog_background_bar"
+            position = { x = 360 y = 30 }
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+        iconType = {
+            name = "BARLOW_DRIFT_TT"
+            spriteType = "GFX_SEY_progress_bar"
+            position = { x = 360 y = 30 }
+            pdx_tooltip = BARLOW_DRIFT_TT
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+		iconType = {
+			name = "Prince_portrait"
+			spriteType = "GFX_leader_background_Prince"
+			position = { x = 92 y = 300 }
+			pdx_tooltip = "PRINCE_DESC_SUC"
+		}
+		instantTextboxType = {
+			name = "erik_name"
+			position = { x = 186 y = 523 }
+			font = "sf_18mbs"
+			text = "Erik Prince"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+			#vertical_alignment = center
+		}
+        iconType = {
+            name = "PRINCE_BG"
+            spriteType = "GFX_SEY_prog_background_bar"
+            position = { x = 360 y = 300 }
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+        iconType = {
+            name = "PRINCE_DRIFT_TT"
+            spriteType = "GFX_SEY_progress_bar"
+            position = { x = 360 y = 300 }
+            pdx_tooltip = PRINCE_DRIFT_TT
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+		iconType = {
+			name = "Spicer_portrait"
+			spriteType = "GFX_leader_background_Spicer"
+			position = { x = 92 y = 580 }
+			pdx_tooltip = "SPICER_DESC_SUC"
+		}
+		instantTextboxType = {
+			name = "spicer_name"
+			position = { x = 186 y = 803 }
+			font = "sf_18mbs"
+			text = "Tim Spicer"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+			#vertical_alignment = center
+		}
+        iconType = {
+            name = "SPICER_BG"
+            spriteType = "GFX_SEY_prog_background_bar"
+            position = { x = 360 y = 580 }
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+        iconType = {
+            name = "SPICER_DRIFT_TT"
+            spriteType = "GFX_SEY_progress_bar"
+            position = { x = 360 y = 580 }
+            pdx_tooltip = SPICER_DRIFT_TT
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+		iconType = {
+			name = "Viktor_portrait"
+			spriteType = "GFX_leader_background_Bout"
+			position = { x = 92 y = 850 }
+			pdx_tooltip = "VIKTOR_DESC_SUC"
+		}
+		instantTextboxType = {
+			name = "viktor_name"
+			position = { x = 186 y = 1073 }
+			font = "sf_18mbs"
+			text = "Viktor Bout"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+			#vertical_alignment = center
+		}
+        iconType = {
+            name = "VIKTOR_BG"
+            spriteType = "GFX_SEY_prog_background_bar"
+            position = { x = 360 y = 850 }
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+        iconType = {
+            name = "VIKTOR_DRIFT_TT"
+            spriteType = "GFX_SEY_progress_bar"
+            position = { x = 360 y = 850 }
+            pdx_tooltip = VIKTOR_DRIFT_TT
+            #frame = "BRA_SOCTRENDS_EA"
+        }
+	}
+}

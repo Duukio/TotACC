@@ -1,0 +1,15 @@
+﻿l_english:
+
+ GEN_Hire_Mercs:0 "Mercenaries"
+ GEN_Hire_SEY:0 "Enlist Seychellois PMCs"
+ 
+ Mercs.1.t:0 "Seychellois PMC Contract is Up"
+ Mercs.1.d:0 "A Year has passed since we paid for the Mercenary forces to supplement our army, meaning that their contract with our government has expired. We could extend their contract by another year, or end their contract with our government."
+ Mercs.1.a:0 "We have no use for them."
+ Mercs.1.b:0 "We still need them, extend the contract by a year!"
+ 
+ SEY_PMC_idea:0 "Seychellois PMCs"
+ mercenary_contract_extension:0 "Mercenary Contract Extension"
+ 
+ SEY_PMC_trait:0 "Seychellois Mercenary"
+ SEY_PMC_trait_desc:0 "§LThis commander is part of the Seychellois PMC.\n\nWhen their contract is up, they will have no obligation to remain with us.§!"

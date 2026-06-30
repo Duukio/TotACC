@@ -1,0 +1,32 @@
+state={
+id=573
+	name="STATE_573"
+    buildings_max_level_factor = 1
+	manpower = 3285874
+	
+	
+	state_category = city
+
+	history={
+		owner = USA
+		victory_points = {
+			1440 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+			air_base = 4
+			1440 = {
+				naval_base = 3
+
+			}
+		}
+	}
+
+	provinces={
+		1440 4155 
+	}
+
+	local_supplies=0.0 
+}

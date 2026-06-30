@@ -1,0 +1,40 @@
+state={
+    id=976
+        
+    
+        name="STATE_976"
+    
+        manpower = 1200000
+        
+        state_category = metropolis
+        resources={
+            oil=65
+        }
+    
+        history={
+            owner = PGR
+            buildings = {
+                school = 4
+                infrastructure = 5
+                arms_factory = 4
+                industrial_complex = 9
+                13922 = {
+                    naval_base = 4
+                }
+            }
+            victory_points = {
+                13922 50 #Doha
+            }
+            victory_points = {
+                13920 10 #Al-Rayyan
+            }
+            add_core_of = UAE
+			add_core_of = PGR
+        }
+    
+        provinces={
+        13922 13920
+        }
+    
+        local_supplies=0.0 
+    }

@@ -1,0 +1,25 @@
+state={
+	id=928
+	name="STATE_928"
+    buildings_max_level_factor = 1
+	provinces={
+		13274 1833 4584 13275 7576
+	}
+	manpower=250000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+	state_category=town
+	history={
+		set_demilitarized_zone = yes
+		#victory_points = {
+		#	13274 5 #Umtata
+		#}	
+		owner = SAF
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			school = 2
+		}
+		add_core_of = SAF
+	}
+}

@@ -1,0 +1,22 @@
+state={
+id=55
+	name="STATE_55"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = GUN
+		victory_points = { 13400 15 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = GUN
+	}
+	provinces={
+		1909 4957 12802 12858 13395 13396 13397 13398 13399 13400 13401 13402 13403 
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

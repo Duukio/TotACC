@@ -1,0 +1,35 @@
+
+state={
+id=478
+	name="STATE_478" # Transvaal
+	
+	manpower = 8000000
+	
+	state_category = large_city
+	
+	resources={
+		steel=100
+		strategic_minerals=200
+	}
+
+	history={
+		victory_points = {
+		13283 20
+		}
+		victory_points = {
+		13286 5
+		}
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 3
+		
+	}
+}
+	provinces={
+		13283 13284 5217 13286
+	}
+}

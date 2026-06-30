@@ -1,0 +1,13 @@
+focus_tree = {
+	id = SEY_barlow
+	country = {
+		factor = 0
+		modifier = {
+			add = 666
+			tag = SEY
+			has_country_flag = BARLOW_CHOSEN
+		}
+	}
+	shared_focus = SEY_steady_as_she_goes
+	shared_focus = SEY_new_conflicts
+}

@@ -1,0 +1,16 @@
+guiTypes = {
+	containerWindowType = {
+		name = "open_bia_monarchy_menu"
+		position = { x = 10 y = 80 }
+
+		buttonType = {
+			name = "open_monarch_menu_button"
+			quadTextureSprite ="GFX_BIA_monarchy_button"
+			position = { x= -850 y = -32 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			shortcut = "shift+l"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TOTA_patchworker_open"
+			position = { x=-540 y=430 }
+            orientation = UPPER_RIGHT
+			size = { width=100%% height=100%% }
+		buttonType = {
+			name = "TOTA_patchworker_button"
+			quadTextureSprite ="GFX_TOTA_patchworker_button"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "CAL_patch_tt"
+		}
+	}
+}

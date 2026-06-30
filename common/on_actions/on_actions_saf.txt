@@ -1,0 +1,54 @@
+on_actions = {
+     on_peace = {
+         effect = {
+             if = {
+                  limit = {
+                  THIS = { original_tag = AWB }
+ 			            NOT =  {
+ 			            	has_war_with = RSB
+ 			            	has_war_with = SAF
+ 			            	has_war_with = NAM
+ 			            	has_war_with = EFF
+ 			            }
+                  }
+              AWB = {
+                  load_focus_tree = AWB_postwar
+              }
+             }
+             else_if = {
+                 limit = {
+             THIS = {
+                  original_tag = EFF 
+ 			    NOT =  {
+ 			    	has_war_with = RSB
+ 			    	has_war_with = SAF
+ 			    	has_war_with = NAM
+ 			    	has_war_with = AWB
+ 			    }
+                  has_country_flag = MALEMA_won
+              }
+             }
+             EFF = {
+                 load_focus_tree = EFF_malema
+             }
+             }
+             else_if = {
+                 limit = {
+                      THIS = {
+                          original_tag = EFF
+ 			            NOT =  {
+ 			            	has_war_with = RSB
+ 			            	has_war_with = SAF
+ 			            	has_war_with = AWB
+ 			            }
+                          NOT =  { has_country_flag = MALEMA_won }
+                      }
+                 }
+                      EFF = {
+                          load_focus_tree = EFF_postwar
+                      }
+             }
+             else = {}
+         }
+     }
+}

@@ -1,0 +1,32 @@
+state={
+id=462
+	name="STATE_462"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = MZB
+		victory_points = { 13663 20 }
+		victory_points = {
+			8245 5
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 1
+			8245 = {
+			naval_base = 2
+			}
+			13663 = {
+			naval_base = 2
+			}
+		}
+		add_core_of = MZB
+	}
+	provinces={
+		13663 8245 5212 5177 2193
+	}
+	manpower=1000988
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

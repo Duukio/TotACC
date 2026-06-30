@@ -1,0 +1,26 @@
+state={
+id=490
+	
+
+	name="STATE_490"
+
+	manpower = 2000000
+	
+	state_category = rural
+
+	history={
+		owner = COL
+		victory_points = { 12729 1 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = COL
+	}
+
+	provinces={
+		1887 2007 5026 10792 12729 12770 12825 
+	}
+
+	local_supplies=0.0 
+}

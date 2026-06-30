@@ -1,0 +1,46 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+
+	gump = {
+		abbreviation = "GUM"
+		sprite = GUMP
+		map_icon_category = infantry
+		
+		priority = 599
+		ai_priority = 200
+		active = no
+
+		type = {
+			mechanized
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 25
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 200
+
+		#Misc Abilities
+		training_time = 180
+		suppression = 2
+		weight = 0.3
+		soft_attack = 0.2
+		
+		supply_consumption = 0.06
+	
+		need = {
+			gump_equipment = 100
+		}
+	}
+}

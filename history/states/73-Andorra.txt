@@ -1,0 +1,22 @@
+state={
+id=73
+	name="STATE_73"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = ADR
+		victory_points = { 1901 5 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = ADR
+	}
+	provinces={
+		1901 
+	}
+	manpower=77543
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

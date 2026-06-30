@@ -1,0 +1,202 @@
+capital = 1255
+
+oob = "generic_2021"
+
+set_variable = { GDP = 600 } set_variable = { DEBT = 50 } set_variable = { REAL_GROWTH = 3 }
+
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+country_event = {
+id = CHD.1
+days = 810
+}
+add_ideas = {
+	TRP_his_excellency
+	TRP_jdpon_city
+}
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+create_faction = AFRICA_INDEPENDENCE_BLOC
+TRP = { add_to_faction = GUN }
+TRP = { add_to_faction = BKF }
+TRP = { add_to_faction = MLI }
+TRP = { add_to_faction = BEN }
+TRP = { add_to_faction = GBS }
+set_variable = { TRP.FACTIONSTATUS = 14 }
+set_variable = { GUN.FACTIONSTATUS = 13 }
+set_variable = { BKF.FACTIONSTATUS = 13 }
+set_variable = { MLI.FACTIONSTATUS = 13 }
+set_variable = { BEN.FACTIONSTATUS = 13 }
+set_variable = { MGD.FACTIONSTATUS = 15}
+set_variable = { LUR.FACTIONSTATUS = 15}
+set_variable = { GBS.FACTIONSTATUS = 13 }
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+
+set_variable = {
+var = SOCTRENDS_DC
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 50
+}
+tota_variable_clamping = yes
+set_convoys = 100
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 10
+        
+        
+        
+        
+        revolutionary_right = 0
+        
+        dissident_right = 10
+        liberalism = 0
+        hardline_socialism = 10
+        
+        autocracy = 10
+        
+        
+        reformist_socialism = 50
+        socdem = 0
+        technocracy = 10
+
+}
+
+set_politics = {
+	
+	ruling_party = reformist_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Muammar Al-Gaddafi"
+	desc = "POLITICS_GADDAFI_DESC"
+	picture = "gfx/leaders/TRP/Portrait_TRP_Muammar_Gaddafi.png"
+	expire = "2040.1.1"
+	ideology = lwnat
+	traits = {
+	TRP_brotherly_leader
+	}
+}
+create_country_leader = {
+	name = "Abdullah Al-Rafadi"
+	desc = ""
+	picture = "gfx/leaders/TRP/Abdullah Al-Rafadi.png"
+	expire = "2040.1.1"
+	ideology = natlib
+	traits = {
+	}
+}

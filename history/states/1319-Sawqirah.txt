@@ -1,0 +1,28 @@
+
+state={
+	id=1319
+	name="STATE_1319"
+		resources={
+		oil=50
+	}
+	provinces={
+		8002 14087 14088 
+	}
+	manpower=26172
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = DHO
+		add_core_of = OMA
+		add_core_of = DHO
+		buildings = {
+			school = 2
+			infrastructure = 2
+		}
+		victory_points = {
+			8002 1
+		}
+	}
+}

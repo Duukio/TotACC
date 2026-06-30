@@ -1,0 +1,28 @@
+state={
+id=170
+	name="STATE_170"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	steel = 100
+	aluminium = 10
+	}
+	history={
+		owner = HUN
+		victory_points = { 11610 10 }
+		buildings = {
+            school = 2
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 4
+		}
+		add_core_of = HUN
+	}
+	provinces={
+		682 3680 6670 6685 6700 9624 9643 11610 11625 
+	}
+	manpower=1100000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

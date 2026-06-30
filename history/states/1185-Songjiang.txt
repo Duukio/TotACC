@@ -1,0 +1,27 @@
+
+state={
+	id=1185
+	name="STATE_1185"
+    buildings_max_level_factor = 1
+	provinces={
+		4592 1545 1571 1693 1732 3815 4551 4649 5427 6863 7526 7569 7591 7670 7767 9623 9782 9798 10215 10368 10376 10379 10463 10503 10519 10521 10698 12342 12355 12412 12443 12482 12500 
+	}
+	manpower=13491939
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = QIE
+		add_core_of = QIE
+		add_core_of = PRC
+		set_demilitarized_zone = yes
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			4592 20 
+		}
+	}
+}

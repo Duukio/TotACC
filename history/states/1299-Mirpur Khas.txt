@@ -1,0 +1,26 @@
+
+state={
+	id=1299
+	name="STATE_1299"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		buildings = {
+			school = 2
+			infrastructure = 2
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		1147 1980
+	}
+	manpower=5000000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

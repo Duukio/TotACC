@@ -1,0 +1,234 @@
+add_namespace = SOM
+add_namespace = somalia_border
+
+country_event = {
+    id = SOM.1 # eaf invasion
+    title = SOM.1.t
+    desc = SOM.1.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SOM.1.a
+		every_country = {
+			news_event = {	
+				id = WNE.47
+				days = 0
+			}
+		}
+		EAF = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 454
+					num_provinces = 2
+					on_win = somalia_border.1
+					on_lose = somalia_border.2
+					on_cancel = somalia_border.3 #hopefully doesn't need to be fired
+					modifier = 0.15
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 914
+					num_provinces = 2
+					on_win = somalia_border.2
+					on_lose = somalia_border.1
+					on_cancel = somalia_border.3 #hopefully doesn't need to be fired
+				}
+			}
+		}
+	}
+}
+country_event = {
+    id = SOM.2 # ethiopian invasion of statelets
+    title = SOM.2.t
+    desc = SOM.2.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SOM.2.a
+		every_country = {
+			news_event = {	
+				id = WNE.47
+				days = 2
+			}
+		}
+		ETH = {
+			declare_war_on = {
+				target = GAB
+				type = annex_everything
+			}
+		}
+		ETH = {
+			declare_war_on = {
+				target = TOG
+				type = annex_everything
+			}
+		}
+		ETH = {
+			declare_war_on = {
+				target = BSR
+				type = annex_everything
+			}
+		}
+		random = {
+			chance = 33
+			MGD = {
+				country_event = SOM.3
+			}
+		}
+	}
+}
+country_event = {
+    id = SOM.3 # Somalia invades early
+    title = SOM.3.t
+    desc = SOM.3.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SOM.3.a
+	  declare_war_on = {
+		target = ETH
+		type = annex_everything
+	  }
+		every_country = {
+			news_event = {	
+				id = WNE.202
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+    id = SOM.4 # Somalia is invaded by unified Ethiopia
+    title = SOM.4.t
+    desc = SOM.4.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SOM.4.a
+	  ETH = {
+		declare_war_on = {
+			target = MGD
+			type = annex_everything
+		}
+	  }
+		every_country = {
+			news_event = {	
+				id = WNE.203
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+    id = SOM.1975 # Ethiopia declares the Empire
+    title = SOM.1975.t
+    desc = SOM.1975.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SOM.1975.a
+	  ETH = {
+		set_cosmetic_tag = ETH_EMPIRE
+		set_country_flag = has_double_leader
+		set_country_flag = zera_yacob
+	  }
+	}
+}
+country_event = {
+    id = somalia_border.1 # epic soymalia fail
+    title = somalia_border.1.t
+    desc = somalia_border.1.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = somalia_border.1.a
+		set_global_flag = show_peace_popup_alert
+		set_global_flag = war_won
+		add_to_variable = { global.peace_popup_dirty = 1 }
+		EAF = {
+			save_global_event_target_as = winning_country
+		}
+		SOM = {
+			save_global_event_target_as = losing_country
+		}
+			914 = {
+				transfer_state_to = EAF
+				set_demilitarized_zone = yes
+			}
+			every_country = {
+				news_event = {	
+					id = WNE.46
+					days = 0
+				}
+			}
+		}
+	}
+country_event = {
+    id = somalia_border.2 # epic swahili fail against PVNT Power...
+    title = somalia_border.2.t
+    desc = somalia_border.2.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = somalia_border.2.a
+		set_global_flag = show_peace_popup_alert
+		set_global_flag = war_won
+		add_to_variable = { global.peace_popup_dirty = 1 }
+		SOM = {
+			save_global_event_target_as = winning_country
+		}
+		EAF = {
+			save_global_event_target_as = losing_country
+		}		
+		every_country = {
+			news_event = {	
+				id = WNE.45
+				days = 0
+			}
+		}
+		SOM = {
+			country_event = {
+				id = SOM.2
+				days = 128
+			}
+		}			
+	}
+}	
+country_event = {
+    id = SOM.2 # PVNT ARISE....
+    title = SOM.2.t
+    desc = SOM.2.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SOM.2.a
+		SOM = {
+				declare_war_on = {
+				target = UNS
+				type = annex_everything
+			}
+				declare_war_on = {
+				target = MGD
+				type = annex_everything
+			}
+		}		
+	}
+}	

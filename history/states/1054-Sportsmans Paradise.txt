@@ -1,0 +1,25 @@
+
+state={
+	id=1054
+	name="STATE_1054"
+    buildings_max_level_factor = 1
+	provinces={
+		1559 4522 7555 7599 12401 
+	}
+	manpower=1012345
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = USA
+		victory_points = {
+			12401 8
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		add_core_of = USA
+	}
+}

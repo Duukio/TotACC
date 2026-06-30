@@ -1,0 +1,14 @@
+rustenburg_must_go_mod = {
+	icon = rustenburg_must_go_icon
+	enable = {
+        AWB = {
+            has_completed_focus = AWB_rustenburg_must_go
+        }
+	}
+	remove_trigger = {
+        AWB = {
+            controls_state = 478
+        }
+	}
+		local_supplies = -0.25
+}

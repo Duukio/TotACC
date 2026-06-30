@@ -1,0 +1,31 @@
+state={
+id=261
+	name="STATE_261"
+    buildings_max_level_factor = 1
+	state_category=city
+	
+	resources={
+	}
+
+	history={
+		victory_points = {
+			9817 20
+		}		
+		owner = POR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 2
+			dockyard = 3
+			arms_factory = 3
+		}
+		add_core_of = POR
+
+	}
+	provinces={
+		724 877 3892 6921 6941 9817 11673 
+	}
+	manpower=3700000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

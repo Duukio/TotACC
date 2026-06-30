@@ -1,0 +1,692 @@
+generate_soctrends_because_i_cant_be_assed_lol = {
+    if = {
+        limit = {
+            THIS = {
+                check_variable = {
+                var = SOCTRENDS_DC
+                value = 50
+                compare = equals
+                }
+                check_variable = {
+                var = SOCTRENDS_DE
+                value = 50
+                compare = equals
+                }
+                check_variable = {
+                var = SOCTRENDS_EE
+                value = 50
+                compare = equals
+                }
+                check_variable = {
+                var = SOCTRENDS_TP
+                value = 50
+                compare = equals
+                }
+                check_variable = {
+                var = SOCTRENDS_EA
+                value = 50
+                compare = equals
+                }
+            }
+        }
+        if = {
+            limit = {
+                has_government = hardline_socialism
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 20
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 15
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 90
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 51
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 20
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = reformist_socialism
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 55
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 30
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 80
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 30
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 30
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = anarchism
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 99
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 80
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 80
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 20
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 60
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = revolutionary_right
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 25
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 20
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 35
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 75
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 50
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = dissident_right
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 75
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 50
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 15
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 80
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 50
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = technocracy
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 20
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 35
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 25
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 30
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 10
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = autocracy
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 30
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 20
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 50
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 65
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 40
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = conservatism
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 75
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 65
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 25
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 70
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 60
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = liberalism
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 45
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 75
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 45
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 45
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 51
+            }
+        }
+        else_if = {
+            limit = {
+                has_government = socdem
+            }
+            set_variable = {
+            var = SOCTRENDS_DC
+            value = 35
+            }
+            set_variable = {
+            var = SOCTRENDS_DE
+            value = 80
+            }
+            set_variable = {
+            var = SOCTRENDS_EE
+            value = 55
+            }
+            set_variable = {
+            var = SOCTRENDS_TP
+            value = 32
+            }
+            set_variable = {
+            var = SOCTRENDS_EA
+            value = 60
+            }
+        }
+    }
+    else ={
+        
+    }
+}
+generate_laws_for_non_default = {
+    if = {
+        limit = {
+            THIS = {
+                has_government = dissident_right
+            }
+        }
+        add_ideas = free_speech #lolberts tend to support free speech
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                has_government = liberalism
+            }
+        }
+        add_ideas = free_speech
+        add_ideas = free_love_and_family
+        add_ideas = social_glass_ceilings
+        add_ideas = multiculturalism
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                has_government = technocracy
+            }
+        }
+        add_ideas = regulated_speech #possibly TSP?
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                has_government = hardline_socialism
+            }
+        }
+        add_ideas = total_state_purview
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                has_government = reformist_socialism
+            }
+        }
+        add_ideas = restricted_speech
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                has_government = revolutionary_right
+            }
+        }
+        add_ideas = total_state_purview
+    }
+    else = {
+        add_ideas = monitored_speech
+    }
+    if = {
+        limit = {
+            THIS = {
+                OR = {
+                original_tag = JAP
+                original_tag = QIE
+                original_tag = PLK
+                original_tag = ZAI
+                }
+            }
+        }
+        add_ideas = sixtyone_to_eighty
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                OR = {
+                original_tag = SOV
+                original_tag = DDR
+                original_tag = BUL
+                original_tag = FRA
+                original_tag = ENG
+                original_tag = SAF #?
+                original_tag = NGA #not sure but lets keep it this way for now
+                original_tag = CAL
+                }
+            }
+        }
+        add_ideas = fortyone_to_sixty
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = CHL
+            }
+        }
+        add_ideas = eighty_to_ninety
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = ALB
+            }
+        }
+        add_ideas = pure_algocracy
+    }
+    else = {
+        add_ideas = five_to_fifteen
+    }
+    if = {
+        limit = {
+            THIS = {
+                check_variable = { GDP < 250 }
+                NOT = {
+                    has_country_flag = is_smol_country
+                    original_tag = ALB
+                }
+            }
+        }
+        add_ideas = less_than_5
+    }
+    else = {}
+    if = {
+        limit = {
+            THIS = {
+                original_tag = FRA
+            }
+        }
+        add_ideas = all_born_free_and_equal
+        add_ideas = no_second_sex
+        add_ideas = free_love_and_family #maybe not?
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                OR = {
+                original_tag = USA
+                original_tag = ERI
+                original_tag = CAN
+                original_tag = PAK
+                }
+            }
+        }
+        add_ideas = multiculturalism
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                OR = {
+                original_tag = SAU
+                original_tag = UAE
+                original_tag = OMA
+                original_tag = KUW
+                }
+            }
+        }
+        add_ideas = caste_system
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                has_government = hardline_socialism
+            }
+        }
+        add_ideas = diversity_equity_inclusion
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = SOV
+            }
+        }
+        add_ideas = diversity_equity_inclusion
+        add_ideas = no_second_sex
+        add_ideas = social_protections
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                OR = {
+                original_tag = SGF
+                original_tag = MSK
+                }
+            }
+        }
+        add_ideas = ethnic_testudo
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = SAF
+            }
+        }
+        add_ideas = full_apartheid
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                has_government = revolutionary_right #will granulate this in the future dw
+            }
+        }
+        add_ideas = full_apartheid
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                is_in_faction_with = JAP
+            }
+        }
+        add_ideas = caste_system
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = CAL
+            }
+        }
+        add_ideas = caste_system
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                capital_scope = {
+                is_on_continent = europe
+                }
+                has_government = reformist_socialism
+            }
+        }
+        add_ideas = diversity_equity_inclusion #woke
+        add_ideas = social_protections
+    }
+    else = {
+        add_ideas = legal_protections
+    }
+    if = {
+        limit = {
+            THIS = {
+                original_tag = DDR
+            }
+        }
+        add_ideas = free_love_and_family
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = SEY
+            }
+        }
+            add_ideas = monitored_speech
+            add_ideas = five_to_fifteen
+            add_ideas = social_silencing
+            add_ideas = caste_system
+            add_ideas = androcentrism
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = ATI
+            }
+        }
+        add_ideas = freedom_of_identity
+        add_ideas = no_second_sex
+        add_ideas = all_born_free_and_equal
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                capital_scope = {
+                    is_on_continent = south_america
+                }
+            }
+        }
+        add_ideas = dont_ask_dont_tell
+        add_ideas = no_second_sex
+        add_ideas = multiculturalism
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                capital_scope = {
+                is_on_continent = africa #;-)
+                }
+                NOT = {
+                    original_tag = SAF
+                    original_tag = BIA
+                    original_tag = ZAM
+                    original_tag = EAF #?
+                }
+            }
+        }
+        add_ideas = threat_of_death
+        add_ideas = androcentrism
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                capital_scope = {
+                    is_on_continent = middle_east #;-)
+                }
+                NOT = {
+                    original_tag = ISP
+                    original_tag = PGR
+                    original_tag = YE2
+                    original_tag = LEB #?
+                    original_tag = IRN
+                }
+            }
+        }
+        add_ideas = threat_of_death
+        add_ideas = androcentrism
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                original_tag = IND
+            }
+        }
+        add_ideas = threat_of_death
+        add_ideas = androcentrism       
+        add_ideas = caste_system 
+    }
+    else_if = {
+        limit = {
+             THIS = {
+                 original_tag = ISP
+            }
+        }
+        add_ideas = social_protections
+        add_ideas = no_second_sex
+    }
+    else_if = {
+        limit = {
+             THIS = {
+                 original_tag = TRP
+            }
+        }
+        add_ideas = feminine_emancipation
+    }
+    else_if = {
+        limit = {
+             THIS = {
+                 original_tag = SAF
+            }
+        }
+        add_ideas = free_love_and_family
+        add_ideas = social_glass_ceilings
+    }
+    else_if = {
+        limit = {
+             THIS = {
+                 is_in_faction_with = FRA
+                 NOT = {
+                    original_tag = FRA
+                 }
+             }
+        }
+        add_ideas = free_love_and_family
+        add_ideas = social_glass_ceilings
+
+    }
+    else_if = {
+        limit = {
+             THIS = {
+                original_tag = IRE
+             }
+        }
+        add_ideas = free_love_and_family
+        add_ideas = social_glass_ceilings
+        add_ideas = diversity_equity_inclusion
+    }
+    else_if = {
+        limit = {
+             THIS = {
+                original_tag = AST
+             }
+        }
+        add_ideas = free_love_and_family
+        add_ideas = social_glass_ceilings
+        add_ideas = ethnic_testudo
+    }
+    else_if = {
+        limit = {
+             THIS = {
+                original_tag = ARG
+             }
+        }
+        add_ideas = dont_ask_dont_tell
+        add_ideas = social_glass_ceilings
+        add_ideas = full_apartheid
+    }
+    else_if = {
+        limit = {
+            THIS = {
+                NOT = {
+                    OR = {
+                        has_idea = free_love_and_family
+                        has_idea = threat_of_death
+                        has_idea = sodomy_laws
+                        has_idea = social_silencing
+                        has_idea = social_protections
+                        has_idea = free_love_and_family
+                        has_idea = freedom_of_identity
+                    }
+                }
+            }
+        }
+        add_ideas = social_silencing
+        add_ideas = social_glass_ceilings
+    }
+    else = {}
+}

@@ -1,0 +1,13 @@
+TAG_decisions_for_mobilization_cat = {
+
+	icon = eng_organize_the_blackshirts
+	visible = {
+        has_country_flag = TAG_decisions_for_mobilization
+	}
+}
+TAG_soctrends_dec_cat = {
+
+	icon = eng_organize_the_blackshirts
+	visible = {
+	}
+}

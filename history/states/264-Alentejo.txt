@@ -1,0 +1,31 @@
+state={
+id=264
+	name="STATE_264"
+    buildings_max_level_factor = 1
+	state_category=town
+	
+	resources={
+	tungsten = 10
+	}
+
+	history={
+		victory_points = {
+			6933 5
+		}		
+		owner = POR
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = POR
+
+	}
+	provinces={
+		980 3846 3866 3886 3926 6884 6933 6986 9765 9819 9869 
+	}
+	manpower=800000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

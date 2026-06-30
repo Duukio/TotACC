@@ -1,0 +1,37 @@
+
+state={
+	
+id=1218
+	name="STATE_1218" #Huehuetenango
+    buildings_max_level_factor = 1
+	manpower = 1170669
+	resources={
+		strategic_minerals=40
+		steel = 10
+	}
+	
+	state_category = large_city
+
+	history={
+		owner = GUA
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4 
+			air_base = 2
+		}
+		add_core_of = GUA
+		victory_points = {
+			10842 15
+		}
+
+	}
+
+	provinces={
+		 10842 13952 13953 
+	}
+	
+
+	local_supplies=0.0 
+}

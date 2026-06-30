@@ -1,0 +1,40 @@
+
+state={
+	id=444
+	name="STATE_444"
+	resources={
+		oil=10
+	}
+
+	history={
+		owner = SAU
+		buildings = {
+			school = 2
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 6
+			12883 = {
+				naval_base = 10
+
+			}
+
+		}
+		
+		victory_points = {
+			12883 40 
+		}
+		victory_points = {
+			5037 45 
+		}
+		add_core_of = SAU
+
+	}
+
+	provinces={
+		2033 5037 12883 
+	}
+	manpower=8100000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

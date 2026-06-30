@@ -1,0 +1,98 @@
+focus_tree = {
+    id = MSK_starting
+    country = {
+        base = 0
+        modifier = {
+            add = 100
+            tag = MSK
+        }
+    }
+	focus = {
+		id = MSK_the_victory_in_ahuya_yari
+		icon = GFX_MSK_the_victory_in_ahuya_yari
+		cost = 6
+		x = 0
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			1225 = {
+				add_core_of = MSK
+			}
+			hidden_effect = {
+				add_to_variable = { CONTRASANGER = 10 }
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_the_victory_in_ahuya_yari"
+		}
+	}
+	
+	focus = {
+		id = MSK_calming_down_the_contras
+		icon = GFX_MSK_calming_down_the_contras
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Removes 30 points of Contras' Anxiety."
+			add_to_variable = { MSK.CONTRASANGER = -30 }
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_calming_down_the_contras"
+		}
+		relative_position_id = MSK_the_victory_in_ahuya_yari
+		prerequisite = { focus = MSK_the_victory_in_ahuya_yari }
+	}
+	
+	focus = {
+		id = MSK_the_arab_in_bluefields
+		icon = GFX_MSK_the_arab_in_bluefields
+		cost = 6
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = MSK.1
+				days = 1
+			}
+			hidden_effect = {
+				add_to_variable = { CONTRASANGER = 10 }
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_the_arab_in_bluefields"
+		}
+		relative_position_id = MSK_calming_down_the_contras
+		prerequisite = { focus = MSK_calming_down_the_contras }
+	}
+	
+	focus = {
+		id = MSK_ortega_must_go
+		icon = GFX_MSK_ortega_must_go
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			check_variable = { MSK.CONTRASANGER > 70 }
+			custom_trigger_tooltip = { 
+				tooltip = "Contras' Anxiety must be above 70 points."
+				always = no
+			}
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = NIC
+				type = annex_everything
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_ortega_must_go"
+		}
+		relative_position_id = MSK_the_arab_in_bluefields
+		prerequisite = { focus = MSK_the_arab_in_bluefields }
+	}
+}

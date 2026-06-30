@@ -1,0 +1,104 @@
+focus_tree = {
+    id = USA_starting
+    country = {
+        base = 0
+        modifier = {
+            add = 101
+            tag = USA
+        }
+    }
+	focus = {
+		id = USA_moonlight_on_vermont
+		icon = GFX_USA_moonlight_on_vermont
+		cost = 2.9 #20 days
+		x = 10
+		y = 0
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_moonlight_on_vermont"
+			country_event = {
+				id = USASKELETON.1
+				days = 0
+			}
+		}
+	}
+	focus = {
+		id = USA_everyones_gone_high_society
+		icon = GFX_USA_everyones_gone_high_society
+		cost = 1
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_everyones_gone_high_society"
+			add_political_power = 100
+			add_stability = 0.05
+		}
+		relative_position_id = USA_moonlight_on_vermont
+		prerequisite = { focus = USA_moonlight_on_vermont }
+	}
+
+	focus = {
+		id = USA_houses_in_motion
+		icon = GFX_USA_houses_in_motion
+		cost = 5
+		x = 0
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_houses_in_motion"
+			country_event = {
+				id = USASKELETON.2
+				days = 0
+			}
+			add_ideas = monitored_speech
+		}
+		relative_position_id = USA_everyones_gone_high_society
+		prerequisite = { focus = USA_everyones_gone_high_society }
+	}
+
+	focus = {
+		id = USA_the_hem_of_his_garment
+		icon = GFX_USA_the_hem_of_his_garment
+		cost = 3
+		x = 2
+		y = 1
+		completion_reward = {
+			USP = {
+				country_event = {
+					id = USASKELETON.999
+					days = 2
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus USA_the_hem_of_his_garment"
+		}
+		relative_position_id = USA_houses_in_motion
+		prerequisite = { focus = USA_houses_in_motion }
+	}
+
+	focus = {
+		id = USA_a_changing_of_the_guard
+		icon = GFX_USA_a_changing_of_the_guard
+		cost = 5
+		x = -2
+		y = 1
+		completion_reward = {
+			load_oob = "American Loyalists"
+			log = "[GetDateText]: [Root.GetName]: Focus USA_a_changing_of_the_guard"
+		}
+		relative_position_id = USA_houses_in_motion
+		prerequisite = { focus = USA_houses_in_motion }
+	}
+
+	focus = {
+		id = USA_raising_ye_curtain
+		icon = GFX_USA_raising_ye_curtain
+		cost = 4
+		x = -2
+		y = 1
+		completion_reward = {
+			add_ideas = partial_economic_mobilisation
+			log = "[GetDateText]: [Root.GetName]: Focus USA_raising_ye_curtain"
+		}
+		relative_position_id = USA_the_hem_of_his_garment
+		prerequisite = { focus = USA_the_hem_of_his_garment }
+		prerequisite = { focus = USA_a_changing_of_the_guard }
+	}
+}

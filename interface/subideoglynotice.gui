@@ -1,0 +1,244 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "subideology_container"
+		position = { x = 251 y = 300 }
+		instantTextboxType = {
+			name = "subideology_name"
+			position = { x = -240 y = 83 }
+			font = "sf_16mbs"
+			text = "[GetRulingIdeologySubtype]"
+			pdx_tooltip = "GetRulingIdeologySubtype"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "title_faction"
+			position = { x = 137 y = -59 }
+			font = "sf_14"
+			text = "faction"
+			maxWidth = 100
+			maxHeight = 20
+		}
+
+			iconType ={
+				name ="faction_icon"
+				position = { x = 84 y = -51 }
+				quadTextureSprite = "GFX_factions_spritesheet"
+				pdx_tooltip = "FACTION_NAME_AND_STATUS"
+				scale = 0.7
+			}
+
+			instantTextboxType = {
+				name = "adjectiveone"
+				position = { x = -78 y = 18 }
+				font = "sf_18mbs"
+				text = "IDEOLOGYADJECTIVEONE_SHELL"
+				maxWidth = 200
+				maxHeight = 20
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "adjectivetwo"
+				position = { x = -78 y = 41 }
+				font = "sf_18mbs"
+				text = "IDEOLOGYADJECTIVETWO_SHELL"
+				maxWidth = 200
+				maxHeight = 20
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "adjectivethree"
+				position = { x = -78 y = 64}
+				font = "sf_18mbs"
+				text = "IDEOLOGYADJECTIVETHREE_SHELL"
+				maxWidth = 200
+				maxHeight = 20
+				alwaystransparent = yes
+			}
+
+			iconType ={
+				name ="composite_subid_one"
+				position = { x = -159 y = 7 }
+				scale = 1.2
+			}
+
+			iconType ={
+				name ="composite_subid_three"
+				position = { x = -161 y = 1 }
+				scale = 1.2
+			}
+
+			iconType ={
+				name ="composite_subid_two"
+				position = { x = -143 y = 2 }
+				scale = 1.1
+			}
+			
+			instantTextBoxType = {
+				name = "title"
+				position = { x = 78 y = -6 }
+				font = "sf_14"
+				text = "social trends"
+				maxWidth = 120
+				maxHeight = 20
+				format = left
+			}
+
+			instantTextboxType = {
+				name = "ECOLOGICAL"
+				position = { x = 84 y = 12 }
+				font = "sf_14"
+				text = "Ecological"
+				maxWidth = 200
+				maxHeight = 20
+				format = left			
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "ARTIFICIAL"
+				position = { x = 83 y = 12 }
+				font = "sf_14"
+				text = "Artificial"
+				maxWidth = 200
+				maxHeight = 20
+				format = right			
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "SOCTRENDS_EA"
+				spriteType = "GFX_global_social_trends_bar_poltab"
+				position = { x = 84 y = 27 }
+				pdx_tooltip = "SOCTRENDS_EA_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_EA"
+			}
+
+			instantTextboxType = {
+				name = "TRADITIONAL"
+				position = { x = 84 y = 45 }
+				font = "sf_14"
+				text = "Traditional"
+				maxWidth = 200
+				maxHeight = 20
+				format = left			
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "REFORMIST"
+				position = { x = 83 y = 45 }
+				font = "sf_14"
+				text = "Reformist"
+				maxWidth = 200
+				maxHeight = 20
+				format = right			
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "SOCTRENDS_TP"
+				spriteType = "GFX_global_social_trends_bar_poltab"
+				position = { x = 84 y = 60 }
+				pdx_tooltip = "SOCTRENDS_TP_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_TP"
+			}
+
+			instantTextboxType = {
+				name = "EGALITARIAN"
+				position = { x = 84 y = 78 }
+				font = "sf_14"
+				text = "Egalitarian"
+				maxWidth = 200
+				maxHeight = 20
+				format = left			
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "ELITIST"
+				position = { x = 83 y = 78 }
+				font = "sf_14"
+				text = "Elitist"
+				maxWidth = 200
+				maxHeight = 20
+				format = right			
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "SOCTRENDS_EE"
+				spriteType = "GFX_global_social_trends_bar_poltab"
+				position = { x = 84 y = 93 }
+				pdx_tooltip = "SOCTRENDS_EE_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_EE"
+			}
+
+			instantTextboxType = {
+				name = "DEMOCRATIC"
+				position = { x = 84 y = 111 }
+				font = "sf_14"
+				text = "Democratic"
+				maxWidth = 200
+				maxHeight = 20
+				format = left			
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "AUTOCRATIC"
+				position = { x = 83 y = 111 }
+				font = "sf_14"
+				text = "Autocratic"
+				maxWidth = 200
+				maxHeight = 20
+				format = right			
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "SOCTRENDS_DE"
+				spriteType = "GFX_global_social_trends_bar_poltab"
+				position = { x = 84 y = 126 }
+				pdx_tooltip = "SOCTRENDS_DE_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_DE"
+			}
+
+			instantTextboxType = {
+				name = "DECENTRALIZED"
+				position = { x = 84 y = 144 }
+				font = "sf_14"
+				text = "Decentralized"
+				maxWidth = 199
+				maxHeight = 16
+				format = left			
+				alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "CENTRALIZED"
+				position = { x = 83 y = 144 }
+				font = "sf_14"
+				text = "Centralized"
+				maxWidth = 200
+				maxHeight = 20
+				format = right			
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "SOCTRENDS_DC"
+				spriteType = "GFX_global_social_trends_bar_poltab"
+				position = { x = 84 y = 159 }
+				pdx_tooltip = "SOCTRENDS_DC_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_DC"
+			}
+	}
+}

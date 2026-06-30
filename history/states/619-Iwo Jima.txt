@@ -1,0 +1,31 @@
+state={
+id=619
+	
+	name="STATE_619"
+
+	manpower=1400
+	state_category = small_island
+	history=
+	{
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+            school = 2
+			infrastructure = 4
+			air_base = 5
+			13025 = {
+				naval_base = 3
+
+			}
+		}
+		victory_points = {
+			13025 25
+		 }
+
+	}
+	provinces={
+		13025
+	}
+
+	local_supplies=0.0 
+}

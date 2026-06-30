@@ -1,0 +1,28 @@
+state={
+id=30
+	
+	name="STATE_30"
+
+
+	history={
+		owner = NGA
+		victory_points = {
+			1969 20 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		1969 13631 13632 13659 
+	}
+	manpower=25800000
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+id=52
+	name="STATE_52"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = SIE
+		victory_points = { 13409 3 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = SIE
+	}
+	provinces={
+		2038 2094 13404 13405 13406 13407 13409 13410 13411 13412 13413 
+	}
+	manpower=7000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

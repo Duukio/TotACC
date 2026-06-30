@@ -1,0 +1,26 @@
+state={
+id=206
+	name="STATE_206"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	steel = 20
+	}
+	history={
+		victory_points = { 6583 15 }
+		owner = LUX
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = LUX
+	}
+	provinces={
+		6583 
+	}
+	manpower=633622
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

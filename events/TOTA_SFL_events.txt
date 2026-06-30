@@ -1,0 +1,502 @@
+add_namespace = SFL
+country_event = {
+    id = SFL.44 # obamna returns
+    title = SFL.44.t
+    desc = SFL.44.desc
+    picture = GFX_report_event_hussein
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.44.a
+      set_country_flag = SFL_obama_returns
+      mark_focus_tree_layout_dirty = yes
+      complete_national_focus = SFL_hurricane_hussein
+	}
+}
+country_event = {
+    id = SFL.99 # taxation
+    title = SFL.99.t
+    desc = SFL.99.desc
+    picture = GFX_report_event_stantontx
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.99.a
+      ai_chance = { factor = 25 }
+      add_ideas = anarchist_capitalism
+      add_stability = 0.1
+      add_political_power = -100
+	}
+  option = {
+    name = SFL.99.b
+    ai_chance = { factor = 25 }
+    add_ideas = limited_exports
+      add_stability = 0.01
+      add_political_power = -50
+  }
+  option = {
+    name = SFL.99.c
+    ai_chance = { factor = 50 }
+    add_stability = -0.1
+    add_war_support = -0.15
+    add_political_power = 50
+  }
+}
+country_event = {
+    id = SFL.100 #suns out
+    title = SFL.100.t
+    desc = SFL.100.desc
+    picture = GFX_report_event_stantontx
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.100.a
+      load_oob = "Florida Free Guards"
+      add_stability = -0.05
+      add_political_power = 50
+      add_manpower = 7000
+	}
+}
+country_event = {
+    id = SFL.102 #be nice to me free states pls
+    title = SFL.102.t
+    desc = SFL.102.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = { #yes
+      name = SFL.102.a
+      ai_chance = { factor = 50 }
+      SFL = {
+        country_event = {
+          id = SFL.103
+          days = 1
+        }
+      }
+	}
+    option = { #no
+      name = SFL.102.b
+      ai_chance = { factor = 50 }
+      SFL = {
+        country_event = {
+          id = SFL.104
+          days = 1
+        }
+      }
+	}
+}
+country_event = {
+    id = SFL.103 #yay
+    title = SFL.103.t
+    desc = SFL.103.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = { #yes
+      name = SFL.103.a
+      add_manpower = 5000
+      add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 400
+        producer = FSA
+      }
+	}
+}
+country_event = {
+    id = SFL.104 #aw
+    title = SFL.104.t
+    desc = SFL.104.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = { #yes
+      name = SFL.104.a
+      add_manpower = 1000
+	}
+}
+country_event = {
+    id = SFL.105 #sybau stanton
+    title = SFL.105.t
+    desc = SFL.105.desc
+    picture = GFX_report_event_stantontx
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.105.a
+      ai_chance = { factor = 34 }
+      set_politics = {
+        ruling_party = dissident_right
+      }
+      add_popularity = {
+        ideology = dissident_right
+        popularity = 0.25
+      }
+      mark_focus_tree_layout_dirty = yes
+      load_focus_tree = SFL_ASI_WARTREE
+      set_country_flag = asi_cabinet
+	}
+    option = {
+      name = SFL.105.b
+      ai_chance = { factor = 33 }
+      set_politics = {
+        ruling_party = autocracy
+      }
+      mark_focus_tree_layout_dirty = yes
+      load_focus_tree = SFL_SHARKEY_WARTREE
+      set_country_flag = sharkey_cabinet
+	}
+    option = {
+      name = SFL.105.c
+      ai_chance = { factor = 33 }
+      set_politics = {
+        ruling_party = anarchism
+      }
+      add_popularity = {
+        ideology = anarchism
+        popularity = 0.25
+      }
+      load_focus_tree = SFL_prestonwar
+      set_country_flag = preston_cabinet
+	}
+}
+country_event = {
+    id = SFL.111 # Introduction of the freaks, Sol
+    title = SFL.111.t
+    desc = SFL.111.desc
+    picture = GFX_report_event_asi
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.111.a
+      country_event = {
+        id = SFL.112
+        days = 1
+      }
+	}
+}
+country_event = {
+    id = SFL.112 # Introduction of the freaks, Preston
+    title = SFL.112.t
+    desc = SFL.112.desc
+    picture = GFX_report_event_preston
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.112.a
+      country_event = {
+        id = SFL.113
+        days = 1
+      }
+	}
+}
+country_event = {
+    id = SFL.113 # Introduction of the freaks, Sharkey
+    title = SFL.113.t
+    desc = SFL.113.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.113.a
+      add_ideas = SFL_united_against_obamunism
+	}
+}
+
+
+
+#Sharkey War Tree events
+country_event = {
+    id = SFL.114 # My Birth Flavor Event
+    title = SFL.114.t
+    desc = SFL.114.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.114.a
+	}
+}
+country_event = {
+    id = SFL.115 # My boys my blood flavor event
+    title = SFL.115.t
+    desc = SFL.115.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.115.a
+	}
+}
+country_event = {
+    id = SFL.116 # crown of sicily flavor
+    title = SFL.116.t
+    desc = SFL.116.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.116.a
+	}
+}
+country_event = {
+    id = SFL.117 # crown of the vampyre flavor
+    title = SFL.117.t
+    desc = SFL.117.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.117.a
+	}
+}
+country_event = {
+    id = SFL.919 # unification with idaho
+    title = SFL.919.t
+    desc = SFL.919.desc
+    #picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.919.a
+      SFL = {
+        annex_country = {
+          target = NWF
+        }
+        add_popularity = {
+          ideology = revolutionary_right
+          popularity = 0.25
+        }
+      }
+	}
+}
+
+#                                                                                     
+#                    ,--,                                 ,--.                        
+#  .--.--.         ,--.'|   ,---,       ,-.----.      ,--/  /|    ,---,.              
+# /  /    '.    ,--,  | :  '  .' \      \    /  \  ,---,': / '  ,'  .' |        ,---, 
+#|  :  /`. / ,---.'|  : ' /  ;    '.    ;   :    \ :   : '/ / ,---.'   |       /_ ./| 
+#;  |  |--`  |   | : _' |:  :       \   |   | .\ : |   '   ,  |   |   .' ,---, |  ' : 
+#|  :  ;_    :   : |.'  |:  |   /\   \  .   : |: | '   |  /   :   :  |-,/___/ \.  : | 
+# \  \    `. |   ' '  ; :|  :  ' ;.   : |   |  \ : |   ;  ;   :   |  ;/| .  \  \ ,' ' 
+#  `----.   \'   |  .'. ||  |  ;/  \   \|   : .  / :   '   \  |   :   .'  \  ;  `  ,' 
+#  __ \  \  ||   | :  | ''  :  | \  \ ,';   | |  \ |   |    ' |   |  |-,   \  \    '  
+# /  /`--'  /'   : |  : ;|  |  '  '--'  |   | ;\  \'   : |.  \'   :  ;/|    '  \   |  
+#'--'.     / |   | '  ,/ |  :  :        :   ' | \.'|   | '_\.'|   |    \     \  ;  ;  
+#  `--'---'  ;   : ;--'  |  | ,'        :   : :-'  '   : |    |   :   .'      :  \  \ 
+#            |   ,/      `--''          |   |.'    ;   |,'    |   | ,'         \  ' ; 
+#            '---'                      `---'      '---'      `----'            `--`  
+#                                                                                     
+#
+
+country_event = {
+    id = SFL.920 # sharkey second intro event
+    title = SFL.920.t
+    desc = SFL.920.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.920.a
+	}
+}
+country_event = {
+    id = SFL.921 # sharkey death dealers bloody mess focus
+    title = SFL.921.t
+    desc = SFL.921.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.921.a
+	}
+}
+country_event = {
+    id = SFL.922 # kitchen
+    title = SFL.922.t
+    desc = SFL.922.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.922.a
+	}
+}
+country_event = {
+    id = SFL.923 # Ell Ay
+    title = SFL.923.t
+    desc = SFL.923.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.923.a
+	}
+}
+country_event = {
+    id = SFL.924 # America is Living
+    title = SFL.924.t
+    desc = SFL.924.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.924.a
+	}
+}
+country_event = {
+    id = SFL.925 # unification
+    title = SFL.925.t
+    desc = SFL.925.desc
+    picture = GFX_report_event_sharkey
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.925.a
+	}
+}
+
+#PRESTON EVENTS
+country_event = {
+    id = SFL.820 # coconuts
+    title = SFL.820.t
+    desc = SFL.820.desc
+    picture = GFX_report_event_preston
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.820.a
+      add_stability = -0.02
+	}
+}
+
+country_event = {
+    id = SFL.821 # trucking
+    title = SFL.821.t
+    desc = SFL.821.desc
+    picture = GFX_report_event_preston
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.821.a
+      add_stability = 0.02
+      add_political_power = -20
+      subtract_from_variable = { THIS.SOCTRENDS_DC = 5 }
+      custom_effect_tooltip = "Subtracts 5 points from Decentralized in the Social Trends mechanic"
+	  }
+    option = {
+      name = SFL.821.b
+      add_stability = -0.02
+      add_political_power = 20
+      add_to_variable = { THIS.SOCTRENDS_DC = 5 }
+      custom_effect_tooltip = "Subtracts 5 points from Centralized in the Social Trends mechanic"
+	  }
+}
+
+country_event = {
+    id = SFL.822 # burning man
+    title = SFL.822.t
+    desc = SFL.822.desc
+    picture = GFX_report_event_preston
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.822.a
+      add_political_power = 10
+      add_popularity = {
+				ideology = anarchism
+				popularity = 0.05
+			}
+	}
+}
+
+country_event = {
+    id = SFL.823 # shooting
+    title = SFL.823.t
+    desc = SFL.823.desc
+    picture = GFX_report_event_preston
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.823.a
+      add_war_support = -0.02
+      add_political_power = 20
+      add_to_variable = { THIS.SOCTRENDS_DC = 5 }
+      custom_effect_tooltip = "Subtracts 5 points from Centralized in the Social Trends mechanic"
+	  }
+    option = {
+      name = SFL.823.b
+      add_war_support = -0.02
+      add_political_power = 20
+      subtract_from_variable = { THIS.SOCTRENDS_DC = 5 }
+      custom_effect_tooltip = "Subtracts 5 points from Decentralized in the Social Trends mechanic"
+	  }
+}
+
+country_event = {
+    id = SFL.704 
+    title = SFL.704.t
+    desc = SFL.704.desc
+    picture = GFX_report_event_asi
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.704.a
+	}
+}
+
+country_event = {
+    id = SFL.705
+    title = SFL.705.t
+    desc = SFL.705.desc
+    picture = GFX_report_event_asi
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.705.a
+	}
+}
+
+country_event = {
+    id = SFL.706
+    title = SFL.706.t
+    desc = SFL.706.desc
+    picture = GFX_report_event_asi
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.706.a
+	}
+}
+
+country_event = {
+    id = SFL.707
+    title = SFL.707.t
+    desc = SFL.707.desc
+    picture = GFX_report_event_asi
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.707.a
+	}
+}
+
+country_event = {
+    id = SFL.708
+    title = SFL.708.t
+    desc = SFL.708.desc
+    picture = GFX_report_event_asi
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.708.a
+	}
+}
+
+country_event = {
+    id = SFL.709
+    title = SFL.709.t
+    desc = SFL.709.desc
+    picture = GFX_report_event_asi
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = SFL.709.a
+	}
+}

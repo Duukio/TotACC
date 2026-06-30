@@ -1,0 +1,117 @@
+SEY_barlow_dec_cat = {
+	SEY_west_papua_wild_ride_help_IND = {
+	visible = { 
+	has_country_flag = SEY_PAPUAWILDRIDE
+    NWG = {
+        has_war_with = IND
+    }
+    NOT = {
+        has_country_flag = picked_a_side_ind_nwg
+    }
+	}
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            set_country_flag = picked_a_side_ind_nwg
+            SEY = {
+                add_ideas = SEY_rodeo_in_NWG
+            }
+			IND = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SEY_west_papua_wild_ride_help_NWG = {
+	visible = { 
+	has_country_flag = SEY_PAPUAWILDRIDE
+    NWG = {
+        has_war_with = IND
+    }
+    NOT = {
+        has_country_flag = picked_a_side_ind_nwg
+    }
+	}
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            set_country_flag = picked_a_side_ind_nwg
+            SEY = {
+                add_ideas = SEY_rodeo_in_IND
+            }
+			NWG = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SEY_korean_sakura = {
+	visible = { 
+	has_country_flag = SEY_KOREA_INTERVENTION
+    PLK = {
+        has_war_with = JAP
+    }
+	}
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_PLK
+            }
+			JAP = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SEY_burma = {
+	visible = { 
+	has_country_flag = SEY_BURMA_INTERVENTION
+    BUR = {
+        has_war = yes
+    }
+	}
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_BUR
+            }
+			BUR = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SEY_usa = {
+	visible = { 
+	has_country_flag = SEY_USA_INTERVENTION
+		any_of_scopes = {
+		    array = global.USA_CW_TAGS
+		    tooltip = "The American Civil War is ongoing"
+			has_war = yes
+		}
+	}
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_USA
+            }
+			USA = {
+				give_military_access = SEY
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+state={
+id=636
+	
+	name="STATE_636"
+
+	manpower=700000
+	state_category = town
+
+	history={
+		add_core_of = HOL
+		owner = HOL
+		buildings = {
+            school = 2
+			infrastructure = 3
+			4450 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		4450 
+	}
+
+	local_supplies=0.0 
+}

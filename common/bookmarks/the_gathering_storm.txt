@@ -1,0 +1,166 @@
+bookmarks = {
+	bookmark = {
+		name = "TOTA_NAME"
+		desc = "TOTA_DESC"
+		date = 2021.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "BIA"
+		default = yes
+		"ATI"={
+			history = "TOTA_ATI_DESC"
+			ideology = anarchism
+			ideas = {
+				ATI_singular	
+			}
+			focuses = {
+				ATI_a_death_in_the_family
+				ATI_evacuating_idaho
+				ATI_declaring_martial_unlaw
+			}
+		}	
+		"CAL"={
+			history = "TOTA_CAL_DESC"
+			ideology = autocracy
+			ideas = {
+				CAL_the_most_excellent_tahoe_resort	
+			}
+			focuses = {
+				CAL_yarvinomics
+				CAL_surf_nazis_must_die
+				CAL_faster_faster
+			}
+		}
+		"BIA"={
+			history = "BIA_TOTA_DESC"
+			ideology = conservatism
+			ideas = {
+				BIA_crisis_of_postmodernity
+				BIA_pockets_lined_with_black
+				BIA_ahiara_declaration
+			}
+			focuses = {
+				BIA_5_times_over_we_will_win
+			}
+		}
+		"NGA"={
+			history = "NGA_TOTA_DESC"
+			ideology = autocracy
+			ideas = {
+				NGA_northern_bias
+				NGA_crippling_war_fatigue
+				NGA_culture_of_violence		
+			}
+			focuses = {
+				NGA_fifth_times_the_charm
+				NGA_we_want_our_invasion
+				NGA_promises_to_minorities
+			}
+		}	
+		"MSK"={
+			history = "MSK_TOTA_DESC"
+			ideology = conservatism
+			ideas = {
+				MSK_successfully_free	
+			}
+			focuses = {
+				MSK_japanese_switcharoo
+				MSK_adopt_common_law
+				MSK_the_emperors_new_groove
+			}
+		}		
+		"NWF"={
+			history = "TOTA_NWF_DESC"
+			ideology = revolutionary_right
+			ideas = {
+				NWF_aryan_throne
+				NWF_fascist_terror_state	
+			}
+			focuses = {
+				NWF_prairies_and_the_rollerboys
+				NWF_mausoleum_of_our_martyrs
+				NWF_gott_strafe_weimerika
+			}
+		}	
+		"LKT"={
+			history = "TOTA_LKT_DESC"
+			ideology = autocracy
+			ideas = {
+				LKT_prairie_troubles
+				LKT_unpopular_government
+				LKT_legacy_of_dawes	
+			}
+			focuses = {
+				LKT_a_death_in_columbia
+				LKT_keeping_a_watch_for_hooligans
+				LKT_news_from_florida
+			}
+		}	
+		"SEY"={
+			history = "SEY_TOTA_DESC"
+			ideology = autocracy
+			ideas = {
+			SEY_merc_capital
+			SEY_men_who_sell_world
+			}
+			focuses = {
+				SEY_the_pretorians
+				SEY_the_washingtonians
+				SEY_the_parisians
+			}
+		}	
+		"SAF"={
+			history = "SAF_TOTA_DESC"
+			ideology = autocracy
+			ideas = {
+			SAF_boiling_point
+			SAF_intl_isolation
+			SAF_bd_contract
+			}
+			focuses = {
+				SAF_100_thirsty_days
+			}
+		}
+		"ISP"={
+			history = "ISP_TOTA_DESC"
+			ideology = reformist_socialism
+			ideas = {
+			ISP_reformed_kibbutz_econ
+			ISP_ethnic_edati_divide
+			}
+			focuses = {
+				ISP_70_years_of_mapam_rule
+				ISP_delegation_to_moscow
+				ISP_for_a_lasting_peoples_friendship
+			}
+		}	
+		"USA"={
+			history = "TOTA_USA_DESC"
+			ideology = liberalism
+			ideas = {
+				USA_big_tech_hysteria
+				USA_panopticon
+				USA_rural_paramil_troubles
+			}
+			focuses = {
+				USA_moonlight_on_vermont
+				USA_a_changing_of_the_guard
+				USA_raising_ye_curtain
+			}
+		}
+		"SRW"={
+			minor = yes
+			history = "TOTA_SRW_DESC"
+			ideology = autocracy
+			ideas = {
+				SRW_two_sarawaks
+				SRW_heaven_has_a_landlord
+				SRW_eurasian_investment
+			}
+			focuses = {
+				SRW_preparations_for_the_180th
+				SRW_flourishing_our_markets
+				SRW_bring_american_refugees
+			}
+		}	
+	}
+}

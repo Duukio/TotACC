@@ -1,0 +1,25 @@
+
+state={
+	id=910
+	name="STATE_910"
+    buildings_max_level_factor = 1
+	provinces={
+	 4033 10764 10857 13859 13860 13862 13866 1953
+	}
+	manpower=1996300
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = SDE
+		buildings = {
+			infrastructure = 1
+			school = 2
+		}
+		victory_points = {
+			4033 5
+		}
+		add_core_of = SDE
+	}
+}

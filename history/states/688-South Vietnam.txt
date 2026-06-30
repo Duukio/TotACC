@@ -1,0 +1,37 @@
+state={
+id=688
+	name="STATE_688"
+    buildings_max_level_factor = 1
+	
+	resources={
+
+		steel=100.000
+		rubber=100.000
+	}
+
+	history={
+		owner = SVI
+		victory_points = {
+			4401 40 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 5
+			industrial_complex = 10
+			4401 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = SVI
+
+	}
+
+	provinces={
+		1248 1285 1300 1328 1396 1400 1423 1605 4223 4255 4284 4334 4341 4363 4401 4405 7229 7238 7271 7303 7331 7347 7380 10137 10162 10180 10232 10261 10309 12109 12133 12150 12176 12204 12232 12288 13353
+	}
+	manpower=50000000
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=949
+	name="STATE_949"
+    buildings_max_level_factor = 1
+	provinces={
+		793 965 9771 11754 
+	}
+	manpower=815039
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = BUL
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			965 4
+		}
+		add_core_of = BUL
+	}
+}

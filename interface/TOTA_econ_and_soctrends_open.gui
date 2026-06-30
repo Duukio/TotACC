@@ -1,0 +1,79 @@
+guiTypes = {
+	containerWindowType = {
+		name = "economy_and_soctrend_scrgui"
+			position = { x = 204 y = 38 }
+			size = { width=100%% height=100%% }
+		buttonType = {
+			name = "economy_button"
+			quadTextureSprite ="GFX_topbar_economy"
+		#	position = { x = -104 y = 0 }
+			position = { x = 396 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "ECON_TOOLTIP_TOPBAR"
+			shortcut = "g"
+		}
+		buttonType = {
+			name = "gift_economy_button"
+			quadTextureSprite ="GFX_topbar_economy_gift"
+		#	position = { x = -104 y = 0 }
+			position = { x = 396 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "ECON_TOOLTIP_TOPBAR_GIFT"
+			shortcut = "g"
+		}
+	
+		buttonType = {
+			name = "soctrends_button"
+			quadTextureSprite = "GFX_topbar_soctrends"
+		#	position = { x = -104 y = 0 }
+			position = { x = 452 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "SOCTRENDS_TOOLTIP_TOPBAR"
+			shortcut = "shift+h"
+		}
+	}
+	containerWindowType = {
+		name = "after_inteleconomy_and_soctrend_scrgui"
+			position = { x = 197 y = 37 }
+			size = { width=100%% height=100%% }
+		buttonType = {
+			name = "economy_button"
+			quadTextureSprite ="GFX_topbar_economy"
+		#	position = { x= -104 y = 0 }
+			position = { x= 405 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "ECON_TOOLTIP_TOPBAR"
+			shortcut = "g"
+		}
+		buttonType = {
+			name = "gift_economy_button"
+			quadTextureSprite ="GFX_topbar_economy_gift"
+		#	position = { x = -104 y = 0 }
+			position = { x = 405 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "ECON_TOOLTIP_TOPBAR_GIFT"
+			shortcut = "g"
+		}
+		buttonType = {
+			name = "soctrends_button"
+			quadTextureSprite ="GFX_topbar_soctrends"
+		#	position = { x = -104 y = 0 }
+			position = { x = 451 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "SOCTRENDS_TOOLTIP_TOPBAR"
+			shortcut = "shift+h"
+		}
+	}
+}

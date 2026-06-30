@@ -1,0 +1,7 @@
+#ideas = {
+#    government = {
+#        MASTERCOMP_90 = {
+#            picture = MASTERCOMP_90
+#        }
+#    }
+#}

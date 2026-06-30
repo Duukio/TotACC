@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "Harcourt Naval Command"
+		naval_base = 8034
+		task_force = {
+			name = "Harcourt Naval Taskforce"
+			location = 8034
+			ship = { name = "BNS Ojukwu" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BIA version_name = "Ojukwu Class" } }
+			}
+			ship = { name = "BNS Effiong" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BIA version_name = "Effiong Class" } }
+			}
+		}
+	}
+}

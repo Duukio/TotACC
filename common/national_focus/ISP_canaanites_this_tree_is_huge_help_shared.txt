@@ -1,0 +1,17 @@
+focus_tree = {
+	id = ISP_canaanites_this_tree_is_huge_help
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ISP
+			NOT = {
+			has_country_flag = ISP_simhon_flag
+			has_country_flag = ISP_ramon_flag
+			}
+		}
+	}
+	shared_focus = ISP_patriots_in_control
+	shared_focus = ISP_the_edf_focus
+	shared_focus = ISP_beset_on_all_sides
+}

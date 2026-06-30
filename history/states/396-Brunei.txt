@@ -1,0 +1,29 @@
+state={
+id=396
+	name="STATE_396"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	oil = 25
+	}
+	history={
+		owner = BRU
+		victory_points = { 7387 5 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+			dockyard = 1
+			7387 = {
+			naval_base = 1
+			}
+		}
+		add_core_of = BRU
+	}
+	provinces={
+		7371 7387 
+	}
+	manpower=450000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

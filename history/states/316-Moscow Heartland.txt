@@ -1,0 +1,32 @@
+state={
+id=316
+	name="STATE_316"
+    buildings_max_level_factor = 1
+	state_category = megalopolis
+	
+	resources = {
+	steel = 100
+	oil = 100
+	rubber = 10
+	tungsten = 50
+	strategic_minerals = 50
+	}
+	history={
+        victory_points = { 121 30 }
+        victory_points = { 6380 60 }
+        owner = SOV
+        buildings = {
+            school = 2
+            infrastructure = 5
+			industrial_complex = 10
+			arms_factory = 4
+        }
+        add_core_of = SOV
+    }
+	provinces={
+		121 214 231 252 280 283 301 344 346 350 357 366 378 397 401 3116 3202 3220 3240 3259 3268 3275 3290 3327 3339 3347 3358 3370 3387 3391 6101 6135 6231 6247 6269 6283 6290 6295 6316 6346 6348 6356 6358 6362 6370 6380 6392 6414 9235 9257 9267 9278 9282 9302 9311 9345 9348 9356 9378 9389 11205 11217 11236 11239 11250 11252 11282 11295 11314 11326 11330 11338 11362 
+	}
+	manpower=40000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

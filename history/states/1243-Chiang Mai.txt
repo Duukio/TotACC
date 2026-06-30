@@ -1,0 +1,36 @@
+
+state={
+	id=1243
+	name="STATE_1243"
+    buildings_max_level_factor = 1
+	resources={
+		steel = 25
+        aluminium = 25
+	}
+
+	history={
+		owner = SIA
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 4
+            arms_factory = 3
+			air_base = 3
+
+		}
+		add_core_of = SIA
+
+		victory_points = {
+			4496 25
+		}
+
+	}
+
+	provinces={
+		4496 10371 1990 7531 8045 10356 7312 1253 1488 7675 7492
+	}
+	manpower=6350499
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

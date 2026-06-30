@@ -1,0 +1,24 @@
+
+state={
+	id=1316
+	name="STATE_1316"
+	provinces={
+		14096 14097 14101 14102 
+	}
+	manpower=271800
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=rural
+	history={
+		owner = OMA
+		add_core_of = OMA
+		buildings = {
+			school = 2
+			infrastructure = 2
+		}
+		victory_points = {
+			14102 2
+		}
+	}
+}

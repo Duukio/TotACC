@@ -1,0 +1,45 @@
+on_actions = {
+    on_monthly = {
+        effect = {
+            if = {
+                limit = {
+                    PLK = {
+                        surrender_progress > 0.1
+                    }
+                }
+                PLK = {
+                    country_event = {
+                        id = JPNskeleton.668
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    PLK = {
+                        OR = {
+                            has_country_flag = PLK_accepted_choina
+                            has_country_flag = PLK_refused_choina
+                        }
+                    PLK = {
+                        surrender_progress > 0.1
+                    }
+                    }
+                }
+                # do nothing
+            }
+            else = {
+                
+            }
+        }
+    }
+    on_startup = {
+        effect = {
+            JAP = {
+                country_event = {
+                    id = JKUT.1
+                    days = 1800
+                }
+            }
+        }
+    }
+}

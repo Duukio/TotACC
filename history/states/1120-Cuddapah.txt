@@ -1,0 +1,33 @@
+
+state={
+	id=1120
+	name="STATE_1120"
+    buildings_max_level_factor = 1
+	resources={
+
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			10278 30 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 10
+			industrial_complex = 3
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		7340 4321 1430 10152 12779 10296 10897 12734 7310 1344 12180 10278
+	}
+	manpower=18731872
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

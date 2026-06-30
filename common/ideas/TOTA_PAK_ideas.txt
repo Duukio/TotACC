@@ -1,0 +1,131 @@
+ideas = {
+	country = {
+			PAK_nat_reg_bal_act = {
+			picture = PAK_nat_reg_bal_act
+			allowed = {
+				tag = PAK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.1
+			conscription_factor = -0.8
+			min_export = 0.15
+			}
+		}
+			PAK_gro_isl_thr = {
+			picture = PAK_gro_isl_thr
+			allowed = {
+				tag = PAK
+			}
+	
+			available = {
+	
+			}
+	
+			cancel = {
+	
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				drift_defence_factor = -0.025
+				political_power_cost = 0.10
+				autocracy_drift = 0.01
+				conservatism_drift = 0.01
+				monthly_soctrends_drift_TP_T = 0.01
+				monthly_soctrends_drift_EA_E = 0.01
+			}
+		}
+			PAK_frontlines_containment = {
+			picture = PAK_frontlines_containment
+			allowed = {
+				tag = PAK
+			}
+	
+			available = {
+	
+			}
+	
+			cancel = {
+	
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			conscription_factor = -0.15
+			production_speed_infrastructure_factor = -0.1
+			supply_node_range = 0.15
+			#custom_modifier_tooltip = "This National Spirit changes over time as the international situation changes." #no way jose lmao
+			}
+		}
+		PAK_seychellois_defence = {
+			picture = PAK_empty
+			allowed = {
+				tag = PAK
+			}
+	
+			available = {
+	
+			}
+	
+			cancel = {
+	
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				defence = 0.15
+				offence = 0.15
+				army_org_factor = 0.30
+			}
+			targeted_modifier = {
+				tag = SEY
+				cic_to_target_factor = 0.2
+				extra_trade_to_target_factor = 0.15
+			}
+		}
+			commonwealth = {
+			picture = PAK_commonwealth
+			allowed = {
+				#tag = PAK
+			}
+	
+			available = {
+	
+			}
+	
+			cancel = {
+	
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			trade_opinion_factor = 0.15	
+			political_power_gain = 0.05
+			}
+		}
+	}
+}

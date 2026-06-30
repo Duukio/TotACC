@@ -1,0 +1,30 @@
+state={
+id=1210
+	
+	name="STATE_1210"
+
+	manpower = 40000
+	state_category = city
+	history={
+		owner = UNH
+		add_core_of = UNH
+		#add_core_of = HAW #?
+		buildings = {
+            school = 2
+			infrastructure = 5
+			air_base = 5
+			13948 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			13948 100
+		 }
+	}
+
+	provinces={
+		13948 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,40 @@
+state={
+id=601
+	
+	name="STATE_601"
+
+	manpower = 2700000
+	
+	state_category = megalopolis
+	
+	resources={
+		aluminium=40
+	}
+
+	history={
+		victory_points = {
+			6115 40
+		}
+		
+		owner = NOR
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 5
+			dockyard = 10
+			air_base = 4
+			6115 = {
+				naval_base = 10
+				coastal_bunker = 3
+			}
+		}
+		add_core_of = NOR
+	}
+
+	provinces={
+		10 14 27 100 111 133 144 179 3007 3021 3059 3094 3105 3136 3171 6042 6072 6080 6114 6115 6136 6151 6160 6184 9032 9036 9103 9135 9157 9174 9204 9227 11028 11029 11037 11078 11113 11135 11151 11184 11206 
+	}
+
+	local_supplies=0.0 
+}

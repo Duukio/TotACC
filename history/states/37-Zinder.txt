@@ -1,0 +1,22 @@
+state={
+id=37
+	name="STATE_37"
+    buildings_max_level_factor = 1
+	state_category = rural
+	
+	history={
+		owner = FRA
+		victory_points = { 13455 5 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		8028 10758 10780 10805 13454 13455 13456 
+	}
+	manpower=11000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

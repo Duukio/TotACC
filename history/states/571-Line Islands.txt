@@ -1,0 +1,32 @@
+state={
+id=571
+	name="STATE_571"
+    buildings_max_level_factor = 1
+	manpower=119940
+	
+	state_category = small_island
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+            school = 2
+			infrastructure = 2
+			13048 = {
+				naval_base = 1
+			}
+			13049 = {
+				naval_base = 1
+			}
+			13053 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13048 13049 13053 
+	}
+
+	local_supplies=0.0 
+}

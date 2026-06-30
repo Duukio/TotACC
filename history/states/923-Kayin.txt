@@ -1,0 +1,28 @@
+state={
+	id=923
+	name="STATE_923"
+    buildings_max_level_factor = 1
+	provinces={
+		1315 1385 1403 4408 7295 12125 12238 12292 
+	}
+	manpower=3000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+	state_category=large_town
+	history={
+		owner = BUR
+		victory_points = {
+			12238 5 #pa-an
+		}		
+		buildings = {
+			12238 = {
+				naval_base = 1	
+			   }
+			infrastructure = 2
+			arms_factory = 4
+			industrial_complex = 4
+			school = 3
+		}
+		add_core_of = BUR
+	}
+}

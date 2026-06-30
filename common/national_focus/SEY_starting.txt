@@ -1,0 +1,554 @@
+
+shared_focus = {
+	id = SEY_another_year_in_paradise
+	icon = GFX_another_peaceful_day_in_the_war_machine #TODO: change the name of the gfx define
+	cost = 3
+	x = 2
+	y = 0
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_another_year_in_paradise"
+		add_political_power = 100
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = SEY_our_benefactors_yearly_meeting
+	icon = GFX_our_benefactors_yearly_meeting
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_our_benefactors_yearly_meeting"
+		hidden_effect = {
+			country_event = {
+				id = SEY.5
+				days = 15
+			}		
+		}
+		custom_effect_tooltip = "We will congregate to deal with various issues over the period of this year."
+	}
+	relative_position_id = SEY_another_year_in_paradise
+	prerequisite = { focus = SEY_another_year_in_paradise }
+}
+
+shared_focus = {
+	id = SEY_the_pretorians
+	icon = GFX_the_pretorians
+	cost = 3
+	x = 0
+	y = 2
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_pretorians"
+		#SAF = {
+			#country_event = {
+			#	id = SEY.2
+			#}
+		#}
+		SEY = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+				producer = SAF
+			}
+		}
+	}
+	prerequisite = { focus = SEY_our_benefactors_yearly_meeting }
+}
+
+shared_focus = {
+	id = SEY_the_washingtonians
+	icon = GFX_the_washingtonians
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_washingtonians"
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 100
+			producer = USA
+		}
+		
+	}
+	relative_position_id = SEY_our_benefactors_yearly_meeting
+	prerequisite = { focus = SEY_our_benefactors_yearly_meeting }
+}
+
+shared_focus = {
+	id = SEY_the_parisians
+	icon = GFX_the_parisians
+	cost = 3
+	x = 2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_parisians"
+		custom_effect_tooltip = "We will get a small GDP boost from France."
+		hidden_effect = {
+			add_to_variable = { SEY.GDP = 0.09 }
+		}
+	}
+	relative_position_id = SEY_our_benefactors_yearly_meeting
+	prerequisite = { focus = SEY_our_benefactors_yearly_meeting }
+}
+
+shared_focus = {
+	id = SEY_old_friends
+	icon = GFX_old_friends
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_old_friends"
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+	relative_position_id = SEY_the_pretorians
+	prerequisite = { focus = SEY_the_pretorians }
+}
+
+shared_focus = {
+	id = SEY_new_concerns
+	icon = GFX_new_concerns
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_new_concerns"
+		SAF = {
+			give_guarantee = SEY
+			give_military_access = SEY
+		}
+		SEY = {
+			give_guarantee = SAF
+			give_military_access = SAF
+		}
+		hidden_effect = {
+			country_event = {
+				id = SEY.4
+				days = 15
+			}		
+		}
+	}
+	relative_position_id = SEY_old_friends
+	prerequisite = { focus = SEY_old_friends }
+}
+
+shared_focus = {
+	id = SEY_foster_americas_orphans
+	icon = GFX_foster_americas_orphans
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_foster_americas_orphans"
+		add_ideas = SEY_influx_of_usa	
+		hidden_effect = {
+			country_event = {
+				id = SEY.6
+				days = 15
+			}		
+		}
+	}
+	relative_position_id = SEY_the_washingtonians
+	prerequisite = { focus = SEY_the_washingtonians }
+}
+
+shared_focus = {
+	id = SEY_stockpile_currencies
+	icon = GFX_stockpile_currencies
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_stockpile_currencies"
+		custom_effect_tooltip = "We will exchange 350 million US dollars for Euros, Yen and Rubles."
+		add_to_variable = { SEY_RAINY_DAY_FUND = 0.350 }
+		subtract_from_variable = { SEY.GDP = 0.15 }
+		hidden_effect = {
+			country_event = {
+				id = SEY.7
+				days = 15
+			}		
+		}
+	}
+	relative_position_id = SEY_foster_americas_orphans
+	prerequisite = { focus = SEY_foster_americas_orphans }
+}
+
+shared_focus = {
+	id = SEY_prop_up_madagascan_supply
+	icon = GFX_prop_up_madagascan_supply
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_prop_up_madagascan_supply"
+		481 = {
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 7939
+			}		
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+				province = 12965
+			}
+		}
+		add_to_variable = { SEY.DEBT = 0.03 }
+		custom_effect_tooltip = "We will get some debt from this."
+		FRA = {
+			add_opinion_modifier = {
+				target = SEY
+				modifier = large_increase
+			}
+		}
+	}
+	relative_position_id = SEY_the_parisians
+	prerequisite = { focus = SEY_the_parisians }
+}
+
+shared_focus = {
+	id = SEY_for_a_price_of_course
+	icon = GFX_for_a_price_of_course
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+			country_event = {
+				id = SEY.9
+				days = 1
+			}		
+	}
+	relative_position_id = SEY_prop_up_madagascan_supply
+	prerequisite = { focus = SEY_prop_up_madagascan_supply }
+}
+shared_focus = {
+	id = SEY_prepare_for_the_worst
+	icon = GFX_prepare_for_the_worst
+	cost = 3
+	x = -2
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_hope_for_the_best"
+		add_to_variable = { SEY.DEBT = 0.01 }
+		662 = {
+			add_building_construction = {
+				type = bunker
+				level = 5
+				instant_build = yes
+				province = 2188
+			}	
+		}
+		custom_effect_tooltip = "Gains 100 million in debt."
+	}
+	relative_position_id = SEY_for_a_price_of_course
+	prerequisite = { focus = SEY_for_a_price_of_course }
+	prerequisite = { focus = SEY_new_concerns }
+	prerequisite = { focus = SEY_stockpile_currencies }
+}
+
+shared_focus = {
+	id = SEY_hope_for_the_best
+	icon = GFX_hope_for_the_best
+	cost = 3
+	x = 0
+	y = 1
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_prepare_for_the_worst"
+		add_political_power = 50
+		hidden_effect = {
+			mark_focus_tree_layout_dirty = yes
+			country_event = {
+				id = SEY.8
+			}		
+		}
+	}
+	relative_position_id = SEY_prepare_for_the_worst
+	prerequisite = { focus = SEY_prepare_for_the_worst }
+}
+
+shared_focus = {
+	id = SEY_ah_shit
+	icon = GFX_ah_shit
+	cost = 3
+	x = 4
+	y = 7
+	allow_branch = {
+		has_global_flag = SA_CW_ongoing
+	}
+	prerequisite = { focus = SEY_hope_for_the_best }
+	completion_reward = {
+		add_stability = -0.25
+		add_war_support = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_ah_shit"
+	}
+}
+
+shared_focus = {
+	id = SEY_bring_in_refugees
+	icon = GFX_bring_in_refugees
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_a_new_home_for_SAF
+		662 = {
+			add_manpower = 15000
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_bring_in_refugees"
+	}
+	relative_position_id =  SEY_ah_shit
+	prerequisite = { focus = SEY_ah_shit }
+}
+
+shared_focus = {
+	id = SEY_prepare_the_men
+	icon = GFX_prepare_the_men
+	cost = 3
+	x = -3
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 500
+		    producer = SAF
+		}
+		load_oob = "SEY_extra"
+		hidden_effect = {
+		add_to_variable = { SEY.GDP = -0.015}
+			set_division_template_lock = {
+			    division_template = "Blackwater PMC"
+			    is_locked = yes
+			}
+		}
+		custom_effect_tooltip = "Removes 15 million dollars from reserves."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_prepare_the_men"
+	}
+	relative_position_id =  SEY_bring_in_refugees
+	prerequisite = { focus = SEY_bring_in_refugees }
+}
+
+shared_focus = {
+	id = SEY_prop_up_the_boats
+	icon = GFX_prop_up_the_boats
+	cost = 3
+	x = 0
+	y = 2
+	completion_reward = {
+		#if = {
+		#	limit = {
+		#		has_dlc = "Man the Guns"
+		#	}
+		#load_oob = "SEY_naval"
+		#}
+		#else_if = {
+		#	limit = {
+		#		NOT = {
+		#			has_dlc = "Man the Guns"
+		#		}
+		#	}
+		#	load_oob = "SEY_naval_legacy"
+		#}
+		#else = {
+		#	
+		#}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_prop_up_the_boats"
+	}
+	relative_position_id =  SEY_bring_in_refugees
+	prerequisite = { focus = SEY_bring_in_refugees }
+}
+
+shared_focus = {
+	id = SEY_ready_the_planes
+	icon = GFX_ready_the_planes
+	cost = 3
+	x = 3
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		    type = medium_plane_fighter_airframe
+		    amount = 120
+		    producer = USA
+		}		
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_ready_the_planes"
+	}
+	relative_position_id =  SEY_bring_in_refugees
+	prerequisite = { focus = SEY_bring_in_refugees }
+}
+
+shared_focus = {
+	id = SEY_does_the_boss_go
+	icon = GFX_does_the_boss_go
+	cost = 3
+	x = 3
+	y = 2
+	completion_reward = {
+		country_event = {
+			id = SEY.3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_does_the_boss_go"
+	}
+	relative_position_id =  SEY_prepare_the_men
+	prerequisite = { focus = SEY_prepare_the_men }
+	prerequisite = { focus = SEY_prop_up_the_boats }
+	prerequisite = { focus = SEY_ready_the_planes }
+}
+
+shared_focus = {
+	id = SEY_ready_to_rodeo
+	icon = GFX_ready_to_rodeo
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_rodeo
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_ready_to_rodeo"
+     # country_event = {
+     #   id = SEY.3
+     #   days = 5
+     # }
+	}
+	relative_position_id =  SEY_does_the_boss_go
+	prerequisite = { focus = SEY_does_the_boss_go }
+}
+
+#shared_focus = {
+#	id = SEY_we_may_need_more_men
+#	icon = GFX_generic_suspend_constitution
+#	cost = 3
+#	x = 1
+#	y = 6
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SEY_we_may_need_more_men"
+#	}
+#}
+#
+#shared_focus = {
+#	id = SEY_break_the_piggy_bank
+#	icon = GFX_generic_suspend_constitution
+#	cost = 3
+#	x = 0
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SEY_break_the_piggy_bank"
+#	}
+#	relative_position_id =  SEY_we_may_need_more_men
+#	prerequisite = { focus SEY_we_may_need_more_men }
+#}
+#
+#shared_focus = {
+#	id = SEY_harness_the_bornseychellois
+#	icon = GFX_generic_suspend_constitution
+#	cost = 3
+#	x = -1
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SEY_harness_the_bornseychellois"
+#	}
+#	relative_position_id =  SEY_break_the_piggy_bank
+#	prerequisite = { focus SEY_break_the_piggy_bank }
+#	mutually_exclusive = { focus SEY_keep_them_leashed }
+#}
+#
+#shared_focus = {
+#	id = SEY_keep_them_leashed
+#	icon = GFX_generic_suspend_constitution
+#	cost = 3
+#	x = 3
+#	y = 8
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SEY_keep_them_leashed"
+#	}
+#	mutually_exclusive = { focus SEY_harness_the_bornseychellois }
+#}
+
+shared_focus = {
+	id = SEY_buonanotte_moneta
+	icon = GFX_buonanotte_moneta
+	cost = 3
+	x = 8
+	y = 6
+	completion_reward = {
+		if = {
+			limit = {
+				has_country_flag =  moneta_died_because_of_war
+			}
+			add_war_support = -0.07
+		}
+		else = {
+			add_political_power = -100
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_buonanotte_moneta"
+	}
+}
+
+shared_focus = {
+	id = SEY_riposare_in_seicelle
+	icon = GFX_riposare_in_seicelle
+	cost = 3
+	x = -2
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = SEY.2
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_riposare_in_seicelle"
+	}
+	relative_position_id = SEY_buonanotte_moneta
+	prerequisite = { focus = SEY_buonanotte_moneta }
+	prerequisite = { focus = SEY_riposare_in_fiume }
+	mutually_exclusive = { focus = SEY_riposare_in_fiume }
+}
+
+shared_focus = {
+	id = SEY_riposare_in_fiume
+	icon = GFX_riposare_in_seicelle
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = SEY.1
+			days = 5
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_riposare_in_fiume"
+	}
+	relative_position_id = SEY_buonanotte_moneta
+	prerequisite = { focus = SEY_buonanotte_moneta }
+	mutually_exclusive = { focus = SEY_riposare_in_seicelle }
+}
+
+shared_focus = {
+	id = SEY_convene_the_councils
+	icon = GFX_convene_the_councils
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		country_event = {
+		id = SEY.6
+		days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_convene_the_councils"
+	}
+	relative_position_id =  SEY_riposare_in_seicelle
+	prerequisite = { focus = SEY_riposare_in_seicelle focus = SEY_riposare_in_fiume }
+}
+

@@ -1,0 +1,30 @@
+
+state={
+id=582
+	
+	name="STATE_582"
+	manpower = 5543828
+	
+	state_category = rural
+
+	history={
+		owner = MEX
+		buildings = {
+            school = 2
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = MEX
+		set_demilitarized_zone = yes
+		victory_points = {
+			1900 3
+		}
+	}
+
+	provinces={
+		1900 12753 12867 
+	}
+	
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,29 @@
+
+state={
+id=479
+	
+	name="STATE_479"
+	manpower = 	2254068
+	
+	state_category = city
+	
+	resources={
+		strategic_minerals=170
+	}
+	history={
+	victory_points = { 13304 20 }
+		owner = BTS
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = BTS
+
+	}
+
+	provinces={
+		1580 8214 10525 12940 12963 13299 13300 13301 13302 13303 13304 13305 13306 13307 13308 13309 13310 13311 13312 13313 13314 13315 13316 13317 13318 13319
+	}
+}

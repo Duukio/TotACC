@@ -1,0 +1,262 @@
+defined_text = {
+	name = GDP_SCRLOC_MAPMODE
+	text = {
+		trigger = {
+			check_variable = { THIS.GDP < 1 }
+		}
+		localization_key = GDP_million_loc_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = { THIS.GDP > 9999 }
+		}
+		localization_key = GDP_trillion_loc_mapmode
+	}
+	text = {
+		localization_key = GDP_billion_loc_mapmode
+	}
+}
+defined_text = {
+	name = SPHERE_SCRLOC_MAPMODE
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 1
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_nato_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 2
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_ecc_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 3
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_nato_observer_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 4
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_oecd_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 5
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_nato_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 6
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_panasia_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 7
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_panasia_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 8
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_panasia_observer_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 9
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_comecon_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 10
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_wto_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 11
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_wto_observer_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 12
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_wto_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 13
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_africa_member_mapmode
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 14
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_africa_member_mapmode_leader
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = THIS.FACTIONSTATUS
+				value = 15
+				compare = equals
+			}
+		}
+		localization_key = SPHERE_africa_observer_mapmode
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = SPHERE_unaligned_mapmode
+	}
+}
+defined_text = {
+	name = GetTOTAInternetReachMapModeTooltip
+
+	text = {
+		trigger = {
+		has_variable = intreach
+		}
+		localization_key = intreach_tooltip_mapmode
+	}
+}
+defined_text = {
+	name = scrloc_mapmode_un
+	text = {
+		trigger = {
+			is_subject = yes
+			overlord = {
+				has_country_flag = UN_member
+			}
+		}
+		localization_key = is_a_puppet_of_un_member_state
+	}
+	text = {
+		trigger = {
+		has_country_flag = UN_member
+		}
+		localization_key = is_un_member
+	}
+	text = {
+		trigger = {
+				has_country_flag = is_un_observer
+		}
+		localization_key = is_un_observer_loc
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = UN_member
+				has_country_flag = is_un_observer
+			}
+			is_in_array = {
+			    array = global.non_UN_member
+			    value = THIS
+			}
+		}
+		localization_key = is_not_un_member
+	}
+	text = {
+		trigger = {
+			has_country_flag = is_the_united_nations
+		}
+		localization_key = is_the_un_lmao
+	}
+	text = {
+		trigger = {
+				has_country_flag = is_the_united_nations_hq
+		}
+		localization_key = is_the_un_hq_lmao
+	}
+	text ={
+		localization_key = is_not_un_member #not ideal, but it should make this less embarrassing
+	}
+}
+defined_text = {
+	name = TOTA_GDP_MAPMODE_TOOLTIP_SCRLOC
+	text = {
+		trigger = {
+			FROM.OWNER = {
+			has_idea = portlandian_gift_economy
+			}
+		}
+		localization_key = TOTA_GDP_mapmode_portland
+	}
+	text = {
+		trigger = {
+			FROM.OWNER = {
+				NOT = {
+					has_idea = portlandian_gift_economy
+				}
+			}
+		}
+		localization_key = TOTA_GDP_mapmode_tooltip_default
+	}
+	text = {
+		localization_key = war
+	}
+}

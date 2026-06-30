@@ -1,0 +1,84 @@
+equipments = {
+
+	gump_equipment = {
+		year = 1990
+
+		is_archetype = yes
+		picture = GFX_gump_90_medium		
+		is_buildable = no
+		type = mechanized
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		reliability = 0.6
+
+		defense = 60
+		breakthrough = 5
+		hardness = 0.8
+
+		soft_attack = 20
+		hard_attack = 5
+		ap_attack = 20
+
+		#Space taken in convoy
+		lend_lease_cost = 3
+
+		build_cost_ic = 4
+
+		resources = {
+			steel = 2
+			tungsten = 1
+		}
+		
+		fuel_consumption = 0
+	}
+
+	gump90 = {
+
+		abbreviation = "gmp90"
+		visual_level = 0
+		year = 1990
+		archetype = gump_equipment
+		priority = 3
+	}
+
+	gump10 = {
+
+		parent = gump90
+
+		abbreviation = "gmp10"
+		visual_level = 0
+		year = 2010
+		archetype = gump_equipment
+		priority = 4
+
+		reliability = 0.7
+		defense = 90
+		breakthrough = 10
+		hardness = 0.8
+		soft_attack = 30
+		hard_attack = 10
+		ap_attack = 30
+	}
+
+	gump30 = {
+
+		parent = gump10
+
+		abbreviation = "gmp30"
+		visual_level = 0
+		year = 2030
+		archetype = gump_equipment
+		priority = 5
+
+		reliability = 0.8
+		defense = 120
+		breakthrough = 15
+		hardness = 0.9
+		soft_attack = 40
+		hard_attack = 15
+		ap_attack = 40
+	}
+
+}

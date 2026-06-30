@@ -1,0 +1,23 @@
+state={
+id=7
+	name="STATE_7"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		owner = MNC
+		victory_points = { 13618 20 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = MNC
+	}
+	provinces={
+		13618 
+	}
+	manpower=38300
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

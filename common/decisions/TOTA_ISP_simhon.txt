@@ -1,0 +1,170 @@
+ISP_ending_unemployment_dec_cat = {
+	ISP_golan_campaign = {
+		cost = 150
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.01
+                440 = {
+                    add_extra_state_shared_building_slots = 2
+				    add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+				    }
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_galil_campaign = {
+		cost = 150
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.01
+                917 = {
+                    add_extra_state_shared_building_slots = 3
+				    add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+				    }
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_samaria_campaign = {
+		cost = 200
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.01
+                107 = {
+                    add_extra_state_shared_building_slots = 3
+				    add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+				    }
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_ramallah_campaign = {
+		cost = 150
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.01
+                107 = {
+                    add_extra_state_shared_building_slots = 1
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_hebron_campaign = {
+		cost = 200
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.01
+                105 = {
+                    add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+				    }
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_negev_campaign = {
+		cost = 150
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.01
+                104 = {
+                    add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+				        type = military_complex
+				        level = 1
+				        instant_build = yes
+				    }
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_jerusalem_campaign = {
+		cost = 200
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.02
+                918 = {
+                    add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+				        type = military_complex
+				        level = 1
+				        instant_build = yes
+				    }
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_coastal_campaign = {
+		cost = 200
+		fire_only_once = no
+        days_remove = 365
+		complete_effect = {
+            ISP = {
+				add_stability = 0.03
+                918 = {
+                    add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+				        type = military_complex
+				        level = 1
+				        instant_build = yes
+				    }
+					add_building_construction = {
+				        type = industrial_complex
+				        level = 1
+				        instant_build = yes
+				    }
+                }
+            }
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+}

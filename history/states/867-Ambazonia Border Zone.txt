@@ -1,0 +1,24 @@
+state={
+id=867
+	name="STATE_867"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = AMB
+		set_demilitarized_zone = yes
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = AMB
+		add_core_of = PRA
+		add_core_of = CAM
+	}
+	provinces={
+		13741 13742
+	}
+	manpower=10000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=380
+	name="STATE_380"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = BHA
+		victory_points = {
+			10060 10 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		1059 1101 1538 4104 4513 10060 10088 10116 10428 12063 12462 
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

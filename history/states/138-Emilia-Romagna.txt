@@ -1,0 +1,24 @@
+state={
+id=138
+	name="STATE_138"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	
+	history={
+        victory_points = { 6606 30 }
+        owner = ITA
+        buildings = {
+            school = 2
+            infrastructure = 5
+        }
+        add_core_of = ITA
+    }
+	
+	provinces={
+		782 3773 3976 6606 6790 6793 6985 9752 9924 11726 11734 
+	}
+	manpower=4446220
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

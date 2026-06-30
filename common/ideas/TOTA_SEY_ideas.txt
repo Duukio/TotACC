@@ -1,0 +1,1717 @@
+ideas = {
+	country = {
+			SEY_merc_capital = {
+			picture = SEY_merc_capital
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				conscription_factor = -0.9
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.15
+				dig_in_speed_factor = 0.5
+				land_night_attack = 0.5
+				send_volunteer_divisions_required = -1
+				
+			}
+		}
+			SEY_merc_capital_barlow_1 = {
+			picture = SEY_merc_capital
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = 0.01
+				planning_speed = 0.1
+				war_support_factor = -0.25
+				conscription_factor = -0.9
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.15
+				dig_in_speed_factor = 0.5
+				land_night_attack = 0.5
+				send_volunteer_divisions_required = -1
+				
+			}
+		}
+			SEY_merc_capital_barlow_2 = {
+			picture = SEY_merc_capital
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+				stability_weekly = 0.01
+				planning_speed = 0.1
+				war_support_factor = -0.25
+				conscription_factor = -0.9
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.15
+				dig_in_speed_factor = 0.5
+				land_night_attack = 0.5
+				send_volunteer_divisions_required = -1
+				
+			}
+		}
+			SEY_merc_capital_barlow_3 = {
+			picture = SEY_merc_capital
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+				stability_weekly = 0.01
+				planning_speed = 0.1
+				war_support_factor = -0.25
+				conscription_factor = -0.25
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.08
+				dig_in_speed_factor = 0.5
+				land_night_attack = 0.5
+				send_volunteer_divisions_required = -1
+				
+			}
+		}
+		SEY_EAF_manpower = {
+			picture = SEY_EAF_manpower
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				weekly_manpower = 200
+				army_org_factor = -0.07
+			}			
+		}
+		SEY_merc_capital2 = {
+			picture = SEY_merc_capital
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.25
+				conscription_factor = -0.9
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.15
+				dig_in_speed_factor = 0.5
+				land_night_attack = 0.5
+				send_volunteer_divisions_required = -1
+				
+			}
+		}
+			SEY_men_who_sell_world = {
+			picture = SEY_men_who_sell_world
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.15
+				trade_opinion_factor = 0.35
+				research_speed_factor = 0.07
+			}
+		}
+		military_five_year_plan = {
+						picture = SEY_military_five_year_plan
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+
+		civilian_five_year_plan = {
+						picture = SEY_civilian_five_year_plan
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+
+			SEY_a_new_home_for_SAF = {
+			picture = SEY_a_new_home_for_SAF
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			weekly_manpower = 100
+			monthly_population = 0.1
+			}
+		}
+			SEY_KGB_presence = {
+			picture = SEY_KGB_presence
+			allowed = {
+				tag = SEY
+				has_government = reformist_socialism
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			research_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SEY
+				cic_to_target_factor = 0.1
+			}
+		}
+			SEY_global_tech_network = {
+			picture = SEY_global_tech_network
+			allowed = {
+				tag = SEY
+				has_government = technocracy
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			research_speed_factor = 0.07
+			political_power_gain = 0.05
+			gdp_growth_modifier = 0.05
+			weekly_debt_modifier = 0.01
+			}
+		}
+			SEY_cooperation_spicer = {
+			picture = SEY_cooperation_spicer
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.02
+				gdp_growth_modifier = 0.01
+				political_power_gain = 0.05
+			}
+			targeted_modifier = {
+				tag = SEY
+				mic_to_target_factor = 0.05
+				cic_to_target_factor = 0.05
+			}
+		}
+			SEY_apac_friend = {
+			picture = SEY_apac_friend
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.1
+				gdp_growth_modifier = 0.05
+				stability_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = SEY
+				mic_to_target_factor = 0.05
+				cic_to_target_factor = 0.05
+			}
+		}
+			SEY_IAFCF = {
+			picture = SEY_IAFCF
+			allowed = {
+				tag = SEY
+				#has_country_flag = just_getting_started
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.15
+				conscription_factor = -0.9
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.15
+				dig_in_speed_factor = 0.5
+				land_night_attack = 0.5
+				send_volunteer_divisions_required = -1
+			}
+		}
+			SEY_merc_code = {
+			picture = SEY_merc_code
+			allowed = {
+				tag = SEY
+				#has_country_flag = just_getting_started
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_org_factor = 0.15
+				dig_in_speed_factor = -0.05
+				offence = -0.05
+				defence = 0.15
+			}
+		}
+			SEY_supersoldiers_brute = {
+			picture = SEY_supersoldiers_brute
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_org_factor = -0.1
+				dig_in_speed_factor = -0.15
+				offence = 0.5
+				defence = 0.5
+				army_speed_factor = 0.15
+				monthly_population = -0.9
+				org_loss_at_low_org_factor = -0.3
+				weekly_debt_modifier = 0.015
+				gdp_growth_modifier = -0.15
+				conscription_factor = -0.90
+				weekly_manpower = -50
+				training_time_army_factor = 1.5
+			}
+		}
+			SEY_supersoldiers_agility = {
+			picture = SEY_supersoldiers_agility
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_org_factor = 0.1
+				dig_in_speed_factor = -0.1
+				offence = -0.1
+				defence = -0.1
+				army_speed_factor = 0.6
+				monthly_population = -0.5
+				org_loss_at_low_org_factor = -0.3
+				weekly_debt_modifier = 0.02
+				gdp_growth_modifier = -0.10
+				conscription_factor = -0.99
+				weekly_manpower = -100
+				training_time_army_factor = 2.5
+			}
+		}
+			SEY_IAFCF_1 = {
+			picture = SEY_IAFCF
+			allowed = {
+				tag = SEY
+				#has_country_flag = just_getting_started
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = -0.05
+				conscription_factor = -0.25
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.15
+				dig_in_speed_factor = 0.5
+				land_night_attack = 0.5
+				send_volunteer_divisions_required = -1
+			}
+		}
+			SEY_IAFCF_2 = {
+			picture = SEY_IAFCF
+			allowed = {
+				tag = SEY
+				#has_country_flag = just_getting_started
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.3
+				weekly_manpower = 50
+				army_morale_factor = 0.8
+				army_org_factor = 0.05
+				dig_in_speed_factor = 0.25
+				land_night_attack = 0.3
+				send_volunteer_divisions_required = -1
+			}
+		}
+			SEY_Z_GLORY_TO_Z_FOREVER = {
+			picture = SEY_idk
+			allowed = {
+				tag = SEY
+				#has_country_flag = just_getting_started
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.15
+				production_speed_arms_factory_factor = 0.66
+				production_speed_industrial_complex_factor = -0.5
+				stability_factor = -0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+			SEY_general_five_year_plan = {
+			picture = SEY_idk
+			allowed = {
+				tag = SEY
+				#has_country_flag = just_getting_started
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = 0.01
+				consumer_goods_factor = -0.07
+				production_speed_industrial_complex_factor = 0.55
+			}
+		}		
+		
+			SEY_rodeo = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+					has_country_leader = {
+						character = Tullio_Moneta
+						ruling_only = yes
+					}
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+			}
+			targeted_modifier = {
+			    tag = AWB
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+			targeted_modifier = {
+			    tag = EFF
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+		}
+			SEY_rodeo_in_ALK_bout = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				SVK = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				SVK = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = ALK
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}	
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+			SEY_rodeo_in_RAS_bout = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				RAS = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				RAS = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = USP
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}	
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_HON = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				HON = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				HON = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = HON
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}				
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_ELS = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				HON = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				HON = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = ELS
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}				
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_IRQ = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				IRQ = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				IRQ = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = ALQ
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_NWG = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				NWG = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				NWG = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = NWG
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_IND = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				IND = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				IND = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = IND
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_PLK = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				PLK = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				PLK = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = PLK
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_PRC = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				PRC = {
+					has_war_with = JAP
+				}
+			}
+
+            available = {
+				tag = SEY
+				PRC = {
+					has_war_with = JAP
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = PRC
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_BUR = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				BUR = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				BUR = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = KAW
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = ARK
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = ARA
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = ZGM
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = KAC
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = SHA
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = SWA
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_USA = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				USA = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				USA = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = RAS
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+			targeted_modifier = {
+			    tag = USP
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = CAL
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_USP = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				USP = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				USP = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = RAS
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+			targeted_modifier = {
+			    tag = USA
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = CAL
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_CAL = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				CAL = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				CAL = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = RAS
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+			targeted_modifier = {
+			    tag = USP
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+			targeted_modifier = {
+			    tag = USA
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}		
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SEY_rodeo_in_SAF = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				SAF = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				SAF = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = SAF
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.04
+			}
+		}
+		SEY_rodeo_in_AWB = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				AWB = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				AWB = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = BRF
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+			    tag = SAF
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.04
+			}
+		}
+		SEY_rodeo_in_ROM = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = SEY
+				TRS = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SEY
+				TRS = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = ROM
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.04
+			}
+		}
+		SEY_influx_of_usa = {
+			picture = SEY_a_new_home_for_SAF
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			weekly_manpower = 100
+			monthly_population = 0.1
+			}			
+		}
+		SEY_centralize = {
+			picture = SEY_centralize
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_soctrends_drift_DC_C = 0.03
+			}			
+		}
+		SEY_province_reform = {
+			#picture = SEY_province_reform
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.15
+				conscription_factor = 0.1
+				monthly_soctrends_drift_DC_D = 0.03
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_school_factor = 0.05
+			}			
+		}
+		SEY_towards_a_white_seychelles = {
+			#picture = SEY_towards_a_white_seychelles
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = 0.4
+				stability_factor = -0.25
+				political_power_cost = -0.15
+				gdp_growth_modifier = 0.07
+			}			
+		}
+		SEY_native_labor = {
+			#picture = SEY_native_labor
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_school_factor = -0.15
+				research_speed_factor = -0.03
+				monthly_soctrends_drift_EE_E2 = 0.05
+			}			
+		}
+		SEY_native_labor_1 = {
+			#picture = SEY_native_labor
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_school_factor = -0.2
+				research_speed_factor = -0.05
+				monthly_soctrends_drift_EE_E2 = 0.07
+			}			
+		}
+		SEY_PAK_friends = {
+			#picture = SEY_PAK_friends
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.03
+			}
+			targeted_modifier = {
+				tag = SEY
+				cic_to_target_factor = 0.05
+			}			
+		}
+		SEY_BMB_friends = {
+			#picture = SEY_BMB_friends
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.03
+			}
+			targeted_modifier = {
+				tag = SEY
+				cic_to_target_factor = 0.05
+			}			
+		}
+		SEY_aeic = {
+			#picture = SEY_aeic
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.45
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_school_factor = -0.25
+				research_speed_factor = -0.05
+				monthly_soctrends_drift_EE_E2 = 0.1
+				political_power_gain = 0.05
+				gdp_growth_modifier = 0.2
+				weekly_debt_modifier = -0.02
+				stability_factor = -0.25
+			}	
+		}
+		SEY_towards_a_white_seychelles_1 = {
+			#picture = SEY_towards_a_white_seychelles_1
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = 0.65
+				stability_factor = 0.05
+				political_power_cost = -0.25
+				gdp_growth_modifier = 0.12
+				war_support_factor = -0.08
+				consumer_goods_factor = 0.03
+			}	
+		}
+		SEY_federal_system = {
+			#picture = SEY_federal_system
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.25
+				conscription_factor = 0.15
+				monthly_soctrends_drift_DC_D = 0.07
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_school_factor = 0.15
+				gdp_growth_modifier = 0.07
+			}			
+		}
+		SEY_corruption = {
+			#picture = SEY_corruption
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = -0.2
+				stability_factor = -0.15
+				monthly_soctrends_drift_DC_D = 0.07
+				monthly_soctrends_drift_EE_E2 = 0.07
+				production_speed_industrial_complex_factor = -0.03
+				political_power_gain = 0.15
+				gdp_growth_modifier = 0.01
+			}			
+		}
+		SEY_invisible_army = {
+			#picture = SEY_invisible_army
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_speed_factor = 0.3
+				army_strength_factor = -0.07
+				army_morale_factor = 0.3
+				coordination_bonus = -0.1
+			}			
+		}
+		SEY_frontline = {
+			#picture = SEY_frontline
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_speed_factor = -0.15
+				army_strength_factor = 0.1
+				army_morale_factor = 0.05
+				coordination_bonus = 0.1
+			}			
+		}
+		SEY_durrani_support = {
+			#picture = SEY_durrani_support
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				weekly_manpower = 100
+				gdp_growth_modifier = -0.03
+			}			
+		}
+		SEY_full_democracy = {
+			#picture = SEY_durrani_support
+			allowed = {
+				tag = SEY
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				liberalism_drift = 0.01
+				conservatism_drift = 0.01
+				socdem_drift = 0.01
+				gdp_growth_modifier = 0.04
+			}			
+		}
+	}		
+}

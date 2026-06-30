@@ -1,0 +1,26 @@
+state={
+id=105
+	name="STATE_105"
+    buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history={
+		victory_points = {
+			1086 10
+		}
+		owner = ISP
+		buildings = {
+            school = 2
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = ISP
+
+	}
+	provinces={
+		1086
+	}
+	manpower=1253000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

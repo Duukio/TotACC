@@ -1,0 +1,2410 @@
+
+USA_CW_unify_cat = {
+	USP_unify = {
+		visible = {
+			original_tag = USP
+		}
+		available = {
+			#tooltip = "All Continental American States"
+			USP = {
+				has_war = no
+			}
+			OR = {
+				USP = {
+					NOT = {
+						has_war_with = USA
+						has_war_with = CAL
+						has_war_with = ATI
+					}
+					owns_state = 534
+					owns_state = 1028
+					owns_state = 805
+					owns_state = 986
+					owns_state = 728
+					owns_state = 725
+					date > 2022.1.1
+					has_war = no
+				}
+				all_of_scopes = {
+					array = global.USASTATES
+					var:v = {
+					is_owned_by = USP
+					}
+				}
+				USP = {
+					any_allied_country = {
+						owns_state = 534
+						owns_state = 1028
+						owns_state = 805
+						owns_state = 986
+						owns_state = 728
+						owns_state = 725
+						has_war = no
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			annex_country = {
+				target = DIX
+			}
+			annex_country = {
+				target = TPR
+			}
+			USP = {
+				drop_cosmetic_tag = yes
+				country_event = {
+					id = USP.666 #select leader
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.87
+					days = 1
+				}
+			}
+		}		
+	}
+USA_annex_puppets = {
+	visible = {
+		USA = {
+			has_country_flag = USA_civil_war_began
+			has_war = no
+			owns_state = 549
+			date > 2022.1.1
+		}
+	}
+	ai_will_do = {
+		base = 999
+	}
+	fire_only_once = yes
+	complete_effect = {
+		USA = {
+			annex_country = {
+				target = OBC
+			}
+		}
+		USA = {
+			annex_country = {
+				target = GPR
+			}
+		}
+		USA = {
+			annex_country = {
+				target = BSD #?
+			}
+		}
+	}
+}
+	FCO_unify = {
+		visible = {
+			OR = {
+				tag = FSA
+				tag = SFL
+			}
+		}
+		available = {
+			FSA = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = FSA
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			FSA = {
+				annex_country = {
+					target = SFL
+				}
+				country_event = {
+					id = FCO.1 #select leader
+				}
+			}
+		}		
+	}
+	RAS_unify = {
+		visible = {
+			original_tag = RAS
+		}
+		available = {
+			RAS = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = RAS
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = {
+				id = RAS.1 #select leader
+			}
+		}		
+	}
+	AVK_unify = {
+		visible = {
+			original_tag = GPR
+		}
+		available = {
+			GPR = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = GPR
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = AVK_UNI
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.134
+					days = 1
+				}
+			}
+		}			
+	}
+	ATI_unify = {
+		visible = {
+			original_tag = ATI
+		}
+		available = {
+			ATI = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = ATI
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = {
+				id = ATI.1 #select leader
+			}
+		}		
+	}
+	CAL_unify = {
+		visible = {
+			original_tag = CAL
+		}
+		available = {
+			CAL = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = CAL
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = {
+				id = CAL.1 #select leader
+			}
+		}		
+	}
+	USA_unify = {
+		visible = {
+			original_tag = USA
+			has_country_flag = USA_civil_war_began
+		}
+		available = {
+		#tooltip = "All Continental American States"
+			OR = {
+				USA = {
+					owns_state = 752
+					has_country_flag = USA_civil_war_began
+					has_war = no
+				}
+				USA = {
+					any_allied_country = {
+					owns_state = 752
+					has_war = no
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			drop_cosmetic_tag = yes
+			USA = {
+				annex_country = {
+					target = GPR
+				}
+				annex_country = {
+					target = OBC
+				}
+				annex_country = {
+					target = BSD
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.111
+					days = 1
+				}
+			}
+		}		
+	}
+	LKT_unify = {
+		visible = {
+			original_tag = LKT
+		}
+		available = {
+			LKT = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = LKT
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = {
+				id = LKT.1 #select leader
+			}
+		}		
+	}
+	NWF_unify = {
+		visible = {
+			original_tag = NWF
+		}
+		available = {
+			NWF = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = NWF
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = {
+				id = NWF.1 #select leader
+			}
+		}		
+	}
+	NYP_unify = {
+		visible = {
+			original_tag = NYP
+		}
+		available = {
+			NYP = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = NYP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			drop_cosmetic_tag = yes
+			if = {
+				limit = {
+					NYP = {
+						has_government = autocracy
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.112
+						days = 1
+					}
+				}
+			}
+		}		
+	}
+	OBM_unify = {
+		visible = {
+			original_tag = OBM
+		}
+		available = {
+			OBM = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = OBM
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_cosmetic_tag = OBM_UNI
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.99
+					days = 1
+				}
+			}
+		}		
+	}
+	#SFL_unify = {
+	#	visible = {
+	#		original_tag = SFL
+	#	}
+	#	available = {
+	#		SFL = {
+	#			all_of_scopes = {
+	#				array = global.USASTATES
+	#				is_owned_by = SFL
+	#			}
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		base = 100
+	#	}
+	#	fire_only_once = yes
+	#	
+	#	complete_effect = {
+	#		country_event = {
+	#			id = SFL.1 #select leader
+	#		}
+	#	}		
+	#}
+}
+BSD_enact_TWD = {
+	the_cracker_trembles = {
+		visible = {
+			original_tag = BSD
+		}
+		available = {
+			original_tag = BSD
+			USA = {
+				NOT = {
+					has_war_with = USP
+				}
+			}
+			date > 2022.4.4
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			drop_cosmetic_tag = yes
+			leave_faction = yes
+			declare_war_on = {
+				target = USA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = OBC
+				type = civil_war
+			}
+			declare_war_on = {
+				target = GPR
+				type = civil_war
+			}
+		}
+	}
+}
+GPR_turn_maoist = {
+	the_crakkker_trembles = {
+		visible = {
+			original_tag = GPR
+		}
+		available = {
+			original_tag = GPR
+			GPR = {
+				has_war = yes
+			}
+			OR = {
+				USA = {
+					has_capitulated = yes
+				}
+				NOT =  {
+					country_exists = USA
+				}
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_politics = {
+				ruling_party = hardline_socialism
+			}
+			leave_faction = yes
+			declare_war_on = {
+				target = USA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = OBC
+				type = civil_war
+			}
+			declare_war_on = {
+				target = BSD
+				type = civil_war
+			}
+			set_cosmetic_tag = GPR_MAO
+		}
+	}
+}
+USA_CW_SKELE = {
+	NYP_ATTACK = {
+		visible = {
+			original_tag = NYP
+		}
+		available = {
+			original_tag = NYP
+			NOT = {
+				country_exists = RAS
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					NYP = {
+						any_neighbor_country = {
+							original_tag = USA 
+						}
+					}
+				}
+				NYP = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = GPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = OBC
+						type = civil_war
+					}
+					declare_war_on = {
+						target = BSD
+						type = civil_war
+					}
+				}
+			}
+			else = {
+				NYP = {
+					declare_war_on = {
+						target = USP
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = DIX
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+		}
+	}
+	RAS_ATTACK = {
+		visible = {
+			original_tag = RAS
+		}
+		available = {
+			original_tag = RAS
+			NOT = {
+				country_exists = NYP
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					RAS = {
+						any_neighbor_country = {
+							original_tag = USA 
+						}
+					}
+				}
+				RAS = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = GPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = OBC
+						type = civil_war
+					}
+					declare_war_on = {
+						target = BSD
+						type = civil_war
+					}
+				}
+			}
+			else = {
+				RAS = {
+					declare_war_on = {
+						target = USP
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = DIX
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+		}
+	}
+	NYP_ATTACK_2 = {
+		visible = {
+			original_tag = NYP
+		}
+		available = {
+			original_tag = NYP
+			date > 2021.6.1
+			NOT = {
+				country_exists = RAS
+			}
+			OR = {
+				OR = {
+					USA = {
+						has_capitulated = yes
+					}
+					NOT =  {
+						country_exists = USA
+					}
+				}
+				OR = {
+					USP = {
+						has_capitulated = yes
+					}
+					NOT =  {
+						country_exists = USP
+					}
+				}
+			}
+		
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = USP
+				}
+				NYP = {
+					declare_war_on = {
+						target = USP
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = DIX
+						type = civil_war
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = USA
+				}
+				NYP = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = GPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = OBC
+						type = civil_war
+					}
+					declare_war_on = {
+						target = BSD
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+		}
+	}
+	RAS_ATTACK_2 = {
+		visible = {
+			original_tag = RAS
+		}
+		available = {
+			original_tag = RAS
+			NOT = {
+				country_exists = NYP
+			}
+			OR = {
+				OR = {
+					USA = {
+						has_capitulated = yes
+					}
+					NOT =  {
+						country_exists = USA
+					}
+				}
+				OR = {
+					USP = {
+						has_capitulated = yes
+					}
+					NOT =  {
+						country_exists = USP
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			
+			if = {
+				limit = {
+					country_exists = USP
+				}
+				RAS = {
+					declare_war_on = {
+						target = USP
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = DIX
+						type = civil_war
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = USA
+				}
+				RAS = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = GPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = OBC
+						type = civil_war
+					}
+					declare_war_on = {
+						target = BSD
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+		}
+	}
+	OBM_ATTACK = {
+		visible = {
+			original_tag = OBM
+		}
+		available = {
+			original_tag = OBM
+			NOT = {
+				country_exists = SFL
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					OBM = {
+						any_neighbor_country = {
+							original_tag = DIX
+						}
+					}
+				}
+				OBM= {
+					declare_war_on = {
+						target = USP
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = DIX
+						type = civil_war
+					}
+				}
+			}
+			else = {
+				OBM = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = GPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = OBC
+						type = civil_war
+					}
+					declare_war_on = {
+						target = BSD
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+		}
+	}
+	OBM_ATTACK_2 = {
+		visible = {
+			original_tag = OBM
+		}
+		available = {
+			original_tag = OBM
+			OR = {
+				SFL = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = SFL
+				}
+			}
+			OR = {
+				USP = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = USP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			
+			OBM = {
+				declare_war_on = {
+					target = USA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = GPR
+					type = civil_war
+				}
+				declare_war_on = {
+					target = OBC
+					type = civil_war
+				}
+				declare_war_on = {
+					target = BSD
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			
+		}
+	}
+	ATI_end_of_peace_with_LKT = {
+		visible = {
+			original_tag = ATI
+		}
+		available = {
+			original_tag = ATI
+			NOT = {
+				country_exists = NWF
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			ATI = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+			}
+			
+		}
+	}
+	FSA_head_east = {
+		visible = {
+			original_tag = FSA
+		}
+		available = {
+			original_tag = FSA
+			NOT = {
+				country_exists = CAL
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			FSA = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					FSA = {
+						any_neighbor_country = {
+							OR = {
+								original_tag = USP
+								original_tag = TPR
+							}
+						}
+					}
+				}
+				FSA = {
+					declare_war_on = {
+						target = USP
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = DIX
+						type = civil_war
+					}
+				}
+			}
+			else = {
+				FSA = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = GPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = OBC
+						type = civil_war
+					}
+					declare_war_on = {
+						target = BSD
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			
+		}
+	}
+	CAL_head_east = {
+		visible = {
+			original_tag = CAL
+		}
+		available = {
+			original_tag = CAL
+			NOT = {
+				country_exists = FSA
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			CAL = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					CAL = {
+						any_neighbor_country = {
+							original_tag = USP
+						}
+					}
+				}
+				CAL = {
+					declare_war_on = {
+						target = USP
+						type = civil_war
+					}
+					declare_war_on = {
+						target = TPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = DIX
+						type = civil_war
+					}
+				}
+			}
+			else = {
+				CAL = {
+					declare_war_on = {
+						target = USA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = GPR
+						type = civil_war
+					}
+					declare_war_on = {
+						target = OBC
+						type = civil_war
+					}
+					declare_war_on = {
+						target = BSD
+						type = civil_war
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+			
+		}
+	}
+
+	USA_head_west = {
+		visible = {
+			original_tag = USA
+			original_tag = OBC
+		}
+		available = {
+			original_tag = USA
+			original_tag = OBC
+			OR = {
+				USP = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = USP
+				}
+			}
+			NOT = {
+				has_war_with = RAS
+			}
+			NOT = {
+				has_war_with = NYP
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			USA = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = FSA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NWF
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAL
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ATI
+					type = civil_war
+				}
+			}
+			OBC = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = FSA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NWF
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAL
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ATI
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					BSD = {
+						has_cosmetic_tag = BSD_PELOSIREICH
+					}
+				}
+				BSD = {
+					declare_war_on = {
+						target = LKT
+						type = civil_war
+					}
+					declare_war_on = {
+						target = FSA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = NWF
+						type = civil_war
+					}
+					declare_war_on = {
+						target = CAL
+						type = civil_war
+					}
+					declare_war_on = {
+						target = ATI
+						type = civil_war
+					}	
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						GPR = {
+							has_cosmetic_tag = GPR_MAO
+						}
+					}
+					
+				}
+				GPR = {
+					declare_war_on = {
+						target = LKT
+						type = civil_war
+					}
+					declare_war_on = {
+						target = FSA
+						type = civil_war
+					}
+					declare_war_on = {
+						target = NWF
+						type = civil_war
+					}
+					declare_war_on = {
+						target = CAL
+						type = civil_war
+					}
+					declare_war_on = {
+						target = ATI
+						type = civil_war
+					}	
+				}
+			}
+		}
+	}
+	USP_head_west = {
+		visible = {
+			original_tag = USP
+		}
+		available = {
+			original_tag = USP
+			OR = {
+				USA = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = USA
+				}
+			}
+			NOT = {
+				has_war_with = RAS
+			}
+			NOT = {
+				has_war_with = NYP
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			USP = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = FSA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NWF
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAL
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ATI
+					type = civil_war
+				}
+			}
+			DIX = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = FSA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NWF
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAL
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ATI
+					type = civil_war
+				}
+			}
+			TPR = {
+				declare_war_on = {
+					target = LKT
+					type = civil_war
+				}
+				declare_war_on = {
+					target = FSA
+					type = civil_war
+				}
+				declare_war_on = {
+					target = NWF
+					type = civil_war
+				}
+				declare_war_on = {
+					target = CAL
+					type = civil_war
+				}
+				declare_war_on = {
+					target = ATI
+					type = civil_war
+				}
+			}
+		}
+	}
+	OTHER_head_west = {
+		visible = {
+			OR = {
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = OBM
+				has_cosmetic_tag = GPR_MAO
+				has_cosmetic_tag = BSD
+			}
+			
+		}
+		available = {
+			OR = {
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = OBM
+				has_cosmetic_tag = GPR_MAO
+				has_cosmetic_tag = BSD
+			}
+			has_war = no
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			
+			declare_war_on = {
+				target = LKT
+				type = civil_war
+			}
+			declare_war_on = {
+				target = FSA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = NWF
+				type = civil_war
+			}
+			declare_war_on = {
+				target = CAL
+				type = civil_war
+			}
+			declare_war_on = {
+				target = ATI
+				type = civil_war
+			}
+		}
+			
+	}
+	ATI_head_east = {
+		visible = {
+			original_tag = ATI	
+		}
+		available = {
+			original_tag = ATI
+			OR = {
+				NWF = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = NWF
+				}
+			}
+			OR = {
+				LKT = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = LKT
+				}
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = USA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = OBC
+				type = civil_war
+			}
+			declare_war_on = {
+				target = GPR
+				type = civil_war
+			}
+			declare_war_on = {
+				target = BSD
+				type = civil_war
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+		}
+			
+	}
+	NWF_head_east = {
+		visible = {
+			original_tag = NWF	
+		}
+		available = {
+			original_tag = NWF
+			OR = {
+				ATI = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = ATI
+				}
+			}
+			OR = {
+				LKT = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = LKT
+				}
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = USA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = OBC
+				type = civil_war
+			}
+			declare_war_on = {
+				target = GPR
+				type = civil_war
+			}
+			declare_war_on = {
+				target = BSD
+				type = civil_war
+			}
+		}
+		if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}		
+	}
+	LKT_head_east = {
+		visible = {
+			original_tag = LKT
+		}
+		available = {
+			original_tag = LKT
+			OR = {
+				NWF = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = NWF
+				}
+			}
+			OR = {
+				ATI = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = ATI
+				}
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = USA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = OBC
+				type = civil_war
+			}
+			declare_war_on = {
+				target = GPR
+				type = civil_war
+			}
+			declare_war_on = {
+				target = BSD
+				type = civil_war
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+		}		
+	}
+	NWF_head_east_2 = {
+		visible = {
+			original_tag = NWF	
+		}
+		available = {
+			original_tag = NWF
+			OR = {
+				ATI = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = ATI
+				}
+			}
+			OR = {
+				LKT = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = LKT
+				}
+			}
+			OR = {
+				USA = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = USA
+				}
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = USP
+				type = civil_war
+			}
+			declare_war_on = {
+				target = TPR
+				type = civil_war
+			}
+			declare_war_on = {
+				target = DIX
+				type = civil_war
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+		}		
+	}
+	ATI_head_east_2 = {
+		visible = {
+			original_tag = ATI	
+		}
+		available = {
+			original_tag = ATI
+			OR = {
+				NWF = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = NWF
+				}
+			}
+			OR = {
+				LKT = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = LKT
+				}
+			}
+			OR = {
+				USA = {
+					has_capitulated = yes
+				}
+				NOT = {
+					country_exists = USA
+				}
+			}
+			date > 2021.6.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = USP
+				type = civil_war
+			}
+			declare_war_on = {
+				target = TPR
+				type = civil_war
+			}
+			declare_war_on = {
+				target = DIX
+				type = civil_war
+			}
+			if = {
+				limit = {
+					OR = {
+						NYP = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = NYP
+						}
+					}
+				}
+				declare_war_on = {
+					target = RAS
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						RAS = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = RAS
+						}
+					}
+				}
+				declare_war_on = {
+					target = NYP
+					type = civil_war
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						SFL = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = SFL
+						}
+					}
+				}
+				declare_war_on = {
+					target = OBM
+					type = civil_war
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						OBM = {
+							has_capitulated = yes
+						}
+						NOT = {
+							country_exists = OBM
+						}
+					}
+				}
+				declare_war_on = {
+					target = SFL
+					type = civil_war
+				}
+			}
+		}		
+	}
+	GEN_clean_up_FSA = {
+		visible = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}	
+		}
+		available = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}
+			has_war = no
+			date > 2021.6.1
+			any_neighbor_country = {
+				original_tag = FSA
+			}	
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = FSA
+				type = civil_war
+			}
+		}
+	}
+	GEN_clean_up_OBM = {
+		visible = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}	
+		}
+		available = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}
+			has_war = no
+			date > 2021.6.1
+			any_neighbor_country = {
+				original_tag = OBM
+			}	
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = OBM
+				type = civil_war
+			}
+		}
+	}
+	GEN_clean_up_NYP = {
+		visible = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}	
+		}
+		available = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}
+			has_war = no
+			date > 2021.6.1
+			any_neighbor_country = {
+				original_tag = NYP
+			}	
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = NYP
+				type = civil_war
+			}
+		}
+	}
+	GEN_clean_up_RAS = {
+		visible = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}	
+		}
+		available = {
+			OR = {
+				original_tag = CAL
+				original_tag = FSA
+				original_tag = BSD
+				original_tag = RAS
+				original_tag = NYP
+				original_tag = NWF
+				original_tag = ATI
+				original_tag = USP
+				original_tag = TPR
+				original_tag = DIX
+				original_tag = USA
+				original_tag = GPR
+				original_tag = OBC
+				original_tag = LKT
+				original_tag = OBM
+			}
+			has_war = no
+			date > 2021.6.1
+			any_neighbor_country = {
+				original_tag = RAS
+			}	
+		}
+		ai_will_do = {
+			base = 50
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = RAS
+				type = civil_war
+			}
+		}
+	}
+}

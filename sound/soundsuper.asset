@@ -1,0 +1,284 @@
+#####################
+# SUPER EVENT MUSIC #
+#####################
+category = {
+ name = "Super"
+ soundeffects = {
+	usachaos_super
+	biafra_win_super
+	nigeria_win_super
+	saf_cw_super
+	samson_super
+	tcw_super
+	uae_super
+	pgr_super
+	nikkurando
+	anticiv_super
+	avakian_super
+	covington_super
+	der_ewige_boomer_superevent
+	gillis
+	jorjani
+	logo_super
+	lolbert_super
+	maupin_super
+	neon_genesis_nyxvangelion
+	NWA_super
+	nypd_super
+	obamaloca
+	pelosi_super
+	scientology_unification_fireworks
+	spencer_goes_driving_super
+	srnicek_super
+	ULTRALIGHTBEAM_pence_super
+	yarvin_super
+	peltier
+	arlo
+	fourthworld
+	naarp
+	mars_death
+	mars
+	alien_life
+	mathews
+	johnson_se
+	mason_se
+	vaush
+	ezrase
+	opossumist
+	augustus
+	preston
+	dragula
+}
+  compressor =  {
+	enabled = yes
+	pregain = 5.0
+	postgain = 6.0
+	ratio = 15.0
+	threshold = -15.0
+	attacktime = 0.03
+	releasetime = 0.0
+ }
+}
+sound = {
+	name = usachaos_super
+	volume = 0.5
+	file = "super_events/usachaos_super.wav"
+}
+sound = {
+	name = nikkurando
+	volume = 0.5
+	file = "super_events/nrx_japan_super.wav"
+}
+sound = {
+	name = biafra_win_super
+	volume = 0.5
+	file = "super_events/biafra_win_super.wav"
+}
+sound = {
+	name = nigeria_win_super
+	volume = 0.5
+	file = "super_events/nigeria_win_super.wav"
+}
+sound = {
+	name = saf_cw_super
+	volume = 0.5
+	file = "super_events/saf_cw_super.wav"
+}
+sound = {
+	name = samson_super
+	volume = 0.5
+	file = "super_events/samson_super.wav"
+}
+sound = {
+	name = tcw_super
+	volume = 0.5
+	file = "super_events/tcw_super.wav"
+}
+sound = {
+	name = uae_super
+	volume = 0.5
+	file = "super_events/UAE.wav"
+}
+sound = {
+	name = pgr_super
+	volume = 0.5
+	file = "super_events/PGR.wav"
+}
+sound = {
+	name = anticiv_super
+	volume = 0.5
+	file = "super_events/anticiv_super.wav"
+}
+sound = {
+	name = avakian_super
+	volume = 0.5
+	file = "super_events/avakian_super.wav"
+}
+sound = {
+	name = covington_super
+	volume = 0.5
+	file = "super_events/covington_super.wav"
+}
+sound = {
+	name = der_ewige_boomer_superevent
+	volume = 0.5
+	file = "super_events/der_ewige_boomer_superevent.wav"
+}
+sound = {
+	name = gillis
+	volume = 0.5
+	file = "super_events/gillis.wav"
+}
+sound = {
+	name = jorjani
+	volume = 0.5
+	file = "super_events/jorjani.wav"
+}
+sound = {
+	name = logo_super
+	volume = 0.5
+	file = "super_events/logo_super.wav"
+}
+sound = {
+	name = lolbert_super
+	volume = 0.5
+	file = "super_events/lolbert_super.wav"
+}
+sound = {
+	name = maupin_super
+	volume = 0.5
+	file = "super_events/maupin_super.wav"
+}
+sound = {
+	name = neon_genesis_nyxvangelion
+	volume = 0.5
+	file = "super_events/neon_genesis_nyxvangelion.wav"
+}
+sound = {
+	name = NWA_super
+	volume = 0.5
+	file = "super_events/NWA.wav"
+}
+sound = {
+	name = nypd_super
+	volume = 0.5
+	file = "super_events/nypd_super.wav"
+}
+sound = {
+	name = obamaloca
+	volume = 0.5
+	file = "super_events/obamaloca.wav"
+}
+sound = {
+	name = pelosi_super
+	volume = 0.5
+	file = "super_events/pelosi_super.wav"
+}
+sound = {
+	name = scientology_unification_fireworks
+	volume = 0.5
+	file = "super_events/scientology_unification_fireworks.wav"
+}
+sound = {
+	name = spencer_goes_driving_super
+	volume = 0.5
+	file = "super_events/spencer_goes_driving_super.wav"
+}
+sound = {
+	name = srnicek_super
+	volume = 0.5
+	file = "super_events/srnicek_super.wav"
+}
+sound = {
+	name = ULTRALIGHTBEAM_pence_super
+	volume = 0.5
+	file = "super_events/ULTRALIGHTBEAM_pence_super.wav"
+}
+sound = {
+	name = yarvin_super
+	volume = 0.5
+	file = "super_events/yarvin_super.wav"
+}
+sound = {
+	name = peltier
+	volume = 0.5
+	file = "super_events/Peltier.wav"
+}
+sound = {
+	name = arlo
+	volume = 0.5
+	file = "super_events/arlo.wav"
+}
+sound = {
+	name = fourthworld
+	volume = 0.5
+	file = "super_events/fourthworld.wav"
+}
+sound = {
+	name = naarp
+	volume = 0.5
+	file = "super_events/naarp.wav"
+}
+sound = {
+	name = mars_death
+	volume = 0.5
+	file = "super_events/mars_death.wav"
+}
+sound = {
+	name = mars
+	volume = 0.5
+	file = "super_events/mars.wav"
+}
+sound = {
+	name = alien_life
+	volume = 0.5
+	file = "super_events/alien_life.wav"
+}
+sound = {
+	name = mathews
+	volume = 0.5
+	file = "super_events/mathews.wav"
+}
+sound = {
+	name = johnson_se
+	volume = 0.5
+	file = "super_events/Johnson.wav"
+}
+sound = {
+	name = mason_se
+	volume = 0.5
+	file = "super_events/mason_se.wav"
+}
+
+sound = {
+	name = vaush
+	volume = 0.5
+	file = "super_events/vaush.wav"
+}
+sound = {
+	name = ezrase
+	volume = 0.5
+	file = "super_events/ezra.wav"
+}
+sound = {
+	name = opossumist
+	volume = 0.5
+	file = "super_events/opossumist.wav"
+}
+sound = {
+	name = augustus
+	volume = 0.5
+	file = "super_events/augustus.wav"
+}
+sound = {
+	name = dragula
+	volume = 0.5
+	file = "super_events/dragula.wav"
+}
+sound = {
+	name = preston
+	volume = 0.5
+	file = "super_events/preston.wav"
+}
+
+

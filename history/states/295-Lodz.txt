@@ -1,0 +1,25 @@
+state={
+id=295
+	name="STATE_295"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+
+	history={
+		owner = POL
+		victory_points = { 9508 20 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 7
+			arms_factory = 4
+		}
+		add_core_of = POL
+	}
+	provinces={
+		493 584 3482 9400 9508 9546 11428 
+	}
+	manpower=2500000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

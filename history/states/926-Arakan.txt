@@ -1,0 +1,25 @@
+state={
+	id=926
+	name="STATE_926"
+    buildings_max_level_factor = 1
+	provinces={
+		1014 1142 4147 7122 12090 
+	}
+	manpower=2788807
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+	state_category=town
+	history={
+		victory_points = {
+			12090 5 #sittwe/akyab
+		}			
+		owner = BUR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			school = 2
+		}
+		add_core_of = BUR
+	}
+}

@@ -1,0 +1,33 @@
+scripted_gui = {
+
+	SEY_succession = {
+		context_type = decision_category
+		window_name = "SEY_succession"
+
+		visible = {
+            tag = SEY
+			has_country_flag = SEY_succession_flag
+		}
+
+		triggers = {
+		}
+
+		properties = {
+			PRINCE_DRIFT_TT = {
+				frame = PRINCE_DRIFT
+			}
+			BARLOW_DRIFT_TT = {
+				frame = BARLOW_DRIFT
+			}
+			SPICER_DRIFT_TT = {
+				frame = SPICER_DRIFT
+			}
+			VIKTOR_DRIFT_TT = {
+				frame = VIKTOR_DRIFT
+			}
+		}
+
+		effects = {
+		}
+	}
+}

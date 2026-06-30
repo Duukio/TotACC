@@ -1,0 +1,81 @@
+BIA_NGA = {
+color = rgb { 59 128 120 }
+color_ui = rgb { 59 128 120 }
+}
+SDL_BRA = {
+color = rgb { 98  150  60 }
+color_ui = rgb { 98  150  60 }
+}
+NWF_IDAHO = {
+color = rgb { 104 154 209 }
+color_ui = rgb { 104 154 209 }
+}
+CAL_USAINTRO = {
+color = rgb { 104 154 209 }
+color_ui = rgb { 104 154 209 }
+}
+CAL_USCCW = {
+color = rgb { 104 154 209 }
+color_ui = rgb { 104 154 209 }
+}
+MNC_ITA = {
+color = rgb { 141 206 88 }
+color_ui = rgb { 141 206 88 }
+}
+ATI_USA = {
+color = rgb { 104 154 209 }
+color_ui = rgb { 104 154 209 }
+}
+LKT_USA = {
+color = rgb { 104 154 209 }
+color_ui = rgb { 104 154 209 }
+}
+NWG_IND = {
+color = rgb { 175 98 127 }
+color_ui = rgb { 175 98 127 }
+}
+ISP_CANAAN_COSM = {
+color = rgb { 100 40 50}
+color_ui = rgb { 100 40 50}
+}
+SFL_NATANARCH = {
+color = rgb { 71 64 64 }
+color_ui = rgb { 71 64 64 }
+}
+SFL_natanarch_Yankee = {
+color = rgb { 47 56 71 }
+color_ui = rgb { 47 56 71 }
+}
+BSD_PELOSIREICH = {
+	color = rgb { 104 154 209 }
+	color_ui = rgb { 104 154 209 }
+}
+BSD_GEORGIA = {
+	color = rgb { 104 154 209 }
+	color_ui = rgb { 104 154 209 }
+}
+SFL_FSA = {
+	color = rgb { 233 153 31 }
+	color_ui = rgb { 233 153 31 }
+}
+GPR_MAO = {
+	color = rgb { 158 27 43 } 
+	color_ui = rgb { 158 27 43 }
+}
+FIZ_DPROC = {
+	color = rgb { 145 46 78 }
+	color_ui = rgb { 255 20 60 }
+}
+NCD_CONGO = {
+	color = rgb { 39 54 75 }
+	color_ui = rgb { 0 96 212 }
+}
+IRA_PEOPLES_REPUBLIC = {
+	color = rgb { 151 192 213 }
+	color_ui = rgb { 151 192 213 }
+}
+IRA_REPUBLIC = {
+	color = rgb { 151 192 213 }
+	color_ui = rgb { 151 192 213 }
+}
+

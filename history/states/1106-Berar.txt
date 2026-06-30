@@ -1,0 +1,30 @@
+state={
+	id=1106
+	name="STATE_1106" #Berar
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			10030 15 #Varhad
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 6
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		7430 12781 10030 10872 4883 7619
+	}
+	manpower=3000000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

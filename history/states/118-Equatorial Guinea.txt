@@ -1,0 +1,31 @@
+
+state={
+	id=118
+	name="STATE_118"
+    buildings_max_level_factor = 1
+
+	history={
+		victory_points = {
+			8244 10 
+		}
+		owner = CAM
+		buildings = {
+			school = 2
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = EQG
+		add_core_of = CAM
+
+	}
+
+	provinces={
+		8244 13942 
+	}
+	manpower=567348
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

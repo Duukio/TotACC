@@ -1,0 +1,24 @@
+state={
+id=1307
+	name="STATE_1307"
+    buildings_max_level_factor = 1
+	state_category = rural
+	
+	history={
+		owner = PAK
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 3
+		}
+		add_core_of = PAK 
+
+	}
+	provinces={
+		14076 14073 14072
+	}
+	manpower=5000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

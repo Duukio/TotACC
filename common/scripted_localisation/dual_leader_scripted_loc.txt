@@ -1,0 +1,824 @@
+# For the Duel Leader Title, Leader Names, and custom portrait!
+
+defined_text = {
+	name = GetDualLeaderName
+	text = {
+		trigger = {
+			tag = IRA
+			has_country_flag = feel_the_ash_at_your_shoulders
+			has_country_flag = dual_leader_open
+		}
+		localization_key = IRA_feel_the_ash_at_your_shoulders
+	}	
+	text = {
+		trigger = {
+			tag = JAP
+			has_country_flag = akihito
+			has_country_flag = dual_leader_open
+		}
+		localization_key = JAP_AKIHITO
+	}
+	text = {
+		trigger = {
+			tag = LIE
+			has_country_flag = DanielRisch
+			has_country_flag = dual_leader_open
+		}
+		localization_key = LIE_DANIEL
+	}
+	text = {
+		trigger = {
+			tag = MSK
+			has_country_flag = hendy_clarence
+			has_country_flag = dual_leader_open
+		}
+		localization_key = HENDY_CLARENCE
+	}
+	text = {
+		trigger = {
+			tag = MSK
+			has_country_flag = john_mcafee_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = JOHN_MCAFEE
+	}
+	text = {
+		trigger = {
+			tag = PHL
+			has_country_flag = Gregorio_Catapang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = GREGORIO_CATAPANG
+	}
+	text = {
+		trigger = {
+			tag = QIE
+			has_country_flag = husheng
+			has_country_flag = dual_leader_open
+		}
+		localization_key = QIE_HUSHENG
+	}
+	text = {
+		trigger = {
+			tag = QIE
+			has_country_flag = yuzhang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = QIE_YUZHANG
+	}
+	text = {
+		trigger = {
+			tag = CHL
+			has_country_flag = cybersyn_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = CHL_CYBERSYN
+	}
+	text = {
+		trigger = {
+			tag = ROM
+			has_country_flag = valentin_ceausescu
+			has_country_flag = dual_leader_open
+		}
+		localization_key = ROM_VALENTIN_CEAUSESCU
+	}
+	text = {
+		trigger = {
+			tag = HOL
+			has_country_flag = willem_alex
+			has_country_flag = dual_leader_open
+		}
+		localization_key = HOL_WILLEM_ALEX
+	}
+	text = {
+		trigger = {
+			tag = JOR
+			has_country_flag = bisher_al
+			has_country_flag = dual_leader_open
+		}
+		localization_key = JOR_BISHER_AL
+	}
+	text = {
+		trigger = {
+			tag = LST
+			has_country_flag = letsie_lesotho
+			has_country_flag = dual_leader_open
+		}
+		localization_key = LST_LETSIE
+	}
+	text = {
+		trigger = {
+			tag = MNC
+			has_country_flag = pm_dartout
+			has_country_flag = dual_leader_open
+		}
+		localization_key = MNC_PM_DARTOUT
+	}
+	text = {
+		trigger = {
+			tag = SAU
+			has_country_flag = MBS_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = SAU_MBS_LEADER
+	}
+	text = {
+		trigger = {
+			tag = LUX
+			has_country_flag = henri_luxembourg 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = LUX_HENRI
+	}
+	text = {
+		trigger = {
+			tag = SEY
+			has_country_flag = wavel
+			has_country_flag = dual_leader_open
+		}
+		localization_key = SEY_WAVEL
+	}
+	text = {
+		trigger = {
+			tag = SRW
+			has_country_flag = srw_abang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = SRW_ABANG
+	}
+	text = {
+		trigger = {
+			tag = BEL
+			has_country_flag = philippe_belgium 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = PHILIPPE
+	}
+	text = {
+		trigger = {
+			tag = PAK
+			has_country_flag = zaher 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = PAK_ZAHER
+	}
+	text = {
+		trigger = {
+			tag = ZAI
+			has_country_flag = mobutu
+			has_country_flag = dual_leader_open
+		}
+		localization_key = ZAI_MOBUTU
+	}
+	text = {
+		trigger = {
+			tag = HKG
+			has_country_flag = richard_li
+			has_country_flag = dual_leader_open
+		}
+		localization_key = RICHARD_LI_TZAR_KAI
+	}
+	text = {
+		trigger = {
+			tag = KOH
+			has_country_flag = quentin_i
+			has_country_flag = dual_leader_open
+		}
+		localization_key = QUENTIN_I
+	}
+	text = {
+		trigger = {
+			tag = SNG
+			has_country_flag = yaacob
+			has_country_flag = dual_leader_open
+		}
+		localization_key = YAACOB_IBRAHIM
+	}
+	text = {
+		trigger = {
+			tag = AWB
+			has_country_flag = terreblanche
+			has_country_flag = dual_leader_open
+		}
+		localization_key = EUGENE_TB
+	}
+	text = {
+		trigger = {
+			tag = TRM
+			has_country_flag = ismail
+			has_country_flag = dual_leader_open
+		}
+		localization_key = ISMAIL_TRM
+	}
+	text = {
+		trigger = {
+			tag = HEL
+			has_country_flag = constantine_ii
+			has_country_flag = dual_leader_open
+		}
+		localization_key = CONSTANTINE_II
+	}
+	text = {
+		trigger = {
+			tag = RSB
+			has_country_flag = dewet
+			has_country_flag = dual_leader_open
+		}
+		localization_key = NEL_DE_WET
+	}
+	text = {
+		trigger = {
+			tag = LKT
+			has_country_flag = takota_iron
+			has_country_flag = dual_leader_open
+		}
+		localization_key = TAKOTA_IRON_EYES
+	}
+	text = {
+		trigger = {
+			tag = ISP
+			has_country_flag = efraim_sneh_isp
+			has_country_flag = dual_leader_open
+		}
+		localization_key = EFRAIM_SNEH_ISP
+	}
+	text = {
+		trigger = {
+			tag = SVI
+			has_country_flag = georges_viet
+			has_country_flag = dual_leader_open
+		}
+		localization_key = GEORGES_VIET
+	}
+	text = {
+		trigger = {
+			OR = {
+			tag = AST
+			tag = WIF
+			tag = NZL
+			tag = ENG
+			tag = EAF
+			tag = ZAM
+			tag = CAN #not sure if thats everyone?
+			tag = ADM
+			tag = PGN
+			}
+			has_country_flag = charles_iii
+			has_country_flag = dual_leader_open
+		}
+		localization_key = CHARLES_III
+	}
+	text = {
+	localization_key = IAMERROR
+	}
+}
+defined_text = {
+	name = GetSecondTitle
+	text = {
+		trigger = {
+			tag = JAP
+			has_country_flag = akihito
+			has_country_flag = dual_leader_open
+		}
+		localization_key = JAP_AKIHITO_TITLE
+	}
+	text = {
+		trigger = {
+			tag = IRA
+			has_country_flag = feel_the_ash_at_your_shoulders
+			has_country_flag = dual_leader_open
+		}
+		localization_key = IRA_feel_the_ash_at_your_shoulders_TITLE
+	}
+	text = {
+		trigger = {
+			tag = BEL
+			has_country_flag = philippe_belgium 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = PHILIPPE_TITLE
+	}
+	text = {
+		trigger = {
+			tag = SVI
+			has_country_flag = georges_viet
+			has_country_flag = dual_leader_open
+		}
+		localization_key = GEORGES_VIET_TITLE
+	}
+	text = {
+		trigger = {
+			tag = LKT
+			has_country_flag = takota_iron
+			has_country_flag = dual_leader_open
+		}
+		localization_key = TAKOTA_IRON_EYES_TITLE
+	}
+	text = {
+		trigger = {
+			tag = MSK
+			has_country_flag = hendy_clarence
+			has_country_flag = dual_leader_open
+		}
+		localization_key = HENDY_CLARENCE_TITLE
+	}
+	text = {
+		trigger = {
+			tag = MSK
+			has_country_flag = john_mcafee_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = JOHN_MCAFEE_TITLE
+	}
+	text = {
+		trigger = {
+			tag = KOH
+			has_country_flag = quentin_i
+			has_country_flag = dual_leader_open
+		}
+		localization_key = QUENTIN_I_TITLE
+	}
+	text = {
+		trigger = {
+			tag = AWB
+			has_country_flag = terreblanche
+			has_country_flag = dual_leader_open
+		}
+		localization_key = EUGENE_TB_TITLE
+	}
+	text = {
+		trigger = {
+			tag = QIE
+			has_country_flag = husheng
+			has_country_flag = dual_leader_open
+		}
+		localization_key = QIE_HUSHENG_TITLE
+	}
+	text = {
+		trigger = {
+			tag = QIE
+			has_country_flag = yuzhang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = QIE_YUZHANG_TITLE
+	}
+	text = {
+		trigger = {
+			tag = CHL
+			has_country_flag = cybersyn_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = CHL_CYBERSYN_TITLE
+	}
+	text = {
+		trigger = {
+			tag = HOL
+			has_country_flag = willem_alex
+			has_country_flag = dual_leader_open
+		}
+		localization_key = HOL_WILLEM_ALEX_TITLE
+	}
+	text = {
+		trigger = {
+			tag = JOR
+			has_country_flag = bisher_al
+			has_country_flag = dual_leader_open
+		}
+		localization_key = JOR_BISHER_AL_TITLE
+	}
+	text = {
+		trigger = {
+			tag = LST
+			has_country_flag = letsie_lesotho
+			has_country_flag = dual_leader_open
+		}
+		localization_key = LST_LETSIE_TITLE
+	}
+	text = {
+		trigger = {
+			tag = MNC
+			has_country_flag = pm_dartout
+			has_country_flag = dual_leader_open
+		}
+		localization_key = MNC_PM_DARTOUT_TITLE
+	}
+	text = {
+		trigger = {
+			tag = LIE
+			has_country_flag = DanielRisch
+			has_country_flag = dual_leader_open
+		}
+		localization_key = LIE_DANIEL_TITLE
+	}
+	text = {
+		trigger = {
+			tag = SAU
+			has_country_flag = MBS_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = SAU_MBS_LEADER_TITLE
+	}
+	text = {
+		trigger = {
+			tag = LUX
+			has_country_flag = henri_luxembourg 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = LUX_HENRI_TITLE
+	}
+	text = {
+		trigger = {
+			tag = PAK
+			has_country_flag = zaher 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = PAK_ZAHER_TITLE
+	}
+	text = {
+		trigger = {
+			tag = ZAI
+			has_country_flag = mobutu
+			has_country_flag = dual_leader_open
+		}
+		localization_key = ZAI_MOBUTU_TITLE
+	}
+	text = {
+		trigger = {
+			tag = ROM
+			has_country_flag = valentin_ceausescu
+			has_country_flag = dual_leader_open
+		}
+		localization_key = ROM_VALENTIN_CEAUSESCU_TITLE
+	}
+	text = {
+		trigger = {
+			tag = HKG
+			has_country_flag = richard_li
+			has_country_flag = dual_leader_open
+		}
+		localization_key = RICHARD_LI_TZAR_KAI_TITLE
+	}
+	text = {
+		trigger = {
+			tag = RSB
+			has_country_flag = dewet
+			has_country_flag = dual_leader_open
+		}
+		localization_key = NEL_DE_WET_TITLE
+	}
+	text = {
+		trigger = {
+			tag = SEY
+			has_country_flag = wavel
+			has_country_flag = dual_leader_open
+		}
+		localization_key = SEY_WAVEL_TITLE
+	}
+	text = {
+		trigger = {
+			tag = SRW
+			has_country_flag = srw_abang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = SRW_ABANG_TITLE
+	}
+	text = {
+		trigger = {
+			tag = SNG
+			has_country_flag = yaacob
+			has_country_flag = dual_leader_open
+		}
+		localization_key = YAACOB_TITLE
+	}
+	text = {
+		trigger = {
+			OR = {
+			tag = AST
+			tag = WIF
+			tag = NZL
+			tag = ENG
+			tag = EAF
+			tag = ZAM
+			tag = CAN #not sure if thats everyone?
+			tag = ADM
+			tag = PGN
+			}
+			has_country_flag = charles_iii
+			has_country_flag = dual_leader_open
+		}
+		localization_key = CHARLES_III_TITLE
+	}
+	text = {
+		trigger = {
+			tag = ISP
+			has_country_flag = efraim_sneh_isp
+			has_country_flag = dual_leader_open
+		}
+		localization_key = EFRAIM_SNEH_ISP_TITLE
+	}
+	text = {
+		trigger = {
+			tag = TRM
+			has_country_flag = ISMAIl
+			has_country_flag = dual_leader_open
+		}
+		localization_key = ISMAIL_TRM_TITLE
+	}
+	text = {
+		trigger = {
+			tag = HEL
+			has_country_flag = constantine_ii
+			has_country_flag = dual_leader_open
+		}
+		localization_key = CONSTANTINE_II_TITLE
+	}
+	text = {
+		trigger = {
+			tag = PHL
+			has_country_flag = Gregorio_Catapang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = GREGORIO_CATAPANG_TITLE
+	}
+	text = {
+	localization_key = IAMERROR
+	}
+}
+#defined_text = {
+#	name = GetDualLeaderTitleTT
+#	text = {
+#	}
+#}
+
+defined_text = {
+    name = GetDualLeaderPortrait
+	text = {
+		trigger = {
+			tag = IRA
+			has_country_flag = feel_the_ash_at_your_shoulders
+			has_country_flag = dual_leader_open
+		}
+		localization_key = GFX_IRA_feel_the_ash_at_your_shoulders
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_country_flag = akihito
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_JAP_Akihito"
+	}
+	text = {
+		trigger = {
+			tag = MSK
+			has_country_flag = hendy_clarence
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_MSK_Hendy_Clarence"
+	}
+	text = {
+		trigger = {
+			tag = MSK
+			has_country_flag = john_mcafee_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_MSK_John_McAfee"
+	}
+	text = {
+		trigger = {
+			tag = PHL
+			has_country_flag = Gregorio_Catapang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_PHL_Gregorio_Catapang"
+	}
+	text = {
+		trigger = {
+			tag = LKT
+			has_country_flag = takota_iron
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_LKT_Takota_Iron_Eyes"
+	}
+	text = {
+		trigger = {
+			tag = KOH
+			has_country_flag = quentin_i
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_QUENTIN_I"
+	}
+    text = {
+		trigger = {
+			tag = QIE
+			has_country_flag = husheng
+			has_country_flag = dual_leader_open
+		}
+        localization_key = "GFX_QIE_Husheng"
+	}
+	text = {
+		trigger = {
+			tag = QIE
+			has_country_flag = yuzhang
+			has_country_flag = dual_leader_open
+		}
+        localization_key = "GFX_YUZHANG"
+	}
+	text = {
+		trigger = {
+			tag = CHL
+			has_country_flag = cybersyn_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_CHL_CYBERSYN_TITLE"
+	}
+	text = {
+		trigger = {
+			tag = HOL
+			has_country_flag = willem_alex
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_HOL_WILLEM_ALEX_TITLE" #dw about them having TITLE in the gfx name im just lazy
+	}
+	text = {
+		trigger = {
+			tag = SEY
+			has_country_flag = wavel
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_SEY_WAVEL"
+	}
+	text = {
+		trigger = {
+			tag = SRW
+			has_country_flag = srw_abang
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_SRW_ABANG"
+	}
+	text = {
+		trigger = {
+			tag = JOR
+			has_country_flag = bisher_al
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_JOR_BISHER_AL_TITLE"
+	}
+	text = {
+		trigger = {
+			tag = LST
+			has_country_flag = letsie_lesotho
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_LST_LETSIE_TITLE"
+	}
+	text = {
+		trigger = {
+			tag = MNC
+			has_country_flag = pm_dartout
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_MNC_PM_DARTOUT_TITLE"
+	}
+	text = {
+		trigger = {
+			tag = LIE
+			has_country_flag = DanielRisch
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_LIE_DANIEL"
+	}
+	text = {
+		trigger = {
+			tag = SAU
+			has_country_flag = MBS_leader
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_SAU_MBS_LEADER_TITLE"
+	}
+	text = {
+		trigger = {
+			tag = LUX
+			has_country_flag = henri_luxembourg 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_LUX_HENRI_TITLE"
+	}
+	text = {
+		trigger = {
+			tag = PAK
+			has_country_flag = zaher 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_PAK_ZAHER_TITLE"
+	}
+	text = {
+		trigger = {
+			tag = ISP
+			has_country_flag = efraim_sneh_isp
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_efraim_sneh"
+	}
+	text = {
+		trigger = {
+			tag = RSB
+			has_country_flag = dewet
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_NEL_DE_WET"
+	}
+	text = {
+		trigger = {
+			tag = ZAI
+			has_country_flag = mobutu 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_ZAI_MOBUTU"
+	}
+	text = {
+		trigger = {
+			tag = HKG
+			has_country_flag = richard_li
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_RICHARD_LI"
+	}
+	text = {
+		trigger = {
+			tag = SNG
+			has_country_flag = yaacob
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_YAACOB"
+	}
+	text = {
+		trigger = {
+			tag = AWB
+			has_country_flag = terreblanche
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_EUGENETB"
+	}
+	text = {
+		trigger = {
+			tag = TRM
+			has_country_flag = ISMAIl
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_ISMAIL_TRM"
+	}
+	text = {
+		trigger = {
+			tag = HEL
+			has_country_flag = constantine_ii
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_CONSTANTINE_HEL"
+	}
+	text = {
+		trigger = {
+			tag = BEL
+			has_country_flag = philippe_belgium 
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_PHILIPPE_BEL"
+	}
+	text = {
+		trigger = {
+			tag = ROM
+			has_country_flag = valentin_ceausescu
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_VALENTIN_CEAUSESCU"
+	}
+	text = {
+		trigger = {
+			tag = SVI
+			has_country_flag = georges_viet
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_GEORGES_VIET"
+	}
+	text = {
+		trigger = {
+			OR = {
+			tag = AST
+			tag = WIF
+			tag = NZL
+			tag = ENG
+			tag = EAF
+			tag = ZAM
+			tag = CAN #not sure if thats everyone?
+			tag = ADM
+			tag = PGN
+			}
+			has_country_flag = charles_iii
+			has_country_flag = dual_leader_open
+		}
+		localization_key = "GFX_CHARLES_III"
+	}
+	text = {
+	localization_key = IAMERROR
+	}
+}

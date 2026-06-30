@@ -1,0 +1,287 @@
+
+shared_focus = {
+	id = NGA_the_jade_revolution
+	icon = GFX_NGA_the_jade_revolution
+	cost = 2
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		NGA = {
+			has_country_flag = NGA_jade
+		}
+	}
+	completion_reward = {
+		add_political_power = 100
+		set_politics = { 
+			ruling_party = liberalism
+		}
+		country_event = {
+			id = NGA.2001
+			days = 2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_jade_revolution"
+	}
+}
+
+shared_focus = {
+	id = NGA_a_democratic_revolution
+	icon = GFX_NGA_a_democratic_revolution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		NGA_olusegun_obasanjo = {
+			retire = yes
+		}
+		add_country_leader_role = {
+		    character = NGA_tony_elumelu
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = natlib
+		        expire = "2050.1.1.1"
+		        traits = { }
+		    }
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_democratic_revolution"
+	}
+	relative_position_id = NGA_the_jade_revolution
+	prerequisite = { focus = NGA_the_jade_revolution }
+	mutually_exclusive = { focus = NGA_revolution }
+	mutually_exclusive = { focus = NGA_a_national_revolution }
+}
+
+shared_focus = {
+	id = NGA_revolution
+	icon = GFX_NGA_revolution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = technocracy
+		}
+		set_popularities = {
+			technocracy = 10
+			socdem = 20
+			liberalism = 15
+			conservatism = 15
+			autocracy = 40
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_revolution"
+	}
+	relative_position_id = NGA_the_jade_revolution
+	prerequisite = { focus = NGA_the_jade_revolution }
+	mutually_exclusive = { focus = NGA_a_democratic_revolution }
+}
+
+shared_focus = {
+	id = NGA_a_national_revolution
+	icon = GFX_NGA_a_national_revolution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		NGA_olusegun_obasanjo = {
+			retire = yes
+		}
+		NGA = {
+		add_country_leader_role = {
+		    character = NGA_yabagi_yusuf_sani
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = relcon
+		        expire = "2050.1.1.1"
+		        traits = { }
+		    }
+		}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_national_revolution"
+	}
+	relative_position_id = NGA_the_jade_revolution
+	prerequisite = { focus = NGA_the_jade_revolution }
+	mutually_exclusive = { focus = NGA_a_democratic_revolution }
+}
+
+shared_focus = {
+	id = NGA_occupy_nigeria
+	icon = GFX_NGA_occupy_nigeria
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = NGA.2002
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_occupy_nigeria"
+	}
+	relative_position_id = NGA_a_democratic_revolution
+	prerequisite = { focus = NGA_a_democratic_revolution focus = NGA_revolution focus = NGA_a_national_revolution }
+}
+
+shared_focus = {
+	id = NGA_take_to_the_streets
+	icon = GFX_NGA_take_to_the_streets
+	cost = 2
+	x = -4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_take_to_the_streets"
+	}
+	relative_position_id = NGA_occupy_nigeria
+	prerequisite = { focus = NGA_occupy_nigeria }
+}
+
+shared_focus = {
+	id = NGA_catching_flies_with_honey
+	icon = GFX_NGA_catching_flies_with_honey
+	cost = 2
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = NGA.2003
+			days = 1
+		}
+		hidden_effect = {
+			country_event = {
+				id = NGA.2004
+				days = 45
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_catching_flies_with_honey"
+	}
+	relative_position_id = NGA_occupy_nigeria
+	prerequisite = { focus = NGA_occupy_nigeria }
+}
+
+shared_focus = {
+	id = NGA_the_loudest_minority
+	icon = GFX_NGA_the_loudest_minority
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		unlock_decision_category_tooltip = NGA_defanging_the_fula_dec_cat
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_loudest_minority"
+	}
+	relative_position_id = NGA_occupy_nigeria
+	prerequisite = { focus = NGA_occupy_nigeria }
+}
+
+shared_focus = {
+	id = NGA_no_place_for_hate
+	icon = GFX_NGA_no_place_for_hate
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.07
+		add_political_power = -25
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_no_place_for_hate"
+	}
+	relative_position_id = NGA_the_loudest_minority
+	prerequisite = { focus = NGA_the_loudest_minority }
+	mutually_exclusive = { focus = NGA_placate_their_fears }
+}
+
+shared_focus = {
+	id = NGA_placate_their_fears
+	icon = GFX_NGA_placate_their_fears
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = -0.07
+		add_political_power = 50
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_placate_their_fears"
+	}
+	relative_position_id = NGA_the_loudest_minority
+	prerequisite = { focus = NGA_the_loudest_minority }
+	mutually_exclusive = { focus = NGA_no_place_for_hate }
+}
+shared_focus = {
+	id = NGA_the_final_coup
+	icon = GFX_NGA_the_final_coup
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = autocracy
+			popularity = -1
+		}
+		NGA_attahiru_ibrahim = {
+			retire = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_final_coup"
+	}
+	relative_position_id = NGA_the_loudest_minority
+	prerequisite = { focus = NGA_take_to_the_streets }
+	prerequisite = { focus = NGA_catching_flies_with_honey }
+	prerequisite = { focus = NGA_the_loudest_minority }
+	prerequisite = { focus = NGA_placate_their_fears focus = NGA_no_place_for_hate  }
+}
+shared_focus = {
+	id = NGA_the_first_election
+	icon = GFX_NGA_the_first_election
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = NGA.20004
+			days = 3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_first_election"
+	}
+	relative_position_id = NGA_the_final_coup
+	prerequisite = { focus = NGA_the_final_coup }
+}

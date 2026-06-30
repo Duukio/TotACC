@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "Comando Açoreano"
+		naval_base = 1751
+		task_force = {
+			name = "Comando Açoreano"
+			location = 1751
+			ship = { name = "FNA Lisboa" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BIA version_name = "Vinhedo Class" } }
+			}
+			ship = { name = "FNA Vinhedo" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = BIA version_name = "Vinhedo Class" } }
+			}
+		}
+	}
+}

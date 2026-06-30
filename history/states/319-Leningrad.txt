@@ -1,0 +1,31 @@
+state={
+id=319
+	name="STATE_319"
+    buildings_max_level_factor = 1
+	state_category = megalopolis
+	
+	resources = {
+	steel = 20
+	}
+	history={ 
+        victory_points = { 3151 50 }
+        owner = SOV
+		add_core_of = SOV
+        buildings = {
+            school = 2
+            infrastructure = 5
+			dockyard = 7
+			3151 = {
+			naval_base = 10
+			}
+			industrial_complex = 6
+			arms_factory = 2
+        }
+    }
+	provinces={
+		149 3151 
+	}
+	manpower=5000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

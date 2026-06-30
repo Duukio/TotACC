@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+			HEL_brit_ass_tur_super = {
+			picture = HEL_british_assistance_turkish_supervision
+			allowed = {
+				tag = HEL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = 0.25
+			stability_factor = -0.2
+			gdp_growth_modifier = 0.025
+			political_power_cost = 0.65
+			}
+			targeted_modifier = {
+			    tag = TUR
+			    cic_to_target_factor = 0.10
+			    extra_trade_to_target_factor = 0.25
+			}
+		}
+		HEL_athenian_rhythms = {
+			picture = HEL_athenian_rhythms
+			allowed = {
+				tag = HEL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.35
+				conscription_factor = 0.5
+				monthly_population = -0.1
+			}
+		}
+	}	
+}

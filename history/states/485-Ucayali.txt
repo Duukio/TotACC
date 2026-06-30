@@ -1,0 +1,28 @@
+
+state={
+id=485
+	name="STATE_485"
+    buildings_max_level_factor = 1
+	manpower = 3735826
+	
+	state_category = town
+	
+
+	history={
+		owner = SDL
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = SDL
+		victory_points = {
+			2212 10
+		}
+	}
+
+	provinces={
+		2212 2226 5166 8160 8191 10940 
+	}
+}

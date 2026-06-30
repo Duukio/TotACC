@@ -1,0 +1,47 @@
+
+state={
+id=507
+	
+	name="STATE_507" # Pampas
+	manpower = 23000000
+	
+	state_category = megalopolis
+
+	history={
+		owner = ARG
+		buildings = {
+            school = 2
+			infrastructure = 5 
+			arms_factory = 2
+			industrial_complex = 6
+			dockyard = 2
+			air_base = 3
+			12364 = {
+				naval_base = 7
+				bunker = 1
+				coastal_bunker = 1
+			}
+			7621 = {
+				naval_base = 2
+			}
+			1639 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = ARG
+		add_core_of = ARP
+		victory_points = {
+			12364 50 
+		}
+		victory_points = {
+			7621 20
+		}
+
+	}
+
+	provinces={
+		1555 1568 1596 1624 1639 4573 4602 4643 7621 10375 10390 10402 10418 12351 12364 12379 12394 12409 12998 
+	}
+
+	local_supplies=0.0 
+}

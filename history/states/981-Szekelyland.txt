@@ -1,0 +1,25 @@
+state={
+id=981
+	name="STATE_981"
+    buildings_max_level_factor = 1
+	state_category = large_town
+	
+
+	history={
+		owner = ROM
+		victory_points = { 9670 10 } #targu mures
+		victory_points = { 9668 5 } #miercurea ciuc
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = ROM
+	}
+	provinces={
+	 9668 3689 711 9670 690
+	}
+	manpower=800000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

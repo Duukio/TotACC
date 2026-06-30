@@ -1,0 +1,33 @@
+
+state={
+	id=376
+	name="STATE_376"
+    buildings_max_level_factor = 1
+	resources={
+		steel=50.000
+		aluminium=50.000
+		strategic_minerals=50.000
+		tungsten=25.000
+	}
+
+	history={
+		owner = PRC
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 1
+
+		}
+		add_core_of = PRC
+		add_core_of = XIN
+
+	}
+
+	provinces={
+		1698 1703 1766 1838 1943 1970 2015 2074 4682 4704 4709 4770 4828 4843 4947 4973 5016 5087 5736 7702 7732 7790 7792 7949 8042 8086 8112 10315 10545 10614 10839 10885 10911 12119 12524 12598 12656 12671 12864 
+	}
+	manpower=96644038
+	buildings_max_level_factor=2.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=450
+	name="STATE_450"
+    buildings_max_level_factor = 1
+	resources={
+		rubber=20.000
+	}
+
+	history={
+		owner = EAF
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 3
+			school = 2
+
+		}
+		add_core_of = EAF
+		victory_points = {
+			8223 5
+		}
+
+	}
+
+	provinces={
+		7133 8223 12929 
+	}
+	manpower=21020030
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

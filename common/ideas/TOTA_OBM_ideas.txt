@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		OBM_attack = {
+			picture = OBM_attack
+			allowed = {
+				tag = OBM
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				attrition = -0.05
+				offence = 0.02
+				conscription_factor = -0.3
+			}
+		}
+		OBM_the_hussein_hersey = {
+			picture = OBM_the_hussein_hersey
+			allowed = {
+				tag = OBM
+			}
+
+            available = {
+
+            }
+ a
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                stability_factor = 0.05
+				political_power_factor = 0.05
+				political_power_gain = 0.2
+				production_speed_buildings_factor = 0.05
+				army_attack_factor = 0.02
+				attrition = 0.05
+				army_morale = 2
+			}
+		}
+		OBM_a_fragmented_movement = {
+			picture = OBM_a_fragmented_movement
+			allowed = {
+				tag = OBM
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				army_org_factor = -0.1
+			}
+		}
+	}	
+}

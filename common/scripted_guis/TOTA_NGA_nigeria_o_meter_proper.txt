@@ -1,0 +1,52 @@
+scripted_gui = {
+	NGA_nigeria_o_meter_gui = {
+		context_type = player_context
+		window_name = "NGA_nigeria_o_meter_proper"
+        parent_window_token = politics_tab
+
+		visible = {
+			tag = NGA
+			has_country_flag = NGA_nga_meter
+            has_country_flag =  NGA_nga_meter_open
+		}
+
+		triggers = {
+            NGA_nigeria_o_meter_proper_visible = {
+                tag = NGA
+                has_country_flag = NGA_nga_meter
+                has_country_flag = NGA_nga_meter_open
+            } #failsafe
+		}
+
+		properties = {
+			NIGERIA_MAP_METER = {
+				frame = NGA_NORF_SOUF
+			}
+		}
+
+		effects = {
+			nigeria_o_meter_faq_click = {
+				if = {
+					limit = {
+						has_country_flag = NGA_nga_meter_faq_open
+					}
+					clr_country_flag = NGA_nga_meter_faq_open
+				}
+				else = {
+					set_country_flag = NGA_nga_meter_faq_open
+				}				
+			}
+			close_button_nom_click = {
+				if = {
+					limit = {
+						has_country_flag = NGA_nga_meter_open
+					}
+					clr_country_flag = NGA_nga_meter_open
+				}
+				else = {
+					set_country_flag = NGA_nga_meter_open
+				}				
+			}
+		}
+	}
+}

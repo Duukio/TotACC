@@ -1,0 +1,109 @@
+NGA_agenda_2050_dec_cat = {
+    NGA_public_infrastructure_reform = {
+        visible = {
+            original_tag = NGA
+            has_country_flag = NGA_agenda_2050_dec_cat_flag
+        }
+        fire_only_once = yes
+        cost = 250
+        ai_will_do = {
+            base = 100
+        }
+        custom_cost_trigger = {
+            check_variable = { NGA.GDP > 400 }
+        }
+        custom_cost_text = NGA_GDP_400
+        days_remove = 365
+        available = {
+            has_political_power > 249
+            check_variable = { NGA.GDP > 400 }
+        }
+        complete_effect = {
+            add_political_power = -250
+        }
+        remove_effect= {
+            build_railway = {
+                level = 2
+                build_only_on_allied = yes
+                controller_priority = {
+                    base = 1
+                    modifier = {
+                        tag = NGA
+                        add = 2
+                    }
+                }
+                fallback = yes
+                path = { 1969 4938 4972 13660 5028 13907 8109 10820 13641 13911 13640 }
+                start_province = 1969
+                target_province = 13640
+            }
+        }
+    }
+    NGA_public_infrastructure_reform_package_2 = {
+        visible = {
+            original_tag = NGA
+            has_country_flag = NGA_agenda_2050_dec_cat_flag
+        }
+        fire_only_once = yes
+        cost = 250
+        ai_will_do = {
+            base = 100
+        }
+        custom_cost_trigger = {
+            check_variable = { NGA.GDP > 500 }
+        }
+        custom_cost_text = NGA_GDP_500
+        days_remove = 400
+        available = {
+            has_political_power > 249
+            controls_state = 19
+            check_variable = { NGA.GDP > 500 }
+        }
+        complete_effect = {
+            add_political_power = -250
+            add_to_variable = { NGA.DEBT = 35 }
+            custom_effect_tooltip = "Adds 35 billion USD in debt"
+        }
+        remove_effect= {
+            build_railway = {
+                level = 2
+                build_only_on_allied = yes
+                controller_priority = {
+                    base = 1
+                    modifier = {
+                        tag = NGA
+                        add = 2
+                    }
+                }
+                fallback = yes
+                path = { 2050 13655 13654 13653 13648 4952 }
+                start_province = 2050
+                target_province = 4952
+            }
+            19 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = school
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            969 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = school
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+}

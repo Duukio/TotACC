@@ -1,0 +1,179 @@
+characters = {
+	CAL_Yuya_Motoyama = {
+		name = CAL_yuya_motoyama
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/Yuya Motoyama.png"
+			}
+		}
+		#corps_commander = {
+		#	traits = { reckless politically_connected }
+		#	skill = 3
+		#	attack_skill = 3
+		#	defense_skill = 3
+		#	planning_skill = 3
+		#	logistics_skill = 3
+		#}
+	}
+	Haru_San = {
+		name = CAL_Haru_San
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/Haru-san.png"
+			}
+		}
+		#corps_commander = {
+		#	traits = { reckless infantry_officer politically_connected}
+		#	skill = 3
+		#	attack_skill = 3
+		#	defense_skill = 3
+		#	planning_skill = 3
+		#	logistics_skill = 3
+		#}
+	}
+	#added by focus
+	Dom_Raso = {
+		name = CAL_Dom_Raso
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/Dom_Raso.png"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero media_personality }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	David_S_Baldwin = {
+		name = CAL_David_S_Baldwin
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/David_S_Baldwin.png"
+			}
+		}
+		field_marshal = {
+			traits = { logistics_wizard offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	Kris_Tanto_Paronto = {
+		name = CAL_Kris_Tanto_Paronto
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/Kris_Tanto_Paronto.png"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	David_L_Kauffman = {
+		name = CAL_David_L_Kauffman
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/David_L_Kauffman.png"
+			}
+		}
+		field_marshal = {
+			traits = { fast_planner defensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+		}
+	}
+	Matthew_P_Beevers = {
+		name = CAL_Matthew_P_Beevers
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/David_L_Kauffman.png"
+			}
+		}
+		field_marshal = {
+			traits = { thorough_planner offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	evan_hafer = {
+		name = CAL_Evan_Hafer
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/Evan_Hafer.png"
+			}
+		}
+		corps_commander = {
+			traits = { irregulars_officer reckless }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	tim_kennedy = {
+		name = CAL_tim_kennedy
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/tim_kennedy.png"
+			}
+		}
+		corps_commander = {
+			traits = { irregulars_officer trait_cautious }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	Dale_Comstock = {
+		name = CAL_Dale_Comstock
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/Dale_Comstock.png"
+			}
+		}
+		corps_commander = {
+			traits = { irregulars_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	George_Krivo = {
+		name = CAL_George_Krivo
+		portraits = {
+			army = {
+				large = "gfx/leaders/CAL/George_Krivo.png"
+			}
+		}
+		corps_commander = {
+			traits = { irregulars_officer politically_connected}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

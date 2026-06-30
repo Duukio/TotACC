@@ -1,0 +1,21 @@
+state={
+id=70
+	name="STATE_70"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = BEL
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = BEL
+	}
+	provinces={
+		10788 
+	}
+	manpower=77949
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

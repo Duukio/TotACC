@@ -1,0 +1,150 @@
+characters = {
+	MSK_Oscar_Sobalvarro = {
+		name = "Oscar Sobalvarro"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MSK/Oscar Sobalvarro.png"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MSK_stedman_f_muller = {
+		name = "Stedman Fagot Muller"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MSK/Stedman Fagot Muller.png"
+			}
+		}
+		corps_commander = {
+			traits = { offensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	MSK_Adolfo_Costanzo = {
+		name = "Adolfo Costanzo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/MSK/Adolfo Costanzo.png"
+			}
+			civilian = {
+				large = "gfx/leaders/MSK/Adolfo Costanzo.png"
+			}
+		}
+		field_marshal = {
+			traits = {  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	JohnMcAfee = {
+		name = "John McAfee"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/MSK/McAfee.png"
+			}
+		}
+        country_leader = {
+            desc = ""
+            ideology = perdict
+        }
+	}
+#####
+	MSK_EnriqueMolinaOfreciano = {
+			name = "Henry Molina Ofreciano"
+			portraits = {
+				civilian = { small = "GFX_idea_EnriqueMolinaOfreciano" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = MSK
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+			}
+			idea_token = MSK_henry_molina_idea 
+			traits = {
+			    head_of_government
+			    hog_young_guard
+				conservatism_minister
+			}
+		}
+	}
+	MSK_ErrolAnthonyHodgCash = {
+			name = "Errol Anthony Hodg Cash"
+			portraits = {
+				civilian = { small = "GFX_idea_ErrolAnthonyHodgCash" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = MSK
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+			}
+			idea_token = MSK_errol_idea 
+			traits = {
+			    economy_minister
+			    eco_keynesian_economy
+				socdem_minister
+			}
+		}
+	}
+	MSK_LottieCunninghamWren = {
+			name = "Lottie Cunningham Wren"
+			portraits = {
+				civilian = { small = "GFX_idea_LottieCunninghamWren" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = MSK
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+			}
+			idea_token = MSK_lottie_idea 
+			traits = {
+			    foreign_minister
+			    for_ideological_crusader
+				socdem_minister
+			}
+		}
+	}
+	MSK_ShairaNatashaDownsMorgan = {
+			name = "Shaira Natasha Downs Morgan"
+			portraits = {
+				civilian = { small = "GFX_idea_ShairaNatashaDownsMorgan" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = MSK
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+			}
+			idea_token = MSK_shaira_natasha_idea 
+			traits = {
+			    security_minister
+			    sec_crime_fighter
+				technocracy_minister
+			}
+		}
+	}
+}

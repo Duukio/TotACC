@@ -1,0 +1,41 @@
+state={
+id=498
+	
+	name="STATE_498" # Miranda
+
+	
+	state_category = metropolis
+	
+	manpower = 20350010
+	resources={
+		oil=300
+	}
+
+	history={
+		owner = VEN
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 15
+			air_base = 2
+			8113 = {
+				naval_base = 10
+			}
+			10912 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = VEN
+		victory_points = {
+			8113 40
+		}
+
+	}
+
+	provinces={
+		4942 7968 8024 8080 8113 10767 10823 10912 5056 4892 5000
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,32 @@
+﻿capital = 666
+
+
+set_research_slots = 0
+
+load_focus_tree = ZZZ_national_focus #If you touch this the bookmark gets fucked
+
+set_politics = {
+	ruling_party = anarchism
+	last_election = "2020.1.20"
+	election_frequency = 48
+	elections_allowed = yes
+
+}
+
+set_popularities = {
+	anarchism = 100
+}
+
+country_lock_all_division_template = yes
+
+create_country_leader = {
+	name = " "
+	desc = "Soul without body..."
+	picture = "GFX_portrait_ZZZ"
+	expire = "3000.1.1"
+	ideology = collan
+	traits = {
+	}
+}
+
+

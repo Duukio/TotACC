@@ -1,0 +1,28 @@
+
+state={
+id=736
+	
+	name="STATE_736"
+	manpower = 230104
+	
+	state_category = rural
+
+	history={
+		owner = NWF
+		victory_points = { 9695 5 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = NWF
+				add_core_of = USA
+
+	}
+
+	provinces={
+		9695 12535 12607 
+	}
+	
+
+	local_supplies=0.0 
+}

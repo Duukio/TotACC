@@ -1,0 +1,27 @@
+state={
+	id=1212
+	name="STATE_1212"
+    buildings_max_level_factor = 1
+	provinces={
+		2097 
+	}
+	manpower=8126755
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_city
+	history={
+		owner = IRQ
+		add_core_of = IRQ
+		add_core_of = IRA
+		add_core_of = ALQ
+		add_core_of = TRM
+		buildings = {
+			school = 2
+			infrastructure = 4
+		}
+		victory_points = {
+			2097 30 
+		}
+	}
+}

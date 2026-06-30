@@ -1,0 +1,29 @@
+state={
+id=45
+	
+	name="STATE_45"
+
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		victory_points = {
+			10803 20 
+		}
+		victory_points = {
+			13638 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		5013 5070 8065 8122 10762 10803 13425 13426 13427 13428 13429 13430 13431 13432 13611 13638 
+	}
+	manpower=26378274
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

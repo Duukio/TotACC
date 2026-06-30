@@ -1,0 +1,35 @@
+
+state={
+	id=1172
+	name="STATE_1172"
+    buildings_max_level_factor = 1
+	resources={
+		aluminium=200.000
+		strategic_minerals=200.000
+		tungsten=50.000
+	}
+
+	history={
+		owner = PRC
+		victory_points = {
+			7222 20 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = PRC
+
+	}
+
+	provinces={
+		1083 1161 1171 4079 4105 4148 4173 4203 7035 7085 7094 7104 7222 7637 9937 10008 10017 10040 10044 10064 10079 11916 11937 11973 11994 12019 12036 12061 
+	}
+	manpower=61027171
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=20.000
+}

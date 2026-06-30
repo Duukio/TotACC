@@ -1,0 +1,405 @@
+#these are special Biafra related wars that end when a state's control changes
+
+#mostly here for legacy purposes and comparison, TNO's system is better :lolhd:
+
+#on_actions = {
+#	on_state_control_changed = {
+#		effect = {
+#			if = {
+#				limit = {
+#					date < 2021.1.29
+#					OR = {
+#					BED = {
+#						OR = {
+#							controls_state = 22
+#							controls_state = 27
+#							has_war_with = NGA
+#						}
+#					}
+#					BIA = {
+#							OR = {
+#								controls_state = 22
+#								controls_state = 27
+#								has_war_with = NGA
+#							}
+#						}
+#					}
+#				}
+#				BIA = {
+#					diplomatic_relation = { country = NGA relation = war_relation active = no }
+#				}
+#				BED = {
+#					diplomatic_relation = { country = NGA relation = war_relation active = no }
+#				}
+#			NGA = {
+#			remove_wargoal = {
+#				type = all
+#				target = BIA
+#				}
+#			remove_wargoal = {
+#				type = all
+#				target = BED
+#				}
+#				add_timed_idea = {
+#					idea = NGA_reparations_to_biafra
+#					days = 720
+#				}
+#			}
+#			BIA = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}			
+#				complete_national_focus = BIA_dance_in_lagos
+#			}
+#			BED = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}				
+#			}
+#			every_country = {
+#			limit = {
+#			is_ai = no
+#			}
+#			news_event = { days = 1 id = WNE.2 }
+#			}
+#			BIA = {
+#				set_truce = {
+#					target = NGA
+#					days = 365
+#				}
+#			}
+#			BED = {
+#				set_truce = {
+#					target = NGA
+#					days = 365
+#				}
+#			}
+#				BIA = {
+#					set_country_flag = BIA_nigeria_peace			
+#				}
+#			}
+#			else_if = {
+#				limit = {
+#					date < 2021.2.26
+#					OR = {
+#					BED = {
+#						OR = {
+#							controls_state = 22
+#							controls_state = 27
+#							has_war_with = NGA
+#						}
+#					}
+#					BIA = {
+#							OR = {
+#								controls_state = 22
+#								controls_state = 27
+#								has_war_with = NGA
+#							}
+#						}
+#					}
+#				}
+#				BIA = {
+#					diplomatic_relation = { country = NGA relation = war_relation active = no }
+#				}
+#				BED = {
+#					diplomatic_relation = { country = NGA relation = war_relation active = no }
+#				}
+#			NGA = {
+#			remove_wargoal = {
+#				type = all
+#				target = BIA
+#				}
+#			remove_wargoal = {
+#				type = all
+#				target = BED
+#				}
+#				add_timed_idea = {
+#					idea = NGA_reparations_to_biafra
+#					days = 720
+#				}
+#			}
+#			BIA = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}
+#				complete_national_focus = BIA_minor_setbacks
+#			}
+#			BED = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}				
+#			}
+#			every_country = {
+#			limit = {
+#			is_ai = no
+#			}
+#			news_event = { days = 1 id = WNE.2 }
+#			}
+#			set_truce = {
+#				target = NGA
+#				days = 365
+#			}
+#			set_country_flag = BIA_nigeria_peace			
+#			}
+#			else_if = {
+#				limit = {
+#					date < 2021.3.22
+#					OR = {
+#					BED = {
+#						OR = {
+#							controls_state = 22
+#							controls_state = 27
+#							has_war_with = NGA
+#						}
+#					}
+#					BIA = {
+#							OR = {
+#								controls_state = 22
+#								controls_state = 27
+#								has_war_with = NGA
+#							}
+#						}
+#					}
+#				}
+#				BIA = {
+#					diplomatic_relation = { country = NGA relation = war_relation active = no }
+#				}
+#				BED = {
+#					diplomatic_relation = { country = NGA relation = war_relation active = no }
+#				}
+#			NGA = {
+#			remove_wargoal = {
+#				type = all
+#				target = BIA
+#				}
+#			remove_wargoal = {
+#				type = all
+#				target = BED
+#				}
+#				add_timed_idea = {
+#					idea = NGA_reparations_to_biafra
+#					days = 720
+#				}
+#			}
+#			BIA = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}
+#				complete_national_focus = BIA_harsher_punishments
+#			}
+#			BED = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}				
+#			}
+#			every_country = {
+#			limit = {
+#			is_ai = no
+#			}
+#			news_event = { days = 1 id = WNE.2 }
+#			}
+#			set_truce = {
+#				target = NGA
+#				days = 365
+#			}
+#			set_country_flag = BIA_nigeria_peace			
+#			}
+#			else_if = {
+#				limit = {
+#					date < 2021.5.22
+#					OR = {
+#					BED = {
+#						OR = {
+#							controls_state = 22
+#							controls_state = 27
+#							has_war_with = NGA
+#						}
+#					}
+#					BIA = {
+#							OR = {
+#								controls_state = 22
+#								controls_state = 27
+#								has_war_with = NGA
+#							}
+#						}
+#					}
+#				}
+#			white_peace = {
+#				tag = NGA
+#				message = "Treaty of Benin City"
+#			}
+#			NGA = {
+#			remove_wargoal = {
+#				type = all
+#				target = BIA
+#				}
+#			remove_wargoal = {
+#				type = all
+#				target = BED
+#				}
+#				add_timed_idea = {
+#					idea = NGA_reparations_to_biafra
+#					days = 720
+#				}
+#			}
+#			BIA = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}
+#				complete_national_focus = BIA_beaten_back_but_not_lost
+#			}
+#			BED = {
+#				add_timed_idea = {
+#					idea = BIA_dosh_from_lagos
+#					days = 720
+#				}				
+#			}
+#			every_country = {
+#			limit = {
+#			is_ai = no
+#			}
+#			news_event = { days = 1 id = WNE.2 }
+#			}
+#			set_truce = {
+#				target = NGA
+#				days = 365
+#			}
+#			set_country_flag = BIA_nigeria_peace			
+#			}
+#			else_if = {
+#				limit = {
+#					NGA = {
+#						controls_state = 19
+#						has_war_with = BIA
+#						has_war_with = BED
+#					}
+#				}
+#				NGA = {
+#					diplomatic_relation = { country = BIA relation = war_relation active = no }
+#				}
+#				NGA = {
+#					diplomatic_relation = { country = BED relation = war_relation active = no }
+#				}
+#			every_country = {
+#			limit = {
+#			is_ai = no
+#			}
+#			news_event = { days = 1 id = WNE.3 }
+#			}
+#			NGA = {
+#			puppet = BIA
+#				annex_country = {
+#					target = BED
+#					transfer_troops = no
+#				}
+#			}
+#			NGA = {
+#			remove_wargoal = {
+#				type = all
+#				target = BIA
+#				}
+#			}
+#			BIA = {
+#				remove_ideas = {
+#					BIA_5nbw
+#					BIA_infinite_money
+#					BIA_strong_democracy
+#					BIA_cultural_naissance
+#				}
+#			set_cosmetic_tag = BIA_NGA
+#			complete_national_focus = BIA_wellshit
+#			}
+#			NGA = {
+#			remove_wargoal = {
+#				type = all
+#				target = BED
+#				}
+#			}		
+#			set_country_flag = NGA_biafra_peace
+#			}
+#			else_if = {
+#				limit = {
+#					BIU = {
+#						has_war_with = NGA
+#						OR = {
+#						controls_state = 22
+#						controls_state = 27
+#						}
+#					}
+#				}
+#						news_event = { days = 1 id = WNE.14 }
+#			BIU = {
+#				white_peace = {
+#					tag = NGA
+#					message = "Treaty of Lagos"
+#				}
+#				transfer_state = 21
+#				transfer_state = 20
+#				transfer_state = 19
+#				transfer_state = 22
+#				transfer_state = 23
+#			}
+#			YOR = {
+#			transfer_state = 26
+#			transfer_state = 24
+#			transfer_state = 25
+#			}
+#				every_state = {
+#					limit = {
+#					is_owned_by = BIU
+#					}
+#					add_core_of = BIU
+#				}
+#				every_state = {
+#					limit = {
+#					is_owned_by = YOR
+#					}
+#					add_core_of = YOR
+#				}
+#			}
+#			else = {
+#			
+#			}
+#		}
+#	}
+#}
+on_actions = {
+    on_new_term_election = {
+        effect = {
+            if = {
+                limit = {
+                    tag = NGA
+                    date > 2025.1.1
+                }
+                NGA = {
+                country_event = NGA.20007
+                }
+            }
+            else_if = {
+                limit = {
+                    tag = NGA
+                    date > 2028.1.1
+                }
+                NGA = {
+                country_event = NGA.20008
+                }       
+            }
+            else_if = {
+                limit = {
+                    tag = NGA
+                    date > 2031.1.1
+                }
+                NGA = {
+                country_event = NGA.20009
+                }
+            }
+        }
+    }
+}

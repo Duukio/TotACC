@@ -1,0 +1,23 @@
+state={
+id=60
+	name="STATE_60"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = MLI
+		victory_points = { 12751 10 }
+		victory_points = { 13372 3 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = MLI
+	}
+	provinces={
+		2012 4927 5045 7930 7954 8116 10812 10829 10915 12751 12794 12838 13372 13374 13375 13376 13377 13378 13379 13387 13388 13389 13394 
+	}
+	manpower=19900000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

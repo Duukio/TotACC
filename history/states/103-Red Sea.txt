@@ -1,0 +1,30 @@
+state={
+id=103
+	name="STATE_103"
+    buildings_max_level_factor = 1
+	resources={
+	
+		oil = 20 
+	}
+
+	history={
+		owner = EGY
+		victory_points = {
+			12889 5
+		}
+		buildings = {
+            school = 2
+			infrastructure = 0
+			
+		}
+		add_core_of = EGY
+
+	}
+	provinces={
+		1064 1080 4068 4910 5069 7156 9957 10126 10844 11999 12002 12071 12889 
+	}
+	manpower=366000
+	state_category = town
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

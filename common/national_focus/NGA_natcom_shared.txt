@@ -1,0 +1,22 @@
+focus_tree = {
+	id = NGA_natcom
+	country = {
+		factor = 0
+		modifier = {
+				add = 300
+				tag = NGA
+				NOT = {
+					OR = {
+					has_war_with = BIA
+					has_war_with = BIU
+					}
+				}
+			NGA = {
+				has_government = hardline_socialism
+			}
+		}
+	}
+	shared_focus = NGA_in_great_bucharest
+	shared_focus = NGA_the_party_and_the_people
+	shared_focus = NGA_cutting_off_our_strings
+}

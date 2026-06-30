@@ -1,0 +1,31 @@
+
+# This is example code you may remove in your implementation
+# Start Example
+506_on_change_controller = { # 506 - State id of Kazan
+	if = {
+		limit = {
+			not = { has_state_flag = sf_fall_of_kazan }
+			var:global.OLD_CONTROLLER = { tag = BLO } 
+		}
+		# Fall of Kazan
+		### AAAAh KAZAN HAS FALLEN! ###
+		
+		set_state_flag  = sf_fall_of_kazan
+	}
+}
+
+BLO_on_lose_state = {
+	# Tag BLO just lost control of a state!
+	var:global.OLD_CONTROLLER = {
+		add_war_support = -0.01 # We are losing :(
+	}
+}
+
+BLO_on_gain_state = {
+	# Tag BLO just gained control of a state!
+	var:global.NEW_CONTROLLER = {
+		add_war_support = 0.01 # We are winning!
+	}
+}
+
+# End Example

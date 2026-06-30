@@ -1,0 +1,28 @@
+
+state={
+id=477
+	name="STATE_477" 
+	
+	manpower = 15810388
+	
+	state_category = megalopolis
+	
+	history={
+		owner = SAF
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 10
+			air_base = 2
+		}
+		victory_points = {
+			10400 40
+		}
+		add_core_of = SAF
+	}
+
+	provinces={
+		10400
+	}
+}

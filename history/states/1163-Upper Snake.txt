@@ -1,0 +1,33 @@
+
+state={
+	id=1163
+	name="STATE_1163"
+    buildings_max_level_factor = 1
+	resources={
+		strategic_minerals=20.000
+		tungsten=10.000
+	}
+	provinces={
+		1789 10602 10672 
+	}
+	manpower=601354
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = NWF
+		buildings = {
+			school = 2
+			arms_factory = 1
+			industrial_complex = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			1789 2
+		}
+		add_core_of = NWF
+				add_core_of = USA
+
+	}
+}

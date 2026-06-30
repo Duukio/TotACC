@@ -1,0 +1,28 @@
+state={
+id=814
+	name="STATE_814"
+    buildings_max_level_factor = 1
+	state_category=large_city
+	
+	resources={
+	steel = 50
+	}
+
+	history={	
+		owner = SOV
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = SOV
+
+	}
+	provinces={
+		438 491 3483 3562 9454 9558 11427 
+	}
+	manpower=1000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

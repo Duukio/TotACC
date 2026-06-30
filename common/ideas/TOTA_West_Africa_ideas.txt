@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		West_African_Pound = {
+			picture = West_African_Pound
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                gdp_growth_modifier = 0.02
+                political_power_gain = 0.01
+                min_export = 0.1
+                trade_opinion_factor = 0.25
+			}
+		}
+		WESTAFRICA_frens = {
+			picture = WESTAFRICA_frens
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                trade_opinion_factor = 0.15
+			}
+		}
+	}	
+}

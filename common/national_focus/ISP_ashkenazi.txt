@@ -1,0 +1,137 @@
+
+shared_focus = {
+	id = ISP_general_secretary_ashkenazi
+	icon = GFX_general_secretary_ashkenazi
+	cost = 2
+	x = 7
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_general_secretary_ashkenazi"
+	}
+}
+
+shared_focus = {
+	id = ISP_aftermath_of_the_scandal
+	icon = GFX_aftermath_of_the_scandal
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_aftermath_of_the_scandal"
+	}
+	relative_position_id = ISP_general_secretary_ashkenazi
+	prerequisite = { focus = ISP_general_secretary_ashkenazi }
+}
+
+shared_focus = {
+	id = ISP_appeasing_the_masses
+	icon = GFX_appeasing_the_masses
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		modify_timed_idea = {
+    	idea = ISP_public_mistrust_timed
+    	days = -50
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_appeasing_the_masses"
+	}
+	relative_position_id = ISP_general_secretary_ashkenazi
+	prerequisite = { focus = ISP_aftermath_of_the_scandal }
+}
+
+shared_focus = {
+	id = ISP_distance_ourselves_from_barak
+	icon = GFX_distance_ourselves_from_barak
+	cost = 5
+	x = -2
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		modify_timed_idea = {
+    	idea = ISP_public_mistrust_timed
+    	days = -50
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_distance_ourselves_from_barak"
+	}
+	relative_position_id = ISP_general_secretary_ashkenazi
+	prerequisite = { focus = ISP_appeasing_the_masses }
+}
+
+shared_focus = {
+	id = ISP_condemn_corruption
+	icon = GFX_condemn_corruption
+	cost = 5
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		modify_timed_idea = {
+    	idea = ISP_public_mistrust_timed
+    	days = -50
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_condemn_corruption"
+	}
+	relative_position_id = ISP_general_secretary_ashkenazi
+	prerequisite = { focus = ISP_appeasing_the_masses }
+}
+
+shared_focus = {
+	id = ISP_purge_scapegoats
+	icon = GFX_purge_scapegoats
+	cost = 7
+	x = 2
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		modify_timed_idea = {
+    	idea = ISP_public_mistrust_timed
+    	days = -50
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_purge_scapegoats"
+	}
+	relative_position_id = ISP_general_secretary_ashkenazi
+	prerequisite = { focus = ISP_appeasing_the_masses }
+}
+
+shared_focus = {
+	id = ISP_maintaining_the_course
+	icon = GFX_maintaining_the_course
+	cost = 14
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = neosocialism
+			popularity = 0.1
+		}
+		modify_timed_idea = {
+    	idea = ISP_public_mistrust_timed
+    	days = -100
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_maintaining_the_course"
+	}
+	relative_position_id = ISP_general_secretary_ashkenazi
+	prerequisite = { focus = ISP_distance_ourselves_from_barak }
+	prerequisite = { focus = ISP_condemn_corruption }
+	prerequisite = { focus = ISP_purge_scapegoats }
+}

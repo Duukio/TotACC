@@ -1,0 +1,25 @@
+
+state={
+	id=942
+	name="STATE_942"
+    buildings_max_level_factor = 1
+	provinces={
+		671 673 6678 9633 9636 11618 11634 
+	}
+	manpower=757852
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = SGF
+		buildings = {
+			school = 2
+			infrastructure = 4
+		}
+		victory_points = {
+			673 10 
+		}
+		add_core_of = SGF
+	}
+}

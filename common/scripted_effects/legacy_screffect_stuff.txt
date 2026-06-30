@@ -1,0 +1,244 @@
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 10
+#	compare = less_than_or_equals
+#	}
+#	}
+#	NOT = { has_country_flag = is_smol_country }
+#	}
+#	add_ideas = warlord_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 80
+#	compare = less_than_or_equals
+#	}
+#	}
+#	NOT = { 
+#	has_idea = superpower
+#	has_idea = rising_superpower
+#	has_idea = powerful_economy
+#	has_idea = medium_economy
+#	has_idea = smaller_economy
+#	has_idea = poor_economy
+#	has_idea = very_small_economy
+#	has_idea = very_very_small_economy
+#	has_country_flag = is_smol_country
+#	}
+#	}
+#	add_ideas = basket_case_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 80
+#	compare = less_than
+#	}
+#	}
+#	HAS_COUNTRY_FLAG = is_smol_country
+#	NOT = { 
+#	has_idea = superpower
+#	has_idea = rising_superpower
+#	has_idea = powerful_economy
+#	has_idea = medium_economy
+#	has_idea = smaller_economy
+#	has_idea = poor_economy
+#	has_idea = very_small_economy
+#	has_idea = basket_case_economy
+#	}
+#	}
+#	add_ideas = very_very_small_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 200
+#	compare = less_than
+#	}
+#	check_variable = {
+#	var = GDP
+#	value = 81
+#	compare = greater_than_or_equals
+#	}
+#	}
+#	HAS_COUNTRY_FLAG = is_smol_country
+#	NOT = { 
+#	has_idea = superpower
+#	has_idea = rising_superpower
+#	has_idea = powerful_economy
+#	has_idea = medium_economy
+#	has_idea = smaller_economy
+#	has_idea = poor_economy
+#	has_idea = basket_case_economy
+#	has_idea = very_very_small_economy
+#	}
+#	}
+#	add_ideas = very_small_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 200
+#	compare = less_than
+#	}
+#	check_variable = {
+#	var = GDP
+#	value = 81
+#	compare = greater_than_or_equals
+#	}
+#	}
+#	NOT = { HAS_COUNTRY_FLAG = is_smol_country 
+#	has_idea = superpower
+#	has_idea = rising_superpower
+#	has_idea = powerful_economy
+#	has_idea = medium_economy
+#	has_idea = smaller_economy
+#	has_idea = very_small_economy
+#	has_idea = basket_case_economy
+#	has_idea = very_very_small_economy
+#	}
+#	
+#	}
+#	add_ideas = poor_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 500
+#	compare = less_than
+#	}
+#	check_variable = {
+#	var = GDP
+#	value = 200
+#	compare = greater_than_or_equals
+#	}
+#	}
+#	NOT = { 
+#	has_idea = superpower
+#	has_idea = rising_superpower
+#	has_idea = powerful_economy
+#	has_idea = medium_economy
+#	has_idea = very_small_economy
+#	has_idea = poor_economy
+#	has_idea = basket_case_economy
+#	has_idea = very_very_small_economy
+#	}
+#	}
+#	add_ideas = smaller_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 1000
+#	compare = less_than
+#	}
+#	check_variable = {
+#	var = GDP
+#	value = 500
+#	compare = greater_than_or_equals
+#	}
+#	}
+#	NOT = { 
+#	has_idea = superpower
+#	has_idea = rising_superpower
+#	has_idea = powerful_economy
+#	has_idea = very_small_economy
+#	has_idea = smaller_economy
+#	has_idea = poor_economy
+#	has_idea = basket_case_economy
+#	has_idea = very_very_small_economy
+#	}
+#	}
+#	add_ideas = medium_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 2000
+#	compare = less_than
+#	}
+#	check_variable = {
+#	var = GDP
+#	value = 1000
+#	compare = greater_than_or_equals
+#	}
+#	}
+#	NOT = { 
+#	has_idea = superpower
+#	has_idea = rising_superpower
+#	has_idea = very_small_economy
+#	has_idea = medium_economy
+#	has_idea = smaller_economy
+#	has_idea = poor_economy
+#	has_idea = basket_case_economy
+#	has_idea = very_very_small_economy
+#	}
+#	}
+#	add_ideas = powerful_economy
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 4000
+#	compare = less_than
+#	}
+#	check_variable = {
+#	var = GDP
+#	value = 2000
+#	compare = greater_than_or_equals
+#	}
+#	}
+#	NOT = { 
+#	has_idea = superpower
+#	has_idea = very_small_economy
+#	has_idea = powerful_economy
+#	has_idea = medium_economy
+#	has_idea = smaller_economy
+#	has_idea = poor_economy
+#	has_idea = basket_case_economy
+#	has_idea = very_very_small_economy
+#	}
+#	}
+#	add_ideas = rising_superpower
+#	}
+#	every_country = {
+#	limit = {
+#	THIS = {
+#	check_variable = {
+#	var = GDP
+#	value = 4000
+#	compare = greater_than_or_equals
+#	}
+#	}
+#		NOT = { 
+#		has_idea = very_small_economy
+#		has_idea = rising_superpower
+#		has_idea = powerful_economy
+#		has_idea = medium_economy
+#		has_idea = smaller_economy
+#		has_idea = poor_economy
+#		has_idea = basket_case_economy
+#		has_idea = very_very_small_economy
+#		}
+#		}
+#	add_ideas = superpower
+#	}

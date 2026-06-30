@@ -1,0 +1,31 @@
+state={
+id=345
+	name="STATE_345"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	resources = {
+	steel = 50
+	tungsten = 50
+	aluminium = 50
+	}
+	history={
+        victory_points = { 7375 25 } 
+        victory_points = { 12527 10 }
+        victory_points = { 10142 5 } 
+        owner = SOV
+		add_core_of = SOV
+        buildings = {
+            school = 2
+            infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 4
+        }
+    }
+	provinces={
+		206 237 278 291 361 1380 1754 3280 4372 4758 6246 6285 7375 7403 7416 7431 7444 10136 10142 10216 10286 10314 11228 11307 12117 12130 12216 12527 12626 
+	}
+	manpower=3000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

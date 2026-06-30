@@ -1,0 +1,27 @@
+state={
+id=471
+	
+
+	name="STATE_471"
+
+	manpower = 2000000
+resources = {
+	uranium = 60
+	steel = 60
+}
+	state_category = town
+
+	history={
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+            school = 2
+			infrastructure = 2
+			industrial_complex = 3
+		
+	}
+}
+	provinces={
+		13253 12419 13258 13263 13262 13264 10697
+	}
+}

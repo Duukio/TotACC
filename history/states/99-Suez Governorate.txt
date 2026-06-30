@@ -1,0 +1,26 @@
+state={
+id=99
+	name="STATE_99"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		victory_points = { 4073 10 }
+		owner = EGY
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 1
+
+		}
+		add_core_of = EGY
+
+	}
+	provinces={
+		4073 12049 
+	}
+	manpower=1000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

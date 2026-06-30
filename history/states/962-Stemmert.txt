@@ -1,0 +1,28 @@
+
+state={
+	id=962
+	name="STATE_962"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = HOL
+		buildings = {
+			school = 2
+			infrastructure = 5
+
+		}
+		victory_points = {
+			11346 5 
+		}
+		add_core_of = HOL
+
+	}
+
+	provinces={
+		6622 9281 11233 11346 11388 
+	}
+	manpower=500000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

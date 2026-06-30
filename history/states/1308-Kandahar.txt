@@ -1,0 +1,27 @@
+state={
+id=1308
+	name="STATE_1308"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	history={
+		owner = PAK
+		victory_points = {
+			5064 20 #kandahar
+		}
+		buildings = {
+            school = 4
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 4
+		}
+		add_core_of = PAK 
+
+	}
+	provinces={
+		14071 5064 5020
+	}
+	manpower=5000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

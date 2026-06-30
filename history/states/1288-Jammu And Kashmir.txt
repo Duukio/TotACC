@@ -1,0 +1,34 @@
+
+state={
+	id=1288
+	name="STATE_1288"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		victory_points = {
+			10905 15 # Jammu
+		}
+		victory_points = {
+			8005 20 # Shahr-i-Kashmir
+		}
+		buildings = {
+			school = 2
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 6
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		12754 10905 8005
+	}
+	manpower=12267013
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

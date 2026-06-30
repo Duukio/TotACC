@@ -1,0 +1,35 @@
+state=
+{
+id=1226
+	
+	name="STATE_1226"
+	manpower=500000
+	resources={
+		oil = 25
+	}
+	
+	state_category = large_town
+	history=
+	{
+		owner = MSK
+		buildings = {
+            school = 3
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3 
+			13958 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MSK
+		victory_points = {
+			13958 5 #Bragmans Bluff
+		}
+
+	}
+	provinces={
+		13958 13959 13960
+	}
+
+	local_supplies=0.0 
+}

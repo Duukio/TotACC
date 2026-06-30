@@ -1,0 +1,31 @@
+state={
+id=305
+	name="STATE_305"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	resources = {
+	oil = 20
+	steel = 100
+	}
+	history={
+		#	victory_points = {
+		#	5010 20
+		#}
+		owner = ETH
+		buildings = {
+            school = 2
+			infrastructure = 2
+			arms_factory = 5
+			industrial_complex = 5
+		}
+		add_core_of = ETH
+
+	}
+	provinces={
+	 4954 5097 1984 13137 
+	}
+	manpower=50000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

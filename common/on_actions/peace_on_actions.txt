@@ -1,0 +1,4506 @@
+on_actions = {
+	# FROM = winner
+	# ROOT = country being capitulated/loser
+
+	# ASK GALEN FOR DIRECTIONS
+
+	#shamelessly stolen from TNO
+	on_capitulation_immediate = {
+		effect = {
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = skip_default_capitulation
+			clear_global_event_target = winning_country
+			clear_global_event_target = losing_country
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+			GDP_added_to_winner_of_war = yes
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+			add_to_variable = { global.peace_popup_dirty = 1 }
+			set_global_flag = war_won #?
+			if = {
+				limit = {
+					FROM = {
+						original_tag = IND
+					}
+					ROOT = {
+						original_tag = NWG
+					}
+				}
+				FROM = {
+		 			white_peace = ROOT
+				}
+				SRW = {
+					white_peace = NWG
+					white_peace = IND
+					transfer_state = 599
+				}
+				599 = {
+					add_core_of = SRW
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.26
+					DAYS = 0
+					}
+				}
+				clr_country_flag = IND_the_clock_ticks_mission
+				IND = {
+					annex_country = {
+						target = NWG
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NWG
+					}
+					ROOT = {
+						original_tag = IND
+					}
+				}
+				FROM = {
+		 			white_peace = ROOT
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.25
+					DAYS = 0
+					}
+				}
+				clr_country_flag = IND_the_clock_ticks_mission
+				NWG = {
+					transfer_state = 593
+				}
+				593 = {
+					add_core_of = NWG
+				}
+				IND = {
+					white_peace = SRW
+					white_peace = NWG
+					white_peace = HOL
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SRW
+					}
+					ROOT = {
+						original_tag = IND
+					}
+				}
+				FROM = {
+		 			white_peace = ROOT
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.25
+					DAYS = 0
+					}
+				}
+				clr_country_flag = IND_the_clock_ticks_mission
+				NWG = {
+					transfer_state = 593
+				}
+				SRW = {
+					transfer_state = 600
+					transfer_state = 1216
+				}
+				593 = {
+					add_core_of = NWG
+				}
+				600 = {
+					add_core_of = SRW
+				}
+				1216 = {
+					add_core_of = SRW
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						NOT = {
+							has_country_flag = CANAANCAB
+						}
+					}
+					ROOT = {
+						original_tag = JOR
+					}
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+				ISP = {
+					transfer_state = 1268
+					transfer_state = 1265
+					white_peace = JOR
+				}
+				JOR = {
+					white_peace = ISP
+					white_peace = SHL
+					set_country_flag = JOR_lost_to_ISP
+				}
+				ISP = {
+					save_global_event_target_as = winning_country
+				}
+				JOR = {
+					save_global_event_target_as = losing_country
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						NOT = {
+							has_country_flag = CANAANCAB
+						}
+					}
+					ROOT = {
+						original_tag = EGY
+						NOT = {
+							has_country_flag = EGY_lostsinai
+						}
+					}
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+				ISP = {
+					transfer_state = 100
+					transfer_state = 916
+					white_peace = EGY
+				}
+				EGY = {
+					white_peace = ISP
+					white_peace = SHL
+				}
+				ISP = {
+					save_global_event_target_as = winning_country
+				}
+				EGY = {
+					save_global_event_target_as = losing_country
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = FRA
+						has_war_with = TRP
+					}
+					ROOT = {
+						original_tag = TRP
+					}
+				}
+				
+				FRA = {
+				 white_peace = TRP
+				}
+				set_global_flag = show_peace_popup_alert
+				TRP = {
+					set_politics = {
+						ruling_party = liberalism
+					}
+					set_cosmetic_tag = TRP_TRIP
+					remove_ideas = { TRP_his_excellency TRP_jdpon_city }
+					clear_variable = TRP.FACTIONSTATUS
+					remove_wargoal = {
+						target = FRA
+						type = all
+					}
+				}
+				if = {
+					limit = {
+						FRA = {
+							has_war_with = NGA
+						}
+					}
+					FRA = {
+						white_peace = NGA
+					}
+				}
+				else = {}
+				CYR = {
+					transfer_state = 93
+					transfer_state = 91
+					transfer_state = 1255
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.19
+					}
+				}
+			set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = OBM
+					}
+					ROOT = {
+						original_tag = SFL
+					}
+				}
+				OBM = {
+					annex_country = {
+						target = SFL
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.213
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SFL
+					}
+					ROOT = {
+						original_tag = OBM
+					}
+				}
+				SFL = {
+					annex_country = {
+						target = OBM
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.214
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = FRA
+					}
+					ROOT = {
+						original_tag = ITA
+					}
+				}
+				FRA = {
+					country_event = {
+						id = ITA.4
+						days = 30
+					}
+					annex_country = {
+						target = MNC
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = KUR
+					}
+					ROOT = {
+						original_tag = IRQ
+					}
+				}
+				KUR = {
+					set_cosmetic_tag = KUR_IRAQ
+					annex_country = {
+						target = IRQ
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = KUR
+					}
+					ROOT = {
+						original_tag = ALQ
+					}
+				}
+				KUR = {
+					annex_country = {
+						target = ALQ
+					}
+				}
+			}
+			else_if =  {
+				limit = {
+					FROM =  {
+						original_tag = HON
+					}
+					ROOT = {
+						original_tag = ELS
+					}
+				}
+				HON = {
+					annex_country = {
+						target = ELS
+					}
+					country_event = {
+						id = HON.3
+						days = 5
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.11
+					}
+				}
+			}
+			else_if =  {
+				limit = {
+					FROM =  {
+						original_tag = RAS
+					}
+					ROOT = {
+						original_tag = NYP
+					}
+				}
+				RAS = {
+					annex_country = {
+						target = NYP
+					}
+					declare_war_on = {
+						target = USA
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = USP
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CAL
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = NWF
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = ATI
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = FCO
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = LKT
+						type = annex_everything
+					}
+				}
+			}
+			else_if =  {
+				limit = {
+					FROM =  {
+						original_tag = NYP
+					}
+					ROOT = {
+						original_tag = RAS
+					}
+				}
+				NYP = {
+					annex_country = {
+						target = RAS
+					}
+					declare_war_on = {
+						target = USA
+						type = annex_everything
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = KUR
+						has_war = no
+					}
+					ROOT = {
+						or = {
+							original_tag = IRQ
+							original_tag = IRA
+							original_tag = TRM
+							original_tag = ALQ
+						}
+					}
+				}
+				KUR = {
+					set_cosmetic_tag = KUR_IRAQ
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = TRM
+					}
+					ROOT = {
+						original_tag = IRQ
+					}
+				}
+				TRM = {
+					set_cosmetic_tag = TRM_IRAQ
+					annex_country = {
+						target = IRQ
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = JAP
+					}
+					ROOT = {
+						original_tag = PLK
+					}
+					JAP = {
+						has_war_with = PRC
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = PLK
+					}
+				}
+				#every_country = {
+				#	limit = {
+				#		is_ai = no
+				#	}
+				#	news_event = {
+				#		id = WNE.77
+				#	}
+				#}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = JAP
+					}
+					ROOT = {
+						original_tag = PLK
+					}
+					JAP = {
+						NOT = {
+						has_war_with = PRC
+						}
+					}
+				}
+				JAP = {
+					annex_country = {
+						target = PLK
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.77
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PRC
+					}
+					ROOT = {
+						original_tag = PLK
+					}
+					PRC = {
+						has_war_with = JAP
+					}
+				}
+				PRC = {
+					puppet = PLK
+				}
+				#every_country = {
+				#	limit = {
+				#		is_ai = no
+				#	}
+				#	news_event = {
+				#		id = WNE.77
+				#	}
+				#}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PRC
+					}
+					ROOT = {
+						original_tag = PLK
+					}
+					PRC = {
+						controls_state = 409
+						NOT = {
+						has_war_with = JAP
+						}
+					}
+				}
+				PRC = {
+					white_peace = PLK
+				}
+				YNB = {
+					transfer_state = 1092
+					transfer_state = 409
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.78
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PRC
+					}
+					ROOT = {
+						original_tag = JAP
+					}
+				}
+				PRC = {
+					transfer_state = 1092
+					transfer_state = 406
+					annex_country ={
+						target = QIE
+					}
+					white_peace = PLK
+					white_peace = JAP
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.100
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = LBT
+							original_tag = ULI
+							original_tag = LUR
+						}
+					}
+					ROOT = {
+						OR = {
+							original_tag = LBT
+							original_tag = ULI
+							#original_tag = LUR
+						}						
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_war = no
+							tag = LBT
+						}
+					}
+					news_event = {
+						id = WNE.201
+						days = 0
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							has_war = no
+							tag = ULI
+						}
+					}
+					news_event = {
+						id = WNE.199
+					}
+				}
+				else_if = {
+					limit = {
+						FROM ={
+							has_war = no
+							tag = LUR
+						}
+					}
+					news_event = {
+						id = WNE.200
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = LBT
+							original_tag = ULI
+						}
+					}
+					ROOT = {
+							original_tag = LUR				
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+					white_peace = GUN
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+							original_tag = LUR
+					}
+					ROOT = {
+						OR = {
+							original_tag = ULI
+							original_tag = LBT
+						}					
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PRC
+					}
+					ROOT = {
+						original_tag = PLK
+					}
+					PRC = {
+						controls_state = 410
+						NOT = {
+						has_war_with = JAP
+						}
+					}
+				}
+				PRC = {
+					white_peace = PLK
+					puppet = PLK
+				}
+				PRC = {
+					transfer_state = 1092
+				}
+				#every_country = {
+				#	limit = {
+				#		is_ai = no
+				#	}
+				#	news_event = {
+				#		id = WNE.101
+				#	}
+				#}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR  = {
+						original_tag = PRC
+						original_tag = JAP
+						}
+					}
+					ROOT = {
+						original_tag = PLK
+					}
+					PRC = {
+						controls_province = 7125
+						NOT = {
+						has_war_with = JAP
+						}
+					}
+				}
+				KPD = {
+					transfer_state = 409
+					transfer_state = 410
+				}
+				PRC = {
+					white_peace = PLK
+					white_peace = JAP
+					puppet = KPD
+				}
+			#every_country = {
+			#	limit = {
+			#		is_ai = no
+			#	}
+			#	news_event = {
+			#		id = WNE.102
+			#	}
+			#}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						is_in_array = { global.southsudan = THIS }
+					}
+					ROOT = {
+						is_in_array = { global.southsudan = THIS }
+					}
+					any_of_scopes = {
+						array = global.southsudan
+						has_war_with = PREV #?
+					}
+				}
+				log = "step one ess ess d"
+				FROM = {	
+					annex_country = {
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = SDE
+							has_war = no
+						}
+					}
+				log = "step three ess ess d"
+					FROM = {
+						transfer_state = 303
+						transfer_state = 1079
+					}
+				}
+				else = {
+
+				}
+				if = {
+					limit = {
+						FROM = {
+							tag = NUE
+							has_war = no
+						}
+					}
+				log = "step four ess ess d"
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						news_event = {
+							id = WNE.70
+						}
+					}
+					NUE = {
+						country_event = {
+							id = NUE.1
+							days = 60
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							tag = SSD
+							has_war = no
+						}
+					}
+				log = "step four ssd"
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						news_event = {
+							id = WNE.69
+						}
+					}
+					SSD = {
+						set_cosmetic_tag = UNIFIED_SSD
+						country_event = {
+							id = SSD.69
+							days = 60
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							tag = ARB
+							has_war = no
+						}
+					}
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						news_event = {
+							id = WNE.72
+						}
+					}
+					ARB = {
+						set_cosmetic_tag = UNIFIED_ARB
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							tag = LRA
+							has_war = no
+						}
+					}
+				log = "step five ess ess d"
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						news_event = {
+							id = WNE.71
+						}
+					}
+					LRA = {
+						set_cosmetic_tag = UNIFIED_LRA
+					}
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							tag = SDE
+							has_war = no
+						}
+					}
+				log = "step six ess ess d"
+					every_country = {
+						limit = {
+							is_ai = no
+						}
+						news_event = {
+							id = WNE.73
+						}
+					}
+					EAF = {
+						annex_country = {
+							target = SDE
+							transfer_troops = yes
+						}
+					}
+				}
+				else = {
+					
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = CAM
+					}
+					ROOT = {
+						original_tag = AMB
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+		 white_peace = BIA
+		 white_peace = BED
+				}
+				clr_global_flag = anglophone_crisis
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.34
+					DAYS = 0
+					}
+				}
+				BIA = {
+					complete_national_focus = BIA_failure
+				}
+				CAM = {
+					if = {
+						limit = {
+							PRA = {
+								is_puppet_of = NGA
+							}
+						}
+						transfer_state = 867
+						transfer_state = 34
+					}
+					else = {
+						transfer_state = 867
+						transfer_state = 866
+						transfer_state = 34						
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ALK
+					}
+					ROOT = {
+						original_tag = SVK
+					}
+				}
+				ALK = {
+					annex_country = {
+					target = SVK
+					}
+					country_event = {
+						id = ALK.9
+						days = 30
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SVK
+					}
+					ROOT = {
+						original_tag = ALK
+					}
+				}
+				SVK = {
+					annex_country = {
+					target = ALK
+					}
+					country_event = {
+						id = ALK.12
+						days = 30
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.17
+					DAYS = 32
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						has_country_flag = american_cw_polity
+					}
+					ROOT = {
+						has_country_flag = american_cw_polity
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SOV
+					}
+					ROOT = {
+						original_tag = ROM
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+				TRS = {
+		 white_peace = ROOT
+				}
+
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.54
+					DAYS = 0
+					}
+				}
+				#HUN = {
+				#	transfer_state = 984
+				#}
+				TRS = {
+					set_cosmetic_tag = TRS_SOV
+					transfer_state = 982
+					transfer_state = 981
+				}
+				SOV = {
+					transfer_state = 983
+					transfer_state = 984
+					load_oob = "SOV_TRS"
+					country_event = {
+					id = SOV.4
+					days = 30
+					}
+					puppet = ROM
+				}
+				ROM = {
+					create_country_leader = {
+						name = "Constantin Rotaru"
+						desc = "POLITICS_PLACEHOLDER_DESC"
+						picture = "gfx/leaders/ROM/Constantin Rotaru.png"
+						expire = "2040.1.1"
+						ideology = sovmarsys
+						traits = {
+						}
+					}
+					set_politics = {
+						ruling_party = reformist_socialism
+					}
+					clr_country_flag = has_double_leader
+					clr_country_flag = valentin_ceausescu
+				}				
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SIB
+					}
+					ROOT = {
+						original_tag = ROM
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+				TRS = {
+		 white_peace = ROOT
+				}
+
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.54
+					DAYS = 0
+					}
+				}
+				#HUN = {
+				#	transfer_state = 984
+				#}
+				TRS = {
+					set_cosmetic_tag = TRS_SOV
+					transfer_state = 982
+					transfer_state = 981
+				}
+				SOV = {
+					transfer_state = 983
+					transfer_state = 984
+					load_oob = "SOV_TRS"
+					country_event = {
+					id = SOV.4
+					days = 30
+					}
+					puppet = ROM
+				}
+				ROM = {
+					create_country_leader = {
+						name = "Constantin Rotaru"
+						desc = "POLITICS_PLACEHOLDER_DESC"
+						picture = "gfx/leaders/ROM/Constantin Rotaru.png"
+						expire = "2040.1.1"
+						ideology = sovmarsys
+						traits = {
+						}
+					}
+					set_politics = {
+						ruling_party = reformist_socialism
+					}
+					clr_country_flag = has_double_leader
+					clr_country_flag = valentin_ceausescu
+				}				
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = TRS
+					}
+					ROOT = {
+						original_tag = ROM
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+				TRS = {
+		 white_peace = ROOT
+				}
+
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.54
+					DAYS = 0
+					}
+				}
+				#HUN = {
+				#	transfer_state = 984
+				#}
+				TRS = {
+					set_cosmetic_tag = TRS_SOV
+					transfer_state = 982
+					transfer_state = 981
+				}
+				SOV = {
+					transfer_state = 983
+					transfer_state = 984
+					load_oob = "SOV_TRS"
+					country_event = {
+					id = SOV.4
+					days = 30
+					}
+					puppet = ROM
+				}
+				ROM = {
+					create_country_leader = {
+						name = "Constantin Rotaru"
+						desc = "POLITICS_PLACEHOLDER_DESC"
+						picture = "gfx/leaders/ROM/Constantin Rotaru.png"
+						expire = "2040.1.1"
+						ideology = sovmarsys
+						traits = {
+						}
+					}
+					set_politics = {
+						ruling_party = reformist_socialism
+					}
+					clr_country_flag = has_double_leader
+					clr_country_flag = valentin_ceausescu
+				}				
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ROM
+					}
+					ROOT = {
+						original_tag = SOV #failsafe, this ideally should not happen
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+#
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ROM
+					}
+					ROOT = {
+						original_tag = TRS
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+#
+				ROM = {
+					annex_country = {
+						target = TRS
+						transfer_troops = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ROM
+					}
+					ROOT = {
+						original_tag = SIB
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+#
+				ROM = {
+					annex_country = {
+						target = SIB
+						transfer_troops = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = TRS
+					}
+					ROOT = {
+						original_tag = ROM
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+#
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SIB
+					}
+					ROOT = {
+						original_tag = TRS
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+#
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = UAE
+					}
+					ROOT = {
+						original_tag = PGR
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+#
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.48
+					DAYS = 0
+					}
+				}
+				UAE = {
+					transfer_state = 448
+					transfer_state = 976
+					transfer_state = 975
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PGR
+					}
+					ROOT = {
+						original_tag = UAE
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.49
+					DAYS = 0
+					}
+				}
+				PGR = {
+					transfer_state = 972
+					transfer_state = 974
+					transfer_state = 973
+					transfer_state = 977
+					transfer_state = 978
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+						original_tag = AMB
+						original_tag = BIA
+						original_tag = EQG
+						}
+					}
+					ROOT = {
+						original_tag = CAM
+					}
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+
+				clr_global_flag = anglophone_crisis
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.35
+					DAYS = 0
+					}
+				}
+				CAM = {
+					country_event = {
+						id = CAM.2
+						days = 0
+					}
+					set_politics = {
+						ruling_party = socdem
+					}
+				}
+				867 = {
+					set_demilitarized_zone = no
+				}
+				AMB = {
+					#transfer_state = 865
+					white_peace = CAM
+					country_event = {
+						id = AMBWAR.1
+						days = 60
+					}
+				}
+				if = {
+					limit = {
+						country_exists = PRA
+					}
+					PRA = {
+						transfer_state = 865
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							country_exists = PRA
+						}
+					}
+					AMB = {
+						transfer_state = 865
+						transfer_state = 866
+					}
+				}
+				else = {}
+				EQG = {
+					transfer_state = 118
+					white_peace = CAM
+					country_event = {
+						id = CAM.99
+						days = 60
+					}
+				}
+				BKS = {
+					white_peace = CAM
+				}
+				PRA = {
+					white_peace = CAM
+				}
+				
+				STF = {
+					transfer_state = 119
+				#transfer_state = 1181
+				}
+				BIA = {
+					complete_national_focus = BIA_victorious
+					white_peace = CAM
+				}
+				BED = {
+					white_peace = CAM
+				}
+				LRC = {
+					white_peace = CAM
+				}
+				YOR = {
+					white_peace = CAM
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = BIA
+					}
+					ROOT = {
+						original_tag = CAM
+					}
+					has_global_flag = anglophone_crisis
+				}
+				
+				FROM = {
+		 white_peace = ROOT
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.35
+					DAYS = 0
+					}
+				}
+				CAM = {
+					country_event = {
+						id = CAM.2
+						days = 0
+					}
+				}
+				867 = {
+					set_demilitarized_zone = no
+				}
+			}
+			#else_if = {
+			#	limit = {
+			#		FROM = {
+			#			original_tag = LCH
+			#		}
+			#		ROOT = {
+			#			original_tag = CHD
+			#		}
+			#	}
+			#	FROM = {
+			#		white_peace = {
+			#		tag = ROOT
+			#		popup = no
+			#	}
+			#	}
+			#	every_country = {
+			#		news_event = {
+			#		id = WNE.20
+			#		}
+			#	}
+			#	LCH = {
+			#		country_event = {
+			#		id = CHD.3
+			#		days = 60
+			#		}
+			#		transfer_state = 92
+			#	}
+			#}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = EFF
+					}
+					ROOT = {
+						original_tag = SAF
+					}
+				}
+				FROM = {
+					 white_peace = ROOT
+					annex_country = {
+						target = SAF
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = EFF
+					}
+					ROOT = {
+						original_tag = AWB
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = AWB
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = AWB
+					}
+					ROOT = {
+						original_tag = EFF
+					}
+				}
+				FROM = {
+				    white_peace = ROOT
+					annex_country = {
+					target = EFF
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = AWB
+					}
+					ROOT = {
+						original_tag = SAF
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = SAF
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SOM
+					}
+					ROOT = {
+						original_tag = MGD
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ETH
+					}
+					ROOT = {
+						OR = {
+						original_tag = GAB
+						original_tag = BSR
+						original_tag = TOG
+						}
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+					if = {
+						limit = {
+							ETH = {
+								has_war = no
+							}
+						}
+						ETH = {
+						set_cosmetic_tag = ETH_UNIFIED
+						country_event = {
+							id = SOM.4
+							days = 64
+						}
+						}
+					}
+					else = {}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SOM
+					}
+					ROOT = {
+						original_tag = UNS
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+					annex_country = {
+					target = MGD
+					}
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = UNS
+					}
+					ROOT = {
+						original_tag = SOM
+					}
+				}
+				MGD = {
+					white_peace = SOM
+					annex_country = {
+					target = SOM
+					}
+				}
+				UNS = {
+					set_autonomy = {
+						target = MGD
+						autonomy_state = autonomy_free
+						end_wars = yes
+						end_civil_wars = yes
+					}					
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = MGD
+					}
+					ROOT = {
+						original_tag = SOM
+					}
+				}
+				MGD = {
+					white_peace = SOM
+					annex_country = {
+					target = SOM
+					}
+				}
+				UNS = {
+					set_autonomy = {
+						target = MGD
+						autonomy_state = autonomy_free
+						end_wars = yes
+						end_civil_wars = yes
+					}					
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = AWB
+						controls_state = 473 #failsafe
+					}
+					ROOT = {
+						original_tag = NAM
+					}
+				}
+				AWB = {
+		 white_peace = ROOT
+					annex_country = {
+					target = NAM
+					}
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ARG
+					}
+					ROOT = {
+						original_tag = ARP
+					}
+				}
+				ARG = {
+					white_peace = ROOT
+					annex_country = {
+					target = ARP
+					}
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ARP
+					}
+					ROOT = {
+						original_tag = ARG
+					}
+				}
+				ARP = {
+					white_peace = ROOT
+					annex_country = {
+					target = ARG
+					}
+					set_cosmetic_tag = ARP_UNI
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SAF
+					}
+					ROOT = {
+						original_tag = EFF
+					}
+				}
+		FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = EFF
+					}
+					set_country_flag = SAF_tugela_br
+				}
+				if = {
+					limit = {
+						FROM = {
+							has_volunteers_amount_from = {
+							    tag = SEY
+							    count > 0
+							}
+						}
+					}
+					SEY = {
+						set_country_flag = nothing_is_beyond_our_reach_ac
+					}
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SAF
+					}
+					ROOT = {
+						original_tag = AWB
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = AWB
+					}
+					annex_country = {
+						target = RSB
+						transfer_troops = yes
+					}
+				set_country_flag = SAF_orange_br
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SAF
+						controls_state = 473 #failsafe
+					}
+					ROOT = {
+						original_tag = NAM
+					}
+				}
+				SAF = {
+		 			white_peace = NAM
+					annex_country = {
+					target = NAM
+					}
+					set_country_flag = SAF_ovambo_br
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SDL
+					}
+					ROOT = {
+						original_tag = PRU
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = PRU
+					}
+					country_event = {
+						id = SDL.4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PRU
+					}
+					ROOT = {
+						original_tag = SDL
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = SDL
+					}
+					country_event = {
+						id = SDL.3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						has_country_flag = CANAANCAB
+					}
+					ROOT = {
+						OR = {
+							original_tag = IRA
+							original_tag = ALQ
+							original_tag = TRM
+						}
+					}
+				}
+				KUR = {
+					annex_country = {
+						target = ROOT
+					}
+					set_cosmetic_tag = KUR_MESOPOTAMIA_CANAAN
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ELS
+
+					}
+					ROOT = {
+						original_tag = HON
+					}
+				}
+				ELS = {
+		 white_peace = ROOT
+					country_event = {
+					id = ELS.2
+					days = 10
+					}
+					annex_country = {
+						target = HON
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.12
+						days = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = MSK
+
+					}
+					ROOT = {
+						original_tag = HON
+					}
+				}
+				MSK = {
+		 white_peace = ROOT
+		 annex_country = {
+			target = HON
+		 }
+		 add_to_variable = { MSK.GDP = HON.GDP }
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = MSK
+
+					}
+					ROOT = {
+						original_tag = NIC
+					}
+				}
+				MSK = {
+		 white_peace = ROOT
+		 annex_country = {
+			target = NIC
+		 }
+		 add_to_variable = { MSK.GDP = NIC.GDP }
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+							original_tag = SWA
+							original_tag = KAC
+							original_tag = ZGM
+							original_tag = ARK
+							original_tag = ARA
+							original_tag = SHA
+						}
+					}
+					ROOT = {
+						original_tag = BUR
+					}
+				}
+				SWA = {
+		 white_peace = ROOT
+				}
+				KAC = {
+		 white_peace = ROOT
+				}
+				ZGM = {
+		 white_peace = ROOT
+				}
+				ARK = {
+		 white_peace = ROOT
+				}
+				ARA = {
+		 white_peace = ROOT
+				}
+				SHA = {
+		 white_peace = ROOT
+				}
+				KAW = {
+		 white_peace = ROOT
+				}
+				BUR = {
+				country_event = {
+				id = JPNskeleton.5
+				days = 60
+				}
+				set_capital = {state = 387 }
+				white_peace = FROM
+				}
+				news_event = {
+					id = WNE.42
+					days = 0
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = BUR
+					}
+					ROOT = {
+						OR = {
+							original_tag = SWA
+							original_tag = KAC
+							original_tag = ZGM
+							original_tag = ARK
+							original_tag = ARA
+							original_tag = SHA
+							original_tag = KAW
+						}
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = KOK
+					}
+					ROOT = {
+						OR = {
+							original_tag = SWA
+							original_tag = SHA
+							original_tag = KAC
+						}
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = KOK
+					}
+					ROOT = {
+						OR = {
+							original_tag = SWA
+							original_tag = SHA
+							original_tag = KAC
+						}
+					}
+						SWA = {
+							has_capitulated = yes
+						}
+						KAC = {
+							has_capitulated = yes
+						}
+						SHA = {
+							has_capitulated = yes
+						}
+				}
+				FROM = {
+				set_country_flag = opium_win
+		 white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = KAW
+					}
+					ROOT = {
+						OR = {
+							original_tag = BUR
+						}
+					}
+				}
+				FROM = {
+		 white_peace = ROOT
+					transfer_state = 924
+				}
+			}
+			#else_if = {
+			#	limit = {
+			#		FROM = {
+			#			original_tag = BIU
+			#			has_war_with = NGA
+			#		}
+			#		ROOT = {
+			#			original_tag = NGA
+			#		}
+			#	}
+			#	#every_country = {
+			#	#	limit = {
+			#	#		is_ai = no
+			#	#	}
+			#	#	news_event = {
+			#	#		id = WNE.2
+			#	#	}
+			#	#} #add news event later
+			#		BIU = {
+			#			#load_focus_tree = BIU_postwar
+			#			transfer_state = 19
+			#			transfer_state = 968
+			#			transfer_state = 23
+			#			transfer_state = 967
+			#			transfer_state = 966
+			#			transfer_state = 20
+			#			transfer_state = 24
+			#		}
+			#		NGA = {
+			#			country_event = {
+			#				id = BIA.35	
+			#			}			
+			#		}
+			#set_global_flag = BIU_victory
+			#set_global_flag = war_won
+			#log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] successful"
+			#}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = BIU
+						#has_war_with = NGA
+					}
+					ROOT = {
+						original_tag = NGA
+					}
+				}
+				#every_country = {
+				#	limit = {
+				#		is_ai = no
+				#	}
+				#	news_event = {
+				#		id = WNE.2
+				#	}
+				#} #add news event later
+					BIU = { #SOMEHOW I PUT THIS AT BIA??? GOOD LORD
+						#load_focus_tree = BIU_postwar
+						set_cosmetic_tag = BIU_HRB
+						white_peace = NGA
+						transfer_state = 19
+						transfer_state = 968
+						transfer_state = 23
+						transfer_state = 967
+						transfer_state = 966
+						transfer_state = 20
+						transfer_state = 24
+					}
+					NGA = {
+						country_event = {
+							id = BIA.35	
+						}			
+						white_peace = BIU
+					}
+				BIU = {
+				set_country_flag = BIU_victory
+				load_focus_tree = BIU_postwar
+				mark_focus_tree_layout_dirty = yes
+				add_ideas = partial_economic_mobilisation
+				}
+			set_global_flag = war_won
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] successful"
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NGA
+						#has_war_with = BIU
+					}
+					ROOT = {
+						original_tag = BIU
+					}
+				}
+				#every_country = {
+				#	limit = {
+				#		is_ai = no
+				#	}
+				#	news_event = {
+				#		id = WNE.2
+				#	}
+				#} #add news event later
+				NGA = {
+					annex_country = {
+						target = BIU
+					}				
+					annex_country = {
+						target = BIA
+					}	
+				}			
+			set_global_flag = war_won
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] successful"
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = BUR
+					}
+					ROOT = {
+						OR = {
+							original_tag = SWA
+							original_tag = KAC
+							original_tag = ZGM
+							original_tag = ARK
+							original_tag = ARA
+							original_tag = SHA
+							original_tag = KAW
+						}
+					}
+					SWA = {
+						has_capitulated = yes
+					}
+					KAC = {
+						has_capitulated = yes
+					}
+					ZGM = {
+						has_capitulated = yes
+					}
+					ARK = {
+						has_capitulated = yes
+					}
+					ARA = {
+						has_capitulated = yes
+					}
+					SHA = {
+						has_capitulated = yes
+					}
+					KAW = {
+						has_capitulated = yes
+					}
+				}
+				FROM = {
+					set_country_flag = epicwinburma
+		 			white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = BIA
+					}
+					ROOT = {
+						original_tag = NAM
+					}
+				}
+				#FAILSAFE
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NGA
+						has_completed_focus = NGA_sixth_time_around
+					}
+					ROOT = {
+						original_tag = BIA
+					}
+				}
+				NGA = {
+					annex_country = {
+						target = BIA
+					}
+					annex_country = {
+						target = BED
+					}
+					complete_national_focus = NGA_we_finally_fucking_won
+				} #no ceremony
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NGA
+						has_country_flag = NGNGNGNGhas_done_this_before
+					}
+					ROOT = {
+						original_tag = BIA
+					}
+				}
+				NGA = {
+					annex_country = {
+						target = BIA
+					}
+					annex_country = {
+						target = BED
+					}
+				} #no ceremony
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NGA
+					}
+					ROOT = {
+						original_tag = CAM
+					}
+				}
+				NGA = {
+					annex_country = {
+						target = CAM
+					}
+				} #technocrat
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NGA
+					}
+					ROOT = {
+						original_tag = AMB
+					}
+				}
+				NGA = {
+					annex_country = {
+						target = AMB
+					}
+				} #technocrat
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NGA
+					}
+					ROOT = {
+						original_tag = EQG
+					}
+				}
+				NGA = {
+					annex_country = {
+						target = EQG
+					}
+				} #technocrat
+			}
+			
+			else_if = {
+				limit = {
+					has_global_flag = {
+						flag = MASSIVEMIDDLEEASTWARLOL
+						days > 550
+					}
+					ISP = {
+						NOT = {
+							has_country_flag = CANAANCAB
+						}
+					}
+				}
+				every_country = {
+					limit = {
+						has_war_with = ISP
+					}
+					white_peace = ISP
+				}	
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						has_country_flag = CANAANCAB
+					}
+					ROOT = {
+						original_tag = JOR
+					}
+				}
+				ISP = {
+					annex_country = {
+						target = JOR
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						has_country_flag = CANAANCAB
+					}
+					ROOT = {
+						original_tag = SYR
+					}
+				}
+				SHL = {
+					annex_country = {
+						target = SYR
+					}
+				}
+				ISP = {
+					transfer_state = 147
+					transfer_state = 156
+					transfer_state = 157
+					transfer_state = 1262
+					transfer_state = 1264
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						has_country_flag = CANAANCAB
+					}
+					ROOT = {
+						original_tag = EGY
+					}
+				}
+				ISP = {
+					transfer_state = 100
+				}
+				TRP = {
+					annex_country = {
+						target = EGY
+					}
+					set_cosmetic_tag = TRP_CANAAN
+				}
+				916 = {
+					transfer_state_to = ISP
+					add_core_of = ISP
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						has_country_flag = CANAANCAB
+					}
+					ROOT = {
+						original_tag = LEB
+					}
+				}
+				SHL = {
+					annex_country = {
+						target = LEB
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+						has_country_flag = CANAANCAB
+					}
+					ROOT = {
+						original_tag = SUD
+					}
+				}
+				TRP = {
+					annex_country = {
+						target = SUD
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = TRP
+					}
+					ROOT = {
+						original_tag = SUD
+					}
+				}
+				TRP = {
+					annex_country = {
+						target = SUD
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+					}
+					ROOT = {
+						original_tag = SUD
+					}
+				}
+				TRP = {
+					annex_country = {
+						target = SUD
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+					}
+					ROOT = {
+						original_tag = LEB
+					}
+				}
+				SHL = {
+					annex_country = {
+						target = LEB
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SHL
+					}
+					ROOT = {
+						original_tag = LEB
+					}
+				}
+				SHL = {
+					annex_country = {
+						target = LEB
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = MASSIVEMIDDLEEASTWARLOL
+					FROM = {
+						OR = {
+						original_tag = ISP #israelwinz
+						tag = SHL
+						}
+					}
+					ROOT = {
+						original_tag = SYR
+					}
+				}
+				JOR = {
+					white_peace = ISP
+					white_peace = SHL
+				}
+				SYR = {
+					white_peace = ISP
+					white_peace = SHL
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = MASSIVEMIDDLEEASTWARLOL
+					FROM = {
+						OR = {
+							tag = SHL
+							tag = LEB
+						}
+					}
+					ROOT = {
+						OR = {
+							tag = SHL
+							tag = LEB
+						}
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+					white_peace = ISP
+					white_peace = JOR
+					white_peace = EGY
+					white_peace = SYR
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = MASSIVEMIDDLEEASTWARLOL
+					FROM = {
+						original_tag = ISP #israelwinz
+					}
+					ROOT = {
+						original_tag = JOR
+					}
+				}
+				ISP = {
+					annex_country = {
+						target = JOR
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = MASSIVEMIDDLEEASTWARLOL
+					ROOT = {
+						original_tag = ISP
+					}
+				#israel lose
+				NOT = {
+					has_global_flag = ISP_samson_declared
+				}
+				}
+				if = {
+						limit = {
+							EGY = {
+								has_government = conservatism
+							}
+					}
+					PLS = {
+					annex_country = {
+						target = ISP
+					}
+					SYR = {
+		 				add_to_faction = PLS
+					}
+				}
+				JOR = {
+					transfer_state = 188
+					transfer_state = 1268
+					transfer_state = 1269
+					transfer_state = 1265
+					transfer_state = 1266
+					transfer_state = 1267
+				}
+				every_state = {
+					limit = {
+						is_owned_by = JOR
+					}
+					add_core_of = JOR
+				}
+				916 = {
+					transfer_state_to = PLS
+				}
+				every_state = {
+					limit = {
+						is_core_of = LEB
+					}
+					transfer_state_to = LEB
+				}
+				440 = {
+					transfer_state_to = SYR
+				}
+				100 = {
+					transfer_state_to = EGY
+				}
+			}
+		
+				if = {
+						limit = {
+							EGY = {
+								has_government = revolutionary_right
+							}
+					}
+					PLS = {
+						annex_country = {
+							target = ISP
+						}
+					}
+					SYR = {
+		 				add_to_faction = PLS
+					}
+				JOR = {
+					transfer_state = 188
+					transfer_state = 1268
+					transfer_state = 1269
+					transfer_state = 1265
+					transfer_state = 1266
+					transfer_state = 1267
+				}
+				every_state = {
+					limit = {
+						is_owned_by = JOR
+					}
+					add_core_of = JOR
+				}
+				916 = {
+					transfer_state_to = EGY
+				}
+				918 = {
+					transfer_state_to = EGY
+				}
+				104 = {
+					transfer_state_to = EGY
+				}
+				105 = {
+					transfer_state_to = EGY
+				}
+				100 = {
+					transfer_state_to = EGY
+				}
+				every_state = {
+					limit = {
+						is_core_of = LEB
+					}
+					transfer_state_to = LEB
+				}
+				440 = {
+					transfer_state_to = SYR
+				}
+			}
+			if = {
+						limit = {
+							EGY = {
+								has_government = autocracy
+							}
+					}
+					PLS = {
+						annex_country = {
+							target = ISP
+						}
+					}
+					SYR = {
+		 				add_to_faction = PLS
+					}
+				JOR = {
+					transfer_state = 188
+					transfer_state = 1268
+					transfer_state = 1269
+					transfer_state = 1265
+					transfer_state = 1266
+					transfer_state = 1267
+				}
+				every_state = {
+					limit = {
+						is_owned_by = JOR
+					}
+					add_core_of = JOR
+				}
+				916 = {
+					transfer_state_to = EGY
+				}
+				918 = {
+					transfer_state_to = EGY
+				}
+				104 = {
+					transfer_state_to = EGY
+				}
+				105 = {
+					transfer_state_to = EGY
+				}
+				100 = {
+					transfer_state_to = EGY
+				}
+				every_state = {
+					limit = {
+						is_core_of = LEB
+					}
+					transfer_state_to = LEB
+				}
+				440 = {
+					transfer_state_to = SYR
+				}
+			}
+	}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = YE2
+					}
+					ROOT = {
+						original_tag = YEM
+					}
+				}
+				YE2 = {
+					annex_country = {
+						target = YEM
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = DHO
+					}
+					ROOT = {
+						original_tag = YEM
+					}
+				}
+				YE2 = {
+					annex_country = {
+						target = YEM
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = YE2
+					}
+					ROOT = {
+						original_tag = SAU
+					}
+				}
+				YE2 = {
+					white_peace = SAU
+					white_peace = UAE
+				}
+				DHO = {
+					white_peace = SAU
+					white_peace = UAE
+				}
+				PGR = {
+					transfer_state = 1217
+					transfer_state = 1275 
+					white_peace = SAU
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = DHO
+					}
+					ROOT = {
+						original_tag = SAU
+					}
+				}
+				DHO = {
+					white_peace = SAU
+					white_peace = UAE
+				}
+				YE2 = {
+					white_peace = SAU
+					white_peace = UAE
+				}
+				PGR = {
+					transfer_state = 1217
+					transfer_state = 1275 
+					white_peace = SAU
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = YEM
+					}
+					ROOT = {
+						original_tag = YE2
+					}
+				}
+				YEM = {
+					annex_country = {
+						target = YE2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SAU
+					}
+					ROOT = {
+						original_tag = YE2
+					}
+				}
+				YEM = {
+					annex_country = {
+						target = YE2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = OMA
+					}
+					ROOT = {
+						original_tag = YE2
+					}
+				}
+				YEM = {
+					annex_country = {
+						target = YE2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = DHO
+					}
+					ROOT = {
+						original_tag = OMA
+					}
+				}
+				DHO = {
+					annex_country = {
+						target = OMA
+					}
+					set_cosmetic_tag = DHO_OMAN
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PGR
+					}
+					ROOT = {
+						original_tag = OMA
+					}
+				}
+				DHO = {
+					annex_country = {
+						target = OMA
+					}
+					set_cosmetic_tag = DHO_OMAN
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = YE2
+					}
+					ROOT = {
+						original_tag = OMA
+					}
+				}
+				DHO = {
+					annex_country = {
+						target = OMA
+					}
+					set_cosmetic_tag = DHO_OMAN
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = OMA
+					}
+					ROOT = {
+						original_tag = DHO
+					}
+				}
+				OMA = {
+					annex_country = {
+						target = DHO
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = UAE
+					}
+					ROOT = {
+						original_tag = DHO
+					}
+				}
+				OMA = {
+					annex_country = {
+						target = DHO
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = SAU
+					}
+					ROOT = {
+						original_tag = DHO
+					}
+				}
+				OMA = {
+					annex_country = {
+						target = DHO
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = YEM
+					}
+					ROOT = {
+						original_tag = DHO
+					}
+				}
+				OMA = {
+					annex_country = {
+						target = DHO
+					}
+				}
+			}
+else_if = {
+				limit = {
+					FROM = {
+						original_tag = NCD
+					}
+					ROOT = {
+						original_tag = FIZ
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					add_to_variable = { NCD.GDP = FIZ.GDP }
+					annex_country = {
+						target = ROOT
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = NCD
+						is_core_of = FIZ
+					}
+					add_core_of = NCD
+				}
+				set_global_flag = ncd_fiz_war_ended
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = FIZ
+					}
+					ROOT = {
+						original_tag = NCD
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					add_to_variable = { FIZ.GDP = NCD.GDP }
+					annex_country = {
+						target = ROOT
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = FIZ
+						is_core_of = NCD
+					}
+					add_core_of = FIZ
+				}
+				set_global_flag = ncd_fiz_war_ended
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NCD
+					}
+					ROOT = {
+						original_tag = ADF
+					}
+					NOT = { country_exists = FIZ }
+				}
+				FROM = {
+					white_peace = ROOT
+					add_to_variable = { NCD.GDP = ADF.GDP }
+					annex_country = {
+						target = ROOT
+					}
+					set_cosmetic_tag = NCD_CONGO
+				}
+				every_state = {
+					limit = {
+						is_owned_by = NCD
+						is_core_of = ADF
+					}
+					add_core_of = NCD
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ADF
+					}
+					ROOT = {
+						original_tag = NCD
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					add_to_variable = { ADF.GDP = NCD.GDP }
+					annex_country = {
+						target = ROOT
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ADF
+						is_core_of = NCD
+					}
+					add_core_of = ADF
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = FIZ
+					}
+					ROOT = {
+						original_tag = ADF
+					}
+					NOT = { country_exists = NCD }
+				}
+				FROM = {
+					white_peace = ROOT
+					add_to_variable = { FIZ.GDP = ADF.GDP }
+					annex_country = {
+						target = ROOT
+					}
+					set_cosmetic_tag = FIZ_DPROC
+				}
+				every_state = {
+					limit = {
+						is_owned_by = FIZ
+						is_core_of = ADF
+					}
+					add_core_of = FIZ
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ADF
+					}
+					ROOT = {
+						original_tag = FIZ
+					}
+				}
+				FROM = {
+					white_peace = ROOT
+					add_to_variable = { ADF.GDP = FIZ.GDP }
+					annex_country = {
+						target = ROOT
+					}
+				}
+				every_state = {
+					limit = {
+						is_owned_by = ADF
+						is_core_of = FIZ
+					}
+					add_core_of = ADF
+				}
+				set_global_flag = war_won
+			}	
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = PGR
+					}
+					ROOT = {
+						original_tag = SAU
+					}
+				}
+				PGR = {
+					transfer_state = 1217
+					transfer_state = 1275 
+					white_peace = SAU
+				}
+				YE2 = {
+					white_peace = SAU
+				}
+				DHO = {
+					white_peace = SAU
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						OR = {
+						original_tag = SRB
+						original_tag = BOS
+						original_tag = SLO
+						}
+					}
+					ROOT = {
+						original_tag = YUG
+					}
+				}
+				SRB = {
+					white_peace = ROOT
+					transfer_state = 165
+					transfer_state = 163
+					transfer_state = 162
+					transfer_state = 161
+					transfer_state = 960
+					transfer_state = 186
+					set_cosmetic_tag = SRB_unified
+				}
+				YUG = {
+					transfer_state = 173
+				}
+				BOS = {
+					white_peace = YUG
+					transfer_state = 1333
+					transfer_state = 1334
+				}
+				SLO = {
+					white_peace = YUG
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+				news_event = {
+					id = WNE.225
+					days = 1
+				}
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = YUG
+					}
+					ROOT = {
+						OR = {
+						original_tag = SRB
+						original_tag = BOS
+						original_tag = SLO
+						}
+					}
+				}
+				FROM = {
+					annex_country = {
+						target = ROOT
+					}
+				}
+				if = {
+					limit = {
+						YUG = {
+							has_war = no
+						}
+					}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+				news_event = {
+					id = WNE.226
+					days = 1
+				}
+				}
+				}
+				else = {}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = NGA
+					}
+					ROOT = {
+						original_tag = BIA
+					}
+				}
+				log = "why did this trigger? if it did ofc"
+				NGA = {
+		 white_peace = BIA
+				}
+				NGA = {
+		 white_peace = BED
+				}
+				set_global_flag = show_peace_popup_alert
+				NGA = {
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.3
+					}
+				}
+				NGA = {
+				puppet = BIA
+					annex_country = {
+						target = BED
+						transfer_troops = no
+					}
+					remove_ideas = {
+					NGA_5nbw			
+					}
+					complete_national_focus = NGA_no_more_fails
+					country_event = {
+						id = NGA.1969
+						days = 2
+					}
+				}
+				BIA = {
+					#complete_national_focus = BIA_wellshit
+					set_cosmetic_tag = BIA_NGA
+					load_focus_tree = BIA_defeat
+					set_country_flag = BIA_puppet
+					#add_stability = -0.40 #test
+					remove_ideas = {
+					BIA_crisis_of_postmodernity
+					BIA_pockets_lined_with_black
+					BIA_ahiara_declaration			
+					fiveTOWWW
+					BIA_initiative
+					BIA_NSB_awesome
+					BIA_NSB_awesome_1
+					BIA_desperate_measures
+					}
+				}
+			clear_variable = BED.GDP
+			clear_variable = BED.DEBT
+			clear_variable = BED.REAL_GROWTH
+			set_global_flag = NGA_victory
+			set_global_flag = war_won
+			}
+			else = {
+				#KEEP AT END THIS IS SO THE GAME DOESNT CRASH IF A WAR ENDS WITHOUT A PEACE ABOVE.
+				FROM = {
+				 white_peace = ROOT
+					annex_country = {
+					target = ROOT
+					}
+ 				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						has_volunteers_amount_from = {
+						    tag = SEY
+						    count > 0
+						}
+						is_major = yes
+					}
+				}
+				SEY = {
+					set_country_flag = youre_pretty_good_ac
+				}
+			}
+			clr_global_flag = skip_default_capitulation
+}
+
+#special wars that end when certain states are taken instead of total capitulation :strom_pogmond:
+
+#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			clr_global_flag = skip_default_capitulation
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_state_control_changed"
+			clear_global_event_target = winning_country
+			clear_global_event_target = losing_country
+			ROOT = {
+				save_global_event_target_as = winning_country
+			}
+			FROM = {
+				save_global_event_target_as = losing_country
+			}
+			#from now on, save global event targets manually
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_state_control_changed"
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = NWF
+							original_tag = ATI
+						} 
+					}
+					FROM = {
+						original_tag = CAL
+					}
+					FROM.FROM = {
+						state = 729
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.132
+					}
+				}
+			}
+			else = {}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = NGA
+						NOT = {
+							OR = {
+							has_completed_focus = NGA_sixth_time_around
+							has_country_flag = NGNGNGNGhas_done_this_before
+							}
+						}
+					}
+					FROM = {
+						OR = {
+						original_tag = BED
+						original_tag = BIA
+						}
+						has_war_with = NGA #?
+					}
+					FROM.FROM = {
+							state = 19
+					}
+				}
+				log = "why did this trigger? if it did ofc"
+				NGA = {
+		 			white_peace = BIA
+				}
+				NGA = {
+		 			white_peace = BED
+				}
+				set_global_flag = show_peace_popup_alert
+				NGA = {
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.3
+					}
+				}
+				NGA = {
+				puppet = BIA
+					annex_country = {
+						target = BED
+						transfer_troops = no
+					}
+					remove_ideas = {
+					NGA_5nbw			
+					}
+					complete_national_focus = NGA_no_more_fails
+					country_event = {
+						id = NGA.1969
+						days = 2
+					}
+				}
+				BIA = {
+					#complete_national_focus = BIA_wellshit
+					set_cosmetic_tag = BIA_NGA
+					load_focus_tree = BIA_defeat
+					set_country_flag = BIA_puppet
+					#add_stability = -0.40 #test
+					remove_ideas = {
+					BIA_crisis_of_postmodernity
+					BIA_pockets_lined_with_black
+					BIA_ahiara_declaration			
+					fiveTOWWW
+					BIA_initiative
+					BIA_NSB_awesome
+					BIA_NSB_awesome_1
+					BIA_desperate_measures
+					}
+				}
+			clear_variable = BED.GDP
+			clear_variable = BED.DEBT
+			clear_variable = BED.REAL_GROWTH
+			set_global_flag = NGA_victory
+			set_global_flag = war_won
+			}
+			else_if = { #08/30/2024: I'm not sure if this needs changing since we changed Nigeria's content 
+				limit = {
+					ROOT = {
+						original_tag = BIA
+					}
+					FROM = {
+						original_tag = NGA
+					}
+					FROM.FROM = {
+						state = 27
+					}
+				}
+				BIA = {
+					white_peace = NGA
+					add_ideas = BIA_dosh_from_lagos
+					complete_national_focus = BIA_our_military_proud
+					transfer_state = 24
+					remove_wargoal = {
+						target = NGA
+						type = all
+					}
+					remove_ideas = {
+					fiveTOWWW
+					BIA_initiative
+					BIA_NSB_awesome
+					BIA_NSB_awesome_1
+					BIA_desperate_measures			
+					}
+				}
+				NGA = {
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = NGNGNGNGhas_done_this_before
+							}
+						}
+					complete_national_focus = NGA_im_just_glad_its_over
+					set_country_flag = NGNGNGNGhas_done_this_before #avoids looping cycle
+					}
+					else = {}
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+					white_peace = BIA
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = BIA
+					}
+					FROM = {
+						original_tag = NGA
+					}
+					FROM.FROM = {
+						state = 22
+					}
+				}
+				BIA = {
+					white_peace = NGA
+					add_ideas = BIA_dosh_from_lagos
+					complete_national_focus = BIA_our_military_proud
+					transfer_state = 24
+					remove_wargoal = {
+						target = NGA
+						type = all
+					}
+					remove_ideas = {
+					fiveTOWWW
+					BIA_initiative
+					BIA_NSB_awesome
+					BIA_NSB_awesome_1
+					BIA_desperate_measures			
+					}
+				}
+				NGA = {
+					if = {
+						limit = {
+							NOT = {
+								has_country_flag = NGNGNGNGhas_done_this_before
+							}
+						}
+					complete_national_focus = NGA_im_just_glad_its_over
+					set_country_flag = NGNGNGNGhas_done_this_before #avoids looping cycle
+					}
+					else = {}
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+					white_peace = BIA
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = PGR
+					}
+					FROM = {
+						original_tag = UAE
+						surrender_progress > 0.4
+					}
+				}
+				PGR = {
+					annex_country = {
+						target = UAE
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.49
+					DAYS = 0
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = NGA
+					}
+					FROM = {
+							OR = {
+						original_tag = BED
+						original_tag = BIA
+						}
+						has_war_with = NGA #?
+					}
+					country_exists = YOR
+					country_exists = LRC
+					FROM.FROM = {
+							state = 19
+					}
+				}
+				log = "why did this trigger? if it did ofc"
+				NGA = {
+		 			white_peace = BIA
+				}
+				NGA = {
+		 			white_peace = BED
+				}
+				set_global_flag = show_peace_popup_alert
+				NGA = {
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.3
+					}
+				}
+				NGA = {
+					complete_national_focus = NGA_no_more_fails
+					country_event = {
+						id = NGA.1969
+						days = 2
+					}
+				puppet = BIA
+					annex_country = {
+						target = BED
+						transfer_troops = no
+					}
+					annex_country = {
+						target = LRC
+						transfer_troops = no
+					}
+					annex_country = {
+						target = YOR
+						transfer_troops = no
+					}
+					remove_ideas = {
+					NGA_5nbw			
+					}
+				}
+				BIA = {
+					#complete_national_focus = BIA_wellshit
+					set_cosmetic_tag = BIA_NGA
+					load_focus_tree = BIA_defeat
+					set_country_flag = BIA_puppet
+					#add_stability = -0.40 #test
+					remove_ideas = {
+					BIA_crisis_of_postmodernity
+					BIA_pockets_lined_with_black
+					BIA_ahiara_declaration			
+					fiveTOWWW
+					BIA_initiative
+					BIA_NSB_awesome
+					BIA_NSB_awesome_1
+					BIA_desperate_measures
+					}
+				}
+			clear_variable = BED.GDP
+			clear_variable = BED.DEBT
+			clear_variable = BED.REAL_GROWTH
+			set_global_flag = NGA_victory
+			set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = NGA
+						NOT = {
+							OR = {
+							has_completed_focus = NGA_sixth_time_around
+							has_country_flag = NGNGNGNGhas_done_this_before
+							}
+						}
+					}
+					FROM = {
+						OR = {
+						original_tag = BED
+						original_tag = BIA
+						}
+						#has_war_with = NGA #?
+					}
+					FROM.FROM = {
+							state = 19 #?
+					}
+				}
+				NGA = {
+				 white_peace = BIA
+				}
+				set_global_flag = show_peace_popup_alert
+				NGA = {
+					complete_national_focus = NGA_no_more_fails
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.3
+					}
+				}
+				BIA = {
+					white_peace = NGA
+					complete_national_focus = BIA_beaten_back_but_not_lost
+					remove_ideas = {
+					BIA_crisis_of_postmodernity
+					BIA_pockets_lined_with_black
+					BIA_ahiara_declaration			
+					fiveTOWWW
+					BIA_initiative
+					BIA_NSB_awesome
+					BIA_NSB_awesome_1
+					BIA_desperate_measures
+					}
+				}
+			set_global_flag = NGA_victory
+			set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = BIA
+					}
+					FROM = {
+						original_tag = NGA
+					}
+					FROM.FROM = {
+						state = 22
+					}
+				}
+				set_country_flag = BIA_is_holding_lagos
+				BIA = {
+                    country_event = {
+                    id = BIA.16
+                    days = 1
+                    }					
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = NGA
+					}
+					FROM = {
+						original_tag = BIA
+					}
+					FROM.FROM = {
+						state = 22
+					}
+				}
+				clr_country_flag = BIA_is_holding_lagos
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						OR = {
+						original_tag = SHL
+						original_tag = ISP
+						NOT = {
+							has_country_flag = CANAANCAB
+						}
+						}
+					}
+					FROM = {
+						original_tag = SYR
+					}
+					FROM.FROM = {
+						state = 155
+					}
+				}
+				SYR = {
+					white_peace = ISP
+					country_event = {
+    					id = SYR.1
+    					days = 30
+					}
+				}
+				SYR = {
+					dismantle_faction = yes
+				}
+				SHL = {
+					white_peace = SYR
+				}
+				ISP = {
+					white_peace = SYR
+				}
+				ISP = {
+					white_peace = JOR
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = SHL
+					}
+					FROM = {
+						original_tag = SYR
+					}
+					FROM.FROM = {
+						state = 155
+					}
+				}
+				SYR = {
+					white_peace = ISP
+					country_event = {
+    					id = SYR.1
+    					days = 30
+					}
+				}
+				SYR = {
+					dismantle_faction = yes
+				}
+				SHL = {
+					white_peace = SYR
+				}
+				ISP = {
+					white_peace = SYR
+				}
+				ISP = {
+					white_peace = JOR
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = ISP
+						has_country_flag = ISP_has_taken_aqaba
+					}
+					FROM = {
+						original_tag = JOR
+					}
+					FROM.FROM = {
+						state = 1265
+					}
+				}
+				JOR = {
+					white_peace = ISP
+				}
+				ISP = {
+					white_peace = JOR
+					transfer_state = 1265
+					transfer_state = 1268
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = ISP
+						has_country_flag = ISP_has_taken_eastbank
+					}
+					FROM = {
+						original_tag = JOR
+						NOT = {
+							has_country_flag = JOR_lost_to_ISP
+						}
+					}
+					FROM.FROM = {
+						state = 1268
+					}
+					NOT = {
+						ISP = {
+							has_country_flag = CANAANCAB
+						}
+					}
+				}
+				JOR = {
+					white_peace = ISP
+				}
+				ISP = {
+					white_peace = JOR
+					transfer_state = 1265
+					transfer_state = 1268
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = ISP
+					}
+					FROM = {
+						original_tag = JOR
+					}
+					FROM.FROM = {
+						state = 1268
+					}
+					
+				}
+				ISP = {
+					set_country_flag = ISP_has_taken_aqaba
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = ISP
+					}
+					FROM = {
+						original_tag = JOR
+					}
+					FROM.FROM = {
+						state = 1265
+					}
+				}
+				ISP = {
+					set_country_flag = ISP_has_taken_eastbank
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = JOR
+					}
+					FROM = {
+						original_tag = ISP
+					}
+					FROM.FROM = {
+						state = 1265
+					}
+				}
+				ISP = {
+					clr_country_flag = ISP_has_taken_eastbank
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = JOR
+					}
+					FROM = {
+						original_tag = ISP
+					}
+					FROM.FROM = {
+						state = 1268
+					}
+				}
+				ISP = {
+					clr_country_flag = ISP_has_taken_aqaba
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = ISP
+						has_war_with = EGY
+					}
+					FROM = {
+						original_tag = EGY
+						NOT = {
+							has_country_flag = EGY_lostsinai
+						}
+					}
+					FROM.FROM = {
+						state = 100
+					}
+				}
+				ISP = {
+					set_country_flag = ISP_has_taken_sinai
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = EGY
+					}
+					FROM = {
+						original_tag = ISP
+					}
+					FROM.FROM = {
+						state = 100
+					}
+				}
+				ISP = {
+					clr_country_flag = ISP_has_taken_sinai
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						OR  = {
+						original_tag = JAP
+						original_tag = QIE
+						}
+					}
+					FROM = {
+						original_tag = PRC
+					}
+					FROM.FROM = {
+						state = 372
+					}
+				}
+				ROC = {
+					transfer_state = 372
+					transfer_state = 1192
+					transfer_state = 692
+					transfer_state = 693
+					transfer_state = 417
+					transfer_state = 696
+					transfer_state = 695
+					transfer_state = 694
+					load_oob = "generic_2021"
+				}
+				RCA = {
+					transfer_state = 1189
+					transfer_state = 1170
+					transfer_state = 1171
+					transfer_state = 1173
+					transfer_state = 373
+					transfer_state = 1177
+					transfer_state = 1201
+					transfer_state = 1174
+					load_oob = "generic_2021"
+				}
+				JAP = {
+					white_peace = PRC
+					country_event = {
+						id = JPN.3
+						days = 20
+					}
+					puppet = RCA
+					puppet = ROC
+				}
+				RCA = {
+					set_politics = {
+						ruling_party = autocracy
+					}
+				}
+				ROC = {
+					set_politics = {
+						ruling_party = technocracy
+					}
+				}
+				QIE = {
+					white_peace = PRC
+					transfer_state = 1191
+					transfer_state = 1168
+					transfer_state = 1188
+					transfer_state = 1187 
+					transfer_state = 1186
+					transfer_state = 1207
+					transfer_state = 1186
+					transfer_state = 1190
+					transfer_state = 371
+					transfer_state = 1185
+				}
+				every_state = {
+					limit = { 
+						is_core_of = XIN
+					}
+					transfer_state_to = XIN
+				}
+				every_state = {
+					limit = { 
+						is_core_of = TIB
+					}
+					transfer_state_to = TIB
+				}
+				TIB = {
+					load_oob = "generic_2021"
+				}
+				XIN = {
+					load_oob = "generic_2021"
+				}
+				SOV = {
+					puppet = XIN
+					puppet = TIB
+				}
+				every_state = {
+					limit = {
+						is_owned_by = QIE
+					}
+					add_core_of = QIE
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = TRP
+						has_war_with = FRA
+					}
+					FROM = {
+						original_tag = FRA
+					}
+					FROM.FROM = {
+							state = 965
+					}
+				}
+				FRA = {
+		 white_peace = TRP
+				}
+				if = {
+					limit = {
+						FRA = {
+							has_war_with = NGA
+						}
+					}
+					FRA = {
+						white_peace = NGA
+					}
+				}
+				else = {}
+				set_global_flag = show_peace_popup_alert
+				LCH = {
+					transfer_state = 802
+					transfer_state = 803
+					transfer_state = 965
+					load_oob = "LCH_2021"
+				}
+				TRP = {
+					puppet = LCH
+				}
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+					id = WNE.20
+					}
+				}
+				set_global_flag = war_won
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = NAM
+						controls_state = 473
+					}
+					FROM = {
+						original_tag = SAF
+					}
+					FROM.FROM = {
+						state = 473
+					}
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = war_won				
+				473 = {
+					set_state_controller_to = NAM
+					set_state_owner_to = NAM
+				}
+				475 = {
+					set_state_controller_to = NAM
+					set_state_owner_to = NAM
+				}	
+				NAM = {
+					white_peace = AWB
+					white_peace = SAF
+				}
+			}
+			else_if = {
+				limit = {
+					ROOT = {
+						original_tag = ISP
+						NOT = {
+							has_country_flag = CANAANCAB
+						}
+					}
+					FROM = {
+						original_tag = EGY
+					}
+					FROM.FROM ={
+						state = 100
+					}
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+				EGY = {
+					white_peace = ISP
+					white_peace = SHL
+					set_country_flag = EGY_lostsinai
+				}
+				ISP = {
+					transfer_state = 100
+					transfer_state = 916
+					white_peace = EGY
+				}	
+			}
+		else = {
+			
+		}
+			set_global_flag = skip_default_capitulation
+			log = "5 THIS: [THIS.GetName] ROOT: [ROOT.GetName] PREV: [PREV.GetName] FROM: [FROM.GetName]"
+		}
+	}
+	#dont mind me just logging wars
+	on_declare_war = {
+		effect = {
+			log="[GetDateText]: [Root.GetName] declared war on [From.GetName]"
+		}
+	}
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					BIA = {
+						has_country_flag = {
+						flag = BIA_is_holding_lagos
+  						 days > 89
+						}
+					}
+				}
+				BIA = {
+					mark_focus_tree_layout_dirty = yes
+				}
+			}
+			else = {
+
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			if = { 
+				limit = {
+					PLK = {
+						has_country_flag = {
+						    flag = PLK_survive_for_90_days
+						    days > 89
+						}
+					}
+				}
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = skip_default_capitulation
+			clear_global_event_target = winning_country
+			clear_global_event_target = losing_country
+			PLK = {
+				save_global_event_target_as = winning_country
+			}
+			PRC = {
+				save_global_event_target_as = losing_country
+				white_peace = PLK
+			}
+			1092 = {
+				set_demilitarized_zone = yes
+			}
+			PLK = {
+				transfer_state = 1078
+				transfer_state = 412
+				white_peace = PRC
+				white_peace = JAP
+			}
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+			}
+			else_if = {
+				limit = {
+					has_global_flag = {
+						flag = MASSIVEMIDDLEEASTWARLOL
+						days > 30
+					}
+					ISP = {
+						NOT = {
+							has_country_flag = CANAANCAB
+						}
+						controls_state = 155
+						surrender_progress = 0
+					}
+					NOT = {
+							OR = {
+								SYR = {
+									has_country_flag = SYR_capitulated
+								}
+								ISP = {
+									has_country_flag = CANAANCAB
+								}
+							}
+						}
+				}
+				ISP = {
+					white_peace = SYR
+				}
+				SYR = {
+					white_peace = ISP
+					set_country_flag = SYR_capitulated
+				}
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = skip_default_capitulation
+			ISP = {
+				save_global_event_target_as = winning_country
+			}
+			SYR = {
+				save_global_event_target_as = losing_country
+			}
+			}
+			else_if = {
+				limit = {
+					SYR = {
+						controls_state = 440
+					}
+					has_global_flag = {
+						flag = MASSIVEMIDDLEEASTWARLOL
+						days > 365
+					}
+					NOT = {
+						has_global_flag = ISP_already_got_stabhit
+					}
+				}
+				set_global_flag = ISP_already_got_stabhit
+				SYR = {
+					transfer_state = 440
+					white_peace = ISP
+				}
+				440 = {
+					add_core_of = SYR
+				}
+				ISP = {
+					add_stability = -0.2
+					white_peace = SYR
+				}
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = skip_default_capitulation
+			SYR = {
+				save_global_event_target_as = winning_country
+			}
+			ISP = {
+				save_global_event_target_as = losing_country
+			}
+			}
+			else_if = {
+				limit = {
+					EGY = {
+						controls_state = 100
+					}
+					has_global_flag = {
+						flag = MASSIVEMIDDLEEASTWARLOL
+						days > 400
+					}
+					NOT = {
+						EGY = {
+							has_country_flag = EGY_controlsstate100alreadyhappened
+						}
+					}
+				}
+				ISP = {
+					white_peace = EGY
+				}
+				EGY = {
+					white_peace = ISP
+					set_country_flag = EGY_controlsstate100alreadyhappened
+					white_peace = SHL
+				}
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = skip_default_capitulation
+			EGY = {
+				save_global_event_target_as = winning_country
+			}
+			ISP = {
+				save_global_event_target_as = losing_country
+			}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = ISP
+					}
+					ROOT = {
+						original_tag = SUD
+					}
+				}
+				TRP = {
+					annex_country = {
+						target = SUD
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						original_tag = TRP
+					}
+					ROOT = {
+						original_tag = SUD
+					}
+				}
+				TRP = {
+					annex_country = {
+						target = SUD
+					}
+				}
+			}
+			
+		}
+	}
+	on_daily = {
+		effect = {
+			else_if = {
+				limit = {
+					ISP = {
+						AND = {
+							has_country_flag = {
+								flag = ISP_has_taken_sinai
+								days > 29
+							}
+							has_country_flag = ISP_has_taken_sinai
+						}
+					}
+				}
+				EGY = {
+					save_global_event_target_as = losing_country
+				}
+				ISP = {
+					save_global_event_target_as = winning_country
+				}
+				set_global_flag = show_peace_popup_alert
+				set_global_flag = skip_default_capitulation
+				EGY = {
+					white_peace = ISP
+					white_peace = SHL
+					set_country_flag = EGY_lostsinai
+				}
+				ISP = {
+					transfer_state = 100
+					transfer_state = 916
+					white_peace = EGY
+					clr_country_flag = ISP_has_taken_sinai
+				}	
+			}
+		}
+	}
+  }
+}

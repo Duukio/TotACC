@@ -1,0 +1,27 @@
+state={
+id=236
+	name="STATE_236"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+			victory_points = {
+			10999 10
+		}
+		owner = BRA
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
+		}
+		add_core_of = BRA
+
+	}
+	provinces={
+		2153 8196 10999 12996 
+	}
+	manpower=4018650
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

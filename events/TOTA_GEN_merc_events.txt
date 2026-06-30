@@ -1,0 +1,30 @@
+add_namespace = Mercs
+
+#Seychelles PMC Contract is up
+country_event = {
+	id = Mercs.1
+	title = Mercs.1.t
+	desc = Mercs.1.d
+	#picture =
+	is_triggered_only = yes
+	option = {
+		name = Mercs.1.a
+		every_army_leader = {
+			LIMIT = {
+				has_trait = SEY_PMC_trait
+			}
+			set_nationality = SEY
+		}
+		delete_unit_template_and_units = {
+    		division_template = "Seychelles PMC"
+    		disband = no
+		}
+		remove_ideas = SEY_PMC_idea
+	}
+	#extend the contract by a year
+	option = {
+		name = Mercs.1.b
+		add_timed_idea = { idea = mercenary_contract_extension days = 45 }
+		country_event = { id = Mercs.1 days = 365 }
+	}
+}

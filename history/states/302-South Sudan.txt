@@ -1,0 +1,34 @@
+
+state={
+	id=302
+	name="STATE_302"
+    buildings_max_level_factor = 1
+	resources={
+		oil=400.000
+	}
+
+	history={
+		victory_points = {
+			10908 5 
+		}
+		owner = SDE
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			school = 2
+
+		}
+		add_core_of = SDE
+		set_demilitarized_zone = yes
+
+	}
+
+	provinces={
+	 10877 10908 13861 
+	}
+	manpower=1119400
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

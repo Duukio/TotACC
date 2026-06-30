@@ -1,0 +1,25 @@
+state={
+id=1309
+	name="STATE_1309"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	history={
+		owner = PAK
+		victory_points = {
+			14074 20 #Maymana
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = PAK 
+
+	}
+	provinces={
+		14074 14075 7448 10896 7984 12877 
+	}
+	manpower=3000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

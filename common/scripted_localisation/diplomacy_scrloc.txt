@@ -1,0 +1,222 @@
+defined_text = {
+	name = FACTION_NAME_STATUS_SCRLOC
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 1 }
+		}
+		localization_key = LEADEROFNATO
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 7 }
+		}
+		localization_key = LEADEROFPAFCPG
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 10 }
+		}
+		localization_key = LEADEROFWTO
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 5 }
+		}
+		localization_key = MEMBER_NATO
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 6 }
+		}
+		localization_key = PAFCPG_MEMBER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 11 }
+		}
+		localization_key = OBSERVER_WTO
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 2 }
+		}
+		localization_key = EEC_MEMBER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 3 }
+		}
+		localization_key = NATO_OBSERVER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 4 }
+		}
+		localization_key = OECD_MEMBER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 8 }
+		}
+		localization_key = PAFCPG_OBSERVER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 9 }
+		}
+		localization_key = COMECON_MEMBER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 12 }
+		}
+		localization_key = WTO_MEMBER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 13 }
+		}
+		localization_key = BENGHAZI_MEMBER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 14 }
+		}
+		localization_key = BENGHAZI_LEADER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 15 }
+		}
+		localization_key = BENGHAZI_OBSERVER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 16 }
+		}
+		localization_key = BENGHAZI_MEMBER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 17 }
+		}
+		localization_key = BENGHAZI_LEADER
+	}
+	text = {
+		trigger = {
+            check_variable = { ROOT.FACTIONSTATUS = 18 }
+		}
+		localization_key = BENGHAZI_OBSERVER
+	}
+}
+defined_text = {
+	name = FACTION_NAME_STATUS_SCRLOC_DIPLO
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 1 }
+		}
+		localization_key = LEADEROFNATO_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 7 }
+		}
+		localization_key = LEADEROFPAFCPG_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 10 }
+		}
+		localization_key = LEADEROFWTO_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 5 }
+		}
+		localization_key = MEMBER_NATO_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 6 }
+		}
+		localization_key = PAFCPG_MEMBER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 11 }
+		}
+		localization_key = OBSERVER_WTO_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 2 }
+		}
+		localization_key = EEC_MEMBER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 3 }
+		}
+		localization_key = NATO_OBSERVER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 4 }
+		}
+		localization_key = OECD_MEMBER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 8 }
+		}
+		localization_key = PAFCPG_OBSERVER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 9 }
+		}
+		localization_key = COMECON_MEMBER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 12 }
+		}
+		localization_key = WTO_MEMBER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 13 }
+		}
+		localization_key = AIB_MEMBER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 14 }
+		}
+		localization_key = AIB_LEADER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 15 }
+		}
+		localization_key = AIB_OBSERVER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 16 }
+		}
+		localization_key = BENGHAZI_MEMBER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 17 }
+		}
+		localization_key = BENGHAZI_LEADER_DIPLO
+	}
+	text = {
+		trigger = {
+            check_variable = { THIS.FACTIONSTATUS = 18 }
+		}
+		localization_key = BENGHAZI_OBSERVER_DIPLO
+	}
+}

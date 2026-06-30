@@ -1,0 +1,29 @@
+state={
+id=327
+	name="STATE_327"
+    buildings_max_level_factor = 1
+	state_category = rural
+	
+	resources = {
+	
+	}
+	history={
+        victory_points = { 9140 3 }
+        owner = FIN
+		add_core_of = FIN
+        buildings = {
+            school = 2
+            infrastructure = 2
+			dockyard = 1
+			9140 = {
+			naval_base = 1
+			}
+        }
+    }
+	provinces={
+		6012 6183 9140 11142 
+	}
+	manpower=40000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

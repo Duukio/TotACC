@@ -1,0 +1,171 @@
+﻿capital = 425
+
+oob = ""
+
+set_variable = { GDP = 3500 } set_variable = { DEBT = 1800 } set_variable = { REAL_GROWTH = 1.5 }
+
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+set_country_flag = has_double_leader
+set_country_flag = charles_iii
+add_ideas = {
+ENG_post_empire_syndrome
+ENG_home_commonwealth
+ENG_oil_gas_broker
+ENG_post_industrial_blues
+ENG_postwar_comp_heritage
+ENG_disunited_union
+}
+puppet = HKG
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+
+set_variable = {
+var = SOCTRENDS_DC
+value = 45
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 75
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 35
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 70
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 25
+}
+tota_variable_clamping = yes
+set_convoys = 100
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 18
+        revolutionary_right = 4
+        dissident_right = 8
+        liberalism = 14
+        hardline_socialism = 4
+        autocracy = 3
+        reformist_socialism = 27
+        socdem = 15
+        technocracy = 7
+
+}
+
+set_politics = {
+	
+	ruling_party = technocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Jeremy Corbyn"
+	desc = "POLITICS_CORBYN_DESC"
+	picture = "gfx/leaders/ENG/Jeremy Corbyn.png"
+	expire = "2040.1.1"
+	ideology = soctechno
+	traits = {
+	}
+}

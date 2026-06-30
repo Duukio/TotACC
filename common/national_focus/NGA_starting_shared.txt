@@ -1,0 +1,11 @@
+focus_tree = {
+	id = NGA_starting
+	country = {
+		factor = 0
+		modifier = {
+			add = 250
+			tag = NGA
+		}
+	}
+	shared_focus = NGA_fifth_times_the_charm
+}

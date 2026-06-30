@@ -1,0 +1,95 @@
+NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = {
+    if = {
+        limit = {
+            check_variable = { NGA_NORF_SOUF > 51 }
+        }
+        #do nothing
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 0
+                compare = greater_than
+            }
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 50
+                compare = less_than_or_equals
+            }
+        }
+        set_variable = { NGA_NORF_SOUF_CALC_NORF = NGA_NORF_SOUF } #both vars are now 30
+        log = "NGA_NORF_SOUF_CALC_NORF: [?NGA_NORF_SOUF_CALC_NORF]"
+        subtract_from_variable = { NGA_NORF_SOUF_CALC_NORF = 100 } #now the var is -70
+        log = "NGA_NORF_SOUF_CALC_NORF: [?NGA_NORF_SOUF_CALC_NORF]"
+        multiply_variable = { NGA_NORF_SOUF_CALC_NORF = -1 } #now the var is 70, tada
+        log = "NGA_NORF_SOUF_CALC_NORF: [?NGA_NORF_SOUF_CALC_NORF]"
+    }
+    #if NGA_NORF_SOUF is 40% then it displays 40% southern bias
+    #if NGA_NORF_SOUF is 60% then it displays 40% northern bias
+    else = {}
+    if = {
+        limit = {
+         	check_variable = {
+         	    var = NGA_NORF_SOUF
+         	    value = 55
+         	    compare = greater_than
+         	}
+        }
+        NGA = {
+            set_variable = { ngabias_stab = 0.1 }
+            set_variable = { ngabias_drift = 0.01 }
+            set_variable = { ngabias_pp = -0.1 }
+            set_variable = { ngabias_consumer = -0.03 }
+            set_variable = { ngabias_research = 0.04 }
+            set_variable = { ngabiaswars = -0.1 }
+
+        }
+    }
+    else_if = {
+        limit = {
+           	check_variable = {
+           	    var = NGA_NORF_SOUF
+           	    value = 49
+           	    compare = greater_than
+           	}
+           	check_variable = {
+           	    var = NGA_NORF_SOUF
+           	    value = 55
+           	    compare = less_than_or_equals
+           	}
+        }
+        NGA = {
+            set_variable = { ngabias_stab = 0.02 }
+            set_variable = { ngabias_pp = 0.1 }
+            set_variable = { ngabias_consumer = -0.06 }
+            set_variable = { ngabias_research = 0.06 }
+            set_variable = { ngabiaswars = 0.05 }
+
+        }
+    }
+    else_if = {
+        limit = {
+         check_variable = {
+             var = NGA_NORF_SOUF
+             value = 0
+             compare = greater_than
+         }
+         check_variable = {
+             var = NGA_NORF_SOUF
+             value = 49
+             compare = less_than_or_equals
+         }
+        }
+        NGA = {
+            set_variable = { ngabias_stab = -0.05 }
+            set_variable = { ngabias_drift = -0.05 }
+            set_variable = { ngabias_pp = 0.1 }
+            set_variable = { ngabias_consumer = 0.04 }
+            set_variable = { ngabias_research = -0.01 }
+            set_variable = { ngabiaswars = 0.1 }
+
+        }
+    }
+    else = {}
+}

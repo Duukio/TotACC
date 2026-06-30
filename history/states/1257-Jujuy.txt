@@ -1,0 +1,35 @@
+state={
+id=1257
+	
+	name="STATE_1257" # Chaco Australis
+
+	manpower = 4000000
+	
+	state_category = city
+	
+	resources={
+		tungsten=60 # was: 46
+		steel=20 # was: 8
+	}
+
+	history={
+		owner = ARP
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		add_core_of = ARP
+		add_core_of = ARG
+		victory_points = {
+			14000 5 #San Salvador de Jujuy
+		}
+	}
+
+	provinces={
+		14000 10944 11001 2224
+	}
+
+	local_supplies=6.0 
+}

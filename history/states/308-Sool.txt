@@ -1,0 +1,33 @@
+
+state={
+	id=308
+	name="STATE_308"
+    buildings_max_level_factor = 1
+	resources={
+		steel=10.000
+		tungsten=10.000
+	}
+
+	history={
+		victory_points = {
+			1905 2
+		}
+		owner = MGD
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 2
+
+		}
+		add_core_of = MGD
+
+	}
+
+	provinces={
+		1905 8094 
+	}
+	manpower=1400000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

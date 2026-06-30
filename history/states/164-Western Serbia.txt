@@ -1,0 +1,29 @@
+state={
+id=164
+	
+
+	name="STATE_164"
+
+
+	history={
+		owner = YUG
+		victory_points = {
+			3984 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = YUG
+		add_core_of = SRB
+	}
+
+	provinces={
+		797 937 3609 3922 3939 3956 3984 6953 6970 9599  
+	}
+	manpower=2331697
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

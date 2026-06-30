@@ -1,0 +1,31 @@
+state={
+id=672
+	
+	name="STATE_672"
+
+	manpower = 926276
+	
+	state_category = small_island
+
+	history={
+		owner = FIJ
+		add_core_of = FIJ
+		buildings = {
+            school = 2
+			infrastructure = 3
+			4286 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = {
+			4286 10 
+		}
+	}
+	
+	provinces={
+		4286 7302 12159 
+	}
+
+	local_supplies=0.0 
+}

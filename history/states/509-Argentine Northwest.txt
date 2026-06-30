@@ -1,0 +1,29 @@
+
+state={
+id=509
+	
+	name="STATE_509" # Tucuman
+	manpower = 2000000
+	
+	state_category = city
+
+	history={
+		owner = ARP
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+		}
+		add_core_of = ARP
+		add_core_of = ARG
+		victory_points = {
+			2136 20 #la rioja
+		}
+	}
+
+	provinces={
+		2136 8195 8253 12928 12978 13999 13998 10964 2179 10992
+	}
+
+	local_supplies=0.0 
+}

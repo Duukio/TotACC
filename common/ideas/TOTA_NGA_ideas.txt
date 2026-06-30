@@ -1,0 +1,880 @@
+ideas = {
+	country = {
+			NGA_northern_bias = {
+			picture = NGA_northern_bias
+			allowed = {
+				tag = NGA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+				NOT = {
+           			 check_variable = {
+           			     var = NGA_NORF_SOUF
+           			     value = 0
+           			     compare = greater_than
+           			 }
+           			 check_variable = {
+           			     var = NGA_NORF_SOUF
+           			     value = 49
+           			     compare = less_than_or_equals
+           			 }
+				}
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_soctrends_drift_TP_T = 0.03
+			stability_factor = -0.15
+			war_support_factor = 0.15
+			consumer_goods_factor = -0.05
+			political_power_cost = 0.10
+			}
+		}
+		NGA_neutral_bias = {
+			picture = NGA_neutral_bias
+			allowed = {
+				tag = NGA
+			}
+
+            available = {
+				
+            }
+
+            cancel = {
+				NOT = {
+           			 check_variable = {
+           			     var = NGA_NORF_SOUF
+           			     value = 49
+           			     compare = greater_than
+           			 }
+           			 check_variable = {
+           			     var = NGA_NORF_SOUF
+           			     value = 55
+           			     compare = less_than_or_equals
+           			 }
+				}
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_soctrends_drift_TP_P = 0.01
+			stability_factor = 0.05
+			war_support_factor = 0.02
+			consumer_goods_factor = -0.01
+			political_power_cost = 0.15
+			}
+		}
+		NGA_southern_bias = {
+			picture = NGA_southern_bias
+			allowed = {
+				tag = NGA
+			}
+
+            available = {
+				
+            }
+
+            cancel = {
+				NOT = {
+         			 check_variable = {
+         			     var = NGA_NORF_SOUF
+         			     value = 55
+         			     compare = greater_than
+         			 }
+				}
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_soctrends_drift_TP_P = 0.03
+			stability_factor = 0.15
+			war_support_factor = -0.15
+			consumer_goods_factor = 0.03
+			production_speed_buildings_factor = 0.03
+			gdp_growth_modifier = 0.01
+			political_power_cost = 0.25
+			}
+		}
+		NGA_natcom_dev = {
+			picture = NGA_natcom_dev
+			allowed = {
+				tag = NGA
+			}
+			available = {
+
+			}
+			cancel = {
+
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.33
+				production_oil_factor = 0.55
+				consumer_goods_factor = 0.22
+				gdp_growth_modifier = -0.025
+				political_power_cost = 0.22
+				stability_factor = 0.1
+				war_support_factor = 0.25
+			}
+		}
+		NGA_self_sufficiency_focus = {
+			picture = NGA_self_sufficiency_focus
+			allowed = {
+				tag = NGA
+			}
+			available = {}
+			cancel = {}
+			allowed_civil_war = { always = no}
+			modifier = {
+				min_export = -0.5
+				stability_factor = -0.2
+				gdp_growth_modifier = -0.05
+			}
+		}
+		NGA_self_sufficiency_focus_1 = {
+			picture = NGA_self_sufficiency_focus
+			allowed = {
+				tag = NGA
+			}
+			available = {}
+			cancel = {}
+			allowed_civil_war = { always = no}
+			modifier = {
+				min_export = -0.5
+				stability_factor = -0.2
+				war_support_factor = 0.1
+				political_power_cost = -0.1
+				gdp_growth_modifier = 0.01
+				consumer_goods_factor = -0.02
+			}
+		}
+		NGA_collectivization = {
+			picture = NGA_collectivization
+			allowed = {
+				tag = NGA
+			}
+			available = {}
+			cancel = {}
+			allowed_civil_war = { always = no}
+			modifier = {
+				stability_factor = -0.25
+				gdp_growth_modifier = -0.05
+				monthly_soctrends_drift_EE_E1 = 0.1
+				monthly_soctrends_drift_DC_C = 0.1
+				monthly_soctrends_drift_DE_D = 0.03
+			}			
+		}
+		NGA_agrarian_juche = {
+			picture = NGA_agrarian_juche
+			allowed = {
+				tag = NGA
+			}
+			available = {
+
+			}
+			cancel = {
+
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				consumer_goods_factor = 0.1
+				hardline_socialism_drift = 0.01
+				monthly_soctrends_drift_DC_C = 0.03
+				monthly_soctrends_drift_EE_E1 = 0.05
+			}
+		}
+		NGA_renewable_focus = {
+			picture = NGA_renewable_focus
+			allowed = {
+				tag = NGA
+			}
+			available = {
+
+			}
+			cancel = {
+
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.03	
+				fuel_gain_factor_from_states = -0.1
+				supply_consumption_factor = -0.25
+				attrition = -0.25
+				production_speed_buildings_factor = 0.1
+				civilian_factory_use = 3
+				stability_factor = 0.25
+				political_power_gain = 0.1
+			}
+		}
+		NGA_crippling_war_fatigue = {
+			picture = NGA_crippling_war_fatigue
+			allowed = {
+				tag = NGA
+				has_war_with = BIA
+			}
+
+            available = {
+				has_war_with = BIA
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			gdp_growth_modifier = -0.05
+			stability_weekly = -0.02
+			min_export = -0.5
+			consumer_goods_factor = 0.15
+			industrial_capacity_factory = 0.15
+			}
+		}
+		NGA_uncompetitive_exports = {
+			picture = NGA_uncompetitive_exports
+			allowed = {
+				tag = NGA
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				min_export = 0.33
+				weekly_debt_modifier = 0.03
+				gdp_growth_modifier = 0.02
+			}
+		}
+		NGA_reparations_to_biafra = {
+			picture = NGA_reparations_to_biafra
+			allowed = {
+				tag = NGA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			research_speed_factor = -0.06
+			production_speed_buildings_factor = -0.3
+			stability_factor = -0.25
+			}
+		}
+		NGA_culture_of_violence = {
+			picture = NGA_culture_of_violence
+			allowed = {
+				tag = NGA
+			}
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = -0.15
+				gdp_growth_modifier = -0.05
+				#stability_weekly = -0.01
+				stability_factor = -0.05
+				monthly_soctrends_drift_DC_D = 0.02
+				political_power_cost = 0.05
+				war_support_factor = 0.1
+				weekly_manpower = -1000
+				monthly_population = 0.3
+			}
+		}
+		NGA_contract_with_SEY = {
+			picture = contract_generic
+			allowed = {
+				tag = NGA
+			}
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				offence = 0.1
+			}
+			targeted_modifier = {
+				tag = SEY
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.1
+				extra_trade_to_target_factor = 0.1
+			}
+		}
+		NGA_holy_war = {
+			picture = war_generic
+			allowed = {
+				tag = NGA
+			}
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = 0.15
+				conscription = 0.05
+				political_power_cost = 0.1
+			}
+		}
+		NGA_enhanced_occupation_techniques = {
+			picture = NGA_enhanced_occupation_techniques
+			allowed = {
+				tag = NGA
+			}
+			available = {}
+			cancel = {}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				resistance_decay = 0.15
+				resistance_damage_to_garrison = -0.15
+				resistance_growth = -0.1
+				state_resources_factor = -0.05
+				non_core_manpower = -0.3
+				local_supplies = 0.25
+				stability_factor = -0.1
+			}
+		}
+		NGA_fast_war_baby = {
+			picture = NGA_fast_war_baby
+			allowed = {
+				tag = NGA
+				has_war_with = BIA
+			}
+			available = {
+				tag = NGA
+				has_war_with = BIA
+			}
+			cancel = {}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = -0.01
+				offence = 0.2
+				army_speed_factor = 0.3
+				defence = -0.2
+				political_power_cost = 0.05
+				gdp_growth_modifier = -0.025
+			}
+		}
+		NGA_gun_fever = {
+			picture = NGA_gun_fever
+			allowed = {
+				tag = NGA
+				has_war_with = BIA
+			}
+			available = {
+				tag = NGA
+				has_war_with = BIA
+			}
+			cancel = {}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = -0.01
+				offence = 0.1
+				army_speed_factor = -0.05
+			}
+		}
+		
+		NGA_dev_plan_bloat_def = {
+			picture = NGA_dev_plan_bloat_def
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			cancel = { NOT = { has_country_flag = NGA_dev_plan_bloat_def } }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				breakthrough_factor = 0.15
+				army_org_regain = 0.1
+				political_power_gain = -0.25
+			}
+		}
+		NGA_populism = {
+			picture = NGA_populism
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.1
+				political_power_cost = 0.03
+				min_export = -0.08
+				gdp_growth_modifier = -0.03
+				stability_factor = 0.15
+			}
+		}
+		NGA_militarism = {
+			picture = NGA_militarism
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				offence = 0.1
+				defence = 0.1
+				conscription_factor = 0.66
+				political_power_cost = 0.1
+				stability_factor = -0.15
+				war_support_factor = 0.15
+			}
+		}
+		NGA_mil_commissars = {
+			picture = NGA_mil_commissars
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				hardline_socialism_drift = 0.01
+				reformist_socialism_drift = 0.02
+				offence = -0.05
+				defence = -0.05
+				production_speed_buildings_factor = 0.12
+				stability_factor = -0.08
+				war_support_factor = 0.08
+			}
+		}
+		NGA_the_third_and_a_half_republic = {
+			picture = NGA_the_third_and_a_half_republic
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.03
+				stability_factor = 0.07
+				consumer_goods_factor = -0.05
+			}
+		}
+		NGA_the_new_nigerian_culture = {
+			picture = NGA_the_new_nigerian_culture
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				hardline_socialism_drift = 0.05
+				political_power_cost = -0.1
+				consumer_goods_factor = -0.06
+				stability_factor = 0.16
+				war_support_factor = 0.24
+				supply_node_range = 0.15
+				production_oil_factor = 0.1
+				monthly_soctrends_drift_DC_C = 0.05
+				monthly_soctrends_drift_TP_T = 0.03
+			}
+		}
+		NGA_supermart_soc = {
+			picture = NGA_supermart_soc
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				reformist_socialism_drift = 0.01
+				consumer_goods_factor = 0.12
+				stability_factor = 0.22
+				war_support_factor = -0.15
+				supply_node_range = 0.2
+				out_of_supply_factor = -0.1
+				attrition = -0.1
+				supply_factor = 0.15
+				production_speed_buildings_factor = 0.12
+				production_oil_factor = 0.33
+			}
+		}
+		SOV_political_observers = {
+			picture = SOV_political_observers
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				reformist_socialism_drift = 0.01
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				gdp_growth_modifier = 0.05
+			}
+		}
+		NGA_honor_codes = {
+			picture = NGA_honor_code
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.02
+				stability_weekly = -0.03
+				weekly_manpower = -100
+				war_support_factor = 0.05
+			}
+		}
+		NGA_fulanization = {
+			picture = NGA_fulanization
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				revolutionary_right_drift = 0.01
+				political_power_gain = 0.02
+			}
+		}
+		NGA_corporate_honor = {
+			picture = NGA_corporate_honor
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.03
+				weekly_manpower = -200
+				war_support_factor = 0.1
+				political_power_gain = 0.02
+				gdp_growth_modifier = 0.02
+			}
+		}
+		NGA_stock_markets = {
+			picture = NGA_stock_markets
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				gdp_growth_modifier = 0.02
+				weekly_debt_modifier = -0.01
+			}
+		}
+		NGA_islamization = {
+			picture = NGA_islamization
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = 0.01
+				political_power_cost = 0.1
+			}
+		}
+		NGA_jizyah = {
+			picture = NGA_jizyah
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.25
+				gdp_growth_modifier = 0.03
+			}
+		}
+		NGA_fulani_boy_summer = {
+			picture = NGA_fulani_boy_summer
+			allowed = {
+				tag = NGA
+			}
+			available = {
+				tag = NGA
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				gdp_growth_modifier = 0.07
+				political_power_cost = 0.1
+				weekly_debt_modifier = -0.01
+				research_speed_factor = 0.03
+				weekly_manpower = -200
+				war_support_factor = 0.1
+				political_power_gain = 0.04
+				revolutionary_right_drift = 0.01
+			}
+		}
+		NGA_volunteers = {
+			picture = SEY_rodeo
+			allowed = {
+				tag = NGA
+			}
+
+            available = {
+				tag = NGA
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.01
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+			}
+		}
+		Afrihili = {
+			picture = Afrihili
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_cost = 0.05
+				gdp_growth_modifier = 0.01
+			}
+		}
+		Ambacoin = {
+			picture = Ambacoin
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				research_speed_factor = 0.04
+				gdp_growth_modifier = 0.05
+				stability_factor = -0.25
+			}
+		}
+		NGA_employment_crisis = {
+			picture = NGA_employment_crisis
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = -0.01
+				political_power_cost = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		NGA_fuck_whitey = {
+			picture = NGA_fuck_whitey
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = 0.25
+				weekly_manpower = -250
+				research_speed_factor = -0.05
+				stability_weekly = -0.02
+			}
+		}
+		NGA_fuck_whitey_fixed = {
+			picture = NGA_fuck_whitey
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = 0.33
+				weekly_manpower = 100
+				research_speed_factor = 0.03
+				stability_weekly = 0.01
+				political_power_gain = 0.02
+				gdp_growth_modifier = 0.025
+			}
+		}
+		NGA_police_oversight = {
+			picture = NGA_fuck_whitey
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				party_popularity_stability_factor = 0.25
+				conscription_factor = -0.33
+				political_power_cost = 0.1
+				hardline_socialism_drift = 0.05
+			}			
+		}
+	}	
+}

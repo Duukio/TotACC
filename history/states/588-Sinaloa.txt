@@ -1,0 +1,39 @@
+
+state={
+id=588
+	
+	name="STATE_588" # Durango
+	manpower = 9000000
+	
+	state_category = city
+	
+	history={
+		owner = MEX
+		buildings = {
+            school = 2
+			infrastructure = 4
+			dockyard = 4
+			industrial_complex = 5
+			8057 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = MEX
+		victory_points = {
+			7921 30
+		}
+		victory_points = {
+			8057 20
+		}
+		victory_points = {
+			10895 10
+		}
+	}
+
+	provinces={
+		1945 4946 7921 8003 8057 10853 10871 10895 12804 
+	}
+	
+
+	local_supplies=6.0 
+}

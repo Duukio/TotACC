@@ -1,0 +1,39 @@
+guiTypes = {
+	containerWindowType = {
+		name = "clock_window"
+		position = { x=-210 y=-40 }
+		animation_time = 450
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		Orientation = LOWER_RIGHT
+		clipping = no
+		size = { width=228 height=42 }
+
+		positionType = {
+			name = "peace_conference_offset"
+			position = { x=-250 y=-3 }
+		}
+
+		positionType = {
+			name = "minimap_offset"
+    		position = { x=0 y=-100 }
+    	}
+
+		background = {
+			name = "background"
+			quadTextureSprite ="GFX_ingameclock_bg"
+		}
+
+
+		instantTextBoxType = {
+			name ="time_text"
+			position = { x = 52 y = 12 }
+			font = "sf_16mbs"
+			text = "13:37"
+			format = center
+			maxWidth = 70
+			maxHeight = 24
+			fixedsize = yes
+		}
+	}
+}

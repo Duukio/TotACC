@@ -1,0 +1,14 @@
+defined_text = {
+    name = ISP_Edati_dyn_loc
+    Text = {
+        trigger = {
+            ISP = {
+                has_country_flag = ISP_reconciliation
+            }
+        }
+        localization_key = ISP_reconciliation_key
+    }
+    text = {
+        localization_key = ISP_edati_key
+    }
+}

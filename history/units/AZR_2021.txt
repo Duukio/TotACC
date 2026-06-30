@@ -1,0 +1,58 @@
+division_template = {
+	name = "Divisão de Infanteria"		# Infantry Division
+	#
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+  	      recon = { x = 0 y = 0 }
+		  anti_tank = { x = 0 y =1 }
+		  engineer = { x = 0 y = 2 }
+		  signal_company = { x = 0 y = 3 }
+		  anti_air = { x = 0 y = 4 }
+ 	}
+}
+units = {
+	division= {	#
+		name = "1ª Divisão 'Galo'"
+		location = 1751
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division= {	#
+		name = "2ª Divisão 'Angolana'"
+		location = 1751
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division= {	#
+		name = "3ª Divisão 'Solar'"
+		location = 1751
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division= {	#
+		name = "4ª Divisão 'Voltaremos'"
+		location = 1751
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division= {	#
+		name = "5ª Divisão 'Pica-pau'"
+		location = 3118
+		division_template = "Divisão de Infanteria"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+}

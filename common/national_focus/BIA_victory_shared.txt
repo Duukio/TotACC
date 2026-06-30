@@ -1,0 +1,12 @@
+focus_tree = {
+	id = BIA_victory
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BIA
+			has_country_flag = poopenfarten #NEVER ADD THIS FLAG
+		}
+	}
+	shared_focus = BIA_a_righteous__and_expected__victory
+}

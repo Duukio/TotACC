@@ -1,0 +1,35 @@
+
+state={
+	id=727
+	name="STATE_727"
+    buildings_max_level_factor = 1
+	history={
+		owner = CAL
+		victory_points = {
+			768 5 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 5
+			610 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CAL
+		add_core_of = USA
+
+	}
+
+	provinces={
+		6757 6745 9697 766 11698 768 6772 9730
+	}
+	manpower=1103125
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

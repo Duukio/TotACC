@@ -1,0 +1,38 @@
+
+state={
+	id=917
+	name="STATE_917"
+    buildings_max_level_factor = 1
+	provinces={
+		13873 13874 13875 1065
+	}
+	manpower=1200000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = ISP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			school = 2
+			air_base = 4
+			13873 = {
+				naval_base = 2
+
+			}
+		}
+		victory_points = {
+			13873 10
+		}
+		victory_points = {
+			1065 10
+		}
+		victory_points = {
+			13875 10
+		}
+		add_core_of = ISP
+	}
+}

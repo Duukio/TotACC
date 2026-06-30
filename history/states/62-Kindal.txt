@@ -1,0 +1,29 @@
+state={
+id=62
+	
+	name="STATE_62"
+
+
+	history={
+		owner = FRA
+		victory_points = {
+			1115 1 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 1
+
+		}
+		add_core_of = FRA
+
+
+	}
+
+	provinces={
+		1115 13651 
+	}
+	manpower=200000
+	buildings_max_level_factor=2.000
+	state_category=pastoral
+	local_supplies=0.000
+}

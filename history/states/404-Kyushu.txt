@@ -1,0 +1,38 @@
+state={
+id=404
+	name="STATE_404"
+	state_category = megalopolis
+    buildings_max_level_factor = 5
+
+
+	resources = {	
+	steel = 50
+	tungsten = 50
+	}
+	history={
+		owner = JAP
+		victory_points = { 1025 25 }
+		victory_points = { 4102 20 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 2
+			industrial_complex = 10
+			arms_factory = 5
+			air_base = 4
+			1025 = {
+			naval_base = 5
+			}
+			4102 = {
+			naval_base = 5
+			}
+		}
+		add_core_of = JAP
+	}
+	provinces={
+		1020 1025 1158 1183 4027 4102 4164 4198 7110 7178 9950 10011 10020 10092 11925 11949 12006 12032 
+	}
+	manpower=18911224
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

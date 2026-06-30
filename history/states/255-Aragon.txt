@@ -1,0 +1,30 @@
+state={
+id=255
+	name="STATE_255"
+    buildings_max_level_factor = 1
+	state_category=city
+	
+	resources={
+	tungsten = 20
+	}
+
+	history={
+		victory_points = {
+			3816 20
+		}
+		owner = SPA
+		buildings = {
+            school = 2
+			infrastructure = 4
+			
+		}
+		add_core_of = SPA
+
+	}
+	provinces={
+		790 798 813 871 899 915 948 3816 3909 3954 4903 6878 6901 7213 8061 9812 9813 9840 9842 11737 11793 11819 11821 11838 12711 
+	}
+	manpower=1329391
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

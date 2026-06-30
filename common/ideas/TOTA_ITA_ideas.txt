@@ -1,0 +1,127 @@
+ideas = {
+	country = {
+			ITA_system_shock = {
+			picture = ITA_system_shock
+			allowed = {
+				tag = ITA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_cost = 0.25
+			local_resources_factor = -0.2
+			stability_factor = -0.4
+			}
+		}
+			ITA_aging_pop = {
+			picture = ITA_aging_pop
+			allowed = {
+				tag = ITA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = -0.5
+			production_factory_start_efficiency_factor = -0.25
+			stability_factor = -0.15
+			production_speed_buildings_factor = -0.3
+			war_support_factor = -0.45
+			conscription_factor = -0.5
+			}
+		}
+			ITA_atlanticist_counter = {
+			picture = ITA_atlanticist_counter
+			allowed = {
+				tag = ITA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			min_export = -0.5
+			trade_opinion_factor = -1
+			gdp_growth_modifier = -0.35
+			}
+		}
+			ITA_invisible_legacy = {
+			picture = ITA_invisible_legacy
+			allowed = {
+				tag = ITA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			}
+		}
+			ITA_rage_against = {
+			picture = ITA_rage_against
+			allowed = {
+				tag = ITA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			dissident_right_drift = 0.05
+			revolutionary_right_drift = 0.04
+			hardline_socialism_drift = 0.03
+			reformist_socialism_drift = 0.03
+			autocracy_drift = 0.02
+			conscription = 0.01
+			}
+		}
+	}
+}

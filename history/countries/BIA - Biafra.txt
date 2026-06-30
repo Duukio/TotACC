@@ -1,0 +1,271 @@
+
+capital = 21
+
+#
+set_variable = { GDP = 400.230 } set_variable = { DEBT = 56.11 } set_variable = { REAL_GROWTH = 2.5 }
+log = "GDP: [?THIS.GDP] DEBT: [?THIS.DEBT] REAL_GROWTH: [?THIS.REAL_GROWTH] THIS: [This.GetName] ROOT: [Root.GetName]"
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+#
+set_war_support = 0.33
+set_stability = 0.66
+log = "GDP: [?THIS.GDP] DEBT: [?THIS.DEBT] REAL_GROWTH: [?THIS.REAL_GROWTH] THIS: [This.GetName] ROOT: [Root.GetName]"
+
+country_event = {
+	id =  BIA.9
+	days = 92
+}
+			BIA = {
+				add_opinion_modifier = {
+				    target = NGA
+				    modifier = embargo
+				}				
+			}
+			BED = {
+				add_opinion_modifier = {
+				    target = NGA
+				    modifier = embargo
+				}				
+			}
+			NGA = {
+				add_opinion_modifier = {
+				    target = BIA
+				    modifier = embargo
+				}				
+			}
+			BIA = {
+				add_opinion_modifier = {
+				    target = BED
+				    modifier = embargo
+				}				
+			}
+set_country_flag = fnbw_started_now
+set_research_slots = 2
+set_country_flag = obiakor_cabinet
+recruit_character = BIA_azubuike_ihejirika
+recruit_character = BIA_nnamdi_kanu
+recruit_character = BIA_ibok_ekwe_ibas
+recruit_character = BIA_usman_oyibe_jibrin
+recruit_character = BIA_olatunji_lukman_olayinka
+recruit_character = BIA_chibuike_nebeokike
+recruit_character = BIA_kenneth_minimah
+recruit_character = BIA_emma_powerful
+recruit_character = BIA_eunice_atuejide
+recruit_character = BIA_john_nwodo
+recruit_character = BIA_joy_uche_angela_ogwu
+recruit_character = BIA_lawrence_ugwuanyi
+recruit_character = BIA_oby_ezekwesili
+recruit_character = BIA_okechukwu_emuchay
+recruit_character = Chukwuemeka_Osita_Onwuamaegbu
+recruit_character = BIA_peace_nnaji
+recruit_character = BIA_rochas_okorocha
+recruit_character = BIA_simon_ekpa
+recruit_character = BIA_sofia_chineyere_kalu
+recruit_character = BIA_utazi_chukwuka
+
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+set_variable = {
+var = SOCTRENDS_DC
+value = 45
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 85
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 65
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 25
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 15
+}
+tota_variable_clamping = yes
+starting_econ_modifier_vars = yes
+TOTA_startup_funny_business_ignore_this = yes
+
+set_naval_oob = "BIA_2021_naval"
+set_variable = { BIA_dependence_on_oil = 85 }
+
+oob = "BIA_2021"
+
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+set_country_flag = BIA_wrangle_benin_flag
+puppet = BED
+add_ideas = {
+limited_conscription
+BIA_pockets_lined_with_black
+BIA_ahiara_declaration
+BIA_crisis_of_postmodernity
+anglo_saxon_model
+}
+set_convoys = 100
+activate_advisor = 	BIA_eunice_atuejide_hog
+activate_advisor = 	BIA_john_nwodo
+activate_advisor = 	BIA_joy_uche_angela_ogwu
+activate_advisor = 	BIA_rochas_okorocha
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 16
+        autocracy = 3
+        
+
+        revolutionary_right = 21
+        
+        dissident_right = 1
+        liberalism = 18
+        hardline_socialism = 0
+        
+        
+        
+        
+        reformist_socialism = 11
+        socdem = 30
+        technocracy = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = socdem
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Chimaroke Nnamani"
+	desc = "POLITICS_CHIMAROKE_DESC"
+	picture = "gfx/leaders/BIA/Portrait_BIA_Chimaroke.png"
+	expire = "2040.1.1"
+	ideology = socpat_con
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "C. Isaac Obiakor"
+	desc = "POLITICS_ISAAC_OBIAKOR_DESC"
+	picture = "gfx/leaders/BIA/C. Isaac Obiakor.png"
+	expire = "2040.1.1"
+	ideology = socpat
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "I.B.M Haruna"
+	desc = "POLITICS_IBM_HARUNA_DESC"
+	picture = "gfx/leaders/BIA/Portrait_BIA_Ibrahim_Bata.png"
+	expire = "2040.1.1"
+	ideology = milgov
+	traits = {
+	}
+}
+

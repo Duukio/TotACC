@@ -1,0 +1,30 @@
+state={
+id=394
+	name="STATE_394"
+    buildings_max_level_factor = 1
+	state_category = megalopolis
+	
+	resources = {
+	rubber = 150
+	}
+	history={
+		owner = SNG
+		victory_points = { 12299 60 }
+		buildings = {
+            school = 5
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 10
+			12299 = {
+			naval_base = 10
+			}
+		}
+		add_core_of = SNG
+	}
+	provinces={
+		 12299 
+	}
+	manpower=6000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

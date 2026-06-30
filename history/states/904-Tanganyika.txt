@@ -1,0 +1,28 @@
+
+state={
+	id=904
+	name="STATE_904"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = EAF
+		buildings = {
+			school = 2
+			infrastructure = 2
+
+		}
+		victory_points = {
+			13817 15 
+		}
+		add_core_of = EAF
+
+	}
+
+	provinces={
+		2176 8144 10988 13814 13817 13820 13822 13823 13824 13828 13832 13839 
+	}
+	manpower=7106580
+	buildings_max_level_factor=2.000
+	state_category=town
+	local_supplies=0.000
+}

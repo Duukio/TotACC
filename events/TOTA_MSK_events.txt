@@ -1,0 +1,142 @@
+add_namespace = MSK
+
+country_event = {
+    id = MSK.1 # Bukele flavor
+    title = MSK.1.t
+    desc = MSK.1.desc
+     picture = GFX_report_event_mskthree
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = MSK.1.a
+	}
+}
+country_event = {
+    id = MSK.2 # McAfee takes over
+    title = MSK.2.t
+    desc = MSK.2.desc
+    picture = GFX_report_event_msktwo
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = MSK.2.a
+      ai_chance = {
+        base = 30
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = MSK_ai_route
+                option = MCAFEE
+            }
+        }
+      }
+      set_politics = {
+        ruling_party = autocracy
+      }
+      set_country_flag = MSK_mcafee
+      load_focus_tree = MSK_mcafee
+      set_variable = {
+      var = SOCTRENDS_DC
+      value = 5
+      }
+      set_variable = {
+      var = SOCTRENDS_DE
+      value = 5
+      }
+      set_variable = {
+      var = SOCTRENDS_EE
+      value = 5
+      }
+      set_variable = {
+      var = SOCTRENDS_TP
+      value = 70
+      }
+      set_variable = {
+      var = SOCTRENDS_EA
+      value = 5
+      }
+	}
+    option = {
+      name = MSK.2.b #no you dont
+      ai_chance = {
+        base = 70
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = MSK_ai_route
+                option = HENDY
+            }
+        }
+      }
+      set_country_flag = MSK_legalist
+      load_focus_tree = MSK_legalist
+      add_manpower = -2500
+      add_political_power = -150
+      add_war_support = -0.15
+	}
+}
+country_event = {
+    id = MSK.9 # Elections
+    title = MSK.9.t
+    desc = MSK.9.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      ai_chance = { factor = 44 }
+      name = MSK.9.a
+      set_politics = {
+        ruling_party = socdem
+      }
+      add_ideas = anglo_saxon_model
+	}
+    option = {
+      ai_chance = { factor = 33 }
+      name = MSK.9.b
+      set_party_name = {
+          ideology = conservatism
+          long_name = MSK_mlcp_conservatism_long
+          name = MSK_mlcp_conservatism
+      }
+      create_country_leader = {
+      	name = "Edward Sinclair Chow"
+      	desc = ""
+      	picture = "gfx/leaders/MSK/ESChow.png"
+      	expire = "2040.1.1"
+      	ideology = greencon
+      	traits = {
+      	}
+      }
+	}
+    option = {
+      ai_chance = { factor = 22 }
+      name = MSK.9.c
+	}
+}
+
+country_event = {
+  id = MSK.10 
+  title = "Contras March on Nicaragua"
+  desc = "The Contras have grown restless and frustrated, as they feel like they have been used without seeing any benefit. They have packed up and began the march on Nicaragua, indirectly dragging us into this conflict as well"
+  is_triggered_only = yes
+  fire_only_once = yes 
+  picture = GFX_report_event_BIA_defeat_2
+
+  option = {
+    name = "Shit has hit the fan"
+    declare_war_on = {
+      target = NIC
+      type = annex_everything
+    }
+   #every_country = {
+   #  limit = {
+   #    is_ai = no
+   #  }
+   #  news_event = {
+   #    id = WNE.208
+   #  }
+   #}   
+  }
+}

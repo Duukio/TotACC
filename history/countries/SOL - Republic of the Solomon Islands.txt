@@ -1,0 +1,197 @@
+capital = 634
+
+##THIS TAG IS NOT USED RIGHT NOW##
+
+set_variable = { GDP = 101.230 } set_variable = { DEBT = 56 } set_variable = { REAL_GROWTH = 2.5 }#
+
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+
+
+set_convoys = 100
+
+set_popularities = {
+        anarchism = 10
+        conservatism = 10
+        
+        
+        
+        
+        revolutionary_right = 10
+        
+        dissident_right = 10
+        liberalism = 10
+        hardline_socialism = 10
+        
+        autocracy = 10        
+        reformist_socialism = 10
+        socdem = 10
+        technocracy = 10
+
+}
+
+set_politics = {
+	
+	ruling_party = socdem
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Test leader one"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = demsoc
+}
+create_country_leader = {
+	name = "Test leader two"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = ecolib
+}
+create_country_leader = {
+	name = "Test leader three"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = soccon
+}
+create_country_leader = {
+	name = "Test leader four"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = anolib
+}
+create_country_leader = {
+	name = "Test leader five"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = collan
+}
+create_country_leader = {
+	name = "Test leader six"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = algolib
+}
+create_country_leader = {
+	name = "Test leader seven"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = rightlib
+}
+create_country_leader = {
+	name = "Test leader eight"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = natthirdpos
+}
+create_country_leader = {
+	name = "Test leader nine"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = mzt
+}
+create_country_leader = {
+	name = "Test leader ten"
+	desc = "POLITICS_SOL_JIMMY_DESC"
+	picture = "Portrait_SOL_Jimmy_Lusibaea.dds"
+	expire = "2040.1.1"
+	ideology = sovmarsys
+}

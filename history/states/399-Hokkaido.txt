@@ -1,0 +1,33 @@
+state={
+id=399
+	name="STATE_399"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	resources = {	
+	steel = 50
+	}
+	history={
+		owner = JAP
+		victory_points = { 10444 30 }
+		victory_points = { 12421 20 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 10
+			industrial_complex = 15
+			arms_factory = 10
+			air_base = 5
+			10444 = {
+			naval_base = 6
+			}
+		}
+		add_core_of = JAP
+	}
+	provinces={
+		1512 1642 3962 4576 4646 7532 7595 10444 10512 12352 12421 12493 
+	}
+	manpower=6000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

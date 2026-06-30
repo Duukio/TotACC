@@ -1,0 +1,40 @@
+state={
+id=282
+	name="STATE_282"
+    buildings_max_level_factor = 1
+	state_category=large_city
+	
+	resources={
+	steel = 40
+	oil = 10
+	}
+
+	history={	
+		owner = POL
+		victory_points = {
+			362 10
+		}	
+		victory_points = {
+			9263 10
+		}	
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 3
+			arms_factory = 2
+			industrial_complex = 2
+		362 = {
+		naval_base = 5
+		bunker = 4
+		}
+		}
+		add_core_of = POL
+
+	}
+	provinces={
+		334 362 389 9263 
+	}
+	manpower=2337769
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

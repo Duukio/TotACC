@@ -1,0 +1,934 @@
+shared_focus = {
+	id = NGA_in_great_bucharest
+	icon = GFX_NGA_in_great_bucharest
+	cost = 5
+	x = 30
+	y = 0
+	completion_reward = {
+		add_political_power = 100
+		add_opinion_modifier = {
+		    target = ROM
+		    modifier = trade_agreement
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_in_great_bucharest"
+	}
+}
+
+shared_focus = {
+	id = NGA_the_party_and_the_people
+	icon = GFX_NGA_the_party_and_the_people
+	cost = 5
+	x = 10
+	y = 2
+	completion_reward = {
+		country_event = {
+			id = NGA.1952
+			days = 1
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_party_and_the_people"
+	}
+}
+shared_focus = {
+	id = NGA_the_flames_of_industry
+	icon = GFX_NGA_the_flames_of_industry
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		NGA = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_flames_of_industry"
+	}
+	relative_position_id = NGA_cutting_off_our_strings
+	prerequisite = { focus = NGA_cutting_off_our_strings }
+}
+
+shared_focus = {
+	id = NGA_the_unending_plains
+	icon = GFX_NGA_the_unending_plains
+	cost = 5
+	x = 4
+	y = 1
+	completion_reward = {
+		add_ideas = limited_exports
+		add_ideas = NGA_agrarian_juche
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_unending_plains"
+	}
+	relative_position_id = NGA_the_flames_of_industry
+	prerequisite = { focus = NGA_the_flames_of_industry }
+}
+
+shared_focus = {
+	id = NGA_beneath_the_earth
+	icon = GFX_NGA_beneath_the_earth
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		add_resource = {
+		    type = strategic_minerals
+		    amount = 20
+		    state = 31
+		}
+		unlock_decision_category_tooltip = NGA_mine_dat_shiet
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_beneath_the_earth"
+	}
+	relative_position_id = NGA_the_flames_of_industry
+	prerequisite = { focus = NGA_the_flames_of_industry }
+}
+
+shared_focus = {
+	id = NGA_building_communism
+	icon = GFX_NGA_building_communism
+	cost = 5
+	x = -4
+	y = 2
+	completion_reward = {
+		add_political_power = 150
+		add_ideas = total_state_purview
+		add_ideas = diversity_equity_inclusion
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_building_communism"
+	}
+	relative_position_id = NGA_the_party_and_the_people
+	prerequisite = { focus = NGA_the_party_and_the_people }
+}
+
+shared_focus = {
+	id = NGA_nature_our_mother
+	icon = GFX_NGA_nature_our_mother
+	cost = 5
+	x = -1
+	y = 4
+	completion_reward = {
+		add_ideas = NGA_renewable_focus
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_nature_our_mother"
+	}
+	relative_position_id = NGA_the_flames_of_industry
+	mutually_exclusive = { focus = NGA_down_in_the_delta focus = NGA_king_coal}
+	prerequisite = { focus = NGA_the_flames_of_industry }
+}
+shared_focus = {
+	id = NGA_king_coal
+	icon = GFX_NGA_king_coal
+	cost = 5
+	x = 2
+	y = 4
+	completion_reward = {
+		add_stability = 0.1
+		add_to_variable = { NGA.GDP = 10 }
+		add_to_variable = { NGA.REAL_GROWTH = 0.03 }
+                add_to_variable = { NGA_NORF_SOUF = 20 }
+                NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+		custom_effect_tooltip = "Adds +3% to Real Growth. Increases Southern Bias by 20%"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_nature_our_mother"
+	}
+	relative_position_id = NGA_the_flames_of_industry
+	mutually_exclusive = { focus = NGA_down_in_the_delta focus = NGA_nature_our_mother }
+	prerequisite = { focus = NGA_the_flames_of_industry }
+}
+shared_focus = {
+	id = NGA_ensure_decent_standards
+	icon = GFX_NGA_ensure_decent_standards
+	cost = 5
+	x = 1
+	y = 2
+	completion_reward = {
+		add_political_power = -150
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_nature_our_mother"
+	}
+	relative_position_id = NGA_king_coal
+	prerequisite = { focus = NGA_tools_for_our_mines }
+}
+
+shared_focus = {
+	id = NGA_down_in_the_delta
+	icon = GFX_NGA_down_in_the_delta
+	cost = 5
+	x = -4
+	y = 4
+	completion_reward = {
+		add_resource = {
+			type = oil
+			amount = 25
+			state = 19 
+		}
+		add_resource = {
+			type = oil
+			amount = 75
+			state = 22 
+		}
+		add_resource = {
+			type = steel
+			amount = 20
+			state = 19
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_down_in_the_delta"
+	}
+	relative_position_id = NGA_the_flames_of_industry
+	mutually_exclusive = { focus = NGA_nature_our_mother focus = NGA_king_coal}
+	prerequisite = { focus = NGA_the_flames_of_industry }
+}
+
+shared_focus = {
+	id = NGA_cutting_off_our_strings
+	icon = GFX_NGA_cutting_off_our_strings
+	cost = 5
+	x = -10
+	y = 4
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = { NGA.DEBT = -300 }
+		}
+		FRA = {
+			add_opinion_modifier = {
+			    target = NGA
+			    modifier = embargo
+			}				
+		}
+		WES = {
+			add_opinion_modifier = {
+			    target = NGA
+			    modifier = embargo
+			}				
+		}
+		ENG = {
+			add_opinion_modifier = {
+			    target = NGA
+			    modifier = embargo
+			}				
+		}
+		add_stability = 0.2
+		add_political_power = -250
+		custom_effect_tooltip = "Defaults on our debts to NATO/EU countries."
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_cutting_off_our_strings"
+	}
+}
+
+shared_focus = {
+	id = NGA_burst_open_the_cells
+	icon = GFX_NGA_burst_open_the_cells
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.1958
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_burst_open_the_cells"
+	}
+	relative_position_id = NGA_pressure_on_all_sides
+	prerequisite = { focus = NGA_pressure_on_all_sides }
+}
+
+shared_focus = {
+	id = NGA_green_guns
+	icon = GFX_NGA_green_guns
+	cost = 5
+	x = -3
+	bypass = {
+		NOT = {
+			country_exists = TRP
+		}
+	}
+	y = 1
+	completion_reward = {
+		if = {
+			limit = {
+				country_exists = TRP
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+				producer = TRP
+			}
+		}
+		else = {
+			custom_effect_tooltip = "Libya's friendly government is gone, so this focus will be bypassed."
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_green_guns"
+	}
+	relative_position_id = NGA_in_great_bucharest
+	prerequisite = { focus = NGA_in_great_bucharest }
+}
+
+shared_focus = {
+	id = NGA_along_the_forbidden_city
+	icon = GFX_NGA_along_the_forbidden_city
+	cost = 5
+	x = 3
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+		    target = PRC
+		    modifier = trade_agreement
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_along_the_forbidden_city"
+	}
+	relative_position_id = NGA_in_great_bucharest
+	prerequisite = { focus = NGA_in_great_bucharest }
+}
+
+shared_focus = {
+	id = NGA_our_friends_in_korea
+	icon = GFX_NGA_our_friends_in_korea
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		add_opinion_modifier = {
+		    target = PLK
+		    modifier = trade_agreement
+		}
+		PLK = {
+			add_popularity = {
+				ideology = reformist_socialism
+				popularity = 0.25
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_our_friends_in_korea"
+	}
+	relative_position_id = NGA_in_great_bucharest
+	prerequisite = { focus = NGA_in_great_bucharest }
+}
+
+shared_focus = {
+	id = NGA_africa_unchained
+	icon = GFX_NGA_africa_unchained
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		add_war_support = 0.1
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_africa_unchained"
+	}
+	relative_position_id = NGA_burst_open_the_cells
+	prerequisite = { focus = NGA_burst_open_the_cells }
+}
+
+shared_focus = {
+	id = NGA_pressure_on_all_sides
+	icon = GFX_NGA_pressure_on_all_sides
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		add_political_power = 100
+		add_war_support = 0.2
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_pressure_on_all_sides"
+	}
+	relative_position_id = NGA_keeping_up_with_the_kremlin
+	prerequisite = { focus = NGA_keeping_up_with_the_kremlin }
+}
+
+shared_focus = {
+	id = NGA_going_glowing_green
+	icon = GFX_NGA_going_glowing_green
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		add_stability = 0.1
+		add_resource = {
+			type = oil
+			state = 968
+			amount = -100
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_going_glowing_green"
+	}
+	relative_position_id = NGA_nature_our_mother
+	prerequisite = { focus = NGA_nature_our_mother }
+}
+
+shared_focus = {
+	id = NGA_in_the_words_of_sankara
+	icon = GFX_NGA_in_the_words_of_sankara
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.1951
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_in_the_words_of_sankara"
+	}
+	relative_position_id = NGA_the_unending_plains
+	prerequisite = { focus = NGA_the_unending_plains }
+}
+
+shared_focus = {
+	id = NGA_the_crashing_blue_stream
+	icon = GFX_NGA_the_crashing_blue_stream
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_self_sufficiency_focus_1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_crashing_blue_stream"
+	}
+	relative_position_id = NGA_in_the_words_of_sankara
+	prerequisite = { focus = NGA_in_the_words_of_sankara }
+}
+
+shared_focus = {
+	id = NGA_finding_new_deposits
+	icon = GFX_NGA_finding_new_deposits
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_resource = {
+			state = 25
+			amount = 100
+			type = strategic_minerals
+		}
+		add_resource = {
+			state = 24
+			amount = 100
+			type = aluminium
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_finding_new_deposits"
+	}
+	relative_position_id = NGA_beneath_the_earth
+	prerequisite = { focus = NGA_beneath_the_earth }
+}
+
+shared_focus = {
+	id = NGA_a_thousand_white_trees
+	icon = GFX_NGA_a_thousand_white_trees
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		#idk what this does lol
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_thousand_white_trees"
+	}
+	relative_position_id = NGA_nature_our_mother
+	prerequisite = { focus = NGA_nature_our_mother }
+}
+
+shared_focus = {
+	id = NGA_in_a_land_down_under
+	icon = GFX_NGA_in_a_land_down_under
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+		    target = AST
+		    modifier = trade_agreement
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_in_a_land_down_under"
+	}
+	relative_position_id = NGA_going_glowing_green
+	prerequisite = { focus = NGA_going_glowing_green }
+}
+
+shared_focus = {
+	id = NGA_and_a_hundred_black_fields
+	icon = GFX_NGA_and_a_hundred_black_fields
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		#idk
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_and_a_hundred_black_fields"
+	}
+	relative_position_id = NGA_a_thousand_white_trees
+	prerequisite = { focus = NGA_a_thousand_white_trees }
+}
+
+shared_focus = {
+	id = NGA_off_the_coast
+	icon = GFX_NGA_off_the_coast
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		22 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+			    type = synthetic_refinery
+			    level = 3
+			    instant_build = yes
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_off_the_coast"
+	}
+	relative_position_id = NGA_down_in_the_delta
+	prerequisite = { focus = NGA_down_in_the_delta }
+}
+shared_focus = {
+	id = NGA_expand_natural_gas_extraction
+	icon = GFX_NGA_expand_natural_gas_extraction
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		add_resource = {
+		    type = oil
+		    amount = 50
+		    state = 21
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_off_the_coast"
+	}
+	relative_position_id = NGA_down_in_the_delta
+	prerequisite = { focus = NGA_down_in_the_delta }
+}
+
+shared_focus = {
+	id = NGA_tools_for_our_mines
+	icon = GFX_NGA_tools_for_our_mines
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		add_resource = {
+		    type = oil
+		    amount = 25
+		    state = 28
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_off_the_coast"
+	}
+	relative_position_id = NGA_king_coal
+	prerequisite = { focus = NGA_king_coal }
+}
+
+shared_focus = {
+	id = NGA_everything_must_stay
+	icon = GFX_NGA_everything_must_stay
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.1
+		add_ideas = NGA_uncompetitive_exports
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_everything_must_stay"
+	}
+	relative_position_id = NGA_off_the_coast
+	prerequisite = { focus = NGA_off_the_coast }
+}
+
+
+shared_focus = {
+	id = NGA_keeping_up_with_the_kremlin
+	icon = GFX_NGA_keeping_up_with_the_kremlin
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		#event about picking between three modifiers related to soviet trade?
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_keeping_up_with_the_kremlin"
+	}
+	relative_position_id = NGA_our_friends_in_korea
+	prerequisite = { focus = NGA_our_friends_in_korea }
+}
+
+shared_focus = {
+	id = NGA_cultivating_pride
+	icon = GFX_NGA_cultivating_pride
+	cost = 5
+	x = 3
+	y = 2
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.1
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_cultivating_pride"
+	}
+	relative_position_id = NGA_the_party_and_the_people
+	prerequisite = { focus = NGA_the_party_and_the_people }
+}
+
+shared_focus = {
+	id = NGA_nationalising_industry
+	icon = GFX_NGA_nationalising_industry
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 5 }
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = dockyard level = 2 }
+		add_stability = -0.25
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_nationalising_industry"
+	}
+	relative_position_id = NGA_building_communism
+	prerequisite = { focus = NGA_building_communism }
+}
+
+shared_focus = {
+	id = NGA_the_question_of_land
+	icon = GFX_NGA_the_question_of_land
+	cost = 5
+	x = -2
+	y = 2
+	completion_reward = {
+		#event
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_question_of_land"
+	}
+	relative_position_id = NGA_building_communism
+	prerequisite = { focus = NGA_building_communism }
+}
+
+shared_focus = {
+	id = NGA_the_peoples_bomb
+	icon = GFX_NGA_the_peoples_bomb
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.1953
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_peoples_bomb"
+	}
+	relative_position_id = NGA_nationalising_industry
+	prerequisite = { focus = NGA_nationalising_industry }
+}
+
+shared_focus = {
+	id = NGA_along_the_model_of_stalin
+	icon = GFX_NGA_along_the_model_of_stalin
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_stability = -0.1
+		add_political_power = 100
+		#add_ideas = NGA_collectivization
+		country_event = {
+			id = NGA.1954
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_along_the_model_of_stalin"
+	}
+	relative_position_id = NGA_the_question_of_land
+	prerequisite = { focus = NGA_the_question_of_land }
+}
+
+shared_focus = {
+	id = NGA_hammer_down_the_landlords
+	icon = GFX_NGA_hammer_down_the_landlords
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 5 }
+		add_offsite_building = { type = arms_factory level = 2 }
+		add_offsite_building = { type = dockyard level = 2 }		
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_hammer_down_the_landlords"
+	}
+	relative_position_id = NGA_the_question_of_land
+	prerequisite = { focus = NGA_the_question_of_land }
+}
+
+shared_focus = {
+	id = NGA_torch_down_their_castles
+	icon = GFX_NGA_torch_down_their_castles
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = NGA.1960
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_torch_down_their_castles"
+	}
+	relative_position_id = NGA_hammer_down_the_landlords
+	prerequisite = { focus = NGA_hammer_down_the_landlords }
+}
+
+shared_focus = {
+	id = NGA_away_from_the_market
+	icon = GFX_NGA_away_from_the_market
+	cost = 5
+	x = -1
+	y = 2
+	completion_reward = {
+		add_ideas = closed_economy
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_away_from_the_market"
+	}
+	relative_position_id = NGA_the_peoples_bomb
+	prerequisite = { focus = NGA_the_peoples_bomb }
+	prerequisite = { focus = NGA_along_the_model_of_stalin }
+}
+
+shared_focus = {
+	id = NGA_just_like_the_old_days
+	icon = GFX_NGA_just_like_the_old_days
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.11
+		add_ideas = beijing_new_course
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_just_like_the_old_days"
+	}
+	relative_position_id = NGA_away_from_the_market
+	prerequisite = { focus = NGA_away_from_the_market }
+	mutually_exclusive = { focus = NGA_down_from_santiago}
+}
+
+shared_focus = {
+	id = NGA_down_from_santiago
+	icon = GFX_NGA_down_from_santiago
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+		    target = CHL
+		    modifier = trade_agreement
+		}
+		add_ideas = sixtyone_to_eighty
+		add_ideas = kosygin_liberman_econ_theory
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_down_from_santiago"
+	}
+	relative_position_id = NGA_away_from_the_market
+	prerequisite = { focus = NGA_away_from_the_market }
+	mutually_exclusive = { focus = NGA_just_like_the_old_days }
+}
+
+shared_focus = {
+	id = NGA_promises_to_enugu
+	icon = GFX_NGA_promises_to_enugu
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		#TODO: Add Biafra autonomy state modifiers!
+        custom_effect_tooltip = "Will add 30 points to Southern Bias."
+		hidden_effect = {
+			add_to_variable = { NGA_NORF_SOUF = 30 }
+			NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_promises_to_enugu"
+	}
+	relative_position_id = NGA_cultivating_pride
+	prerequisite = { focus = NGA_cultivating_pride }
+	mutually_exclusive = { focus = NGA_northern_pride}
+}
+
+shared_focus = {
+	id = NGA_seize_their_wealth
+	icon = GFX_NGA_seize_their_wealth
+	cost = 5
+	x = 3
+	y = 1
+	completion_reward = {
+		add_to_variable = { NGA.GDP = 100 }
+		add_to_variable = { NGA.REAL_GROWTH = -0.03 }
+		custom_effect_tooltip = "Removes 3% real growth in exchange for 100 billion USD in seized wealth"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_seize_their_wealth"
+	}
+	relative_position_id = NGA_cultivating_pride
+	prerequisite = { focus = NGA_cultivating_pride }
+}
+
+shared_focus = {
+	id = NGA_northern_pride
+	icon = GFX_NGA_northern_pride
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+        custom_effect_tooltip = "Will add 10 points to Northern Bias."
+		hidden_effect = {
+			subtract_from_variable = { NGA_NORF_SOUF = 10 }
+			NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_northern_pride"
+	}
+	relative_position_id = NGA_cultivating_pride
+	prerequisite = { focus = NGA_cultivating_pride }
+	mutually_exclusive = { focus = NGA_promises_to_enugu }
+}
+
+shared_focus = {
+	id = NGA_our_black_skin
+	icon = GFX_NGA_our_black_skin
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.1
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_our_black_skin"
+	}
+	relative_position_id = NGA_promises_to_enugu
+	prerequisite = { focus = NGA_promises_to_enugu focus = NGA_northern_pride }
+}
+
+shared_focus = {
+	id = NGA_no_room_for_white_menace
+	icon = GFX_NGA_no_room_for_white_menace
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+	  add_timed_idea = {
+		idea = NGA_fuck_whitey
+		days = 365
+	  }
+		# kicking out foreign missionaries and such. -20% research speed for a while
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_no_room_for_white_menace"
+	}
+	relative_position_id = NGA_our_black_skin
+	prerequisite = { focus = NGA_our_black_skin }
+}
+
+shared_focus = {
+	id = NGA_keeping_our_brains
+	icon = GFX_NGA_keeping_our_brains
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NGA_fuck_whitey
+			add_idea = NGA_fuck_whitey_fixed
+		}
+		#fixes previous focus. this results in 180 days instead of 365 on the previous one and 7% instead of 20%
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_keeping_our_brains"
+	}
+	relative_position_id = NGA_no_room_for_white_menace
+	prerequisite = { focus = NGA_no_room_for_white_menace }
+}
+
+shared_focus = {
+	id = NGA_crack_the_raiders
+	icon = GFX_NGA_crack_the_raiders
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.1955
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_crack_the_raiders"
+	}
+	relative_position_id = NGA_no_room_for_white_menace
+	prerequisite = { focus = NGA_no_room_for_white_menace }
+}
+
+shared_focus = {
+	id = NGA_arrest_the_elders
+	icon = GFX_NGA_arrest_the_elders
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = dont_ask_dont_tell
+		add_stability = 0.1
+		add_political_power = 50
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_arrest_the_elders"
+	}
+	relative_position_id = NGA_seize_their_wealth
+	prerequisite = { focus = NGA_seize_their_wealth }
+}
+
+shared_focus = {
+	id = NGA_knock_down_the_police
+	icon = GFX_NGA_knock_down_the_police
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_police_oversight
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_knock_down_the_police"
+	}
+	relative_position_id = NGA_arrest_the_elders
+	prerequisite = { focus = NGA_arrest_the_elders }
+}
+
+shared_focus = {
+	id = NGA_the_order_of_the_day
+	icon = GFX_NGA_the_order_of_the_day
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.1956
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_order_of_the_day"
+	}
+	relative_position_id = NGA_knock_down_the_police
+	prerequisite = { focus = NGA_knock_down_the_police }
+}
+shared_focus = {
+	id = NGA_the_abuja_journee
+	icon = GFX_NGA_the_abuja_journee
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.1957
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_order_of_the_day"
+	}
+	relative_position_id = NGA_the_order_of_the_day
+	prerequisite = { focus = NGA_the_order_of_the_day }
+}
+shared_focus = {
+	id = NGA_the_lesson_from_russia
+	icon = GFX_NGA_the_lesson_from_russia
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		country_event = NGA.1961
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_order_of_the_day"
+	}
+	relative_position_id = NGA_the_order_of_the_day
+	prerequisite = { focus = NGA_the_order_of_the_day }
+}
+shared_focus = {
+	id = NGA_decap_the_generals
+	icon = GFX_NGA_decap_the_generals
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		retire_character = NGA_farouk_yahaya
+		retire_character = NGA_abdulrahman_bello_dambazau
+		Rauf_Aregbesola = {
+			add_corps_commander_role = {
+			    skill = 5
+			    attack_skill = 4
+			    defense_skill = 4
+			    planning_skill = 4
+			    logistics_skill = 5
+			}
+		}
+		add_ideas = social_glass_ceilings
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.8
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_order_of_the_day"
+	}
+	relative_position_id = NGA_the_order_of_the_day
+	prerequisite = { focus = NGA_the_order_of_the_day }
+}

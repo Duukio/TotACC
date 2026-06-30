@@ -1,0 +1,32 @@
+
+state={
+	id=383
+	name="STATE_383"
+    buildings_max_level_factor = 1
+	resources={
+		steel=50.000
+		strategic_minerals=50.000
+		tungsten=50.000
+	}
+
+	history={
+		owner = BHA
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 6
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		7060 10311 5019 5063 12226
+	}
+	manpower=18731872
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,30 @@
+state={
+id=1256
+	name="STATE_1256"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	resources = {
+		oil = 60
+	}
+	history={
+		victory_points = { 13997 10 }
+		owner = NGA
+		buildings = {
+            school = 1
+			infrastructure = 1
+			arms_factory = 1
+			dockyard = 1
+
+		}
+		add_core_of = NGA
+
+	}
+	provinces={
+		13997
+
+	}
+	manpower=30000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

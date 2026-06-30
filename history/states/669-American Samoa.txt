@@ -1,0 +1,29 @@
+state={
+id=669
+	name="STATE_669"
+    buildings_max_level_factor = 1
+	manpower=46366
+	
+	state_category = small_island
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+            school = 2
+		dockyard = 1
+			infrastructure = 3
+			13080 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13080 1
+		}
+	}
+	provinces={
+		13080 
+	}
+
+	local_supplies=0.0 
+}

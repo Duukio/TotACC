@@ -1,0 +1,667 @@
+defined_text = {
+    name = BIA_benin_EA
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EA
+				value = 49
+				compare = greater_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_EA_meh
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EA
+				value = 48
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_EA_ideal
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EA
+				value = 60
+				compare = greater_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_EA_bad
+    }
+}
+defined_text = {
+    name = BIA_benin_TP
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_TP
+				value = 49
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_TP_ideal
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EA
+				value = 60
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_TP_meh
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EA
+				value = 61
+				compare = greater_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_TP_bad
+    }
+}
+defined_text = {
+    name = BIA_benin_EE
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EE
+				value = 40
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_EE_meh
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EE
+				value = 60
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_EE_ideal
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_EE
+				value = 61
+				compare = greater_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_EE_bad
+    }
+}
+defined_text = {
+    name = BIA_benin_DE
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_DE
+				value = 40
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_DE_bad
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_DE
+				value = 60
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_DE_meh
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_DE
+				value = 61
+				compare = greater_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_DE_ideal
+    }
+}
+defined_text = {
+    name = BIA_benin_DC
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_DC
+				value = 40
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_DC_bad
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_DC
+				value = 60
+				compare = less_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_DC_meh
+    }
+    text = {
+        trigger = {
+			check_variable = {
+				var = BED.SOCTRENDS_DC
+				value = 60
+				compare = greater_than_or_equals
+			}
+        }
+        localization_key = BIA_benin_DC_ideal
+    }
+}
+#defined_text = {
+#    name = adamawa_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = adamawa_mood
+#				value = 40
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = adamawa_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = adamawa_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = adamawa_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = adamawa_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = adamawa_good
+#    }
+#}
+#defined_text = {
+#    name = onitsha_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = onitsha_mood
+#				value = 30
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = onitsha_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = onitsha_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = onitsha_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = onitsha_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = onitsha_good
+#    }
+#}
+#defined_text = {
+#    name = akwa_akpa_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = akwa_akpa_mood
+#				value = 30
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = akwa_akpa_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = akwa_akpa_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = akwa_akpa_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = akwa_akpa_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = akwa_akpa_good
+#    }
+#}
+#defined_text = {
+#    name = owerri_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = owerri_mood
+#				value = 30
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = owerri_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = owerri_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = owerri_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = owerri_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = owerri_good
+#    }
+#}
+#defined_text = {
+#    name = nri_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = nri_mood
+#				value = 30
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = nri_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = nri_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = nri_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = nri_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = nri_good
+#    }
+#}
+#defined_text = {
+#    name = elem_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = elem_mood
+#				value = 30
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = elem_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = elem_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = elem_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = elem_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = elem_good
+#    }
+#}
+#defined_text = {
+#    name = brass_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = brass_mood
+#				value = 30
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = brass_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = brass_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = brass_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = brass_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = brass_good
+#    }
+#}
+#defined_text = {
+#    name = okrika_scrloc
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = okrika_mood
+#				value = 30
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = okrika_bad
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = okrika_mood
+#				value = 60
+#				compare = less_than_or_equals
+#			}
+#        }
+#        localization_key = okrika_meh
+#    }
+#    text = {
+#        trigger = {
+#			check_variable = {
+#				var = okrika_mood
+#				value = 61
+#				compare = greater_than_or_equals
+#			}
+#        }
+#        localization_key = okrika_good
+#    }
+#}
+#defined_text = {
+#	name = MONARCH_BIO_SCRLOC
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 1 }
+#		}
+#	localization_key = bio_theophilus
+#	}
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 2 }
+#		}
+#	localization_key = bio_alfred
+#	}
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 3 }
+#		}
+#	localization_key = bio_peter
+#	}
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 4 }
+#		}
+#	localization_key = bio_enweleana
+#	}
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 5 }
+#		}
+#	localization_key = bio_muhammadu
+#	}
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 6 }
+#		}
+#	localization_key = bio_nnaemeka
+#	}
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 7 }
+#		}
+#	localization_key = bio_edidem
+#	}
+#	text = { 
+#		trigger = {
+#		check_variable = { BIA_monarch_frame_var = 8 }
+#		}
+#	localization_key = bio_abam
+#	}
+#}
+#defined_text = {
+#	name = modifiers_monarch_scrloc
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = adamawa_bad
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = adamawa_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = adamawa_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = adamawa_good_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = onitsha_bad
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = onitsha_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = onitsha_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = onitsha_good_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = akwa_akpa_bad
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = akwa_akpa_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = akwa_akpa_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = akwa_akpa_good_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = owerri_bad
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = owerri_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = owerri_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = owerri_good_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = nri_bad
+#				
+#			}		
+#		}
+#	localization_key = nri_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = nri_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = nri_good_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = elem_bad
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = elem_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = elem_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = elem_good_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = brass_bad
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = brass_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = brass_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = brass_good_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = okrika_bad
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = okrika_bad_loc
+#	}
+#	text = {
+#		trigger = {
+#			has_dynamic_modifier = {
+#				modifier = okrika_good
+#				scope = BIA
+#			}		
+#		}
+#	localization_key = okrika_good_loc
+#	}
+#text = { 
+#localization_key = NO_EFFECT_BIA_MONARCH
+#}
+#
+#}
+defined_text = {
+	name = GetBiaCapital
+	text = {
+		trigger = {
+			BIA = {
+				966 = {
+					is_capital = yes
+				}
+			}
+		}
+		localization_key = BIA_CAPITAL_BONNY
+	}
+	text = {
+		trigger = {
+			BIA = {
+				21 = {
+					is_capital = yes
+				}
+			}
+		}
+		localization_key = BIA_CAPITAL_IGBO
+	}
+	text = {
+		trigger = {
+			BIA = {
+				23 = {
+					is_capital = yes
+				}
+			}
+		}
+		localization_key = BIA_CAPITAL_PH
+	}
+	text = {
+		localization_key = IAMERRORZ
+	}
+}

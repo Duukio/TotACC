@@ -1,0 +1,207 @@
+unique_id = totaachievements_2021
+
+millions_must_die = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+    }
+ 
+        happened = {
+            any_country = {
+                is_ai = no
+                has_war = yes
+                casualties_k > 1001
+            }
+    }
+}
+fulanization_we_dont_want_their_invasion = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = BIA
+    }
+ 
+    happened = {
+        BIA = {
+            has_completed_focus = BIA_our_military_proud
+        }
+    }
+}
+mandela_effect = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = SAF
+    }
+ 
+    happened = {
+        SAF = {
+            has_completed_focus = SAF_psa_victory
+        }
+    }
+}
+the_train_driver = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = SAF
+    }
+ 
+    happened = {
+        EFF = {
+            casualties_k > 99
+        }
+        SAF = {
+            casualties_k > 99
+        }
+    }
+}
+just_getting_started = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = BIU
+    }
+ 
+    happened = {
+        BIU = { NOT = { has_war_with = NGA } }
+    }
+}
+youre_pretty_good = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = SEY
+    }
+ 
+    happened = {
+        SEY = { has_country_flag = youre_pretty_good_ac }
+    }
+}
+nothing_is_beyond_our_reach = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = SEY
+    }
+ 
+    happened = {
+        SEY = { has_country_flag = nothing_is_beyond_our_reach_ac }
+    }
+}
+usman_fodios_revenge = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = NGA
+    }
+ 
+    happened = {
+        NGA = {
+            owns_state = 21 
+         }
+    }
+}
+making_oldman_proud = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = MSK
+    }
+ 
+    happened = {
+        MSK = {
+            has_country_flag = MSK_CEN_ac
+        }
+    }
+}
+california_delenda_est = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = SFL
+    }
+ 
+    happened = {
+        SFL = {
+            is_ai = no
+            has_government = dissident_right
+        }
+        CAL = {
+            casualties_inflicted_by = {
+                opponent = SFL
+                thousands > 499
+            }
+        }
+    }
+}
+watch_out_for_sharkeys = {
+    possible = {
+        # classic triggers used in all vanilla achievements
+        difficulty > 1
+        #has_start_date < 1936.01.02
+        has_any_custom_difficulty_setting = no
+        game_rules_allow_achievements = yes
+		#achievment specific
+        TAG = SFL
+    }
+ 
+    happened = {
+        SFL = {
+            is_ai = no
+            has_government = autocracy
+        }
+        USA = {
+            casualties_inflicted_by = {
+                opponent = SFL
+                thousands > 499
+            }
+        }
+        USP = {
+            casualties_inflicted_by = {
+                opponent = SFL
+                thousands > 499
+            }
+        }
+    }
+}

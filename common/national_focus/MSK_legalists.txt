@@ -1,0 +1,520 @@
+focus_tree = {
+    id = MSK_legalist
+    country = {
+        base = 0
+        modifier = {
+            add = 101
+            tag = MSK
+			has_country_flag = MSK_legalist
+        }
+    }
+
+	focus = {
+		id = MSK_anticocaine_act
+		icon = GFX_MSK_anticocaine_act
+		cost = 8
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -100
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_anticocaine_act"
+		}
+	}
+
+	focus = {
+		id = MSK_wipe_out_the_druglords
+		icon = GFX_MSK_wipe_out_the_druglords
+		cost = 8
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = -800
+			add_stability = -0.1
+			add_war_support = 0.1
+			MSK = {
+				random_owned_state = {
+					add_manpower = -1200
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_wipe_out_the_druglords"
+		}
+		relative_position_id = MSK_anticocaine_act
+		prerequisite = { focus = MSK_anticocaine_act }
+	}
+
+	focus = {
+		id = MSK_decentralized_justice
+		icon = GFX_MSK_decentralized_justice
+		cost = 8
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_timed_idea = {
+				idea = MSK_drug
+				days = 300
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_decentralized_justice"
+		}
+		relative_position_id = MSK_wipe_out_the_druglords
+		prerequisite = { focus = MSK_wipe_out_the_druglords }
+	}
+
+	focus = {
+		id = MSK_adopt_common_law
+		icon = GFX_MSK_adopt_common_law
+		cost = 8
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.05
+			add_political_power = 100
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_adopt_common_law"
+		}
+		relative_position_id = MSK_wipe_out_the_druglords
+		prerequisite = { focus = MSK_wipe_out_the_druglords }
+	}
+
+	focus = {
+		id = MSK_plug_out_the_contras
+		icon = GFX_MSK_plug_out_the_contras
+		cost = 8
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = -20000
+			add_war_support = -0.33
+			add_stability = 0.1
+			MSK = {
+				random_owned_state = {
+					add_manpower = -1200
+					remove_building = {
+						type = industrial_complex
+						level = 1
+					}
+				}
+				clr_country_flag = contrasanxiety
+			}	
+			custom_effect_tooltip = "This will hurt now, but it is necessary."
+			NC2 = {
+				transfer_state = 1229
+				load_oob = "NC2_2021"
+				declare_war_on = {
+					target = NIC
+					type = annex_everything
+				}
+				inherit_technology = NIC	
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_plug_out_the_contras"
+		}
+		relative_position_id = MSK_wipe_out_the_druglords
+		prerequisite = { focus = MSK_wipe_out_the_druglords }
+	}
+
+	focus = {
+		id = MSK_found_the_creolecaribbean_peoples_association
+		icon = GFX_MSK_found_the_creolecaribbean_peoples_association
+		cost = 8
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = commonwealth
+		add_dynamic_modifier = {
+			modifier = CCPA_DYNMOD
+			scope = MSK
+		}
+			WIF = {
+				add_ideas = CCPA
+			}
+			GUY = {
+				add_ideas = CCPA
+			}
+			create_ccpapie_chart = yes
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_found_the_creolecaribbean_peoples_association"
+		}
+		relative_position_id = MSK_wipe_out_the_druglords
+		prerequisite = { focus = MSK_wipe_out_the_druglords }
+	}
+
+	focus = {
+		id = MSK_adopt_a_president
+		icon = GFX_MSK_adopt_a_president
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = MSK.9 #election
+				days = 30
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_adopt_a_president"
+		}
+		relative_position_id = MSK_decentralized_justice
+		prerequisite = { focus = MSK_decentralized_justice }
+		prerequisite = { focus = MSK_adopt_common_law }
+	}
+
+	focus = {
+		id = MSK_purchase_brus_laguna
+		icon = GFX_MSK_purchase_brus_laguna
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { HON.GDP = 5 }
+			add_to_variable = { MSK.DEBT = 5 }
+			custom_effect_tooltip = "Adds 5 billion in Debt to Miskito and 5 billion USD to Honduras' GDP"
+			MSK = {
+				transfer_state = 1240
+			}
+			1240 = {
+				add_core_of = MSK
+				set_state_name = "Brewer's Lagoon"
+			}
+			set_province_name = {
+			    id = 13686
+			    name = "Brewer's Lagoon"
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_purchase_brus_laguna"
+		}
+		relative_position_id = MSK_plug_out_the_contras
+		prerequisite = { focus = MSK_plug_out_the_contras }
+		prerequisite = { focus = MSK_found_the_creolecaribbean_peoples_association }
+	}
+
+	focus = {
+		id = MSK_county_reform
+		icon = GFX_MSK_county_reform
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MSK = {
+				every_owned_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+				add_to_variable = { MSK.GDP = 1 }
+				custom_effect_tooltip = "Adds 1 billion USD in GDP due to further investigation of our country's output"
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_county_reform"
+		}
+		relative_position_id = MSK_adopt_common_law
+		prerequisite = { focus = MSK_adopt_common_law }
+		prerequisite = { focus = MSK_plug_out_the_contras }
+	}
+
+	focus = {
+		id = MSK_our_ambitions_onward
+		icon = GFX_MSK_our_ambitions_onward
+		cost = 8
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			GUA = {
+				every_owned_state = {
+					add_claim_by = MSK
+				}
+			}
+			ELS = {
+				every_owned_state = {
+					add_claim_by = MSK
+				}
+			}
+			EMR = {
+				every_owned_state = {
+					add_claim_by = MSK
+				}
+			}
+			NIC = {
+				every_owned_state = {
+					add_claim_by = MSK
+				}
+			}
+			NC2 = {
+				every_owned_state = {
+					add_claim_by = MSK
+				}
+			}
+			COS = {
+				every_owned_state = {
+					add_claim_by = MSK
+				}
+			}
+			HON = {
+				every_owned_state = {
+					add_claim_by = MSK
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_our_ambitions_onward"
+		}
+		relative_position_id = MSK_adopt_a_president
+		prerequisite = { focus = MSK_adopt_a_president }
+		prerequisite = { focus = MSK_purchase_brus_laguna }
+		prerequisite = { focus = MSK_county_reform }
+	}
+
+	focus = {
+        id = MSK_bankrupt_the_contras
+        icon = GFX_MSK_bankrupt_the_contras
+        cost = 8
+        x = -4
+        y = 1
+        ai_will_do = {
+            factor = 1
+        }
+        available = {
+            525 = {
+                owner = {
+                    has_war = no
+                }
+            }
+        }
+        completion_reward = {
+            if = {
+                limit = {
+                   country_exists = NC2
+				}
+                annex_country = {
+                	target = NC2
+                	transfer_troops = no
+                }
+            else = {
+                declare_war_on = {
+                    target = NIC
+                    type = annex_everything
+                }
+            }
+        }
+        }
+        relative_position_id = MSK_our_ambitions_onward
+        prerequisite = { focus = MSK_our_ambitions_onward }
+    }
+
+
+	focus = {
+		id = MSK_durrani_assistance
+		icon = GFX_MSK_durrani_assistance
+		cost = 8
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 200
+				producer = PAK
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_durrani_assistance"
+		}
+		relative_position_id = MSK_our_ambitions_onward
+		prerequisite = { focus = MSK_our_ambitions_onward }
+	}
+
+	focus = {
+		id = MSK_japanese_switcharoo
+		icon = GFX_MSK_japanese_switcharoo
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			HON = {
+				add_stability = -0.33
+			}
+			MSK = {
+				add_ideas = PAFCPG_observer
+				set_variable = { MSK.FACTIONSTATUS = 8 }
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_japanese_switcharoo"
+		}
+		relative_position_id = MSK_our_ambitions_onward
+		prerequisite = { focus = MSK_our_ambitions_onward }
+	}
+
+	focus = {
+		id = MSK_partition_honduras
+		icon = GFX_MSK_partition_honduras
+		cost = 8
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			ELS = {
+				has_war_with = HON
+			}
+		}
+		completion_reward = {
+			MSK = {
+				transfer_state = 1224
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_partition_honduras"
+		}
+		relative_position_id = MSK_our_ambitions_onward
+		prerequisite = { focus = MSK_our_ambitions_onward }
+	}
+
+	focus = {
+		id = MSK_expand_our_citizenry
+		icon = GFX_MSK_expand_our_citizenry
+		cost = 8
+		x = 3
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MSK = {
+				every_owned_state = {
+					add_core_of = MSK
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_expand_our_citizenry"
+		}
+		relative_position_id = MSK_bankrupt_the_contras
+		prerequisite = { focus = MSK_bankrupt_the_contras }
+		prerequisite = { focus = MSK_durrani_assistance }
+	}
+
+	focus = {
+		id = MSK_industrialization_reform
+		icon = GFX_MSK_industrialization_reform
+		cost = 8
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			MSK = {
+				every_owned_state = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_industrialization_reform"
+		}
+		relative_position_id = MSK_japanese_switcharoo
+		prerequisite = { focus = MSK_japanese_switcharoo }
+		prerequisite = { focus = MSK_partition_honduras }
+	}
+
+	focus = {
+		id = MSK_the_ultimate_showdown_of_ultimate_destiny
+		icon = GFX_MSK_the_ultimate_showdown_of_ultimate_destiny
+		cost = 8
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 2025.1.1
+		}
+		completion_reward = {
+			MSK = {
+				declare_war_on = {
+					target = GUA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ELS
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = COS
+					type = annex_everything
+				}
+				add_stability = -0.1
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_the_ultimate_showdown_of_ultimate_destiny"
+		}
+		relative_position_id = MSK_expand_our_citizenry
+		prerequisite = { focus = MSK_expand_our_citizenry }
+		prerequisite = { focus = MSK_industrialization_reform }
+	}
+
+	focus = {
+		id = MSK_proclaim_the_kingdom
+		icon = GFX_MSK_proclaim_the_kingdom
+		cost = 8
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			525 = {
+				is_owned_by = MSK
+			}
+			521 = {
+				is_owned_by = MSK
+			}
+			523 = {
+				is_owned_by = MSK
+			}
+			522 = {
+				is_owned_by = MSK
+			}
+		}
+		completion_reward = {
+			MSK = {
+				every_owned_state = {
+					add_core_of = MSK
+				}
+				set_cosmetic_tag = MSK_CEN
+				set_country_flag = MSK_CEN_ac
+			}
+			hidden_effect = {
+				news_event = {
+					id = WNE.189
+					days = 1
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_proclaim_the_kingdom"
+		}
+		relative_position_id = MSK_the_ultimate_showdown_of_ultimate_destiny
+		prerequisite = { focus = MSK_the_ultimate_showdown_of_ultimate_destiny }
+	}
+}

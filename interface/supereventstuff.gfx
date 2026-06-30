@@ -1,0 +1,186 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_Super_American_Chaos"
+		texturefile = "gfx/interface/superevents/American Chaos.png"
+	}
+	spriteType = {
+		name = "GFX_closebutton_super"
+		texturefile = "gfx/interface/superevents/closebutton_super.dds"
+	}
+	spriteType = {
+		name = "GFX_blank_background"
+		texturefile = "gfx/interface/superevents/Blank.dds"
+	}
+	spriteType = {
+		name = "GFX_Super_Biafra_Wins"
+		texturefile = "gfx/interface/superevents/Biafra Wins.png"
+	}
+	spriteType = {
+		name = "GFX_Super_Nigeria_Wins"
+		texturefile = "gfx/interface/superevents/Nigeria Wins.png"
+	}
+	spriteType = {
+		name = "GFX_Super_SAF_CW"
+		texturefile = "gfx/interface/superevents/saf_civilwar.png"
+	}
+	spriteType = {
+		name = "GFX_Super_Event_Image_Samson"
+		texturefile = "gfx/interface/superevents/samson.png"
+	}
+	spriteType = {
+		name = "GFX_Super_TCW"
+		texturefile = "gfx/interface/superevents/Turkish Civil War.png"
+	}
+	spriteType = {
+		name = "GFX_Super_PGR_win"
+		texturefile = "gfx/interface/superevents/PGR_win.png"
+	}
+	spriteType = {
+		name = "GFX_Super_UAE_win"
+		texturefile = "gfx/interface/superevents/UAE_win.png"
+	}
+	spriteType = {
+		name = "GFX_Super_anticiv"
+		texturefile = "gfx/interface/superevents/anticiv.png"
+	}
+	spriteType = {
+		name = "GFX_Super_avakian"
+		texturefile = "gfx/interface/superevents/avakian.png"
+	}
+	spriteType = {
+		name = "GFX_Super_big_spence"
+		texturefile = "gfx/interface/superevents/big_spence.png"
+	}
+	spriteType = {
+		name = "GFX_Super_covington"
+		texturefile = "gfx/interface/superevents/covington.png"
+	}
+	spriteType = {
+		name = "GFX_Super_fsa"
+		texturefile = "gfx/interface/superevents/fsa.png"
+	}
+	spriteType = {
+		name = "GFX_Super_gillis"
+		texturefile = "gfx/interface/superevents/gillis.png"
+	}
+	spriteType = {
+		name = "GFX_Super_Jorjani"
+		texturefile = "gfx/interface/superevents/Jorjani.png"
+	}
+	spriteType = {
+		name = "GFX_Super_logo_daedalus"
+		texturefile = "gfx/interface/superevents/logo_daedalus.png"
+	}
+	spriteType = {
+		name = "GFX_Super_Maupin"
+		texturefile = "gfx/interface/superevents/Maupin.png"
+	}
+	spriteType = {
+		name = "GFX_Super_miscavige"
+		texturefile = "gfx/interface/superevents/miscavige.png"
+	}
+	spriteType = {
+		name = "GFX_Super_NWA"
+		texturefile = "gfx/interface/superevents/NWA.png"
+	}
+	spriteType = {
+		name = "GFX_Super_nypd"
+		texturefile = "gfx/interface/superevents/nypd.png"
+	}
+	spriteType = {
+		name = "GFX_Super_nyx"
+		texturefile = "gfx/interface/superevents/nyx.png"
+	}
+	spriteType = {
+		name = "GFX_Super_obamna"
+		texturefile = "gfx/interface/superevents/obamna.png"
+	}
+	spriteType = {
+		name = "GFX_Super_pelosi"
+		texturefile = "gfx/interface/superevents/pelosi.png"
+	}
+	spriteType = {
+		name = "GFX_Super_pence"
+		texturefile = "gfx/interface/superevents/pence.png"
+	}
+	spriteType = {
+		name = "GFX_Super_srnicek"
+		texturefile = "gfx/interface/superevents/srnicek.png"
+	}
+	spriteType = {
+		name = "GFX_Super_threepercenter"
+		texturefile = "gfx/interface/superevents/threepercenter.png"
+	}
+	spriteType = {
+		name = "GFX_Super_Yarvin"
+		texturefile = "gfx/interface/superevents/Yarvin.png"
+	}
+	spriteType = {
+		name = "GFX_Super_opossum"
+		texturefile = "gfx/interface/superevents/Opossum.png"
+	}
+	spriteType = {
+		name = "GFX_Super_peltier"
+		texturefile = "gfx/interface/superevents/peltier.png"
+	}
+	spriteType = {
+		name = "GFX_Super_vaush"
+		texturefile = "gfx/interface/superevents/Vaush.png"
+	}
+	spriteType = {
+		name = "GFX_Super_hoafascism"
+		texturefile = "gfx/interface/superevents/hoafascism.png"
+	}
+	spriteType = {
+		name = "GFX_Super_naarp"
+		texturefile = "gfx/interface/superevents/NAARP.png"
+	}
+	spriteType = {
+		name = "GFX_Super_arlo"
+		texturefile = "gfx/interface/superevents/arlo.png"
+	}
+	spriteType = {
+		name = "GFX_Super_cardinal"
+		texturefile = "gfx/interface/superevents/cardinal.png"
+	}
+	spriteType = {
+		name = "GFX_Super_mathews"
+		texturefile = "gfx/interface/superevents/NSLF.png"
+	}
+	spriteType = {
+		name = "GFX_Super_mason"
+		texturefile = "gfx/interface/superevents/Mason.png"
+	}
+	spriteType = {
+		name = "GFX_Super_johnson"
+		texturefile = "gfx/interface/superevents/Johnson.png"
+	}
+	spriteType = {
+		name = "GFX_Super_mars"
+		texturefile = "gfx/interface/superevents/europa.png"
+	}
+	spriteType = {
+		name = "GFX_Super_mars_death"
+		texturefile = "gfx/interface/superevents/death_mars.png"
+	}
+	spriteType = {
+		name = "GFX_Super_alien_life"
+		texturefile = "gfx/interface/superevents/alien_life.png"
+	}
+	spriteType = {
+		name = "GFX_Super_ezrase"
+		texturefile = "gfx/interface/superevents/ezrase.png"
+	}
+	spriteType = {
+		name = "GFX_Super_augustus"
+		texturefile = "gfx/interface/superevents/augustus.png"
+	}
+	spriteType = {
+		name = "GFX_Super_preston"
+		texturefile = "gfx/interface/superevents/preston.png"
+	}
+	spriteType = {
+		name = "GFX_Super_sharkey"
+		texturefile = "gfx/interface/superevents/sharkey.png"
+	}
+}

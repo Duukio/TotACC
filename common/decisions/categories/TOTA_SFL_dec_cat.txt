@@ -1,0 +1,21 @@
+SFL_DecisionCategory = {
+     icon = generic_foreign_policy
+	 allowed = {
+		original_tag = SFL
+	}
+	visible = {
+        has_country_flag = SFL_reuinfy_wargoals
+	}
+}
+SFL_unify_wargoals = {
+	visible =  {
+		original_tag = SFL 
+		SFL = {
+			OR = {
+			has_completed_focus = SFL_first_torches_upon_the_world
+			has_completed_focus = SFL_plunge_fearlessly_into_war
+			has_completed_focus = SFL_i_ares
+			}
+		}
+	}
+}

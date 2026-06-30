@@ -1,0 +1,36 @@
+
+state={
+	id=1123
+	name="STATE_1123"
+    buildings_max_level_factor = 1
+	resources={
+		steel=50.000
+		strategic_minerals=50.000
+		tungsten=50.000
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			12164 40 #Chennai
+		}
+
+		buildings = {
+			school = 2
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 15
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		7447 12275 4315 10808 4420 7436 1268 8067 10274 10130 7288 7402 4327 7265 1409 4416 10246 12164 7363 12247
+	}
+	manpower=18731872
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

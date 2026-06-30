@@ -1,0 +1,25 @@
+
+state={
+	id=1264
+	name="STATE_1264"
+	history={
+		victory_points = {
+			14039 5 
+		}
+		owner = SYR
+		buildings = {
+			school = 2
+			infrastructure = 0
+
+		}
+		add_core_of = SYR
+
+	}
+	provinces={
+		2013 10383 12316 14022 14039 14040 14041 14042
+	}
+	manpower=345000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

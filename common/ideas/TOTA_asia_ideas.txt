@@ -1,0 +1,585 @@
+ideas = {
+	country = {
+		###PRC###
+			PRC_suppressed_rev_fervor = {
+			picture = PRC_suppressed_rev_fervor
+			allowed = {
+				tag = PRC 
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			conscription_factor = -0.8
+			research_speed_factor = 0.05
+			consumer_goods_factor = 0.07
+			monthly_soctrends_drift_DC_C = 0.01
+			monthly_soctrends_drift_DE_E = 0.01
+			stability_factor = 0.20
+			war_support_factor = -0.25
+			army_org_factor = -0.50
+			army_org_regain = -0.3
+			}
+		}
+		PRC_latent_indus = {
+			picture = PRC_latent_indus
+			allowed = {
+				tag = PRC
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			local_resources_factor = -0.25
+			surrender_limit = 0.05
+			consumer_goods_factor = 0.1
+			gdp_growth_modifier = -0.3
+			production_speed_buildings_factor = -0.1
+			research_speed_factor = -0.1
+			offence = -0.35
+			defence = -0.35
+			}
+		}
+		PRC_hermit = {
+			picture = PRC_hermit
+			allowed = {
+				tag = PRC
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			drift_defence_factor = 1
+			liberalism_acceptance = -90
+			conservatism_acceptance = -90
+			socdem_acceptance = -90
+			dissident_right_acceptance = -90
+			autocracy_acceptance = -90
+			}
+		}
+		###PLK (Korea)###
+		PLK_for_meddling = {
+			picture = PLK_for_meddling
+			allowed = {
+				tag = PLK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			drift_defence_factor = -0.35
+			reformist_socialism_drift = 0.025
+			hardline_socialism_drift = 0.025
+			revolutionary_right_drift = 0.025
+			technocracy_drift = 0.025
+			gdp_growth_modifier = 0.02
+			political_power_cost = 0.75
+			stability_factor = -0.10
+			}
+		}
+		PLK_juggernaut = {
+			picture = PLK_juggernaut
+			allowed = {
+				tag = PLK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+			gdp_growth_modifier = 0.24
+			production_speed_buildings_factor = 0.20
+			min_export = 0.25
+			}
+		}
+		PLK_old_country = {
+			picture = PLK_old_country
+			allowed = {
+				tag = PLK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+			MONTHLY_POPULATION = -0.65
+			custom_modifier_tooltip = "Whilst it isn't crippling yet, we can expect it to get worse."
+			}
+		}
+		###VIE###
+		VIE_conf_diplomacy = {
+			picture = VIE_conf_diplomacy
+			allowed = {
+				tag = VIE
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				min_export = 0.25
+			}
+			targeted_modifier = {
+				tag = USA
+				extra_trade_to_target_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = PRC
+				extra_trade_to_target_factor = 0.15
+			}
+		}
+		VIE_scars_war = {
+			picture = VIE_scars_war
+			allowed = {
+				tag = VIE
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				MONTHLY_POPULATION = 0.25
+				stability_factor = -0.15
+				war_support_factor = -0.25
+				political_power_gain = -0.7
+				gdp_growth_modifier = -0.15
+			}
+		}
+		###SVI###
+		SVI_xenophilia = {
+			picture = SVI_xenophilia
+			allowed = {
+				tag = SVI
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				min_export = 0.35
+				consumer_goods_factor = -0.1
+				gdp_growth_modifier = 0.25
+				stability_factor = -0.30
+				war_support_factor = -0.30
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		SVI_corruption = {
+			picture = SVI_corruption
+			allowed = {
+				tag = SVI
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				political_power_gain = 0.50
+				consumer_goods_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		SVI_baby_democracy = {
+			picture = SVI_baby_democracy
+			allowed = {
+				tag = SVI
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				dissident_right_drift = 0.05
+				autocracy_drift = 0.02
+				technocracy_drift = 0.02
+				liberalism_drift = 0.02
+				socdem_drift = -0.1
+			}
+		}
+		###SNG###
+		SNG_enemies_onallsides = {
+			picture = SNG_enemies_onallsides
+			allowed = {
+				tag = SNG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				conscription = 0.08
+				war_support_factor = 0.25
+				consumer_goods_factor = -0.10
+				stability_factor = -0.15
+			}
+		}
+			SNG_pearl_malaccas = {
+			picture = SNG_pearl_malaccas
+			allowed = {
+				tag = SNG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				gdp_growth_modifier = 0.15
+				MONTHLY_POPULATION = 0.15
+				reformist_socialism_drift = 0.05
+				political_power_gain = 0.25
+			}
+		}
+		###QIE###
+			QIE_multiracial_empire = {
+			picture = QIE_multiracial_empire
+			allowed = {
+				tag = QIE
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				stability_factor = 0.15
+				surrender_limit = 0.05
+				political_power_cost = 0.3
+				gdp_growth_modifier = 0.03
+				war_support_factor = 0.1
+			}
+		}
+			QIE_at_the_forefront = {
+			picture = QIE_at_the_forefront
+			allowed = {
+				tag = QIE
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				weekly_manpower = -70
+				stability_factor = -0.2
+				gdp_growth_modifier = 0.1
+				research_speed_factor = 0.3
+				technocracy_drift = 0.02
+				monthly_population = -0.1
+				min_export = 0.8
+				trade_opinion_factor = 0.35
+			}
+		}
+			QIE_JAP_econ_dom = {
+			picture = QIE_JAP_econ_dom
+			allowed = {
+				tag = QIE
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				political_power_gain = -0.08
+			}
+			targeted_modifier = {
+			    tag = JAP
+				cic_to_target_factor = 0.2
+				mic_to_target_factor = 0.3
+				extra_trade_to_target_factor = 0.1
+			}
+		}
+		#KAM
+			SIA_SVI_condominium = {
+			picture = SIA_SVI_condominium
+			allowed = {
+				tag = KAM
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				political_power_gain = -0.16
+			}
+			targeted_modifier = {
+			    tag = SVI
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.15
+				extra_trade_to_target_factor = 0.05
+			}
+			targeted_modifier = {
+			    tag = SIA
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.15
+				extra_trade_to_target_factor = 0.05
+			}
+		}
+		SIA_tkcaic = {
+			picture = SIA_tkcaic
+			allowed = {
+				tag = SIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+				SIA = {
+					NOT  = {
+						controls_province = 12201
+					}
+				}
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				gdp_growth_modifier = 0.05
+				stability_factor = 0.04
+				political_power_cost = 0.05
+				supply_factor = 0.1
+			}
+			targeted_modifier = {
+			    tag = JAP
+				cic_to_target_factor = 0.05
+				extra_trade_to_target_factor = 0.05
+			}
+
+		}
+		SIA_legacy_of_phibun = {
+			picture = SIA_legacy_of_phibun
+			allowed = {
+				tag = SIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				political_power_gain = 0.03
+				stability_factor = -0.05
+				research_speed_factor = 0.04
+			}
+
+		}
+		SIA_mrt = {
+			picture = SIA_mrt
+			allowed = {
+				tag = SIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				supply_factor = 0.04
+				army_org_regain = 0.02
+				army_speed_factor = 0.05
+			}
+
+		}
+		SIA_libtards = {
+			picture = SIA_libtards
+			allowed = {
+				tag = SIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+				liberalism_drift = 0.01
+				socdem_drift = 0.01
+				reformist_socialism_drift = 0.01
+			}
+
+		}
+		#more later
+	}	
+}

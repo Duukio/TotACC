@@ -1,0 +1,35 @@
+state={
+id=511
+	
+	name="STATE_511" # Chaco Australis
+
+	manpower = 8000000
+	
+	state_category = city
+	
+	resources={
+		tungsten=60 # was: 46
+		steel=20 # was: 8
+	}
+
+	history={
+		owner = ARG
+		set_demilitarized_zone = yes
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 4
+		}
+		add_core_of = ARG
+		add_core_of = ARP
+		victory_points = {
+			8216 20
+		}
+	}
+
+	provinces={
+		2106 2208 5143 5213 8169 8255 10965 10986 12922 12943 8216 
+	}
+
+	local_supplies=6.0 
+}

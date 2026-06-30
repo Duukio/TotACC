@@ -1,0 +1,38 @@
+state=
+{
+id=1225
+	
+	name="STATE_1225"
+	manpower=50000
+	resources={
+		steel = 20
+		oil = 25
+	}
+	
+	state_category = town
+	history=
+	{
+		owner = MSK
+		buildings = {
+            school = 3
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 4 
+			air_base = 1
+			13957 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = HON
+		add_claim_by = MSK
+		victory_points = {
+			13957 5 #Ahuya Yari
+		}
+
+	}
+	provinces={
+		13957
+	}
+
+	local_supplies=0.0 
+}

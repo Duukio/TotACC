@@ -1,0 +1,183 @@
+ideas = {
+    country = {
+		AWB_national_reform = {
+			picture = AWB_national_reform
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                gdp_growth_modifier = 0.03
+                stability_weekly = 0.01
+                political_power_gain = 0.05
+                consumer_goods_factor = 0.05
+			}
+		}
+		AWB_national_reform_1 = {
+			picture = AWB_national_reform
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                gdp_growth_modifier = 0.05
+                political_power_gain = 0.05
+			}
+		}
+		AWB_revolutionary_identity = {
+			picture = AWB_revolutionary_identity
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.05
+                production_factory_max_efficiency_factor = 0.1
+                stability_factor = -0.15
+			}
+		}
+		AWB_white_welfare = {
+			picture = AWB_white_welfare
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                consumer_goods_factor = 0.04
+                industrial_capacity_factory = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+                stability_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		AWB_white_agrarianism = {
+			picture = AWB_white_agrarianism
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                consumer_goods_factor = 0.04
+                industrial_capacity_factory = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				global_building_slots = 2
+				political_power_cost = 0.1
+				gdp_growth_modifier = -0.1
+                stability_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		AWB_anglophone_collaboration = {
+			picture = AWB_anglophone_collaboration
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				attrition = -0.1
+				army_org_factor = 0.1
+				supply_consumption_factor = -0.05
+			}
+		}
+		AWB_super_TND = {
+			picture = AWB_super_TND
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = -1
+				stability_weekly = -0.01
+				war_support_factor = 0.5
+				revolutionary_right_drift = 0.02
+			}			
+		}
+    }
+}

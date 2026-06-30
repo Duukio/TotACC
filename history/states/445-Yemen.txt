@@ -1,0 +1,36 @@
+state={
+id=445
+	
+
+	name="STATE_445"
+
+	manpower = 24491000
+	
+	state_category = city
+	
+	resources={
+		oil=200
+	}
+	history={
+		owner = YEM
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 5
+			10840 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			10840 20 
+		}
+		add_core_of = YEM
+	}
+
+	provinces={
+		1920 1973 4924 10752 10840 
+	}
+
+	local_supplies=0.0 
+}

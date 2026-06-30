@@ -1,0 +1,12 @@
+defined_text = {
+    name = ISP_socialist_aus_dyn_loc
+    text = {
+        trigger = { 
+            has_global_flag = ISP_socialist_aus_dyn_flag
+        }
+        localization_key = ISP_socialist_aus_dyn_key
+    }
+    text = {
+        localization_key = ISP_old_school_key
+    }
+}

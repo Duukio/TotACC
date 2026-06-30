@@ -1,0 +1,23 @@
+state={
+id=208
+	name="STATE_208"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	history={
+		victory_points = { 6377 20 }
+		owner = WES
+		buildings = {
+            school = 2
+			infrastructure = 4
+
+		}
+		add_core_of = WES
+	}
+	provinces={
+		405 526 3234 3271 3355 3395 3500 3561 6218 6263 6298 6377 6513 9238 9264 11402 11493 
+	}
+	manpower=8000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

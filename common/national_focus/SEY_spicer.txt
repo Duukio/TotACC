@@ -1,0 +1,685 @@
+
+shared_focus = {
+	id = SEY_fresh_market_opportunities
+	icon = GFX_SEY_fresh_market_opportunities
+	cost = 6
+	x = 11
+	y = 10
+	completion_reward = {
+		add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_fresh_market_opportunities"
+	}
+}
+
+shared_focus = {
+	id = SEY_building_the_next_tomorrow
+	icon = GFX_SEY_building_the_next_tomorrow
+	cost = 6
+	x = 12
+	y = 0
+	completion_reward = {
+		add_dynamic_modifier = {
+		    modifier = SEY_btnt_mod
+		    scope = SEY
+		}
+		#event
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_building_the_next_tomorrow"
+	}
+}
+
+shared_focus = {
+	id = SEY_a_welloiled_machine
+	icon = GFX_SEY_a_welloiled_machine
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_consumer = -0.05 }
+		add_to_variable = { seybtnt_pp_gain = 0.5 }
+		custom_effect_tooltip = "Modifies the Building the Next Tomorrow national spirit to include +50% political power gain, and -5% consumer goods factor."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_welloiled_machine"
+	}
+	relative_position_id = SEY_building_the_next_tomorrow
+	prerequisite = { focus = SEY_building_the_next_tomorrow } 
+}
+
+shared_focus = {
+	id = SEY_new_research_frontiers
+	icon = GFX_SEY_new_research_frontiers
+	cost = 6
+	x = -8
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_research = 0.05 }
+		custom_effect_tooltip = "Modifies the Building the Next Tomorrow national spirit to include +5% research bonus."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_new_research_frontiers"
+	}
+	relative_position_id = SEY_a_welloiled_machine
+	prerequisite = { focus = SEY_a_welloiled_machine } 
+}
+
+shared_focus = {
+	id = SEY_redefining_the_workplace
+	icon = GFX_SEY_redefining_the_workplace
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_consumer = 0.1 }
+		add_stability = 0.25
+		add_war_support = 0.15
+		add_political_power = 150
+		custom_effect_tooltip = "Modifies the Building the Next Tomorrow national spirit to (temporarily) include +10% consumer goods factor. Warning!"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_redefining_the_workplace"
+	}
+	relative_position_id = SEY_a_welloiled_machine
+	prerequisite = { focus = SEY_a_welloiled_machine } 
+}
+
+shared_focus = {
+	id = SEY_global_connections
+	icon = GFX_SEY_global_connections
+	cost = 6
+	x = 8
+	y = 1
+	completion_reward = {
+		add_political_power = -100
+		add_offsite_building = { type = arms_factory level = 2 }
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_global_connections"
+	}
+	relative_position_id = SEY_a_welloiled_machine
+	prerequisite = { focus = SEY_a_welloiled_machine } 
+}
+
+shared_focus = {
+	id = SEY_information_control
+	icon = GFX_SEY_information_control
+	cost = 6
+	x = -3
+	y = 2
+	completion_reward = {
+		add_to_variable = { seybtnt_techno_drift = 0.02 }
+		add_to_variable = { seybtnt_encryption = 0.25 }
+		add_to_variable = { seybtnt_decryption= 0.25 }
+		custom_effect_tooltip = "Modifies the Building the Next Tomorrow national spirit to include +25% encryption and decryption factor, alongside +2% daily popularity for Technocracy"
+
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_information_control"
+	}
+	relative_position_id = SEY_new_research_frontiers
+	prerequisite = { focus = SEY_new_research_frontiers } 
+}
+
+shared_focus = {
+	id = SEY_genetic_control
+	icon = GFX_SEY_genetic_control
+	cost = 6
+	x = 4
+	y = 2
+	completion_reward = {
+		add_to_variable = { seybtnt_soldier_exp = -0.25 }
+		custom_effect_tooltip = "Modifies the Building the Next Tomorrow national spirit to include -25% soldier experience loss factor."
+        set_country_flag = supersoldiers_SEY
+        unlock_decision_category_tooltip = SEY_supersoldiers_dec_cat
+		country_event = {
+			id = SEY.126
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_genetic_control"
+	}
+	relative_position_id = SEY_new_research_frontiers
+	prerequisite = { focus = SEY_new_research_frontiers } 
+}
+
+shared_focus = {
+	id = SEY_attractive_basing_benefits
+	icon = GFX_SEY_attractive_basing_benefits
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		add_political_power = -100
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_attractive_basing_benefits"
+	}
+	relative_position_id = SEY_global_connections
+	prerequisite = { focus = SEY_global_connections } 
+}
+
+shared_focus = {
+	id = SEY_networking_global_tech_hubs
+	icon = GFX_SEY_networking_global_tech_hubs
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_global_tech_network
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_networking_global_tech_hubs"
+	}
+	relative_position_id = SEY_global_connections
+	prerequisite = { focus = SEY_global_connections } 
+}
+
+shared_focus = {
+	id = SEY_hostile_takeover
+	icon = GFX_SEY_hostile_takeover
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = "Seizes Blackwater assets, giving 5 billion in GDP."
+		add_to_variable = { SEY.GDP = 5 }
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_hostile_takeover"
+	}
+	relative_position_id = SEY_attractive_basing_benefits
+	prerequisite = { focus = SEY_attractive_basing_benefits } 
+	prerequisite = { focus = SEY_networking_global_tech_hubs }
+}
+
+shared_focus = {
+	id = SEY_110_productivity
+	icon = GFX_SEY_110_productivity
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_consumer = -0.10 }
+		add_to_variable = { seybtnt_factory_output = 0.10 }
+		add_to_variable = { seybtnt_factory_cap = 0.10 }
+		custom_effect_tooltip = "Modifies the Building The Next Tomorrow national spirit to include -10% consumer goods factor, +10% factory output and +10% factory production efficiency cap."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_110_productivity"
+	}
+	relative_position_id = SEY_redefining_the_workplace
+	prerequisite = { focus = SEY_redefining_the_workplace } 
+}
+
+shared_focus = {
+	id = SEY_usher_in_the_age_of_control
+	icon = GFX_SEY_usher_in_the_age_of_control
+	cost = 6
+	x = 3
+	y = 2
+	completion_reward = {
+		add_stability = 0.15
+		add_political_power = 100
+		add_to_variable = { SEY.GDP = -1 }
+		custom_effect_tooltip = "Some investors will pull out."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_usher_in_the_age_of_control"
+	}
+	relative_position_id = SEY_information_control
+	prerequisite = { focus = SEY_information_control } 
+	prerequisite = { focus = SEY_genetic_control }
+	prerequisite = { focus = SEY_battlefield_control }
+}
+
+shared_focus = {
+	id = SEY_battlefield_control
+	icon = GFX_SEY_battlefield_control
+	cost = 6
+	x = 0
+	y = 2
+	completion_reward = {
+		add_to_variable = { seybtnt_org = 0.15 }
+		add_to_variable = { seybtnt_divs_speed = 0.10 }		
+		custom_effect_tooltip = "Adds +15% organization and +10% speed to your divisions in the Building The Next Tomorrow national spirit."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_battlefield_control"
+	}
+	relative_position_id = SEY_new_research_frontiers
+	prerequisite = { focus = SEY_new_research_frontiers } 
+}
+
+shared_focus = {
+	id = SEY_utilising_our_impact
+	icon = GFX_SEY_utilising_our_impact
+	cost = 6
+	x = -8
+	y = 3
+	completion_reward = {
+		add_political_power = -100
+		add_war_support = 0.1
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_utilising_our_impact"
+	}
+	relative_position_id = SEY_hostile_takeover
+	prerequisite = { focus = SEY_hostile_takeover } 
+	prerequisite = { focus = SEY_110_productivity }
+	prerequisite = { focus = SEY_usher_in_the_age_of_control }
+	prerequisite = { focus = SEY_playing_office_politics }
+}
+
+shared_focus = {
+	id = SEY_new_synergistic_approaches
+	icon = GFX_SEY_new_synergistic_approaches
+	cost = 6
+	x = 17
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_techno_drift = -0.01 }
+		add_to_variable = { seybtnt_pp_gain = 0.1 }
+		custom_effect_tooltip = "Adds 1% daily popularity for all other parties, and gives 10% political power gain."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_new_synergistic_approaches"
+	}
+	relative_position_id = SEY_building_the_next_tomorrow
+	prerequisite = { focus = SEY_building_the_next_tomorrow } 
+}
+
+shared_focus = {
+	id = SEY_where_the_sun_never_sets
+	icon = GFX_SEY_where_the_sun_never_sets
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		ENG = {
+			add_ideas = SEY_cooperation_spicer
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_where_the_sun_never_sets"
+	}
+	relative_position_id = SEY_new_synergistic_approaches
+	prerequisite = { focus = SEY_new_synergistic_approaches } 
+}
+
+shared_focus = {
+	id = SEY_where_the_sun_always_rises
+	icon = GFX_SEY_where_the_sun_always_rises
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		JAP = {
+			add_ideas = SEY_cooperation_spicer
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_where_the_sun_always_rises"
+	}
+	relative_position_id = SEY_new_synergistic_approaches
+	prerequisite = { focus = SEY_new_synergistic_approaches } 
+}
+
+shared_focus = {
+	id = SEY_brushing_up_to_brussels
+	icon = GFX_SEY_brushing_up_to_brussels
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		FRA = {
+			add_stability = 0.15
+		}
+		SEY = {
+			custom_effect_tooltip = "Adds 5 billion USD in GDP"
+			add_to_variable = { SEY.GDP = 5 }
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_brushing_up_to_brussels"
+	}
+	relative_position_id = SEY_where_the_sun_never_sets
+	prerequisite = { focus = SEY_where_the_sun_never_sets } 
+}
+
+shared_focus = {
+	id = SEY_unpacking_in_apac
+	icon = GFX_SEY_unpacking_in_apac
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		BUR = {
+			add_ideas = SEY_apac_friend
+		}
+		IND = {
+			add_ideas = SEY_apac_friend
+		}
+		BNG = {
+			add_ideas = SEY_apac_friend		
+		}
+		QIE = {
+			add_ideas = SEY_apac_friend
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_unpacking_in_apac"
+	}
+	relative_position_id = SEY_where_the_sun_always_rises
+	prerequisite = { focus = SEY_where_the_sun_always_rises } 
+}
+
+shared_focus = {
+	id = SEY_playing_office_politics
+	icon = GFX_SEY_playing_office_politics
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_to_variable = { SEY.GDP = 10 }
+		custom_effect_tooltip = "Adds 10 billion USD to our GDP from investors."
+		add_stability = -0.15
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_playing_office_politics"
+	}
+	relative_position_id = SEY_brushing_up_to_brussels
+	prerequisite = { focus = SEY_brushing_up_to_brussels } 
+	prerequisite = { focus = SEY_unpacking_in_apac }
+}
+
+shared_focus = {
+	id = SEY_project_yellow_sun
+	icon = GFX_SEY_project_yellow_sun
+	cost = 6
+	x = -4
+	y = 1
+	completion_reward = {
+        set_country_flag = apac_SEY
+        unlock_decision_category_tooltip = SEY_spicer_dec_cat
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_project_yellow_sun"
+	}
+	relative_position_id = SEY_fresh_market_opportunities
+	prerequisite = { focus = SEY_fresh_market_opportunities } 
+}
+
+shared_focus = {
+	id = SEY_project_red_snow
+	icon = GFX_SEY_project_red_snow
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+        set_country_flag = sov_sey_interventions
+        unlock_decision_category_tooltip = SEY_spicer_dec_cat
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_project_red_snow"
+	}
+	relative_position_id = SEY_fresh_market_opportunities
+	prerequisite = { focus = SEY_fresh_market_opportunities } 
+}
+shared_focus = {
+	id = SEY_project_blue_flame
+	icon = GFX_SEY_project_blue_flame
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+        set_country_flag = usa_sey_interventions
+        unlock_decision_category_tooltip = SEY_spicer_dec_cat
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_project_blue_flame"
+	}
+	relative_position_id = SEY_fresh_market_opportunities
+	prerequisite = { focus = SEY_fresh_market_opportunities } 
+}
+
+shared_focus = {
+	id = SEY_project_green_harvest
+	icon = GFX_SEY_project_green_harvest
+	cost = 6
+	x = 5
+	y = 1
+	completion_reward = {
+        set_country_flag = africa_sey_interventions
+        unlock_decision_category_tooltip = SEY_spicer_dec_cat
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_project_green_harvest"
+	}
+	relative_position_id = SEY_fresh_market_opportunities
+	prerequisite = { focus = SEY_fresh_market_opportunities } 
+}
+
+shared_focus = {
+	id = SEY_downstream_foundations
+	icon = GFX_SEY_downstream_foundations
+	cost = 6
+	x = -9
+	y = 2
+	completion_reward = {
+		SEY = {
+			set_country_leader_ideology = soctechno
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_downstream_foundations"
+	}
+	relative_position_id = SEY_utilising_our_impact
+	prerequisite = { focus = SEY_utilising_our_impact } 
+	mutually_exclusive = { focus = SEY_upstream_profits }
+}
+shared_focus = {
+	id = SEY_laying_the_brickwork
+	icon = GFX_SEY_laying_the_brickwork
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		662 = {
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 3
+			    instant_build = yes
+			}
+		}
+		SEY = {
+			add_political_power = -150
+		}
+		#add_timed_idea = {
+		#	idea = SEY_infra_investments
+		#	days = 365
+		#}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_laying_the_brickwork"
+	}
+	relative_position_id = SEY_downstream_foundations
+	prerequisite = { focus = SEY_downstream_foundations } 
+}
+shared_focus = {
+	id = SEY_getting_on_the_grid
+	icon = GFX_SEY_getting_on_the_grid
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		662 = {
+			add_to_variable = { SEY.intreach = 10 }
+			custom_effect_tooltip = "Adds 10% more Internet Penetration in the Seychelles"
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_getting_on_the_grid"
+	}
+	relative_position_id = SEY_laying_the_brickwork
+	prerequisite = { focus = SEY_laying_the_brickwork } 
+}
+
+shared_focus = {
+	id = SEY_rewritten_contracts
+	icon = GFX_SEY_rewritten_contracts
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		add_stability = 0.15
+		add_popularity = {
+			ideology = technocracy
+			popularity = 0.25
+		}
+		add_political_power = -150
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_rewritten_contracts"
+	}
+	relative_position_id = SEY_laying_the_brickwork
+	prerequisite = { focus = SEY_laying_the_brickwork } 
+}
+
+shared_focus = {
+	id = SEY_revitalised_towns
+	icon = GFX_SEY_revitalised_towns
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		662 = {
+			set_victory_points = {
+				province = 2188
+				value = 10
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_revitalised_towns"
+	}
+	relative_position_id = SEY_rewritten_contracts
+	prerequisite = { focus = SEY_rewritten_contracts } 
+}
+
+shared_focus = {
+	id = SEY_raising_the_roof
+	icon = GFX_SEY_raising_the_roof
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.05
+		add_to_variable = { seybtnt_soctrends_equality = 0.03 }
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_raising_the_roof"
+	}
+	relative_position_id = SEY_getting_on_the_grid
+	prerequisite = { focus = SEY_getting_on_the_grid } 
+}
+shared_focus = {
+	id = SEY_an_archipelago_united
+	icon = GFX_SEY_an_archipelago_united
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		add_to_variable = { seybtnt_stab = 0.1 }
+		add_to_variable = { seybtnt_conscription_factor = 0.3 }
+		add_to_variable = { seybtnt_techno_drift = 0.01 }
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_an_archipelago_united"
+	}
+	relative_position_id = SEY_revitalised_towns
+	prerequisite = { focus = SEY_revitalised_towns } 
+	prerequisite = { focus = SEY_raising_the_roof} 
+}
+
+shared_focus = {
+	id = SEY_upstream_profits
+	icon = GFX_SEY_upstream_profits
+	cost = 6
+	x = 10
+	y = 2
+	completion_reward = {
+		set_country_leader_ideology = corporatocracy
+		set_politics = {
+			ruling_party = autocracy
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_upstream_profits"
+	}
+	relative_position_id = SEY_utilising_our_impact
+	prerequisite = { focus = SEY_utilising_our_impact } 
+	mutually_exclusive = { focus = SEY_downstream_foundations }
+}
+shared_focus = {
+	id = SEY_climbing_the_corporate_ladder
+	icon = GFX_SEY_climbing_the_corporate_ladder
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_gdp_growth = 0.05 }
+		custom_effect_tooltip = "Modifies Building The Next Tomorrow by adding +5% GDP growth"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_climbing_the_corporate_ladder"
+	}
+	relative_position_id = SEY_upstream_profits
+	prerequisite = { focus = SEY_upstream_profits } 
+}
+shared_focus = {
+	id = SEY_companies_and_brands
+	icon = GFX_SEY_companies_and_brands
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_brand_capital
+		662 = {
+			add_building_construction = {
+			    type = arms_factory
+			    level = 2
+			    instant_build = yes
+			}
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 4
+			    instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 5
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_companies_and_brands"
+	}
+	relative_position_id = SEY_climbing_the_corporate_ladder
+	prerequisite = { focus = SEY_climbing_the_corporate_ladder } 
+}
+
+shared_focus = {
+	id = SEY_cognisance_and_boundaries
+	icon = GFX_SEY_cognisance_and_boundaries
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_research_slot = 1 #lol
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_cognisance_and_boundaries"
+	}
+	relative_position_id = SEY_companies_and_brands
+	prerequisite = { focus = SEY_companies_and_brands } 
+}
+
+shared_focus = {
+	id = SEY_billionaires_and_casinos
+	icon = GFX_SEY_billionaires_and_casinos
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_gdp_growth = 0.05 }
+		add_to_variable = { seybtnt_stab= -0.2 }
+		add_political_power = 100
+		custom_effect_tooltip = "Adds +5% GDP Growth and -20% stability."
+
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_billionaires_and_casinos"
+	}
+	relative_position_id = SEY_climbing_the_corporate_ladder
+	prerequisite = { focus = SEY_climbing_the_corporate_ladder } 
+}
+
+shared_focus = {
+	id = SEY_blockchain_and_credibility
+	icon = GFX_SEY_blockchain_and_credibility
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		add_stability = 0.1
+		add_to_variable = { seybtnt_research = 0.05 }
+		add_to_variable = { seybtnt_encryption = 0.1 }
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_blockchain_and_credibility"
+	}
+	relative_position_id = SEY_billionaires_and_casinos
+	prerequisite = { focus = SEY_billionaires_and_casinos } 
+}
+
+shared_focus = {
+	id = SEY_the_silicon_archipelago
+	icon = GFX_SEY_the_silicon_archipelago
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = { seybtnt_gdp_growth = 0.04}
+		662 = {
+			set_state_category = metropolis
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_silicon_archipelago"
+	}
+	relative_position_id = SEY_cognisance_and_boundaries
+	prerequisite = { focus = SEY_cognisance_and_boundaries } 
+	prerequisite = { focus = SEY_blockchain_and_credibility}
+}
+
+shared_focus = {
+	id = SEY_seychelles_20
+	icon = GFX_SEY_seychelles_20
+	cost = 6
+	x = -9
+	y = 2
+	completion_reward = {
+		add_stability = 0.1
+		custom_effect_tooltip = "This is the end of the Seychelles content for Twilight of the Anthropocene. Thank you for playing!"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_seychelles_20"
+	}
+	relative_position_id = SEY_the_silicon_archipelago
+	prerequisite = { focus = SEY_the_silicon_archipelago focus = SEY_an_archipelago_united } 
+}

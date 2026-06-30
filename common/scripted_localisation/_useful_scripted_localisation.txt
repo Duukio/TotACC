@@ -1,0 +1,985 @@
+defined_text = {
+	name = COMPOSITE_SUBID_GENERATOR_ONE
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 55
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_ecotrad"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 60
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_ecoprog"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 65
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = "GFX_composite_ecomod"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 50
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_technoprog"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 65
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_technocon"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 65
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = "GFX_composite_technomod"
+	}
+}
+defined_text = {
+	name = COMPOSITE_SUBID_GENERATOR_TWO
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 50
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_egaldem"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 65
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_egalauto"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 50
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_egalauto"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 65
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = "GFX_composite_egalano"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_elitdemo"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 45
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_elitauto"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 70
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = "GFX_composite_elitano"
+	}
+}
+defined_text = {
+	name = COMPOSITE_SUBID_GENERATOR_THREE
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 25
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_direct_rule"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 55
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 25
+				compare = greater_than
+			}
+		}
+		localization_key = "GFX_composite_unitary"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 80
+				compare = less_than
+			}
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 55
+				compare = greater_than
+			}
+		}
+		localization_key = "GFX_composite_fed"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 80
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 90
+				compare = less_than
+			}
+		}
+		localization_key = "GFX_composite_confederal"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = "GFX_composite_anarchist"
+	}
+}
+defined_text = {
+	name = GetRulingIdeologySubtype
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = demsoc
+		}
+		localization_key = demsoc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natcom
+		}
+		localization_key = natcom
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = demmarx
+		}
+		localization_key = demmarx
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = class_soc
+		}
+		localization_key = class_soc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = consoc
+		}
+		localization_key = consoc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socnat
+		}
+		localization_key = socnat
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = utopnat
+		}
+		localization_key = utopnat
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = popsoc
+		}
+		localization_key = popsoc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = progano
+		}
+		localization_key = progano
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = monitdem
+		}
+		localization_key = monitdem
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = progre
+		}
+		localization_key = progre
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = thway
+		}
+		localization_key = thway
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = greenpol
+		}
+		localization_key = greenpol
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = insurrfash
+		}
+		localization_key = insurrfash
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socpat
+		}
+		localization_key = socpat
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ecolib
+		}
+		localization_key = ecolib
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib
+		}
+		localization_key = marlib
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclib
+		}
+		localization_key = soclib
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = nat_an
+		}
+		localization_key = nat_an
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natlib
+		}
+		localization_key = natlib
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soclibert
+		}
+		localization_key = soclibert
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon
+		}
+		localization_key = soccon
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socpat_con
+		}
+		localization_key = socpat_con
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = greencon
+		}
+		localization_key = greencon
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = populistcon
+		}
+		localization_key = populistcon
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = relcon
+		}
+		localization_key = relcon
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anolib 
+		}
+		localization_key = anolib 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = corporatocracy
+		}
+		localization_key = corporatocracy
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = milgov
+		}
+		localization_key = milgov
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = absolmon
+		}
+		localization_key = absolmon
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = relfund 
+		}
+		localization_key = relfund 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = perdict 
+		}
+		localization_key = perdict
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = collan
+		}
+		localization_key = collan
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = mutan
+		}
+		localization_key = mutan
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = nl_s 
+		}
+		localization_key = nl_s 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = gran 
+		}
+		localization_key = gran 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ecosoc 
+		}
+		localization_key = ecosoc 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = algolib 
+		}
+		localization_key = algolib 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = classtech 
+		}
+		localization_key = classtech 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = manbur 
+		}
+		localization_key = manbur 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soctechno 
+		}
+		localization_key = soctechno 
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = algodesp
+		}
+		localization_key = algodesp 
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = l_acc
+		}
+		localization_key = l_acc 
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = rightlib
+		}
+		localization_key = rightlib 
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop
+		}
+		localization_key = natpop 
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = newright
+		}
+		localization_key = newright
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = r_acc
+		}
+		localization_key = r_acc
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = jdpon
+		}
+		localization_key = jdpon
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = natthirdpos
+		}
+		localization_key = natthirdpos
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = ecofash
+		}
+		localization_key = ecofash
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ethnosupr
+		}
+		localization_key = ethnosupr
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = mzt
+		}
+		localization_key = mzt
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = leftcom
+		}
+		localization_key = leftcom
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = antirevml
+		}
+		localization_key = antirevml
+	}
+	
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = sovmarsys
+		}
+		localization_key = sovmarsys
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = algsoc
+		}
+		localization_key = algsoc
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = lwnat
+		}
+		localization_key = lwnat
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = religsoc
+		}
+		localization_key = religsoc
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = p_l_a
+		}
+		localization_key = p_l_a
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neo_naz
+		}
+		localization_key = neo_naz
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anodir
+		}
+		localization_key = anodir
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = libcon
+		}
+		localization_key = libcon
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = phoenixism
+		}
+		localization_key = phoenixism
+	}
+	
+}
+defined_text = {
+	name = soctrends_modifier_help_tab_scrloc
+	text = {
+		localization_key = OhioPowerTooltip
+	}
+}
+defined_text = {
+	name = IDEOLOGYADJECTIVEONE
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 55
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ECOTRAD
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 55
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ECOPROG
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 65
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = ECOMIXPROGCON
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 50
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = TECHNOPROG
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 65
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = TECHNOCON
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EA
+				value = 65
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_TP
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = TECHNOMODERATE
+	}
+	localization_key = IAMERROR
+}
+defined_text = {
+	name = IDEOLOGYADJECTIVETWO
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 50
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 60
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EGALITARIANDEMOCRACY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 50
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EGALITARIANAUTOCRACY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 65
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EGALITARIANAUTOCRACY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 70
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = ELITISTANOCRACY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 65
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = greater_than
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 65
+				compare = less_than
+			}
+		}
+		localization_key = EGALITARIANANOCRACY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ELITISTDEMOCRACY
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_EE
+				value = 45
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DE
+				value = 45
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = ELITISTAUTOCRACY
+	}
+	text = {
+		localization_key = IAMERROR
+	}
+}
+defined_text = {
+	name = IDEOLOGYADJECTIVETHREE
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 25
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = DIRECTRULEFROMCAPITAL
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 55
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 25
+				compare = greater_than
+			}
+		}
+		localization_key = UNITARYSYSTEM
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 80
+				compare = less_than
+			}
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 55
+				compare = greater_than
+			}
+		}
+		localization_key = FEDERALSYSTEM
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 80
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 90
+				compare = less_than
+			}
+		}
+		localization_key = CONFEDERALSYSTEM
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = SOCTRENDS_DC
+				value = 90
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = ANARCHISTSOCIETY
+	}
+	localization_key = IAMERROR
+}

@@ -1,0 +1,36 @@
+scripted_gui = {
+
+	ATI_GIFT_ECONOMY = {
+		context_type = player_context
+		window_name = "TOTA_economy_anarchy_gui"
+		
+
+		visible = {
+			has_country_flag = all_american_pie
+		}
+		
+		#dynamic_lists = {
+		#	WORLD_ECONOMY_TOP_10_GRID = {
+			#	array = global.econ_countries
+			#	change_scope = yes
+			#	entry_container = global_econ_entry
+			#}
+		#}
+		
+		triggers = {
+		
+		}
+
+		properties = {
+		
+		}
+
+		effects = {
+			close_button_economy_click = {
+			clr_country_flag = all_hungarian_goulash
+			clr_country_flag = all_nigerian_fufu
+			clr_country_flag = all_american_pie
+			}
+		}
+	}
+}

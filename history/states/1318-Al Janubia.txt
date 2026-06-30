@@ -1,0 +1,24 @@
+
+state={
+	id=1318
+	name="STATE_1318"
+	provinces={
+		2018 14091 14092 14094 
+	}
+	manpower=26172
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=pastoral
+	history={
+		owner = OMA
+		add_core_of = OMA
+		buildings = {
+			school = 2
+			infrastructure = 1
+		}
+		victory_points = {
+			14091 1
+		}
+	}
+}

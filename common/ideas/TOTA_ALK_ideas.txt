@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+			ALK_the_russians_are_here = {
+			picture = ALK_the_russians_are_here
+			allowed = {
+				tag = ALK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			war_support_factor = 0.15
+			stability_factor = 0.15
+			surrender_limit = 0.15
+			conscription = 0.02
+			army_core_defence_factor = 0.1
+			army_morale_factor = 0.2
+			army_org_factor = -0.15
+			}
+		}
+	}	
+}

@@ -1,0 +1,23 @@
+state={
+id=211
+	name="STATE_211"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		victory_points = { 692 30 }
+		owner = SGF
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = SGF
+	}
+	provinces={
+		532 571 586 692 707 3299 3541 3571 3688 3705 6693 6725 9515 9652 9681 11497 11620 11653 
+	}
+	manpower=8124737
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

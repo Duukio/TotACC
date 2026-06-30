@@ -1,0 +1,31 @@
+
+state={
+	id=1284
+	name="STATE_1284"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		victory_points = {
+			10887 25 #Lahore
+		}
+		buildings = {
+			school = 4
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 10
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		10887 12005
+	}
+	manpower=22772710
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

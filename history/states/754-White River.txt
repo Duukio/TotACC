@@ -1,0 +1,28 @@
+
+state={
+	id=754
+	name="STATE_754"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = USA
+		victory_points = {
+			4625 5 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			industrial_complex = 3
+
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		1646 4444 4625 
+	}
+	manpower=510703
+	buildings_max_level_factor=2.000
+	state_category=town
+	local_supplies=9.000
+}

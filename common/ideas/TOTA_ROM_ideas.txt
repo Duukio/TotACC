@@ -1,0 +1,103 @@
+ideas = {
+	country = {
+		ROM_ceasca_haunting = {
+			picture = ROM_ceasca_haunting
+			allowed = {
+				tag = ROM
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				monthly_soctrends_drift_DE_E = 0.01
+				monthly_soctrends_drift_DC_C = 0.01
+				stability_factor = -0.2
+				political_power_gain = -0.1
+				monthly_soctrends_drift_EE_E2 = 0.05
+				monthly_soctrends_drift_EA_A = 0.1
+				monthly_population = 0.5
+			}
+		}
+		ROM_home_of_national_communism = {
+			picture = ROM_home_of_national_communism
+			allowed = {
+				tag = ROM
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+			    custom_modifier_tooltip = ROM_home_of_national_communism_tt
+				surrender_limit = 0.1
+				supply_combat_penalties_on_core_factor = 0.5
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				drift_defence_factor = 0.2
+				hardline_socialism_drift = 0.1
+			}
+		}
+		ROM_shitty_industry = {
+			picture = ROM_shitty_industry
+			allowed = {
+				tag = ROM
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = -0.20
+				gdp_growth_modifier = -0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		ROM_national_revolution = {
+			picture = ROM_national_revolution
+			allowed = {
+				tag = ROM
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_TP_T = 0.01
+				war_support_factor = 0.15
+				political_power_gain = 0.25
+			}
+		}
+		ROM_black_sheep = {
+			picture = ROM_black_sheep
+			allowed = {
+				tag = ROM
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				political_power_gain = -0.5
+				trade_opinion_factor = -0.5
+				gdp_growth_modifier = -0.05
+			}
+		}
+	}	
+}

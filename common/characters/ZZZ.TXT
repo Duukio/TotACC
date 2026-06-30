@@ -1,0 +1,14 @@
+characters = {
+	ISP_ehud_barak = {
+		name = " "
+		portraits = {
+				civilian = {
+						large = "GFX_portrait_ZZZ"
+				}
+		}
+		country_leader = {
+				desc = placeholder
+				ideology = collan
+		}
+	}
+}

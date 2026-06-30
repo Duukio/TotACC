@@ -1,0 +1,26 @@
+
+state={
+	id=911
+	name="STATE_911"
+    buildings_max_level_factor = 1
+	provinces={
+		1977 2003 2046 4138 4963 7989 8105 10745 10902 12725 12796 12836 
+	}
+	manpower=14000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = SUD
+		buildings = {
+			infrastructure = 3
+			school = 2
+			dockyard = 4
+		}
+		victory_points = {
+			12725 10 
+		}
+		add_core_of = SUD
+	}
+}

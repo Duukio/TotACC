@@ -1,0 +1,82 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TOTA_afro_groove"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_afro_groove_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_hypnotheque"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_hypnotheque_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_shibuya"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_shibuya_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_technocapital"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_technocap_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_yerevan"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_yerevan_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_unregistered"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_unregistered_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_reflex"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_reflex_album_art.dds" #unused
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_heavensent"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_heavensent_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_inland"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_inland_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_combat"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_combat_rock_radio_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_playhouse"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_playhouse_album_art.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_tschumi"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_tschumi.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_ghostbabel"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_ghost_babel.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_aerodynamite"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_aerodynamite.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_y333k"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_y333k.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_TOTA_fffr"
+		texturefile = "gfx//interface//topbar//musicplayer//TOTA_FFFR.dds"
+		noOfFrames = 2
+	}
+}

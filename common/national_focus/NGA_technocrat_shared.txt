@@ -1,0 +1,18 @@
+focus_tree = {
+	id = NGA_technocrat
+	country = {
+		factor = 0
+	modifier = {
+			add = 1
+			tag = NGA
+			NOT = {
+				OR = {
+				has_war_with = BIA
+				has_war_with = BIU
+				}
+			}
+		}
+	}
+	shared_focus = NGA_a_technocratic_nigeria
+	shared_focus = NGA_the_southern_problem
+}

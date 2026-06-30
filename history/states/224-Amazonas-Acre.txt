@@ -1,0 +1,35 @@
+state={
+id=224
+	name="STATE_224"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	aluminium = 50
+	rubber = 300
+	steel = 100
+	tungsten = 50
+	}
+	history={
+			victory_points = {
+			8254 10
+		}
+			victory_points = {
+			10934 30
+		}
+		owner = BRA
+		buildings = {
+            school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = BRA
+
+	}
+	provinces={
+		1979 2198 5083 5214 5216 5232 8185 8254 10934 10960 12919 12965 13083 13457 13458 13459 13460 13461 13462 13463 13464 13465 13466 13467 13468 13469 13470 13471 13472 13473 13474 13475 13476 13514 13515 13516 13517 13521 
+	}
+	manpower=5207714
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

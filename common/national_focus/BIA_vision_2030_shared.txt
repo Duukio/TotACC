@@ -1,0 +1,78 @@
+shared_focus = {
+	id = BIA_vision_2030_in_practice #needs dynamic name "Now, Where We?" once 6NBW is added
+	icon = GFX_BIA_vision_2030_in_practice
+	x = 26
+	y = 0
+	cost = 4
+	completion_reward = {
+		custom_effect_tooltip = "We will dedicate some GDP (35 billion USD) to this nationwide megaproject."
+		hidden_effect = {
+			BIA = {
+				subtract_from_variable = { BIA.GDP = 35 }
+			}
+		}
+	}
+}
+shared_focus = {
+	id = BIA_a_new_planned_cap
+	icon = GFX_BIA_a_new_planned_cap
+	x = 22
+	y = 1
+	cost = 4
+	prerequisite = { focus = BIA_vision_2030_in_practice  }
+	completion_reward = {
+	#load decisions
+	custom_effect_tooltip = "We will unlock decisions to create our new capital."
+	set_country_flag = planned_cap_dec_biafra
+	}
+}
+shared_focus = {
+	id = BIA_economic_diversification
+	icon = GFX_BIA_economic_diversification
+	x = 24
+	y = 1
+	cost = 4
+	prerequisite = { focus = BIA_vision_2030_in_practice  }
+	completion_reward = {
+		custom_effect_tooltip = "We will unlock decisions to diversify our economy."
+		set_country_flag = diversify_economy_biafra
+	}
+}
+shared_focus = {
+	id = BIA_nat_public_health_service
+	icon = GFX_BIA_nat_public_health_service
+	x = 26
+	y = 1
+	cost = 4
+	prerequisite = { focus = BIA_vision_2030_in_practice  }
+	completion_reward = {
+		custom_effect_tooltip = "We will unlock decisions to create the NPHS."
+		set_country_flag = NPHS_BIA
+	}
+}
+shared_focus = {
+	id = BIA_connect_the_nation 
+	icon = GFX_BIA_connect_the_nation
+	x = 28
+	y = 1
+	cost = 4
+	prerequisite = { focus = BIA_vision_2030_in_practice  }
+	completion_reward = {
+		custom_effect_tooltip = "We will unlock decisions to make Biafra broadly able to access the Intranet, have more electricity and better roads."
+		set_country_flag = online_BIA
+	}
+}
+shared_focus = {
+	id = BIA_21st_century
+	icon = GFX_BIA_21st_century
+	x = 25
+	y = 2
+	cost = 4
+	prerequisite = { focus = BIA_a_new_planned_cap  } prerequisite = { focus = BIA_economic_diversification  } prerequisite = { focus = BIA_nat_public_health_service  } prerequisite = { focus = BIA_connect_the_nation  }
+ 	completion_reward = {
+		country_event = {
+			id = BIA_EPILOGUE.1
+			days = 4
+		}
+	}
+}

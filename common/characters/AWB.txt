@@ -1,0 +1,139 @@
+characters = {
+	AWB_terreblanche = {
+		name = EUGENE_TB
+		portraits = {
+			army = {
+				large = "gfx/leaders/AWB/Portrait_AWB_TerreBlanche.png"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard politically_connected }
+			skill = 5
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	AWB_les_rudman = {
+		name = AWB_les_rudman
+		portraits = {
+			army = {
+				large = "gfx/leaders/AWB/Les Rudman.png"
+			}
+		}
+		corps_commander = {
+			traits = { cautious infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	AWB_andre_visagie = {
+			name = "André Visagie"
+			portraits = {
+				civilian = { small = "GFX_idea_AWB_andre_visagie" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = AWB
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+			}
+			idea_token = AWB_andre_visagie 
+			traits = {
+			    head_of_government
+			    hog_flamboyant_tough_guy
+				revolutionary_right_minister
+			}
+		}
+	}
+	AWB_piet_rudolph = {
+			name = "Piet \"Skiet\" Rudolph"
+			portraits = {
+				civilian = { small = "GFX_idea_AWB_piet_rudolph" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = AWB
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+			}
+			idea_token = AWB_piet_rudolph 
+			traits = {
+			    economy_minister
+			    eco_agrarian_reformer
+				revolutionary_right_minister
+			}
+		}
+	}
+	AWB_jan_groenewald = {
+			name = "Jan Groenewald"
+			portraits = {
+				civilian = { small = "GFX_idea_AWB_jan_groenewald" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = AWB
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+			}
+			idea_token = AWB_jan_groenewald 
+			traits = {
+			    security_minister
+			    sec_back_stabber
+				revolutionary_right_minister
+			}
+		}
+	}
+	AWB_willem_koos_ratte = {
+			name = "Willem \"Koos\" Ratte"
+			portraits = {
+				civilian = { small = "GFX_idea_AWB_willem_koos_ratte" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = AWB
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+			}
+			idea_token = AWB_willem_koos_ratte 
+			traits = {
+			    foreign_minister
+			    for_warmonger
+				revolutionary_right_minister
+			}
+		}
+	}
+	AWB_anton_de_waal_alberst = {
+			name = "Anton de Waal Alberts"
+			portraits = {
+				civilian = { small = "GFX_idea_AWB_anton_de_waal_alberts" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = AWB
+			}
+			cost = 150
+			slot = minister_without_portfolio
+			available = {
+			}
+			idea_token = AWB_willem_koos_ratte 
+			traits = {
+			    minister_without_portfolio
+			    mwp_youth_organizer
+				dissident_right_minister
+			}
+		}
+	}
+}

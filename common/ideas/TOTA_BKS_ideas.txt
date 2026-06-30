@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+			BKS_fragile_independence = {
+			picture = BKS_fragile_independence
+			allowed = {
+				tag = BKS
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                stability_factor = -0.15
+                war_support_factor = 0.25
+			}
+			targeted_modifier = {
+			    tag = AMB
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}			
+		}
+	}	
+}

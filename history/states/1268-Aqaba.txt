@@ -1,0 +1,25 @@
+
+state={
+	id=1268
+	name="STATE_1268"
+	history={
+		owner = JOR
+		victory_points = {
+			4115 5
+		}
+		buildings = {
+			school = 2
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		add_core_of = JOR
+	}
+	provinces={
+		4017 4115 
+	}
+	manpower=343000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

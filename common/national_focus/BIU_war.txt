@@ -1,0 +1,249 @@
+focus_tree = {
+	id = BIU_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = BIU
+		}
+	}
+	focus = {
+		id = BIU_in_the_life_of_terror
+		icon = GFX_BIU_in_the_life_of_terror
+		x = 5
+		y = 1
+		cost = 1
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = BIU_come_out_collabs
+		icon = GFX_BIU_come_out_ye_collaborators
+		x = 5
+		y = 2
+		cost = 3
+		prerequisite = { focus = BIU_in_the_life_of_terror  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_manpower = -2500
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = BIU_wolves_among_sheep
+		icon = GFX_BIU_the_wolves_among_sheep
+		x = 3
+		y = 3
+		cost = 4
+		prerequisite = { focus = BIU_come_out_collabs  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			24 = {
+				add_resistance = 50
+			}
+			23 = {
+				add_resistance = 90
+			}
+			19 = {
+				add_resistance = 40
+			}
+		}
+	}
+	focus = {
+		id = BIU_violent_reprisals
+		icon = GFX_BIU_violent_reprisals
+		x = 7
+		y = 3
+		cost = 2
+		prerequisite = { focus = BIU_come_out_collabs  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = NGA
+			}
+			add_manpower = -4000
+			add_political_power = -50
+			add_war_support = -0.05
+		}
+	}
+	focus = {
+		id = BIU_total_war
+		icon = GFX_BIU_the_total_war_for_national_salvation
+		x = 5
+		y = 4
+		cost = 1
+		prerequisite = { focus = BIU_violent_reprisals  } prerequisite = { focus = BIU_wolves_among_sheep  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_ideas = war_economy
+			add_ideas = extensive_conscription
+		}
+	}
+	focus = {
+		id = BIU_bootleg
+		icon = GFX_BIU_bootleg_weaponry
+		x = 7
+		y = 5
+		cost = 3
+        available = { BIU = { has_war_with = NGA } }
+		prerequisite = { focus = BIU_total_war  }
+		completion_reward = {
+			country_event = {
+				id = BIA.11
+			}
+		}
+	}
+	focus = {
+		id = BIU_mob_da_population
+		icon = GFX_BIU_mobilize_the_population
+		x = 3
+		y = 5
+		cost = 3
+		prerequisite = { focus = BIU_total_war  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+	focus = {
+		id = BIU_biowar
+		icon = GFX_BIU_biological_warfare
+		x = 5
+		y = 6
+		cost = 1
+		prerequisite = { focus = BIU_mob_da_population  } prerequisite = { focus = BIU_bootleg  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_war_support = -0.20
+			BIA = {
+				add_manpower = -10000
+			}
+		}
+	}
+	focus = {
+		id = BIU_destroy_river
+		icon = GFX_BIU_destroy_rivers
+		x = 3
+		y = 7
+		cost = 2
+		prerequisite = { focus = BIU_biowar  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			country_event = {
+				id = BIA.12
+			}
+		}
+	}
+	focus = {
+		id = BIU_call_for_edo
+		icon = GFX_BIU_call_edo
+		x = 5
+		y = 7
+		cost = 2
+		prerequisite = { focus = BIU_biowar  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			country_event = {
+				id = BIA.13
+			}
+		}
+	}
+	focus = {
+		id = BIU_undo_work
+		icon = GFX_BIU_undo_work
+		x = 5
+		y = 8
+		cost = 1
+		prerequisite = { focus = BIU_call_for_edo  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			21 = {
+				remove_building = {
+					type = school
+					level = 1
+				}
+			}
+			add_manpower = 25000
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = BIU_break_spirit
+		icon = GFX_BIU_break_spirit
+		x = 7
+		y = 7
+		cost = 3
+		prerequisite = { focus = BIU_biowar  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			NGA = {
+				add_stability = -0.15
+			}
+			BIA = {
+				add_stability = -0.20
+			}
+			every_state = {
+				limit = {
+					is_owned_by = NGA
+					is_in_home_area = yes #does this fix it?
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIU_take_their_women
+		icon = GFX_BIU_take_women
+		x = 7
+		y = 8
+		cost = 1
+		prerequisite = { focus = BIU_break_spirit  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = -0.1
+			BIA = {
+				add_manpower = -2000
+			}
+		}
+	}
+	focus = {
+		id = BIU_nigeria_delenda_est
+		icon = GFX_BIU_nigeria_delenda_est
+		x = 3
+		y = 8
+		cost = 2
+		prerequisite = { focus = BIU_destroy_river  }
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+		}
+	}
+	focus = {
+		id = BIU_save_yoruba
+		icon = GFX_BIU_save_yoruba
+		x = 5
+		y = 9
+		cost = 4
+		prerequisite = { focus = BIU_nigeria_delenda_est  } prerequisite = { focus = BIU_take_their_women  } prerequisite = { focus = BIU_undo_work  } 
+        available = { BIU = { has_war_with = NGA } }
+		completion_reward = {
+			BIU = {
+				country_event = {
+					id = BIA.14
+				}
+				add_collaboration = {
+					target = YOR
+					value = 0.3
+				}
+			}
+		}
+	}
+}

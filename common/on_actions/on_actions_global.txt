@@ -1,0 +1,1929 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						has_idea = CCPA
+						is_ai = no
+					}
+				}
+			create_ccpapie_chart = yes
+			adjust_dynmod_vars_ccpa = yes
+			}
+		}
+	}
+	on_daily_ISP = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = { milcoup > 9 }
+					NOT = { 
+						has_active_mission = ISP_hardliner_soyrage
+					}
+				}
+				activate_mission = ISP_hardliner_soyrage
+			}
+			else = {}
+		}
+	}
+	on_monthly = {
+		effect = {
+				log = "gdp_growth_modifier: [modifier@gdp_growth_modifier] REAL_GROWTH: [?REAL_GROWTH] THIS: [GetTag] ROOT: [Root.GetTag]" #modifier@gpd_growth_modifier doesnt actually log correctly, but trust me it works
+				multiply_variable = { REAL_GROWTH = 70 } #changing this to 70 since 30 seems too weak
+				set_variable = { REAL_GROWTH_MODIFIER = modifier@gdp_growth_modifier }
+				divide_variable = { REAL_GROWTH_MODIFIER = 12 } #12 months in a year
+				divide_variable = { REAL_GROWTH = 12 } #12 months in a year
+				add_to_variable = { REAL_GROWTH = REAL_GROWTH_MODIFIER } #i think this one makes sense?
+				log = "REAL_GROWTH_MODIFIER: [REAL_GROWTH_MODIFIER] REAL_GROWTH: [?REAL_GROWTH] THIS: [GetTag] ROOT: [Root.GetTag]" #notation might be wrong
+				random_list = {
+				    25 = {
+				        set_variable = { sey_dealer = JAP }
+				    }
+				    25 = {
+				    set_variable = { sey_dealer = SOV }
+				    }
+				    25 = {
+				        set_variable = { sey_dealer = FRA }
+				    }
+				    25 = {
+				        set_variable = { sey_dealer = AST }
+				    }
+				}
+			if = {
+				limit = {
+					OR = {
+					check_variable = { GDP > 0 }
+					check_variable = { GDP < 0 }
+					}
+				}
+				TOTA_startup_funny_business_ignore_this = yes #economy pulse
+				set_variable = { GDP_trillion = var:GDP }
+				set_variable = { GDP_million = var:GDP }
+				multiply_variable = { GDP_trillion = 0.001 }
+				multiply_variable = { GDP_million = 1000 }
+				set_variable = { DEBT_trillion = var:DEBT }
+				set_variable = { DEBT_million = var:DEBT }
+				multiply_variable = { DEBT_trillion = 0.001 }
+				multiply_variable = { DEBT_million = 1000 }
+				set_variable = { REALGROWTHADD = REAL_GROWTH } #lets see if this works?
+
+				log = "REAL_GROWTH: [?REAL_GROWTH] REALGROWTHADD: [?REALGROWTHADD] THIS: [GetTag]"
+
+				set_variable = { NUMBER_OF_GDP_TO_ADD = GDP } #this takes the GDP before the calculation
+
+				log = "NUMBER_OF_GDP_TO_ADD: [?NUMBER_OF_GDP_TO_ADD] GDP: [?GDP] THIS: [GetTag] ROOT: [Root.GetTag]"
+
+				divide_variable = { REALGROWTHADD = 100 } #?
+
+				multiply_variable = { NUMBER_OF_GDP_TO_ADD = REALGROWTHADD } #fix?
+
+				log = "NUMBER_OF_GDP_TO_ADD: [?NUMBER_OF_GDP_TO_ADD] REALGROWTHADD: [?REALGROWTHADD] THIS: [GetTag] ROOT: [Root.GetTag]"
+
+				add_to_variable = { GDP = NUMBER_OF_GDP_TO_ADD} #boom baby, done
+
+				log = "GDP: [?GDP] NUMBER_OF_GDP_TO_ADD: [?NUMBER_OF_GDP_TO_ADD] THIS: [GetTag] ROOT: [Root.GetTag]"
+
+				multiply_variable = { REAL_GROWTH = 12 } #1 year in 12 months
+				divide_variable = { REAL_GROWTH = 100 }
+
+				clear_variable = NUMBER_OF_GDP_TO_ADD
+				clear_variable = REALGROWTHADD
+
+				#rubber duck debugging time
+
+				#if GDP is 250, and REAL_GROWTH is 2, what do we get
+				#first we take the REAL_GROWTH of 2 and store it in a variable
+				#REALGROWTHADD is now ~0.17, give or take a floating point average
+				#Now take NUMBER_OF_GDP_TO_ADD and make it the GDP variable (trust me)
+				#Now divide REALGROWTHADD by 100, resulting in 0.017
+				#now multiply/divide (unsure) NUMBER_OF_GDP_TO_ADD by 0.017, resulting in 0.425
+				#now add to GDP 0.425, resulting in a 425 million dollar increase in a month to the 250 billion dollar gdp
+				#done, clear vars
+				
+			}
+			else_if = {
+				limit = {
+				check_variable = { GDP = 0 }
+				}
+			}
+			else = {
+				#nothing goes here	
+			}
+		}
+	}	
+	on_weekly = {
+		effect = { #WELCOME TO THE CALCULATOR
+			percentagizer_for_weekly_debt = yes #dw about this
+			set_variable = { SOCTRENDS_DC_CALC = SOCTRENDS_DC }
+			set_variable = { SOCTRENDS_DE_CALC = SOCTRENDS_DE }
+			set_variable = { SOCTRENDS_EE_CALC = SOCTRENDS_EE }
+			set_variable = { SOCTRENDS_TP_CALC = SOCTRENDS_TP }
+			set_variable = { SOCTRENDS_EA_CALC = SOCTRENDS_EA }
+			multiply_variable = { SOCTRENDS_DC_CALC = 2 }
+			multiply_variable = { SOCTRENDS_DE_CALC = 2 }
+			multiply_variable = { SOCTRENDS_EE_CALC = 2 }
+			multiply_variable = { SOCTRENDS_TP_CALC = 2 }
+			multiply_variable = { SOCTRENDS_EA_CALC = 2 }
+			subtract_from_variable = { SOCTRENDS_DC_CALC = 100 }
+			subtract_from_variable = { SOCTRENDS_DE_CALC = 100 }
+			subtract_from_variable = { SOCTRENDS_EE_CALC = 100 }
+			subtract_from_variable = { SOCTRENDS_TP_CALC = 100 }
+			subtract_from_variable = { SOCTRENDS_EA_CALC = 100 } #trust me bro
+			divide_variable = { SOCTRENDS_DC_CALC = 500 }
+			divide_variable = { SOCTRENDS_DE_CALC = 500 }
+			divide_variable = { SOCTRENDS_EE_CALC = 500 }
+			divide_variable = { SOCTRENDS_TP_CALC = 500 }
+			divide_variable = { SOCTRENDS_EA_CALC = 500 }
+			#SOCTRENDS_DC: Affects Stability, Surrender Limit, War Support and Political Power Gain
+			#SOCTRENDS_DE: Affects Political Power Gain, Stability
+			#SOCTRENDS_EE: Affects Stability, GDP Growth, Construction Speed, Monthly Population, Surrender Limit
+			#SOCTRENDS_TP: Affects Stability, GDP Growth, Construction Speed, Monthly Population, Surrender Limit
+			#SOCTRENDS_EA: Affects Unit Speed, Construction Speed, GDP Growth, Stability, Minimum Export, Monthly Population
+			#here comes the fun part
+			add_to_temp_variable = { SOCTRENDS_POOL_STAB = SOCTRENDS_DC_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_STAB = SOCTRENDS_DE_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_STAB = SOCTRENDS_EE_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_STAB = SOCTRENDS_TP_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_STAB = SOCTRENDS_EA_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_SL = SOCTRENDS_DC_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_SL = SOCTRENDS_EE_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_SL = SOCTRENDS_TP_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_WS = SOCTRENDS_DC_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_GDP = SOCTRENDS_EE_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_GDP = SOCTRENDS_TP_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_GDP = SOCTRENDS_EA_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_PPGAIN = SOCTRENDS_DC_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_PPGAIN = SOCTRENDS_DE_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_UNITSPEED = SOCTRENDS_EA_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_CONSTRUCTION_SPEED = SOCTRENDS_EE_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_CONSTRUCTION_SPEED = SOCTRENDS_TP_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_CONSTRUCTION_SPEED = SOCTRENDS_EA_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_MPOP = SOCTRENDS_EE_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_MPOP = SOCTRENDS_TP_CALC }
+			add_to_temp_variable = { SOCTRENDS_POOL_MINEX = SOCTRENDS_EA_CALC }
+			set_variable = { pol_power_calc = SOCTRENDS_POOL_PPGAIN }
+			set_variable = { stability_calc = SOCTRENDS_POOL_STAB }
+			set_variable = { ws_calc = SOCTRENDS_POOL_WS }
+			set_variable = { gdp_mod_calc = SOCTRENDS_POOL_GDP }
+			set_variable = { construc_speed_calc = SOCTRENDS_POOL_CONSTRUCTION_SPEED }
+			set_variable = { monthly_pop_calc = SOCTRENDS_POOL_MPOP }
+			set_variable = { surr_lim_calc = SOCTRENDS_POOL_SL }
+			set_variable = { min_exp_calc = SOCTRENDS_POOL_MINEX }
+			set_variable = { un_speed_calc = SOCTRENDS_POOL_UNITSPEED }
+
+			#FOR PERFORMANCE REASONS, THE SOCTRENDS MISMATCH IS A MONTHLY EFFECT BLOCK, AS OPPOSED TO A WEEKLY BLOCK.
+
+			every_state = {
+				limit = {
+					school > 2 #all states have 2 schools at minimum so this is a good check to keep to avoid bloat
+				}
+				OWNER = {
+					add_to_temp_variable = { skool_count_calc = PREV.building_level@school } #let's say you have three schools
+					subtract_from_temp_variable = { skool_count_calc = 2 } #removes the extra base school count
+					divide_temp_variable = { skool_count_calc = 100 } # this divides them by 100 giving you 0.01
+					set_variable = { res_calc = skool_count_calc }
+				}
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			calculate_soctrends_mismatch = yes
+		}
+	}
+	on_monthly = { #this is an utterly retarded way to do this kind of event by the way, whoever did this should be slapped
+		effect = {
+			#ISP yarmouk
+			if = {
+				limit = {
+					ISP = {
+						has_country_flag = {
+						    flag = ISP_decide_yarmouk_flag
+						    days > 400
+						}
+						NOT = {
+							has_completed_focus = ISP_patriots_in_control
+							has_country_flag = yarmouk_already_happened
+						}
+					}
+				}
+				ISP = {
+					country_event = {
+						id = ISP.3
+						days = 704
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ISP = {
+						has_country_flag = {
+						    flag = ISP_decide_yarmouk_flag
+						    days > 400
+						}
+						has_completed_focus = ISP_patriots_in_control
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					AND = {
+						country_exists = ALQ
+						ALQ = {
+							has_cosmetic_tag= ALQ_in_syria
+							has_war = no
+						}
+						NOT = {
+							ALQ = {
+								owns_state = 1212
+							}
+						}
+					}
+				}
+				ALQ = {
+					declare_war_on = {
+                		target = IRQ
+                		type= annex_everything
+            		}
+					declare_war_on = {
+                		target = IRA
+                		type= annex_everything
+            		}
+					declare_war_on = {
+                		target = TRM
+                		type= annex_everything
+            		}
+					declare_war_on = {
+                		target = KUR
+                		type= annex_everything
+            		}
+					load_oob = "ALQ_2021"
+				}
+			}
+			else = {}
+			#flat state mod
+				THIS =  {
+					every_owned_state = {
+						limit = {
+							has_state_flag = {
+								flag = state_has_manpower_mod_flat
+							}
+						}
+					add_manpower = var:modifier@monthly_state_population_FLAT
+					}
+				}
+				#factor state mod
+				THIS =  {
+					every_owned_state = {
+						limit = {
+							has_state_flag = {
+								flag = state_has_manpower_mod_factor
+							}
+						}
+						multiply_variable = {
+							var = modifier@monthly_state_population_factor
+							value = 100 #?
+						}
+					}
+				}
+				add_to_variable = { SOCTRENDS_DC = modifier@monthly_soctrends_drift_DC_D }
+				add_to_variable = { SOCTRENDS_DC = modifier@monthly_soctrends_drift_DC_C }
+				add_to_variable = { SOCTRENDS_DE = modifier@monthly_soctrends_drift_DE_D }
+				add_to_variable = { SOCTRENDS_DE = modifier@monthly_soctrends_drift_DE_E }
+				add_to_variable = { SOCTRENDS_EE = modifier@monthly_soctrends_drift_EE_E1 }
+				add_to_variable = { SOCTRENDS_EE = modifier@monthly_soctrends_drift_EE_E2 }
+				add_to_variable = { SOCTRENDS_TP = modifier@monthly_soctrends_drift_TP_T }
+				add_to_variable = { SOCTRENDS_TP = modifier@monthly_soctrends_drift_TP_P }
+				add_to_variable = { SOCTRENDS_EA = modifier@monthly_soctrends_drift_EA_E }
+				add_to_variable = { SOCTRENDS_EA = modifier@monthly_soctrends_drift_EA_A }
+				primary_debt_check = yes
+				secondary_debt_check = yes
+				if = {
+					limit = {
+						THIS = {
+							#check_temp_variable = { DEBT > gdp_times_two } #check one
+							check_variable = {
+								var = DEBT
+								value = gdp_times_two
+								compare = greater_than_or_equals
+							}
+							log = "gdp_times_two: [?gdp_times_two] [This.GetTag] DEBT: [?DEBT]"
+							check_variable = { debtcounter = 12 }
+						}
+					}
+				country_event = {
+					id = genericdebt.1
+					days = 1
+				}
+				clear_variable = debtcounter
+				}
+				else = {
+
+				}
+				if = {
+					limit = {
+						THIS = {
+							check_variable = {
+								var = DEBT
+								value = 0
+								compare = less_than
+							}
+							log = "[This.GetTag] DEBT: [?DEBT]"
+						}						
+					}
+					clear_variable = THIS.DEBT
+				}
+				else = {
+				
+				}
+				#primary_debt_check = yes #loop? #TODO: TESTING
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+   			     add_to_array = { global.UN_member = THIS }
+   			     set_country_flag = UN_member
+			}
+			every_country = {
+				generate_soctrends_because_i_cant_be_assed_lol = yes
+				generate_laws_for_non_default = yes
+				calculate_soctrends_mismatch = yes
+			}
+   			 BIA = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+				 set_country_flag = is_un_observer
+   			 }
+   			 NEA = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+				 set_country_flag = is_un_observer
+   			 }
+   			 PHI = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+				 set_country_flag = is_un_observer
+   			 }
+   			 ATI = {
+				remove_from_array = { global.UN_member = THIS }
+				add_to_array = { global.non_UN_member = THIS }
+				clr_country_flag = UN_member
+				}
+   			 AZW = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 KMP = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 LKT = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 BED = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 AMB = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 PRA = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 BKS = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 ADF = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 NCD = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 SDL = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 ALQ = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 IRA = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 TRM = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 KUR = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 MIZ = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 MNI = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 NAG = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 EMR = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 CAL = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 NWF = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 LUR = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 LBT = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 MFD = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 UNS = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     clr_country_flag = UN_member
+				 set_country_flag = is_the_united_nations
+   			 }
+   			 UNH = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     clr_country_flag = UN_member
+				 set_country_flag = is_the_united_nations_hq
+   			 }
+   			 SOM = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }	
+   			 SSD = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 SDE = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }		
+   			 LRA = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }		
+   			 MSK = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+   			 ASM = {
+   			     remove_from_array = { global.UN_member = THIS }
+   			     add_to_array = { global.non_UN_member = THIS }
+   			     clr_country_flag = UN_member
+   			 }
+			 GUN = {
+				puppet = LUR
+			 }		 
+			 #####DIVISION SYSTEM#####
+			# if = {
+			#	limit = {
+			#		has_game_rule = { rule = TOTA_allow_units option = yes }
+			#	}
+			#	#dont do anything
+			# }
+			# else_if = {
+			#	limit = {
+			#		has_game_rule = { rule = TOTA_allow_units option = no }
+			#	}
+			#	every_country = {
+			#		limit = {
+			#			NOT = { tag = SEY }
+			#		}
+			#		country_lock_all_division_template = yes
+			#		set_country_flag = TAG_decisions_for_mobilization
+			#	}
+			# }
+			#deprecated
+		}
+	}
+	on_startup = {
+		effect = {
+			ISP = {
+				country_event = {
+					id = ISP.1999
+					days = 242
+				}
+				country_event = {
+					id = ISP.2000
+					days = 199
+				}
+			}
+			every_country = {
+			make_every_country_with_an_ideology_have_the_right_econ_system = yes
+			commonwealth_members = yes
+			set_variable = { SOCTRENDS_DC_DISPLAY = SOCTRENDS_DC }
+			set_variable = { SOCTRENDS_DE_DISPLAY = SOCTRENDS_DE }
+			set_variable = { SOCTRENDS_EE_DISPLAY = SOCTRENDS_EE }
+			set_variable = { SOCTRENDS_TP_DISPLAY = SOCTRENDS_TP }
+			set_variable = { SOCTRENDS_EA_DISPLAY = SOCTRENDS_EA }
+			countries_with_specific_econ_systems = yes
+			add_ideas = remove_faction_bullshit #i forgor what this does :3
+			add_dynamic_modifier = { modifier = soctrends_mod }
+			add_dynamic_modifier = { modifier = soctrends_law_mismatch_mod }
+			add_dynamic_modifier = { modifier = school_mod }
+			}
+			ALK = {
+				country_event = {
+				id = USADEBUG.1
+				days = 215
+				}
+			}
+			every_country = {
+				limit = {
+					has_idea = commonwealth
+				}
+				add_to_array = {
+				    array = global.commonwealth_members_array
+				    value = v
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.139
+					days = 104
+				}
+			}
+			
+
+		add_to_variable = { 1.intreach = 75 }
+		add_to_variable = { 10.intreach = 85 }
+		add_to_variable = { 100.intreach = 20 }
+		add_to_variable = { 101.intreach = 65 }
+		add_to_variable = { 102.intreach = 15 }
+		add_to_variable = { 103.intreach = 30 }
+		add_to_variable = { 104.intreach = 85 }
+		add_to_variable = { 105.intreach = 85 }
+		add_to_variable = { 106.intreach = 100 }
+		add_to_variable = { 107.intreach = 65 }
+		add_to_variable = { 108.intreach = 90 }
+		add_to_variable = { 109.intreach = 55 }
+		add_to_variable = { 11.intreach = 93 }
+		add_to_variable = { 110.intreach = 54 }
+		add_to_variable = { 111.intreach = 4 }
+		add_to_variable = { 112.intreach = 4 }
+		add_to_variable = { 113.intreach = 20 }
+		add_to_variable = { 114.intreach = 25 }
+		add_to_variable = { 115.intreach = 40 }
+		add_to_variable = { 116.intreach = 25 }
+		add_to_variable = { 117.intreach = 12 }
+		add_to_variable = { 118.intreach = 25 }
+		add_to_variable = { 119.intreach = 35 }
+		add_to_variable = { 12.intreach = 45 }
+		add_to_variable = { 120.intreach = 2 }
+		add_to_variable = { 121.intreach = 99 }
+		add_to_variable = { 122.intreach = 75 }
+		add_to_variable = { 123.intreach = 85 }
+		add_to_variable = { 124.intreach = 90 }
+		add_to_variable = { 125.intreach = 95 }
+		add_to_variable = { 126.intreach = 95 }
+		add_to_variable = { 127.intreach = 30 }
+		add_to_variable = { 128.intreach = 1 }
+		add_to_variable = { 129.intreach = 20 }
+		add_to_variable = { 13.intreach = 97 }
+		add_to_variable = { 130.intreach = 80 }
+		add_to_variable = { 131.intreach = 90 }
+		add_to_variable = { 132.intreach = 85 }
+		add_to_variable = { 133.intreach = 89 }
+		add_to_variable = { 134.intreach = 90 }
+		add_to_variable = { 135.intreach = 85 }
+		add_to_variable = { 136.intreach = 90 }
+		add_to_variable = { 137.intreach = 90 }
+		add_to_variable = { 138.intreach = 90 }
+		add_to_variable = { 139.intreach = 95 }
+		add_to_variable = { 14.intreach = 89 }
+		add_to_variable = { 140.intreach = 60 }
+		add_to_variable = { 141.intreach = 85 }
+		add_to_variable = { 142.intreach = 95 }
+		add_to_variable = { 143.intreach = 95 }
+		add_to_variable = { 144.intreach = 85 }
+		add_to_variable = { 145.intreach = 15 }
+		add_to_variable = { 146.intreach = 65 }
+		add_to_variable = { 147.intreach = 75 }
+		add_to_variable = { 148.intreach = 40 }
+		add_to_variable = { 149.intreach = 20 }
+		add_to_variable = { 15.intreach = 95 }
+		add_to_variable = { 150.intreach = 80 }
+		add_to_variable = { 689.intreach = 95 }
+		add_to_variable = { 151.intreach = 75 }
+		add_to_variable = { 152.intreach = 65 }
+		add_to_variable = { 153.intreach = 45 }
+		add_to_variable = { 154.intreach = 60 }
+		add_to_variable = { 155.intreach = 95 }
+		add_to_variable = { 156.intreach = 65 }
+		add_to_variable = { 157.intreach = 68 }
+		add_to_variable = { 158.intreach = 80 }
+		add_to_variable = { 159.intreach = 55 }
+		add_to_variable = { 16.intreach = 91 }
+		add_to_variable = { 160.intreach = 51 }
+		add_to_variable = { 161.intreach = 35 }
+		add_to_variable = { 162.intreach = 75 }
+		add_to_variable = { 163.intreach = 40 }
+		add_to_variable = { 164.intreach = 65 }
+		add_to_variable = { 165.intreach = 99 }
+		add_to_variable = { 166.intreach = 70 }
+		add_to_variable = { 167.intreach = 95 }
+		add_to_variable = { 168.intreach = 75 }
+		add_to_variable = { 169.intreach = 70 }
+		add_to_variable = { 17.intreach = 92 }
+		add_to_variable = { 170.intreach = 65 }
+		add_to_variable = { 171.intreach = 75 }
+		add_to_variable = { 172.intreach = 55 }
+		add_to_variable = { 173.intreach = 25 }
+		add_to_variable = { 174.intreach = 77 }
+		add_to_variable = { 175.intreach = 45 }
+		add_to_variable = { 176.intreach = 5 }
+		add_to_variable = { 177.intreach = 10 }
+		add_to_variable = { 178.intreach = 70 }
+		add_to_variable = { 179.intreach = 100 }
+		add_to_variable = { 18.intreach = 93 }
+		add_to_variable = { 180.intreach = 85 }
+		add_to_variable = { 181.intreach = 40 }
+		add_to_variable = { 182.intreach = 51 }
+		add_to_variable = { 183.intreach = 75 }
+		add_to_variable = { 184.intreach = 45 }
+		add_to_variable = { 185.intreach = 75 }
+		add_to_variable = { 186.intreach = 51 }
+		add_to_variable = { 187.intreach = 80 }
+		add_to_variable = { 188.intreach = 93 }
+		add_to_variable = { 189.intreach = 95 }
+		add_to_variable = { 19.intreach = 28 }
+		add_to_variable = { 190.intreach = 75 }
+		add_to_variable = { 191.intreach = 70 }
+		add_to_variable = { 192.intreach = 80 }
+		add_to_variable = { 193.intreach = 60 }
+		add_to_variable = { 194.intreach = 70 }
+		add_to_variable = { 195.intreach = 30 }
+		add_to_variable = { 196.intreach = 70 }
+		add_to_variable = { 197.intreach = 40 }
+		add_to_variable = { 198.intreach = 45 }
+		add_to_variable = { 199.intreach = 85 }
+		add_to_variable = { 2.intreach = 95 }
+		add_to_variable = { 20.intreach = 2 }
+		add_to_variable = { 200.intreach = 90 }
+		add_to_variable = { 201.intreach = 95 }
+		add_to_variable = { 202.intreach = 75 }
+		add_to_variable = { 203.intreach = 99 }
+		add_to_variable = { 204.intreach = 99 }
+		add_to_variable = { 205.intreach = 99 }
+		add_to_variable = { 206.intreach = 99 }
+		add_to_variable = { 207.intreach = 95 }
+		add_to_variable = { 208.intreach = 95 }
+		add_to_variable = { 209.intreach = 95 }
+		add_to_variable = { 21.intreach = 35 }
+		add_to_variable = { 210.intreach = 95 }
+		add_to_variable = { 211.intreach = 80 }
+		add_to_variable = { 212.intreach = 75 }
+		add_to_variable = { 213.intreach = 100 }
+		add_to_variable = { 214.intreach = 100 }
+		add_to_variable = { 215.intreach = 100 }
+		add_to_variable = { 216.intreach = 85 }
+		add_to_variable = { 217.intreach = 75 }
+		add_to_variable = { 218.intreach = 100 }
+		add_to_variable = { 219.intreach = 75 }
+		add_to_variable = { 22.intreach = 84 }
+		add_to_variable = { 220.intreach = 60 }
+		add_to_variable = { 221.intreach = 67 }
+		add_to_variable = { 222.intreach = 51 }
+		add_to_variable = { 223.intreach = 45 }
+		add_to_variable = { 224.intreach = 60 }
+		add_to_variable = { 225.intreach = 51 }
+		add_to_variable = { 226.intreach = 65 }
+		add_to_variable = { 227.intreach = 40 }
+		add_to_variable = { 228.intreach = 75 }
+		add_to_variable = { 229.intreach = 55 }
+		add_to_variable = { 23.intreach = 62 }
+		add_to_variable = { 230.intreach = 65 }
+		add_to_variable = { 231.intreach = 85 }
+		add_to_variable = { 232.intreach = 65 }
+		add_to_variable = { 233.intreach = 62 }
+		add_to_variable = { 234.intreach = 70 }
+		add_to_variable = { 235.intreach = 85 }
+		add_to_variable = { 236.intreach = 90 }
+		add_to_variable = { 237.intreach = 95 }
+		add_to_variable = { 238.intreach = 75 }
+		add_to_variable = { 239.intreach = 100 }
+		add_to_variable = { 24.intreach = 3 }
+		add_to_variable = { 240.intreach = 80 }
+		add_to_variable = { 241.intreach = 75 }
+		add_to_variable = { 242.intreach = 90 }
+		add_to_variable = { 243.intreach = 90 }
+		add_to_variable = { 244.intreach = 90 }
+		add_to_variable = { 245.intreach = 95 }
+		add_to_variable = { 246.intreach = 85 }
+		add_to_variable = { 247.intreach = 75 }
+		add_to_variable = { 248.intreach = 90 }
+		add_to_variable = { 249.intreach = 52 }
+		add_to_variable = { 25.intreach = 12 }
+		add_to_variable = { 250.intreach = 70 }
+		add_to_variable = { 251.intreach = 89 }
+		add_to_variable = { 252.intreach = 95 }
+		add_to_variable = { 253.intreach = 90 }
+		add_to_variable = { 254.intreach = 90 }
+		add_to_variable = { 255.intreach = 85 }
+		add_to_variable = { 256.intreach = 95 }
+		add_to_variable = { 257.intreach = 95 }
+		add_to_variable = { 258.intreach = 85 }
+		add_to_variable = { 259.intreach = 74 }
+		add_to_variable = { 26.intreach = 10 }
+		add_to_variable = { 260.intreach = 100 }
+		add_to_variable = { 261.intreach = 80 }
+		add_to_variable = { 262.intreach = 65 }
+		add_to_variable = { 263.intreach = 98 }
+		add_to_variable = { 264.intreach = 80 }
+		add_to_variable = { 265.intreach = 85 }
+		add_to_variable = { 266.intreach = 99 }
+		add_to_variable = { 267.intreach = 75 }
+		add_to_variable = { 268.intreach = 90 }
+		add_to_variable = { 269.intreach = 42 }
+		add_to_variable = { 27.intreach = 70 }
+		add_to_variable = { 270.intreach = 52 }
+		add_to_variable = { 271.intreach = 80 }
+		add_to_variable = { 272.intreach = 60 }
+		add_to_variable = { 273.intreach = 75 }
+		add_to_variable = { 274.intreach = 65 }
+		add_to_variable = { 275.intreach = 100 }
+		add_to_variable = { 276.intreach = 85 }
+		add_to_variable = { 277.intreach = 65 }
+		add_to_variable = { 278.intreach = 55 }
+		add_to_variable = { 279.intreach = 77 }
+		add_to_variable = { 28.intreach = 8 }
+		add_to_variable = { 280.intreach = 40 }
+		add_to_variable = { 281.intreach = 40 }
+		add_to_variable = { 282.intreach = 35 }
+		add_to_variable = { 283.intreach = 40 }
+		add_to_variable = { 284.intreach = 50 }
+		add_to_variable = { 285.intreach = 80 }
+		add_to_variable = { 286.intreach = 25 }
+		add_to_variable = { 287.intreach = 75 }
+		add_to_variable = { 288.intreach = 20 }
+		add_to_variable = { 289.intreach = 75 }
+		add_to_variable = { 29.intreach = 5 }
+		add_to_variable = { 290.intreach = 75 }
+		add_to_variable = { 291.intreach = 30 }
+		add_to_variable = { 292.intreach = 80 }
+		add_to_variable = { 293.intreach = 90 }
+		add_to_variable = { 294.intreach = 60 }
+		add_to_variable = { 295.intreach = 85 }
+		add_to_variable = { 296.intreach = 85 }
+		add_to_variable = { 297.intreach = 30 }
+		add_to_variable = { 298.intreach = 10 }
+		add_to_variable = { 299.intreach = 65 }
+		add_to_variable = { 3.intreach = 85 }
+		add_to_variable = { 30.intreach = 15 }
+		add_to_variable = { 300.intreach = 2 }
+		add_to_variable = { 301.intreach = 15 }
+		add_to_variable = { 302.intreach = 1 }
+		add_to_variable = { 303.intreach = 20 }
+		add_to_variable = { 304.intreach = 5 }
+		add_to_variable = { 305.intreach = 12 }
+		add_to_variable = { 306.intreach = 2 }
+		add_to_variable = { 307.intreach = 5 }
+		add_to_variable = { 308.intreach = 45 }
+		add_to_variable = { 309.intreach = 65 }
+		add_to_variable = { 31.intreach = 15 }
+		add_to_variable = { 310.intreach = 45 }
+		add_to_variable = { 311.intreach = 40 }
+		add_to_variable = { 312.intreach = 60 }
+		add_to_variable = { 313.intreach = 60 }
+		add_to_variable = { 314.intreach = 40 }
+		add_to_variable = { 315.intreach = 55 }
+		add_to_variable = { 316.intreach = 80 }
+		add_to_variable = { 317.intreach = 50 }
+		add_to_variable = { 318.intreach = 45 }
+		add_to_variable = { 319.intreach = 100 }
+		add_to_variable = { 32.intreach = 10 }
+		add_to_variable = { 320.intreach = 15 }
+		add_to_variable = { 321.intreach = 5 }
+		add_to_variable = { 322.intreach = 45 }
+		add_to_variable = { 323.intreach = 40 }
+		add_to_variable = { 324.intreach = 30 }
+		add_to_variable = { 325.intreach = 15 }
+		add_to_variable = { 326.intreach = 10 }
+		add_to_variable = { 327.intreach = 30 }
+		add_to_variable = { 328.intreach = 90 }
+		add_to_variable = { 329.intreach = 90 }
+		add_to_variable = { 33.intreach = 6 }
+		add_to_variable = { 330.intreach = 85 }
+		add_to_variable = { 331.intreach = 60 }
+		add_to_variable = { 332.intreach = 40 }
+		add_to_variable = { 333.intreach = 90 }
+		add_to_variable = { 334.intreach = 60 }
+		add_to_variable = { 335.intreach = 40 }
+		add_to_variable = { 336.intreach = 40 }
+		add_to_variable = { 337.intreach = 40 }
+		add_to_variable = { 338.intreach = 25 }
+		add_to_variable = { 339.intreach = 10 }
+		add_to_variable = { 34.intreach = 15 }
+		add_to_variable = { 340.intreach = 55 }
+		add_to_variable = { 341.intreach = 35 }
+		add_to_variable = { 342.intreach = 60 }
+		add_to_variable = { 343.intreach = 10 }
+		add_to_variable = { 344.intreach = 15 }
+		add_to_variable = { 345.intreach = 75 }
+		add_to_variable = { 346.intreach = 80 }
+		add_to_variable = { 347.intreach = 70 }
+		add_to_variable = { 348.intreach = 75 }
+		add_to_variable = { 349.intreach = 85 }
+		add_to_variable = { 35.intreach = 10 }
+		add_to_variable = { 350.intreach = 60 }
+		add_to_variable = { 351.intreach = 60 }
+		add_to_variable = { 352.intreach = 60 }
+		add_to_variable = { 353.intreach = 65 }
+		add_to_variable = { 354.intreach = 65 }
+		add_to_variable = { 355.intreach = 20 }
+		add_to_variable = { 356.intreach = 10 }
+		add_to_variable = { 357.intreach = 20 }
+		add_to_variable = { 358.intreach = 10 }
+		add_to_variable = { 359.intreach = 10 }
+		add_to_variable = { 36.intreach = 15 }
+		add_to_variable = { 360.intreach = 99 }
+		add_to_variable = { 361.intreach = 65 }
+		add_to_variable = { 362.intreach = 2 }
+		add_to_variable = { 363.intreach = 5 }
+		add_to_variable = { 364.intreach = 3 }
+		add_to_variable = { 365.intreach = 15 }
+		add_to_variable = { 366.intreach = 20 }
+		add_to_variable = { 367.intreach = 15 }
+		add_to_variable = { 368.intreach = 85 }
+		add_to_variable = { 369.intreach = 65 }
+		add_to_variable = { 37.intreach = 3 }
+		add_to_variable = { 370.intreach = 75 }
+		add_to_variable = { 371.intreach = 15 }
+		add_to_variable = { 372.intreach = 25 }
+		add_to_variable = { 373.intreach = 15 }
+		add_to_variable = { 374.intreach = 5 }
+		add_to_variable = { 375.intreach = 1 }
+		add_to_variable = { 376.intreach = 1 }
+		add_to_variable = { 377.intreach = 70 }
+		add_to_variable = { 378.intreach = 15 }
+		add_to_variable = { 379.intreach = 5 }
+		add_to_variable = { 38.intreach = 1 }
+		add_to_variable = { 380.intreach = 2 }
+		add_to_variable = { 381.intreach = 30 }
+		add_to_variable = { 382.intreach = 35 }
+		add_to_variable = { 383.intreach = 25 }
+		add_to_variable = { 384.intreach = 75 }
+		add_to_variable = { 385.intreach = 40 }
+		add_to_variable = { 386.intreach = 15 }
+		add_to_variable = { 387.intreach = 20 }
+		add_to_variable = { 388.intreach = 85 }
+		add_to_variable = { 389.intreach = 15 }
+		add_to_variable = { 39.intreach = 5 }
+		add_to_variable = { 390.intreach = 11 }
+		add_to_variable = { 391.intreach = 24 }
+		add_to_variable = { 392.intreach = 5 }
+		add_to_variable = { 393.intreach = 89 }
+		add_to_variable = { 394.intreach = 100 }
+		add_to_variable = { 395.intreach = 54 }
+		add_to_variable = { 396.intreach = 20 }
+		add_to_variable = { 397.intreach = 100 }
+		add_to_variable = { 398.intreach = 100 }
+		add_to_variable = { 399.intreach = 100 }
+		add_to_variable = { 4.intreach = 99 }
+		add_to_variable = { 40.intreach = 61 }
+		add_to_variable = { 400.intreach = 100 }
+		add_to_variable = { 401.intreach = 100 }
+		add_to_variable = { 402.intreach = 100 }
+		add_to_variable = { 403.intreach = 100 }
+		add_to_variable = { 404.intreach = 100 }
+		add_to_variable = { 405.intreach = 100 }
+		add_to_variable = { 406.intreach = 85 }
+		add_to_variable = { 407.intreach = 65 }
+		add_to_variable = { 408.intreach = 10 }
+		add_to_variable = { 409.intreach = 65 }
+		add_to_variable = { 41.intreach = 16 }
+		add_to_variable = { 410.intreach = 85 }
+		add_to_variable = { 411.intreach = 100 }
+		add_to_variable = { 412.intreach = 100 }
+		add_to_variable = { 413.intreach = 65 }
+		add_to_variable = { 414.intreach = 85 }
+		add_to_variable = { 415.intreach = 30 }
+		add_to_variable = { 416.intreach = 40 }
+		add_to_variable = { 417.intreach = 100 }
+		add_to_variable = { 418.intreach = 25 }
+		add_to_variable = { 419.intreach = 100 }
+		add_to_variable = { 42.intreach = 3 }
+		add_to_variable = { 420.intreach = 75 }
+		add_to_variable = { 421.intreach = 90 }
+		add_to_variable = { 422.intreach = 85 }
+		add_to_variable = { 423.intreach = 95 }
+		add_to_variable = { 424.intreach = 100 }
+		add_to_variable = { 425.intreach = 100 }
+		add_to_variable = { 426.intreach = 100 }
+		add_to_variable = { 427.intreach = 100 }
+		add_to_variable = { 428.intreach = 100 }
+		add_to_variable = { 429.intreach = 100 }
+		add_to_variable = { 43.intreach = 10 }
+		add_to_variable = { 430.intreach = 75 }
+		add_to_variable = { 431.intreach = 100 }
+		add_to_variable = { 432.intreach = 100 }
+		add_to_variable = { 433.intreach = 95 }
+		add_to_variable = { 434.intreach = 100 }
+		add_to_variable = { 435.intreach = 70 }
+		add_to_variable = { 436.intreach = 100 }
+		add_to_variable = { 437.intreach = 100 }
+		add_to_variable = { 438.intreach = 89 }
+		add_to_variable = { 439.intreach = 80 }
+		add_to_variable = { 44.intreach = 100 }
+		add_to_variable = { 440.intreach = 90 }
+		add_to_variable = { 441.intreach = 80 }
+		add_to_variable = { 442.intreach = 99 }
+		add_to_variable = { 443.intreach = 100 }
+		add_to_variable = { 444.intreach = 98 }
+		add_to_variable = { 445.intreach = 10 }
+		add_to_variable = { 446.intreach = 12 }
+		add_to_variable = { 447.intreach = 51 }
+		add_to_variable = { 448.intreach = 100 }
+		add_to_variable = { 449.intreach = 100 }
+		add_to_variable = { 45.intreach = 40 }
+		add_to_variable = { 450.intreach = 25 }
+		add_to_variable = { 451.intreach = 5 }
+		add_to_variable = { 452.intreach = 66 }
+		add_to_variable = { 453.intreach = 65 }
+		add_to_variable = { 454.intreach = 70 }
+		add_to_variable = { 455.intreach = 90 }
+		add_to_variable = { 456.intreach = 45 }
+		add_to_variable = { 457.intreach = 10 }
+		add_to_variable = { 458.intreach = 60 }
+		add_to_variable = { 459.intreach = 40 }
+		add_to_variable = { 46.intreach = 5 }
+		add_to_variable = { 460.intreach = 1 }
+		add_to_variable = { 461.intreach = 10 }
+		add_to_variable = { 462.intreach = 85 }
+		add_to_variable = { 463.intreach = 80 }
+		add_to_variable = { 464.intreach = 55 }
+		add_to_variable = { 465.intreach = 85 }
+		add_to_variable = { 466.intreach = 40 }
+		add_to_variable = { 467.intreach = 25 }
+		add_to_variable = { 468.intreach = 10 }
+		add_to_variable = { 469.intreach = 2 }
+		add_to_variable = { 47.intreach = 0 }
+		add_to_variable = { 470.intreach = 100 }
+		add_to_variable = { 471.intreach = 15 }
+		add_to_variable = { 472.intreach = 2 }
+		add_to_variable = { 473.intreach = 100 }
+		add_to_variable = { 474.intreach = 50 }
+		add_to_variable = { 475.intreach = 1 }
+		add_to_variable = { 476.intreach = 80 }
+		add_to_variable = { 477.intreach = 97 }
+		add_to_variable = { 478.intreach = 50 }
+		add_to_variable = { 479.intreach = 85 }
+		add_to_variable = { 48.intreach = 0 }
+		add_to_variable = { 480.intreach = 1 }
+		add_to_variable = { 481.intreach = 5 }
+		add_to_variable = { 482.intreach = 5 }
+		add_to_variable = { 483.intreach = 0 }
+		add_to_variable = { 484.intreach = 30 }
+		add_to_variable = { 485.intreach = 1 }
+		add_to_variable = { 486.intreach = 90 }
+		add_to_variable = { 487.intreach = 70 }
+		add_to_variable = { 488.intreach = 90 }
+		add_to_variable = { 489.intreach = 95 }
+		add_to_variable = { 49.intreach = 0 }
+		add_to_variable = { 490.intreach = 1 }
+		add_to_variable = { 491.intreach = 60 }
+		add_to_variable = { 492.intreach = 100 }
+		add_to_variable = { 493.intreach = 95 }
+		add_to_variable = { 494.intreach = 90 }
+		add_to_variable = { 495.intreach = 85 }
+		add_to_variable = { 496.intreach = 80 }
+		add_to_variable = { 497.intreach = 25 }
+		add_to_variable = { 498.intreach = 80 }
+		add_to_variable = { 499.intreach = 75 }
+		add_to_variable = { 5.intreach = 99 }
+		add_to_variable = { 50.intreach = 0 }
+		add_to_variable = { 500.intreach = 65 }
+		add_to_variable = { 501.intreach = 50 }
+		add_to_variable = { 502.intreach = 70 }
+		add_to_variable = { 503.intreach = 35 }
+		add_to_variable = { 504.intreach = 30 }
+		add_to_variable = { 505.intreach = 85 }
+		add_to_variable = { 506.intreach = 70 }
+		add_to_variable = { 507.intreach = 95 }
+		add_to_variable = { 508.intreach = 100 }
+		add_to_variable = { 509.intreach = 80 }
+		add_to_variable = { 51.intreach = 0 }
+		add_to_variable = { 510.intreach = 85 }
+		add_to_variable = { 511.intreach = 40 }
+		add_to_variable = { 512.intreach = 55 }
+		add_to_variable = { 513.intreach = 40 }
+		add_to_variable = { 514.intreach = 100 }
+		add_to_variable = { 515.intreach = 90 }
+		add_to_variable = { 516.intreach = 99 }
+		add_to_variable = { 517.intreach = 95 }
+		add_to_variable = { 518.intreach = 90 }
+		add_to_variable = { 519.intreach = 95 }
+		add_to_variable = { 52.intreach = 5 }
+		add_to_variable = { 520.intreach = 50 }
+		add_to_variable = { 521.intreach = 25 }
+		add_to_variable = { 522.intreach = 45 }
+		add_to_variable = { 523.intreach = 70 }
+		add_to_variable = { 524.intreach = 90 }
+		add_to_variable = { 525.intreach = 20 }
+		add_to_variable = { 526.intreach = 51 }
+		add_to_variable = { 527.intreach = 40 }
+		add_to_variable = { 528.intreach = 99 }
+		add_to_variable = { 529.intreach = 85 }
+		add_to_variable = { 53.intreach = 60 }
+		add_to_variable = { 530.intreach = 99 }
+		add_to_variable = { 531.intreach = 100 }
+		add_to_variable = { 532.intreach = 100 }
+		add_to_variable = { 533.intreach = 90 }
+		add_to_variable = { 534.intreach = 100 }
+		add_to_variable = { 535.intreach = 90 }
+		add_to_variable = { 536.intreach = 90 }
+		add_to_variable = { 537.intreach = 90 }
+		add_to_variable = { 538.intreach = 99 }
+		add_to_variable = { 539.intreach = 99 }
+		add_to_variable = { 54.intreach = 10 }
+		add_to_variable = { 540.intreach = 85 }
+		add_to_variable = { 541.intreach = 90 }
+		add_to_variable = { 542.intreach = 90 }
+		add_to_variable = { 543.intreach = 89 }
+		add_to_variable = { 544.intreach = 89 }
+		add_to_variable = { 545.intreach = 98 }
+		add_to_variable = { 546.intreach = 90 }
+		add_to_variable = { 547.intreach = 90 }
+		add_to_variable = { 548.intreach = 89 }
+		add_to_variable = { 549.intreach = 98 }
+		add_to_variable = { 55.intreach = 30 }
+		add_to_variable = { 550.intreach = 95 }
+		add_to_variable = { 551.intreach = 98 }
+		add_to_variable = { 552.intreach = 89 }
+		add_to_variable = { 553.intreach = 90 }
+		add_to_variable = { 554.intreach = 85 }
+		add_to_variable = { 555.intreach = 90 }
+		add_to_variable = { 556.intreach = 85 }
+		add_to_variable = { 557.intreach = 85 }
+		add_to_variable = { 558.intreach = 95 }
+		add_to_variable = { 559.intreach = 98 }
+		add_to_variable = { 56.intreach = 5 }
+		add_to_variable = { 560.intreach = 81 }
+		add_to_variable = { 561.intreach = 79 }
+		add_to_variable = { 562.intreach = 75 }
+		add_to_variable = { 563.intreach = 78 }
+		add_to_variable = { 564.intreach = 95 }
+		add_to_variable = { 565.intreach = 90 }
+		add_to_variable = { 566.intreach = 95 }
+		add_to_variable = { 567.intreach = 90 }
+		add_to_variable = { 568.intreach = 100 }
+		add_to_variable = { 569.intreach = 95 }
+		add_to_variable = { 57.intreach = 1 }
+		add_to_variable = { 570.intreach = 93 }
+		add_to_variable = { 571.intreach = 10 }
+		add_to_variable = { 572.intreach = 100 }
+		add_to_variable = { 573.intreach = 80 }
+		add_to_variable = { 574.intreach = 89 }
+		add_to_variable = { 575.intreach = 100 }
+		add_to_variable = { 576.intreach = 100 }
+		add_to_variable = { 577.intreach = 100 }
+		add_to_variable = { 578.intreach = 100 }
+		add_to_variable = { 579.intreach = 100 }
+		add_to_variable = { 58.intreach = 6 }
+		add_to_variable = { 580.intreach = 85 }
+		add_to_variable = { 581.intreach = 40 }
+		add_to_variable = { 582.intreach = 10 }
+		add_to_variable = { 583.intreach = 51 }
+		add_to_variable = { 584.intreach = 70 }
+		add_to_variable = { 585.intreach = 85 }
+		add_to_variable = { 586.intreach = 65 }
+		add_to_variable = { 587.intreach = 85 }
+		add_to_variable = { 588.intreach = 52 }
+		add_to_variable = { 589.intreach = 65 }
+		add_to_variable = { 59.intreach = 65 }
+		add_to_variable = { 590.intreach = 85 }
+		add_to_variable = { 591.intreach = 55 }
+		add_to_variable = { 592.intreach = 55 }
+		add_to_variable = { 593.intreach = 85 }
+		add_to_variable = { 594.intreach = 10 }
+		add_to_variable = { 595.intreach = 40 }
+		add_to_variable = { 596.intreach = 10 }
+		add_to_variable = { 597.intreach = 35 }
+		add_to_variable = { 598.intreach = 40 }
+		add_to_variable = { 599.intreach = 25 }
+		add_to_variable = { 6.intreach = 99 }
+		add_to_variable = { 60.intreach = 5 }
+		add_to_variable = { 600.intreach = 10 }
+		add_to_variable = { 601.intreach = 99 }
+		add_to_variable = { 602.intreach = 99 }
+		add_to_variable = { 603.intreach = 100 }
+		add_to_variable = { 604.intreach = 89 }
+		add_to_variable = { 605.intreach = 85 }
+		add_to_variable = { 606.intreach = 85 }
+		add_to_variable = { 607.intreach = 40 }
+		add_to_variable = { 608.intreach = 85 }
+		add_to_variable = { 609.intreach = 100 }
+		add_to_variable = { 61.intreach = 1 }
+		add_to_variable = { 610.intreach = 100 }
+		add_to_variable = { 611.intreach = 100 }
+		add_to_variable = { 612.intreach = 80 }
+		add_to_variable = { 613.intreach = 95 }
+		add_to_variable = { 614.intreach = 90 }
+		add_to_variable = { 615.intreach = 89 }
+		add_to_variable = { 616.intreach = 100 }
+		add_to_variable = { 617.intreach = 85 }
+		add_to_variable = { 618.intreach = 40 }
+		add_to_variable = { 619.intreach = 100 }
+		add_to_variable = { 62.intreach = 1 }
+		add_to_variable = { 620.intreach = 2 }
+		add_to_variable = { 621.intreach = 3 }
+		add_to_variable = { 622.intreach = 75 }
+		add_to_variable = { 623.intreach = 100 }
+		add_to_variable = { 624.intreach = 100 }
+		add_to_variable = { 625.intreach = 100 }
+		add_to_variable = { 626.intreach = 65 }
+		add_to_variable = { 627.intreach = 89 }
+		add_to_variable = { 628.intreach = 100 }
+		add_to_variable = { 629.intreach = 85 }
+		add_to_variable = { 63.intreach = 4 }
+		add_to_variable = { 630.intreach = 100 }
+		add_to_variable = { 631.intreach = 10 }
+		add_to_variable = { 632.intreach = 65 }
+		add_to_variable = { 633.intreach = 3 }
+		add_to_variable = { 634.intreach = 70 }
+		add_to_variable = { 635.intreach = 70 }
+		add_to_variable = { 636.intreach = 75 }
+		add_to_variable = { 637.intreach = 100 }
+		add_to_variable = { 638.intreach = 30 }
+		add_to_variable = { 639.intreach = 80 }
+		add_to_variable = { 64.intreach = 100 }
+		add_to_variable = { 640.intreach = 70 }
+		add_to_variable = { 641.intreach = 100 }
+		add_to_variable = { 642.intreach = 85 }
+		add_to_variable = { 643.intreach = 98 }
+		add_to_variable = { 644.intreach = 85 }
+		add_to_variable = { 645.intreach = 40 }
+		add_to_variable = { 646.intreach = 90 }
+		add_to_variable = { 647.intreach = 90 }
+		add_to_variable = { 648.intreach = 90 }
+		add_to_variable = { 649.intreach = 89 }
+		add_to_variable = { 65.intreach = 100 }
+		add_to_variable = { 650.intreach = 95 }
+		add_to_variable = { 651.intreach = 90 }
+		add_to_variable = { 652.intreach = 90 }
+		add_to_variable = { 653.intreach = 70 }
+		add_to_variable = { 654.intreach = 60 }
+		add_to_variable = { 655.intreach = 99 }
+		add_to_variable = { 656.intreach = 85 }
+		add_to_variable = { 657.intreach = 45 }
+		add_to_variable = { 658.intreach = 65 }
+		add_to_variable = { 659.intreach = 95 }
+		add_to_variable = { 66.intreach = 100 }
+		add_to_variable = { 660.intreach = 25 }
+		add_to_variable = { 661.intreach = 50 }
+		add_to_variable = { 662.intreach = 90 }
+		add_to_variable = { 663.intreach = 100 }
+		add_to_variable = { 664.intreach = 100 }
+		add_to_variable = { 665.intreach = 100 }
+		add_to_variable = { 666.intreach = 100 }
+		add_to_variable = { 667.intreach = 12 }
+		add_to_variable = { 668.intreach = 85 }
+		add_to_variable = { 669.intreach = 65 }
+		add_to_variable = { 67.intreach = 100 }
+		add_to_variable = { 670.intreach = 100 }
+		add_to_variable = { 671.intreach = 40 }
+		add_to_variable = { 672.intreach = 75 }
+		add_to_variable = { 673.intreach = 45 }
+		add_to_variable = { 674.intreach = 25 }
+		add_to_variable = { 675.intreach = 75 }
+		add_to_variable = { 676.intreach = 85 }
+		add_to_variable = { 677.intreach = 75 }
+		add_to_variable = { 678.intreach = 75 }
+		add_to_variable = { 679.intreach = 45 }
+		add_to_variable = { 68.intreach = 100 }
+		add_to_variable = { 680.intreach = 100 }
+		add_to_variable = { 681.intreach = 60 }
+		add_to_variable = { 682.intreach = 90 }
+		add_to_variable = { 683.intreach = 95 }
+		add_to_variable = { 684.intreach = 100 }
+		add_to_variable = { 685.intreach = 100 }
+		add_to_variable = { 686.intreach = 20 }
+		add_to_variable = { 687.intreach = 75 }
+		add_to_variable = { 688.intreach = 85 }
+		add_to_variable = { 691.intreach = 15 }
+		add_to_variable = { 690.intreach = 5 }
+		add_to_variable = { 692.intreach = 15 }
+		add_to_variable = { 693.intreach = 45 }
+		add_to_variable = { 694.intreach = 15 }
+		add_to_variable = { 695.intreach = 45 }
+		add_to_variable = { 696.intreach = 45 }
+		add_to_variable = { 699.intreach = 98 }
+		add_to_variable = { 69.intreach = 98 }
+		add_to_variable = { 700.intreach = 98 }
+		add_to_variable = { 701.intreach = 80 }
+		add_to_variable = { 702.intreach = 60 }
+		add_to_variable = { 703.intreach = 65 }
+		add_to_variable = { 704.intreach = 75 }
+		add_to_variable = { 705.intreach = 65 }
+		add_to_variable = { 706.intreach = 76 }
+		add_to_variable = { 707.intreach = 73 }
+		add_to_variable = { 708.intreach = 82 }
+		add_to_variable = { 709.intreach = 65 }
+		add_to_variable = { 710.intreach = 89 }
+		add_to_variable = { 711.intreach = 60 }
+		add_to_variable = { 712.intreach = 75 }
+		add_to_variable = { 713.intreach = 76 }
+		add_to_variable = { 714.intreach = 90 }
+		add_to_variable = { 715.intreach = 56 }
+		add_to_variable = { 716.intreach = 65 }
+		add_to_variable = { 717.intreach = 70 }
+		add_to_variable = { 718.intreach = 73 }
+		add_to_variable = { 719.intreach = 80 }
+		add_to_variable = { 720.intreach = 79 }
+		add_to_variable = { 721.intreach = 55 }
+		add_to_variable = { 722.intreach = 65 }
+		add_to_variable = { 723.intreach = 95 }
+		add_to_variable = { 724.intreach = 75 }
+		add_to_variable = { 725.intreach = 95 }
+		add_to_variable = { 726.intreach = 95 }
+		add_to_variable = { 727.intreach = 85 }
+		add_to_variable = { 728.intreach = 100 }
+		add_to_variable = { 729.intreach = 85 }
+		add_to_variable = { 730.intreach = 100 }
+		add_to_variable = { 731.intreach = 100 }
+		add_to_variable = { 732.intreach = 90 }
+		add_to_variable = { 733.intreach = 90 }
+		add_to_variable = { 734.intreach = 90 }
+		add_to_variable = { 735.intreach = 90 }
+		add_to_variable = { 736.intreach = 90 }
+		add_to_variable = { 737.intreach = 90 }
+		add_to_variable = { 738.intreach = 90 }
+		add_to_variable = { 739.intreach = 90 }
+		add_to_variable = { 740.intreach = 90 }
+		add_to_variable = { 741.intreach = 90 }
+		add_to_variable = { 742.intreach = 90 }
+		add_to_variable = { 743.intreach = 90 }
+		add_to_variable = { 744.intreach = 90 }
+		add_to_variable = { 745.intreach = 90 }
+		add_to_variable = { 746.intreach = 90 }
+		add_to_variable = { 747.intreach = 90 }
+		add_to_variable = { 748.intreach = 90 }
+		add_to_variable = { 749.intreach = 90 }
+		add_to_variable = { 750.intreach = 90 }
+		add_to_variable = { 751.intreach = 90 }
+		add_to_variable = { 752.intreach = 90 }
+		add_to_variable = { 753.intreach = 90 }
+		add_to_variable = { 754.intreach = 90 }
+		add_to_variable = { 755.intreach = 90 }
+		add_to_variable = { 756.intreach = 90 }
+		add_to_variable = { 757.intreach = 90 }
+		add_to_variable = { 758.intreach = 90 }
+		add_to_variable = { 759.intreach = 90 }
+		add_to_variable = { 760.intreach = 90 }
+		add_to_variable = { 761.intreach = 90 }
+		add_to_variable = { 762.intreach = 90 }
+		add_to_variable = { 763.intreach = 90 }
+		add_to_variable = { 764.intreach = 90 }
+		add_to_variable = { 765.intreach = 90 }
+		add_to_variable = { 766.intreach = 90 }
+		add_to_variable = { 767.intreach = 90 }
+		add_to_variable = { 768.intreach = 90 }
+		add_to_variable = { 769.intreach = 90 }
+		add_to_variable = { 770.intreach = 90 }
+		add_to_variable = { 771.intreach = 90 }
+		add_to_variable = { 772.intreach = 90 }
+		add_to_variable = { 773.intreach = 90 }
+		add_to_variable = { 774.intreach = 90 }
+		add_to_variable = { 775.intreach = 90 }
+		add_to_variable = { 776.intreach = 90 }
+		add_to_variable = { 777.intreach = 90 }
+		add_to_variable = { 778.intreach = 90 }
+		add_to_variable = { 779.intreach = 90 }
+		add_to_variable = { 780.intreach = 90 }
+		add_to_variable = { 781.intreach = 90 }
+		add_to_variable = { 782.intreach = 90 }
+		add_to_variable = { 783.intreach = 90 }
+		add_to_variable = { 784.intreach = 90 }
+		add_to_variable = { 785.intreach = 90 }
+		add_to_variable = { 786.intreach = 90 }
+		add_to_variable = { 787.intreach = 90 }
+		add_to_variable = { 788.intreach = 90 }
+		add_to_variable = { 789.intreach = 90 }
+		add_to_variable = { 790.intreach = 90 }
+		add_to_variable = { 791.intreach = 90 }
+		add_to_variable = { 792.intreach = 90 }
+		add_to_variable = { 793.intreach = 90 }
+		add_to_variable = { 794.intreach = 90 }
+		add_to_variable = { 795.intreach = 90 }
+		add_to_variable = { 796.intreach = 90 }
+		add_to_variable = { 797.intreach = 90 }
+		add_to_variable = { 798.intreach = 90 }
+		add_to_variable = { 799.intreach = 90 }
+		add_to_variable = { 800.intreach = 90 }
+		add_to_variable = { 801.intreach = 90 }
+		add_to_variable = { 7.intreach = 100 }
+		add_to_variable = { 70.intreach = 75 }
+		add_to_variable = { 71.intreach = 100 }
+		add_to_variable = { 72.intreach = 100 }
+		add_to_variable = { 73.intreach = 60 }
+		add_to_variable = { 74.intreach = 99 }
+		add_to_variable = { 75.intreach = 99 }
+		add_to_variable = { 76.intreach = 99 }
+		add_to_variable = { 77.intreach = 100 }
+		add_to_variable = { 78.intreach = 99 }
+		add_to_variable = { 79.intreach = 99 }
+		add_to_variable = { 8.intreach = 80 }
+		add_to_variable = { 80.intreach = 100 }
+		add_to_variable = { 81.intreach = 10 }
+		add_to_variable = { 82.intreach = 30 }
+		add_to_variable = { 83.intreach = 5 }
+		add_to_variable = { 84.intreach = 65 }
+		add_to_variable = { 85.intreach = 70 }
+		add_to_variable = { 86.intreach = 100 }
+		add_to_variable = { 87.intreach = 75 }
+		add_to_variable = { 88.intreach = 85 }
+		add_to_variable = { 89.intreach = 40 }
+		add_to_variable = { 9.intreach = 79 }
+		add_to_variable = { 90.intreach = 60 }
+		add_to_variable = { 91.intreach = 35 }
+		add_to_variable = { 92.intreach = 15 }
+		add_to_variable = { 93.intreach = 75 }
+		add_to_variable = { 94.intreach = 30 }
+		add_to_variable = { 95.intreach = 90 }
+		add_to_variable = { 96.intreach = 100 }
+		add_to_variable = { 97.intreach = 100 }
+		add_to_variable = { 98.intreach = 100 }
+		add_to_variable = { 99.intreach = 80 }
+		add_to_variable = { 802.intreach = 1 }
+		add_to_variable = { 803.intreach = 1 }
+		add_to_variable = { 804.intreach = 90 }
+		add_to_variable = { 805.intreach = 99 }
+		add_to_variable = { 806.intreach = 90 }
+		add_to_variable = { 807.intreach = 95 }
+		add_to_variable = { 808.intreach = 99 }
+		add_to_variable = { 809.intreach = 99 }
+		add_to_variable = { 810.intreach = 40 }
+		add_to_variable = { 811.intreach = 35 }
+		add_to_variable = { 812.intreach = 75 }
+		add_to_variable = { 813.intreach = 75 }
+		add_to_variable = { 814.intreach = 65 }
+		add_to_variable = { 815.intreach = 90 }
+		add_to_variable = { 816.intreach = 90 }
+		add_to_variable = { 817.intreach = 80 }
+		add_to_variable = { 818.intreach = 80 }
+		add_to_variable = { 819.intreach = 90 }
+		add_to_variable = { 820.intreach = 25 }
+		add_to_variable = { 821.intreach = 25 }
+		add_to_variable = { 822.intreach = 30 }
+		add_to_variable = { 823.intreach = 40 }
+		add_to_variable = { 824.intreach = 35 }
+		add_to_variable = { 825.intreach = 45 }
+		add_to_variable = { 826.intreach = 65 }
+		add_to_variable = { 827.intreach = 65 }
+		add_to_variable = { 828.intreach = 45 }
+		add_to_variable = { 829.intreach = 65 }
+		add_to_variable = { 830.intreach = 54 }
+		add_to_variable = { 831.intreach = 60 }
+		add_to_variable = { 832.intreach = 45 }
+		add_to_variable = { 833.intreach = 45 }
+		add_to_variable = { 834.intreach = 65 }
+		add_to_variable = { 835.intreach = 55 }
+		add_to_variable = { 836.intreach = 40 }
+		add_to_variable = { 837.intreach = 40 }
+		add_to_variable = { 838.intreach = 60 }
+		add_to_variable = { 839.intreach = 20 }
+		add_to_variable = { 840.intreach = 45 }
+		add_to_variable = { 841.intreach = 35 }
+		add_to_variable = { 842.intreach = 40 }
+		add_to_variable = { 843.intreach = 25 }
+		add_to_variable = { 844.intreach = 25 }
+		add_to_variable = { 845.intreach = 25 }
+		add_to_variable = { 846.intreach = 25 }
+		add_to_variable = { 847.intreach = 65 }
+		add_to_variable = { 848.intreach = 56 }
+		add_to_variable = { 849.intreach = 65 }
+		add_to_variable = { 850.intreach = 60 }
+		add_to_variable = { 851.intreach = 75 }
+		add_to_variable = { 852.intreach = 95 }
+		add_to_variable = { 853.intreach = 90 }
+		add_to_variable = { 854.intreach = 95 }
+		add_to_variable = { 855.intreach = 85 }
+		add_to_variable = { 856.intreach = 85 }
+		add_to_variable = { 857.intreach = 85 }
+		add_to_variable = { 858.intreach = 85 }
+		add_to_variable = { 859.intreach = 5 }
+		add_to_variable = { 860.intreach = 4 }
+		add_to_variable = { 861.intreach = 59 }
+		add_to_variable = { 862.intreach = 9 }
+		add_to_variable = { 863.intreach = 15 }
+		add_to_variable = { 864.intreach = 20 }
+		add_to_variable = { 865.intreach = 5 }
+		add_to_variable = { 866.intreach = 8 }
+		add_to_variable = { 867.intreach = 5 }
+		add_to_variable = { 868.intreach = 25 }
+		add_to_variable = { 869.intreach = 10 }
+		add_to_variable = { 870.intreach = 90 }
+		add_to_variable = { 871.intreach = 30 }
+		add_to_variable = { 872.intreach = 10 }
+		add_to_variable = { 873.intreach = 5 }
+		add_to_variable = { 874.intreach = 15 }
+		add_to_variable = { 875.intreach = 10 }
+		add_to_variable = { 876.intreach = 10 }
+		add_to_variable = { 877.intreach = 60 }
+		add_to_variable = { 878.intreach = 40 }
+		add_to_variable = { 879.intreach = 55 }
+		add_to_variable = { 880.intreach = 1 }
+		add_to_variable = { 881.intreach = 5 }
+		add_to_variable = { 882.intreach = 90 }
+		add_to_variable = { 883.intreach = 65 }
+		add_to_variable = { 884.intreach = 60 }
+		add_to_variable = { 885.intreach = 70 }
+		add_to_variable = { 886.intreach = 65 }
+		add_to_variable = { 887.intreach = 65 }
+		add_to_variable = { 888.intreach = 99 }
+		add_to_variable = { 889.intreach = 45 }
+		add_to_variable = { 890.intreach = 80 }
+		add_to_variable = { 891.intreach = 45 }
+		add_to_variable = { 892.intreach = 10 }
+		add_to_variable = { 893.intreach = 35 }
+		add_to_variable = { 894.intreach = 65 }
+		add_to_variable = { 895.intreach = 70 }
+		add_to_variable = { 896.intreach = 45 }
+		add_to_variable = { 897.intreach = 25 }
+		add_to_variable = { 898.intreach = 20 }
+		add_to_variable = { 899.intreach = 60 }
+		add_to_variable = { 900.intreach = 25 }
+		add_to_variable = { 901.intreach = 25 }
+		add_to_variable = { 902.intreach = 50 }
+		add_to_variable = { 903.intreach = 24 }
+		add_to_variable = { 904.intreach = 42 }
+		add_to_variable = { 905.intreach = 65 }
+		add_to_variable = { 906.intreach = 25 }
+		add_to_variable = { 907.intreach = 90 }
+		add_to_variable = { 908.intreach = 65 }
+		add_to_variable = { 909.intreach = 45 }
+		add_to_variable = { 910.intreach = 10 }
+		add_to_variable = { 911.intreach = 15 }
+		add_to_variable = { 912.intreach = 35 }
+		add_to_variable = { 913.intreach = 85 }
+		add_to_variable = { 914.intreach = 55 }
+		add_to_variable = { 915.intreach = 75 }
+		add_to_variable = { 916.intreach = 70 }
+		add_to_variable = { 917.intreach = 95 }
+		add_to_variable = { 918.intreach = 90 }
+		add_to_variable = { 919.intreach = 15 }
+		add_to_variable = { 920.intreach = 5 }
+		add_to_variable = { 921.intreach = 25 }
+		add_to_variable = { 922.intreach = 25 }
+		add_to_variable = { 923.intreach = 35 }
+		add_to_variable = { 924.intreach = 10 }
+		add_to_variable = { 925.intreach = 55 }
+		add_to_variable = { 926.intreach = 20 }
+		add_to_variable = { 927.intreach = 15 }
+		add_to_variable = { 928.intreach = 20 }
+		add_to_variable = { 929.intreach = 65 }
+		add_to_variable = { 930.intreach = 90 }
+		add_to_variable = { 931.intreach = 4 }
+		add_to_variable = { 932.intreach = 4 }
+		add_to_variable = { 933.intreach = 4 }
+		add_to_variable = { 934.intreach = 4 }
+		add_to_variable = { 935.intreach = 34 }
+		add_to_variable = { 936.intreach = 35 }
+		add_to_variable = { 937.intreach = 75 }
+		add_to_variable = { 938.intreach = 74 }
+		add_to_variable = { 939.intreach = 76 }
+		add_to_variable = { 940.intreach = 78 }
+		add_to_variable = { 941.intreach = 71 }
+		add_to_variable = { 942.intreach = 72 }
+		add_to_variable = { 943.intreach = 75 }
+		add_to_variable = { 944.intreach = 70 }
+		add_to_variable = { 945.intreach = 62 }
+		add_to_variable = { 946.intreach = 71 }
+		add_to_variable = { 947.intreach = 69 }
+		add_to_variable = { 948.intreach = 66 }
+		add_to_variable = { 949.intreach = 67 }
+		add_to_variable = { 950.intreach = 68 }
+		add_to_variable = { 951.intreach = 45 }
+		add_to_variable = { 952.intreach = 45 }
+		add_to_variable = { 953.intreach = 72 }
+		add_to_variable = { 954.intreach = 65 }
+		add_to_variable = { 955.intreach = 72 }
+		add_to_variable = { 956.intreach = 70 }
+		add_to_variable = { 957.intreach = 75 }
+		add_to_variable = { 958.intreach = 60 }
+		add_to_variable = { 959.intreach = 70 }
+		add_to_variable = { 960.intreach = 40 }
+		add_to_variable = { 961.intreach = 99 }
+		add_to_variable = { 962.intreach = 99 }
+		add_to_variable = { 963.intreach = 99 }
+		add_to_variable = { 964.intreach = 2 }
+		add_to_variable = { 965.intreach = 10 }
+		add_to_variable = { 966.intreach = 32 }
+		add_to_variable = { 967.intreach = 8 }
+		add_to_variable = { 968.intreach = 26 }
+		add_to_variable = { 969.intreach = 15 }
+		add_to_variable = { 970.intreach = 99 }
+		add_to_variable = { 971.intreach = 1 }
+		add_to_variable = { 972.intreach = 99 }
+		add_to_variable = { 973.intreach = 99 }
+		add_to_variable = { 974.intreach = 99 }
+		add_to_variable = { 975.intreach = 85 }
+		add_to_variable = { 976.intreach = 99 }
+		add_to_variable = { 977.intreach = 99 }
+		add_to_variable = { 978.intreach = 99 }
+		add_to_variable = { 979.intreach = 50 }
+		add_to_variable = { 980.intreach = 25 }
+		add_to_variable = { 981.intreach = 45 }
+		add_to_variable = { 982.intreach = 45 }
+		add_to_variable = { 983.intreach = 10 }
+		add_to_variable = { 984.intreach = 20 }
+		add_to_variable = { 985.intreach = 90 }
+		add_to_variable = { 986.intreach = 99 }
+		add_to_variable = { 987.intreach = 90 }
+		add_to_variable = { 988.intreach = 90 }
+		add_to_variable = { 989.intreach = 90 }
+		add_to_variable = { 990.intreach = 90 }
+		add_to_variable = { 991.intreach = 90 }
+		add_to_variable = { 992.intreach = 99 }
+		add_to_variable = { 993.intreach = 99 }
+		add_to_variable = { 994.intreach = 99 }
+		add_to_variable = { 995.intreach = 99 }
+		add_to_variable = { 996.intreach = 85 }
+		add_to_variable = { 997.intreach = 99 }
+		add_to_variable = { 998.intreach = 99 }
+		add_to_variable = { 999.intreach = 99 }
+		add_to_variable = { 1000.intreach = 95 }
+		add_to_variable = { 1001.intreach = 95 }
+		add_to_variable = { 1002.intreach = 95 }
+		add_to_variable = { 1003.intreach = 95 }
+		add_to_variable = { 1004.intreach = 95 }
+		add_to_variable = { 1005.intreach = 95 }
+		add_to_variable = { 1006.intreach = 95 }
+		add_to_variable = { 1007.intreach = 95 }
+		add_to_variable = { 1008.intreach = 95 }
+		add_to_variable = { 1009.intreach = 95 }
+		add_to_variable = { 1010.intreach = 95 }
+		add_to_variable = { 1011.intreach = 95 }
+		add_to_variable = { 1012.intreach = 95 }
+		add_to_variable = { 1013.intreach = 95 }
+		add_to_variable = { 1014.intreach = 95 }
+		add_to_variable = { 1015.intreach = 95 }
+		add_to_variable = { 1016.intreach = 95 }
+		add_to_variable = { 1017.intreach = 86 }
+		add_to_variable = { 1018.intreach = 99 }
+		add_to_variable = { 1019.intreach = 99 }
+		add_to_variable = { 1020.intreach = 99 }
+		add_to_variable = { 1021.intreach = 99 }
+		add_to_variable = { 1022.intreach = 99 }
+		add_to_variable = { 1023.intreach = 99 }
+		add_to_variable = { 1024.intreach = 99 }
+		add_to_variable = { 1025.intreach = 99 }
+		add_to_variable = { 1026.intreach = 99 }
+		add_to_variable = { 1027.intreach = 99 }
+		add_to_variable = { 1028.intreach = 99 }
+		add_to_variable = { 1029.intreach = 99 }
+		add_to_variable = { 1030.intreach = 99 }
+		add_to_variable = { 1031.intreach = 99 }
+		add_to_variable = { 1032.intreach = 99 }
+		add_to_variable = { 1033.intreach = 99 }
+		add_to_variable = { 1034.intreach = 99 }
+		add_to_variable = { 1035.intreach = 99 }
+		add_to_variable = { 1036.intreach = 99 }
+		add_to_variable = { 1037.intreach = 99 }
+		add_to_variable = { 1038.intreach = 99 }
+		add_to_variable = { 1039.intreach = 99 }
+		add_to_variable = { 1040.intreach = 99}
+		add_to_variable = { 1041.intreach = 99 }
+		add_to_variable = { 1042.intreach = 99 }
+		add_to_variable = { 1043.intreach = 99}
+		add_to_variable = { 1044.intreach = 99 }
+		add_to_variable = { 1045.intreach = 99 }
+		add_to_variable = { 1046.intreach = 99 }
+		add_to_variable = { 1047.intreach = 99}
+		add_to_variable = { 1048.intreach = 99 }
+		add_to_variable = { 1049.intreach = 99 }
+		add_to_variable = { 1050.intreach = 99 }
+		add_to_variable = { 1051.intreach = 99 }
+		add_to_variable = { 1052.intreach = 99 }
+		add_to_variable = { 1053.intreach = 99 }
+		add_to_variable = { 1054.intreach = 99 }
+		add_to_variable = { 1055.intreach = 99 }
+		add_to_variable = { 1056.intreach = 80 }
+		add_to_variable = { 1057.intreach = 65 }
+		add_to_variable = { 1058.intreach = 49 }
+		add_to_variable = { 1059.intreach = 51 }
+		add_to_variable = { 1060.intreach = 51 }
+		add_to_variable = { 1061.intreach = 40 }
+		add_to_variable = { 1062.intreach = 65 }
+		add_to_variable = { 1063.intreach = 89 }
+		add_to_variable = { 1064.intreach = 10 }
+		add_to_variable = { 1065.intreach = 20 }
+		add_to_variable = { 1066.intreach = 10 }
+		add_to_variable = { 1067.intreach = 80 }
+		add_to_variable = { 1068.intreach = 20 }
+		add_to_variable = { 1069.intreach = 80 }
+		add_to_variable = { 1070.intreach = 20 }
+		add_to_variable = { 1071.intreach = 15 }
+		add_to_variable = { 1072.intreach = 10 }
+		add_to_variable = { 1073.intreach = 10 }
+		add_to_variable = { 1074.intreach = 10 }
+		add_to_variable = { 1075.intreach = 90 }
+		add_to_variable = { 1076.intreach = 95 }
+		add_to_variable = { 1077.intreach = 10 }
+		add_to_variable = { 1078.intreach = 95 }
+		add_to_variable = { 1079.intreach = 2 }
+		add_to_variable = { 1080.intreach = 2 }
+		add_to_variable = { 1081.intreach = 1 }
+		add_to_variable = { 1082.intreach = 5 }
+		add_to_variable = { 1083.intreach = 40 }
+		add_to_variable = { 1084.intreach = 30 }
+		add_to_variable = { 1085.intreach = 25 }
+		add_to_variable = { 1086.intreach = 30 }
+		add_to_variable = { 1087.intreach = 30 }
+		add_to_variable = { 1088.intreach = 80 }
+		add_to_variable = { 1089.intreach = 20 }
+		add_to_variable = { 1090.intreach = 99 }
+		add_to_variable = { 1091.intreach = 50 }
+		add_to_variable = { 1092.intreach = 40 }
+		add_to_variable = { 1093.intreach = 20 }
+		add_to_variable = { 1094.intreach = 10 }
+		add_to_variable = { 1095.intreach = 10 }
+		add_to_variable = { 1096.intreach = 20 }
+		add_to_variable = { 1097.intreach = 25 }
+		add_to_variable = { 1098.intreach = 25 }
+		add_to_variable = { 1099.intreach = 25 }
+		add_to_variable = { 1100.intreach = 25 }
+		add_to_variable = { 1101.intreach = 50 }
+		add_to_variable = { 1102.intreach = 60 }
+		add_to_variable = { 1103.intreach = 40 }
+		add_to_variable = { 1104.intreach = 30 }
+		add_to_variable = { 1105.intreach = 50 }
+		add_to_variable = { 1106.intreach = 50 }
+		add_to_variable = { 1107.intreach = 50 }
+		add_to_variable = { 1108.intreach = 50 }
+		add_to_variable = { 1109.intreach = 30 }
+		add_to_variable = { 1110.intreach = 40 }
+		add_to_variable = { 1111.intreach = 40 }
+		add_to_variable = { 1112.intreach = 20 }
+		add_to_variable = { 1113.intreach = 60 }
+		add_to_variable = { 1114.intreach = 99 }
+		add_to_variable = { 1115.intreach = 20 }
+		add_to_variable = { 1116.intreach = 20 }
+		add_to_variable = { 1117.intreach = 20 }
+		add_to_variable = { 1118.intreach = 50 }
+		add_to_variable = { 1119.intreach = 40 }
+		add_to_variable = { 1120.intreach = 30 }
+		add_to_variable = { 1121.intreach = 30 }
+		add_to_variable = { 1122.intreach = 30 }
+		add_to_variable = { 1123.intreach = 35 }
+		add_to_variable = { 1124.intreach = 60 }
+		add_to_variable = { 1125.intreach = 54 }
+		add_to_variable = { 1126.intreach = 20 }
+		add_to_variable = { 1127.intreach = 99 }
+		add_to_variable = { 1128.intreach = 95 }
+		add_to_variable = { 1129.intreach = 95 }
+		add_to_variable = { 1130.intreach = 95 }
+		add_to_variable = { 1132.intreach = 95 }
+		add_to_variable = { 1133.intreach = 95 }
+		add_to_variable = { 1134.intreach = 95 }
+		add_to_variable = { 1135.intreach = 95 }
+		add_to_variable = { 1136.intreach = 95 }
+		add_to_variable = { 1137.intreach = 95 }
+		add_to_variable = { 1138.intreach = 95 }
+		add_to_variable = { 1131.intreach = 95 }
+		add_to_variable = { 1139.intreach = 95 }
+		add_to_variable = { 1140.intreach = 95 }
+		add_to_variable = { 1141.intreach = 95 }
+		add_to_variable = { 1142.intreach = 95 }
+		add_to_variable = { 1143.intreach = 95 }
+		add_to_variable = { 1144.intreach = 95 }
+		add_to_variable = { 1145.intreach = 86 }
+		add_to_variable = { 1146.intreach = 99 }
+		add_to_variable = { 1147.intreach = 99 }
+		add_to_variable = { 1148.intreach = 99 }
+		add_to_variable = { 1149.intreach = 99 }
+		add_to_variable = { 1150.intreach = 99 }
+		add_to_variable = { 1151.intreach = 99 }
+		add_to_variable = { 1152.intreach = 99 }
+		add_to_variable = { 1153.intreach = 99 }
+		add_to_variable = { 1154.intreach = 99 }
+		add_to_variable = { 1155.intreach = 99 }
+		add_to_variable = { 1156.intreach = 99 }
+		add_to_variable = { 1157.intreach = 99 }
+		add_to_variable = { 1158.intreach = 99 }
+		add_to_variable = { 1159.intreach = 99 }
+		add_to_variable = { 1160.intreach = 99 }
+		add_to_variable = { 1161.intreach = 99 }
+		add_to_variable = { 1162.intreach = 99 }
+		add_to_variable = { 1163.intreach = 99 }
+		add_to_variable = { 1164.intreach = 99 }
+		add_to_variable = { 1165.intreach = 99 }
+		add_to_variable = { 1166.intreach = 99 }
+		add_to_variable = { 1167.intreach = 99 }
+		add_to_variable = { 1168.intreach = 10 }
+		add_to_variable = { 1169.intreach = 10 }
+		add_to_variable = { 1170.intreach = 10 }
+		add_to_variable = { 1171.intreach = 10 }
+		add_to_variable = { 1172.intreach = 10 }
+		add_to_variable = { 1173.intreach = 10 }
+		add_to_variable = { 1174.intreach = 10 }
+		add_to_variable = { 1175.intreach = 10 }
+		add_to_variable = { 1176.intreach = 10 }
+		add_to_variable = { 1177.intreach = 10 }
+		add_to_variable = { 1178.intreach = 10 }
+		add_to_variable = { 1179.intreach = 10 }
+		add_to_variable = { 1180.intreach = 60 }
+		add_to_variable = { 1181.intreach = 20 }
+		add_to_variable = { 1182.intreach = 10 }
+		add_to_variable = { 1183.intreach = 10 }
+		add_to_variable = { 1184.intreach = 10 }
+		add_to_variable = { 1185.intreach = 10 }
+		add_to_variable = { 1186.intreach = 90 }
+		add_to_variable = { 1187.intreach = 10 }
+		add_to_variable = { 1188.intreach = 10 }
+		add_to_variable = { 1189.intreach = 10 }
+		add_to_variable = { 1190.intreach = 10 }
+		add_to_variable = { 1191.intreach = 10 }
+		add_to_variable = { 1192.intreach = 10 }
+		add_to_variable = { 1193.intreach = 10 }
+		add_to_variable = { 1194.intreach = 10 }
+		add_to_variable = { 1195.intreach = 10 }
+		add_to_variable = { 1196.intreach = 10 }
+		add_to_variable = { 1197.intreach = 10 }
+		add_to_variable = { 1198.intreach = 10 }
+		add_to_variable = { 1199.intreach = 10 }
+		add_to_variable = { 1200.intreach = 10 }
+		add_to_variable = { 1201.intreach = 10 }
+		add_to_variable = { 1203.intreach = 10 }
+		add_to_variable = { 1204.intreach = 10 }
+		add_to_variable = { 1205.intreach = 10 }
+		add_to_variable = { 1206.intreach = 10 }
+		add_to_variable = { 1207.intreach = 10 }
+		add_to_variable = { 1208.intreach = 25 }
+		add_to_variable = { 1209.intreach = 99 }
+		add_to_variable = { 1210.intreach = 99 }
+		add_to_variable = { 1211.intreach = 51 }
+		add_to_variable = { 1212.intreach = 87 }		
+		add_to_variable = { 1213.intreach = 51 }
+		add_to_variable = { 1214.intreach = 51 }	
+		add_to_variable = { 1215.intreach = 51 }
+		add_to_variable = { 1216.intreach = 51 }	
+		add_to_variable = { 1217.intreach = 99 }
+		add_to_variable = { 1218.intreach = 66 }
+		add_to_variable = { 1219.intreach = 66 }
+		add_to_variable = { 1220.intreach = 66 }
+		add_to_variable = { 1221.intreach = 66 }
+		add_to_variable = { 1222.intreach = 66 }	
+		add_to_variable = { 1223.intreach = 51 }	
+		add_to_variable = { 1224.intreach = 99 }
+		add_to_variable = { 1225.intreach = 25 }
+		add_to_variable = { 1226.intreach = 40 }
+		add_to_variable = { 1227.intreach = 30 }
+		add_to_variable = { 1228.intreach = 66 }
+		add_to_variable = { 1229.intreach = 66 }
+		add_to_variable = { 1230.intreach = 30 }
+		add_to_variable = { 1231.intreach = 20 }
+		add_to_variable = { 1232.intreach = 20 }
+		add_to_variable = { 1233.intreach = 20 }
+		add_to_variable = { 1234.intreach = 25 }
+		add_to_variable = { 1235.intreach = 80 }
+		add_to_variable = { 1236.intreach = 20 }
+		add_to_variable = { 1237.intreach = 20 }
+		add_to_variable = { 1238.intreach = 20 }
+		add_to_variable = { 1239.intreach = 100 }
+		add_to_variable = { 1262.intreach = 60 }
+		add_to_variable = { 1263.intreach = 65 }
+		add_to_variable = { 1264.intreach = 10 }
+		add_to_variable = { 1265.intreach = 80 }
+		add_to_variable = { 1266.intreach = 80 }
+		add_to_variable = { 1267.intreach = 20 }
+		add_to_variable = { 1268.intreach = 60 }
+		add_to_variable = { 1269.intreach = 55 }
+		add_to_variable = { 1255.intreach = 85 }
+		add_to_variable = { 1274.intreach = 95 }
+		add_to_variable = { 1275.intreach = 98 }
+		add_to_variable = { 1276.intreach = 98 }
+		add_to_variable = { 1270.intreach = 80 }
+		add_to_variable = { 1271.intreach = 98 }
+		add_to_variable = { 1272.intreach = 98 }
+		add_to_variable = { 1273.intreach = 99 }
+		add_to_variable = { 1277.intreach = 99 }
+		add_to_variable = { 1278.intreach = 98 }
+		add_to_variable = { 1279.intreach = 95 }
+		add_to_variable = { 1280.intreach = 95 }
+		add_to_variable = { 1281.intreach = 98 }
+		add_to_variable = { 1282.intreach = 95 }
+		add_to_variable = { 1283.intreach = 20}
+		add_to_variable = { 1284.intreach = 55}
+		add_to_variable = { 1285.intreach = 55}
+		add_to_variable = { 1286.intreach = 55}
+		add_to_variable = { 1287.intreach = 55}
+		add_to_variable = { 1288.intreach = 55}
+		add_to_variable = { 1289.intreach = 55}
+		add_to_variable = { 1290.intreach = 55}
+		add_to_variable = { 1291.intreach = 55}
+		add_to_variable = { 1292.intreach = 55}
+		add_to_variable = { 1293.intreach = 55}
+		add_to_variable = { 1294.intreach = 55}
+		add_to_variable = { 1295.intreach = 55}
+		add_to_variable = { 1296.intreach = 55}
+		add_to_variable = { 1297.intreach = 55}
+		add_to_variable = { 1298.intreach = 55}
+		add_to_variable = { 1299.intreach = 55}
+		add_to_variable = { 1300.intreach = 55}
+		add_to_variable = { 1301.intreach = 55}
+		add_to_variable = { 1302.intreach = 55}
+		add_to_variable = { 1303.intreach = 55}
+		add_to_variable = { 1304.intreach = 55}
+		add_to_variable = { 1305.intreach = 55}
+		add_to_variable = { 1306.intreach = 55}
+		add_to_variable = { 1307.intreach = 55}
+		add_to_variable = { 1308.intreach = 55}
+		add_to_variable = { 1309.intreach = 55}
+		add_to_variable = { 1310.intreach = 55}
+		add_to_variable = { 1311.intreach = 55}
+		add_to_variable = { 1312.intreach = 55}
+		add_to_variable = { 1313.intreach = 55}
+		add_to_variable = { 1314.intreach = 55}
+		add_to_variable = { 1315.intreach = 55}
+		add_to_variable = { 1316.intreach = 55}
+		add_to_variable = { 1317.intreach = 55}
+		add_to_variable = { 1318.intreach = 55}
+		add_to_variable = { 1319.intreach = 55}
+		add_to_variable = { 1320.intreach = 55}
+		add_to_variable = { 1321.intreach = 55}
+		add_to_variable = { 1322.intreach = 55}
+		add_to_variable = { 1323.intreach = 55}
+		add_to_variable = { 1324.intreach = 55}
+		add_to_variable = { 1325.intreach = 50}
+		add_to_variable = { 1326.intreach = 50}
+		add_to_variable = { 1327.intreach = 50}
+		add_to_variable = { 1328.intreach = 0}
+		add_to_variable = { 1329.intreach = 95}
+		add_to_variable = { 1330.intreach = 90}
+		add_to_variable = { 1331.intreach = 99}
+		add_to_variable = { 1332.intreach = 99}
+		add_to_variable = { 1332.intreach = 59}
+
+	}
+	#on_government_change = {
+	#	effect = {
+	#		every_country = {
+	#			make_every_country_with_an_ideology_have_the_right_econ_system = yes
+	#			countries_with_specific_econ_systems = yes
+	#		}
+	#	}
+	#} #THIS IS HORRIBLE FOR PERFORMANCE !!
+}
+}

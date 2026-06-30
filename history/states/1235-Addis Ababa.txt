@@ -1,0 +1,31 @@
+state={
+id=1235
+	name="STATE_1235"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	resources = {
+	oil = 20
+	steel = 100
+	}
+	history={
+			victory_points = {
+			5010 25
+		}
+		owner = ETH
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 5
+			industrial_complex = 10
+		}
+		add_core_of = ETH
+
+	}
+	provinces={
+	 5010
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

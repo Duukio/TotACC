@@ -1,0 +1,50 @@
+portlandian_gift_economy_in_action = {
+	PGE_voluntary_community_project = {
+		fixed_random_seed = no
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			has_war = no
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = yes
+		days_mission_timeout = 90
+		timeout_effect = {
+			ATI = {
+				random_list = {
+					33 = {
+						random_owned_state = {
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					33 = {
+						random_owned_state = {
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					33 = {
+						random_owned_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

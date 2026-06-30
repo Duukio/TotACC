@@ -1,0 +1,307 @@
+#country_event = {
+#    id = SOV.1 # flavor for soviet
+#    title = SOV.1.t
+#    desc = SOV.1.desc
+#    picture = GFX_report_event_kurginyan
+#    is_triggered_only = yes
+#    fire_only_once = yes 
+#
+#    option = {
+#      name = SOV.1.a
+#	}
+#}
+
+add_namespace = ITA
+
+country_event = {
+    id = ITA.1 # Italy leaves the EU
+    title = ITA.1.t
+    desc = ITA.1.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #sure
+      name = ITA.1.a
+    ai_chance = { factor = 33 }
+    every_country = {
+        limit = {
+            is_ai = no
+        }
+        news_event = {
+            id = WNE.121
+            days = 3
+        }
+    }
+	}
+    option = { #no
+    ai_chance = { factor = 66 }
+      name = ITA.1.a
+    every_country = {
+        limit = {
+            is_ai = no
+        }
+        news_event = {
+            id = WNE.122
+            days = 3
+        }
+    }
+    ITA = {
+        set_politics = {
+            ruling_party = revolutionary_right
+        }
+    }
+    ITA = {
+        country_event = {
+            id = ITA.7
+            days = 60
+        }
+    }
+	}
+}
+country_event = {
+     id = ITA.2 # FranZe
+    title = ITA.2.t
+    desc = ITA.2.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes    
+    option = { #sure
+      name = ITA.2.a
+    #ai_chance = { factor = 33 }
+    every_country = {
+        limit = {
+            is_ai = no
+        }
+        news_event = {
+            id = WNE.123
+            days = 3
+        }
+    }
+    FRA = {
+        declare_war_on = {
+            target = ITA
+            type = topple_government
+        }
+        set_country_flag = if_you_dont_take_milan_in_90_days_youre_fucked_FRA
+    }
+	}
+}
+country_event = {
+     id = ITA.4 # FranZe wins
+    title = ITA.4.t
+    desc = ITA.4.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes    
+    option = { #sure
+      name = ITA.4.a
+    #ai_chance = { factor = 33 }
+        every_country = {
+            limit = {
+                is_ai = no
+            }
+            news_event = {
+                id = WNE.125
+                days = 3
+            }
+        }
+        every_state = {
+            limit = {
+                is_core_of = ITA
+            }
+            transfer_state_to = ITA
+        }
+        FRA = {
+            puppet = ITA
+        }
+    }
+}
+country_event = {
+     id = ITA.3 # FranZe loses
+    title = ITA.3.t
+    desc = ITA.3.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes    
+    option = { #sure
+      name = ITA.3.a
+    # = { factor = 33 }
+    every_country = {
+        limit = {
+            is_ai = no
+        }
+        news_event = {
+            id = WNE.124
+            days = 3
+        }
+    }
+	set_global_flag = show_peace_popup_alert
+	set_global_flag = skip_default_capitulation
+	clear_global_event_target = winning_country
+	clear_global_event_target = losing_country
+	add_to_variable = { global.peace_popup_dirty = 1 }
+	set_global_flag = war_won #?
+	ITA = {
+		save_global_event_target_as = winning_country
+	}
+	FRA = {
+		save_global_event_target_as = losing_country
+	}
+    ITA = {
+        white_peace = FRA
+        remove_ideas = {
+        ITA_system_shock
+        ITA_atlanticist_counter
+        #ITA_rage_against
+        }
+    }
+    MNC = {
+        transfer_state = 1209
+        set_cosmetic_tag = MNC_ITA
+        set_politics = {
+            ruling_party = autocracy
+        }
+        create_country_leader = {
+        	name = "Gianluca Iannone"
+        	desc = "POLITICS_IANNONE_DESC"
+        	picture = "gfx/leaders/ITA/Portrait_ITA_Gialuca_Iannone.png"
+        	expire = "2040.1.1"
+        	ideology = milgov
+        	traits = {
+        	}
+        }
+    }
+    1209 = {
+        add_core_of = MNC
+    }
+    FRA = {
+        white_peace = ITA
+        drop_cosmetic_tag = yes
+    }
+    ITA = {
+        country_event = {
+            id = ITA.5
+            days = 30
+        }
+    }
+    clr_global_flag = skip_default_capitulation
+	}
+}
+country_event = {
+     id = ITA.5 # Pick a leader
+    title = ITA.5.t
+    desc = ITA.5.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes    
+    option = { #rizzo
+      name = ITA.5.a 
+    ai_chance = { factor = 33 }
+    every_country = {
+        limit = {
+            is_ai = no
+        }
+        news_event = {
+            id = WNE.128
+            days = 3
+        }
+    }
+    ITA = {
+        set_politics = {
+            ruling_party = hardline_socialism
+        }
+    }
+	}
+    option = { #Meloni
+      name = ITA.5.b
+    ai_chance = { factor = 33 }
+    every_country = {
+        limit = {
+            is_ai = no
+        }
+        news_event = {
+            id = WNE.126
+            days = 3
+        }
+    }
+	}
+    option = { #Zorzi
+      name = ITA.5.c
+    ai_chance = { factor = 33 }
+    every_country = {
+        limit = {
+            is_ai = no
+        }
+        news_event = {
+            id = WNE.127
+            days = 3
+        }
+    }
+    ITA = {
+        create_country_leader = {
+        	name = "Roi \"Delfo\" Zorzi"
+        	desc = "POLITICS_STEFANO_DESC"
+        	picture = "gfx/leaders/ITA/Delfo Zorzi.png"
+        	expire = "2040.1.1"
+        	ideology = natthirdpos
+        	traits = {
+        	}
+        }
+        set_popularities = {
+            revolutionary_right = 100
+        }
+    }
+	}
+}
+country_event = {
+     id = ITA.6 # debug cosmetic tag
+    title = ITA.6.t
+    desc = ITA.6.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes    
+    option = {
+        name = ITA.6.A
+        FRA = {
+            set_cosmetic_tag = FRA_EUROPE
+        }
+    }
+}
+country_event = {
+     id = ITA.7 # Monaco is couped by MSI
+    title = ITA.7.t
+    desc = ITA.7.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes    
+    option = {
+        name = ITA.7.A
+        ITA = {
+            puppet = MNC
+        }
+        MNC = {
+            set_politics = {
+                ruling_party = revolutionary_right
+            }
+            load_oob = "MNC_2021"
+            clr_country_flag = has_double_leader
+            clr_country_flag = pm_dartout
+        }
+        every_country = {
+            limit = {
+                is_ai = no
+            }
+            news_event = {
+                id = WNE.130
+                days = 1
+            }
+        }
+        FRA = {
+            country_event = {
+                id = ITA.2
+                days = 30
+            }
+        }
+    }
+}

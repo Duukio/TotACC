@@ -1,0 +1,59 @@
+	scripted_gui = {
+		switch_leader_politics_scrgui = {
+			context_type = player_context
+			parent_window_token = politics_tab
+			window_name = "switch_leader"
+	
+			properties = {
+				dual_leader_portrait = {
+					image = "[Root.GetDualLeaderPortrait]"
+				}		
+			}
+			
+			visible = {
+				ROOT = {
+					has_country_flag = has_double_leader
+				}			
+			}
+			
+			effects = {
+				button_switch_politics_click = {
+				log = "switch politics leader"
+					if = {
+						limit = {
+							has_country_flag = dual_leader_open
+						}
+						clr_country_flag = dual_leader_open
+					}
+					else = {
+						set_country_flag = dual_leader_open
+					}
+				}
+			}
+			
+			triggers = {
+				dual_leader_frame_visible = {
+					ROOT = {
+						has_country_flag = has_double_leader
+						has_country_flag = dual_leader_open
+					}			
+				}
+				dual_leader_name_visible = {
+					ROOT = {
+						has_country_flag = has_double_leader
+						has_country_flag = dual_leader_open
+					}			
+				}	
+				button_switch_politics_visible = {
+					ROOT = {
+						has_country_flag = has_double_leader
+					}
+				}
+				dual_leader_portrait_visible = {
+					has_country_flag = dual_leader_open
+					has_country_flag = has_double_leader
+				}
+			}
+		}
+	}
+

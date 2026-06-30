@@ -1,0 +1,29 @@
+state={
+id=235
+	name="STATE_235"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+			victory_points = {
+			12938 30
+		}
+			victory_points = {
+			12977 10
+		}		
+		owner = BRA
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 5
+		}
+		add_core_of = BRA
+
+	}
+	provinces={
+		2167 2185 2218 4570 5223 7476 7589 8148 8210 8226 8233 10931 10945 12334 12479 12903 12909 12923 12938 12977 
+	}
+	manpower=21168791
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

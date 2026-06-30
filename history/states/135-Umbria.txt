@@ -1,0 +1,29 @@
+state={
+id=135
+	
+
+	name="STATE_135"
+
+
+	history={
+		victory_points = {
+			6926 10 
+		}
+		owner = ITA
+		buildings = {
+            school = 2
+			infrastructure = 4
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		3885 6926 9794 11861 
+	}
+	manpower=889001
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

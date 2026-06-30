@@ -1,0 +1,706 @@
+SFL_unify_wargoals = {
+	SFL_take_georgia = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_first_torches_upon_the_world
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = BSD
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_red_manhattan = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_the_commie_slayer
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = RAS
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_manhattan = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_all_pigs_must_die
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = NYP
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_pence = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_the_grey_world_of_man
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = USP
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TPR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DIX
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_pelosi = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_the_grey_world_of_man
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GPR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OBC
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_cali = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_corporate_slaves
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = CAL
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_FSA = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_worshippers_of_money
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = FSA
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_natives = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_not_stolen_conquered
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = LKT
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_antifa = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_the_lowest_of_the_masses
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = ATI
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_unify = {
+		visible = {
+			SFL = {
+				OR = {
+				has_completed_focus = SFL_the_unconquered_sun
+				#has_completed_focus = SFL_plunge_fearlessly_into_war
+				#has_completed_focus = SFL_i_ares
+				}
+			}
+		}
+		available = {
+			has_war = no
+			OR = {
+				SFL = {
+					all_of_scopes = {
+						array = global.USASTATES
+						is_owned_by = SFL
+					}
+				}
+				SFL = {
+					534 = {
+						is_owned_by = SFL
+					}
+					568 = {
+						is_owned_by = SFL
+					}
+					726 = {
+						is_owned_by = SFL
+					}
+					1158 = {
+						is_owned_by = SFL
+					}
+					548 = {
+						is_owned_by = SFL
+					}
+					776 = {
+						is_owned_by = SFL
+					}
+					780 = {
+						is_owned_by = SFL
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.216
+			}
+		}
+		SFL = {
+        set_cosmetic_tag = SFL_RVME
+		load_focus_tree = SFL_ASI_postwar
+		}
+		choose_capital_USUNIFIER = yes
+		}		
+	}
+	SFL_kill_america = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_i_ares
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GPR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OBC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BSD
+				type = annex_everything
+			}
+			 declare_war_on = {
+				target = USP
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TPR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DIX
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_NYC = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_i_ares
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = RAS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NYP
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_west = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_i_laughed_at_the_sun
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = ATI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NWF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CAL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = FSA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LKT
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_red_jersey_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = RAS
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_manhattan_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = NYP
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_pence_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = USP
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TPR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DIX
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_wignats_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = NWF
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_pelosi_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GPR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OBC
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_take_cali_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = CAL
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_natives_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = LKT
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_kill_antifa_preston = {
+		cost = 15
+		visible = { 
+            SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+        }
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+            declare_war_on = {
+				target = ATI
+				type = annex_everything
+			}
+	    }
+         ai_will_do = {
+            base = 100
+        }
+	}
+	SFL_unify_2 = {
+		visible = {
+			SFL = {
+				has_completed_focus = SFL_i_laughed_at_the_sun
+			}
+		}
+		available = {
+			has_war = no
+			OR = {
+				SFL = {
+					all_of_scopes = {
+						array = global.USASTATES
+						is_owned_by = SFL
+					}
+				}
+				AND = {
+					534 = {
+						is_owned_by = SFL
+					}
+					568 = {
+						is_owned_by = SFL
+					}
+					726 = {
+						is_owned_by = SFL
+					}
+					1158 = {
+						is_owned_by = SFL
+					}
+					548 = {
+						is_owned_by = SFL
+					}
+					776 = {
+						is_owned_by = SFL
+					}
+					780 = {
+						is_owned_by = SFL
+					}
+				}
+				AND = {
+					568 = {
+						is_owned_by = FSA
+					}
+					726 = {
+						is_owned_by = FSA
+					}
+					1158 = {
+						is_owned_by = FSA
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.215
+			}
+		}
+		SFL = {
+        set_cosmetic_tag = SFL_LAVEY
+		load_focus_tree = SFL_SHARKEY_POSTWARTREE
+		}
+		choose_capital_USUNIFIER = yes
+		}		
+	}
+	SFL_unify_3 = {
+		visible = {
+			SFL = {
+				has_completed_focus = SFL_plunge_fearlessly_into_war
+			}
+		}
+		available = {
+			has_war = no
+			OR = {
+				SFL = {
+					all_of_scopes = {
+						array = global.USASTATES
+						is_owned_by = SFL
+					}
+				}
+				AND = {
+					534 = {
+						is_owned_by = SFL
+					}
+					568 = {
+						is_owned_by = SFL
+					}
+					726 = {
+						is_owned_by = SFL
+					}
+					1158 = {
+						is_owned_by = SFL
+					}
+					548 = {
+						is_owned_by = SFL
+					}
+					776 = {
+						is_owned_by = SFL
+					}
+					780 = {
+						is_owned_by = SFL
+					}
+				}
+				AND = {
+					568 = {
+						is_owned_by = FSA
+					}
+					726 = {
+						is_owned_by = FSA
+					}
+					1158 = {
+						is_owned_by = FSA
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		complete_effect = {
+			every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.217
+			}
+		}
+		SFL = {
+			annex_country = {
+				target = FSA
+			}
+			load_focus_tree = SFL_preston
+		}
+		choose_capital_USUNIFIER = yes
+		}		
+	}
+}

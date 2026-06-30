@@ -1,0 +1,42 @@
+state={
+id=723
+	
+	name="STATE_723"
+resources = {
+	uranium = 900
+}
+
+	history={
+		owner = AST
+		VICTORY_POINTS = {
+		12992 25
+		}
+		VICTORY_POINTS = {
+		5225 20
+		}
+		VICTORY_POINTS = {
+		2205 25 #Matilda
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+			12992 = {
+				naval_base = 5
+			}
+			industrial_complex = 5
+			arms_factory = 5
+			dockyard = 10
+		}
+		add_core_of = AST
+
+	}
+
+	provinces={
+		7623 12992 10955 10336 8206 2221 10991 10941 8249 5211 5225 2205 10927 8186
+	}
+	manpower=5310000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+
+	local_supplies=0.0 
+}

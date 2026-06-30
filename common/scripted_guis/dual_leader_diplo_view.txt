@@ -1,0 +1,56 @@
+	scripted_gui = {
+		switch_leader_diplo_scrgui = {
+			context_type = selected_country_context
+			parent_window_token = selected_country_view_diplomacy
+			window_name = "switch_leader_diplo"
+	
+			properties = {
+				dual_leader_portrait_diplo = {
+					image = "[This.GetDualLeaderPortrait]"
+				}
+			}
+			
+			visible = {
+				THIS = {
+					exists = yes
+					has_country_flag = has_double_leader
+				}		
+			}
+			
+			effects = {
+				button_change_leader_diplo_click = {
+				log = "Root: [ROOT.GetName], This: [THIS.GetName], From: [FROM.GetName], Prev: [PREV.GetName]"
+					if = {
+						limit = {
+							has_country_flag = dual_leader_open
+						}
+						clr_country_flag = dual_leader_open
+					}
+					else = {
+						set_country_flag = dual_leader_open
+					}
+				}
+			}
+			
+			triggers = {
+				button_switch_diplo_visible = {
+					THIS = {
+						has_country_flag = has_double_leader
+					}
+				}
+				dual_leader_frame_diplo_visible = {
+					has_country_flag = dual_leader_open
+				}
+				cockblock_visible = {
+					has_country_flag = dual_leader_open
+				}
+				dual_leader_name_diplo_visible = {
+					has_country_flag = dual_leader_open
+				}
+				dual_leader_portrait_diplo_visible = {
+					has_country_flag = dual_leader_open
+				}
+			}
+		}
+	}
+

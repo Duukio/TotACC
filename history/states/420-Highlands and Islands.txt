@@ -1,0 +1,50 @@
+state= {
+id=420
+	name="STATE_420"
+    buildings_max_level_factor = 1
+	manpower = 401,150
+	
+	
+	state_category = rural
+
+	resources={
+		strategic_minerals=10
+		tungsten=25
+		aluminium=15
+	}
+
+	history= {
+		add_core_of = SCO
+		owner = ENG
+		victory_points = {
+			6062 2 #Skye/Stornoway
+		}
+		victory_points = {
+			9075 5 #Inverness
+		}
+		victory_points = {
+			131 10 # Sutherland Spaceport
+		}
+		victory_points = { 11064 2 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			anti_air_building = 4
+			industrial_complex = 4
+			air_base = 2
+			11064 = {
+				naval_base = 8	
+			}
+			6196 = {
+				naval_base = 1	
+			}
+		}
+		add_core_of = ENG
+	}
+
+	provinces=
+	{
+131 3159 3178 6046 6062 6104 6196 6205 9075 9090 9161 11064 11161 11266 	}
+
+	local_supplies=0.0 
+}

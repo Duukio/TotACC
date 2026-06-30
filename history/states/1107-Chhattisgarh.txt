@@ -1,0 +1,30 @@
+state={
+	id=1107
+	name="STATE_1107" #Chhattisgarh
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			10401 15 # Raipur
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 2
+			arms_factory = 3
+			industrial_complex = 6
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		10401 7574 12420 12375 1510 12480 7497
+	}
+	manpower=29436231
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

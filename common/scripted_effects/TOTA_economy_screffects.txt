@@ -1,0 +1,487 @@
+generate_econ_rankings = {
+		clear_array = global.econ_countries
+		every_country = {
+			add_to_array = { global.econ_countries = THIS }
+		}
+	
+		get_sorted_scored_countries = {
+			scorer = GDP_rank_scorer
+			array = global.econ_countries
+		}
+	
+		# Set up ranking positions
+		for_each_loop = {
+			array = global.econ_countries
+			add_to_variable = { global.econ_countries_index = 1 }
+			set_variable = { econ_ranking = global.econ_countries_index }
+		}
+		clear_variable = global.econ_countries_index
+} #not used right now, might be used later
+TOTA_startup_funny_business_ignore_this = {
+			if = {
+				limit = {
+				check_variable = { GDP > 3999 }
+				}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = superpower
+			}
+		else_if = {
+			limit = {
+				check_variable = { GDP > 1999 }
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = rising_superpower
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP > 999 }
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = powerful_economy
+
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP > 499 }
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = medium_economy
+
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP > 199 }
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = smaller_economy
+
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP > 81 }
+				NOT = { has_country_flag = is_smol_country }
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = poor_economy
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP > 81 }
+				has_country_flag = is_smol_country
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = very_small_economy
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP < 81 }
+				has_country_flag = is_smol_country
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = very_very_small_economy
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP < 81 }
+				NOT = { has_country_flag = is_smol_country }
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = basket_case_economy
+		}
+		else_if = {
+			limit = {
+				check_variable = { GDP < 12 }
+				NOT = { has_country_flag = is_smol_country }
+			}
+				remove_ideas = {
+					rising_superpower
+					powerful_economy
+					medium_economy
+					smaller_economy
+					poor_economy
+					very_small_economy
+					very_very_small_economy
+					basket_case_economy
+					warlord_economy
+					superpower
+				}
+			add_ideas = warlord_economy
+		}
+		else = {
+		}
+}
+starting_econ_modifier_vars = {
+#WIP
+set_variable = { modifier@GDP_growth_modifier = 1 } #new calculation, used to be 0
+set_variable = { modifier@annual_GDP_growth_factor = 0 }
+set_variable = { modifier@deficit_political_power_cost_modifier = 1 }
+set_variable = { modifier@debt_to_GDP_ceiling_modifier = 1 }
+set_variable = { modifier@debt_effect_on_GDP_growth_modifier = 1 }
+set_variable = { modifier@GDP_to_faction_leader_modifier = 0	}
+set_variable = { modifier@army_cost_modifier = 1 }
+set_variable = { modifier@military_industry_cost_expertise_modifier = 1 }
+set_variable = { modifier@military_industry_cost_equipment_modifier = 1 }
+set_variable = { modifier@military_industry_cost_modifier = 1	}
+set_variable = { modifier@airforce_cost_modifier = 1 }
+set_variable = { modifier@naval_cost_modifier = 1	}
+set_variable = { modifier@naval_industry_cost_modifier = 1 }
+set_variable = { modifier@research_cost_modifier = 1 }
+set_variable = { modifier@taxable_population_modifier = 0.5 }
+set_variable = { modifier@weekly_GDP_loss_modifier = 0 }
+set_variable = { modifier@poverty_taxation_rate_modifier = 0.1 }
+set_variable = { modifier@weekly_debt_modifier = 0 }
+}
+tota_variable_clamping = {
+	add_political_power = 1
+}
+
+tota_ssd_array = {
+	add_to_array = {
+		array = global.southsudan
+		value = SSD
+	}
+	add_to_array = {
+		array = global.southsudan
+		value = NUE
+	}
+	add_to_array = {
+		array = global.southsudan
+		value = LRA
+	}
+	add_to_array = {
+		array = global.southsudan
+		value = ARB
+	}
+	add_to_array = {
+		array = global.southsudan
+		value = SDE
+	}
+}
+primary_debt_check = {
+	if = {
+		limit = {
+			check_variable = { 
+				var = THIS.debtcounter
+				value = 12
+				compare = greater_than
+			}
+		}
+		clear_variable = THIS.debtcounter
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = THIS.debtcounter
+				value = 12
+				compare = less_than
+			}
+		}
+		add_to_variable = { THIS.debtcounter = 1 }
+	}
+	else = {
+
+	}
+}
+secondary_debt_check = {
+	THIS = {
+	set_temp_variable = { gdp_times_two = GDP }
+	multiply_temp_variable = { gdp_times_two = 2 }
+	#check_variable = { DEBT > gdp_times_two } # you fucked up i think
+	}
+}
+percentagizer_for_weekly_debt = {
+	set_variable = { weekly_debt_modifier_calc = weekly_debt_modifier } #as this is a percentage value we have to convert it to a workable number
+	multiply_variable = { weekly_debt_modifier_calc = 100 }
+	divide_variable = { weekly_debt_modifier_calc = THIS.DEBT }
+	add_to_variable = { THIS.DEBT = THIS.weekly_debt_modifier_calc }
+}
+make_every_country_with_an_ideology_have_the_right_econ_system = {
+	if = {
+		limit = {
+			has_government = reformist_socialism
+		}
+		add_to_array = {
+		    array = global.klem_countries
+		    value = THIS
+		}
+	for_each_loop	= {
+		array = global.klem_countries 
+		add_ideas = kosygin_liberman_econ_theory
+	}
+	}
+	else_if = {
+		limit = {
+			has_government = anarchism #LOL
+		}
+		add_to_array = {
+		    array = global.portland_countries
+		    value = THIS
+		}
+	for_each_loop	= {
+		array = global.portland_countries 
+		add_ideas = portlandian_gift_economy
+	}
+	}
+	else_if = {
+		limit = {
+			has_government = revolutionary_right
+		}
+		add_to_array = {
+		    array = global.nsm_countries
+		    value = THIS
+		}
+	for_each_loop	= {
+		array = global.nsm_countries 
+		add_ideas = national_salvation_model
+	}
+	}
+	else_if = {
+		limit = {
+			has_government = hardline_socialism
+		}
+		add_to_array = {
+		    array = global.bnc_countries
+		    value = THIS
+		}
+	for_each_loop	= {
+		array = global.bnc_countries 
+		add_ideas = beijing_new_course
+	}
+	}
+	else_if = {
+		limit = {
+			has_government = dissident_right
+		}
+		add_to_array = {
+		    array = global.phoenix_model_countries
+		    value = THIS
+		}
+	for_each_loop	= {
+		array = global.phoenix_model_countries 
+		add_ideas = phoenix_model
+	}
+	}
+	else_if = {
+		limit = {
+			has_government = socdem
+		}
+		add_to_array = {
+		    array = global.asm_countries
+		    value = THIS
+		}
+	for_each_loop	= {
+		array = global.asm_countries 
+		add_ideas = anglo_saxon_model
+	}
+	}
+	else_if = {
+		limit = {
+			has_government = autocracy
+		}
+		add_to_array = {
+		    array = global.nd_countries
+		    value = THIS
+		}
+
+	for_each_loop	= {
+		array = global.nd_countries 
+		add_ideas = nouveau_dirigisme
+	}
+	}
+	else_if = {
+		limit = {
+			has_government = technocracy
+		}
+		add_to_array = {
+		    array = global.mmm_countries
+		    value = THIS
+		}
+	for_each_loop	= {
+		array = global.mmm_countries 
+		add_ideas = mitsubishi_managerialism
+	}
+}
+else = {
+	add_ideas = cologne_capitalism
+}
+}
+commonwealth_members = {
+if = {
+	limit = {
+		OR = {
+			original_tag = EAF
+			original_tag = AST
+			original_tag = NZL
+			original_tag = NWG
+			original_tag = WIF
+			original_tag = BMB
+			original_tag = KTR
+			original_tag = PAK
+			original_tag = ZAM
+			original_tag = CAN
+			original_tag = KHA
+			original_tag = BTS
+			original_tag = NGA
+			original_tag = TGM
+			original_tag = HEL
+			original_tag = GHA
+			original_tag = SWZ
+			original_tag = LST
+			original_tag = MAU
+			original_tag = SNG
+			original_tag = KUW
+			original_tag = MLD
+			original_tag = MLY
+			original_tag = FIJ
+			original_tag = BRU
+			original_tag = ADM
+		}
+	}
+	add_ideas = commonwealth
+	add_ideas = anglo_saxon_model
+}
+else = {
+	
+}
+}
+countries_with_specific_econ_systems = {
+	USA = {
+		add_ideas = post_recession_exceptionalism
+	}
+	ATI = {
+		add_ideas = portlandian_gift_economy		
+	}
+	JAP = {
+		add_ideas = mitsubishi_managerialism		
+	}
+	NWF = {
+		add_ideas = national_salvation_model		
+	}
+	CAL = {
+		add_ideas = mitsubishi_managerialism		
+	}
+	BIA = {
+		add_ideas = anglo_saxon_model		
+	}
+	ENG = {
+		add_ideas = anglo_saxon_model		
+	}
+	PLK = {
+		add_ideas = bogji_model		
+	}
+}
+GDP_added_to_winner_of_war = {
+	divide_variable = { ROOT.GDP = 4 }
+	add_to_variable = { FROM.GDP = ROOT.GDP }
+}
+intreach_calc = {
+	for_each_loop = {
+		array = THIS.owned_controlled_states
+		value = intreach
+		add_to_temp_variable = { THIS.intreachcalculation = v }
+	}
+	divide_temp_variable = { THIS.intreachcalculation = 100 } #divide it by 100 so that 100 intreach = 1 and 5 = 0.05, assuming that you have 10 states and 100 intreach in each, you can safely say that youd have 10000% research speed factor and 5000% gdp growth and -5000% stability. We do no want this, so...
+	divide_temp_variable = { THIS.intreachcalculation = THIS.num_owned_controlled_states } #divide it by the number of states! If a country has 200 states, the value goes from 1000 to 5, turning into a clean 0.5! This means the max research speed factor you can get is 100%.
+	set_variable = { THIS.intreachresearchspeed = THIS.intreachcalculation  }
+	divide_temp_variable = { THIS.intreachcalculation = 2  }
+	set_variable = { THIS.intreachgdpmod = THIS.intreachcalculation  } #bingo
+}

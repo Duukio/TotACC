@@ -1,0 +1,586 @@
+shared_focus = {
+	id = SEY_new_conflicts
+	icon = GFX_SEY_new_conflicts
+	cost = 6
+	x = 16
+	y = 6
+	completion_reward = {
+		add_ideas = war_economy
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_new_conflicts"
+	}
+	#relative_position_id = SEY_fighting_stagnation
+	#prerequisite = { focus =  SEY_fighting_stagnation }
+}
+
+
+shared_focus = {
+	id = SEY_sakura_flowers_over_pyongyang
+	icon = GFX_SEY_sakura_flowers_over_pyongyang
+	cost = 6
+	x = 1
+	y = 2
+	completion_reward = {
+		set_country_flag = SEY_KOREA_INTERVENTION
+		custom_effect_tooltip = "Enables decisions to intervene in Korea for Japan."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_sakura_flowers_over_pyongyang"
+	}
+	relative_position_id = SEY_new_conflicts 
+	prerequisite = { focus =  SEY_new_conflicts }
+}
+
+shared_focus = {
+	id = SEY_big_trouble_in_little_burma
+	icon = GFX_SEY_big_trouble_in_little_burma
+	cost = 6
+	x = -3
+	y = 2
+	completion_reward = {
+		set_country_flag = SEY_BURMA_INTERVENTION
+		custom_effect_tooltip = "Enables decisions to intervene in Burma."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_big_trouble_in_little_burma"
+	}
+	relative_position_id = SEY_new_conflicts 
+	prerequisite = { focus =  SEY_new_conflicts }
+}
+
+shared_focus = {
+	id = SEY_uncle_sams_folly
+	icon = GFX_SEY_uncle_sams_folly
+	cost = 6
+	x = 3
+	y = 2
+	completion_reward = {
+		set_country_flag = SEY_USA_INTERVENTION
+		custom_effect_tooltip = "Enables decisions to intervene in the United States."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_uncle_sams_folly"
+	}
+	relative_position_id = SEY_new_conflicts 
+	prerequisite = { focus =  SEY_new_conflicts }
+}
+
+shared_focus = {
+	id = SEY_steady_as_she_goes
+	icon = GFX_SEY_steady_as_she_goes
+	cost = 6
+	x = 7
+	y = 0
+	completion_reward = {
+		add_stability = 0.10
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_steady_as_she_goes"
+	}
+}
+
+shared_focus = {
+	id = SEY_civilianization_of_government_barlow
+	icon = GFX_SEY_civilianization_of_government_barlow
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.10
+		add_political_power = -50
+		set_country_flag = Barlow_Cabinet
+		activate_advisor = SEY_wavel_ramkalawan
+		activate_advisor = SEY_satya_naidu
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_civilianization_of_government_barlow"
+	}
+	relative_position_id = SEY_steady_as_she_goes 
+	prerequisite = { focus =  SEY_steady_as_she_goes }
+}
+
+shared_focus = {
+	id = SEY_a_ceremonial_president
+	icon = GFX_SEY_a_ceremonial_president
+	cost = 6
+	x = -5
+	y = 1
+	completion_reward = {
+		set_country_flag = has_double_leader
+		set_country_flag = wavel
+		custom_effect_tooltip = "Will inaugurate a new, ceremonial post of President for civilian authorities."
+		add_stability = 0.10
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_ceremonial_president"
+	}
+	relative_position_id = SEY_civilianization_of_government_barlow 
+	prerequisite = { focus =  SEY_civilianization_of_government_barlow }
+}
+
+shared_focus = {
+	id = SEY_provinces_and_councils
+	icon = GFX_SEY_provinces_and_councils
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_province_reform
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_provinces_and_councils"
+	}
+	relative_position_id = SEY_civilianization_of_government_barlow 
+	prerequisite = { focus =  SEY_civilianization_of_government_barlow }
+}
+
+shared_focus = {
+	id = SEY_adopting_a_constitution
+	icon = GFX_SEY_adopting_a_constitution
+	cost = 6
+	x = 5
+	y = 1
+	completion_reward = {
+		add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_adopting_a_constitution"
+	}
+	relative_position_id = SEY_civilianization_of_government_barlow 
+	prerequisite = { focus =  SEY_civilianization_of_government_barlow }
+}
+shared_focus = {
+	id = SEY_the_middle_road
+	icon = GFX_SEY_the_middle_road
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = 25
+		add_stability = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_middle_road"
+	}
+	relative_position_id = SEY_a_ceremonial_president 
+	prerequisite = { focus =  SEY_a_ceremonial_president }
+	mutually_exclusive = { focus = SEY_civilian_elections }
+	mutually_exclusive = { focus = SEY_expand_military_democracy }
+}
+shared_focus = {
+	id = SEY_expand_military_democracy
+	icon = GFX_SEY_expand_military_democracy
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		add_ideas = limited_conscription
+		#country_event = {
+		#	id = SEY.913
+		#	days = 1
+		#}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_expand_military_democracy"
+	}
+	relative_position_id = SEY_a_ceremonial_president 
+	prerequisite = { focus =  SEY_a_ceremonial_president }
+	#prerequisite = { focus =  SEY_the_middle_road }
+	mutually_exclusive = { focus = SEY_the_middle_road }
+	mutually_exclusive = { focus = SEY_civilian_elections }
+}
+shared_focus = {
+	id = SEY_civilian_elections
+	icon = GFX_SEY_civilian_elections
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_full_democracy
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_civilian_elections"
+	}
+	relative_position_id = SEY_a_ceremonial_president 
+	prerequisite = { focus =  SEY_a_ceremonial_president }
+	#prerequisite = { focus =  SEY_the_middle_road }
+	mutually_exclusive = { focus = SEY_the_middle_road }
+	mutually_exclusive = { focus = SEY_expand_military_democracy }
+}
+shared_focus = {
+	id = SEY_playing_it_straight
+	icon = GFX_SEY_playing_it_straight
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		add_political_power = -100
+		add_stability = 0.10
+		add_war_support = -0.05
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_playing_it_straight"
+	}
+	relative_position_id = SEY_adopting_a_constitution 
+	prerequisite = { focus =  SEY_adopting_a_constitution }
+	#prerequisite = { focus =  SEY_fast_and_loose }
+	mutually_exclusive = { focus = SEY_fast_and_loose }
+}
+
+shared_focus = {
+	id = SEY_fast_and_loose
+	icon = GFX_SEY_fast_and_loose
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		add_ideas = SEY_corruption
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_fast_and_loose"
+	}
+	relative_position_id = SEY_adopting_a_constitution 
+	prerequisite = { focus =  SEY_adopting_a_constitution }
+	mutually_exclusive = { focus = SEY_playing_it_straight }
+}
+
+shared_focus = {
+	id = SEY_the_house_always_wins
+	icon = GFX_SEY_the_house_always_wins
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = SEY.910
+			days = 10
+		}
+		swap_ideas = {
+			remove_idea = SEY_merc_capital
+			add_idea = SEY_merc_capital_barlow_1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_house_always_wins"
+	}
+	relative_position_id = SEY_playing_it_straight 
+	prerequisite = { focus =  SEY_playing_it_straight focus =  SEY_fast_and_loose }
+}
+
+shared_focus = {
+	id = SEY_governors_and_mayors
+	icon = GFX_SEY_governors_and_mayors
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+		remove_idea = SEY_province_reform
+		add_idea = SEY_federal_system
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_governors_and_mayors"
+	}
+	relative_position_id = SEY_provinces_and_councils 
+	prerequisite = { focus =  SEY_provinces_and_councils }
+}
+
+shared_focus = {
+	id = SEY_prepare_the_ballots
+	icon = GFX_SEY_prepare_the_ballots
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		add_political_power = -100
+		add_stability = 0.12
+		custom_effect_tooltip = "Seychelles will now have elections once every 4 years."
+		hidden_effect = {
+			country_event = {
+				id = SEY.919
+				days = 1461
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_prepare_the_ballots"
+	}
+	relative_position_id = SEY_civilian_elections 
+	prerequisite = { focus =  SEY_civilian_elections  focus =  SEY_expand_military_democracy focus =  SEY_the_middle_road}
+}
+
+
+shared_focus = {
+	id = SEY_first_package_delivered
+	icon = GFX_SEY_first_package_delivered
+	cost = 6
+	x = -5
+	y = 2
+	completion_reward = {
+		add_political_power = 25
+		add_stability = 0.25
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_first_package_delivered"
+	}
+	relative_position_id = SEY_the_house_always_wins 
+	prerequisite = { focus =  SEY_the_house_always_wins }
+	prerequisite = { focus =  SEY_governors_and_mayors }
+	prerequisite = { focus =  SEY_prepare_the_ballots }
+	prerequisite = { focus =  SEY_fait_accompli }
+}
+
+shared_focus = {
+	id = SEY_fighting_stagnation
+	icon = GFX_SEY_fighting_stagnation
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SEY_merc_capital_barlow_1
+			add_idea = SEY_merc_capital_barlow_2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_fighting_stagnation"
+	}
+	relative_position_id = SEY_first_package_delivered 
+	prerequisite = { focus =  SEY_first_package_delivered }
+}
+shared_focus = {
+	id = SEY_calls_from_home
+	icon = GFX_SEY_calls_from_home
+	cost = 6
+	x = 11
+	y = 1
+	completion_reward = {
+		add_political_power = 50
+		SAF = {
+			add_war_support = 0.15
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_calls_from_home"
+	}
+	relative_position_id = SEY_steady_as_she_goes 
+	prerequisite = { focus =  SEY_steady_as_she_goes }
+}
+
+shared_focus = {
+	id = SEY_the_invisible_army
+	icon = GFX_SEY_the_invisible_army
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_invisible_army
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_invisible_army"
+	}
+	relative_position_id = SEY_calls_from_home 
+	prerequisite = { focus =  SEY_calls_from_home}
+	mutually_exclusive = { focus = SEY_shoulder_to_shoulder }
+}
+
+shared_focus = {
+	id = SEY_shoulder_to_shoulder
+	icon = GFX_SEY_shoulder_to_shoulder
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_frontline
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_shoulder_to_shoulder"
+	}
+	relative_position_id = SEY_calls_from_home 
+	prerequisite = { focus =  SEY_calls_from_home }
+	mutually_exclusive = { focus = SEY_the_invisible_army }
+}
+
+shared_focus = {
+	id = SEY_the_fabian_strategy
+	icon = GFX_SEY_the_fabian_strategy
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = SEY.914
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_fabian_strategy"
+	}
+	relative_position_id = SEY_the_invisible_army 
+	prerequisite = { focus =  SEY_the_invisible_army }
+}
+
+shared_focus = {
+	id = SEY_tip_of_the_spear_manoeuvres
+	icon = GFX_SEY_tip_of_the_spear_manoeuvres
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_manpower = 1500
+		add_war_support = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_tip_of_the_spear_manoeuvres"
+	}
+	relative_position_id = SEY_shoulder_to_shoulder 
+	prerequisite = { focus =  SEY_shoulder_to_shoulder }
+}
+
+shared_focus = {
+	id = SEY_fait_accompli
+	icon = GFX_SEY_fait_accompli
+	cost = 6
+	bypass = {
+		NOT = {
+			country_exists = SAF
+		}
+	}
+	available = {
+		SAF = {
+			has_war = no
+		}
+	}
+	x = 2
+	y = 1
+	completion_reward = {
+		add_war_support = 0.10
+		custom_effect_tooltip = "Adds 5 billion USD in GDP."
+		add_to_variable = { SEY.GDP = 5}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_fait_accompli"
+	}
+	relative_position_id = SEY_the_fabian_strategy 
+	prerequisite = { focus =  SEY_the_fabian_strategy focus =  SEY_tip_of_the_spear_manoeuvres }
+}
+
+shared_focus = {
+	id = SEY_new_way_forward
+	icon = GFX_SEY_new_way_forward
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_new_way_forward"
+	}
+	relative_position_id = SEY_fighting_stagnation 
+	prerequisite = { focus =  SEY_fighting_stagnation }
+}
+
+shared_focus = {
+	id = SEY_roads_to_recognition
+	icon = GFX_SEY_roads_to_recognition
+	cost = 6
+	x = 0
+	y = 2
+	completion_reward = {
+		SEY = {
+			set_country_flag = TREATY_OF_VICTORIA
+			add_opinion_modifier = {
+			    target = JAP
+			    modifier = offered_support
+			}
+			add_opinion_modifier = {
+			    target = FRA
+			    modifier = offered_support
+			}
+		}
+		JAP = {
+			set_country_flag = TREATY_OF_VICTORIA
+			add_opinion_modifier = {
+			    target = SEY
+			    modifier = offered_support
+			}
+			add_opinion_modifier = {
+			    target = FRA
+			    modifier = offered_support
+			}
+		}
+		FRA = {
+			set_country_flag = TREATY_OF_VICTORIA
+			add_opinion_modifier = {
+			    target = JAP
+			    modifier = offered_support
+			}
+			add_opinion_modifier = {
+			    target = SEY
+			    modifier = offered_support
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_roads_to_recognition"
+	}
+	relative_position_id = SEY_new_way_forward 
+	prerequisite = { focus =  SEY_new_way_forward }
+}
+
+shared_focus = {
+	id = SEY_making_heaven_on_earth
+	icon = GFX_SEY_making_heaven_on_earth
+	cost = 6
+	x = 2
+	y = 2
+	completion_reward = {
+		country_event = {
+			id = SEY.915
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_making_heaven_on_earth"
+	}
+	relative_position_id = SEY_new_way_forward 
+	prerequisite = { focus =  SEY_new_way_forward }
+}
+
+shared_focus = {
+	id = SEY_a_peoples_defence_force
+	icon = GFX_SEY_a_peoples_defence_force
+	cost = 6
+	x = -2
+	y = 2
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SEY_merc_capital_barlow_2
+			add_idea = SEY_merc_capital_barlow_3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_peoples_defence_force"
+	}
+	relative_position_id = SEY_new_way_forward 
+	prerequisite = { focus =  SEY_new_way_forward }
+}
+shared_focus = {
+	id = SEY_new_patrons
+	icon = GFX_SEY_new_patrons
+	cost = 6
+	x = -4
+	y = 1
+	completion_reward = {
+		add_political_power = 50
+		add_to_variable = { SEY.GDP = 1 }
+		custom_effect_tooltip = "Adds 1 billion GDP."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_new_patrons"
+	}
+	relative_position_id = SEY_fighting_stagnation 
+	prerequisite = { focus =  SEY_fighting_stagnation }
+}
+
+shared_focus = {
+	id = SEY_son_of_uncle_sam_durranistan
+	icon = GFX_SEY_son_of_uncle_sam_durranistan
+	cost = 6
+	x = 0
+	y = 2
+	completion_reward = {
+		add_ideas = SEY_durrani_support
+		PAK = {
+			add_ideas = PAK_seychellois_defence
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_son_of_uncle_sam_durranistan"
+	}
+	relative_position_id = SEY_new_patrons 
+	prerequisite = { focus =  SEY_new_patrons }
+}
+
+shared_focus = {
+	id = SEY_the_french_connection_france
+	icon = GFX_SEY_the_french_connection_france
+	cost = 6
+	x = 2
+	y = 2
+	completion_reward = {
+		FRA = {
+			add_stability = 0.10
+			add_ideas = FRA_seychellois_intel
+		}
+		SEY = {
+			add_to_variable = { SEY.GDP = 10 }
+			custom_effect_tooltip = "Adds 10 billion USD in GDP."
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_french_connection_france"
+	}
+	relative_position_id = SEY_new_patrons 
+	prerequisite = { focus =  SEY_new_patrons }
+}
+
+shared_focus = {
+	id = SEY_the_arushan_candidate_eaf
+	icon = GFX_SEY_the_arushan_candidate_eaf
+	cost = 6
+	x = -2
+	y = 2
+	completion_reward = {
+		SEY = {
+			add_ideas = SEY_EAF_manpower
+		}
+		EAF = {
+			add_stability = 0.25
+			add_political_power = 100
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_arushan_candidate_eaf"
+	}
+	relative_position_id = SEY_new_patrons 
+	prerequisite = { focus =  SEY_new_patrons }
+}

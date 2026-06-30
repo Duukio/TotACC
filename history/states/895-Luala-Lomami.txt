@@ -1,0 +1,25 @@
+
+state={
+	id=895
+	name="STATE_895"
+    buildings_max_level_factor = 1
+	provinces={
+		1516 1929 1968 4515 12795 13787 13795 
+	}
+	manpower=4952364
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=rural
+	history={
+		owner = KAT
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		victory_points = {
+			1516 5
+		}
+		add_core_of = KAT
+	}
+}

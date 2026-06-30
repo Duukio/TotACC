@@ -1,0 +1,24 @@
+state={
+id=684
+	name="STATE_684"
+    buildings_max_level_factor = 1
+	manpower=806
+	
+	state_category = tiny_island
+	history= {
+		owner = ENG
+		buildings = {
+            school = 2
+			infrastructure = 1
+			13013 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13013 
+	}
+
+	local_supplies=0.0 
+}

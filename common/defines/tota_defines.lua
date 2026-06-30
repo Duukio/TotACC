@@ -1,0 +1,14 @@
+NDefines.NGame.START_DATE = "2021.1.1.12" --apparently achievements are broken if you don't do 12
+NDefines.NGame.END_DATE = "2040.12.31.1"
+NDefines.NGame.SAVE_VERSION = 10
+NDefines.NGame.MAX_SCRIPTED_LOC_RECURSION = 60
+NDefines.NGame.HANDS_OFF_START_TAG = "ZZZ" --Subject to change
+NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 5 -- suck my balls
+NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 999 --bandaid
+NDefines.NCountry.MIN_STABILITY = -100.0
+NDefines.NProduction.BASE_FACTORY_SPEED	= 15 --testing needed
+NDefines.NProduction.BASE_FACTORY_EFFICIENCY_GAIN = 2
+NDefines.NGraphics.VICTORY_POINT_MAP_ICON_AFTER = {0, 19, 40} -- After this amount of VP the map icon becomes bigger dot.
+NDefines.NGraphics.VICTORY_POINT_MAP_ICON_MAX_VICTORY_POINTS_FOR_PERCENT = 42
+NDefines.NBuildings.MAX_BUILDING_LEVELS = 15 -- its the modern world dumbass of course its gonna have more buildings
+NDefines.NBuildings.MAX_SHARED_SLOTS = 30 -- its the modern world dumbass of course its gonna have more buildings

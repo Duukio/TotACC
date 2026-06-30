@@ -1,0 +1,36 @@
+
+
+state={
+id=470
+	name="STATE_470"
+    buildings_max_level_factor = 1
+	
+
+
+	manpower = 4710000
+
+	state_category = metropolis
+
+	history={
+		owner = SAF
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 3
+			industrial_complex = 7
+			arms_factory = 5
+			air_base = 4
+			12589 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			12589 50
+		}
+		add_core_of = SAF
+	}
+
+	provinces={
+		12589
+	}
+}

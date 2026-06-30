@@ -1,0 +1,29 @@
+
+state={
+	id=452
+	name="STATE_452"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = EAF
+		add_core_of = EAF
+		victory_points = {
+			9962 25 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			school = 2
+
+		}
+
+	}
+
+	provinces={
+		9962 13845 
+	}
+	manpower=12374397
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=1.000
+}

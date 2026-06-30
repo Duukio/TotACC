@@ -1,0 +1,77 @@
+division_template = {
+	name = "PVNT Army but Antichrist"		# Infantry Division
+	#
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12991
+		division_template = "PVNT Army but Antichrist"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5085
+		division_template = "PVNT Army but Antichrist"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10928
+		division_template = "PVNT Army but Antichrist"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12814
+		division_template = "PVNT Army but Antichrist"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12759
+		division_template = "PVNT Army but Antichrist"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+}
+
+
+

@@ -1,0 +1,36 @@
+Z_France_dec_cat = {
+FRA_INVADE_ITALY = {
+    activation = {
+        original_tag = FRA
+        FRA = {
+            has_war_with = ITA
+            has_country_flag = if_you_dont_take_milan_in_90_days_youre_fucked_FRA
+        }
+    }
+    available = {
+        FRA = {
+        controls_state = 141
+        }
+    }
+    cancel_trigger = {
+        has_war = no
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    #is_good = yes
+    #war_with_on_timeout = SOV
+    days_mission_timeout = 90
+    complete_effect = {
+        #nothing happens regarding peace, you need to take all of italy!
+        add_political_power = 100
+        add_stability = 0.20
+        add_war_support = 0.20
+    }
+    timeout_effect = {
+        FRA = {
+            country_event = {
+                id = ITA.3
+            }
+        }
+    }
+}
+}

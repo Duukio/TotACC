@@ -1,0 +1,27 @@
+state={
+id=1064
+	name="STATE_1064"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	rubber = 50
+	}
+	history={
+		owner = SIA
+		victory_points = { 10453 10 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = SIA
+	}
+	provinces={
+		1390 1520 4539 1374 1592 10453
+	}
+	manpower=2000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

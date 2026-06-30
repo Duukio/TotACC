@@ -1,0 +1,34 @@
+
+state={
+	id=267
+	name="STATE_267"
+    buildings_max_level_factor = 1
+	resources={
+		steel=100.000
+		strategic_minerals=50.000
+	}
+
+	history={
+		victory_points = {
+			3569 20 
+		}
+		owner = CZE
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 4
+
+		}
+		add_core_of = CZE
+
+	}
+
+	provinces={
+		557 569 3553 3569 11511 11525 
+	}
+	manpower=1688593
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

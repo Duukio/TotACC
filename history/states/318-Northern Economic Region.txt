@@ -1,0 +1,44 @@
+
+state={
+	id=318
+	name="STATE_318"
+    buildings_max_level_factor = 1
+	resources={
+		oil=80.000
+		tungsten=80.000
+		aluminium=80.000
+		steel=80.000
+	}
+
+	history={
+		victory_points = {
+			6245 20 
+		}
+		victory_points = {
+			11349 20 
+		}
+		owner = SOV
+		add_core_of = SOV
+		buildings = {
+			school = 2
+			infrastructure = 4
+			dockyard = 5
+			6174 = {
+				naval_base = 4
+
+			}
+			industrial_complex = 3
+			arms_factory = 2
+
+		}
+
+	}
+
+	provinces={
+		8 39 57 70 71 79 85 93 104 110 117 126 129 150 152 172 181 187 194 226 248 287 320 333 2999 3035 3072 3085 3089 3101 3110 3120 3140 3142 3143 3163 3176 3215 3235 3279 3321 3323 3344 6022 6035 6086 6095 6122 6131 6139 6154 6169 6174 6197 6203 6225 6245 6264 6303 6367 6400 9046 9060 9082 9097 9098 9107 9111 9144 9153 9164 9177 9184 9190 9197 9212 9234 9242 9256 9265 9287 9333 9343 9351 11032 11048 11059 11068 11072 11080 11083 11084 11093 11109 11131 11139 11154 11165 11174 11186 11191 11224 11272 11315 11349 11384 
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

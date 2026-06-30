@@ -1,0 +1,26 @@
+state={
+id=1305
+	name="STATE_1305"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = PAK
+		victory_points = { 5082 10 } #khost
+        victory_points = { 7975 20 } # Jalalabad
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 1 
+		}
+		add_core_of = PAK 
+
+	}
+	provinces={
+		7975 12831 5082 8090
+	}
+	manpower=4000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

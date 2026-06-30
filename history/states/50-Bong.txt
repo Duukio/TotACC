@@ -1,0 +1,22 @@
+state={
+id=50
+	name="STATE_50"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = LUR
+		victory_points = { 7959 1 }
+		buildings = {
+            school = 2
+			infrastructure = 1
+		}
+		add_core_of = LUR
+	}
+	provinces={
+		7959 13416 
+	}
+	manpower=700000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

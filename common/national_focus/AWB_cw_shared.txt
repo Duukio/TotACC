@@ -1,0 +1,15 @@
+focus_tree = {
+	id = AWB_cw
+	country = {
+		factor = 0
+		modifier = {
+			add = 300 #?
+			tag = AWB
+			#has_war = yes
+		}
+	}
+	shared_focus = AWB_sarie_marais_calls_for_me
+	shared_focus = AWB_a_victory_of_faust
+	shared_focus = AWB_a_centurys_embarassment
+	shared_focus = AWB_rustenburg_must_go
+}

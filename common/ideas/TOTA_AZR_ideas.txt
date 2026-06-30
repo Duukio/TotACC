@@ -1,0 +1,83 @@
+ideas = {
+	country = {
+			AZR_anticom = {
+			picture = AZR_anticom
+			allowed = {
+				tag = AZR
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                reformist_socialism_drift = -0.02
+                hardline_socialism_drift = -0.02
+                socdem_drift = -0.02
+                conscription_factor = 0.5
+                defence = 0.05
+			}
+		}
+		AZR_atlantic = {
+			picture = AZR_atlantic
+			allowed = {
+				tag = AZR
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                political_power_gain = -0.1
+                gdp_growth_modifier = 0.07
+                research_speed_factor = 0.03
+			}
+            targeted_modifier = {
+                tag = BRA
+                trade_cost_for_target_factor = -0.3
+                extra_trade_to_target_factor = 0.3
+            }
+		}
+		AZR_salzr_image = {
+			picture = AZR_salzr_image
+			allowed = {
+				tag = AZR
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                monthly_soctrends_drift_EA_E = 0.03
+                monthly_soctrends_drift_TP_T = 0.03
+                monthly_soctrends_drift_DC_D = 0.03
+			}
+		}
+	}	
+}

@@ -1,0 +1,27 @@
+state={
+id=677
+	name="STATE_677"
+    buildings_max_level_factor = 1
+	manpower = 483628
+	
+	
+	state_category = small_island
+
+	history={
+		owner = GBS
+		add_core_of = GBS
+		buildings = {
+            school = 2
+			infrastructure = 3
+			13014 ={
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		13014 
+	}
+
+	local_supplies=0.0 
+}

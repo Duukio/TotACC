@@ -1,0 +1,611 @@
+
+shared_focus = {
+	id = NGA_looking_inward
+	icon = GFX_NGA_looking_inward
+	cost = 9
+	x = 12
+	y = 0
+	available = {
+		OR = {
+			NOT = {
+				country_exists = BIA
+			}
+			NOT = {
+				country_exists = BIU
+			}
+		}
+	}
+	completion_reward = {
+        add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_looking_inward"
+	}
+}
+
+shared_focus = {
+	id = NGA_agenda_2050
+	icon = GFX_NGA_agenda_2050
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        unlock_decision_category_tooltip = NGA_agenda_2050_dec_cat
+		set_country_flag = NGA_agenda_2050_dec_cat_flag
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_agenda_2050"
+	}
+	relative_position_id = NGA_looking_inward
+	prerequisite = { focus = NGA_looking_inward }
+}
+
+shared_focus = {
+	id = NGA_playing_favorites
+	icon = GFX_NGA_playing_favorites
+	cost = 9
+	x = -3
+	y = 1
+	completion_reward = {
+        30 = {
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+            }   
+        }
+        custom_effect_tooltip = "Adds 10 points to Northern Bias."
+		hidden_effect = {
+			subtract_from_variable = { NGA_NORF_SOUF = 10 }
+			NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_playing_favorites"
+	}
+	relative_position_id = NGA_agenda_2050
+	prerequisite = { focus = NGA_agenda_2050 }
+	mutually_exclusive = { focus = NGA_working_towards_islamic_unity }
+	mutually_exclusive = { focus = NGA_call_for_interfaith_tolerance }
+	mutually_exclusive = { focus = NGA_promises_of_secularization }
+}
+
+shared_focus = {
+	id = NGA_working_towards_islamic_unity
+	icon = GFX_NGA_working_towards_islamic_unity
+	cost = 9
+	x = -1
+	y = 1
+	completion_reward = {
+        add_political_power = -100
+        add_stability = 0.07
+        add_war_support = 0.03
+        custom_effect_tooltip = "Adds 5 points to Northern Bias."
+		hidden_effect = {
+			subtract_from_variable = { NGA_NORF_SOUF = 5 }
+			NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_working_towards_islamic_unity"
+	}
+	relative_position_id = NGA_agenda_2050
+	prerequisite = { focus = NGA_agenda_2050 }
+	mutually_exclusive = { focus = NGA_playing_favorites }
+	mutually_exclusive = { focus = NGA_call_for_interfaith_tolerance }
+	mutually_exclusive = { focus = NGA_promises_of_secularization }
+}
+
+shared_focus = {
+	id = NGA_call_for_interfaith_tolerance
+	icon = GFX_NGA_call_for_interfaith_tolerance
+	cost = 9
+	x = 1
+	y = 1
+	completion_reward = {
+        add_stability = -0.05
+        add_political_power = 150
+        add_to_variable = { NGA.REAL_GROWTH = 0.03 }
+        custom_effect_tooltip = "Adds 3% real growth to the economy"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_call_for_interfaith_tolerance"
+	}
+	relative_position_id = NGA_agenda_2050
+	prerequisite = { focus = NGA_agenda_2050 }
+	mutually_exclusive = { focus = NGA_playing_favorites }
+	mutually_exclusive = { focus = NGA_working_towards_islamic_unity }
+	mutually_exclusive = { focus = NGA_promises_of_secularization }
+}
+
+shared_focus = {
+	id = NGA_promises_of_secularization
+	icon = GFX_NGA_promises_of_secularization
+	cost = 9
+	x = 3
+	y = 1
+	completion_reward = {
+        set_variable = { NGA.SOCTRENDS_TP = 44 }
+        custom_effect_tooltip = "Your Social Trends will change: Traditional-Reformist changes to: 44% Will add 5 points to Southern Bias."
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_promises_of_secularization"
+		hidden_effect = {
+			add_to_variable = { NGA_NORF_SOUF = 5 }
+			NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+		}
+	}
+	relative_position_id = NGA_agenda_2050
+	prerequisite = { focus = NGA_agenda_2050 }
+	mutually_exclusive = { focus = NGA_call_for_interfaith_tolerance }
+	mutually_exclusive = { focus = NGA_playing_favorites }
+	mutually_exclusive = { focus = NGA_working_towards_islamic_unity }
+}
+
+shared_focus = {
+	id = NGA_allah_is_the_greatest_planner
+	icon = GFX_NGA_allah_is_the_greatest_planner
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_stability = -0.03
+        add_war_support = 0.1
+        add_to_variable = { NGA.REAL_GROWTH = -0.01 }
+        add_to_variable = { NGA.GDP = 50 }
+		hidden_effect = {
+			subtract_from_variable = { NGA_NORF_SOUF = 3 }
+			NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+		}
+        custom_effect_tooltip = "Removes 1% Real Growth but adds 50 billion GDPAdds 3 points to Northern Bias."
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_allah_is_the_greatest_planner"
+	}
+	relative_position_id = NGA_playing_favorites
+	prerequisite = { focus = NGA_playing_favorites focus = NGA_working_towards_islamic_unity}
+	mutually_exclusive = { focus = NGA_our_friends_in_finance_capital }
+}
+
+shared_focus = {
+	id = NGA_our_friends_in_finance_capital
+	icon = GFX_NGA_our_friends_in_finance_capital
+	cost = 9
+	x = 2
+	y = 1
+	completion_reward = {
+        add_research_slot = 1
+        add_stability = -0.03
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_our_friends_in_finance_capital"
+	}
+	relative_position_id = NGA_playing_favorites
+	prerequisite = { focus = NGA_working_towards_islamic_unity focus = NGA_call_for_interfaith_tolerance focus = NGA_playing_favorites}
+	mutually_exclusive = { focus = NGA_allah_is_the_greatest_planner }
+	mutually_exclusive = { focus = NGA_supermarket_socialism }
+}
+
+shared_focus = {
+	id = NGA_supermarket_socialism
+	icon = GFX_NGA_supermarket_socialism
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = NGA_supermart_soc
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_supermarket_socialism"
+	}
+	relative_position_id = NGA_call_for_interfaith_tolerance
+	prerequisite = { focus = NGA_call_for_interfaith_tolerance focus = NGA_promises_of_secularization}
+	mutually_exclusive = { focus = NGA_our_friends_in_finance_capital }
+	mutually_exclusive = { focus = NGA_power_to_the_producers }
+}
+
+shared_focus = {
+	id = NGA_power_to_the_producers
+	icon = GFX_NGA_power_to_the_producers
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_popularity = {
+            ideology = reformist_socialism
+            popularity = 0.1
+        }
+        27 = {
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            }
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_power_to_the_producers"
+	}
+	relative_position_id = NGA_promises_of_secularization
+	prerequisite = { focus = NGA_promises_of_secularization }
+	mutually_exclusive = { focus = NGA_supermarket_socialism }
+}
+
+shared_focus = {
+	id = NGA_attempt_virtue_signaling
+	icon = GFX_NGA_attempt_virtue_signaling
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_political_power = -100
+        add_stability = 0.05
+        #countryevent
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_attempt_virtue_signaling"
+	}
+	relative_position_id = NGA_allah_is_the_greatest_planner
+	prerequisite = { focus = NGA_allah_is_the_greatest_planner }
+	mutually_exclusive = { focus = NGA_adopt_a_populist_image }
+}
+
+shared_focus = {
+	id = NGA_adopt_a_populist_image
+	icon = GFX_NGA_adopt_a_populist_image
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = NGA_populism
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_adopt_a_populist_image"
+	}
+	relative_position_id = NGA_our_friends_in_finance_capital
+	prerequisite = { focus = NGA_our_friends_in_finance_capital }
+	mutually_exclusive = { focus = NGA_attempt_virtue_signaling }
+	mutually_exclusive = { focus = NGA_incorporate_managerialist_elements }
+}
+
+shared_focus = {
+	id = NGA_incorporate_managerialist_elements
+	icon = GFX_NGA_incorporate_managerialist_elements
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = mitsubishi_managerialism
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_incorporate_managerialist_elements"
+	}
+	relative_position_id = NGA_supermarket_socialism
+	prerequisite = { focus = NGA_supermarket_socialism }
+	mutually_exclusive = { focus = NGA_adopt_a_populist_image }
+	mutually_exclusive = { focus = NGA_experiment_with_democratic_centralism }
+}
+
+shared_focus = {
+	id = NGA_experiment_with_democratic_centralism
+	icon = GFX_NGA_experiment_with_democratic_centralism
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = kosygin_liberman_econ_theory
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_experiment_with_democratic_centralism"
+	}
+	relative_position_id = NGA_power_to_the_producers
+	prerequisite = { focus = NGA_power_to_the_producers }
+	mutually_exclusive = { focus = NGA_incorporate_managerialist_elements }
+}
+
+shared_focus = {
+	id = NGA_establishing_military_values
+	icon = GFX_NGA_establishing_military_values
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = NGA_militarism
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_establishing_military_values"
+	}
+	relative_position_id = NGA_attempt_virtue_signaling
+	prerequisite = { focus = NGA_attempt_virtue_signaling }
+	mutually_exclusive = { focus = NGA_political_oversight_in_the_military }
+}
+
+shared_focus = {
+	id = NGA_political_oversight_in_the_military
+	icon = GFX_NGA_political_oversight_in_the_military
+	cost = 9
+	x = 2
+	y = 1
+	completion_reward = {
+        add_ideas = NGA_mil_commissars
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_political_oversight_in_the_military"
+	}
+	relative_position_id = NGA_attempt_virtue_signaling
+	prerequisite = { focus = NGA_attempt_virtue_signaling focus = NGA_adopt_a_populist_image }
+	mutually_exclusive = { focus = NGA_establishing_military_values }
+	mutually_exclusive = { focus = NGA_support_careerist_officers }
+}
+shared_focus = {
+	id = NGA_democratize_the_military
+	icon = GFX_NGA_democratize_the_military
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_stability = -0.05
+        add_war_support = 0.15
+        add_political_power = -100
+		add_ideas = NGA_the_new_nigerian_culture
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_democratize_the_military"
+	}
+	relative_position_id = NGA_experiment_with_democratic_centralism
+	prerequisite = { focus = NGA_experiment_with_democratic_centralism }
+	mutually_exclusive = { focus = NGA_support_careerist_officers }
+}
+
+shared_focus = {
+	id = NGA_support_careerist_officers
+	icon = GFX_NGA_support_careerist_officers
+	cost = 9
+	x = 2
+	y = 1
+	completion_reward = {
+        add_popularity = {
+            ideology = reformist_socialism
+            popularity = 0.1
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_support_careerist_officers"
+	}
+	relative_position_id = NGA_adopt_a_populist_image
+	prerequisite = { focus = NGA_adopt_a_populist_image focus = NGA_experiment_with_democratic_centralism focus = NGA_incorporate_managerialist_elements}
+	mutually_exclusive = { focus = NGA_democratize_the_military }
+	mutually_exclusive = { focus = NGA_political_oversight_in_the_military }
+}
+
+shared_focus = {
+	id = NGA_a_conscious_nigeria
+	icon = GFX_NGA_a_conscious_nigeria
+	cost = 9
+	x = 1
+	y = 1
+	completion_reward = {
+        set_variable = { NGA.SOCTRENDS_TP = 80 }
+        set_variable = { NGA.SOCTRENDS_DE = 20 }
+        set_variable = { NGA.SOCTRENDS_EE = 40 }
+        custom_effect_tooltip = "Your Social Trends will change: Traditional-Reformist changes to 80% Democratic-Autocratic changes to 20%Egalitarian-Elitist changes to 40%"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_conscious_nigeria"
+	}
+	relative_position_id = NGA_establishing_military_values
+	prerequisite = { focus = NGA_political_oversight_in_the_military focus = NGA_establishing_military_values}
+}
+
+shared_focus = {
+	id = NGA_the_three_and_a_half_republic
+	icon = GFX_NGA_the_three_and_a_half_republic
+	cost = 9
+	x = 1
+	y = 1
+	completion_reward = {
+        add_stability = 0.15
+        add_political_power = -100
+        add_ideas = NGA_the_third_and_a_half_republic
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_three_and_a_half_republic"
+	}
+	relative_position_id = NGA_political_oversight_in_the_military
+	prerequisite = { focus = NGA_political_oversight_in_the_military focus = NGA_support_careerist_officers}
+}
+
+shared_focus = {
+	id = NGA_the_silent_revolution
+	icon = GFX_NGA_the_silent_revolution
+	cost = 9
+	x = 1
+	available = {
+		NOT = {
+			has_completed_focus = NGA_the_jade_revival
+		}
+	}
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.2007
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_silent_revolution"
+	}
+	relative_position_id = NGA_support_careerist_officers
+	prerequisite = { focus = NGA_democratize_the_military focus = NGA_support_careerist_officers }
+}
+
+shared_focus = {
+	id = NGA_the_jade_revival
+	icon = GFX_NGA_the_jade_revival
+	cost = 9
+	x = 1
+	y = 1
+	completion_reward = {
+        add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_jade_revival"
+	}
+	relative_position_id = NGA_a_conscious_nigeria
+	prerequisite = { focus = NGA_the_three_and_a_half_republic focus = NGA_a_conscious_nigeria }
+}
+
+shared_focus = {
+	id = NGA_selfreliance
+	icon = GFX_NGA_selfreliance
+	cost = 9
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = NGA_natcom_dev
+		load_focus_tree = { 
+		tree = NGA_natcom 
+		keep_completed = yes
+		}
+			mark_focus_tree_layout_dirty = yes
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_selfreliance"
+	}
+	relative_position_id = NGA_the_silent_revolution
+	prerequisite = { focus = NGA_the_silent_revolution }
+}
+
+shared_focus = {
+	id = NGA_unfinished_business
+	icon = GFX_NGA_unfinished_business
+	cost = 2
+	x = 2
+	y = 0
+	allow_branch = {
+		country_exists = BIU
+	}
+	available = {
+		country_exists = BIU
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_war_support = 0.12
+		add_stability = -0.12
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_unfinished_business"
+	}
+}
+
+shared_focus = {
+	id = NGA_encourage_loyalism
+	icon = GFX_NGA_encourage_loyalism
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		country_exists = BIU
+		country_exists = BIA
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				country_exists = BIA
+			}
+			BIA = {
+				random_owned_state = {
+            		add_building_construction = {
+            		    type = industrial_complex
+            		    level = 1
+            		    instant_build = yes
+            		}  
+				}
+			}
+		}
+		else = {
+			21 = {
+				add_compliance = 33
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_encourage_loyalism"
+	}
+	relative_position_id = NGA_unfinished_business
+	prerequisite = { focus = NGA_unfinished_business }
+	mutually_exclusive = { focus = NGA_mass_assault_from_all_sides }
+}
+
+shared_focus = {
+	id = NGA_mass_assault_from_all_sides
+	icon = GFX_NGA_mass_assault_from_all_sides
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	allow_branch = {
+		country_exists = BIU
+	}
+	available = {
+		country_exists = BIU
+	}
+	completion_reward = {
+		add_war_support = -0.1
+		add_manpower = 20000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = NGA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_mass_assault_from_all_sides"
+	}
+	relative_position_id = NGA_unfinished_business
+	prerequisite = { focus = NGA_unfinished_business }
+	mutually_exclusive = { focus = NGA_encourage_loyalism }
+}
+
+shared_focus = {
+	id = NGA_the_south_has_fallen
+	icon = GFX_NGA_the_south_has_fallen
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		country_exists = BIU
+		NOT = {
+			country_exists = BIA
+		}
+	}
+	completion_reward = {
+		add_ideas = war_economy
+		21 = {
+			add_resistance = 22
+		}
+		23 = {
+			add_resistance = 50
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_south_has_fallen"
+	}
+	relative_position_id = NGA_mass_assault_from_all_sides
+	prerequisite = { focus = NGA_mass_assault_from_all_sides }
+}
+
+shared_focus = {
+	id = NGA_reward_collaboration
+	icon = GFX_NGA_reward_collaboration
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		country_exists = BIU
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				country_exists = BIA
+			}
+			BIA = {
+				add_stability = 0.25
+				add_to_variable = { BIA.GDP = 10 }
+				add_to_variable = { NGA.DEBT = 10 }
+			}
+			custom_effect_tooltip = "Adds 10 billion GDP for Biafra in exchange for 10 billion debt to Nigeria."
+		}
+		else = {
+			21 = {
+				add_compliance = 25
+			}
+			BIA = {
+				become_exiled_in = { target = NGA legitimacy = 33 }
+			}
+		}	
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_reward_collaboration"
+	}
+	relative_position_id = NGA_encourage_loyalism
+	prerequisite = { focus = NGA_encourage_loyalism }
+}
+
+shared_focus = {
+	id = NGA_promises_of_a_final_peace
+	icon = GFX_NGA_promises_of_a_final_peace
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		country_exists = BIU
+	}
+	completion_reward = {
+		add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_promises_of_a_final_peace"
+	}
+	relative_position_id = NGA_the_south_has_fallen
+	prerequisite = { focus = NGA_the_south_has_fallen focus = NGA_reward_collaboration}
+}

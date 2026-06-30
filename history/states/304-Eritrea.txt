@@ -1,0 +1,42 @@
+state={
+id=304
+	name="STATE_304"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	oil = 20
+	steel = 100
+	}
+	history={
+			victory_points = {
+			12766 20
+		}
+		victory_points = {
+			5017 5 #Cheren
+		}				
+		victory_points = {
+			12723 5 #Barentù
+		}			
+		owner = ERI
+		buildings = {
+            school = 3
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 3
+			12766 = {
+			naval_base = 4
+			}
+		}
+		add_core_of = ETH
+		add_core_of = ERI
+
+	}
+	provinces={
+		5017 5047 5091 8043 12723 12766 
+	}
+	manpower=4000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

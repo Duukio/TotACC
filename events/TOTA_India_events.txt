@@ -1,0 +1,216 @@
+##this file is for the entire subcontinent
+
+add_namespace = BMB
+
+country_event = { # Mr Mistry explodes into spaghetti after a car accident
+    id = BMB.1
+    title = BMB.1.t
+    desc = BMB.1.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #investigation succeeds, Zoroastrians are FUCKED
+      name = BMB.1.a
+      ai_chance = { factor = 60 }
+		create_country_leader = {
+			name = "Bombay National Senate"
+			desc = ""
+			picture = "gfx/leaders/BMB/Senate.png"
+			expire = "2040.1.1"
+			ideology = corporatocracy
+			traits = {
+			}
+		}
+        country_event = {
+            id = BMB.2
+            days = 60
+        }
+	}
+    option = { #epic investigation fail
+      name = BMB.1.b
+      ai_chance = { factor = 40 }
+		create_country_leader = {
+			name = "Nusli Wadia"
+			desc = ""
+			picture = "gfx/leaders/BMB/Nusli Wadia.png"
+			expire = "2040.1.1"
+			ideology = corporatocracy #maybe change?
+			traits = {
+			}
+		}
+        country_event = {
+            id = BMB.3
+            days = 60
+        }
+	}
+}
+country_event = { # Who wins the ensuing power struggle?
+    id = BMB.2
+    title = BMB.2.t
+    desc = BMB.2.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BMB.2.a #mozlems
+      ai_chance = { factor = 25 }
+		create_country_leader = {
+			name = "Azim Premji"
+			desc = ""
+			picture = "gfx/leaders/BMB/Azim Premji.png"
+			expire = "2040.1.1"
+			ideology = anodir
+			traits = {
+			}
+		}
+        random_list = {
+            60 = {
+                #nozzing
+            }
+            40 = {
+                country_event = {
+                    id = BMB.5
+                    days = 60
+                }
+            }
+        }
+	}
+    option = {
+      ai_chance = { factor = 25 }
+      name = BMB.2.b #Christians in the Ohio of India win
+		create_country_leader = {
+			name = "Churchill Alemao"
+			desc = ""
+			picture = "gfx/leaders/BMB/Churchill Alemao.png"
+			expire = "2040.1.1"
+			ideology = anodir
+			traits = {
+			}
+		}
+	}
+    option = {
+      ai_chance = { factor = 15 }
+      name = BMB.2.c #Jainreich
+		create_country_leader = {
+			name = "Gautam Adani"
+			desc = ""
+			picture = "gfx/leaders/BMB/Gautam Adani.png"
+			expire = "2040.1.1"
+			ideology = corporatocracy
+			traits = {
+			}
+		}
+	}
+    option = {
+      ai_chance = { factor = 35 }
+      name = BMB.2.d #More options
+      country_event = {
+        id = BMB.4
+      }
+	}
+}
+country_event = { # Who wins the other power struggle?
+    id = BMB.3
+    title = BMB.3.t
+    desc = BMB.3.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      ai_chance = { factor = 40 }
+      name = BMB.3.a #Bharatiya Power...
+		create_country_leader = {
+			name = "Eknath Shinde"
+			desc = ""
+			picture = "gfx/leaders/BMB/Eknath Shinde.png"
+			expire = "2040.1.1"
+			ideology = natpop
+			traits = {
+			}
+		}
+        set_politics = {
+            ruling_party = dissident_right
+        }
+	}
+    option = {
+      name = BMB.3.b #Z
+      ai_chance = { factor = 60 }
+		create_country_leader = {
+			name = "Uddhav Thackeray"
+			desc = ""
+			picture = "gfx/leaders/BMB/Uddhav Thackeray.png"
+			expire = "2040.1.1"
+			ideology = sovmarsys
+			traits = {
+			}
+		}
+        set_politics = {
+            ruling_party = reformist_socialism
+        }
+	}
+}
+country_event = { # Who wins the power struggle episode 2?
+    id = BMB.4
+    title = BMB.4.t
+    desc = BMB.4.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      ai_chance = { factor = 70 }
+      name = BMB.4.a #Buddhism is BACK in India baby
+		create_country_leader = {
+			name = "Bhushan R. Gavai"
+			desc = ""
+			picture = "gfx/leaders/BMB/Bhushan R. Gavai.png"
+			expire = "2040.1.1"
+			ideology = lwnat
+			traits = {
+			}
+		}
+        set_politics = {
+            ruling_party = reformist_socialism
+        }
+	}
+    option = {
+      ai_chance = { factor = 30 }
+      name = BMB.4.b #The most unlikely path, Naskar
+		create_country_leader = {
+			name = "Abhijit Naskar"
+			desc = ""
+			picture = "gfx/leaders/BMB/NASKAR!.png"
+			expire = "2040.1.1"
+			ideology = perdict
+			traits = {
+			}
+		}
+        set_politics = {
+            ruling_party = autocracy
+        }
+	}
+}
+country_event = { # moslemreich
+    id = BMB.5
+    title = BMB.5.t
+    desc = BMB.5.desc
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { 
+      name = BMB.5.a
+		create_country_leader = {
+			name = "Abdul Aziz Al Ghurair"
+			desc = ""
+			picture = "gfx/leaders/BMB/Abdul Aziz Al Ghurair.png"
+			expire = "2040.1.1"
+			ideology = corporatocracy
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,399 @@
+#TAG_decisions_for_mobilization_cat = {
+#	TAG_mobilize_economy_temporarily = {
+#        ai_will_do = {
+#            base = 0
+#            modifier = {
+#                add = 0
+#                has_war = yes
+#            }
+#        }
+#		cost = 100
+#		#fire_only_once = yes
+#        days_remove = 30
+#		remove_effect = {
+#            add_stability = -0.07
+#            add_war_support = -0.1
+#            add_timed_idea = {
+#                idea = mobilizing_economy
+#                days = 120
+#            }
+#		}
+#	}
+#	TAG_mobilize_pop_temporarily = {
+#		cost = 100
+#        ai_will_do = {
+#            base = 0
+#            modifier = {
+#                add = 0
+#                has_war = yes
+#            }
+#        }
+#		#fire_only_once = yes
+#        days_remove = 30
+#		remove_effect = {
+#            add_stability = -0.07
+#            add_war_support = -0.1
+#            add_timed_idea = {
+#                idea = mobilizing_pop
+#                days = 120
+#            }
+#		}
+#	}
+#	TAG_mobilize_for_war = {
+#		cost = 100
+#        ai_will_do = {
+#            base = 0
+#            modifier = {
+#                add = 0
+#                has_war = yes
+#            }
+#        }
+#		#fire_only_once = yes
+#        days_remove = 120
+#        available = {
+#            OR = {
+#            AND = {
+#            has_idea = mobilizing_pop
+#            has_idea = mobilizing_economy
+#            }
+#            has_war = yes
+#            }
+#        }
+#		complete_effect = {
+#            add_stability = 0.05
+#            add_war_support = 0.15
+#            country_lock_all_division_template = no
+#		}
+#        remove_effect = {
+#            country_lock_all_division_template = yes
+#        }
+#	}
+#}
+
+TAG_soctrends_dec_cat = {
+    TAG_centralize_power = { #DC_C
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = revolutionary_right
+                    has_government = reformist_socialism
+                    has_government = hardline_socialism
+                    has_government = autocracy
+                    has_government = technocracy
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_pp_gain < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                check_variable = { THIS.mismatch_surrlim < -0.1 }
+                check_variable = { THIS.mismatch_constspeed < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            subtract_from_variable = { THIS.SOCTRENDS_DC = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_DC
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Subtracts 10 points from Decentralized in the Social Trends mechanic"
+	    }  
+    }
+    TAG_open_local_governments = { #DC_D
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = liberalism
+                    has_government = conservatism
+                    has_government = dissident_right
+                    has_government = anarchism
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_pp_gain < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                check_variable = { THIS.mismatch_surrlim < -0.1 }
+                check_variable = { THIS.mismatch_constspeed < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            add_to_variable = { THIS.SOCTRENDS_DC = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_DC
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Adds 10 points to Decentralized in the Social Trends mechanic"
+	    }   
+    }
+    TAG_democratic_reforms = { #DE_D
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = liberalism
+                    has_government = conservatism
+                    has_government = socdem
+                    has_government = anarchism
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_pp_gain < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            add_to_variable = { THIS.SOCTRENDS_DE = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_DE
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Adds 10 points to Democratic in the Social Trends mechanic"
+	    }         
+    }
+    TAG_crackdown_on_elections = { #DE_E
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = hardline_socialism
+                    has_government = revolutionary_right
+                    has_government = reformist_socialism
+                    has_government = autocracy
+                    has_government = technocracy
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_pp_gain < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            subtract_from_variable = { THIS.SOCTRENDS_DE = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_DE
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Subtracts 10 points from Democratic in the Social Trends mechanic"
+	    }           
+    }
+    TAG_income_equality_effort = { #EE_E1
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = hardline_socialism
+                    has_government = socdem
+                    has_government = reformist_socialism
+                    has_government = anarchism
+                    has_government = technocracy
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_surrlim < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                check_variable = { THIS.mismatch_mpop < -0.1 }
+                check_variable = { THIS.mismatch_gdp < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            add_to_variable = { THIS.SOCTRENDS_EE = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_EE
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Adds 10 points to Egalitarian in the Social Trends mechanic"
+	    }   
+    }
+    TAG_trickle_down_economics = { #EE_E2
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = revolutionary_right
+                    has_government = dissident_right
+                    has_government = autocracy
+                    has_government = conservatism
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_surrlim < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                check_variable = { THIS.mismatch_mpop < -0.1 }
+                check_variable = { THIS.mismatch_gdp < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            subtract_from_variable = { THIS.SOCTRENDS_EE = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_EE
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Subtracts 10 points from Egalitarian in the Social Trends mechanic"
+	    }        
+    }
+    TAG_promote_tradition = { #TP_T
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = revolutionary_right
+                    has_government = dissident_right
+                    has_government = autocracy
+                    has_government = conservatism
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_surrlim < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                check_variable = { THIS.mismatch_mpop < -0.1 }
+                check_variable = { THIS.mismatch_constspeed < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            add_to_variable = { THIS.SOCTRENDS_TP = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_TP
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Adds 10 points to Traditional in the Social Trends mechanic"
+	    }
+    }
+    TAG_create_national_parks = { #EA_E
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = socdem
+                    has_government = anarchism
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_mpop < -0.1 }
+                check_variable = { THIS.mismatch_gdp < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            add_to_variable = { THIS.SOCTRENDS_EA = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_EA
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Adds 10 points to Ecological in the Social Trends mechanic"
+	    }
+    }
+    TAG_expand_industry = { #EA_A
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = technocracy
+                    has_government = dissident_right
+                    has_government = hardline_socialism
+                    has_government = reformist_socialism
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_mpop < -0.1 }
+                check_variable = { THIS.mismatch_gdp < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            subtract_from_variable = { THIS.SOCTRENDS_EA = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_EA
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Removes 10 points from Ecological in the Social Trends mechanic"
+	    }
+    }
+    TAG_embrace_new_lifestyles = { #TP_P
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 0
+                OR = { 
+                    has_government = socdem
+                    has_government = liberalism
+                    has_government = technocracy
+                    has_government = anarchism
+                    has_government = hardline_socialism
+                    has_government = reformist_socialism
+                }
+                OR = {
+                check_variable = { THIS.mismatch_stab < -0.1 }
+                check_variable = { THIS.mismatch_surrlim < -0.1 }
+                check_variable = { THIS.mismatch_ws < -0.1 }
+                check_variable = { THIS.mismatch_mpop < -0.1 }
+                check_variable = { THIS.mismatch_constspeed < -0.1 }
+                }
+            }
+        }
+	    cost = 100
+	    #fire_only_once = yes
+        days_remove = 30
+	    remove_effect = {
+            subtract_from_variable = { THIS.SOCTRENDS_TP = 10 }
+            clamp_variable = {
+              var = THIS.SOCTRENDS_TP
+              min = 0
+              max = 100
+            }
+            custom_effect_tooltip = "Removes 10 points from Traditional in the Social Trends mechanic"
+	    }
+    }
+}

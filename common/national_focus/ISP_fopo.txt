@@ -1,0 +1,883 @@
+
+shared_focus = {
+	id = ISP_crisis_at_home
+	icon = GFX_ISP_crisis_at_home
+	cost = 7
+	x = 80
+	y = 0
+	completion_reward = {
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_crisis_at_home"
+	}
+}
+
+shared_focus = {
+	id = ISP_the_gulf_revolution
+	icon = GFX_ISP_the_gulf_revolution
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		send_equipment = {
+    		equipment = infantry_equipment
+    		amount = 500
+    		target = PGR
+		}
+		#send_volunteer_size = 1
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_gulf_revolution"
+	}
+	relative_position_id = ISP_crisis_at_home
+	prerequisite = { focus = ISP_crisis_at_home }
+}
+
+shared_focus = {
+	id = ISP_aiding_the_kurds
+	icon = GFX_ISP_aiding_the_kurds
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		send_equipment = {
+    		equipment = infantry_equipment
+    		amount = 500
+    		target = KUR
+		}
+		if = {
+			limit = {
+				KU2 = {
+					exists = yes
+				}
+			}
+			equipment = infantry_equipment
+    		amount = 500
+    		target = KU2
+		}
+		#send_volunteer_size = 1
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_aiding_the_kurds"
+	}
+	relative_position_id = ISP_crisis_at_home
+	prerequisite = { focus = ISP_crisis_at_home }
+}
+
+shared_focus = {
+	id = ISP_united_against_arab_reaction
+	icon = GFX_ISP_united_against_arab_reaction
+	cost = 7
+	x = 1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.05
+		add_stability = 0.05
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_united_against_arab_reaction"
+	}
+	relative_position_id = ISP_the_gulf_revolution
+	prerequisite = { focus = ISP_the_gulf_revolution }
+	prerequisite = { focus = ISP_aiding_the_kurds }
+}
+
+shared_focus = {
+	id = ISP_and_afar
+	icon = GFX_ISP_and_afar
+	cost = 5
+	x = 3
+	y = 1
+	completion_reward = {
+		add_political_power = 50
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_and_afar"
+	}
+	relative_position_id = ISP_crisis_at_home
+	prerequisite = { focus = ISP_crisis_at_home }
+}
+
+shared_focus = {
+	id = ISP_america_aflame
+	icon = GFX_ISP_america_aflame
+	cost = 1
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_america_aflame"
+	}
+	relative_position_id = ISP_and_afar
+	prerequisite = { focus = ISP_and_afar }
+}
+
+shared_focus = {
+	id = ISP_the_south_african_collapse
+	icon = GFX_ISP_the_south_african_collapse
+	cost = 1
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_south_african_collapse"
+	}
+	relative_position_id = ISP_and_afar
+	prerequisite = { focus = ISP_and_afar }
+}
+
+shared_focus = {
+	id = ISP_a_new_aliyah_wave
+	icon = GFX_ISP_a_new_aliyah_wave
+	cost = 7
+	x = -1
+	y = 1
+	completion_reward = {
+		add_dynamic_modifier = {
+			modifier = ISP_eighth_aliyah_dyn
+			scope = ISP
+		}
+		add_to_variable = {
+			var = ISPEAD_pop
+			value = 0.4
+		}
+		add_to_variable = {
+			var = ISPEAD_science_speed
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPEAD_stab
+			value = -0.1
+		}
+		add_to_variable = {
+			var = ISPEAD_eff_growth
+			value = -0.1
+		}
+		add_to_variable ={
+			var = ISPEAD_org
+			value = -0.1
+		}
+		add_to_variable = {
+			var = ISPEAD_ref_soc_drift
+			value = -0.01
+		}
+		custom_effect_tooltip = "Add natioanl spirit 'The Eighth Aliyah' which grants +40% population growth, +5% research speed, -10% stability, -10% production efficiency growth, -10% division organization, -0.01 daily neosocialist popularity."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_new_aliyah_wave"
+	}
+	relative_position_id = ISP_the_south_african_collapse
+	prerequisite = { focus = ISP_the_south_african_collapse }
+	prerequisite = { focus = ISP_america_aflame }
+}
+
+shared_focus = {
+	id = ISP_reeducating_our_lost_brothers
+	icon = GFX_ISP_reeducating_our_lost_brothers
+	cost = 7
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPEAD_stab 
+			value = 0.04
+		}
+		add_to_variable = {
+			var = ISPEAD_ref_soc_drift
+			value = 0.01
+		}
+		custom_effect_tooltip = "Modify 'The Eighth Aliyah' by +4% stability, +0.01 daily neosocialist popularity."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reeducating_our_lost_brothers"
+	}
+	relative_position_id = ISP_a_new_aliyah_wave
+	prerequisite = { focus = ISP_a_new_aliyah_wave }
+}
+
+shared_focus = {
+	id = ISP_workforce_integration
+	icon = GFX_ISP_workforce_integration
+	cost = 10
+	x = 0
+	y = 2
+	completion_reward = {
+		add_to_variable = {
+			var = ISPEAD_con_goods
+			value = -0.1
+		}
+		add_to_variable = {
+			var = ISPEAD_eff_growth
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPEAD_output
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'The Eighth Aliyah' by -10% consumer good factories, +5% production efficiency growth, +10% factory output."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_workforce_integration"
+	}
+	relative_position_id = ISP_reeducating_our_lost_brothers
+	prerequisite = { focus = ISP_reeducating_our_lost_brothers }
+}
+
+shared_focus = {
+	id = ISP_reopen_ulpanim
+	icon = GFX_ISP_reopen_ulpanim
+	cost = 7
+	x = 1
+	y = 2
+	completion_reward = {
+		add_to_variable = {
+			var = ISPEAD_con_goods
+			value = 0.03
+		}
+		add_to_variable = {
+			var = ISPEAD_stab
+			value = 0.02
+		}
+		add_to_variable = {
+			var = ISPEAD_org
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISPEAD_eff_growth
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPEAD_pop
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'The Eighth Aliyah' by +3% consumer good factories, +2% stability, +10% division org, +5% production efficiency growth, +10% population growth."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reopen_ulpanim"
+	}
+	relative_position_id = ISP_a_new_aliyah_wave
+	prerequisite = { focus = ISP_a_new_aliyah_wave }
+}
+
+shared_focus = {
+	id = ISP_prepare_accomodations
+	icon = GFX_ISP_prepare_accomodations
+	cost = 7
+	x = -1
+	y = 2
+	completion_reward = {
+		add_to_variable = {
+			var = ISPEAD_con_goods
+			value = 0.03
+		}
+		add_to_variable ={
+			var = ISPEAD_stab
+			value = 0.02
+		}
+		add_to_variable = {
+			var = ISPEAD_build_speed
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPEAD_pop
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'The Eighth Aliyah' by +3% consumer good factories, +2% stability, +5% construction speed, +10% population growth."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_prepare_accomodations"
+	}
+	relative_position_id = ISP_a_new_aliyah_wave
+	prerequisite = { focus = ISP_a_new_aliyah_wave }
+}
+
+shared_focus = {
+	id = ISP_palestinian_policy
+	icon = GFX_ISP_palestinian_policy
+	cost = 10
+	x = -4
+	y = 1
+	completion_reward = {
+		add_political_power = 25
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_palestinian_policy"
+	}
+	relative_position_id = ISP_crisis_at_home
+	prerequisite = { focus = ISP_crisis_at_home }
+}
+
+shared_focus = {
+	id = ISP_push_for_reconciliation
+	icon = GFX_ISP_push_for_reconciliation
+	cost = 7
+	x = -1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_edati_ws
+			value = 0.02
+		}
+		add_to_variable = {
+			var =  terrorism_rate_ISP
+			value = 20
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_push_for_reconciliation"
+	}
+	relative_position_id = ISP_palestinian_policy
+	prerequisite = { focus = ISP_palestinian_policy }
+	mutually_exclusive = { focus = ISP_peace_through_strength }
+}
+
+shared_focus = {
+	id = ISP_peace_through_strength
+	icon = GFX_ISP_peace_through_strength
+	cost = 7
+	x = 1
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.05
+	    }
+		add_to_variable = {
+			var = ISP_edati_stab
+			value = 0.05
+		}
+
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_peace_through_strength"
+	}
+	relative_position_id = ISP_palestinian_policy
+	prerequisite = { focus = ISP_palestinian_policy }
+	mutually_exclusive = { focus = ISP_push_for_reconciliation }
+}
+
+shared_focus = {
+	id = ISP_eyes_everywhere
+	icon = GFX_ISP_eyes_everywhere
+	cost = 10
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_edati_stab
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISP_edati_ws
+			value = 0.02
+		}
+		add_to_variable = {
+			var = terrorism_rate_ISP
+			value = 30
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_eyes_everywhere"
+	}
+	relative_position_id = ISP_peace_through_strength
+	prerequisite = { focus = ISP_peace_through_strength }
+}
+
+shared_focus = {
+	id = ISP_further_arab_autonomy
+	icon = GFX_ISP_further_arab_autonomy
+	cost = 7
+	x = -1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISP_edati_recruit
+			value = 0.05
+		}
+		add_to_variable = {
+			var = terrorism_rate_ISP
+			value = 20
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_further_arab_autonomy"
+	}
+	relative_position_id = ISP_push_for_reconciliation
+	prerequisite = { focus = ISP_push_for_reconciliation }
+	#prerequisite = { focus = ISP_peace_through_strength }
+}
+
+shared_focus = {
+	id = ISP_utilizing_shin_bet
+	icon = GFX_ISP_utilizing_shin_bet
+	cost = 7
+	x = 1
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = revolutionary_right
+			popularity = 0.03
+		}
+		add_to_variable = {
+			var = terrorism_rate_ISP
+			value = 30
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_utilizing_shin_bet"
+	}
+	relative_position_id = ISP_push_for_reconciliation
+	prerequisite = { focus = ISP_push_for_reconciliation focus = ISP_peace_through_strength}
+}
+
+shared_focus = {
+	id = ISP_curtail_islamic_fundamentalism
+	icon = GFX_ISP_curtail_islamic_fundamentalism
+	cost = 7
+	x = -1
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.03
+		}
+		add_to_variable = {
+			var = terrorism_rate_ISP
+			value = 30
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_curtail_islamic_fundamentalism"
+	}
+	relative_position_id = ISP_utilizing_shin_bet
+	prerequisite = { focus = ISP_utilizing_shin_bet }
+	mutually_exclusive = { focus = ISP_the_enemy_of_my_enemy }
+}
+
+shared_focus = {
+	id = ISP_the_enemy_of_my_enemy
+	icon = GFX_ISP_the_enemy_of_my_enemy
+	cost = 7
+	x = 1
+	y = 1
+	completion_reward = {
+		LEB = {
+			add_stability = -0.2
+			add_war_support = -0.2
+		}
+		add_to_variable = {
+			var = terrorism_rate_ISP
+			value = -60
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_enemy_of_my_enemy"
+	}
+	relative_position_id = ISP_utilizing_shin_bet
+	prerequisite = { focus = ISP_utilizing_shin_bet }
+	mutually_exclusive = { focus = ISP_curtail_islamic_fundamentalism }
+}
+
+shared_focus = {
+	id = ISP_the_darkest_day
+	icon = GFX_ISP_the_darkest_day
+	cost = 4
+	x = -11
+	y = 1
+	allow_branch = {
+		has_country_flag = PLO_attack_flag
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_darkest_day"
+	}
+	relative_position_id = ISP_crisis_at_home
+	prerequisite = { focus = ISP_crisis_at_home }
+}
+
+shared_focus = {
+	id = ISP_mobilizing_the_harket
+	icon = GFX_ISP_mobilizing_the_harket
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1000
+			target = SHL
+		}
+		add_dynamic_modifier = {
+			modifier = ISP_back_in_lebanon_dyn
+			scope = ISP
+		}
+		add_to_variable = {
+			var = ISPBLD_vol
+			value = 2
+		}
+		add_to_variable = {
+			var = ISPBLD_war_support
+			value = 0.05
+		}
+		custom_effect_tooltip = "Add national spirit 'Back in Lebanon' which grants +2 volunteers, +5% war support."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_mobilizing_the_harket"
+	}
+	relative_position_id = ISP_the_darkest_day
+	prerequisite = { focus = ISP_the_darkest_day }
+}
+
+shared_focus = {
+	id = ISP_concentrated_special_operations
+	icon = GFX_ISP_concentrated_special_operations
+	cost = 4
+	x = -1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPBLD_special_force
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'Back in Lebanon' by +10% special forces attack."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_concentrated_special_operations"
+	}
+	relative_position_id = ISP_mobilizing_the_harket
+	prerequisite = { focus = ISP_mobilizing_the_harket }
+	mutually_exclusive = { focus = ISP_with_a_strong_hand }
+}
+
+shared_focus = {
+	id = ISP_with_a_strong_hand
+	icon = GFX_ISP_with_a_strong_hand
+	cost = 4
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPBLD_off
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPBLD_vol
+			value = 2
+		}
+		custom_effect_tooltip = "Modify 'Back in Lebanon' by +2 volunteers, +5% attack."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_with_a_strong_hand"
+	}
+	relative_position_id = ISP_mobilizing_the_harket
+	prerequisite = { focus = ISP_mobilizing_the_harket }
+	mutually_exclusive = { focus = ISP_concentrated_special_operations }
+}
+
+shared_focus = {
+	id = ISP_and_an_outstretched_arm
+	icon = GFX_ISP_and_an_outstretched_arm
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPBLD_speed
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modify 'Back in Lebanon' by +5% division speed."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_and_an_outstretched_arm"
+	}
+	relative_position_id = ISP_with_a_strong_hand
+	prerequisite = { focus = ISP_with_a_strong_hand }
+}
+
+shared_focus = {
+	id = ISP_cleaning_fatahstan
+	icon = GFX_ISP_cleaning_fatahstan
+	cost = 4
+	x = 2
+	y = 1
+	completion_reward = {
+		1085 = {
+			add_manpower = -2000
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_cleaning_fatahstan"
+	}
+	relative_position_id = ISP_with_a_strong_hand
+	prerequisite = { focus = ISP_with_a_strong_hand }
+}
+
+shared_focus = {
+	id = ISP_vainakima
+	icon = GFX_ISP_vainakima
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = ISP_vainakima_var
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = ISP_vainakima_var
+		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = ISP_vainakima_var
+		}
+		add_opinion_modifier = {
+			target = WES
+			modifier = ISP_vainakima_var
+		}
+		add_opinion_modifier = {
+			target = SPA
+			modifier = ISP_vainakima_var
+		}
+		add_opinion_modifier = {
+			target = SWE
+			modifier = ISP_vainakima_var
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_vainakima"
+	}
+	relative_position_id = ISP_and_an_outstretched_arm
+	prerequisite = { focus = ISP_and_an_outstretched_arm }
+	prerequisite = { focus = ISP_cleaning_fatahstan }
+}
+
+shared_focus = {
+	id = ISP_safeguarding_our_sons
+	icon = GFX_ISP_safeguarding_our_sons
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPBLD_exp_loss
+			value = -0.5
+		}
+		custom_effect_tooltip = "Modify 'Back in Lebanon' by -50% experienced soldiers loss."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_safeguarding_our_sons"
+	}
+	relative_position_id = ISP_concentrated_special_operations
+	prerequisite = { focus = ISP_concentrated_special_operations }
+}
+
+shared_focus = {
+	id = ISP_humane_warfare
+	icon = GFX_ISP_humane_warfare
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+			target = FRA
+			modifier = ISP_humane_warfare_var
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = ISP_humane_warfare_var
+		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = ISP_humane_warfare_var
+		}
+		add_opinion_modifier = {
+			target = WES
+			modifier = ISP_humane_warfare_var
+		}
+		add_opinion_modifier = {
+			target = SPA
+			modifier = ISP_humane_warfare_var
+		}
+		add_opinion_modifier = {
+			target = SWE
+			modifier = ISP_humane_warfare_var
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_humane_warfare"
+	}
+	relative_position_id = ISP_safeguarding_our_sons
+	prerequisite = { focus = ISP_safeguarding_our_sons }
+	prerequisite = { focus = ISP_drone_strikes }
+}
+
+shared_focus = {
+	id = ISP_drone_strikes
+	icon = GFX_ISP_drone_strikes
+	cost = 4
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPBLD_output
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'Back in Lebanon' by +10% factory output."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_drone_strikes"
+	}
+	relative_position_id = ISP_concentrated_special_operations
+	prerequisite = { focus = ISP_concentrated_special_operations }
+}
+
+
+shared_focus = {
+	id = ISP_tis_the_final_battle
+	icon = GFX_ISP_tis_the_final_battle
+	cost = 1
+	x = 0
+	y = -6
+	allow_branch = {
+		has_country_flag = caniac
+	}
+	available = {
+		ISP = {
+			has_war = yes
+		}
+	}
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_tis_the_final_battle"
+	}
+	relative_position_id = ISP_mobilizing_the_harket
+}
+
+shared_focus = {
+	id = ISP_total_mobilization
+	icon = GFX_ISP_total_mobilization
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		remove_dynamic_modifier = { modifier = ISP_back_in_lebanon_dyn}
+		add_ideas = ISP_total_war
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_total_mobilization"
+	}
+	relative_position_id = ISP_tis_the_final_battle
+	prerequisite = { focus = ISP_tis_the_final_battle }
+}
+
+shared_focus = {
+	id = ISP_rolling_screen_of_fire
+	icon = GFX_ISP_rolling_screen_of_fire
+	cost = 4
+	x = -1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ISP_total_war
+			add_idea = ISP_total_war_2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_rolling_screen_of_fire"
+	}
+	relative_position_id = ISP_total_mobilization
+	prerequisite = { focus = ISP_total_mobilization }
+}
+
+shared_focus = {
+	id = ISP_petition_wto_aid
+	icon = GFX_ISP_petition_wto_aid
+	cost = 4
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_petition_wto_aid"
+	}
+	relative_position_id = ISP_total_mobilization
+	prerequisite = { focus = ISP_total_mobilization }
+}
+
+shared_focus = {
+	id = ISP_old_world_razed_to_the_ground
+	icon = GFX_ISP_old_world_razed_to_the_ground
+	cost = 5
+	x = 1
+	y = 1
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ISP_total_war_2
+			add_idea = ISP_from_the_ashes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_old_world_razed_to_the_ground"
+	}
+	relative_position_id = ISP_rolling_screen_of_fire
+	prerequisite = { focus = ISP_rolling_screen_of_fire }
+	prerequisite = { focus = ISP_petition_wto_aid }
+}
+
+shared_focus = {
+	id = ISP_bent_back_freed_from_burden
+	icon = GFX_ISP_bent_back_freed_from_burden
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ISP_from_the_ashes
+			add_idea = ISP_from_the_ashes_2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_bent_back_freed_from_burden"
+	}
+	relative_position_id = ISP_old_world_razed_to_the_ground
+	prerequisite = { focus = ISP_old_world_razed_to_the_ground }
+}
+
+shared_focus = {
+	id = ISP_our_own_world_we_shall_establish
+	icon = GFX_ISP_our_own_world_we_shall_establish
+	cost = 7
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ISP_from_the_ashes_2
+			add_idea = ISP_from_the_ashes_3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_our_own_world_we_shall_establish"
+	}
+	relative_position_id = ISP_bent_back_freed_from_burden
+	prerequisite = { focus = ISP_bent_back_freed_from_burden }
+}
+
+shared_focus = {
+	id = ISP_the_conquered_territories
+	icon = GFX_ISP_the_conquered_territories
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		if = {
+			limit = {
+				ISP = {
+					hardline_socialism > 0.19
+				}
+			}
+			country_event = {
+				id = ISP.2003
+				days = 1
+			}
+		}
+		else = {
+			country_event = {
+				id = ISP.2002
+				days = 1
+			}
+		 }
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_conquered_territories"
+	}
+	relative_position_id = ISP_our_own_world_we_shall_establish
+	prerequisite = { focus = ISP_our_own_world_we_shall_establish }
+}
+
+shared_focus = {
+	id = ISP_renewing_diplomacy
+	icon = GFX_ISP_renewing_diplomacy
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+			target = TRP
+			modifier = ISP_renewed_diplo
+		}
+		add_opinion_modifier = {
+			target = SAU
+			modifier = ISP_renewed_diplo
+		}
+		add_opinion_modifier = {
+			target = YE2
+			modifier = ISP_renewed_diplo
+		}
+		add_opinion_modifier = {
+			target = DHO
+			modifier = ISP_renewed_diplo
+		}
+		add_opinion_modifier = {
+			target = ALG
+			modifier = ISP_renewed_diplo
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_renewing_diplomacy"
+	}
+	relative_position_id = ISP_our_own_world_we_shall_establish
+	prerequisite = { focus = ISP_our_own_world_we_shall_establish }
+}
+
+shared_focus = {
+	id = ISP_yesterday_nothing__tomorrow_all
+	icon = GFX_ISP_yesterday_nothing__tomorrow_all
+	cost = 7
+	x = 2
+	y = 1
+	completion_reward = {
+		country_event = { 
+			id = ISP.2001
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_yesterday_nothing__tomorrow_all"
+	}
+	relative_position_id = ISP_the_conquered_territories
+	prerequisite = { focus = ISP_the_conquered_territories }
+	prerequisite = { focus = ISP_renewing_diplomacy }
+}

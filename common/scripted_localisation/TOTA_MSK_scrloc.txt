@@ -1,0 +1,38 @@
+defined_text = {
+	name = MSKCONTRASANGER_SCRLOC
+	text = {
+		trigger = {
+			tag = MSK
+            check_variable = { MSK.CONTRASANGER > 98 }
+		}
+		localization_key = MSKCONTRASANGER_CRITICAL
+	}
+	text = {
+		trigger = {
+			tag = MSK
+            check_variable = { MSK.CONTRASANGER > 60 }
+		}
+		localization_key = MSKCONTRASANGER_HIGH
+	}
+	text = {
+		trigger = {
+			tag = MSK
+            check_variable = { MSK.CONTRASANGER = 41 }
+		}
+		localization_key = MSKCONTRASANGER_CONCERNING
+	}
+	text = {
+		trigger = {
+			tag = MSK
+            check_variable = { MSK.CONTRASANGER > 41 }
+		}
+		localization_key = MSKCONTRASANGER_CONCERNING
+	}
+	text = {
+		trigger = {
+			tag = MSK
+            check_variable = { MSK.CONTRASANGER < 41 }
+		}
+		localization_key = MSKCONTRASANGER_MINIMAL
+	}
+}

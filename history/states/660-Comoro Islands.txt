@@ -1,0 +1,31 @@
+
+state={
+	id=660
+	name="STATE_660"
+
+	history={
+		victory_points = {
+			13072 10 
+		}
+		owner = COM
+		add_core_of = COM
+		add_claim_by = ANJ
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 2
+			13072 = {
+				naval_base = 3
+			}
+		}
+
+	}
+
+	provinces={
+		13072 
+	}
+	manpower=379919
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+
+state={
+id=554
+	
+	name="STATE_554"
+	manpower = 91021
+	state_category = town
+	
+	history={
+		owner = USA
+		victory_points = { 12561 5 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		7688 7888 12561 12633 
+	}
+	
+
+	local_supplies=0.0 
+}

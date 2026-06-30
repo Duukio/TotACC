@@ -1,0 +1,31 @@
+state={
+id=417
+	name="STATE_417"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	}
+	history={
+		owner = PRC
+		victory_points = { 4189 25 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 1
+			4189 = {
+			naval_base = 5
+			}
+		}
+		add_core_of = PRC
+	}
+	provinces={
+		4189 
+	}
+	manpower=682800
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

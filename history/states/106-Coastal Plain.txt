@@ -1,0 +1,38 @@
+state={
+id=106
+	name="STATE_106"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		owner = ISP
+		victory_points = {
+			13870 50
+		}
+		victory_points = {
+			1201 10
+		}
+		victory_points = {
+			4088 10
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 5
+			industrial_complex = 7
+			dockyard = 2
+			air_base = 7 
+			4206 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = ISP
+
+	}
+	provinces={
+	 1201 4088 4206 13870
+	}
+	manpower=6000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

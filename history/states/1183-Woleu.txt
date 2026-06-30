@@ -1,0 +1,25 @@
+state={
+	id=1183
+	name="STATE_1183"
+    buildings_max_level_factor = 1
+	provinces={
+		13945 13946 
+	}
+	manpower=675681
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = CAM
+		add_core_of = CAM
+		add_core_of = EQG
+		buildings = {
+			school = 2
+			infrastructure = 2
+		}
+		victory_points = {
+			13945 1
+		}
+	}
+}

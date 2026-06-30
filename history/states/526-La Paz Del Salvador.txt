@@ -1,0 +1,41 @@
+state={
+id=526
+	
+	name="STATE_526"
+
+	manpower = 1130000
+	resources={
+		strategic_minerals=5
+	}
+	
+	state_category = large_town
+	
+	history=
+	{
+		owner = EMR
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1 
+			air_base = 1
+			13615 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = EMR
+		add_core_of = ELS
+		victory_points = {
+			13678 20
+		}
+		victory_points = {
+			13615 10
+		}
+
+	}
+	provinces={
+		13616 13615 13676 13677 13678 13679 13680
+	}
+
+	local_supplies=0.0 
+}

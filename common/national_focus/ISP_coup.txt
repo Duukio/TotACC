@@ -1,0 +1,411 @@
+
+shared_focus = {
+	id = ISP_the_coup
+	icon = GFX_ISP_the_coup
+	cost = 2
+	x = 5
+	y = 0
+	completion_reward = {
+		add_stability = -0.1
+		#remove_dynamic_modifier = { modifier = ISP_salvation }
+		remove_dynamic_modifier = {
+			modifier =  ISP_reformist_coalition_dyn
+		}
+		remove_dynamic_modifier = {
+			modifier =  ISP_project_liberty_dyn
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_uncompromising_on_liberty_dyn
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_new_hebrew_dyn
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_free_eber_dyn
+		}
+		clr_global_flag = ISP_hebrew_economic_miracle_flag
+		set_variable = {
+			var = ISPKD_war_support
+			value = -0.05
+		}
+		set_variable = {
+    		var = ISPKD_con_goods_factor
+			value = -0.05
+		}
+		set_variable = {
+			var = ISPKD_gdp_growth
+			value = 0.15
+		}
+		set_variable = {
+			var = ISPKD_social_drift
+			value = 0.01
+		}
+		set_variable = {
+			var = ISPKD_artifical_drift
+			value = 0 
+		}
+		set_variable = {
+			var = ISPKD_science_speed
+			value = 0
+		}
+		set_variable = {
+			var = ISPKD_build_speed
+			value = 0
+		}
+    	set_variable = {
+			var = ISPKD_eff_grow
+			value = 0
+		}
+    	set_variable = {
+			var = ISPKD_eff_max
+			value = 0
+		}
+    	set_variable = {
+			var = ISPKD_eff_ret
+			value = 0
+		}
+    	set_variable = {
+			var = ISPKD_build_slots
+			value = 0
+		}
+    	add_dynamic_modifier = {
+			modifier = ISP_Kibbutz_econ_dyn
+			scope = ISP
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_coup"
+	}
+}
+
+shared_focus = {
+	id = ISP_proclaim_the_government_of_national_salvation
+	icon = GFX_ISP_proclaim_the_government_of_national_salvation
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+		add_dynamic_modifier = {
+			modifier = ISP_nat_salvation_gov_dyn
+			scope = ISP
+		}
+		add_to_variable = {
+			var = ISPNS_pp
+			value = 0.25
+		}
+		add_to_variable = {
+			var = ISPNS_socdem
+			value = -0.03
+		}
+		custom_effect_tooltip = "Add national spirit 'Government of National Salvation' which grants +25% political power gain, -0.3 daily social democratic popularity."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_proclaim_the_government_of_national_salvation"
+	}
+	relative_position_id = ISP_the_coup
+	prerequisite = { focus = ISP_the_coup }
+}
+
+shared_focus = {
+	id = ISP_rousing_the_masses
+	icon = GFX_ISP_rousing_the_masses
+	cost = 3
+	x = -3
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.05
+		}
+		add_to_variable = {
+			var = ISPNS_stab
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPNS_war_support
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +5% stability and war support."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_rousing_the_masses"
+	}
+	relative_position_id = ISP_proclaim_the_government_of_national_salvation
+	prerequisite = { focus = ISP_proclaim_the_government_of_national_salvation }
+}
+
+shared_focus = {
+	id = ISP_emergency_measures
+	icon = GFX_ISP_emergency_measures
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPNS_pp
+			value = 0.25
+		}
+		add_to_variable = {
+			var = ISPNS_stab
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +25% political power gain, +5% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_emergency_measures"
+	}
+	relative_position_id = ISP_proclaim_the_government_of_national_salvation
+	prerequisite = { focus = ISP_proclaim_the_government_of_national_salvation }
+}
+
+shared_focus = {
+	id = ISP_dealing_with_protesters
+	icon = GFX_ISP_dealing_with_protesters
+	cost = 3
+	x = 3
+	y = 1
+	completion_reward = {
+		add_political_power = -100
+		add_stability = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_dealing_with_protesters"
+	}
+	relative_position_id = ISP_proclaim_the_government_of_national_salvation
+	prerequisite = { focus = ISP_proclaim_the_government_of_national_salvation }
+}
+
+shared_focus = {
+	id = ISP_youthful_revolution
+	icon = GFX_ISP_youthful_revolution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+        modifier = {
+            factor = 1000
+            	has_game_rule = {
+            	    rule = ISP_ai_route
+            	    option = CANAAN
+            }
+		}
+	}	
+	completion_reward = {
+		add_popularity = {
+			ideology = revolutionary_right
+			popularity = 0.05
+		}
+		add_to_variable = {
+			var = ISPNS_revright
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPNS_trad
+			value = 0.01
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +0.1 daily popularity of revolutionary right, +1% monthly drift towards reformist."
+		custom_effect_tooltip = FAVORSBARLEV
+				add_to_variable = { ROWROWFIGHTDAPOWACANAAN = 1 }
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_youthful_revolution"
+	}
+	relative_position_id = ISP_rousing_the_masses
+	prerequisite = { focus = ISP_rousing_the_masses }
+	mutually_exclusive = { focus = ISP_tabenkins_patriotism }
+}
+
+shared_focus = {
+	id = ISP_tabenkins_patriotism
+	icon = GFX_ISP_tabenkins_patriotism
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+        modifier = {
+            factor = 1000
+            	has_game_rule = {
+            	    rule = ISP_ai_route
+            	    option = SNEH
+            }
+		}
+	}	
+	completion_reward = {
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.03
+		}
+		add_to_variable = {
+			var = ISPNS_trad
+			value = -0.01
+		}
+		add_to_variable = {
+			var = ISPNS_reform
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPNS_hard
+			value = 0.01
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +0.01 daily popularity of neosocialism and hardline socialism, +1% monthly drift towards traditional."
+				custom_effect_tooltip = FAVORSSNEH
+		add_to_variable = { PATRIOTICWHITEANDBLUENATSOC = 1 }
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_tabenkins_patriotism"
+	}
+	relative_position_id = ISP_rousing_the_masses
+	prerequisite = { focus = ISP_rousing_the_masses }
+	mutually_exclusive = { focus = ISP_youthful_revolution }
+}
+
+shared_focus = {
+	id = ISP_antibritish_rhetoric
+	icon = GFX_ISP_antibritish_rhetoric
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = revolutionary_right
+			popularity = 0.03
+		}
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_antibritish_rhetoric"
+	}
+	relative_position_id = ISP_youthful_revolution
+	prerequisite = { focus = ISP_youthful_revolution focus = ISP_tabenkins_patriotism}
+	
+}
+
+shared_focus = {
+	id = ISP_brute_force
+	icon = GFX_ISP_brute_force
+	cost = 3
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+        modifier = {
+            factor = 1000
+            	has_game_rule = {
+            	    rule = ISP_ai_route
+            	    option = SNEH
+            }
+		}
+	}	
+	completion_reward = {
+		add_stability = -0.05
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.1
+		}
+				add_to_variable = { PATRIOTICWHITEANDBLUENATSOC = 1 }
+		custom_effect_tooltip = FAVORSSNEH
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_brute_force"
+	}
+	relative_position_id = ISP_emergency_measures
+	prerequisite = { focus = ISP_dealing_with_protesters }
+	mutually_exclusive = { focus = ISP_shin_bet_operations }
+}
+
+shared_focus = {
+	id = ISP_shin_bet_operations
+	icon = GFX_ISP_shin_bet_operations
+	cost = 3
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+        modifier = {
+            factor = 1000
+            	has_game_rule = {
+            	    rule = ISP_ai_route
+            	    option = CANAAN
+            }
+		}
+	}	
+	completion_reward = {
+		add_political_power = -50
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.1
+		}
+		custom_effect_tooltip = FAVORSBARLEV
+						add_to_variable = { ROWROWFIGHTDAPOWACANAAN = 1 }
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_shin_bet_operations"
+	}
+	relative_position_id = ISP_dealing_with_protesters
+	prerequisite = { focus = ISP_dealing_with_protesters }
+	mutually_exclusive = { focus = ISP_brute_force }
+}
+
+shared_focus = {
+	id = ISP_calming_the_waters
+	icon = GFX_ISP_calming_the_waters
+	cost = 3
+	x = 2
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = ISPNS_week_stab
+			value = 0.001
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +0.1% weekly stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_calming_the_waters"
+	}
+	relative_position_id = ISP_brute_force
+	prerequisite = { focus = ISP_brute_force focus = ISP_shin_bet_operations }
+}
+
+shared_focus = {
+	id = ISP_purging_the_party
+	icon = GFX_ISP_purging_the_party
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		country_event = {
+			id = CANAAN.11
+			days = 2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_purging_the_party"
+	}
+	relative_position_id = ISP_emergency_measures
+	prerequisite = { focus = ISP_emergency_measures }
+}
+
+shared_focus = {
+	id = ISP_solving_the_contradiction
+	icon = GFX_ISP_solving_the_contradiction
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		add_stability = 0.05
+		if = {
+			limit = {
+				check_variable = { ROWROWFIGHTDAPOWACANAAN > PATRIOTICWHITEANDBLUENATSOC }
+			}
+			country_event = {
+				id = CANAAN.12
+				days = 1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { ROWROWFIGHTDAPOWACANAAN < PATRIOTICWHITEANDBLUENATSOC }
+			}
+			country_event = {
+				id = CANAAN.13
+				days = 1
+			}
+		}
+		else = {}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_solving_the_contradiction"
+	}
+	relative_position_id = ISP_antibritish_rhetoric
+	prerequisite = { focus = ISP_antibritish_rhetoric }
+	prerequisite = { focus = ISP_calming_the_waters }
+	prerequisite = { focus = ISP_purging_the_party }
+}

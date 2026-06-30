@@ -1,0 +1,30 @@
+
+state={
+	id=729
+	name="STATE_729"
+    buildings_max_level_factor = 1
+	history={
+		owner = CAL
+		victory_points = {
+			1432 5 
+		}
+		victory_points = {
+			710 40 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 4
+		}
+		add_core_of = CAL
+		add_core_of = USA
+
+	}
+
+	provinces={
+		710 1432 1601 7667 
+	}
+	manpower=750365
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

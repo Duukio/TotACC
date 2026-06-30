@@ -1,0 +1,31 @@
+
+state={
+	id=1295
+	name="STATE_1295"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		buildings = {
+			school = 2
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			1107 5 # Dera Ghazi Khan
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		7903 1107 10139
+	}
+	manpower=12892465
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

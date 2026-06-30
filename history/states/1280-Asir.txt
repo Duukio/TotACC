@@ -1,0 +1,22 @@
+
+state={
+	id=1280
+	name="STATE_1280"
+	history={
+		owner = SAU
+		buildings = {
+			school = 2
+			infrastructure = 4
+
+		}
+		add_core_of = SAU
+
+	}
+	provinces={
+		1923 8073 10786 
+	}
+	manpower=4400000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

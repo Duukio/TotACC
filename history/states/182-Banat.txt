@@ -1,0 +1,25 @@
+state={
+id=182
+	name="STATE_182"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+
+	history={
+		owner = ROM
+		victory_points = { 9606 10 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 3
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		646 662 3649 9606 11592 11608 
+	}
+	manpower=2000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

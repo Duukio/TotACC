@@ -1,0 +1,2970 @@
+add_namespace = BIA
+add_namespace = BIADEBUG
+add_namespace = NGA
+add_namespace = AMB
+add_namespace = CAM #yeah im adding all the Cameroon events here, what about it bitch?
+add_namespace = AW_BIA
+add_namespace = BIU
+add_namespace = BIA_EPILOGUE
+add_namespace = BIUborderwar
+add_namespace = LBT
+
+
+country_event = {
+    id = BIUborderwar.1 # BIU win
+    title = BIUborderwar.1.t
+    desc = BIUborderwar.1.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    #fire_only_once = yes 
+
+    option = {
+      name = BIUborderwar.1.a
+		add_to_variable = { BIU.GDP = 1 }
+		custom_effect_tooltip = "Adds 1 billion USD in GDP"
+	}
+}
+country_event = {
+    id = BIUborderwar.2 # BIU epic ail
+    title = BIUborderwar.2.t
+    desc = BIUborderwar.2.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    #fire_only_once = yes 
+
+    option = {
+      name = BIUborderwar.1.a
+		add_to_variable = { BIU.GDP = -1 }
+		add_stability = -0.1
+		custom_effect_tooltip = "Removes 1 billion USD in GDP"
+	}
+}
+country_event = {
+    id = BIUborderwar.3 # FCT epic fail
+    title = BIUborderwar.3.t
+    desc = BIUborderwar.3.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    #fire_only_once = yes 
+
+    option = {
+      name = BIUborderwar.3.a
+		add_to_variable = { FCT.GDP = -1 }
+		add_stability = -0.1
+		custom_effect_tooltip = "Removes 1 billion USD in GDP"
+	}
+}
+
+country_event = {
+    id = BIA.1 # Total Victory
+    title = BIA.1.t
+    desc = BIA.1.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.1.a
+	}
+}
+country_event = {
+    id = BIADEBUG.1 # rg test
+    title = BIADEBUG.1.t
+    desc = BIADEBUG.1.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+	hidden = yes
+
+    option = {
+      name = BIADEBUG.1.a
+		add_to_variable = { BIA.REAL_GROWTH = 3 }
+		multiply_variable = { BIA.REAL_GROWTH = 0.01 }
+	}
+}
+country_event = {
+    id = AMB.1 # ambazonia leadership crisis over an election thingy
+    title = AMB.1.t
+    desc = AMB.1.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+	hidden = yes
+
+    option = {
+      name = AMB.1.a
+	  set_politics = {
+		ruling_party = liberalism
+		}
+	}
+}
+country_event = {
+    id = CAM.1 # cameroon is like ayo the pizza here
+    title = CAM.1.t
+    desc = CAM.1.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+	hidden = yes
+
+    option = {
+      name = CAM.1.a
+		declare_war_on = {
+			target = AMB
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = BKS
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = PRA
+			type = annex_everything
+		}
+		EQG = {
+			transfer_state = 1182
+			transfer_state = 1183
+			transfer_state = 1184
+			load_oob = "EQG_AW"
+			give_military_access = AMB
+		}
+		AMB = {
+			give_military_access = EQG
+			give_military_access = BKS
+			give_military_access = PRA
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.33
+				days = 1
+			}
+		}
+		declare_war_on = {
+			target = EQG
+			type = annex_everything
+		}
+		if = {
+			limit = {
+				 BIA = {
+					is_puppet = no
+				 }
+			}
+			BIA = {
+				country_event = {
+				id = AW_BIA.1
+				}
+			}
+		}
+		else = {
+		}
+	}
+}
+country_event = {
+	id = CAM.99
+	title = CAM.99
+	desc = CAM.99
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAM.99.a
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = CAM.99.b
+		ai_chance = { factor = 50 }
+		set_politics = {
+			ruling_party = hardline_socialism
+		}
+	}
+}
+country_event = {
+    id = AW_BIA.1 # Holy shit Cameroon is invading our ally
+    title = AW_BIA.1.t
+    desc = AW_BIA.1.desc
+    picture = GFX_report_event_BIA_ambazoniawar
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = AW_BIA.1.a
+		BIA = {
+	  load_focus_tree = {
+		tree = BIA_aw
+	  	keep_completed = yes
+		}
+		}
+	  set_global_flag = anglophone_crisis
+	}
+}
+country_event = {
+    id = AW_BIA.3 # Holy shit Cameroon is invading our ally
+    title = AW_BIA.3.t
+    desc = AW_BIA.3.desc
+    picture = GFX_report_event_BIA_ambazoniawar
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = AW_BIA.3.a
+		hidden_effect = {
+		set_country_flag = BIA_decided_to_escalate	
+		add_to_variable = { BIA.GDP = -5 }
+		}
+		custom_effect_tooltip = "INVESTORS_PLUS_GDP_LOSS"
+	}
+    option = {
+      name = AW_BIA.3.b
+		add_stability = -0.10
+		add_war_support = -0.25
+		add_political_power = -100
+		add_popularity = {
+			ideology = var:BIA@ruling_party
+			popularity = -0.10
+		}
+		recall_volunteers_from = AMB
+		custom_effect_tooltip = "Our people will remember this."
+	}
+}
+country_event = {
+    id = BIA.2 # Almost Total Victory
+    title = BIA.2.t
+    desc = BIA.2.desc
+    picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.2.a
+	}
+}
+country_event = {
+    id = BIA.3 # Mid-tier Victory
+    title = BIA.3.t
+    desc = BIA.3.desc
+    picture = GFX_report_event_BIA_mid_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.3.a
+	}
+}
+country_event = {
+    id = BIA.4 # Barely came out of that okay lol
+    title = BIA.4.t
+    desc = BIA.4.desc
+    picture = GFX_report_event_BIA_mid_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.4.a
+	}
+}
+country_event = {
+    id = BIA.5 # ded
+    title = BIA.5.t
+    desc = BIA.5.desc
+    picture = GFX_report_event_BIA_defeat
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.5.a
+		country_event = {
+		id = BIA.6
+		days = 0
+		}
+	}
+}
+country_event = {
+    id = BIA.6 # cont
+    title = BIA.6.t
+    desc = BIA.6.desc
+    picture = GFX_report_event_BIA_defeat_2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.6.a
+	}
+}
+country_event = {
+    id = BIA.7 # just like 1967
+    title = BIA.7.t
+    desc = BIA.7.desc
+    picture = GFX_report_event_BIA_1967
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.7.a
+	}
+}
+country_event = {
+    id = BIA.8 # Nnamdi Kanus Hava Nagila Gaming
+    title = BIA.8.t
+    desc = BIA.8.desc
+    picture = GFX_report_event_BIA_redeem_cowardice
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.8.a
+		BIU = {
+			add_ideas = national_salvation_model
+			inherit_technology = BIA
+			set_country_flag = kanu_cabinet
+			transfer_state = 21
+			21 = {
+				add_core_of = BIU
+			}
+			19 = {
+				add_core_of = BIU
+			}
+			968 = {
+				add_core_of = BIU
+			}
+			23 = {
+				add_core_of = BIU
+			}
+			967 = {
+				add_core_of = BIU
+			}
+			966 = {
+				add_core_of = BIU
+			}
+			20 = {
+				add_core_of = BIU
+			}
+			24 = {
+				add_core_of = BIU
+			}			
+			set_province_controller = 13652
+			set_province_controller = 13637
+			set_province_controller = 4952
+			set_province_controller = 13895
+			set_province_controller = 13896
+			set_politics = {
+			ruling_party = reformist_socialism
+			}
+			load_focus_tree = BIU_war
+			declare_war_on = {
+			target = BIA
+			type = annex_everything
+			}
+			load_oob = "BIU_2021"
+		}
+		BIA = {
+			set_province_controller = 10831
+			set_province_controller = 1992
+			set_province_controller = 13656	
+			set_province_controller = 8034	
+			load_oob = "BIA_EASTERN_MIL"
+		}
+		BIA_azubuike_ihejirika = {
+			set_nationality = BIU
+		}
+		BIA_usman_oyibe_jibrin = {
+			set_nationality = BIU
+		}
+		BIA_olatunji_lukman_olayinka = {
+			set_nationality = BIU
+		}
+		BIA_ibok_ekwe_ibas = {
+			set_nationality = BIU
+		}
+		BIU = {
+			activate_advisor = BIA_azubuike_ihejirika
+			activate_advisor = BIA_ibok_ekwe_ibas
+			activate_advisor = BIA_usman_oyibe_jibrin
+			activate_advisor = BIA_olatunji_lukman_olayinka
+			activate_advisor = BIU_chibuike_nebeokike
+			activate_advisor = BIU_emma_powerful
+			activate_advisor = BIU_simon_ekpa
+			activate_advisor = BIU_sofia_chineyere_kalu
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.14
+				days = 1
+			}
+		}
+	}
+    option = {
+      name = BIA.8.b
+		BIU = {
+			add_ideas = national_salvation_model			
+			inherit_technology = BIA
+			set_country_flag = kanu_cabinet
+			transfer_state = 21
+			21 = {
+				add_core_of = BIU
+			}
+			19 = {
+				add_core_of = BIU
+			}
+			968 = {
+				add_core_of = BIU
+			}
+			23 = {
+				add_core_of = BIU
+			}
+			967 = {
+				add_core_of = BIU
+			}
+			966 = {
+				add_core_of = BIU
+			}
+			20 = {
+				add_core_of = BIU
+			}
+			24 = {
+				add_core_of = BIU
+			}	
+			set_province_controller = 13652
+			set_province_controller = 13637
+			set_province_controller = 4952
+			set_province_controller = 13895
+			set_province_controller = 13896
+			set_politics = {
+			ruling_party = reformist_socialism
+			}
+			declare_war_on = {
+			target = BIA
+			type = annex_everything
+			}
+			load_oob = "BIU_2021"
+		}
+		BIA = {
+			set_province_controller = 10831
+			set_province_controller = 1992
+			set_province_controller = 13656	
+			set_province_controller = 8034	
+		load_oob = "BIA_EASTERN_MIL"
+		}
+		BIA_azubuike_ihejirika = {
+			set_nationality = BIU
+		}
+		BIA_usman_oyibe_jibrin = {
+			set_nationality = BIU
+		}
+		BIA_olatunji_lukman_olayinka = {
+			set_nationality = BIU
+		}
+		BIA_ibok_ekwe_ibas = {
+			set_nationality = BIU
+		}
+		BIU = {
+			#activate_advisor = BIA_azubuike_ihejirika
+			#activate_advisor = BIA_ibok_ekwe_ibas
+			#activate_advisor = BIA_usman_oyibe_jibrin
+			#activate_advisor = BIA_olatunji_lukman_olayinka
+			activate_advisor = BIU_chibuike_nebeokike
+			activate_advisor = BIU_emma_powerful
+			activate_advisor = BIU_simon_ekpa
+			activate_advisor = BIU_sofia_chineyere_kalu
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.14
+				days = 1
+			}
+		}
+		BIU = { change_tag_from = BIA }
+	}
+}
+country_event = {
+    id = BIA.9 # Obussy dies :pray: :sob:
+    title = BIA.9.t
+    desc = BIA.9.desc
+    picture = GFX_report_event_obassey_dies
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.9.a
+	  add_stability = -0.01
+	}
+}
+country_event = {
+    id = BIA.10 # TENNO HEIKA BANZAI BIAFURA :salute: :salute:
+    title = BIA.10.t
+    desc = BIA.10.desc
+    picture = GFX_report_event_biafura_teikoku
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.10.a
+		add_opinion_modifier = {
+			target = JAP
+			modifier = took_stand_for_us
+		}
+		JAP = {
+			add_opinion_modifier = {
+				target = BIA
+				modifier = offered_support
+			}
+		}	  
+	}
+}
+country_event = {
+    id = BIA.11 # practical designs
+    title = BIA.11.t
+    desc = BIA.11.desc
+    picture = GFX_report_event_improvised_weapons
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.11.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1200
+			producer = BIA
+		}
+		add_manpower = -100
+	}
+}
+country_event = {
+    id = BIA.12 # Biafra does a wholesome 100 pollution
+    title = BIA.12.t
+    desc = BIA.12.desc
+    picture = GFX_report_event_salt_the_earth
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.12.a
+		27 = {
+			add_province_modifier = {
+				static_modifiers = { flooded }
+				province = {
+					id = 13657
+					id = 2025
+				}
+			}
+		}
+		969 = {
+			add_province_modifier = {
+				static_modifiers = { flooded }
+				province = {
+					id = 4952
+					id = 13654
+				}
+			}
+		}
+		32 = {
+			add_province_modifier = {
+				static_modifiers = { flooded }
+				province = {
+					id = 8021
+				}
+			}
+			damage_building = {
+			    type = infrastructure
+			    damage = 1
+			}
+			damage_building = {
+			    type = industrial_complex
+			    damage = 2
+			}
+			damage_building = {
+			    type = arms_factory
+			    damage = 2
+			}
+		}
+	}
+}
+country_event = {
+    id = BIA.13 # Igbo Batallions in Benin
+    title = BIA.13.t
+    desc = BIA.13.desc
+    picture = GFX_report_event_igbo_benin
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.13.a
+	  load_oob = "BIU_BED"
+	}
+}
+country_event = {
+    id = BIA.14 # Yoruba independence
+    title = BIA.14.t
+    desc = BIA.14.desc
+    picture = GFX_report_event_yoruba_and_igbos_wholesome
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.14.a
+		YOR = {
+			transfer_state = 25
+			TRANSFER_STATE = 26
+		}
+		BIU = {
+			puppet = YOR
+		}
+		YOR = {
+			set_politics = {
+				ruling_party = conservatism
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.5
+			}
+		}
+	}
+}
+country_event = {
+    id = BIA.15 # Nigeria dissolves
+    title = BIA.15.t
+    desc = BIA.15.desc
+    picture = GFX_report_event_riots_lagos
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.15.a
+		KAN = {
+		transfer_state = 31
+		transfer_state = 30
+		load_oob = "KAN_2021"
+		}
+		30 = {
+		add_core_of = KAN
+		}
+		31 = {
+		add_core_of = KAN
+		}
+		KAI = {
+		transfer_state = 33
+		}
+		33 = {
+		add_core_of = KAI
+		}
+		PLT = {
+		transfer_state = 28
+		load_oob = "PLT_2021"
+		}
+		28 = {
+		add_core_of = PLT
+		}
+		FCT = {
+		transfer_state = 27
+		transfer_state = 32
+		load_oob = "FCT_2021"
+		}
+		27 = {
+		add_core_of = FCT
+		}
+		32 = {
+		add_core_of = FCT
+		}
+		BOK = {
+		transfer_state = 29
+		load_oob = "BOK_2021"
+		}
+		29 = {
+		add_core_of = BOK
+		}
+		KAI = {
+		load_oob = "KAI_2021"
+		}
+		#start_border_war = {
+		#	change_state_after_war = yes
+		#	attacker = {
+		#		state = 21
+		#		num_provinces = 1
+		#		on_win = BIA_border_conflict.1
+		#		on_lose = BIA_border_conflict.2
+		#		on_cancel = BIA_border_conflict.3 #failsafe
+		#	}		
+		#	defender = {
+		#		state = 27
+		#		num_provinces = 1
+		#		on_win = BIA_border_conflict.4
+		#		on_lose = BIA_border_conflict.5
+		#		on_cancel = BIA_border_conflict.3 #failsafe
+		#	}
+		#}
+	}
+}
+country_event = {
+    id = BIA.16 # Lagos gets fucked up
+    title = BIA.16.t
+    desc = BIA.16.desc
+    picture = GFX_report_event_riots_lagos
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.16.a
+	  custom_effect_tooltip = "We may need to hold onto the city for a little while."
+	}
+}
+country_event = {
+    id = BIA.17 # Abuja depopulated
+    title = BIA.17.t
+    desc = BIA.17.desc
+    picture = GFX_report_event_empty_abuja
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.17.a
+		set_victory_points = {
+			province = 2025
+			value = 1
+		}
+		set_province_name = {
+		    id = 2025
+		    name = "Abuja Ruins"
+		}
+	}
+}
+country_event = {
+    id = BIA.18 # Kanu portrait in every school
+    title = BIA.18.t
+    desc = BIA.18.desc
+    picture = GFX_report_event_portrait
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.18.a
+	}
+}
+country_event = {
+    id = BIA.19 # Anti-hippie aktion
+    title = BIA.19.t
+    desc = BIA.19.desc
+    picture = GFX_report_event_ecologists
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.19.a
+	}
+}
+country_event = {
+    id = BIA.20 # Bribing Americans
+    title = BIA.20.t
+    desc = BIA.20.desc
+    picture = GFX_report_event_bribe
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.20.a
+	}
+}
+country_event = {
+    id = BIA.21 # IGMGTSETFFF, Kanu conclusion event
+    title = BIA.21.t
+    desc = BIA.21.desc
+    picture = GFX_report_event_IGMGTSETFFF
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.21.a
+	}
+}
+country_event = {
+    id = BIA.22 # right of conquest
+    title = BIA.22.t
+    desc = BIA.22.desc
+    picture = GFX_report_event_right_of_conquest
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.22.a
+	}
+}
+country_event = {
+    id = BIA.23 # justice wins
+    title = BIA.23.t
+    desc = BIA.23.desc
+    picture = GFX_report_event_justice
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.23.a
+	}
+}
+country_event = {
+    id = BIA.24 # twinned
+    title = BIA.24.t
+    desc = BIA.24.desc
+    picture = GFX_report_event_twinned
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.24.a
+	  BIA = {
+		army_experience = 25
+		add_manpower = 250
+	  }
+	  BED = {
+		army_experience = 25
+		add_manpower = 250
+	  }
+	}
+}
+
+#formerly here: two flavor events
+
+country_event = {
+    id = BIA.27 # accounting for it all
+    title = BIA.27.t
+    desc = BIA.27.desc
+    picture = GFX_report_event_accounting
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.27.a
+	}
+}
+country_event = {
+    id = BIA.28 # the niger is biafran
+    title = BIA.28.t
+    desc = BIA.28.desc
+    picture = GFX_report_event_niger_biafran
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.28.a
+	}
+}
+country_event = {
+    id = BIA.29 # wait... what
+    title = BIA.29.t
+    desc = BIA.29.desc
+    picture = GFX_report_event_niger_biafran
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.29.a
+	}
+}
+country_event = {
+    id = BIA.30 # a new vision
+    title = BIA.30.t
+    desc = BIA.30.desc
+    picture = GFX_report_event_niger_biafran
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.30.a
+	}
+}
+country_event = {
+    id = BIA.31 # UNigeria
+    title = BIA.31.t
+    desc = BIA.31.desc
+    picture = GFX_report_event_niger_biafran
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.31.a
+	}
+}
+country_event = {
+    id = BIA.32 # ecletic allies
+    title = BIA.32.t
+    desc = BIA.32.desc
+    picture = GFX_report_event_ecletic_allies
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.32.a
+	}
+}
+country_event = {
+    id = BIA.33 # vision 2030
+    title = BIA.33.t
+    desc = BIA.33.desc
+    picture = GFX_report_event_vision_2030
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.33.a
+		hidden_effect = {
+			if = {
+				limit ={
+					BIA = {
+						has_government = socdem
+					}
+				}
+			set_country_flag = vision_2030_decisions
+			set_country_flag = vision_2030_socdem
+			}
+			else_if = {
+				limit = {
+					BIA = {
+						has_government = conservatism
+					}
+				}
+			set_country_flag = vision_2030_decisions
+			set_country_flag = vision_2030_conservatism
+			}
+		}
+		custom_effect_tooltip = "Unlocks the 'Vision 2030' decisions, which differ in approach depending on government"
+	}
+}
+country_event = {
+    id = BIA.34 # Peaceful democratization of Nigeria
+    title = BIA.34.t
+    desc = BIA.34.desc
+    picture = GFX_report_event_the_terms
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.34.a
+	  NGA = {
+			#kill_country_leader = yes
+			set_politics = {
+				ruling_party = socdem
+			}
+			create_country_leader = {
+				name = "Abdullahi Adamu"
+				desc = "POLITICS_THAN_HTAY_DESC"
+				picture = "gfx/leaders/NGA/Abdullahi Adamu.png"
+				expire = "2040.1.1"
+				ideology = thway
+				traits = {
+				}
+			}
+			country_event = {
+				id = BIA.35
+				days = 60
+			}
+		}	
+	}
+}
+country_event = {
+    id = BIA.35 # Nigeria dissolves, but it isn't Kanu's fault
+    title = BIA.35.t
+    desc = BIA.35.desc
+    picture = GFX_report_event_riots_lagos
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.35.a
+		set_global_flag = NGA_collapse
+		KAN = {
+		transfer_state = 30
+		transfer_state = 31
+		load_oob = "KAN_2021"
+		}
+		30 = {
+		add_core_of = KAN
+		}
+		31 = {
+		add_core_of = KAN
+		}
+		KAI = {
+		transfer_state = 33
+		transfer_state = 25
+		}
+		33 = {
+		add_core_of = KAI
+		}
+		25 = {
+		add_core_of = KAI
+		}
+		PLT = {
+		transfer_state = 28
+		load_oob = "PLT_2021"
+		}
+		28 = {
+		add_core_of = PLT
+		}
+		FCT = {
+		transfer_state = 27
+		transfer_state = 32
+		load_oob = "FCT_2021"
+		}
+		27 = {
+		add_core_of = FCT
+		}
+		32 = {
+		add_core_of = FCT
+		}
+		BOK = {
+		transfer_state = 29
+		load_oob = "BOK_2021"
+		}
+		29 = {
+		add_core_of = BOK
+		}
+		KAI = {
+		load_oob = "KAI_2021"
+		}
+		YOR = {
+		#transfer_state = 22
+		transfer_state = 26
+		transfer_state = 969
+		transfer_state = 25
+		load_oob = "generic_lite_2021"
+		}
+		LRC = {
+			transfer_state = 22
+			transfer_state = 1256
+			load_oob = "LRC_2021"
+		}
+		22 = {
+		add_core_of = LRC
+		}
+		22 = {
+		add_core_of = YOR
+		}
+		969 = {
+		add_core_of = YOR
+		}
+		26 = {
+		add_core_of = YOR
+		}
+	}
+}
+country_event = {
+    id = NGA.1 # Biafra won, no more wargoals and a ceasefire pls
+    title = NGA.1.t
+    desc = NGA.1.desc
+    picture = GFX_report_event_right_of_conquest
+    is_triggered_only = yes
+    fire_only_once = yes 
+	hidden = yes
+    immediate = {
+		remove_wargoal = {
+			type = all
+			target = BIA
+		}
+		remove_wargoal = {
+			type = all
+			target = BED
+		}
+		set_truce = {
+			target = BIA
+			days = 160
+		}	
+		set_truce = {
+			target = BED
+			days = 160
+		}
+		remove_wargoal = {
+			type = all
+			target = BIA
+		}
+		remove_wargoal = {
+			type = all
+			target = BED
+		}		
+	}
+    option = {
+	name = NGA.1.a
+	}
+}
+country_event = {
+    id = CAM.2 # Biafra won against Cameroon, no more wargoals and a ceasefire pls
+    title = CAM.2.t
+    desc = CAM.2.desc
+    picture = GFX_report_event_right_of_conquest
+    is_triggered_only = yes
+    fire_only_once = yes 
+	hidden = yes
+    immediate = {
+		remove_wargoal = {
+			type = all
+			target = BIA
+		}
+		remove_wargoal = {
+			type = all
+			target = BED
+		}
+		remove_wargoal = {
+			type = all
+			target = AMB
+		}
+		set_truce = {
+			target = BIA
+			days = 160
+		}	
+		set_truce = {
+			target = AMB
+			days = 160
+		}	
+		set_truce = {
+			target = BED
+			days = 160
+		}
+		remove_wargoal = {
+			type = all
+			target = BIA
+		}
+		remove_wargoal = {
+			type = all
+			target = AMB
+		}
+		remove_wargoal = {
+			type = all
+			target = BED
+		}				
+	}
+    option = {
+	name = CAM.2.a
+	}
+}
+country_event = {
+    id = BIA.36 # snap election
+    title = BIA.36.t
+    desc = BIA.36.desc
+    picture = GFX_report_event_the_terms
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.36.a
+	add_political_power = 75
+		add_popularity = {
+		ideology = socdem
+		popularity = 0.20
+		}
+		add_popularity = {
+		ideology = liberalism
+		popularity = 0.15
+		}
+		country_event = {
+		id = BIA.26
+		days = 20
+		}
+	}
+    option = {
+      name = BIA.36.b
+		add_political_power = 25
+		add_popularity = {
+		ideology = conservatism
+		popularity = 0.20
+		}
+		set_politics = {
+		ruling_party = conservatism
+		}
+		add_ideas = cologne_capitalism
+		country_event = {
+		id = BIA.25
+		days = 20
+		}
+	}
+}
+country_event = {
+    id = BIA.37 # hol up should we even do a snap election
+    title = BIA.37.t
+    desc = BIA.37.desc
+    picture = GFX_report_event_chimaroke_retires
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.37.a #yea, sorry we're having it
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = -25
+		country_event = {
+		id = BIA.36
+		days = 1
+		}
+	}
+}
+country_event = {
+    id = BIA.38 # post-its
+    title = BIA.38.t
+    desc = BIA.38.desc
+    picture = GFX_report_event_postits
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.38.a
+	  if = { #this could be done with variables instead but honestly the amount of work needed is identical, so i dont care too much
+		limit = {
+			BIA = {
+				has_country_flag = harcourt_cap
+			}
+		}
+		set_province_name = {
+			id = 8034
+			name = ACHEBEBODO_VP
+		}
+		set_capital = { state = 23 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = enugu_cap
+			}
+		}
+		set_province_name = {
+			id = 13652
+			name = ACHEBEBODO_VP
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = owerri_cap
+			}
+		}
+		set_province_name = {
+			id = 13637
+			name = ACHEBEBODO_VP
+		}
+		add_victory_points = {
+			province = 13637
+			value = 20
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = bonnyisl_cap
+			}
+		}
+		set_province_name = {
+			id = 10831
+			name = ACHEBEBODO_VP
+		}
+		set_capital = { state = 966 }
+	  }
+	}
+    option = {
+      name = BIA.38.b
+	  if = { #this could be done with variables instead but honestly the amount of work needed is identical, so i dont care too much
+		limit = {
+			BIA = {
+				has_country_flag = harcourt_cap
+			}
+		}
+		set_province_name = {
+			id = 8034
+			name = OJUKWUVILLE
+		}
+		set_capital = { state = 23 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = enugu_cap
+			}
+		}
+		set_province_name = {
+			id = 13652
+			name = OJUKWUVILLE
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = owerri_cap
+			}
+		}
+		set_province_name = {
+			id = 13637
+			name = OJUKWUVILLE
+		}
+		add_victory_points = {
+			province = 13637
+			value = 20
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = bonnyisl_cap
+			}
+		}
+		set_province_name = {
+			id = 10831
+			name = OJUKWUVILLE
+		}
+		set_capital = { state = 966 }
+	  }
+	}
+    option = {
+      name = BIA.38.c
+	  if = { #this could be done with variables instead but honestly the amount of work needed is identical, so i dont care too much
+		limit = {
+			BIA = {
+				has_country_flag = harcourt_cap
+			}
+		}
+		set_province_name = {
+			id = 8034
+			name = BIAFRATOWN
+		}
+		set_capital = { state = 23 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = enugu_cap
+			}
+		}
+		set_province_name = {
+			id = 13652
+			name = BIAFRATOWN
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = owerri_cap
+			}
+		}
+		set_province_name = {
+			id = 13637
+			name = BIAFRATOWN
+		}
+		add_victory_points = {
+			province = 13637
+			value = 20
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = bonnyisl_cap
+			}
+		}
+		set_province_name = {
+			id = 10831
+			name = BIAFRATOWN
+		}
+		set_capital = { state = 966 }
+	  }
+	}
+    option = {
+      name = BIA.38.d
+	  if = { #this could be done with variables instead but honestly the amount of work needed is identical, so i dont care too much
+		limit = {
+			BIA = {
+				has_country_flag = harcourt_cap
+			}
+		}
+		set_province_name = {
+			id = 8034
+			name = AMAKAVILLE
+		}
+		set_capital = { state = 23 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = enugu_cap
+			}
+		}
+		set_province_name = {
+			id = 13652
+			name = AMAKAVILLE
+		}
+		add_victory_points = {
+			province = 13652
+			value = 10
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = owerri_cap
+			}
+		}
+		set_province_name = {
+			id = 13637
+			name = AMAKAVILLE
+		}
+		add_victory_points = {
+			province = 13637
+			value = 20
+		}
+		set_capital = { state = 21 }
+	  }
+	  else_if = {
+		limit = {
+			BIA = {
+				has_country_flag = bonnyisl_cap
+			}
+		}
+		set_province_name = {
+			id = 10831
+			name = AMAKAVILLE
+		}
+		add_victory_points = {
+			province = 10831
+			value = 45
+		}
+		set_capital = { state = 966 }
+	  }
+	}
+}
+country_event = {
+    id = BIA.39 # paper towers
+    title = BIA.39.t
+    desc = BIA.39.desc
+    picture = GFX_report_event_paper_towers
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.39.a
+		capital_scope = {
+			add_building_construction = {
+				type = school
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		BIA = {
+			add_stability = -0.07
+		}
+		country_event = {
+			id = BIA.9125
+			days = 5
+		}
+	}
+    option = {
+      name = BIA.39.b
+		capital_scope = {
+			add_building_construction = {
+				type = school
+				level = 4
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		BIA = {
+			add_stability = -0.25
+		}
+		country_event = {
+			id = BIA.9125
+			days = 5
+		}
+	}
+    option = {
+      name = BIA.39.c
+		capital_scope = {
+			add_building_construction = {
+				type = school
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		BIA = {
+			add_stability = 0.15
+		}
+		country_event = {
+			id = BIA.9125
+			days = 5
+		}
+	}
+}
+country_event = {
+    id = BIA.40 # thumbtacks
+    title = BIA.40.t
+    desc = BIA.40.desc
+    picture = GFX_report_event_postits #i don't think there's a reason to use another unique event pic here, which is very rare
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.40.a
+	  set_country_flag = harcourt_cap
+	}
+    option = {
+      name = BIA.40.b
+	  set_country_flag = enugu_cap
+	}
+    option = {
+      name = BIA.40.c
+	  set_country_flag = owerri_cap
+	}
+    option = {
+      name = BIA.40.d
+	  set_country_flag = bonnyisl_cap
+	}
+}
+country_event = {
+    id = BIA_EPILOGUE.1 # Epilogue
+    title = BIA_EPILOGUE.1.t
+    desc = BIA_EPILOGUE.1.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA_EPILOGUE.1.a
+	  add_ideas = profound_gratitude
+	  custom_effect_tooltip = "Thank you for playing the Twilight of the Anthropocene: Hello World demo! You have multiple decisions still to finish up, but it's a wrap beyond that. Have a good day."
+	}
+}
+country_event = {
+    id = NGA.2 # So we lost, what now?
+    title = NGA.2.t
+    desc = NGA.2.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { # Bring in democracy. enough is enough!
+      name = NGA.2.a
+	  ai_chance = { factor = 33 }
+		create_country_leader = {
+			name = "Chief Olusegun Obasanjo"
+			desc = "POLITICS_J_LEENEY_DESC"
+			picture = "gfx/leaders/NGA/Portrait_NGA_Olusegun_Obasanjo.png"
+			expire = "2040.1.1"
+			ideology = anolib
+			traits = {
+			}
+		}
+		country_event = {
+			id = NGA.3
+			days = 30
+		}
+	}
+}
+country_event = {
+    id = NGA.3 # Fulani terrorists want the reins of government!
+    title = NGA.3.t
+    desc = NGA.3.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { # Democracy survives another day!!
+      name = NGA.3.a
+	  ai_chance = { factor = 33 }
+		create_country_leader = {
+			name = "Atiku Abubakar"
+			desc = "POLITICS_J_LEENEY_DESC"
+			picture = "gfx/leaders/NGA/Atiku.png"
+			expire = "2040.1.1"
+			ideology = thway
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = socdem
+		}
+	}
+    option = { # Fauci will not like this...
+      name = NGA.3.b
+	  ai_chance = { factor = 33 }
+		set_politics = {
+			ruling_party = revolutionary_right
+		}
+		add_popularity = {
+			ideology = revolutionary_right
+			popularity = 0.6
+		}
+		create_country_leader = {
+			name = "Abdulrahman Bello Dambazau"
+			desc = "POLITICS_J_LEENEY_DESC"
+			picture = "gfx/leaders/NGA/Abdulrahman Bello Dambazau.png"
+			expire = "2040.1.1"
+			ideology = ethnosupr
+			traits = {
+			}
+		}
+		country_event = {
+			id = NGA.4
+			days = 25
+		}
+	}
+}
+country_event = {
+    id = NGA.4 # Technocrats take over the government?
+    title = NGA.4.t
+    desc = NGA.4.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { # YES SIR GLORY TO HOWARD SCOTT :salute: :salute: :salute:
+      name = NGA.4.a
+	  ai_chance = { factor = 33 }
+	  set_politics = {
+		ruling_party = technocracy
+	  }
+	}
+    option = { # YES SIR GLORY TO CEAUSESCU :salute: :salute: :salute:
+      name = NGA.4.a
+	  ai_chance = { factor = 33 }
+	  set_politics = {
+		ruling_party = hardline_socialism
+	  }
+	  every_country = {
+		limit = {
+			is_ai = no
+		}
+		news_event = {
+			id = WNE.138
+			days = 1
+		}
+	  }
+	}
+    option = { # NO! We must do Total Igbo Death NOW!!!!!!!!!!! #quick note, we will not be including the 6th invasion because it would require an extra tree for BIA
+      name = NGA.4.b
+	  ai_chance = { factor = 33 }
+	  add_war_support = 0.1
+	  add_ideas = war_economy
+	  add_ideas = national_salvation_model
+	}
+}
+country_event = {
+    id = NGA.5 # Biafra wants to be buddies, are we up for it?
+    title = NGA.5.t
+    desc = NGA.5.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { # Of course
+      name = NGA.5.a
+	  trigger = {
+		OR = {
+		has_government = socdem
+		has_government = technocracy
+		}
+	  }
+	  add_stability = 0.15
+	  BIA = {
+		country_event = {
+			id = BIA.919
+			days = 1
+		}
+	  }
+	  ai_chance = { factor = 33 }
+	}
+    option = { # No, sorry
+      name = NGA.5.b
+	  BIA = {
+		country_event = {
+			id = BIA.921
+			days = 1
+		}
+	  }
+	  ai_chance = { factor = 33 }
+	}
+}
+country_event = {
+    id = NGA.6 # Planning The Unplannable
+    title = NGA.6.t
+    desc = NGA.6.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #fully commit to political reform
+      name = NGA.6.a
+	  add_stability = 0.05
+	}
+    option = { #commit partially
+      name = NGA.6.b
+	  add_stability = -0.02
+	  add_political_power = 150
+	}
+}
+country_event = {
+    id = NGA.1969 # Planning The Unplannable
+    title = NGA.1969.t
+    desc = NGA.1969.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #Directly annex Biafra. Z!
+      name = NGA.1969.a
+	  add_stability = 0.15
+	  add_war_support = 0.1
+	  annex_country = {
+		target = BIA
+		transfer_troops = yes
+	  }
+	  load_oob = "BIA_EASTERN_MIL"
+	  hidden_effect = {
+		BIU = {
+			add_ideas = national_salvation_model
+			inherit_technology = BIA
+			set_country_flag = kanu_cabinet
+			transfer_state = 21
+			21 = {
+				add_core_of = BIU
+			}
+			19 = {
+				add_core_of = BIU
+			}
+			968 = {
+				add_core_of = BIU
+			}
+			23 = {
+				add_core_of = BIU
+			}
+			967 = {
+				add_core_of = BIU
+			}
+			966 = {
+				add_core_of = BIU
+			}
+			20 = {
+				add_core_of = BIU
+			}
+			24 = {
+				add_core_of = BIU
+			}			
+			set_province_controller = 13652
+			set_province_controller = 13637
+			set_province_controller = 4952
+			set_province_controller = 13895
+			set_province_controller = 13896
+			set_politics = {
+			ruling_party = reformist_socialism
+			}
+			load_focus_tree = BIU_war
+			declare_war_on = {
+			target = NGA
+			type = annex_everything
+			}
+			load_oob = "BIU_2021"
+		}
+		BIA_azubuike_ihejirika = {
+			set_nationality = BIU
+		}
+		BIA_usman_oyibe_jibrin = {
+			set_nationality = BIU
+		}
+		BIA_olatunji_lukman_olayinka = {
+			set_nationality = BIU
+		}
+		BIA_ibok_ekwe_ibas = {
+			set_nationality = BIU
+		}
+		BIU = {
+			activate_advisor = BIA_azubuike_ihejirika
+			activate_advisor = BIA_ibok_ekwe_ibas
+			activate_advisor = BIA_usman_oyibe_jibrin
+			activate_advisor = BIA_olatunji_lukman_olayinka
+			activate_advisor = BIU_chibuike_nebeokike
+			activate_advisor = BIU_emma_powerful
+			activate_advisor = BIU_simon_ekpa
+			activate_advisor = BIU_sofia_chineyere_kalu
+		}
+		NGA = {
+			mark_focus_tree_layout_dirty = yes
+		}
+	  }
+	}
+    option = { #Military Administration, same as pre-0.2 TotA
+      name = NGA.1969.b
+	  add_stability = 0.05
+	  add_war_support = 0.05
+		random_list = {
+				50 = {
+					#no revolt
+				}
+				50 = {
+					BIA = {
+						country_event = {
+							id = BIA.8
+							days = 30
+						}
+					}
+				}
+			}
+	}
+    option = { #Civilian collaborationists
+      name = NGA.1969.c
+	  BIA = {
+			create_country_leader = {
+				name = "Eruani A. Godbless"
+				desc = "POLITICS_THAN_HTAY_DESC"
+				picture = "gfx/leaders/BIA/Eruani Azibapu Godbless.png"
+				expire = "2040.1.1"
+				ideology = corporatocracy
+				traits = {
+				}
+			}
+	  }
+	}
+}
+country_event = {
+    id = BIA.919 # Nigeria would like to make amends
+    title = BIA.919.t
+    desc = BIA.919.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { # Yay!
+      name = BIA.919.a
+	  add_stability = 0.1
+	  hidden_effect = {
+		remove_from_array = { global.non_UN_member = BIA }
+		clr_country_flag = is_un_observer
+		set_country_flag = UN_member
+	  }
+	  custom_effect_tooltip = "We will be recognized by the United Nations as a full member-state!"
+	}
+}
+country_event = {
+    id = BIA.921 # Nigeria did not want to make amends
+    title = BIA.921.t
+    desc = BIA.921.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { # Darn
+      name = BIA.921.a
+	  add_war_support = 0.1
+	  add_stability = -0.05
+	}
+}
+country_event = {
+    id = BIA.9123 # Da interwebz. SIRIUS. BIZNIZ.
+    title = BIA.9123.t
+    desc = BIA.9123.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #porn joke
+      name = BIA.9123.a
+	  every_state = {
+		limit = {
+			is_owned_by = BIA
+		}
+		custom_effect_tooltip = "Adds 5% Internet Penetration for every Biafran state."
+		add_to_variable = { THIS.intreach = 5 }
+	  }
+	}
+}
+country_event = {
+    id = BIA.9124 # electricity is fun
+    title = BIA.9124.t
+    desc = BIA.9124.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BIA.9124.a
+	  add_research_slot = 1
+	}
+}
+country_event = {
+    id = BIA.9125 # cars and buses are cool
+    title = BIA.9125.t
+    desc = BIA.9125.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #BUSES ARE BETTER!
+      name = BIA.9125.a
+	  add_stability = 0.05
+	}
+	option = { #cars are better!
+		name = BIA.9125.b
+		add_political_power = 50
+	}
+}
+country_event = {
+    id = NGA.1999 # jade
+    title = NGA.1999.t
+    desc = NGA.1999.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #you have no choice, accept the revolution
+      name = NGA.1999.a
+	  add_stability = 1
+	  add_political_power = -200
+    set_country_flag = NGA_jade
+	  country_event = {
+		id = NGA.2000
+		days = 7
+	  }
+	}
+}
+country_event = {
+    id = NGA.2000 # dambazau soyrage
+    title = NGA.2000.t
+    desc = NGA.2000.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #the demonrats win out
+      name = NGA.2000.a
+      ai_chance = {
+        base = 30
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = NGA_ai_route
+                option = REDDIT
+            }
+        }
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = NGA_ai_route
+                option = JADEREV
+            }
+        }
+      }
+	  add_stability = 0.1
+	  add_political_power = -50
+	  set_country_flag = dambazau_gone
+		load_focus_tree = NGA_biafra_lives_still #maybe?
+		complete_national_focus = NGA_the_jade_revolution
+	}
+    option = { #dambazau wins
+      name = NGA.2000.b
+      ai_chance = {
+        base = 30
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = NGA_ai_route
+                option = IZLAM
+            }
+        }
+      }
+	  add_stability = -0.25
+	  retire_country_leader = yes
+	  add_political_power = 125
+	  set_country_flag = nga_dambazau_cabinet
+	  activate_advisor = NGA_adamu_adamu
+	  activate_advisor = NGA_adeyinka_asekun
+	  activate_advisor = NGA_kemi_adeosun
+	  activate_advisor = NGA_omoniyi_caleb_olubolade
+		add_country_leader_role = {
+		    character = NGA_abdulrahman_bello_dambazau
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = corporatocracy
+		        expire = "2050.1.1.1"
+		        traits = { }
+		    }
+		}
+		mark_focus_tree_layout_dirty = yes
+		load_focus_tree = NGA_fulanomad
+	}
+}
+country_event = {
+    id = NGA.2001 # pick your poison
+    title = NGA.2001.t
+    desc = NGA.2001.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #reldem
+      name = NGA.2001.a
+      #modifier = {
+      #      factor = 1000
+      #      has_game_rule = {
+      #          rule = NGA_ai_route
+      #          option = ISLAMDEM
+      #      }
+      #  }
+	  add_stability = 0.1
+	  add_political_power = -125
+	  set_country_flag = nga_abba_cabinet
+	  activate_advisor = NGA_abubakar_sadiq_mohammed
+	  activate_advisor = NGA_emmanuel_iheanacho
+	  activate_advisor = NGA_zubairu_dada
+	  activate_advisor = NGA_ibrahim_gambari
+	  NGA = {
+		set_politics = {
+			ruling_party = conservatism
+		}
+	  complete_national_focus = NGA_a_national_revolution
+	  }
+	}
+    option = { #demonrats
+      name = NGA.2001.b
+      #modifier = {
+      #      factor = 1000
+      #      has_game_rule = {
+      #          rule = NGA_ai_route
+      #          option = LIBERAL
+      #      }
+      #  }
+	  add_stability = 0.07
+	  add_political_power = -75
+	  set_country_flag = nga_elumelu_cabinet
+	  activate_advisor = NGA_adamu_adamu
+	  activate_advisor = NGA_adeyinka_asekun
+	  activate_advisor = NGA_kemi_adeosun
+	  activate_advisor = NGA_omoniyi_caleb_olubolade
+		add_country_leader_role = {
+		    character = NGA_tony_elumelu
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = marlib
+		        expire = "2050.1.1.1"
+		        traits = { }
+		    }
+		}
+	  complete_national_focus = NGA_a_democratic_revolution
+	}
+    option = { #technocrats
+      name = NGA.2001.c
+      modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = NGA_ai_route
+                option = REDDIT
+            }
+        }
+	  add_stability = 0.05
+	  add_political_power = -200
+	  set_country_flag = nga_dania_cabinet
+	  activate_advisor = NGA_adamu_waziri
+	  activate_advisor = NGA_jay_osi_samuel
+	  activate_advisor = NGA_charles_soludo
+	  activate_advisor = NGA_shamsuddeen_usman
+	  set_politics = {
+		ruling_party = technocracy
+	  }
+	  complete_national_focus = NGA_revolution
+	}
+}
+country_event = {
+    id = NGA.2007 # natcom soyrage
+    title = NGA.2007.t
+    desc = NGA.2007.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #natcom victory
+      name = NGA.2007.a
+	  add_stability = -0.25
+	  add_political_power = -150
+	  set_country_flag = nga_alhassan_cabinet
+	  activate_advisor = NGA_mallam_buhari_muhammad
+	  activate_advisor = NGA_muhammad_wader
+	  activate_advisor = NGA_nazifi_abdullah_darma
+	  activate_advisor = NGA_rauf_aregbesola
+	  set_politics = {
+		ruling_party = hardline_socialism
+	  }
+	  add_popularity = {
+		ideology = hardline_socialism
+		popularity = 0.15
+	  }
+	}
+}
+country_event = {
+    id = NGA.2002 # time to dismiss half of our military officers
+    title = NGA.2002.t
+    desc = NGA.2002.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #cya bozo
+      name = NGA.2002.a
+	  add_stability = 0.1
+	  add_political_power = -200
+	  retire_character = NGA_attahiru_ibrahim
+	  retire_character = NGA_awwal_zubairu_gambo
+	}
+}
+country_event = {
+    id = NGA.2003 # time to dismiss half of our military officers
+    title = NGA.2003.t
+    desc = NGA.2003.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #cya bozo
+      name = NGA.2003.a
+	  add_stability = 0.03
+	  add_to_variable = { NGA.GDP = 0.6 }
+	  custom_effect_tooltip = "Increases our GDP by a small amount."
+	}
+}
+country_event = {
+	id = NGA.442 # ask to join WTO
+    title = NGA.442.t
+    desc = NGA.442.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #let me in!!!
+      name = NGA.442.a
+	  SOV = {add_to_faction = NGA }
+	  set_variable = { NGA.FACTIONSTATUS = 12 }
+	  }
+}
+country_event = {
+	id = NGA.2011
+	title = NGA.2011.t
+	desc = NGA.2011.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NGA.2011.a
+		NGA = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = NGA.2077 #debug
+	title = NGA.2077.t
+	desc = NGA.2077.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NGA.2077.a
+		NGA = {
+			retire_country_leader = yes
+			set_country_flag = nga_dambazau_cabinet
+			mark_focus_tree_layout_dirty = yes
+			load_focus_tree = NGA_fulanomad
+			add_country_leader_role = {
+				character = NGA_abdulrahman_bello_dambazau
+				promote_leader = yes
+				country_leader = {
+					ideology = corporatocracy
+					expire = "2050.1.1.1"
+					traits = { }
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = NGA.1945 #Knock knock. It's the japanese
+	title = NGA.1945.t
+	desc = NGA.1945.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NGA.1945.a #you've been a good boy
+		trigger = {
+			OR = {
+				power_balance_value = {
+				    id = NGA_ELDA_SOVJAP
+				    value < -0.6
+				}
+				power_balance_value = {
+				    id = NGA_ELDA_SOVJAP
+				    value = -0.6 #this isn't pretty but it's what pdx lets me have
+				}
+			}
+		}
+		add_stability = 0.1
+		remove_power_balance = {
+		    id = NGA_ELDA_SOVJAP
+		}
+		set_province_name = { id = 13997 name = "Eko City" }
+		1256 = {
+			add_manpower = 100000
+		}
+		set_victory_points = {
+			province = 13997
+			value = 40
+		}
+		set_country_flag = NGA_ELDAJAP_WIN
+		JAP = { remove_resource_rights = 1256 }
+		activate_advisor = NGA_wun_jhong_cai
+	}
+	option = {
+		name = NGA.1945.b #you've been a naughty boy
+		trigger = {
+			power_balance_value = {
+			    id = NGA_ELDA_SOVJAP
+			    value > -0.6
+			}
+		}
+		country_event = {
+			id = NGA.1948
+			days = 5
+		}
+	}
+}
+country_event = {
+	id = NGA.1946 #Knock knock. It's the ZovietZ
+	title = NGA.1946.t
+	desc = NGA.1946.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NGA.1946.a #je t'aime le antichriste
+		trigger = {
+			OR = {
+				power_balance_value = {
+				    id = NGA_ELDA_SOVJAP
+				    value > 0.6
+				}
+				power_balance_value = {
+				    id = NGA_ELDA_SOVJAP
+				    value = 0.6 #this isn't pretty but it's what pdx lets me have
+				}
+			}
+		}
+		add_stability = 0.1
+		remove_power_balance = {
+		    id = NGA_ELDA_SOVJAP
+		}
+		set_province_name = { id = 13997 name = "Eko City" }
+		1256 = {
+			add_manpower = 100000
+		}
+		set_victory_points = {
+			province = 13997
+			value = 40
+		}
+		set_country_flag = NGA_ELDASOV_WIN
+		SOV = { remove_resource_rights = 1256 }
+		
+	}
+	option = {
+		name = NGA.1946.b #je hate le antichriste hon hon
+		trigger = {
+			power_balance_value = {
+			    id = NGA_ELDA_SOVJAP
+			    value < 0.6
+			}
+		}
+		country_event = {
+			id = NGA.1947
+			days = 5
+		}
+	}
+}
+country_event = {
+	id = NGA.1947 #Knock knock. It's the ZovietZ pt 2
+	title = NGA.1947.t
+	desc = NGA.1947.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1947.a #fuck off
+		add_stability = -0.2
+		add_political_power = -200
+		SOV = { remove_resource_rights = 1256 }
+		add_resource = {
+		    type = oil
+		    amount = -30
+		    state = 1256
+		}
+	}
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1947.b #demilitarize and stand by, only civilians can go in and out
+		add_stability = -0.05
+		add_political_power = -50
+		1256 = {
+			set_demilitarized_zone = yes
+		}
+	}
+	option = {
+		ai_chance = { factor = 1 }
+		name = NGA.1947.c #seize all zoviet azzetz and tell them to fuck off
+		add_stability = 0.1
+		add_political_power = 100
+		add_to_variable = { NGA.GDP = 50 }
+		SOV = {
+			add_opinion_modifier = {
+			    target = NGA
+			    modifier = embargo
+			}
+		} #you fucked up boye
+		hidden_effect = {
+			country_event = {
+				id = NGA.1949
+				days = 30
+			}
+		}
+	}
+}
+country_event = {
+	id = NGA.1948 #Knock knock. It's the japanese pt. 2
+	title = NGA.1948.t
+	desc = NGA.1948.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 66 }
+		name = NGA.1948.a #i need land above all else
+		add_stability = -0.1
+		add_political_power = -200
+		JAP = { remove_resource_rights = 1256 }
+		add_resource = {
+		    type = oil
+		    amount = -30
+		    state = 1256
+		}
+	}
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1948.b #send it off to the UN for mediation
+		add_stability = -0.05
+		add_political_power = -100
+		JAP = { remove_resource_rights = 1256 }
+		LRC = {
+			transfer_state = 1256
+			set_cosmetic_tag = LRC_EKO
+		}
+		1256 = {
+			add_core_of = LRC
+		}
+		UNH = {
+			set_autonomy = {
+				target = LRC
+				autonomy_state = UN_assisted_govt
+			}
+		}
+		LRC = {
+			set_politics = {
+				ruling_party = socdem
+			}
+		}
+	}
+}
+country_event = {
+	id = NGA.1949 #Knock knock. It's the ZovietZ pt 3, you should only get this if youre stupid
+	title = NGA.1949.t
+	desc = NGA.1949.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1949.a #oh shit
+		add_stability = -0.2
+		add_political_power = -150
+		SOV = { #1 week in and out ;)
+			declare_war_on = {
+				target = NGA
+				type = topple_government
+			}
+		}
+		BEN = {
+			add_to_war = {
+  			  targeted_alliance = SOV
+  			  enemy = NGA
+   			  hostility_reason = asked_to_join
+			}
+		}
+		SOV = {
+			load_oob = "spetsnaz_2024"
+		}
+	}
+}
+country_event = {
+    id = LBT.1 # war button
+    title = LBT.1.t
+    desc = LBT.1.desc
+   #picture = GFX_report_event_BIA_total_victory
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #cya bozo
+      name = LBT.1.a
+	  declare_war_on = {
+		target = LUR 
+		type = annex_everything
+	  }
+	  declare_war_on = {
+		target = ULI 
+		type = annex_everything
+	  }
+	  ULI = {
+	  	declare_war_on = {
+			target = LUR 
+			type = annex_everything
+	  	}
+	  }
+	  every_country = {
+		limit = {
+			is_ai = no
+		}
+		news_event = {
+			id = WNE.198
+			days = 1	
+		}
+	  }
+	}
+}
+country_event = {
+	id = NGA.1950
+	title = NGA.1950.t
+	desc = NGA.1950.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1950.a #pick the nuer
+		NUE = {
+			add_stability = 0.3
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = NGA
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1950.b #ALL THE WAY WITH RIEK
+		SSD = {
+			add_stability = 0.3
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = NGA
+			}
+		}
+	}
+}
+country_event = {
+	id = NGA.1951 #sankara
+	title = NGA.1951.t
+	desc = NGA.1951.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1951.a
+		add_political_power = 150
+		add_ideas = NGA_self_sufficiency_focus
+	}
+}
+country_event = {
+	id = NGA.1952 #people
+	title = NGA.1952.t
+	desc = NGA.1952.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1952.a
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.5
+		}
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = NGA.1953 #peoples
+	title = NGA.1953.t
+	desc = NGA.1953.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1953.a
+		add_war_support = 0.1
+	}
+}
+country_event = {
+	id = NGA.1954 #collectivization
+	title = NGA.1954.t
+	desc = NGA.1954.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1954.a
+		add_ideas = NGA_collectivization
+	}
+}
+country_event = {
+	id = NGA.1955 #cracktheraiders
+	title = NGA.1955.t
+	desc = NGA.1955.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1955.a
+		add_manpower = -1000
+		add_war_support = 0.1
+	}
+}
+country_event = {
+	id = NGA.1956 #order
+	title = NGA.1956.t
+	desc = NGA.1956.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1956.a
+		add_stability = -0.1
+		add_political_power = 200
+	}
+}
+country_event = {
+	id = NGA.1957 #journee
+	title = NGA.1957.t
+	desc = NGA.1957.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1957.a
+		27 = {
+			add_manpower = -25000
+		}
+		add_stability = -0.1
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.05
+		}
+	}
+}
+country_event = {
+	id = NGA.1958 #cells
+	title = NGA.1958.t
+	desc = NGA.1958.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1958.a
+		FRA = {
+			add_stability = -0.15
+			add_war_support = -0.15
+		}
+		add_stability = 0.07
+	}
+}
+country_event = {
+	id = NGA.1959 #WAR
+	title = NGA.1959.t
+	desc = NGA.1959.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1959.a
+		add_to_war = {
+		    targeted_alliance = TRP
+		    enemy = FRA
+		    hostility_reason = asked_to_join
+		}
+	}
+}
+country_event = {
+	id = NGA.1960 #nuke the chuds
+	title = NGA.1960.t
+	desc = NGA.1960.desc
+	picture = GFX_report_event_kano
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1960.a
+		30 = {
+			remove_building = {
+				type = infrastructure
+				level = 1
+			}
+			add_manpower = -5000
+		}
+		29 = {
+			remove_building = {
+				type = infrastructure
+				level = 1
+			}
+			add_manpower = -5000
+		}
+		add_stability = 0.33
+	}
+}
+country_event = {
+	id = NGA.1961 #nuke the soviets
+	title = NGA.1961.t
+	desc = NGA.1961.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 33 }
+		name = NGA.1961.a
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = -1
+		}
+		add_stability = 0.1
+	}
+}
+country_event = {
+	id = NGA.2221 #afrihili yes or no
+	title = NGA.2221.t
+	desc = NGA.2221.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { 
+			base = 20
+			modifier = {
+				tag = ZAI
+				add = 50 #technocrat frens
+			}
+			modifier = {
+				tag = EAF
+				add = 30 #EAF is semi-technocratic
+			}
+			modifier = {
+				OR = {
+					tag = BED
+					tag = BIA
+				}
+				factor = -0.5 #BIA and BED are rare
+			}
+			modifier = {
+				BIA = {
+					has_idea = Afrihili
+				}
+				tag = BED
+				factor = 100 #if BIA does it then BED does also
+			}
+		}
+		name = NGA.2221.a #yes pls
+		add_ideas = Afrihili
+	}
+	option = {
+		ai_chance = { 
+			base = 30
+		}
+		name = NGA.2221.b #no ty we would not like to be annexed! oops spoiler ha ha
+	}
+}
+country_event = {
+    id = NGA.20004 # elektiooooooooon
+    title = NGA.20004.t
+    desc = NGA.20004.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = NGA.20004.a
+	  trigger = {
+		has_country_flag = nga_dania_cabinet
+	  }
+            load_focus_tree = NGA_technocrat
+            mark_focus_tree_layout_dirty = yes
+	}
+    option = {
+      name = NGA.20004.b
+	  trigger = {
+		has_country_flag = nga_elumelu_cabinet
+	  }
+            load_focus_tree = NGA_democrat
+            mark_focus_tree_layout_dirty = yes
+	}
+    option = {
+      name = NGA.20004.c
+	  trigger = {
+		has_country_flag = nga_abba_cabinet
+	  }
+            load_focus_tree = NGA_democrat
+            mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+    id = NGA.20005 # missionaries get raped and nuked 
+    title = NGA.20005.t
+    desc = NGA.20005.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = NGA.20005.a
+	  add_timed_idea = {
+		idea = NGA_fuck_whitey
+		days = 365
+	  }
+	}
+}
+country_event = {
+    id = NGA.20007 # 2026 election
+    title = NGA.20007.t
+    desc = NGA.20007.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = NGA.20007.a
+	  trigger = {
+        	limit = {
+        	    conservatism > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = conservatism
+	  }
+		add_country_leader_role = {
+		    character = NGA_Yusuf_Mamman_Dantalle
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = greencon
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+    option = {
+      name = NGA.20007.b
+	  trigger = {
+        	limit = {
+        	    socdem > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = socdem
+	  }
+		add_country_leader_role = {
+		    character = NGA_Patrick_Utomi
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = thway
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+    option = {
+      name = NGA.20007.c
+	  trigger = {
+        	limit = {
+        	    liberalism > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = liberalism
+	  }
+		add_country_leader_role = {
+		    character = NGA_Yabagi_Sani
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = soclib
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+}
+country_event = {
+    id = NGA.20008 # 2029 election
+    title = NGA.20008.t
+    desc = NGA.20008.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = NGA.20008.a
+	  trigger = {
+        	limit = {
+        	    conservatism > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = conservatism
+	  }
+		add_country_leader_role = {
+		    character = NGA_Kingsley_Chinda
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = socpat_con
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+    option = {
+      name = NGA.20008.b
+	  trigger = {
+        	limit = {
+        	    socdem > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = socdem
+	  }
+		add_country_leader_role = {
+		    character = NGA_Darlington_Nwokocha
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = thway
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+    option = {
+      name = NGA.20008.c
+	  trigger = {
+        	limit = {
+        	    liberalism > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = liberalism
+	  }
+		add_country_leader_role = {
+		    character = NGA_Abubakar_Kabir_Abubakar
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = libcon
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+}
+country_event = {
+    id = NGA.20009 # 2032 election
+    title = NGA.20009.t
+    desc = NGA.20009.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = NGA.20009.a
+	  trigger = {
+        	limit = {
+        	    conservatism > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = conservatism
+	  }
+		add_country_leader_role = {
+		    character = NGA_Abdullahi_Usman
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = populistcon
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+    option = {
+      name = NGA.20009.b
+	  trigger = {
+        	limit = {
+        	    socdem > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = socdem
+	  }
+		add_country_leader_role = {
+		    character = NGA_Temitope_Adedeji_Adewale
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = socpat
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+    option = {
+      name = NGA.20009.c
+	  trigger = {
+        	limit = {
+        	    liberalism > 0.33
+    		}
+	  }
+	  set_politics = {
+		ruling_party = liberalism
+	  }
+		add_country_leader_role = {
+		    character = NGA_Shaaban_Ibrahim_Sharada
+		    promote_leader = yes
+		    country_leader = {
+		        ideology = soclib
+		        expire = "2040.1.1.1"
+		        traits = {  }
+		    }
+		}
+	}
+}

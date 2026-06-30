@@ -1,0 +1,33 @@
+state={
+id=804
+	name="STATE_804"
+    buildings_max_level_factor = 1
+	resources={
+	
+	}
+
+	state_category = large_city
+
+
+	history={
+		owner = USA
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+		add_core_of = USA
+		victory_points = { 3712 5 }
+
+	}
+
+	provinces={
+		733 3712 3715 10481 
+	}
+	manpower=1355000
+	buildings_max_level_factor=2.000
+
+	local_supplies=0.0 
+}

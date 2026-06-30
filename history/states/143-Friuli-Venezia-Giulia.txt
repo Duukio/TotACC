@@ -1,0 +1,32 @@
+state={
+id=143
+	
+
+	name="STATE_143"
+
+	resources={
+		steel=100.000
+	}
+
+	history={
+		victory_points = {
+			6626 20 
+		}
+		owner = ITA
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		628 3657 6626 9613 
+	}
+	manpower=1216524
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

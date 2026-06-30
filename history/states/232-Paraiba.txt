@@ -1,0 +1,31 @@
+state={
+id=232
+	name="STATE_232"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	steel = 5
+	tungsten = 10
+	}
+	history={
+			victory_points = {
+			2227 10
+		}
+		owner = BRA
+		buildings = {
+            school = 2
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 1
+		}
+		add_core_of = BRA
+
+	}
+	provinces={
+		2227 7561 10989 
+	}
+	manpower=4039277
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

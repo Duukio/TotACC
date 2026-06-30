@@ -1,0 +1,291 @@
+NGA_ELDA_SOVJAP = {
+    initial_value = 0.33
+    left_side = JAPS_SIDE
+    right_side = RUSSIANS_SIDE
+    decision_category = NGA_ELDA_DEC_CAT
+    range = {
+        id = nigeria_center
+        min = -0.05
+        max = 0.05
+        modifier = {
+			state_resources_factor = -0.77
+            gdp_growth_modifier = -0.01
+			local_building_slots = -1
+			stability_weekly = 0.01
+        }
+    }
+
+    side = {
+        id = JAPS_SIDE
+        icon = GFX_JAPS_SIDE_NGA
+		range = {
+			id = jap_mild
+			max = -0.05
+			min = -0.33
+			modifier = {
+				state_resources_factor = -0.33
+				gdp_growth_modifier = 0.01
+				local_building_slots = 1
+				stability_factor = -0.05
+				state_production_speed_industrial_complex_factor = 0.05
+				state_production_speed_dockyard_factor = 0.05
+				state_production_speed_school_factor = 0.05
+			}
+			on_activate = {
+				1256 = {
+					add_building_construction = {
+						type = school
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			on_deactivate = {
+				1256 = {
+					remove_building = {
+						type = school
+						level = 1
+					}
+					remove_building = {
+						type = dockyard
+						level = 1
+					}
+				}
+			}
+		}
+		range = {
+			id = jap_high
+			max = -0.33
+			min = -0.77
+			modifier = {
+				state_resources_factor = -0.11
+				gdp_growth_modifier = 0.01
+				local_building_slots = 5
+				stability_factor = -0.1
+				state_production_speed_industrial_complex_factor = 0.15
+				state_production_speed_dockyard_factor = 0.15
+				state_production_speed_school_factor = 0.15
+				technocracy_drift = 0.01
+			}
+			on_activate = {
+				give_resource_rights = {
+				    receiver = JAP
+				    state = 1256
+				    resources = { oil }
+				}
+				1256 = {
+					add_building_construction = {
+						type = school
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			on_deactivate = {
+				1256 = {
+					remove_building = {
+						type = school
+						level = 2
+					}
+					remove_building = {
+						type = dockyard
+						level = 2
+					}
+				}
+			}
+		}
+		range = {
+			id = jap_extreme
+			max = -0.77
+			min = -1
+			modifier = {
+				gdp_growth_modifier = 0.01
+				local_building_slots = 10
+				stability_factor = -0.2
+				state_production_speed_industrial_complex_factor = 0.33
+				state_production_speed_dockyard_factor = 0.33
+				state_production_speed_school_factor = 0.33
+				technocracy_drift = 0.02
+			}
+			on_activate = {
+				1256 = {
+					add_building_construction = {
+						type = school
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			on_deactivate = {
+				1256 = {
+					remove_building = {
+						type = school
+						level = 3
+					}
+					remove_building = {
+						type = dockyard
+						level = 3
+					}
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+				}
+			}
+		}
+    }
+    side = {
+        id = RUSSIANS_SIDE
+        icon = GFX_RUSSIANS_SIDE_NGA
+		range = {
+			id = sov_mild
+			min = 0.05
+			max = 0.33
+			modifier = {
+				gdp_growth_modifier = 0.02
+				state_resources_factor = -0.33
+				local_building_slots = 1
+				stability_factor = -0.05
+				state_production_speed_arms_factory_factor = 0.05
+				state_production_speed_infrastructure_factor = 0.05
+				monthly_state_population_FLAT = 50
+			}
+			on_activate = {
+				1256 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_manpower = 100
+				}
+			}
+			on_deactivate = {
+				1256 = {
+					remove_building = {
+						type = arms_factory
+						level = 1
+					}
+					remove_building = {
+						type = infrastructure
+						level = 1
+					}
+					add_manpower = -100
+				}
+			}
+		}
+		range = {
+			id = sov_high
+			min = 0.33
+			max = 0.77
+			modifier = {
+				gdp_growth_modifier = 0.07
+				state_resources_factor = -0.11
+				local_building_slots = 2
+				stability_factor = -0.1
+				state_production_speed_arms_factory_factor = 0.15
+				state_production_speed_infrastructure_factor = 0.15
+				monthly_state_population_FLAT = 250
+			}
+			on_activate = {
+				give_resource_rights = {
+				    receiver = SOV
+				    state = 1256
+				    resources = { oil }
+				}
+				1256 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_manpower = 500
+				}
+			}
+			on_deactivate = {
+				1256 = {
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+					remove_building = {
+						type = infrastructure
+						level = 2
+					}
+					add_manpower = -500
+				}
+			}
+		}
+		range = {
+			id = sov_extreme
+			min = 0.77
+			max = 1
+			modifier = {
+				gdp_growth_modifier = 0.12
+				local_building_slots = 4
+				stability_factor = -0.2
+				state_production_speed_arms_factory_factor = 0.33
+				state_production_speed_infrastructure_factor = 0.33
+				monthly_state_population_FLAT = 1000
+			}
+			on_activate = {
+				1256 = {
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+					add_manpower = 1000
+				}
+			}
+			on_deactivate = {
+				1256 = {
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+					remove_building = {
+						type = infrastructure
+						level = 3
+					}
+					add_manpower = -1000
+				}
+			}
+		}
+    }
+}

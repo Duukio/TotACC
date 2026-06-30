@@ -1,0 +1,65 @@
+division_template = {
+	name = "Florida Free Guards"
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Florida Free Guards"
+		location = 7388
+		division_template = "Florida Free Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2nd Florida Free Guards"
+		location = 7388
+		division_template = "Florida Free Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3rd Florida Free Guards"
+		location = 7388
+		division_template = "Florida Free Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4th Florida Free Guards"
+		location = 12381
+		division_template = "Florida Free Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5th Florida Free Guards"
+		location = 12381
+		division_template = "Florida Free Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "6th Florida Free Guards"
+		location = 12381
+		division_template = "Florida Free Guards"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+}

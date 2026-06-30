@@ -1,0 +1,124 @@
+defined_text = {
+	name = SCRLOC_NGA_METER_PROPER
+	
+
+	text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 0
+                compare = greater_than
+            }
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 31
+                compare = less_than_or_equals
+            }
+		}
+		localization_key = NGA_NORTHERN_BIAS_HIGH
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 31
+                compare = greater_than
+            }
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 49
+                compare = less_than_or_equals
+            }
+		}
+		localization_key = NGA_NORTHERN_BIAS_MED
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 49
+                compare = greater_than
+            }
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 55
+                compare = less_than_or_equals
+            }
+		}
+		localization_key = NGA_NEUTRAL_BIAS
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 55
+                compare = greater_than
+            }
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 69
+                compare = less_than_or_equals
+            }
+		}
+		localization_key = NGA_SOUTHERN_BIAS_MED
+	}
+	text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 69
+                compare = greater_than
+            }
+		}
+		localization_key = NGA_SOUTHERN_BIAS_HIGH
+	}
+    text = {
+    localization_key = IAMERROR
+    }
+}
+defined_text = {
+    name = NGA_bias_mod_scrloc
+    text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 0
+                compare = greater_than
+            }
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 49
+                compare = less_than_or_equals
+            }
+		}
+        localization_key = NGA_northern_bias_loc_key
+    }
+    text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 49
+                compare = greater_than
+            }
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 55
+                compare = less_than_or_equals
+            }
+		}
+        localization_key = NGA_neutral_bias_loc_key
+    }
+    text = {
+		trigger = {
+            check_variable = {
+                var = NGA_NORF_SOUF
+                value = 55
+                compare = greater_than
+            }
+		}
+        localization_key = NGA_southern_bias_loc_key
+    }
+    text = {
+        localization_key = IAMERROR
+    }
+}

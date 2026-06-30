@@ -1,0 +1,37 @@
+state={
+id=398
+	name="STATE_398"
+    buildings_max_level_factor = 4
+	state_category = metropolis
+	
+	resources = {	
+	oil = 25
+	}
+	history={
+		owner = JAP
+		victory_points = { 7169 30 }
+		victory_points = { 1063 20 }
+		victory_points = { 1063 20 }
+		victory_points = { 6994 20 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 5
+			industrial_complex = 15
+			arms_factory = 5
+			air_base = 5
+			7169 = {
+			naval_base = 6
+			}
+			1063 = {
+			naval_base = 3
+			}
+		}
+		add_core_of = JAP
+	}
+	provinces={
+		1024 1063 1113 1117 1165 3848 4067 4118 4122 4153 6870 6873 6994 7016 7169 9807 9859 9865 9952 11847 11930 12056 
+	}
+	manpower=9000000
+	local_supplies=0.000
+}

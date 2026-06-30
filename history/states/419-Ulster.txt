@@ -1,0 +1,44 @@
+state={
+id=419
+	
+
+	name="STATE_419"
+
+
+	history={
+		owner = ENG
+		victory_points = {
+			3379 20
+		}
+		victory_points = {
+			9303 10 #Newry
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 3
+			dockyard = 3
+			3379 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = ENG
+		add_core_of = IRE
+		#add_core_of = NIR #guh
+	}
+
+	provinces={
+		276  3217 3242 3329 3379 385 9303 11257
+	}
+	manpower=2198537
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	
+	resources={
+		aluminium=20
+	}
+
+	local_supplies=0.0 
+}

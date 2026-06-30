@@ -1,0 +1,27 @@
+state={
+id=860
+	name="STATE_860"
+    buildings_max_level_factor = 1
+
+	
+	history={
+		owner = CAM
+		victory_points = {
+			5054 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = CAM
+
+	}
+
+	provinces={
+		5054 13710 13711 13713 13719 13724 13727 13730 
+	}
+	manpower=830000
+	buildings_max_level_factor=2.000
+	state_category=rural
+	local_supplies=0.000
+}

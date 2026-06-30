@@ -1,0 +1,111 @@
+ideas = {
+
+	lgbtq_rights = {
+		law = yes
+		threat_of_death = { #maybe execution instead?
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = -0.002
+				local_non_core_manpower = -0.05
+				compliance_growth_on_our_occupied_states = -0.025
+				stability_factor = 0.05
+				political_power_cost = -0.05
+				monthly_soctrends_drift_TP_T = 0.02
+			}
+			cancel_if_invalid = no
+		}
+		sodomy_laws = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = -0.001
+				#local_non_core_manpower = -0.03
+				compliance_growth_on_our_occupied_states = -0.015
+				stability_factor = 0.03
+				political_power_cost = -0.03
+				monthly_soctrends_drift_TP_T = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		social_silencing = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = -0.001
+				stability_factor = 0.02
+				political_power_gain = -0.02
+			}
+			cancel_if_invalid = no
+		}
+		dont_ask_dont_tell = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.01
+				drift_defence_factor = 0.02
+				monthly_soctrends_drift_TP_P = 0.01
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		social_protections = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = 0.01
+				drift_defence_factor = 0.04
+				monthly_soctrends_drift_TP_P = 0.02
+			}
+			cancel_if_invalid = no
+		}
+		free_love_and_family = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.01
+				conscription = 0.001
+				stability_factor = -0.05
+				research_speed_factor = 0.01
+				consumer_goods_factor = 0.01
+				drift_defence_factor = 0.06
+				monthly_soctrends_drift_TP_P = 0.03
+				naval_coordination = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		freedom_of_identity = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = -0.01
+				conscription = 0.005
+				stability_factor = -0.08
+				research_speed_factor = 0.03
+				consumer_goods_factor = 0.05
+				drift_defence_factor = 0.08
+				monthly_soctrends_drift_TP_P = 0.04
+				monthly_soctrends_drift_EA_A = 0.02
+				naval_coordination = 0.02
+				coordination_bonus = 0.02
+				air_escort_efficiency = 0.02
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

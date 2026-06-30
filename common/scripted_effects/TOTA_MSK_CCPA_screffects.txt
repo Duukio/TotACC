@@ -1,0 +1,50 @@
+# Scripted GUI Pie Chart example by Yard1
+# Feel free to use in your mods, but give credits to Yard1 (both in code, with comments; and on your download page)
+
+create_ccpapie_chart = {
+	clear_array = CCPApie_chart
+	resize_array = {
+		array = CCPApie_chart
+		value = 1
+		size = 100 # 100 pieces, each percent is one piece
+	}
+	set_temp_variable = { piesliceone = MSKvotingshare }
+	round_temp_variable = piesliceone
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	set_temp_variable = { pieslicetwo = PRIVATEvotingshare }
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	round_temp_variable = pieslicetwo 
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	set_variable = { last_idx = piesliceone }
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	add_to_temp_variable = { pieslicetwo = last_idx }
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	for_loop_effect = {
+		start = last_idx
+		end = pieslicetwo
+		set_variable = { CCPApie_chart^v = 2 }
+		add_to_variable = { last_idx = 1 }
+	}
+
+	set_temp_variable = { pieslicethree = OTHERCOUNTRYvotingshare }
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	round_temp_variable = pieslicethree
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	add_to_temp_variable = { pieslicethree = last_idx }
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	for_loop_effect = {
+		start = last_idx
+		end = pieslicethree
+		set_variable = { CCPApie_chart^v = 3 }
+	}
+	log = "PIECHART1 [?piesliceone] [?pieslicetwo] [?pieslicethree] [?pieslicefour]"
+	clear_variable = last_idx
+	add_to_variable = { CCPApie_chart_dirty = 1 }
+}
+adjust_dynmod_vars_ccpa = {
+
+	set_temp_variable = { CCPA_GDP_GAIN_TEMP = MSK_gdp_ccpa}
+	set_temp_variable = { CCPA_GDP_GAIN_TEMP_SHARE = MSKvotingshare }
+	multiply_temp_variable = { CCPA_GDP_GAIN_TEMP_SHARE = 0.02 }
+	set_variable = { MSK_gdp_ccpa = CCPA_GDP_GAIN_TEMP_SHARE }
+}

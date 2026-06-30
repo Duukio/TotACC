@@ -1,0 +1,33 @@
+
+state={
+	id=145
+	name="STATE_145"
+    buildings_max_level_factor = 1
+	resources={
+		oil=12.000
+	}
+
+	history={
+		victory_points = {
+			12046 3 
+		}
+		owner = IRQ
+		buildings = {
+			school = 2
+			infrastructure = 1
+
+		}
+		add_core_of = IRQ
+		add_core_of = IRA
+		add_core_of = ALQ
+		add_core_of = TRM
+	}
+
+	provinces={
+		4951 10744 12046 12839 
+	}
+	manpower=544901 
+	buildings_max_level_factor=2.000
+	state_category=wasteland
+	local_supplies=0.000
+}

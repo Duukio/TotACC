@@ -1,0 +1,680 @@
+shared_focus = {
+	id = SEY_moving_beyond_nationhood
+	icon = GFX_SEY_moving_beyond_nationhood
+	cost = 6
+	x = 10
+	y = 0
+	completion_reward = {
+        add_war_support = 0.07
+        #event?
+		add_dynamic_modifier = {
+		    modifier = SEY_anational_revolution_mod
+		    scope = SEY
+		}
+		add_to_variable = { seyanat_stab = -0.05 }
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_moving_beyond_nationhood"
+	}
+}
+
+shared_focus = {
+	id = SEY_civilianization_of_government
+	icon = GFX_SEY_civilianization_of_government
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		deactivate_advisor = SEY_eeben_barlow
+		deactivate_advisor = SEY_viktor_bout
+		deactivate_advisor = SEY_simon_mann
+		deactivate_advisor = SEY_neall_ellis
+		activate_advisor = SEY_james_michel
+		activate_advisor = SEY_caroline_abel
+		activate_advisor = SEY_andrei_troshev
+		activate_advisor = SEY_leonid_minin
+
+		swap_ideas = {
+			remove_idea = SEY_merc_capital
+			add_idea = SEY_merc_capital2
+		}
+
+		
+
+
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_civilianization_of_government"
+
+	}
+	relative_position_id = SEY_moving_beyond_nationhood
+	prerequisite = { focus = SEY_moving_beyond_nationhood }
+}
+
+shared_focus = {
+	id = SEY_rewiring_our_connections
+	icon = GFX_SEY_rewiring_our_connections
+	cost = 6
+	x = -7
+	y = 1
+	completion_reward = {
+		diplomatic_relation = {
+		    country = SAF
+		    relation = guarantee
+		    active = no
+		}
+		SAF = {
+		diplomatic_relation = {
+		    country = SEY
+		    relation = guarantee
+		    active = no
+		}
+		}
+		SEY = {
+		diplomatic_relation = {
+		    country = SAF
+		    relation = military_access
+		    active = no
+		}
+		}
+		SAF = {
+		diplomatic_relation = {
+		    country = SEY
+		    relation = military_access
+		    active = no
+		}
+		add_stability = -0.15
+		add_war_support = -0.15
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_rewiring_our_connections"
+	}
+	relative_position_id = SEY_civilianization_of_government
+	prerequisite = { focus = SEY_civilianization_of_government }
+}
+
+shared_focus = {
+	id = SEY_centralization_of_the_republic
+	icon = GFX_SEY_centralization_of_the_republic
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = { SEY.seyanat_pp = 0.10 }
+		}
+		custom_effect_tooltip = "Adds +10% Political Power Gain for Anational Revolution."
+		add_timed_idea = {
+			idea = SEY_centralize
+			days = 360
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_centralization_of_the_republic"
+	}
+	relative_position_id = SEY_civilianization_of_government
+	prerequisite = { focus = SEY_civilianization_of_government }
+}
+
+shared_focus = {
+	id = SEY_saluton_al_la_mondo
+	icon = GFX_SEY_saluton_al_la_mondo
+	cost = 6
+	x = 7
+	y = 1
+	completion_reward = {
+		SEY = {
+			country_event = SEY_BOUT.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_saluton_al_la_mondo"
+	}
+	relative_position_id = SEY_civilianization_of_government
+	prerequisite = { focus = SEY_civilianization_of_government }
+}
+
+shared_focus = {
+	id = SEY_antifascism_in_practice
+	icon = GFX_SEY_antifascism_in_practice
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = revolutionary_right
+			popularity = -0.1
+		}
+	}
+	relative_position_id = SEY_rewiring_our_connections
+	prerequisite = { focus = SEY_rewiring_our_connections }
+}
+
+shared_focus = {
+	id = SEY_killing_mccarthys_ghost
+	icon = GFX_SEY_killing_mccarthys_ghost
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = SEY.888
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_killing_mccarthys_ghost"
+	}
+	relative_position_id = SEY_rewiring_our_connections
+	prerequisite = { focus = SEY_rewiring_our_connections }
+}
+
+shared_focus = {
+	id = SEY_one_common_language
+	icon = GFX_SEY_one_common_language
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = { seyanat_stab = -0.05 }
+			add_to_variable = { seyanat_consumer = 0.02 }			
+		}
+		custom_effect_tooltip = "Adds -5% stability and +2% consumer goods for Anational Revolution temporarily."
+		swap_ideas = {
+			remove_idea = SEY_merc_capital
+			add_idea = SEY_merc_capital2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_one_common_language"
+	}
+	relative_position_id = SEY_saluton_al_la_mondo
+	prerequisite = { focus = SEY_saluton_al_la_mondo }
+}
+
+shared_focus = {
+	id = SEY_new_curriculums
+	icon = GFX_SEY_new_curriculums
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = { seyanat_stab = -0.05 }
+			add_to_variable = { seyanat_research = 0.1 }
+		}
+		custom_effect_tooltip = "Adds -5% stability and 2% daily support for the ruling party in the Anational Revolution national spirit, alongside +10% research bonus."
+
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_new_curriculums"
+	}
+	relative_position_id = SEY_saluton_al_la_mondo
+	prerequisite = { focus = SEY_saluton_al_la_mondo }
+}
+
+shared_focus = {
+	id = SEY_just_getting_started
+	icon = GFX_SEY_just_getting_started
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = { seyanatwars = 0.10 }
+		}
+		custom_effect_tooltip = "Adds +10% war support in the Anational Revolution national spirit."
+	}
+	relative_position_id = SEY_one_common_language
+	prerequisite = { focus = SEY_one_common_language }
+	prerequisite = { focus = SEY_new_curriculums }
+}
+
+shared_focus = {
+	id = SEY_first_five_year_plan
+	icon = GFX_SEY_first_five_year_plan
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		set_country_flag = fiveyearplan_sey
+		custom_effect_tooltip = "Enables decisions to enact a Five Year Plan of your choice."
+	}
+	relative_position_id = SEY_centralization_of_the_republic
+	prerequisite = { focus = SEY_centralization_of_the_republic }
+}
+
+shared_focus = {
+	id = SEY_switching_the_lever
+	icon = GFX_SEY_switching_the_lever
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_political_power = 100
+		add_stability = 0.05
+		retire_character = Erik_Prince
+		delete_units = {
+			division_template = "Blackwater PMC"
+			disband = no
+		}
+	}
+	relative_position_id = SEY_antifascism_in_practice
+	prerequisite = { focus = SEY_antifascism_in_practice }
+	prerequisite = { focus = SEY_killing_mccarthys_ghost }
+	prerequisite = { focus = SEY_the_free_seychellois_youth }
+}
+
+shared_focus = {
+	id = SEY_the_free_seychellois_youth
+	icon = GFX_SEY_the_free_seychellois_youth
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = SEY_BOUT.3
+	}
+	relative_position_id = SEY_rewiring_our_connections
+	prerequisite = { focus = SEY_rewiring_our_connections }
+}
+
+shared_focus = {
+	id = SEY_the_first_of_many_revolutions
+	icon = GFX_SEY_the_first_of_many_revolutions
+	cost = 6
+	x = -7
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_first_of_many_revolutions"
+		custom_effect_tooltip = "Merges A New Constitution into Anational Revolution."
+			add_to_variable = { seyanat_pp = 0.15 }
+			add_to_variable = { seyanat_stab = 0.10 }
+			add_to_variable = { seyweekstab = 0.01 }
+			clear_variable = seyanat_stab_1
+			clear_variable = seyanat_pp_1
+			clear_variable = seyanat_consumer_1
+			clear_variable = seyanat_research_1
+			clear_variable = seyanatwars_1
+			clear_variable = seyweekstab_1
+
+	}
+	relative_position_id = SEY_just_getting_started
+	prerequisite = { focus = SEY_just_getting_started }
+	prerequisite = { focus = SEY_first_five_year_plan }
+	prerequisite = { focus = SEY_switching_the_lever }
+	prerequisite = { focus = SEY_ending_the_dictatorship }
+}
+
+shared_focus = {
+	id = SEY_put_into_practice
+	icon = GFX_SEY_put_into_practice
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SEY_merc_capital
+			add_idea = SEY_IAFCF
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_put_into_practice"
+	}
+	relative_position_id = SEY_the_first_of_many_revolutions
+	prerequisite = { focus = SEY_the_first_of_many_revolutions }
+}
+
+shared_focus = {
+	id = SEY_a_new_constitution
+	icon = GFX_SEY_a_new_constitution
+	cost = 6
+	x = 15
+	y = 1
+	completion_reward = {
+		add_to_variable = { seyanat_pp_1 = -0.05 }
+		add_dynamic_modifier = {
+		    modifier = SEY_const_mod
+		    scope = SEY
+		}
+	}
+	relative_position_id = SEY_moving_beyond_nationhood
+	prerequisite = { focus = SEY_moving_beyond_nationhood }
+}
+
+shared_focus = {
+	id = SEY_a_peoples_democracy
+	icon = GFX_SEY_a_peoples_democracy
+	cost = 6
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = { seyanat_pp_1 = 0.15 }
+		add_to_variable = { seyanat_stab_1 = 0.05 }
+		custom_effect_tooltip = "Add +15% political power gain and 5% stability to A New Constitution"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_peoples_democracy"
+	}
+	relative_position_id = SEY_a_new_constitution
+	prerequisite = { focus = SEY_a_new_constitution }
+}
+
+shared_focus = {
+	id = SEY_a_postnational_community
+	icon = GFX_SEY_a_postnational_community
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		add_to_variable = { seyweekstab_1 = 0.01 }
+		custom_effect_tooltip = "Add +1% weekly stability to A New Constitution"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_postnational_community"
+	}
+	relative_position_id = SEY_a_new_constitution
+	prerequisite = { focus = SEY_a_new_constitution }
+}
+
+shared_focus = {
+	id = SEY_undo_anticommunist_ethos
+	icon = GFX_SEY_undo_anticommunist_ethos
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = dissident_right
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = autocracy
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_undo_anticommunist_ethos"
+	}
+	relative_position_id = SEY_a_peoples_democracy
+	prerequisite = { focus = SEY_a_peoples_democracy }
+}
+
+shared_focus = {
+	id = SEY_bottomup_investments
+	icon = GFX_SEY_bottomup_investments
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		662 = {
+			add_building_construction = {
+			    type = school
+			    level = 1
+			    instant_build = yes
+			}
+			add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+			}
+		}
+		add_to_variable = { SEY.DEBT = 1 }
+		custom_effect_tooltip = "Adds 1 billion USD in debt for building new schools and infrastructure."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_bottomup_investments"
+	}
+	relative_position_id = SEY_a_postnational_community
+	prerequisite = { focus = SEY_a_postnational_community }
+}
+
+shared_focus = {
+	id = SEY_ending_the_dictatorship
+	icon = GFX_SEY_ending_the_dictatorship
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_political_power = -50
+		add_to_variable = { seyanat_research_1 = 0.03 }
+		custom_effect_tooltip = "Adds 3% research speed to A New Constitution"
+	}
+	relative_position_id = SEY_undo_anticommunist_ethos
+	prerequisite = { focus = SEY_undo_anticommunist_ethos }
+	prerequisite = { focus = SEY_bottomup_investments }
+}
+
+shared_focus = {
+	id = SEY_a_popular_army
+	icon = GFX_SEY_a_popular_army
+	cost = 6
+	x = 6
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SEY_IAFCF
+			add_idea = SEY_IAFCF_1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_popular_army"
+	}
+	relative_position_id = SEY_put_into_practice
+	prerequisite = { focus = SEY_put_into_practice }
+}
+
+shared_focus = {
+	id = SEY_army_structure_reforms
+	icon = GFX_SEY_army_structure_reforms
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		set_country_flag = SEY_doctrine_decision
+		custom_effect_tooltip = "Enables decisions to choose military doctrine"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_army_structure_reforms"
+	}
+	relative_position_id = SEY_a_popular_army
+	prerequisite = { focus = SEY_a_popular_army }
+}
+
+shared_focus = {
+	id = SEY_diplomatic_attach_corps
+	icon = GFX_SEY_diplomatic_attach_corps
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_war_support = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_diplomatic_attach_corps"
+	}
+	relative_position_id = SEY_a_popular_army
+	prerequisite = { focus = SEY_a_popular_army }
+}
+
+shared_focus = {
+	id = SEY_civilianpmc_integration
+	icon = GFX_SEY_civilianpmc_integration
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SEY_IAFCF_1
+			add_idea = SEY_IAFCF_2
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_civilianpmc_integration"
+	}
+	relative_position_id = SEY_a_popular_army
+	prerequisite = { focus = SEY_a_popular_army }
+}
+
+shared_focus = {
+	id = SEY_antifascist_operations
+	icon = GFX_SEY_antifascist_operations
+	cost = 6
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_antifascist_operations"
+		add_war_support = 0.10
+		set_country_flag = SMO_activated
+	}
+	relative_position_id = SEY_put_into_practice
+	#prerequisite = { focus = SEY_put_into_practice }
+}
+
+shared_focus = {
+	id = SEY_to_russia_with_love
+	icon = GFX_SEY_to_russia_with_love
+	cost = 6
+	x = -6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_to_russia_with_love"
+		SOV = {
+			give_guarantee = SEY
+		}
+
+		add_opinion_modifier = {
+			target = SOV
+			modifier = to_russia_with_love
+		}
+	}
+	relative_position_id = SEY_put_into_practice
+	prerequisite = { focus = SEY_put_into_practice }
+}
+
+shared_focus = {
+	id = SEY_honour_among_thieves
+	icon = GFX_SEY_honour_among_thieves
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_merc_code
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_honour_among_thieves"
+	}
+	relative_position_id = SEY_to_russia_with_love
+	prerequisite = { focus = SEY_to_russia_with_love }
+}
+
+shared_focus = {
+	id = SEY_interbloc_diplomacy
+	icon = GFX_SEY_interbloc_diplomacy
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		JAP = {
+			set_country_flag = TREATY_OF_VICTORIA
+			add_opinion_modifier = {
+			    target = SOV
+			    modifier = offered_support
+			}
+			add_opinion_modifier = {
+			    target = FRA
+			    modifier = offered_support
+			}
+		}
+		SOV = {
+			set_country_flag = TREATY_OF_VICTORIA
+			add_opinion_modifier = {
+			    target = JAP
+			    modifier = offered_support
+			}
+			add_opinion_modifier = {
+			    target = FRA
+			    modifier = offered_support
+			}
+		}
+		FRA = {
+			set_country_flag = TREATY_OF_VICTORIA
+			add_opinion_modifier = {
+			    target = JAP
+			    modifier = offered_support
+			}
+			add_opinion_modifier = {
+			    target = SOV
+			    modifier = offered_support
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_interbloc_diplomacy"
+	}
+	relative_position_id = SEY_to_russia_with_love
+	prerequisite = { focus = SEY_to_russia_with_love }
+}
+
+shared_focus = {
+	id = SEY_the_kgbs_strongest_soldiers
+	icon = GFX_SEY_the_kgbs_strongest_soldiers
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_stability = -0.07
+		add_ideas = KGB_presence
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_kgbs_strongest_soldiers"
+	}
+	relative_position_id = SEY_to_russia_with_love
+	prerequisite = { focus = SEY_to_russia_with_love }
+}
+
+shared_focus = {
+	id = SEY_smo_honduras
+	icon = GFX_SEY_smo_honduras
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		set_country_flag = SMO_HONDURAS_ON
+		custom_effect_tooltip = "Enables a decision to intervene against Honduras."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_smo_honduras"
+	}
+	relative_position_id = SEY_antifascist_operations
+	prerequisite = { focus = SEY_antifascist_operations }
+}
+
+shared_focus = {
+	id = SEY_smo_iraq
+	icon = GFX_SEY_smo_iraq
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		set_country_flag = SMO_IRAQ_ON
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_smo_iraq"
+		custom_effect_tooltip = "Enables a decision to intervene against anti-Ba'athist forces in Iraq."
+	}
+	relative_position_id = SEY_antifascist_operations
+	prerequisite = { focus = SEY_antifascist_operations }
+}
+
+shared_focus = {
+	id = SEY_smo_south_africa
+	icon = GFX_SEY_smo_south_africa
+	cost = 6
+	x = -4
+	y = 1
+	completion_reward = {
+		set_country_flag = SMO_SAF_ON
+		custom_effect_tooltip = "Enables a decision to intervene in favor of the Black Redemption Front."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_smo_south_africa"
+	}
+	relative_position_id = SEY_antifascist_operations
+	prerequisite = { focus = SEY_antifascist_operations }
+}
+
+shared_focus = {
+	id = SEY_smo_alaska
+	icon = GFX_SEY_smo_alaska
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		set_country_flag = SMO_ALASKA_ON
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_smo_alaska"
+		custom_effect_tooltip = "Enables a decision to intervene in Alaska."
+	}
+	relative_position_id = SEY_antifascist_operations
+	prerequisite = { focus = SEY_antifascist_operations }
+}
+shared_focus = {
+	id = SEY_smo_america
+	icon = GFX_SEY_smo_america
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		set_country_flag = SMO_AMERICA_ON
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_smo_america"
+		custom_effect_tooltip = "Enables a decision to intervene in the United States as a whole."
+	}
+	relative_position_id = SEY_smo_alaska
+	prerequisite = { focus = SEY_smo_alaska }
+}

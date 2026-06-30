@@ -1,0 +1,263 @@
+bitmapfonts = {
+	textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			O = { 234 161 14 } #orange
+			C = { 253 100 144 } #pinker
+			P = { 169 27 79 } #pink
+			r = { 132 50 0 } #brown
+			w = { 211 201 0 } #yellow (different from Y)
+			e = { 146 0 0 } #red (different from R)
+			p = { 204 0 204 }
+			j = { 153 102 51 } #Brown-ish
+			S = { 255 128 114 } #Salmon
+			x = { 255 0 0 } #uber-red
+			y = { 0 255 0} #uber-green
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #Dark Grey
+			k = { 210 180 140 } #Light Brown
+			D = { 101 235 246 }
+			Q = { 0 84 142 } #Prussian blue
+			I = { 101 51 203 } #Burgsus purple
+			a = { 34 200 247 }	#  Light (Neon) Blue
+			v = { 0 0 255 }		# Deep Blue
+			c = { 169 27 79 }	#  Magenta
+			V = { 213 40 20 }	#  Scarlet
+			E = { 152 40 92 }	# Purple
+			f = { 255 193 12 }	#  Yellow
+			i = { 46 60 169 }	# Periwinkle-ish Blue
+			J = { 213 87 57 }	# Light Orange
+			K = { 45 152 40 }	# Emerald Green
+			N = { 152 40 92 }	# Magenta
+			o = { 129 88 56 }	# Brown, (different from r)
+	}
+
+
+	bitmapfont = {
+		name = "sf_16"
+		path = "gfx/fonts/sf_16"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "sf_12_tahoma"
+		path = "gfx/fonts/sf_12_tahoma"
+		color = 0xffffffff
+	}	
+	bitmapfont = {
+		name = "sf_12"
+		path = "gfx/fonts/sf_12"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "sf_14"
+		path = "gfx/fonts/sf_14"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "sf_15"
+		path = "gfx/fonts/sf_15"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "sf_16b"
+		path = "gfx/fonts/sf_16b"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "sf_16mbs"
+		path = "gfx/fonts/sf_16b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_18"
+		path = "gfx/fonts/sf_18"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_18b"
+		path = "gfx/fonts/sf_18b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_18mbs"
+		path = "gfx/fonts/sf_18b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_20"
+		path = "gfx/fonts/sf_20"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_20b"
+		path = "gfx/fonts/sf_20b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_20bs"
+		path = "gfx/fonts/sf_20bs"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_20mbs"
+		path = "gfx/fonts/sf_20mbs"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_24"
+		path = "gfx/fonts/sf_24"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_24b"
+		path = "gfx/fonts/sf_24b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_24header"
+		path = "gfx/fonts/sf_24header"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_26b"
+		path = "gfx/fonts/sf_26b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_26mbs"
+		path = "gfx/fonts/sf_26b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_30header"
+		path = "gfx/fonts/sf_30header"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_30"
+		path = "gfx/fonts/sf_30header"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_30_header"
+		path = "gfx/fonts/sf_30header"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_36_header"
+		path = "gfx/fonts/sf_36header"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_36header"
+		path = "gfx/fonts/sf_36header"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_33" #TODO fix this retardation
+		path = "gfx/fonts/sf_36header"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "cg_16b"
+		path = "gfx/fonts/sf_16b"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_typewriter16"
+		path = "gfx/fonts/sf_16typewriter"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_typewriter16_inverted"
+		path = "gfx/fonts/sf_16typewriter_inverted"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_typewriter13_inverted"
+		path = "gfx/fonts/sf_13typewriter_inverted"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_typewriter13"
+		path = "gfx/fonts/sf_13typewriter"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_typewriter22"
+		path = "gfx/fonts/sf_22typewriter"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_22tech"
+		path = "gfx/fonts/sf_22typewriter"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_typewriter22_inverted"
+		path = "gfx/fonts/sf_22typewriter_inverted"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "tooltip_tah"
+		path = "gfx/fonts/tooltip_tah"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "tooltip_segoe"
+		path = "gfx/fonts/tooltip_segoe"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "tooltip_segoe14"
+		path = "gfx/fonts/tooltip_segoe14"
+		color = 0xffffffff
+	
+	}
+	bitmapfont = {
+		name = "sf_mainmenuitalic_24"
+		path = "gfx/fonts/sf_mainmenuitalic_24"
+		color = 0xffffffff
+	
+	}
+}

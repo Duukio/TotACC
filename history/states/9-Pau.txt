@@ -1,0 +1,28 @@
+state={
+id=9
+	
+	name="STATE_9"
+
+
+	history={
+		owner = FRA
+		victory_points = {
+			11699 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		929 3749 9882 9884 11699 12169 
+	}
+	manpower=700000
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

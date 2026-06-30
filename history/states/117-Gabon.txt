@@ -1,0 +1,26 @@
+state={
+id=117
+	name="STATE_117"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		victory_points = { 5139 20 }
+		owner = FRA
+		buildings = {
+            school = 2
+			infrastructure = 3
+			5139 = {
+			naval_base = 6
+			}
+		}
+		add_core_of = FRA
+
+	}
+	provinces={
+		5139 8207 10948 13210 
+	}
+	manpower=2119275
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

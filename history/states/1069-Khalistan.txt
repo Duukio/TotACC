@@ -1,0 +1,27 @@
+
+state={
+	id=1069
+	name="STATE_1069"
+    buildings_max_level_factor = 1
+	provinces={
+		2002 2032 10729 10772 12822 
+	}
+	manpower=27743388
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = BHA
+		victory_points = {
+			10729 20
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		add_core_of = KHA
+		add_core_of = BHA
+		set_demilitarized_zone = yes
+	}
+}

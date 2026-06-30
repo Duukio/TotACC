@@ -1,0 +1,298 @@
+ideas = {
+	country = {
+			AST_electoral_maj = {
+			picture = AST_electoral_maj
+			allowed = {
+				tag = AST
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                stability_factor = 0.1
+                autocracy_drift = 0.02
+                monthly_soctrends_drift_EE_E2 = 0.03
+			}
+		}
+		AST_pine_gap = {
+			picture = AST_pine_gap
+			allowed = {
+				tag = AST
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                stability_factor = -0.08
+                encryption_factor = 0.15
+                weekly_manpower = -4
+			}
+		}
+		AST_megaprojs_australiana = {
+			picture = AST_megaprojs_australiana
+			allowed = {
+				tag = AST
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                trade_opinion_factor = 0.25
+                production_speed_buildings_factor = 0.1
+                gdp_growth_modifier = 0.08
+			}
+		}
+		AST_ghost_white_australia = {
+			picture = AST_ghost_white_australia
+			allowed = {
+				tag = AST
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                improve_relations_maintain_cost_factor = 0.15
+                opinion_gain_monthly_factor = -0.1
+                monthly_population = -0.2
+			}
+		}
+		AST_belle_southern_ball = {
+			picture = AST_belle_southern_ball
+			allowed = {
+				tag = AST
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                country_resource_uranium = 15
+                experience_gain_navy_factor = 0.25
+                special_forces_attack_factor = 0.15
+                special_forces_min = 30
+			}
+		}
+		NZL_iwis_kiwis = {
+			picture = NZL_iwis_kiwis
+			allowed = {
+				tag = NZL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                stability_factor = 0.1
+                opinion_gain_monthly_factor = 0.1
+			}
+		}
+		NZL_our_fav_uncle = {
+			picture = NZL_our_fav_uncle
+			allowed = {
+				tag = NZL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                production_speed_buildings_factor = 0.15
+			}
+		}
+		NZL_new_new_zealand_military = {
+			picture = NZL_new_new_zealand_military
+			allowed = {
+				tag = NZL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                experience_gain_army_factor = 0.25
+                experience_gain_navy_factor = 0.25
+                army_org = -5
+			}
+		}
+		PGN_country_that_wasnt = {
+			picture = PGN_country_that_wasnt
+			allowed = {
+				tag = PGN
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                war_support_factor = -0.3
+                conservatism_drift = 0.01
+                technocracy_drift = 0.01
+                autocracy_drift = 0.01
+                extra_trade_to_overlord_factor = 0.15
+			}
+            targeted_modifier = {
+                tag = AST
+                extra_trade_to_target_factor = 0.1
+            }
+		}
+		PGN_tied_tongues_boiled_frogs = {
+			picture = PGN_tied_tongues_boiled_frogs
+			allowed = {
+				tag = PGN
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                political_power_cost = 1
+				stability_factor = -0.5
+                resistance_growth_on_our_occupied_states = 0.3
+			}
+		}
+        PGN_port_in_a_storm = {
+			picture = PGN_port_in_a_storm
+			allowed = {
+				tag = PGN
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                production_speed_buildings_factor = -0.15
+                production_speed_infrastructure_factor = 0.3
+                drift_defence_factor = -0.25
+			}
+		}
+        australian_mission = {
+			picture = australian_mission
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                consumer_goods_factor = 0.04
+                production_speed_buildings_factor = 0.1
+			}
+            targeted_modifier = {
+                tag = AST
+                cic_to_target_factor = 0.1
+            }
+		}
+	}	
+}

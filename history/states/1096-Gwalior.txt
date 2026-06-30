@@ -1,0 +1,31 @@
+state={
+	id=1096
+	name="STATE_1096"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			10807 10 #Gwalior
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 8
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		10807 2036 7080 1949 11995
+	}
+	manpower=4066874
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

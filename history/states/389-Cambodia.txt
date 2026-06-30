@@ -1,0 +1,26 @@
+state={
+id=389
+	name="STATE_389"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	}
+	history={
+		owner = KAM
+		victory_points = { 4639 20 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 5
+		}
+		add_core_of = KAM
+	}
+	provinces={
+		1324 1620 4330 4359 4639 5236 7319 7376 7404 7432 7645 10204 10289 10317 12191 12260 12475 
+	}
+	manpower=15552211
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

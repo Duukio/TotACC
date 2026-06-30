@@ -1,0 +1,12 @@
+NGA_ELDA_DEC_CAT = {
+	icon = generic_foreign_policy
+	allowed = {
+	   original_tag = NGA
+   }
+   visible = {
+	original_tag = NGA
+	has_power_balance = {
+		id = NGA_ELDA_SOVJAP
+	}
+   }
+}

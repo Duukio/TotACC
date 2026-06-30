@@ -1,0 +1,576 @@
+#A Technocratic Nigeria
+shared_focus = {
+	id = NGA_a_technocratic_nigeria
+	icon = GFX_NGA_a_technocratic_nigeria
+	x = 5
+	y = 1
+	cost = 5
+	completion_reward = {
+		add_popularity = {
+			ideology = technocracy
+			popularity = 0.1
+		}
+		add_stability = 0.1
+		add_political_power = 200
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_technocratic_nigeria"
+	}
+}
+
+#New People, New Ideas
+shared_focus = {
+	id = NGA_new_people_and_ideas
+	icon = GFX_NGA_new_people_and_ideas
+	x = 5
+	y = 2
+	cost = 5
+	completion_reward = {
+		add_research_slot = 1
+		set_variable = { NGA.SOCTRENDS_TP = 15 }
+		add_to_variable = {technogeria_stab = 0.05 }
+		custom_effect_tooltip = "Sets Traditional-Reformist Social Axis to 15%"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_new_people_and_ideas"
+	}
+    prerequisite = { focus = NGA_a_technocratic_nigeria  }
+}
+
+#Free Time is the Heartbeat of Our People
+shared_focus = {
+	id = NGA_fre_time_equals_heartbeat
+	icon = GFX_NGA_fre_time_equals_heartbeat
+	x = 1
+	y = 3
+	cost = 5
+	completion_reward = {
+		add_ideas = mitsubishi_managerialism
+		add_dynamic_modifier = {
+			scope = NGA
+			modifier = NGA_technocrat_dynmod
+		}
+		
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_fre_time_equals_heartbeat"
+	}
+	prerequisite = { focus = NGA_new_people_and_ideas  }
+}
+
+#Cementing the Good Word
+shared_focus = {
+	id = NGA_cementing_good_word
+	icon = GFX_NGA_cementing_good_word
+	x = 4
+	y = 3
+	cost = 5
+	completion_reward = {
+		add_to_variable = { technogeria_stab = 0.05 }
+		add_to_variable = { technogeria_drift = 0.03 }
+		add_to_variable = { technogeria_pp = 0.05 }
+		add_to_variable = { technogeriaweekstab = 0.01 }
+		add_to_variable = { technogeriaGDP = -0.03 }
+		custom_effect_tooltip = CEMENTING_GOOD_WORD_TOOLTIP
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_cementing_good_word"
+	}
+	prerequisite = { focus = NGA_new_people_and_ideas  }
+}
+	
+
+#Mobilise the Greyshirts
+shared_focus = {
+	id = NGA_mobilise_greyshirts
+	icon = GFX_NGA_mobilise_greyshirts
+	x = 6
+	y = 3
+	cost = 5
+	completion_reward = {
+		add_to_variable = { technogeriaconsc = 0.03 }
+		add_to_variable = { technogeria_consumer = 0.05 }		
+		custom_effect_tooltip = "Adds +5% consumer goods and +3% recruitable population"
+		log = "[GetDateText]: [Root.GetName]: Focus GA_mobilise_greyshirts"
+	}
+	prerequisite = { focus = NGA_new_people_and_ideas  }
+ }
+
+
+#Tots for Technocracy
+shared_focus = {
+	id = NGA_tots_for_technocracy
+	icon = GFX_NGA_tots_for_technocracy
+	x = 9
+	y = 3
+	cost = 5
+	completion_reward = {
+		add_to_variable = { technogeriamonthlypop = 0.1 }
+		add_war_support = 0.05
+		add_political_power = 100
+		add_to_variable = { schooltechnogeriapro = 0.05 }	
+		custom_effect_tooltip = "Adds +10% monthly population factor and +5% school construction speed"			
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_tots_for_technocracy"
+	}
+	prerequisite = { focus = NGA_new_people_and_ideas  }
+	
+}
+
+#Digitise the Workplace Even Further
+shared_focus = {
+	id = NGA_digitise_the_workplace
+	icon = GFX_NGA_digitise_the_workplace
+	x = 1
+	y = 4
+	cost = 5
+	completion_reward = {
+		add_research_slot = 1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_digitise_the_workplace"
+	}
+	prerequisite = { focus = NGA_fre_time_equals_heartbeat  }
+}
+
+#Dismantling the Cleric
+shared_focus = {
+	id = NGA_dismantling_the_cleric
+	icon = GFX_NGA_dismantling_the_cleric
+	x = 4
+	y = 4
+	cost = 5
+	completion_reward = {
+		add_stability = -0.33
+		add_ideas = dont_ask_dont_tell
+		add_ideas = no_second_sex
+		add_ideas = all_born_free_and_equal
+		custom_effect_tooltip = "Your social trends will change. Go check them."
+		set_variable = {
+		var = SOCTRENDS_DC
+		value = 10
+		}
+		set_variable = {
+		var = SOCTRENDS_DE
+		value = 45
+		}
+		set_variable = {
+		var = SOCTRENDS_EE
+		value = 70
+		}
+		set_variable = {
+		var = SOCTRENDS_TP
+		value = 10
+		}
+		set_variable = {
+		var = SOCTRENDS_EA
+		value = 10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_dismantling_the_cleric"
+	}
+	prerequisite = { focus = NGA_cementing_good_word  }
+}
+
+#Efficiency by the Milimiter 
+shared_focus = {
+	id = NGA_efficiency_by_the_milimiter
+	icon = GFX_NGA_efficiency_by_the_milimiter
+	x = 6
+	y = 4
+	cost = 5
+	completion_reward = {
+		add_to_variable = { technogeriaproduction = 0.05 }	
+		custom_effect_tooltip = "Adds +5% construction speed to all buildings"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_efficiency_by_the_milimiter"
+	}
+	prerequisite = { focus = NGA_mobilise_greyshirts  }
+}
+
+#The Great Rehabilitation
+shared_focus = {
+	id = NGA_the_great_rehabilitation
+	icon = GFX_NGA_the_great_rehabilitation
+	x = 9
+	y = 4
+	cost = 5
+	completion_reward = {
+		add_political_power = 100
+		NGA_abdulrahman_bello_dambazau = {
+			add_corps_commander_role = {
+			    skill = 5
+			    attack_skill = 4
+			    defense_skill = 4
+			    planning_skill = 4
+			    logistics_skill = 5
+			}
+			add_unit_leader_trait = politically_connected
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_great_rehabilitation"
+	}
+	prerequisite = { focus = NGA_tots_for_technocracy }
+}
+
+#Embracing Energy Accounting
+shared_focus = {
+	id = NGA_embrace_energy_accounting
+	icon = GFX_NGA_embrace_energy_accounting
+	x = 1
+	y = 5
+	cost = 5
+	completion_reward = {
+		add_stability = -0.25
+		add_to_variable = { technogeria_research = 0.1 }
+		add_to_variable = { technogeriafactorycap = 0.1 }
+		custom_effect_tooltip = "Increases research speed by +10% and factory efficiency by +10%"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_embrace_energy_accounting"
+	}
+	prerequisite = { focus = NGA_digitise_the_workplace  }
+}
+
+#Limited Electronic Democracy
+shared_focus = {
+	id = NGA_limited_electronic_democracy
+	icon = GFX_NGA_limited_electronic_democracy
+	x = 4
+	y = 5
+	cost = 5
+	completion_reward = {
+		add_to_variable = { technogeria_drift = -0.06 }
+		add_stability = 0.1
+		custom_effect_tooltip = "Changes Technocracy daily growth to -3%"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_limited_electronic_democracy"
+	}
+	prerequisite = { focus = NGA_dismantling_the_cleric  }
+}
+
+#NASDRA Unleashed
+shared_focus = {
+	id = NGA_nasdra_unleashed
+	icon = GFX_NGA_nasdra_unleashed
+	x = 6
+	y = 5
+	cost = 5
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = electronics
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 5
+			category = robotics
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_nasdra_unleashed"
+	}
+	prerequisite = { focus = NGA_efficiency_by_the_milimiter  }
+}
+
+#From California (...To the Nigerian wastelands)
+shared_focus = {
+	id = NGA_copying_california
+	icon = GFX_NGA_copying_california
+	x = 9
+	y = 5
+	cost = 5
+	completion_reward = {
+		add_political_power = 150
+		add_to_variable = { technogeriacentralized = 0.05 }
+		custom_effect_tooltip = "Adds +5% monthly drift to Centralized on the Governance Axis"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_copying_california"
+	}
+	prerequisite = { focus = NGA_the_great_rehabilitation  }
+}
+
+#Full Automation or Nothing Else!
+shared_focus = {
+	id = NGA_full_automation
+	icon = GFX_NGA_full_automation
+	x = 1
+	y = 6
+	cost = 5
+	completion_reward = {
+		add_timed_idea = {
+			idea = NGA_employment_crisis
+			days = 365
+		}
+		add_research_slot = 1
+		add_political_power = 200
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_full_automation"
+	}
+	prerequisite = { focus = NGA_embrace_energy_accounting  }
+}
+
+#Our Many Fifth Columns
+shared_focus = {
+	id = NGA_our_many_fifth_columns
+	icon = GFX_NGA_our_many_fifth_columns
+	x = 4
+	y = 6
+	cost = 5
+	completion_reward = {
+		add_ideas = total_state_purview
+		add_ideas = social_silencing
+		add_ideas = all_born_free_and_equal
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_our_many_fifth_columns"
+	}
+	prerequisite = { focus = NGA_limited_electronic_democracy }
+}
+
+#Big Computer in New Abuja
+shared_focus = {
+	id = NGA_big_computer_in_new_abuja
+	icon = GFX_NGA_big_computer_in_new_abuja
+	x = 6
+	y = 6
+	cost = 5
+	completion_reward = {
+		add_research_slot = 1
+		add_ideas = eighty_to_ninety
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_big_computer_in_new_abuja"
+	}
+    prerequisite = { focus = NGA_nasdra_unleashed  }
+}
+
+#Actually Existing Afrofuturism
+shared_focus = {
+	id = NGA_actually_existing_afrofuturism
+	icon = GFX_NGA_actually_existing_afrofuturism
+	x = 9
+	y = 6
+	cost = 5
+	completion_reward = {
+		every_owned_state = {
+             add_extra_state_shared_building_slots = 3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_actually_existing_afrofuturism"
+	}
+	prerequisite = { focus = NGA_copying_california  }
+}
+
+#Respect and Enjoy the Peace
+shared_focus = {
+	id = NGA_respect_and_enjoy_peace
+	icon = GFX_NGA_respect_and_enjoy_peace
+	x = 5
+	y = 7
+	cost = 5
+	completion_reward = {
+		add_ideas = disarmed_nation
+		add_ideas = partial_economic_mobilisation
+		add_ideas = free_trade
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_respect_and_enjoy_peace"
+	}
+    prerequisite = { focus = NGA_full_automation }
+	prerequisite = { focus = NGA_our_many_fifth_columns}
+	prerequisite = { focus = NGA_actually_existing_afrofuturism }
+	prerequisite = { focus = NGA_big_computer_in_new_abuja}
+}
+
+###FORPOL###
+
+#Relations with our Neighbours
+shared_focus = {
+	id = NGA_relations_with_neighbours
+	icon = GFX_NGA_relations_with_neighbours
+	x = 15
+	y = 2
+	cost = 5
+	completion_reward = {
+		BIA = {
+			add_opinion_modifier = {
+				target = NGA
+				modifier = huge_increase
+			}
+		}
+		BEN = {
+			add_opinion_modifier = {
+				target = NGA
+				modifier = huge_increase
+			}
+		}
+		BED = {
+			add_opinion_modifier = {
+				target = NGA
+				modifier = huge_increase
+			}
+		}
+		ULI = {
+			add_opinion_modifier = {
+				target = NGA
+				modifier = huge_increase
+			}
+		}
+		FRA = {
+			add_opinion_modifier = {
+				target = NGA
+				modifier = huge_increase
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_relations_with_neighbours"
+	}
+    prerequisite = { focus = NGA_a_technocratic_nigeria  }
+}
+
+#The Simplest Solution
+shared_focus = {
+	id = NGA_simple_solution
+	icon = GFX_NGA_simple_solution
+	x = 15
+	y = 3
+	cost = 5
+	completion_reward = {
+		declare_war_on = {
+			target = CAM
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = AMB
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = PRA
+			type = annex_everything
+		}	
+		declare_war_on = {
+			target = BKS
+			type = annex_everything
+		}	
+		every_state = {
+			limit = {
+				OR = {
+				is_owned_by = AMB
+				is_owned_by = PRA
+				is_owned_by = BKS
+				is_owned_by = CAM
+				}
+			}
+			add_core_of = NGA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_simple_solution"
+	}
+    prerequisite = { focus = NGA_relations_with_neighbours }
+}
+
+#Ending the Language Barrier
+shared_focus = {
+	id = NGA_ending_the_language_barrier
+	icon = GFX_NGA_ending_the_language_barrier
+	x = 14
+	y = 4
+	cost = 5
+	completion_reward = {
+		add_stability = -0.1
+		add_political_power = 200
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_ending_the_language_barrier"
+	}
+    prerequisite = { focus = NGA_simple_solution }
+}
+
+#The Tearing-Down of our Great Wall
+shared_focus = {
+	id = NGA_tearing_down_our_great_wall
+	icon = GFX_NGA_tearing_down_our_great_wall
+	x = 16
+	y = 4
+	cost = 5
+	completion_reward = {
+		add_to_variable = { technogeriaGDP = 0.1 }
+		if = {
+			limit = {
+				has_idea = West_African_Pound
+			}
+			swap_ideas = {
+				remove_idea = West_African_Pound
+				add_idea = Ambacoin
+			}
+		}
+		else = {
+			add_ideas = Ambacoin
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_tearing_down_our_great_wall"
+	}
+    prerequisite = { focus = NGA_simple_solution }
+}
+
+#Albion Thought Repudiated
+shared_focus = {
+	id = NGA_albion_thought_repudiated
+	icon = GFX_NGA_albion_thought_repudiated
+	x = 15
+	y = 5
+	cost = 5
+	completion_reward = {
+		add_to_variable = { technogeriaslot = 0.1 }
+		custom_effect_tooltip = "Adds +10% global building slots factor"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_albion_thought_repudiated"
+	}
+    prerequisite = { focus = NGA_ending_the_language_barrier }
+    prerequisite = { focus = NGA_tearing_down_our_great_wall }
+}
+
+#Africa Ab Ante!
+shared_focus = {
+	id = NGA_africa_ab_ante
+	icon = GFX_NGA_africa_ab_ante
+	x = 14
+	y = 6
+	cost = 5
+	completion_reward = {
+		add_war_support = 0.25
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_africa_ab_ante"
+	}
+    prerequisite = { focus = NGA_albion_thought_repudiated }
+}
+
+#The Language of the Future
+shared_focus = {
+	id = NGA_language_of_the_future
+	icon = GFX_NGA_language_of_the_future
+	x = 16
+	y = 6
+	cost = 5
+	completion_reward = {
+		EAF = {
+			country_event = NGA.2221
+		}
+		NGA = {
+			add_ideas = Afrihili
+		}
+		BIA = {
+			country_event = NGA.2221
+		}
+		BED = {
+			country_event = NGA.2221
+		}
+		ZAI = {
+			country_event = NGA.2221
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_language_of_the_future"
+	}
+    prerequisite = { focus = NGA_albion_thought_repudiated }
+}
+
+#A Psychological Specific Heat Boundry
+shared_focus = {
+	id = NGA_a_psychological_specific_heat_boundry
+	icon = GFX_NGA_a_psychological_specific_heat_boundry
+	x = 15
+	y = 7
+	cost = 5
+	available = {
+		date > 2028.1.1
+	}
+	completion_reward = {
+		every_country = {
+			limit = {
+				NOT = {
+					tag = NGA
+				}
+				has_idea = Afrihili
+			}
+			NGA = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+				add_stability = -0.25
+				add_political_power = -500
+				set_cosmetic_tag = NGA_technounion
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_psychological_specific_heat_boundry"
+	}
+    prerequisite = { focus = NGA_africa_ab_ante }
+    prerequisite = { focus = NGA_language_of_the_future }
+}

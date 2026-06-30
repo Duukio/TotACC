@@ -1,0 +1,156 @@
+SEY_rodeo = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAF
+		value = 100
+	}
+}
+SEY_rodeo_alk = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_ALK_bout
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SVK
+		value = 100
+	}
+}
+SEY_rodeo_ras = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+        OR = {
+            has_idea = SEY_rodeo_in_RAS_bout
+        }
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RAS
+		value = 100
+	}
+}
+SEY_rodeo_hon = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_HON
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ELS
+		value = 100
+	}
+}
+SEY_rodeo_irq = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_IRQ
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KUR
+		value = 100
+	}
+}
+SEY_rodeo_nwg = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_NWG          
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = IND
+		value = 100
+	}
+}
+SEY_rodeo_ind = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {       
+            has_idea = SEY_rodeo_in_IND
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NWG
+		value = 100
+	}
+}
+SEY_rodeo_plk = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_PLK
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = JAP
+		value = 100
+	}
+}
+SEY_rodeo_bur = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_BUR
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = BUR
+		value = 100
+	}
+}
+SEY_rodeo_usa = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_USA
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USA
+		value = 100
+	}
+}
+SEY_rodeo_saf = {
+    allowed = {
+        original_tag = SEY
+    }
+	enable = {
+            has_idea = SEY_rodeo_in_SAF
+	}
+         abort = { always = no }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = EFF
+		value = 100
+	}
+}

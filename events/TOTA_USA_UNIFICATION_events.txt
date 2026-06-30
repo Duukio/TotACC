@@ -1,0 +1,1112 @@
+add_namespace = FCO
+add_namespace = LKT
+add_namespace = NWF
+add_namespace = USP
+add_namespace = ATI
+add_namespace = CAL
+add_namespace = RAS
+add_namespace = NYP
+add_namespace = GPR
+add_namespace = NAARP
+add_namespace = YARVIN
+add_namespace = SFL
+
+country_event = {
+    id = FCO.1 # select leader
+    title = FCO.1.t
+    desc = FCO.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = FCO.1.a #caryn 
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.79
+			}
+		}
+        set_cosmetic_tag = FCO_UNI
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = FCO.1.b #hostetter
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.80
+			}
+		}
+		FCO = {
+        create_country_leader = {
+        	name = "Alan Hostetter"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/TPR/Portrait_TPR_Alan_Hostetter.png"
+        	expire = "2040.1.1"
+        	ideology = natpop
+        	traits = {
+        	}
+        }
+        set_cosmetic_tag = TPR_UNI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = FCO.1.c #yglesias
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.81
+			}
+		}
+		FCO = {
+			create_country_leader = {
+				name = "Matthew Yglesias"
+				desc = "POLITICS_J_LEENEY_DESC"
+				picture = "gfx/leaders/SNM/Matthew Yglesias.png"
+				expire = "2040.1.1"
+				ideology = phoenixism
+				traits = {
+				}
+			}
+        set_cosmetic_tag = USM_UNI
+
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = FCO.1.d #Sinema
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.82
+			}
+		}
+		FCO = {
+			create_country_leader = {
+				name = "Kyrsten Sinema"
+				desc = "POLITICS_J_LEENEY_DESC"
+				picture = "gfx/leaders/SAZ/Kyrsten Sinema.png"
+				expire = "2040.1.1"
+				ideology = soclibert
+				traits = {
+				}
+			}
+        set_cosmetic_tag = USM_UNI
+		choose_capital_USUNIFIER = yes
+
+		}
+	}
+}
+#country_event = {
+#    id = NYP.1 # select leader
+#    title = NYP.1.t
+#    desc = NYP.1.desc
+#    picture = GFX_report_event_bigcomphoxhai
+#    is_triggered_only = yes
+#    fire_only_once = yes 
+#
+#    option = {
+#      name = NYP.1.a #plurinat 
+#		NYP = {
+#        set_cosmetic_tag = NYP_UNI
+#		}
+#	}
+#    option = {
+#      name = NYP.1.b #cloud 
+#		NYP = {
+#        set_politics = {
+#			ruling_party = socdem
+#			set_cosmetic_tag = NYP_UNI
+#		}
+#		}
+#	}
+#}
+country_event = {
+    id = LKT.1 # select leader
+    title = LKT.1.t
+    desc = LKT.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		trigger = {
+			has_country_leader = {
+			    name = "Ezra Miller"
+			    ruling_only = yes
+			} 
+		}
+      name = LKT.1.a #Ezra, not ready
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.202
+			}
+		}
+		LKT = {
+        set_cosmetic_tag = LKT_UNI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+		trigger = {
+			has_country_leader = {
+			    name = "Arlo Looking Cloud"
+			    ruling_only = yes
+			} 
+		}
+      name = LKT.1.b #Arlo
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.51
+			}
+		}
+		LKT = {
+        set_cosmetic_tag = LKT_UNI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+		trigger = {
+			has_country_leader = {
+			    name = "Tapa Machunashi"
+			    ruling_only = yes
+			} 
+		}
+      name = LKT.1.c #Tapa
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.51
+			}
+		}
+		LKT = {
+        set_cosmetic_tag = LKT_UNI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+		trigger = {
+			has_country_leader = {
+			    name = "Leonard Peltier"
+			    ruling_only = yes
+			} 
+		}
+      name = LKT.1.d #Peltier
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.117
+			}
+		}
+		LKT = {
+        set_cosmetic_tag = LKT_UNI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+		trigger = {
+			has_country_leader = {
+			    name = "Harold Cardinal"
+			    ruling_only = yes
+			} 
+		}
+      name = LKT.1.e #Cardinal
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.52
+			}
+		}
+		LKT = {
+        set_cosmetic_tag = LKT_UNI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+}
+country_event = {
+    id = NWF.1 # select leader
+    title = NWF.1.t
+    desc = NWF.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = NWF.1.a #Covington 
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.83
+			}
+		}
+		NWF = {
+        create_country_leader = {
+        	name = "Harold Covington"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/NWF/Covington.png"
+        	expire = "2040.1.1"
+        	ideology = neo_naz
+        	traits = {
+        	}
+        }
+        set_cosmetic_tag = NWF_UNI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = NWF.1.b #Mason
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.84
+			}
+		}
+		NWF = {
+        create_country_leader = {
+        	name = "James Mason"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/NWF/Mason.png"
+        	expire = "2040.1.1"
+        	ideology = insurrfash
+        	traits = {
+        	}
+        }
+        set_cosmetic_tag = NWF_UNI_MASON
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = NWF.1.c #Robert Mathews
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.85
+			}
+		}
+		NWF = {
+       		 create_country_leader = {
+       		 	name = "Robert Jay Mathews"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/NWF/Robert Jay Mathews.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = ecofash
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = NWF_UNI_MAT
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = NWF.1.d #Johnson
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.86
+			}
+		}
+		NWF = {
+       		 create_country_leader = {
+       		 	name = "Greg Johnson"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/NWF/Greg Johnson.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = neo_naz
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = NWF_UNI_JOHN
+		}
+		choose_capital_USUNIFIER = yes
+	}
+}
+#country_event = {
+#    id = USP.1 # select leader
+#    title = USP.1.t
+#    desc = USP.1.desc
+#    picture = GFX_report_event_bigcomphoxhai
+#    is_triggered_only = yes
+#    fire_only_once = yes 
+#
+#    option = {
+#      name = USP.1.a #Fuentes
+#		ai_chance = { factor = 25 }
+#		every_country = {
+#			limit = {
+#				is_ai = no
+#			}
+#			news_event = {
+#				id = WNE.88
+#			}
+#		}
+#		USP = {
+#        create_country_leader = {
+#        	name = "Nicholas Fuentes"
+#        	desc = "POLITICS_NYX_DESC"
+#        	picture = "gfx/leaders/USP/Fuentes.png"
+#        	expire = "2040.1.1"
+#        	ideology = natpop
+#        	traits = {
+#        	}
+#        }
+#		set_politics = {
+#			ruling_party = dissident_right
+#		}
+#		drop_cosmetic_tag = yes
+#		}
+#	}
+#    option = {
+#      name = USP.1.b #Ye
+#		ai_chance = { factor = 25 }
+#		every_country = {
+#			limit = {
+#				is_ai = no
+#			}
+#			news_event = {
+#				id = WNE.89
+#			}
+#		}
+#		USP = {
+#       		 create_country_leader = {
+#       		 	name = "Kanye West"
+#       		 	desc = "POLITICS_NYX_DESC"
+#       		 	picture = "gfx/leaders/USP/Ye.png"
+#       		 	expire = "2040.1.1"
+#       		 	ideology = relfund
+#       		 	traits = {
+#       		 	}
+#       		 }
+#			 set_politics = {
+#				ruling_party = autocracy
+#			 }
+#        set_cosmetic_tag = USP_UNI_YE
+#		}
+#	}
+#    option = {
+#      name = USP.1.c #Milo
+#		ai_chance = { factor = 25 }
+#		every_country = {
+#			limit = {
+#				is_ai = no
+#			}
+#			news_event = {
+#				id = WNE.90
+#			}
+#		}
+#		USP = {
+#       		 create_country_leader = {
+#       		 	name = "Milo Yiannopoulos"
+#       		 	desc = "POLITICS_NYX_DESC"
+#       		 	picture = "gfx/leaders/USP/Milo.png"
+#       		 	expire = "2040.1.1"
+#       		 	ideology = rightlib
+#       		 	traits = {
+#       		 	}
+#       		 }
+#			 set_politics = {
+#				ruling_party = dissident_right
+#			 }
+#        drop_cosmetic_tag = yes
+#		}
+#	}
+#}
+country_event = {
+    id = ATI.1 # select leader
+    title = ATI.1.t
+    desc = ATI.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ATI.1.a #Nyx
+		ai_chance = { factor = 10 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.91
+			}
+		}
+		ATI = {
+			set_cosmetic_tag = ATI_NYX
+			set_politics = {
+				ruling_party = technocracy
+			}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = ATI.1.b #Gillis
+		ai_chance = { factor = 20 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.92
+			}
+		}
+		ATI = {
+        create_country_leader = {
+        	name = "William Gillis"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/ATI/Gillis.png"
+        	expire = "2040.1.1"
+        	ideology = mutan
+        	traits = {
+        	}
+        }
+		set_cosmetic_tag = ATI_GILLIS
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = ATI.1.c #Aragorn
+		ai_chance = { factor = 20 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.93
+			}
+		}
+		ATI = {
+       		 create_country_leader = {
+       		 	name = "Aragorn!"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/ATI/Aragorn.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = p_l_a
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = ATI_ARAGORN
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+   	 name = ATI.1.d #More options
+		ai_chance = { factor = 50 }
+		ATI = {
+			country_event = {
+				id = ATI.2
+			}
+		}
+	}
+}
+country_event = {
+    id = USP.666 # select leader
+    title = USP.666.t
+    desc = USP.666.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USP.666.a #Pence stays alive 
+		ai_chance = { factor = 33 }
+		USP = {
+			drop_cosmetic_tag = yes
+		}
+		choose_capital_USUNIFIER = yes
+	}
+   option = {
+     name = USP.666.b #Pence dies in a few days 
+		ai_chance = { factor = 66 }
+		USP = {
+			drop_cosmetic_tag = yes
+			country_event = {
+				id = USP.2
+				days = 10
+			}
+		}	
+	}
+}
+country_event = {
+    id = USP.2 # select leader
+    title = USP.2.t
+    desc = USP.2.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		ai_chance = { factor = 25 }
+      name = USP.2.a #HOAfascism
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	news_event = {
+		#		id = WNE.88
+		#	}
+		#}
+		USP = {
+        create_country_leader = {
+        	name = "Mike Lindell"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/USP/Mike Lindell.png"
+        	expire = "2040.1.1"
+        	ideology = soccon
+        	traits = {
+        	}
+        }
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = USP.2.b #Fuentes
+		ai_chance = { factor = 25 }
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	news_event = {
+		#		id = WNE.88
+		#	}
+		#}
+		USP = {
+        create_country_leader = {
+        	name = "Nicholas Fuentes"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/USP/Fuentes.png"
+        	expire = "2040.1.1"
+        	ideology = natpop
+        	traits = {
+        	}
+        }
+		set_politics = {
+			ruling_party = dissident_right
+		}
+		drop_cosmetic_tag = yes
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = USP.2.c #Milo
+		ai_chance = { factor = 25 }
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	news_event = {
+		#		id = WNE.90
+		#	}
+		#}
+		USP = {
+       		 create_country_leader = {
+       		 	name = "Milo Yiannopoulos"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/USP/Milo.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = rightlib
+       		 	traits = {
+       		 	}
+       		 }
+			 set_politics = {
+				ruling_party = dissident_right
+			 }
+        drop_cosmetic_tag = yes
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = USP.2.d #Ye
+		ai_chance = { factor = 25 }
+	#every_country = {
+	#	limit = {
+	#		is_ai = no
+	#	}
+	#	news_event = {
+	#		id = WNE.89
+	#	}
+	#}
+		USP = {
+       		 create_country_leader = {
+       		 	name = "Kanye West"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/USP/Kanye West.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = relfund
+       		 	traits = {
+       		 	}
+       		 }
+			 set_politics = {
+				ruling_party = autocracy
+			 }
+        drop_cosmetic_tag = yes
+		}
+		choose_capital_USUNIFIER = yes
+	}
+}
+
+country_event = {
+    id = ATI.2 # select leader
+    title = ATI.2.t
+    desc = ATI.2.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ATI.2.a #Spencer Clark
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.115 #TODO: Write Event
+			}
+		}
+		ATI = {
+       		 create_country_leader = {
+       		 	name = "Spencer Clark"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/ATI/Spencer Clark.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = mutan
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = ATI_NWA
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = ATI.2.b #Vaush
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.118
+			}
+		}
+		ATI = {
+   	  		create_country_leader = {
+   	  			name = "Ian Kochinski"
+   	  			desc = "POLITICS_NYX_DESC"
+   	  			picture = "gfx/leaders/ATI/Vaush.png"
+   	  			expire = "2040.1.1"
+   	  			ideology = demsoc
+   	  			traits = {
+   	  			}
+   	  		}
+				set_politics = {
+					ruling_party = socdem
+				}
+		set_cosmetic_tag = ATI_VAUSH
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = ATI.2.c #Opossumists
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.116 #TODO: Write Event
+			}
+		}
+		ATI = {
+       		 create_country_leader = {
+       		 	name = "Laura Jane Grace"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/ATI/Laura Jane Grace.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = collan
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = ATI_OPOSSUM
+		}
+		choose_capital_USUNIFIER = yes
+	}
+}
+country_event = {
+    id = RAS.1 # select leader
+    title = RAS.1.t
+    desc = RAS.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = RAS.1.a #Maupin
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.113
+			}
+		}
+		RAS = {
+			set_cosmetic_tag = RAS_MAUPIN
+			create_country_leader = {
+				name = "Caleb Maupin"
+				desc = "POLITICS_MAUPIN_DESC"
+				picture = "gfx/leaders/RAS/Portrait_RAS_Caleb_Maupin.png"
+				expire = "2040.1.1"
+				ideology = lwnat
+				traits = {
+				}
+			}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = RAS.1.b #Srnicek
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.114
+			}
+		}
+		RAS = {
+			set_cosmetic_tag = RAS_MAUPIN
+			set_politics = {
+				ruling_party = technocracy
+			}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = RAS.1.c #Logo
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.131
+			}
+		}
+		RAS = {
+       		 create_country_leader = {
+       		 	name = "Cameron Fuller"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/RAS/Portrait_RAS_Cameron_Fuller.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = religsoc
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = RAS_LOGO
+		}
+		choose_capital_USUNIFIER = yes
+	}
+}
+country_event = {
+    id = CAL.1 # select leader
+    title = CAL.1.t
+    desc = CAL.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = CAL.1.a #Yarvin
+		ai_chance = { factor = 40 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.94
+			}
+		}
+		CAL = {
+			set_cosmetic_tag = CAL_YAR
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = CAL.1.b #Miscavige
+		ai_chance = { factor = 20 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.95
+			}
+		}
+		CAL = {
+       		 create_country_leader = {
+       		 	name = "David Miscavige"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/CAL/Portrait_CAL_David_Miscavige.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = anolib
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = CAL_SCI
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = CAL.1.c #Jorjani
+		ai_chance = { factor = 20 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.96
+			}
+		}
+		CAL = {
+			set_cosmetic_tag = CAL_YAR
+			set_politics = {
+				ruling_party = dissident_right
+			}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = CAL.1.d #Spencer
+		ai_chance = { factor = 20 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.97
+			}
+		}
+		CAL = {
+			set_cosmetic_tag = CAL_YAR
+			set_politics = {
+				ruling_party = dissident_right
+			}
+create_country_leader = {
+	name = "Richard B. Spencer"
+	desc = "POLITICS_J_LEENEY_DESC"
+	picture = "gfx/leaders/CAL/Portrait_CAL_Richard_B_Spencer.png"
+	expire = "2040.1.1"
+	ideology = newright
+	traits = {
+	}
+}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+}
+country_event = {
+	id = CAL.2 #debug
+	title = CAL.2.t
+	desc = CAL.2.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = CAL.2.a
+		usacw_all_us_states_in_array = yes
+	}
+}
+country_event = {
+    id = YARVIN.1
+    title = YARVIN.1.t
+    desc = YARVIN.1.desc
+    picture = GFX_report_event_yarvin_vrchat
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = YARVIN.1.a
+	}
+}
+country_event = {
+    id = NAARP.1
+    title = NAARP.1.t
+    desc = NAARP.1.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = NAARP.1.a
+	}
+}
+country_event = {
+    id = ATI.2001
+    title = ATI.2001.t
+    desc = ATI.2001.desc
+	picture = GFX_report_event_ati_boxcar
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ATI.2001.a
+	}
+}
+country_event = {
+    id = ATI.2002
+    title = ATI.2002.t
+    desc = ATI.2002.desc
+	picture = GFX_report_event_ati_peacethroughmusic
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ATI.2002.a
+	}
+    option = {
+		name = ATI.2002.b
+	  }
+}
+country_event = {
+    id = ATI.2003
+    title = ATI.2003.t
+    desc = ATI.2003.desc
+	#picture = GFX_report_event_ati_peacethroughmusic
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ATI.2003.a
+	}
+}
+
+country_event = {
+    id = SFL.1 # select leader #The events here dont match the real unifiers because the actual SEs havent been done yet
+    title = SFL.1.t
+    desc = SFL.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SFL.1.a #Sharkey
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.215
+			}
+		}
+		SFL = {
+        create_country_leader = {
+        	name = "Jonathon Sharkey"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/SFL/The Impaler.png"
+        	expire = "2040.1.1"
+        	ideology = perdict
+        	traits = {
+        	}
+        }
+        set_cosmetic_tag = SFL_LAVEY
+        set_politics = {
+					ruling_party = autocracy 
+				}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = SFL.1.b #Invictus
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.216
+			}
+		}
+		SFL = {
+        create_country_leader = {
+        	name = "Augustus Sol Invictus"
+        	desc = "POLITICS_NYX_DESC"
+        	picture = "gfx/leaders/SFL/UnconqueredSun.png"
+        	expire = "2040.1.1"
+        	ideology = newright
+        	traits = {
+        	}
+        }
+        set_cosmetic_tag = SFL_RVME
+        set_politics = {
+					ruling_party = dissident_right
+				}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+    option = {
+      name = SFL.1.c #NatAnarch
+		ai_chance = { factor = 25 }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.217
+			}
+		}
+		SFL = {
+       		 create_country_leader = {
+       		 	name = "Keith Preston"
+       		 	desc = "POLITICS_NYX_DESC"
+       		 	picture = "gfx/leaders/SFL/Keith Preston.png"
+       		 	expire = "2040.1.1"
+       		 	ideology = nat_an
+       		 	traits = {
+       		 	}
+       		 }
+        set_cosmetic_tag = SFL_NATANARCH
+        set_politics = {
+					ruling_party = anarchism
+				}
+		}
+		choose_capital_USUNIFIER = yes
+	}
+}

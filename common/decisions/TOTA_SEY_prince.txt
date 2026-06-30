@@ -1,0 +1,173 @@
+SEY_prince_intervene_in_eastasia = {
+    PLK_intervene = {
+	visible = { 
+	has_completed_focus = SEY_troops_in_tokyo
+         JAP = {
+            has_war = yes
+         }
+	}
+		cost = 50
+		         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_PLK
+            }
+			JAP = {
+				give_military_access = SEY
+			}
+		}
+    }
+}
+SEY_prince_intervene_in_africa = {
+    ambazonia_funny = {
+	visible = { 
+	has_completed_focus = SEY_the_anticommunist_sword
+         AMB = {
+            has_war = yes
+         }
+	}
+		cost = 50
+		         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_CAM
+            }
+			AMB = {
+				give_military_access = SEY
+			}
+		}
+    }
+    southsudan_funny = {
+	visible = { 
+	has_completed_focus = SEY_the_anticommunist_sword
+         SDE = {
+            has_war = yes
+         }
+	}
+		cost = 50
+		         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SDE = {
+                add_ideas = SEY_rodeo_in_AWB
+            }
+			SDE = {
+				give_military_access = SEY
+			}
+		}
+    }
+    against_BRF_and_for_AWB = {
+	visible = { 
+	has_completed_focus = SEY_the_anticommunist_sword
+         AWB = {
+            has_war = yes
+         }
+	}
+		cost = 50
+		         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_AWB
+            }
+			AWB = {
+				give_military_access = SEY
+			}
+		}
+    }
+}
+SEY_prince_intervene_in_americas = {
+    USA_USA_USA_USP_actually_but_you_know_lol = {
+	visible = { 
+	has_completed_focus = SEY_xs_down_in_texas
+         USP = {
+            has_war = yes
+         }
+	}
+		cost = 50
+		         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_USP
+            }
+			USP = {
+				give_military_access = SEY
+			}
+		}
+    }
+    help_honduras = {
+	visible = { 
+	has_completed_focus = SEY_xs_down_in_texas
+         HON = {
+             has_war_with = ELS
+         }
+	}
+		cost = 50
+		         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_ELS
+            }
+			HON = {
+				give_military_access = SEY
+			}
+		}
+    }
+}
+SEY_prince_intervene_in_south_asia = {
+    burma_intervene = {
+	visible = { 
+	has_completed_focus = SEY_intelligence_in_indonesia
+         BUR = {
+            has_war = yes
+         }
+	}
+		cost = 50
+		         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_BUR
+            }
+			BUR = {
+				give_military_access = SEY
+			}
+		}
+    }
+    NWG_intervene_prince = {
+	visible = { 
+	has_completed_focus = SEY_intelligence_in_indonesia
+         IND = {
+            has_war_with = NWG
+         }
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_NWG
+            }
+			IND = {
+				give_military_access = SEY
+			}
+		}
+    }
+}

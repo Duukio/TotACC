@@ -1,0 +1,42 @@
+state= {
+id=422
+	name="STATE_422"
+    buildings_max_level_factor = 1
+	manpower = 4309230
+	
+	
+	state_category = metropolis
+	
+	resources={
+		steel=50
+		aluminium=50
+	}
+
+	history=
+	{
+		owner = ENG
+		victory_points = {
+			407 20 #Swansea
+		}
+		victory_points = {
+			311 5 #Wrexham
+		}
+		victory_points = { 377 25 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 10
+			377 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = ENG
+		add_core_of = WLS
+	}
+
+	provinces=
+	{
+253 311 377 407 3274 6363 9364 11361 	}
+
+	local_supplies=0.0 
+}

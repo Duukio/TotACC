@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+			SVK_in_a_foreign_land = {
+			picture = SVK_in_a_foreign_land
+			allowed = {
+				tag = SVK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			war_support_factor = -0.10
+			stability_factor = -0.15
+			monthly_population = 1
+			conscription = -0.01
+			offence = 0.05
+			army_speed_factor = 0.05
+			}
+		}
+	}	
+}

@@ -1,0 +1,26 @@
+state={
+id=749
+	
+	name="STATE_749"
+
+	manpower = 340304
+	state_category = city
+
+	history={
+		owner = USA
+		victory_points = { 10595 10 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		10595 
+	}
+
+	local_supplies=1.0 
+}

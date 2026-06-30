@@ -1,0 +1,399 @@
+add_namespace = BRA
+add_namespace = BRACW
+
+country_event = {
+    id = BRA.1 # Sarney resigns
+    title = BRA.1.t
+    desc = BRA.1.d
+    #picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = BRA.1.a
+		create_country_leader = {
+			name = "Marco Maciel"
+			desc = "POLITICS_JOSEPH_STALIN_DESC"
+			picture = "Portrait_BRA_Maciel.dds"
+			expire = "2080.3.1"
+			ideology = anodir
+			traits = {
+				
+			}
+		}
+		country_event = {
+			id = BRA.2
+			days = 90
+		}
+	}
+}
+country_event = {
+    id = BRA.2 # Maciel 
+    title = BRA.2.t
+    desc = BRA.2.d
+    picture = GFX_report_event_old_dude_again
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		name = BRA.2.a
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Caretaker Government"
+			desc = "POLITICS_JOSEPH_STALIN_DESC"
+			picture = "Caretaker Government.dds"
+			expire = "2080.3.1"
+			ideology = anodir
+			traits = {
+				
+			}
+		}
+	}
+}
+country_event = {
+	id = BRA.3 #catãos gambit
+	title = BRA.3.t
+	desc = BRA.3.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		option = {
+			name = BRA.3.a
+			235 = {
+				set_demilitarized_zone = yes
+			}
+			239 = {
+				set_demilitarized_zone = yes
+			}
+			220 = {
+				set_demilitarized_zone = yes
+			}
+			234 = {
+				set_demilitarized_zone = yes
+			}
+		}
+}
+country_event = {
+	id = BRA.4 #catãos idea succeeds 
+	title = BRA.4.t
+	desc = BRA.4.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		option = {
+			name = BRA.4.a
+		}
+}
+country_event = {
+	id = BRA.5 #olavo de carvalhomaxxing
+	title = BRA.5.t
+	desc = BRA.5.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+		option = {
+			name = BRA.5.a
+			create_country_leader = {
+				name = "Olavo de Carvalho"
+				desc = "POLITICS_CHUD_DESC"
+				picture = "Olavo De Carvalho.dds"
+				expire = "2080.1.1"
+				ideology = natpop
+			}
+		}
+}
+country_event = {
+	id = BRA.6 #Enéas appoints Ciro Gomes
+	title = BRA.6.t
+	desc = BRA.6.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = BRA.6.a #fine you can have democratization
+		ai_chance = { factor = 25 }
+		create_country_leader = {
+			name = "Ciro Gomes"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Ciro.png"
+			expire = "2080.1.1"
+			ideology = thway
+		}
+		set_politics = {
+			ruling_party = socdem
+		}
+		country_event = {
+			id = BRA.7
+			days = 150
+		}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.193
+					days = 1
+				}
+			}
+	}
+	option = {
+		name = BRA.6.b #NO!!!!!!!!!!!!!!!!!!!111one
+		ai_chance = { factor = 20 }
+		create_country_leader = {
+			name = "Havanir Nimtz"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Havanir Nimtz.png"
+			expire = "2080.1.1"
+			ideology = anodir
+		}
+	}
+	option = {
+		name = BRA.6.c #NO!!!!!!!!!!!!!!!!!!!111one but boring
+		ai_chance = { factor = 20 }
+		set_politics = {
+			ruling_party = conservatism
+		}
+		create_country_leader = {
+			name = "Tereza Cristina"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Tereza Cristina.png"
+			expire = "2080.1.1"
+			ideology = socpat_con
+		}
+	}
+}
+country_event = {
+	id = BRA.7 #Ciro does voting
+	title = BRA.7.t
+	desc = BRA.7.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = BRA.7.a #hiii :3 hiii haiiii :3
+		ai_chance = { factor = 20 }
+		create_country_leader = {
+			name = "Jair Bolsonaro"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/BOLSOMAXXING.png"
+			expire = "2080.1.1"
+			ideology = populistcon
+		}
+		set_politics = {
+			ruling_party = conservatism
+		}
+	}
+	option = {
+		name = BRA.7.b #É O 26
+		ai_chance = { factor = 20 }
+		create_country_leader = {
+			name = "Senor Abravanel"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Sílvio Santos.png"
+			expire = "2080.1.1"
+			ideology = socpat_con
+		}
+		set_politics = {
+			ruling_party = conservatism
+		}
+		country_event = {
+			id = BRA.8 #celebreich
+			days = 1460
+		}
+	}
+	option = {
+		name = BRA.7.c #Polcompballreich begins...
+		ai_chance = { factor = 20 }
+		create_country_leader = {
+			name = "Paulo Kogos"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Paulo Kogos.png"
+			expire = "2080.1.1"
+			ideology = rightlib
+		}
+		set_politics = {
+			ruling_party = dissident_right
+		}
+		country_event = {
+			id = BRA.9
+			days = 1280 #Uh oh!
+		}
+	}
+	option = {
+		name = BRA.7.d #Communism. In The Soviet Union!
+		ai_chance = { factor = 20 }
+		create_country_leader = {
+			name = "Valmir Assunção"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Valmir Assunção.png"
+			expire = "2080.1.1"
+			ideology = sovmarsys
+		}
+		set_politics = {
+			ruling_party = reformist_socialism
+		}
+		country_event = {
+			id = BRA.10
+			days = 120 #Uh oh!
+		}
+	}
+}
+country_event = {
+	id = BRA.8 #Celebreich
+	title = BRA.8.t
+	desc = BRA.8.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = BRA.8.a #Xoxial Demoxraxy
+		ai_chance = { factor = 20 }
+		create_country_leader = {
+			name = "Maria Xuxa Meneghel"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Xuxa.png"
+			expire = "2080.1.1"
+			ideology = demsoc
+		}
+		set_politics = {
+			ruling_party = socdem
+		}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.196
+					days = 1
+				}
+			}
+	}
+	option = {
+		name = BRA.8.b #Slumdog Slightly Upper Class
+		ai_chance = { factor = 20 }
+		create_country_leader = {
+			name = "Luciano Grostein Huck"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Luciano Huck.png"
+			expire = "2080.1.1"
+			ideology = natlib
+		}
+		set_politics = {
+			ruling_party = liberalism
+		}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.196
+					days = 1
+				}
+			}
+	}
+}
+country_event = {
+	id = BRA.9 #Kogos does Ancapistan
+	title = BRA.9.t
+	desc = BRA.9.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = BRA.9.a
+		set_cosmetic_tag = BRA_KOGOS
+		load_oob = "generic_2021" #idk but this feels right to do
+		create_country_leader = {
+			name = "Paulo Kogos"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Paulo Kogos alt.png"
+			expire = "2080.1.1"
+			ideology = rightlib
+		}		
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.195
+					days = 1
+				}
+			}
+	}
+}
+country_event = {
+	id = BRA.10 #Military chuds vs brave and beautiful kweens
+	title = BRA.10.t
+	desc = BRA.10.desc
+	#picture
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = BRA.10.a #Chudreich
+		ai_chance = { factor = 33 }
+		create_country_leader = {
+			name = "Olavo de Carvalho"
+			desc = "POLITICS_CHUD_DESC"
+			picture = "gfx/leaders/BRA/Olavo De Carvalho.png"
+			expire = "2080.1.1"
+			ideology = rightlib
+		}
+		set_politics = {
+			ruling_party = dissident_right
+		}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.57 #yea this one has been in for a while
+					days = 1
+				}
+			}
+	}
+	option = {
+		name = BRA.10.b #Valmir stays
+		ai_chance = { factor = 33 }
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.194
+					days = 1
+				}
+			}
+	}
+	#option = {
+	#	name = BRA.10.c #MAO PLEASE SUCK MY DICK
+	#	ai_chance = { factor = 33 }
+	#	create_country_leader = {
+	#		name = "José Genoíno"
+	#		desc = "POLITICS_CHUD_DESC"
+	#		picture = "gfx/leaders/BRA/José Genoíno.png"
+	#		expire = "2080.1.1"
+	#		ideology = mzt
+	#	}
+	#	set_politics = {
+	#		ruling_party = hardline_socialism
+	#	}
+	#		every_country = {
+	#			limit = {
+	#				is_ai = no
+	#			}
+	#			news_event = {
+	#				id = WNE.197
+	#				days = 1
+	#			}
+	#		}
+	#}
+	#this option proved somewhat controversial with team members so we've kept it out for now
+}

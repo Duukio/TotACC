@@ -1,0 +1,33 @@
+state={
+id=882
+	
+
+	name="STATE_882"
+
+	resources={
+		strategic_minerals=50
+		steel=50 
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			1591 25 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1591 1840 4651 4773 4845 7332 7711 7795 7856 10146 10547 10550 10619 10680 12529 13149 
+	}
+	manpower=4036211
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

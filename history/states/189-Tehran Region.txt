@@ -1,0 +1,30 @@
+state={
+id=189
+	
+
+	name="STATE_189"
+
+
+	history={
+		owner = IRN
+		victory_points = {
+			10837 30 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 5
+		}
+		add_core_of = IRN
+
+	}
+
+	provinces={
+		4553 4580 4637 7969 8093 10385 10523 10768 10837 10922 12818 
+	}
+	manpower=23343033
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

@@ -1,0 +1,94 @@
+characters = {
+	Chau_Lap_The = {
+		name = "Châu Lập Thể"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SVI/Chau Lap The.png"
+			}
+		}
+		field_marshal = {
+			traits = { offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	Luong_Xuan_Viet = {
+		name = "Lương Xuân Việt"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SVI/Luong Xuan Viet.png"
+			}
+		}
+		corps_commander = {
+			traits = { defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ngo_dinh_quynh = {
+		name = "Ngô Đình Quỳnh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SVI/Ngo Dinh Quynh.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = socpat
+		}
+	}
+	dao_minh_quan = {
+		name = "Đào Minh Quân"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SVI/Portrait_SVI_Dao_Minh_Quan.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = rightlib
+		}
+	}
+	Nguyen_Huu_Chanh = {
+		name = "Nguyễn Hữu Chánh"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SVI/Nguyen Huu Chanh.png"
+			}
+		}
+	}
+	giuseppe_thanh_nguyen = {
+		name = "Giuseppe-Thanh Nguyễn"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SVI/Giuseppe Thanh Nguyen.png"
+			}
+		}
+	}
+	guillaume_nguyen = {
+		name = "Guillaume Nguyễn"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SVI/Guillaume Nguyen.png"
+			}
+		}
+	}
+	dinh_dong_phung_viet = {
+		name = "Đinh Đồng Phụng Việt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SVI/Dinh Dong Phung Viet.png"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = corporatocracy
+		}
+	}
+}

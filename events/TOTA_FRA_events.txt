@@ -1,0 +1,26 @@
+#add_namespace = LUX #lol
+
+#country_event = {
+#    id = LUX.1 # jerome
+#    title = LUX.1.t
+#    desc = LUX.1.d
+#    picture = GFX_report_event_teddy_ded
+#    is_triggered_only = yes
+#    fire_only_once = yes 
+#
+#    option = {
+#      name = LUX.1.a
+#      set_politics = {
+#        ruling_party = dissident_right
+#      }
+#		every_country = {
+#			limit = {
+#				is_ai = no
+#			}
+#			news_event = {
+#				id = WNE.76
+#				days = 1
+#			}
+#		}
+#	}
+#}

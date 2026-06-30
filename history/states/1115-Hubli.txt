@@ -1,0 +1,24 @@
+
+state={
+	id=1115
+	name="STATE_1115" #Hubli
+	provinces={
+		12208 4278 4291 12105
+	}
+	manpower=4458545
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = BHA
+		buildings = {
+			school = 3
+			infrastructure = 3
+		}
+		victory_points = {
+			4291 5 #Hubli 
+		}
+		add_core_of = BHA
+	}
+}

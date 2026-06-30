@@ -1,0 +1,29 @@
+state={
+id=668
+	name="STATE_668"
+    buildings_max_level_factor = 1
+	manpower=202506
+	
+	state_category = small_island
+
+	history={
+		owner = SAM
+		add_core_of = SAM
+		buildings = {
+            school = 2
+		dockyard = 1
+			infrastructure = 3
+			7290 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7290 5
+		}
+	}
+	provinces={
+		7290 
+	}
+
+	local_supplies=0.0 
+}

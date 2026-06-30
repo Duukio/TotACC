@@ -1,0 +1,481 @@
+focus_tree = {
+    id = SFL_ASI_WARTREE
+    country = {
+        base = 0
+        modifier = {
+            add = 100
+            tag = SFL
+        }
+    }
+	focus = {
+		id = SFL_on_the_new_moon_of_may
+		icon = GFX_SFL_on_the_new_moon_of_may
+		cost = 3
+		x = 12
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			activate_advisor = SFL_nathan_larson
+			activate_advisor = SFL_gonzalo_lira
+			activate_advisor = SFL_steve_sailer
+            log = "[GetDateText]: [Root.GetName]: SFL_on_the_new_moon_of_may"
+		}
+	}
+	focus = {
+		id = SFL_future_or_ruin
+		icon = GFX_SFL_future_or_ruin
+		cost = 5
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_out_of_the_wilderness
+			add_political_power = 50
+			set_popularities = {
+				dissident_right = 60
+				revolutionary_right = 30
+				liberalism = 10
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_future_or_ruin"
+		}
+		relative_position_id = SFL_on_the_new_moon_of_may
+		prerequisite = { focus = SFL_on_the_new_moon_of_may }
+	}
+	focus = {
+		id = SFL_against_the_artificial_world
+		icon = GFX_SFL_against_the_artificial_world
+		cost = 5
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { THIS.SOCTRENDS_EA = 20 }
+            custom_effect_tooltip = "Adds 20 points to Ecological in the Social Trends mechanic"
+			add_ideas = SFL_ISAIF
+            log = "[GetDateText]: [Root.GetName]: SFL_against_the_artificial_world"
+		}
+		relative_position_id = SFL_future_or_ruin
+		prerequisite = { focus = SFL_future_or_ruin }
+	}
+	focus = {
+		id = SFL_the_root_of_all_evil
+		icon = GFX_SFL_the_root_of_all_evil
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			subtract_from_variable = { THIS.SOCTRENDS_DE = 10 }
+            custom_effect_tooltip = "Subtracts 10 points from Democratic in the Social Trends mechanic"
+			add_to_variable = { SFL.GDP = 150 }
+			custom_effect_tooltip = "Adds 150 Billion in Seized Assets"
+			add_ideas = nouveau_dirigisme
+            log = "[GetDateText]: [Root.GetName]: SFL_the_root_of_all_evil"
+		}
+		relative_position_id = SFL_against_the_artificial_world
+		prerequisite = { focus = SFL_against_the_artificial_world }
+	}
+	focus = {
+		id = SFL_the_media_leviathon
+		icon = GFX_SFL_the_media_leviathon
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = 0.12
+			add_ideas = monitored_speech
+            log = "[GetDateText]: [Root.GetName]: SFL_the_media_leviathon"
+		}
+		relative_position_id = SFL_the_root_of_all_evil
+		prerequisite = { focus = SFL_the_root_of_all_evil }
+	}
+	focus = {
+		id = SFL_those_bearing_revolution
+		icon = GFX_SFL_those_bearing_revolution
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = limited_conscription
+            log = "[GetDateText]: [Root.GetName]: SFL_those_bearing_revolution"
+		}
+		relative_position_id = SFL_future_or_ruin
+		prerequisite = { focus = SFL_future_or_ruin }
+	}
+	focus = {
+		id = SFL_to_make_heroes_and_martyrs
+		icon = GFX_SFL_to_make_heroes_and_martyrs
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower = 10000
+			army_experience = 50
+            log = "[GetDateText]: [Root.GetName]: SFL_to_make_heroes_and_martyrs"
+		}
+		relative_position_id = SFL_those_bearing_revolution
+		prerequisite = { focus = SFL_those_bearing_revolution }
+	}
+	focus = {
+		id = SFL_bearers_of_cultural_disease
+		icon = GFX_SFL_bearers_of_cultural_disease
+		cost = 5
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			subtract_from_variable = { THIS.SOCTRENDS_EE = 45 }
+            custom_effect_tooltip = "Subtracts 45 points from Egalitarian in the Social Trends mechanic"
+			add_ideas = caste_system
+			add_ideas = sodomy_laws
+            log = "[GetDateText]: [Root.GetName]: SFL_bearers_of_cultural_disease"
+		}
+		relative_position_id = SFL_future_or_ruin
+		prerequisite = { focus = SFL_future_or_ruin }
+	}
+	focus = {
+		id = SFL_beauty_of_strength
+		icon = GFX_SFL_beauty_of_strength
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { THIS.SOCTRENDS_TP = 15 }
+            custom_effect_tooltip = "Adds 15 points to Traditional in the Social Trends mechanic"
+			add_war_support = 0.08
+			army_experience = 50
+            log = "[GetDateText]: [Root.GetName]: SFL_beauty_of_strength"
+		}
+		relative_position_id = SFL_bearers_of_cultural_disease
+		prerequisite = { focus = SFL_bearers_of_cultural_disease }
+	}
+	focus = {
+		id = SFL_build_the_most_glorious_castles
+		icon = GFX_SFL_build_the_most_glorious_castles
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+			}
+			random_controlled_state = {
+					add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+					}
+			}
+			random_controlled_state = {
+					add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+					}
+			}
+			random_controlled_state = {
+					add_building_construction = {
+    					type = arms_factory
+    					level = 1
+    					instant_build = yes
+					}
+			}
+			random_controlled_state = {
+					add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+					}
+			}
+			random_controlled_state = {
+					add_building_construction = {
+    					type = industrial_complex
+    					level = 1
+    					instant_build = yes
+					}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_build_the_most_glorious_castles"
+		}
+		relative_position_id = SFL_beauty_of_strength
+		prerequisite = { focus = SFL_beauty_of_strength }
+	}
+	focus = {
+		id = SFL_war_be_unto_the_ends_of_earth
+		icon = GFX_SFL_war_be_unto_the_ends_of_earth
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			add_research_slot = 1
+            log = "[GetDateText]: [Root.GetName]: SFL_war_be_unto_the_ends_of_earth"
+		}
+		relative_position_id = SFL_build_the_most_glorious_castles
+		prerequisite = { focus = SFL_build_the_most_glorious_castles }
+		prerequisite = { focus = SFL_to_make_heroes_and_martyrs }
+		prerequisite = { focus = SFL_the_media_leviathon }
+	}
+	focus = {
+		id = SFL_first_torches_upon_the_world
+		icon = GFX_SFL_first_torches_upon_the_world
+		cost = 3
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks Civil War Decisions"
+			set_country_flag = SFL_reuinfy_wargoals
+            log = "[GetDateText]: [Root.GetName]: SFL_first_torches_upon_the_world"
+		}
+		relative_position_id = SFL_on_the_new_moon_of_may
+		prerequisite = { focus = SFL_on_the_new_moon_of_may }
+	}
+	focus = {
+		id = SFL_the_grey_world_of_man
+		icon = GFX_SFL_the_grey_world_of_man
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_know_who_to_shoot
+			custom_effect_tooltip = "Unlocks Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_the_grey_world_of_man"
+		}
+		relative_position_id = SFL_first_torches_upon_the_world
+		prerequisite = { focus = SFL_first_torches_upon_the_world }
+	}
+	focus = {
+		id = SFL_the_commie_slayer
+		icon = GFX_SFL_the_commie_slayer
+		cost = 3
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+			add_trait = {
+			    ideology = dissident_right
+			    trait = slayer_of_communists
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_commie_slayer"
+		}
+		relative_position_id = SFL_the_grey_world_of_man
+		prerequisite = { focus = SFL_the_grey_world_of_man }
+	}
+	focus = {
+		id = SFL_all_pigs_must_die
+		icon = GFX_SFL_all_pigs_must_die
+		cost = 3
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_all_pigs_must_die"
+		}
+		relative_position_id = SFL_the_grey_world_of_man
+		prerequisite = { focus = SFL_the_grey_world_of_man }
+	}
+	focus = {
+		id = SFL_another_shade_of_tyranny
+		icon = GFX_SFL_another_shade_of_tyranny
+		cost = 3
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_know_who_to_shoot_2
+			add_stability = 0.1
+			add_political_power = 100
+            log = "[GetDateText]: [Root.GetName]: SFL_another_shade_of_tyranny"
+		}
+		relative_position_id = SFL_all_pigs_must_die
+		prerequisite = { focus = SFL_all_pigs_must_die }
+		prerequisite = { focus = SFL_the_commie_slayer }
+	}
+	focus = {
+		id = SFL_saviors_of_the_west
+		icon = GFX_SFL_saviors_of_the_west
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+    			country_exists = USA
+				country_exists = USP
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 50
+			add_manpower = 7000
+            log = "[GetDateText]: [Root.GetName]: SFL_saviors_of_the_west"
+		}
+		relative_position_id = SFL_another_shade_of_tyranny
+		prerequisite = { focus = SFL_another_shade_of_tyranny }
+	}
+	focus = {
+		id = SFL_corporate_slaves
+		icon = GFX_SFL_corporate_slaves
+		cost = 3
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_corporate_slaves"
+		}
+		relative_position_id = SFL_saviors_of_the_west
+		prerequisite = { focus = SFL_saviors_of_the_west }
+	}
+	focus = {
+		id = SFL_worshippers_of_money
+		icon = GFX_SFL_worshippers_of_money
+		cost = 3
+		x = 2
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SFL = {
+				leave_faction = yes
+			}
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_worshippers_of_money"
+		}
+		relative_position_id = SFL_saviors_of_the_west
+		prerequisite = { focus = SFL_saviors_of_the_west }
+	}
+	focus = {
+		id = SFL_not_stolen_conquered
+		icon = GFX_SFL_not_stolen_conquered
+		cost = 3
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+			log = "[GetDateText]: [Root.GetName]: SFL_not_stolen_conquered"
+		}
+		relative_position_id = SFL_saviors_of_the_west
+		prerequisite = { focus = SFL_saviors_of_the_west }
+	}
+	focus = {
+		id = SFL_no_more_wars_amongst_brothers
+		icon = GFX_SFL_no_more_wars_amongst_brothers
+		cost = 3
+		x = -2
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			NWF = {
+				country_event = {
+					id = NWF.999
+					days = 1
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_no_more_wars_amongst_brothers"
+		}
+		relative_position_id = SFL_saviors_of_the_west
+		prerequisite = { focus = SFL_saviors_of_the_west }
+	}
+	focus = {
+		id = SFL_the_lowest_of_the_masses
+		icon = GFX_SFL_the_lowest_of_the_masses
+		cost = 3
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_the_lowest_of_the_masses"
+		}
+		relative_position_id = SFL_saviors_of_the_west
+		prerequisite = { focus = SFL_saviors_of_the_west }
+	}
+	focus = {
+		id = SFL_the_unconquered_sun
+		icon = GFX_SFL_the_unconquered_sun
+		cost = 3
+		x = 0
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			SFL = {
+				all_of_scopes = {
+					array = global.USASTATES
+					is_owned_by = SFL
+				}
+			}
+		}
+		completion_reward = {
+			every_owned_state = {
+				add_core_of = SFL
+			}
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_the_unconquered_sun"
+		}
+		relative_position_id = SFL_saviors_of_the_west
+		prerequisite = { focus = SFL_not_stolen_conquered }
+	}
+}

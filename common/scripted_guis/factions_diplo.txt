@@ -1,0 +1,32 @@
+scripted_gui = {
+	
+	factions_diplo_scrgui = {
+	    context_type = selected_country_context
+	    parent_window_token = selected_country_view_diplomacy
+		window_name = "factions_diplo"
+
+		ai_enabled = {
+			always = no
+		}
+		
+		visible = {
+		}
+		effects = {
+		}
+		triggers = {
+			faction_icon_visible = {
+				check_variable = {
+					var = THIS.FACTIONSTATUS
+					value = 0
+					compare = greater_than
+				}
+			}
+		}
+		properties = {	
+			faction_icon = {
+				frame = THIS.FACTIONSTATUS
+			}
+		}
+	}
+}
+

@@ -1,0 +1,1003 @@
+
+shared_focus = {
+	id = ISP_general_secretary_sneh
+	icon = GFX_general_secretary_sneh
+	cost = 5
+	x = 7
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_general_secretary_sneh"
+	}
+}
+
+shared_focus = {
+	id = ISP_in_the_steps_of_tabenkin
+	icon = GFX_in_the_steps_of_tabenkin
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.10
+			days = 1
+		}
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_in_the_steps_of_tabenkin"
+	}
+	relative_position_id = ISP_general_secretary_sneh
+	prerequisite = { focus = ISP_general_secretary_sneh }
+}
+
+shared_focus = {
+	id = ISP_a_responsible_national_government
+	icon = GFX_a_responsible_national_government
+	cost = 5
+	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPNS_stab
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPNS_pp
+			value = -0.1
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +5% Stability, -10% political power gain."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_responsible_national_government"
+	}
+	relative_position_id = ISP_in_the_steps_of_tabenkin
+	prerequisite = { focus = ISP_in_the_steps_of_tabenkin }
+}
+
+shared_focus = {
+	id = ISP_for_our_unity
+	icon = GFX_for_our_unity
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = ISPNS_stab
+			value = 0.05
+		}
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +5% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_for_our_unity"
+	}
+	relative_position_id = ISP_a_responsible_national_government
+	prerequisite = { focus = ISP_a_responsible_national_government }
+}
+
+shared_focus = {
+	id = ISP_for_our_security
+	icon = GFX_for_our_security
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 25
+		add_to_variable = {
+			var = ISPNS_war_support
+			value = 0.05
+		}
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +5% war support."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_for_our_security"
+	}
+	relative_position_id = ISP_a_responsible_national_government
+	prerequisite = { focus = ISP_a_responsible_national_government }
+}
+
+shared_focus = {
+	id = ISP_reject_claims_of_radicalism
+	icon = GFX_reject_claims_of_radicalism
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPNS_stab
+			value = 0.05
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = -0.03
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +5% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reject_claims_of_radicalism"
+	}
+	relative_position_id = ISP_a_responsible_national_government
+	prerequisite = { focus = ISP_for_our_unity }
+	prerequisite = { focus = ISP_for_our_security }
+}
+
+shared_focus = {
+	id = ISP_a_benevolent_iron_fist
+	icon = GFX_a_benevolent_iron_fist
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable =  {
+			var = ISPNS_pp
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'Government of National Salvation' by +10% political power gain."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_benevolent_iron_fist"
+	}
+	relative_position_id = ISP_reject_claims_of_radicalism
+	prerequisite = { focus = ISP_reject_claims_of_radicalism }
+	mutually_exclusive = { focus = ISP_cautious_redemocratization }
+}
+
+shared_focus = {
+	id = ISP_cautious_redemocratization
+	icon = GFX_cautious_redemocratization
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_global_flag = ISP_cautious_redemocratization_flag
+		add_to_variable = {
+			var = ISPNS_pp
+			value = -0.15
+		}
+		add_to_variable = {
+			var = ISPNS_dem
+			value = 0.03
+		}
+		set_party_name = {
+			ideology = reformist_socialism
+			name = "Mapam - Strong Eber"
+			long_name = "United Workers Party - Strong Eber"
+		}
+		custom_effect_tooltip = "Replace 'Government of National Salvation' with 'Cautious Redemocratization', effective change -15% political power gain, +3% monthly drift towards democratic."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_autious_redemocratization"
+	}
+	relative_position_id = ISP_reject_claims_of_radicalism
+	prerequisite = { focus = ISP_reject_claims_of_radicalism }
+	mutually_exclusive = { focus = ISP_a_benevolent_iron_fist }
+}
+
+shared_focus = {
+	id = ISP_rallying_behind_the_military
+	icon = GFX_rallying_behind_the_military
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.4
+			days = 1
+		}
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_rallying_behind_the_military"
+	}
+	relative_position_id = ISP_for_our_security
+	prerequisite = { focus = ISP_fighting_cosmopolitanism }
+	prerequisite = { focus = ISP_for_our_security }
+}
+
+shared_focus = {
+	id = ISP_enforcing_conscription
+	icon = GFX_enforcing_conscription
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPRBNS_recruit
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPRBNS_stab
+			value = -0.05
+		}
+		custom_effect_tooltip = "Modify 'Rebuilding the National Spirit' by +5% recruitable population factor, -5% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_enforcing_conscription"
+	}
+	relative_position_id = ISP_rallying_behind_the_military
+	prerequisite = { focus = ISP_rallying_behind_the_military }
+}
+
+shared_focus = {
+	id = ISP_reviving_the_national_spirit
+	icon = GFX_reviving_the_national_spirit
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_ideas = ISP_fading_dream
+		add_dynamic_modifier = {
+			modifier = ISP_rebuilding_national_spirit_dyn
+			scope = ISP
+		}
+		set_variable = {
+			var = ISPRBNS_recruit
+			value = -0.1
+		}
+		set_variable = {
+			var = ISPRBNS_war_support
+			value = -0.05
+		}
+		set_variable = {
+			var = ISPRBNS_trad
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPRBNS_pp
+			value = 0.1
+		}
+		custom_effect_tooltip = "Replace 'The Fading Dream' with 'Rebuilding the National Spirit' effective change +10% political power gain."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reviving_the_national_spirit"
+	}
+	relative_position_id = ISP_in_the_steps_of_tabenkin
+	prerequisite = { focus = ISP_in_the_steps_of_tabenkin }
+}
+
+shared_focus = {
+	id = ISP_fighting_cosmopolitanism
+	icon = GFX_fighting_cosmopolitanism
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPRBNS_trad
+			value = -0.01
+		}
+		custom_effect_tooltip = "Modify 'Rebuilding the National Spirit' by +1% monthly drift towards traditional."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_fighting_cosmopolitanism"
+	}
+	relative_position_id = ISP_reviving_the_national_spirit
+	prerequisite = { focus = ISP_reviving_the_national_spirit }
+}
+
+shared_focus = {
+	id = ISP_silencing_antinational_voices
+	icon = GFX_silencing_antinational_voices
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPRBNS_dem
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPRBNS_trad
+			value = -0.01
+		}
+		add_to_variable = {
+			var = ISPRBNS_pp
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'Rebuilding the National Spirit' by +1% monthly drift towards autocratic and traditional, +10% political power gain."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_silencing_antinational_voices"
+	}
+	relative_position_id = ISP_fighting_cosmopolitanism
+	prerequisite = { focus = ISP_fighting_cosmopolitanism }
+}
+
+shared_focus = {
+	id = ISP_a_controlled_socialist_congress
+	icon = GFX_ISP_a_controlled_socialist_congress
+	cost = 5
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPRBNS_trad
+			value = 0.02
+		}
+		add_to_variable = {
+			var = ISPRBNS_stab
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modify 'Rebuilding the National Spirit' by +2% monthly drift towards reformist, +5% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_controlled_socialist_congress"
+	}
+	relative_position_id = ISP_fighting_cosmopolitanism
+	prerequisite = { focus = ISP_silencing_antinational_voices }
+}
+
+shared_focus = {
+	id = ISP_honouring_our_pioneers
+	icon = GFX_honouring_our_pioneers
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_honouring_our_pioneers"
+	}
+	relative_position_id = ISP_reviving_the_national_spirit
+	prerequisite = { focus = ISP_reviving_the_national_spirit }
+}
+
+shared_focus = {
+	id = ISP_a_virtuous_youth
+	icon = GFX_a_virtuous_youth
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.2
+			days = 1
+		}
+		add_to_variable = {
+			var = ISPTZ_con_goods
+			value = -0.05
+		}
+		add_to_variable = {
+			var = ISPTZ_stab
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modify 'The Tzabar' by -5% consumer good factories, +5% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_virtuous_youth"
+	}
+	relative_position_id = ISP_honouring_our_pioneers
+	prerequisite = { focus = ISP_honouring_our_pioneers }
+	prerequisite = { focus = ISP_mobilizing_the_youth }
+}
+
+shared_focus = {
+	id = ISP_upholding_the_myth_of_tzabar
+	icon = GFX_upholding_the_myth_of_tzabar
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.3
+			days = 1
+		}
+		add_dynamic_modifier = {
+			modifier = ISP_tzabar_dyn
+			scope = ISP
+		}
+		add_to_variable = {
+			var = ISPTZ_war_support
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPTZ_con_goods
+			value = -0.05
+		}
+		custom_effect_tooltip = "Add national spirit 'The Tzabar' which grants +5% war support, -5% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_upholding_the_myth_of_tzabar"
+	}
+	relative_position_id = ISP_reviving_the_national_spirit
+	prerequisite = { focus = ISP_reviving_the_national_spirit }
+}
+
+shared_focus = {
+	id = ISP_mobilizing_the_youth
+	icon = GFX_mobilizing_the_youth
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPTZ_neo_soc
+			value = 0.01
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_mobilizing_the_youth"
+	}
+	relative_position_id = ISP_upholding_the_myth_of_tzabar
+	prerequisite = { focus = ISP_upholding_the_myth_of_tzabar }
+}
+
+shared_focus = {
+	id = ISP_a_daring_youth
+	icon = GFX_a_daring_youth
+	cost = 5
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPTZ_attack
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPTZ_recovery
+			value = 0.05
+		}
+		else = {}
+		custom_effect_tooltip = "Modify 'The Tzabar' by +5% divison attack and recovery rate."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_daring_youth"
+	}
+	relative_position_id = ISP_upholding_the_myth_of_tzabar
+	prerequisite = { focus = ISP_mobilizing_the_youth }
+}
+
+shared_focus = {
+	id = ISP_a_homelandloving_youth
+	icon = GFX_a_homelandloving_youth
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPTZ_war_support_weekly
+			value = 0.001
+		}
+		add_to_variable = {
+			var = ISPTZ_defence
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modify 'The Tzabar' by +0.1% weekly war support, +5% defence on core territory."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_homelandloving_youth"
+	}
+	relative_position_id = ISP_mobilizing_the_youth
+	prerequisite = { focus = ISP_a_daring_youth }
+	prerequisite = { focus = ISP_a_virtuous_youth }
+}
+
+shared_focus = {
+	id = ISP_the_new_hebrew_man_rejuvenated
+	icon = GFX_the_new_hebrew_man_rejuvenated
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		remove_dynamic_modifier = {
+			modifier = ISP_tzabar_dyn
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_rebuilding_national_spirit_dyn
+		}
+		add_dynamic_modifier = {
+			modifier = ISP_renewed_pioneer_spirit_dyn
+		}
+		set_variable = {
+			var = ISPRNPS_stab
+			value = ISPTZ_stab
+		}
+		add_to_variable = {
+			var = ISPRNPS_stab
+			value = ISPRNPS_stab
+		}
+		set_variable = {
+			var = ISPRNPS_war_support
+			value = ISPTZ_war_support
+		}
+		add_to_variable = {
+			var = ISPRNPS_war_support
+			value = ISPRNPS_war_support
+		}
+		custom_effect_tooltip = "Merge 'Rebuilding the National Spirit' and 'The Tzabar' into 'Renewed Pioneer Spirit'"
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_new_hebrew_man_rejuvenated"
+	}
+	relative_position_id = ISP_a_homelandloving_youth
+	prerequisite = { focus = ISP_a_homelandloving_youth}
+	prerequisite = { focus = ISP_a_controlled_socialist_congress}
+}
+
+shared_focus = {
+	id = ISP_reversing_the_privatizations
+	icon = GFX_reversing_the_privatizations
+	cost = 5
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.05
+		}
+		add_to_variable = {
+			var = ISPKD_con_goods_factor
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISPKD_social_drift
+			value = -0.02
+		}
+		custom_effect_tooltip = "Modify 'Reformed Kibbutz Economy' by +10% consumer good factories, +2% monthly drift towards egalitarian."
+		add_ideas = kosygin_liberman_econ_theory
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reversing_the_privatizations"
+	}
+	relative_position_id = ISP_in_the_steps_of_tabenkin
+	prerequisite = { focus = ISP_in_the_steps_of_tabenkin }
+}
+
+shared_focus = {
+	id = ISP_rebuilding_a_spirit_of_labour
+	icon = GFX_rebuilding_a_spirit_of_labour
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = ISP_spirit_of_labour
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_rebuilding_a_spirit_of_labour"
+	}
+	relative_position_id = ISP_reversing_the_privatizations
+	prerequisite = { focus = ISP_old_school_planning focus = ISP_lessons_from_santiago }
+}
+
+shared_focus = {
+	id = ISP_an_eber_of_all_workers
+	icon = GFX_an_eber_of_all_workers
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.5
+			days = 1
+		}
+		add_stability = -0.05
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = -0.05
+		}
+		add_stability = -0.05
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_an_eber_of_all_workers"
+	}
+	relative_position_id = ISP_rebuilding_a_spirit_of_labour
+	prerequisite = { focus = ISP_rebuilding_a_spirit_of_labour }
+	mutually_exclusive = { focus = ISP_upholding_hebrew_labour }
+}
+
+shared_focus = {
+	id = ISP_integrating_our_arab_countrymen
+	icon = GFX_integrating_our_arab_countrymen
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_variable = {
+			var = ISP_edati_stab
+			value = 0
+		}
+		add_to_variable = {
+			var = ISP_edati_ws
+			value = 0.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_integrating_our_arab_countrymen"
+	}
+	relative_position_id = ISP_an_eber_of_all_workers
+	prerequisite = { focus = ISP_an_eber_of_all_workers }
+}
+
+shared_focus = {
+	id = ISP_upholding_hebrew_labour
+	icon = GFX_upholding_hebrew_labour
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.6
+			days = 1
+		}
+		swap_ideas = {
+    		remove_idea = ISP_spirit_of_labour
+   			add_idea = ISP_hebrew_labour
+		}
+		add_to_variable = {
+			var = ISP_edati_stab
+			value = -0.05
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.06
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_upholding_hebrew_labour"
+	}
+	relative_position_id = ISP_rebuilding_a_spirit_of_labour
+	prerequisite = { focus = ISP_rebuilding_a_spirit_of_labour }
+	mutually_exclusive = { focus = ISP_an_eber_of_all_workers }
+}
+
+shared_focus = {
+	id = ISP_the_conquest_of_labour_lives_on
+	icon = GFX_the_conquest_of_labour_lives_on
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+    		remove_idea = ISP_hebrew_labour
+   			add_idea = ISP_conquest_of_labour
+		}
+		add_to_variable = {
+			var = ISP_edati_stab
+			value = -0.1
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.06
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_conquest_of_labour_lives_on"
+	}
+	relative_position_id = ISP_upholding_hebrew_labour
+	prerequisite = { focus = ISP_upholding_hebrew_labour }
+}
+
+shared_focus = {
+	id = ISP_nation_and_socialism
+	icon = GFX_nation_and_socialism
+	cost = 5
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.7
+			days = 1
+		}
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_nation_and_socialism"
+	}
+	relative_position_id = ISP_reversing_the_privatizations
+	prerequisite = { focus = ISP_an_eber_of_all_workers focus = ISP_upholding_hebrew_labour }
+}
+
+shared_focus = {
+	id = ISP_old_school_planning
+	icon = GFX_old_school_planning
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+    		remove_idea = kosygin_liberman_econ_theory
+   			add_idea = beijing_new_course
+		}
+		set_variable = {
+			var = ISPOSP_war_support
+			value = ISPKD_war_support
+		}
+		set_variable = {
+			var = ISPOSP_con_goods_factor
+			value = ISPKD_con_goods_factor
+		}
+		set_variable = {
+			var = ISPOSP_gdp_growth
+			value = ISPKD_gdp_growth
+		}
+		set_variable = {
+			var = ISPOSP_social_drift
+			value = ISPKD_social_drift
+		}
+		set_variable = {
+			var = ISPOSP_science_speed
+			value = ISPKD_science_speed
+		}
+		set_variable = {
+			var = ISPOSP_build_speed
+			value = ISPKD_build_speed
+		}
+		add_to_variable = {
+			var = ISPOSP_arms_speed
+			value = 0.3
+		}
+		add_to_variable = {
+			var = ISPOSP_build_speed
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISPOSP_gdp_growth
+			value = -0.1
+		}
+		add_to_variable = {
+			var = ISPOSP_artifical_drift
+			value = -0.01
+		}
+		add_dynamic_modifier = {
+			modifier = ISP_old_school_planning_dyn
+			scope = ISP
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_Kibbutz_econ_dyn
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.05
+		}
+		custom_effect_tooltip = "Replace 'Reformed Kibbutz Economy' with 'Old-School Planning', effective change -10% production efficiency growth and cap, +10% construction speed, +30% military factory construction speed, +0.1% monthly drift towards ecological."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_old_school_planning"
+	}
+	relative_position_id = ISP_reversing_the_privatizations
+	prerequisite = { focus = ISP_reversing_the_privatizations }
+	mutually_exclusive = { focus = ISP_lessons_from_santiago }
+}
+
+shared_focus = {
+	id = ISP_socialist_austerity
+	icon = GFX_socialist_austerity
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_global_flag = ISP_socialist_aus_dyn_flag
+		set_variable = {
+			var = ISPOSP_war_support
+			value = 0
+		}
+		add_to_variable = {
+			var = ISPOSP_social_drift_two
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPOSP_social_drift
+			value = -0.01
+		}
+		add_to_variable = {
+			var = ISPOSP_con_goods_factor
+			value = -0.15
+		}
+		add_to_variable = {
+			var = ISPOSP_stab
+			value = -0.05
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.1
+		}
+		country_event = {
+			id = SNEH.1
+			days = 1
+		}
+		custom_effect_tooltip = "Replace 'Old-School Planning' with 'Socialist Austerity', effective change -10% stability, -15% consumer good factories, +0.1 monthly drift towards traditional."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_socialist_austerity"
+	}
+	relative_position_id = ISP_old_school_planning
+	prerequisite = { focus = ISP_old_school_planning }
+}
+
+shared_focus = {
+	id = ISP_lessons_from_santiago
+	icon = GFX_lessons_from_santiago
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_variable = {
+			var = ISPCKD_war_support
+			value = ISPKD_war_support
+		}
+		set_variable = {
+			var = ISPCKD_con_goods_factor
+			value = ISPKD_con_goods_factor
+		}
+		set_variable = {
+			var = ISPCKD_gdp_growth
+			value = ISPKD_gdp_growth
+		}
+		set_variable = {
+			var = ISPCKD_social_drift
+			value = ISPKD_social_drift
+		}
+		set_variable = {
+			var = ISPCKD_science_speed
+			value = ISPKD_science_speed
+		}
+		set_variable = {
+			var = ISPCKD_build_speed
+			value = ISPKD_build_speed
+		}
+		add_to_variable = {
+			var = ISPCKD_con_goods_factor
+			value = -0.15
+		}
+		add_to_variable = {
+			var = ISPCKD_artifical_drift
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPCKD_science_speed
+			value = 0.1
+		}
+		add_dynamic_modifier = {
+			modifier = ISP_cybernetic_kibbutzi_planning_dyn
+			scope = ISP
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_Kibbutz_econ_dyn
+		}
+		add_ideas = sixtyone_to_eighty
+		custom_effect_tooltip = "Replace 'Reformed Kibbutz Economy' with 'Cybernetic Kibbutzi Planning', effective change +10% research speed, +1% monthly drift towards artificial."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_lessons_from_santiago"
+	}
+	relative_position_id = ISP_reversing_the_privatizations
+	prerequisite = { focus = ISP_reversing_the_privatizations }
+	mutually_exclusive = { focus = ISP_old_school_planning }
+}
+
+shared_focus = {
+	id = ISP_an_efficient_plan
+	icon = GFX_an_efficient_plan
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPCKD_con_goods_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = ISPCKD_gdp_growth
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPKD_eff_max
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISPKD_eff_grow
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'Cybernetic Kibbutzi Planning' by -5% consumer good factories, +10% production efficiency growth, retention, and cap."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_an_efficient_plan"
+	}
+	relative_position_id = ISP_lessons_from_santiago
+	prerequisite = { focus = ISP_lessons_from_santiago }
+}
+
+shared_focus = {
+	id = ISP_sidelining_reactionary_voices
+	icon = GFX_sidelining_reactionary_voices
+	cost = 5
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = SNEH.8
+			days = 1
+		}
+		add_stability = -0.05
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = -0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_sidelining_reactionary_voices"
+	}
+	relative_position_id = ISP_lessons_from_santiago
+	prerequisite = { focus = ISP_lessons_from_santiago }
+}
+
+shared_focus = {
+	id = ISP_for_the_prosperity_of_eber
+	icon = GFX_for_the_prosperity_of_eber
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPCKD_gdp_growth
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISPCKD_stab
+			value = 0.1
+		}
+		custom_effect_tooltip = "Modify 'Cybernetic Kibbutzi Planning' by +10% gdp growth modifier, +10% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_for_the_prosperity_of_eber"
+	}
+	relative_position_id = ISP_lessons_from_santiago
+	prerequisite = { focus = ISP_an_efficient_plan }
+	prerequisite = { focus = ISP_sidelining_reactionary_voices }
+}

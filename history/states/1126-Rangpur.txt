@@ -1,0 +1,32 @@
+
+state={
+	id=1126
+	name="STATE_1126" #Rangpur
+	resources={
+		oil=100.000
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			10389 2 #Rangpur
+		}
+		buildings = {
+			school = 2
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		10389 7565 7662 12338
+	}
+	manpower=10376708
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

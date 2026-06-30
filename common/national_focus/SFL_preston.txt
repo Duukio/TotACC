@@ -1,0 +1,558 @@
+focus_tree = {
+    id = SFL_preston
+    country = {
+        base = 0
+        modifier = {
+            add = 999
+            tag = SFL
+            has_country_leader = {
+                name = "Keith Preston"
+                ruling_only = yes
+            }
+			has_war = no
+        }
+    }
+    focus = {
+    	id = SFL_the_tribes_set_free
+    	icon = GFX_SFL_the_tribes_set_free
+    	cost = 5
+    	x = 14
+    	y = 0
+    	completion_reward = {
+			add_stability = -0.1
+			add_ideas = absolute_voluntary_association
+     		add_popularity = {
+     		  ideology = anarchism
+     		  popularity = 0.25
+     		}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_the_tribes_set_free"
+    	}
+    }
+    
+    focus = {
+    	id = SFL_returning_to_the_primordials
+    	icon = GFX_SFL_returning_to_the_primordials
+    	cost = 5
+    	x = -7
+    	y = 1
+    	completion_reward = {
+			add_stability = 0.25
+			add_political_power = 150
+			add_ideas = anarchist_capitalism
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_returning_to_the_primordials"
+    	}
+    	relative_position_id = SFL_the_tribes_set_free
+    	prerequisite = { focus = SFL_the_tribes_set_free }
+    }
+    
+    focus = {
+    	id = SFL_building_the_archaic_future
+    	icon = GFX_SFL_building_the_archaic_future
+    	cost = 5
+    	x = 3
+    	y = 1
+    	completion_reward = {
+			country_event = {
+				id = SFL.822 #burning man
+				days = 1
+			}
+			add_political_power = -150
+			add_war_support = 0.1
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_building_the_archaic_future"
+    	}
+    	relative_position_id = SFL_the_tribes_set_free
+    	prerequisite = { focus = SFL_the_tribes_set_free }
+    }
+    
+    focus = {
+    	id = SFL_landauerian_societies
+    	icon = GFX_SFL_landauerian_societies
+    	cost = 5
+    	x = -3
+    	y = 1
+    	completion_reward = {
+			add_ideas = SFL_mythos_of_landauer
+			add_ideas = freedom_of_identity
+      		add_popularity = {
+      		  ideology = anarchism
+      		  popularity = 0.2
+      		}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_landauerian_societies"
+    	}
+    	relative_position_id = SFL_returning_to_the_primordials
+    	prerequisite = { focus = SFL_returning_to_the_primordials }
+    	mutually_exclusive = { focus = SFL_renewed_articles_of_confederation }
+    }
+    
+    focus = {
+    	id = SFL_renewed_articles_of_confederation
+    	icon = GFX_SFL_renewed_articles_of_confederation
+    	cost = 5
+    	x = 3
+    	y = 1
+    	completion_reward = {
+			add_ideas = SFL_yankee_anarchy
+			set_cosmetic_tag = SFL_natanarch_Yankee
+     		add_popularity = {
+     		  ideology = anarchism
+     		  popularity = 0.1
+     		}
+      		add_popularity = {
+      		  ideology = dissident_right
+      		  popularity = 0.05
+      		}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_renewed_articles_of_confederation"
+    	}
+    	relative_position_id = SFL_returning_to_the_primordials
+    	prerequisite = { focus = SFL_returning_to_the_primordials }
+    	mutually_exclusive = { focus = SFL_landauerian_societies }
+    }
+    
+    focus = {
+    	id = SFL_revise_what_went_wrong
+    	icon = GFX_SFL_revise_what_went_wrong
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			swap_ideas = {
+				add_idea = SFL_yankee_anarchy_1
+				remove_idea = SFL_yankee_anarchy 
+			}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_revise_what_went_wrong"
+    	}
+    	relative_position_id = SFL_renewed_articles_of_confederation
+    	prerequisite = { focus = SFL_renewed_articles_of_confederation }
+    }
+    
+    focus = {
+    	id = SFL_to_do_away_with_america
+    	icon = GFX_SFL_to_do_away_with_america
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			swap_ideas = {
+				add_idea = SFL_mythos_of_landauer_1
+				remove_idea = SFL_mythos_of_landauer
+			}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_to_do_away_with_america"
+    	}
+    	relative_position_id = SFL_landauerian_societies
+    	prerequisite = { focus = SFL_landauerian_societies }
+    }
+    
+    focus = {
+    	id = SFL_and_to_bring_forth_arcadia
+    	icon = GFX_SFL_and_to_bring_forth_arcadia
+    	cost = 5
+    	x = -4
+    	y = 1
+    	completion_reward = {
+			set_cosmetic_tag = SFL_NATANARCH
+			add_war_support = 0.1
+			add_stability = 0.1			
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_and_to_bring_forth_arcadia"
+    	}
+    	relative_position_id = SFL_to_do_away_with_america
+    	prerequisite = { focus = SFL_to_do_away_with_america }
+    }
+    
+    focus = {
+    	id = SFL_reject_the_sub_and_the_urb
+    	icon = GFX_SFL_reject_the_sub_and_the_urb
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_ideas = SFL_ongoing_deurbanization
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_reject_the_sub_and_the_urb"
+    	}
+    	relative_position_id = SFL_to_do_away_with_america
+    	prerequisite = { focus = SFL_to_do_away_with_america }
+    }
+    
+    focus = {
+    	id = SFL_may_a_thousand_splinters_bloom
+    	icon = GFX_SFL_may_a_thousand_splinters_bloom
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_demilitarized_zone = yes
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_demilitarized_zone = yes
+			}
+			country_event = {
+				id = SFL.821 #truckin
+				days = 1
+			}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_may_a_thousand_splinters_bloom"
+    	}
+    	relative_position_id = SFL_and_to_bring_forth_arcadia
+    	prerequisite = { focus = SFL_and_to_bring_forth_arcadia }
+    }
+    
+    focus = {
+    	id = SFL_intentional_communitarianism
+    	icon = GFX_SFL_intentional_communitarianism
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			set_variable = { SFL.SOCTRENDS_DC = 100 }
+			set_variable = { SFL.SOCTRENDS_DE = 95 }
+			set_variable = { SFL.SOCTRENDS_EE = 65 }
+			set_variable = { SFL.SOCTRENDS_EA = 80 }
+			set_variable = { SFL.SOCTRENDS_TP = 65 }
+			custom_effect_tooltip = "Changes your Social Trends."
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_intentional_communitarianism"
+    	}
+    	relative_position_id = SFL_reject_the_sub_and_the_urb
+    	prerequisite = { focus = SFL_reject_the_sub_and_the_urb }
+    }
+    
+    focus = {
+    	id = SFL_decentralized_borders
+    	icon = GFX_SFL_decentralized_borders
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_stability = 0.15
+			add_political_power = -150
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_decentralized_borders"
+    	}
+    	relative_position_id = SFL_may_a_thousand_splinters_bloom
+    	prerequisite = { focus = SFL_may_a_thousand_splinters_bloom }
+    	mutually_exclusive = { focus = SFL_semitributary_systems }
+    }
+    
+    focus = {
+    	id = SFL_semitributary_systems
+    	icon = GFX_SFL_semitributary_systems
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_stability = -0.1
+			add_political_power = 200
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_semitributary_systems"
+    	}
+    	relative_position_id = SFL_intentional_communitarianism
+    	prerequisite = { focus = SFL_intentional_communitarianism }
+    	mutually_exclusive = { focus = SFL_decentralized_borders }
+    }
+    
+    focus = {
+    	id = SFL_competition_of_power
+    	icon = GFX_SFL_competition_of_power
+    	cost = 5
+    	x = 2
+    	y = 1
+    	completion_reward = {
+			add_war_support = 0.25
+			unlock_decision_category_tooltip = SFL_unify_america
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_competition_of_power"
+    	}
+    	relative_position_id = SFL_decentralized_borders
+    	prerequisite = { focus = SFL_decentralized_borders focus = SFL_semitributary_systems }
+    }
+    
+    focus = {
+    	id = SFL_and_embrace_what_brought_liberty
+    	icon = GFX_SFL_and_embrace_what_brought_liberty
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			country_event = {
+				id = SFL.823 #shooting
+				days = 1
+			}
+			add_ideas = freedom_of_speech
+			add_ideas = disarmed_nation
+			add_ideas = free_trade
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_and_embrace_what_brought_liberty"
+    	}
+    	relative_position_id = SFL_revise_what_went_wrong
+    	prerequisite = { focus = SFL_revise_what_went_wrong }
+    }
+    
+    focus = {
+    	id = SFL_from_vermont_to_harlan_county
+    	icon = GFX_SFL_from_vermont_to_harlan_county
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			swap_ideas = {
+				add_idea = SFL_yankee_anarchy_2
+				remove_idea = SFL_yankee_anarchy_1
+			}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_from_vermont_to_harlan_county"
+    	}
+    	relative_position_id = SFL_and_embrace_what_brought_liberty
+    	prerequisite = { focus = SFL_and_embrace_what_brought_liberty }
+    }
+    
+    focus = {
+    	id = SFL_invioable_liberty
+    	icon = GFX_SFL_invioable_liberty
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_ideas = free_love_and_family
+			add_stability = 0.1
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_invioable_liberty"
+    	}
+    	relative_position_id = SFL_from_vermont_to_harlan_county
+    	prerequisite = { focus = SFL_from_vermont_to_harlan_county }
+    	mutually_exclusive = { focus = SFL_liberation_but_not_destruction }
+    }
+    
+    focus = {
+    	id = SFL_militias_against_tyranny
+    	icon = GFX_SFL_militias_against_tyranny
+    	cost = 5
+    	x = 4
+    	y = 1
+    	completion_reward = {
+			load_oob = "Arcadian-American Militias"
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_militias_against_tyranny"
+    	}
+    	relative_position_id = SFL_revise_what_went_wrong
+    	prerequisite = { focus = SFL_revise_what_went_wrong }
+    }
+    
+    focus = {
+    	id = SFL_our_heritage_preserved
+    	icon = GFX_SFL_our_heritage_preserved
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			set_variable = { SFL.SOCTRENDS_DC = 88 }
+			set_variable = { SFL.SOCTRENDS_DE = 60 }
+			set_variable = { SFL.SOCTRENDS_EE = 50 }
+			set_variable = { SFL.SOCTRENDS_EA = 60 }
+			set_variable = { SFL.SOCTRENDS_TP = 20 }
+			custom_effect_tooltip = "Changes your Social Trends."
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_our_heritage_preserved"
+    	}
+    	relative_position_id = SFL_militias_against_tyranny
+    	prerequisite = { focus = SFL_militias_against_tyranny }
+    }
+    
+    focus = {
+    	id = SFL_liberation_but_not_destruction
+    	icon = GFX_SFL_liberation_but_not_destruction
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.15
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_liberation_but_not_destruction"
+    	}
+    	relative_position_id = SFL_our_heritage_preserved
+    	prerequisite = { focus = SFL_our_heritage_preserved }
+    	mutually_exclusive = { focus = SFL_invioable_liberty }
+    }
+    
+    focus = {
+    	id = SFL_lest_we_abandon_jefferson
+    	icon = GFX_SFL_lest_we_abandon_jefferson
+    	cost = 5
+    	x = 2
+    	y = 1
+    	completion_reward = {
+			add_war_support = 0.25
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_lest_we_abandon_jefferson"
+    	}
+    	relative_position_id = SFL_invioable_liberty
+    	prerequisite = { focus = SFL_invioable_liberty  focus = SFL_liberation_but_not_destruction }
+    }
+    
+    focus = {
+    	id = SFL_internet_as_unification
+    	icon = GFX_SFL_internet_as_unification
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			every_owned_state = {
+				set_variable = { intreach = 100 }
+			}
+			custom_effect_tooltip = "Increases Internet Penetration in every state to 100%."
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_internet_as_unification"
+    	}
+    	relative_position_id = SFL_building_the_archaic_future
+    	prerequisite = { focus = SFL_building_the_archaic_future }
+    }
+    
+    focus = {
+    	id = SFL_countryside_as_purification
+    	icon = GFX_SFL_countryside_as_purification
+    	cost = 5
+    	x = 0
+		available = {
+			OR = {
+			has_completed_focus = SFL_reject_the_sub_and_the_urb
+			has_completed_focus = SFL_our_heritage_preserved
+			}
+		}
+    	y = 1
+    	completion_reward = {
+			swap_ideas = {
+			add_idea = SFL_deurbanized_society
+			remove_idea = SFL_ongoing_deurbanization
+			}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_countryside_as_purification"
+    	}
+    	relative_position_id = SFL_internet_as_unification
+    	prerequisite = { focus = SFL_internet_as_unification }
+    }
+    
+    focus = {
+    	id = SFL_choice_as_liberation
+    	icon = GFX_SFL_choice_as_liberation
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_political_power = -250
+			add_stability = 0.1
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_choice_as_liberation"
+    	}
+    	relative_position_id = SFL_countryside_as_purification
+    	prerequisite = { focus = SFL_countryside_as_purification }
+    }
+    
+    focus = {
+    	id = SFL_intention_as_consolidation
+    	icon = GFX_SFL_intention_as_consolidation
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 3
+			}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_intention_as_consolidation"
+    	}
+    	relative_position_id = SFL_choice_as_liberation
+    	prerequisite = { focus = SFL_choice_as_liberation }
+    }
+    
+    focus = {
+    	id = SFL_do_away_with_pollution
+    	icon = GFX_SFL_do_away_with_pollution
+    	cost = 5
+    	x = 4
+    	y = 1
+    	completion_reward = {
+			add_political_power = -100
+			add_stability = 0.05
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_do_away_with_pollution"
+    	}
+    	relative_position_id = SFL_building_the_archaic_future
+    	prerequisite = { focus = SFL_building_the_archaic_future }
+    }
+    
+    focus = {
+    	id = SFL_do_away_with_market_fundamentalism
+    	icon = GFX_SFL_do_away_with_market_fundamentalism
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			country_event = {
+				id = SFL.820 #coconuts
+				days = 1
+			}
+			add_ideas = SFL_communalism
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_do_away_with_market_fundamentalism"
+    	}
+    	relative_position_id = SFL_do_away_with_pollution
+    	prerequisite = { focus = SFL_do_away_with_pollution }
+    }
+    
+    focus = {
+    	id = SFL_bring_forth_innovation
+    	icon = GFX_SFL_bring_forth_innovation
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_research_slot = 1
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_bring_forth_innovation"
+    	}
+    	relative_position_id = SFL_do_away_with_market_fundamentalism
+    	prerequisite = { focus = SFL_do_away_with_market_fundamentalism }
+    }
+    
+    focus = {
+    	id = SFL_bring_forth_happiness
+    	icon = GFX_SFL_bring_forth_happiness
+    	cost = 5
+    	x = 0
+    	y = 1
+    	completion_reward = {
+			add_stability = 0.1
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_bring_forth_happiness"
+    	}
+    	relative_position_id = SFL_bring_forth_innovation
+    	prerequisite = { focus = SFL_bring_forth_innovation }
+    }
+    
+    focus = {
+    	id = SFL_for_our_tribes_dignity
+    	icon = GFX_SFL_for_our_tribes_dignity
+    	cost = 5
+    	x = 2
+    	y = 1
+    	completion_reward = {
+			add_political_power = 150
+      		add_popularity = {
+      		  ideology = anarchism
+      		  popularity = 0.1
+      		}
+    		log = "[GetDateText]: [Root.GetName]: Focus SFL_for_our_tribes_dignity"
+    	}
+    	relative_position_id = SFL_intention_as_consolidation
+    	prerequisite = { focus = SFL_intention_as_consolidation }
+    	prerequisite = { focus = SFL_bring_forth_happiness }
+    }
+}

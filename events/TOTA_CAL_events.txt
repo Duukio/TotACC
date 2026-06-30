@@ -1,0 +1,204 @@
+add_namespace = CAL
+#country_event = { CHANGE ID PLEASE!!
+#    id = CAL.11 # losing north jefferson
+#    title = CAL.11.t
+#    desc = CAL.11.desc
+#    is_triggered_only = yes
+#    fire_only_once = yes 
+#    option = {
+#      name = CAL.11.a
+#	}
+#}
+country_event = {
+    id = CAL.1 # yarvinomiqs 101
+    title = CAL.1.t
+    desc = CAL.1.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = CAL.1.a
+	}
+}
+country_event = {
+    id = CAL.2 # party
+    title = CAL.2.t
+    desc = CAL.2.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = CAL.2.a
+	}
+}
+country_event = {
+    id = CAL.3 # bored meetings
+    title = CAL.3.t
+    desc = CAL.3.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = CAL.3.a
+	}
+}
+country_event = {
+    id = CAL.4 # avalon/elves
+    title = CAL.4.t
+    desc = CAL.4.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = CAL.4.a
+	}
+}
+country_event = {
+    id = CAL.5 # cruelty squad refresne
+    title = CAL.5.t
+    desc = CAL.5.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = CAL.5.a
+	}
+}
+country_event = {
+    id = CAL.6 # court
+    title = CAL.6.t
+    desc = CAL.6.desc
+    picture = GFX_report_event_rotunda
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = CAL.6.a
+      add_ideas = monitored_speech
+      add_stability = 0.02
+      add_political_power = -50
+	}
+    option = {
+      name = CAL.6.b
+      add_manpower = -500
+      add_ideas = total_state_purview
+	}
+}
+
+country_event = {
+    id = CAL.7 # dragon
+    title = CAL.7.t
+    desc = CAL.7.desc
+    picture = GFX_report_event_shimizu
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = CAL.7.a
+      add_opinion_modifier = {
+          target = JAP
+          modifier = huge_increase
+      }
+      add_offsite_building = { type = dockyard level = 1 }
+	  }
+}
+
+# FOCUS TREE FAILURE/SUCCESS EVENTS
+country_event = {
+    id = CAL.8
+    title = CAL.8.t
+    desc = CAL.8.desc
+    picture = GFX_report_event_shimizu
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = CAL.8.a
+        set_variable = { cal_successful = 1 }
+        set_variable = { cal_failure = 1 }
+    }
+    
+    option = {
+        name = CAL.8.b
+        set_variable = { cal_successful = 1 }
+        set_variable = { cal_failure = 1 }
+    }
+}
+
+# Event 2
+country_event = {
+    id = CAL.9
+    title = CAL.9.t
+    desc = CAL.9.desc
+    picture = GFX_report_event_shimizu
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = CAL.9.a
+        add_to_variable = { cal_successful = 1 }
+    }
+    
+    option = {
+        name = CAL.9.b
+        add_to_variable = { cal_failure = 1 }
+    }
+}
+
+# Event 3
+country_event = {
+    id = CAL.10
+    title = CAL.10.t
+    desc = CAL.10.desc
+    picture = GFX_report_event_shimizu
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = CAL.10.a
+        add_to_variable = { cal_successful = 1 }
+        add_stability = 0.05
+    }
+    
+    option = {
+        name = CAL.10.b
+        add_to_variable = { cal_failure = 1 }
+        add_stability = -0.03
+    }
+}
+
+# Event 4
+country_event = {
+    id = CAL.13
+    title = CAL.13.t
+    desc = CAL.13.desc
+    picture = GFX_report_event_shimizu
+    is_triggered_only = yes
+    fire_only_once = yes
+    
+    option = {
+        name = CAL.13.a
+        add_to_variable = { cal_successful = 1 }
+        add_political_power = 50
+    }
+    
+    option = {
+        name = CAL.13.b
+        add_to_variable = { cal_failure = 1 }
+        add_political_power = -25
+    }
+}
+
+# Event 5 - Final event with outcomes based on variables
+country_event = {
+    id = CAL.12
+    title = CAL.12.t
+    desc = CAL.12.desc
+    picture = GFX_report_event_shimizu
+    is_triggered_only = yes
+    fire_only_once = yes  
+    
+    option = {
+        name = CAL.12.a
+        add_to_variable = { cal_successful = 1 }
+    }
+    
+    # Failure path (if cal_failure >= cal_successful)
+    option = {
+        name = CAL.12.b
+        add_to_variable = { cal_failure = 1}
+    }
+}

@@ -1,0 +1,23 @@
+focus_tree = {
+	id = NGA_biafra_lives_still
+	country = {
+		factor = 0
+		modifier = {
+			add = 111111
+			tag = NGA
+			NGA = { 
+				has_war = no
+				NOT = {
+					has_country_leader = {
+						character = NGA_abdulrahman_bello_dambazau
+						ruling_only = yes
+					}
+				}
+			}
+			country_exists = BIA
+		}
+	}
+	shared_focus = NGA_the_southern_problem
+	shared_focus = NGA_why_cant_we_be_friends
+	shared_focus = NGA_the_jade_revolution
+}

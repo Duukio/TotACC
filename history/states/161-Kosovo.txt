@@ -1,0 +1,29 @@
+state={
+id=161
+	
+
+	name="STATE_161"
+
+
+	history={
+		owner = YUG
+		victory_points = {
+			9874 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = YUG
+		add_core_of = SRB
+	}
+
+	provinces={
+		6940 9849 9874 
+	}
+	manpower=2000000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

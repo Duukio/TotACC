@@ -1,0 +1,32 @@
+
+state={
+id=506
+	
+	name="STATE_506"
+	manpower = 7159000
+	
+	state_category = city
+	
+	history={
+		owner = PAR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 6
+			air_base = 2
+		}
+		add_core_of = PAR
+		victory_points = {
+			2152 25 
+		}
+
+	}
+
+	provinces={
+		2152 2173 2194 11023 12901 
+	}
+	
+
+	local_supplies=0.0 
+}

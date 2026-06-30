@@ -1,0 +1,1448 @@
+defined_text = {
+	name = GetLoserAllies
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetWinnerAllies
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetLoserAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+defined_text = {
+	name = GetWinnerAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = TOTA_PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+#defined_text = {
+	#	name = GetLoserFactionLeader
+	#	text = {
+		#		trigger = {
+			#			OR = {
+				#				global_event_target:losing_country = {
+					#					is_faction_leader = yes
+					#				}
+				#				any_country = {
+					#					limit = {
+						#						is_in_faction_with = global_event_target:losing_country
+						#						is_faction_leader = yes
+						#					}
+					#					has_war_with = global_event_target:winning_country
+					#				}
+				#			}
+			#		}
+		#		localization_key = TOTA_PEACE_POPUP_LOSER_FACTION_LEADER
+		#	}
+	#	text = {
+		#		localization_key = TOTA_PEACE_POPUP_LOSER_NOT_FACTION_LEADER
+		#	}
+	#}
+#
+#defined_text = {
+	#	name = GetWinnerFactionLeader
+	#	text = {
+		#		trigger = {
+			#			OR = {
+				#				global_event_target:winning_country = {
+					#					is_faction_leader = yes
+					#				}
+				#				any_country = {
+					#					limit = {
+						#						is_in_faction_with = global_event_target:winning_country
+						#						is_faction_leader = yes
+						#					}
+					#					has_war_with = global_event_target:losing_country
+					#				}
+				#			}
+			#		}
+		#		localization_key = TOTA_PEACE_POPUP_WINNER_FACTION_LEADER
+		#	}
+	#	text = {
+		#		localization_key = TOTA_PEACE_POPUP_WINNER_NOT_FACTION_LEADER
+		#	}
+	#}
+
+defined_text = {
+	name = GetWarStatus
+	text = {
+		trigger = {
+			has_global_flag = war_won
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION
+	}
+	text = {
+		trigger = {
+			has_global_flag = war_continuing
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONTINUING
+	}
+}
+
+
+
+defined_text = {
+	name = GetWarConclusionLoc
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = FRA
+					original_tag = CYR
+			}
+			event_target:losing_country = {
+					original_tag = TRP
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_TOYOTA_FRA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = FRA
+			}
+			event_target:losing_country = {
+					original_tag = ITA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_FRANCE_WINS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = ITA
+			}
+			event_target:losing_country = {
+					original_tag = FRA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_ITALY_WINS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = CAM
+			}
+			event_target:losing_country = {
+					original_tag = EQG
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_EQG_LOSES
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = MGD
+			}
+			event_target:losing_country = {
+					original_tag = SOM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_MGD_WINS_SOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = EAF
+			}
+			event_target:losing_country = {
+					original_tag = SOM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_EAF_WINS_SOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = EAF
+			}
+			event_target:losing_country = {
+					original_tag = SOM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_EAF_WINS_SOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = SOM
+			}
+			event_target:losing_country = {
+					original_tag = EAF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_SOM_WINS_EAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = UNS
+			}
+			event_target:losing_country = {
+					original_tag = SOM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_UNS_WINS_SOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = SOM
+			}
+			event_target:losing_country = {
+					original_tag = UNS
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_SOM_WINS_UNS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = TRP
+			}
+			event_target:losing_country = {
+					original_tag = FRA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_TOYOTA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = ROM
+			}
+			event_target:losing_country = {
+					original_tag = SIB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_ROM_WINS_AGAINST_SIB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = ROM
+			}
+			event_target:losing_country = {
+					original_tag = TRS
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_ROM_WINS_AGAINST_TRS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SOV
+			}
+			event_target:losing_country = {
+					original_tag = ROM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SOV_WINS_AGAINST_ROM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = EMR
+			}
+			event_target:losing_country = {
+					original_tag = HON
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_ELS_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = ELS
+			}
+			event_target:losing_country = {
+					original_tag = HON
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_ELS_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = HON
+			}
+			event_target:losing_country = {
+					original_tag = ELS
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_HON_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = HON
+			}
+			event_target:losing_country = {
+					original_tag = EMR
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_HON_VICTORY_AGAINST_EMR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = PGR
+			}
+			event_target:losing_country = {
+					original_tag = UAE
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_PGR_WINS_AGAINST_UAE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = UAE
+			}
+			event_target:losing_country = {
+					original_tag = PGR
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_UAE_WINS_AGAINST_PGR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = BIA
+				#NOT = {
+				#	has_global_flag = BIA_victory_bad
+				#}
+			}
+			event_target:losing_country = {
+					original_tag = NGA
+				#NOT = {
+				#	has_global_flag = BIA_victory_bad
+				#}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_5NBW_BIA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = NGA
+				#NOT = {
+				#	has_global_flag = BIA_victory_bad
+				#}
+			}
+			event_target:losing_country = {
+					original_tag = BED
+				#NOT = {
+				#	has_global_flag = BIA_victory_bad
+				#}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_5NBW_NGA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = KMP
+			}
+			event_target:losing_country = {
+					original_tag = KAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_KMP_WINS_AGAINST_KAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = KAM
+			}
+			event_target:losing_country = {
+					original_tag = KMP
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_KAM_WINS_AGAINST_KMP
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = BIA
+			#has_global_flag = BIA_victory_bad
+			}
+			event_target:losing_country = {
+					original_tag = NGA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_5NBW_PYRRHIC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = AWB
+			#NOT = {
+			#	has_country_flag = orania_siege
+			#}
+			}
+			event_target:losing_country = {
+				original_tag = SAF
+				#NOT = {
+				#	has_country_flag = orania_siege
+				#}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_AWB_WINS_AGAINST_SAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SAF
+				#NOT = {has_country_flag = SAF_orania_siege }
+			}
+			event_target:losing_country = {
+				original_tag = AWB
+				#NOT = {has_country_flag = SAF_orania_siege }
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SAF_WINS_AGAINST_AWB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = EFF
+				#NOT = {has_country_flag = SAF_orania_siege }
+			
+			}
+			event_target:losing_country = {
+				original_tag = AWB
+				#NOT = {has_country_flag = SAF_orania_siege }
+					
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_EFF_WINS_AGAINST_AWB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				#NOT = {has_country_flag = SAF_orania_siege }
+			original_tag = EFF
+			}
+			event_target:losing_country = {
+				#NOT = {has_country_flag = SAF_orania_siege }
+					original_tag = SAF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_EFF_WINS_AGAINST_SAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				#NOT = {has_country_flag = SAF_orania_siege }
+			original_tag = AWB
+			}
+			event_target:losing_country = {
+				#NOT = {has_country_flag = SAF_orania_siege }
+					original_tag = EFF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_AWB_WINS_AGAINST_EFF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				#NOT = {has_country_flag = SAF_orania_siege }
+			original_tag = SAF
+			}
+			event_target:losing_country = {
+				#NOT = {has_country_flag = SAF_orania_siege }
+					original_tag = EFF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SAF_WINS_AGAINST_EFF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = NAM
+			}
+			event_target:losing_country = {
+					original_tag = SAF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_NAM_WINS_AGAINST_SAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = NAM
+			}
+			event_target:losing_country = {
+					original_tag = AWB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_NAM_WINS_AGAINST_AWB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = AWB
+			}
+			event_target:losing_country = {
+					original_tag = NAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_AWB_WINS_AGAINST_NAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SAF
+			}
+			event_target:losing_country = {
+					original_tag = NAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SAF_WINS_AGAINST_NAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SDL
+			}
+			event_target:losing_country = {
+					original_tag = PRU
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SDL_WINS_AGAINST_PRU
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = PRU
+			}
+			event_target:losing_country = {
+					original_tag = SDL
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_PRU_WINS_AGAINST_SDL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = IND
+			}
+			event_target:losing_country = {
+					original_tag = NWG
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_IND_WINS_AGAINST_NWG
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = AMB
+					original_tag = BIA
+				}
+			}
+			event_target:losing_country = {
+					original_tag = CAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_AMB_WINS_AGAINST_CAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = CAM
+			}
+			event_target:losing_country = {
+					original_tag = AMB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CAM_WINS_AGAINST_AMB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = NGA
+			}
+			event_target:losing_country = {
+					original_tag = BIU
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_NGA_WINS_AGAINST_BIU
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BIU
+			}
+			event_target:losing_country = {
+				original_tag = NGA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_BIU_WINS_AGAINST_NGA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BIU
+			}
+			event_target:losing_country = {
+				original_tag = BIA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_BIU_WINS_AGAINST_NGA
+	}
+	#text = {
+	#	trigger = {
+	#		event_target:winning_country = {
+	#		original_tag = AWB
+	#		has_country_flag = SAF_orania_siege
+	#		}
+	#		event_target:losing_country = {
+	#				original_tag = EFF
+	#				has_country_flag = SAF_orania_siege
+	#		}
+	#	}
+	#	localization_key = TOTA_PEACE_POPUP_ORANIA_SIEGE_AWB_VICTORY
+	#}
+	#text = {
+	#	trigger = {
+	#		event_target:winning_country = {
+	#		original_tag = EFF
+	#		has_country_flag = SAF_orania_siege
+	#		}
+	#		event_target:losing_country = {
+	#				original_tag = AWB
+	#				has_country_flag = SAF_orania_siege
+	#		}
+	#	}
+	#	localization_key = TOTA_PEACE_POPUP_ORANIA_SIEGE_EFF_VICTORY
+	#}
+	#text = {
+	#	trigger = {
+	#		event_target:winning_country = {
+	#		has_country_flag = SAF_orania_siege
+	#		original_tag = SAF
+	#		}
+	#		event_target:losing_country = {
+	#				original_tag = AWB
+	#				has_country_flag = SAF_orania_siege
+	#		}
+	#	}
+	#	localization_key = TOTA_PEACE_POPUP_ORANIA_SIEGE_SAF_VICTORY
+	#}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = ZGM
+					original_tag = ARK
+					original_tag = ARA
+					original_tag = SHA
+				}
+			}
+			event_target:losing_country = {
+					original_tag = BUR
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SEPARATIST_WINS_AGAINST_BUR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BUR
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = ZGM
+					original_tag = ARK
+					original_tag = ARA
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_BUR_WINS_AGAINST_SEPARATIST
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BUR
+				has_country_flag = epicwinburma
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = ZGM
+					original_tag = ARK
+					original_tag = ARA
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_BUR_WINS_AGAINST_SEPARATIST_FINAL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOK
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_KOK_WINS_AGAINST_NEIGHBOR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOK
+				has_country_flag = opium_win
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_KOK_WINS_AGAINST_NEIGHBOR_FINAL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SVK
+			}
+			event_target:losing_country = {
+				original_tag = ALK
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SVK_WINS_AGAINST_ALK
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = ALK
+			}
+			event_target:losing_country = {
+				original_tag = SVK
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_ALK_WINS_AGAINST_SVK
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				is_in_array = { global.southsudan = THIS }
+			}
+			event_target:losing_country = {
+				is_in_array = { global.southsudan = THIS }
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_SOUTHSUDAN_GENERIC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				is_in_array = { global.yugoslavia = THIS }
+			}
+			event_target:losing_country = {
+				is_in_array = { global.yugoslavia = THIS }
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_YUGOSLAVIA_GENERIC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				is_in_array = { global.USA_CW_TAGS = THIS }
+			}
+			event_target:losing_country = {
+				is_in_array = { global.USA_CW_TAGS = THIS }
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_USACW_GENERIC
+	}
+	text = {
+		localization_key = TOTA_PEACE_POPUP_WAR_CONCLUSION_DEFAULT
+	}
+}
+
+
+
+defined_text = {
+	name = GetWarContinuationLoc
+	text = {
+		localization_key = TOTA_PEACE_POPUP_WAR_CONTINUING_DEFAULT
+	}
+}
+
+
+defined_text = { #sample
+	name = GetFlavor
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = FRA
+				original_tag = CYR
+			}
+			event_target:losing_country = {
+				original_tag = TRP
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_CHAD_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = FRA
+			}
+			event_target:losing_country = {
+					original_tag = ITA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_FLAVOR_FRANCE_WINS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = ITA
+			}
+			event_target:losing_country = {
+					original_tag = FRA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_FLAVOR_ITALY_WINS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BIU
+			}
+			event_target:losing_country = {
+				original_tag = NGA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_BIU_WINS_AGAINST_NGA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BIU
+			}
+			event_target:losing_country = {
+				original_tag = BIA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_BIU_WINS_AGAINST_NGA
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = NGA
+			}
+			event_target:losing_country = {
+				original_tag = BIU
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_NGA_WINS_AGAINST_BIU
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = TRP
+			}
+			event_target:losing_country = {
+				original_tag = FRA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_CHAD_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = CAM
+			}
+			event_target:losing_country = {
+					original_tag = EQG
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_FLAVOR_EQG_LOSES
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = NGA
+			}
+			event_target:losing_country = {
+				original_tag = BED #?
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_BIAFRA_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BIA
+			}			
+			event_target:losing_country = {
+				original_tag = NGA
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_NIGERIA_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = NGA
+			}
+		#has_global_flag = BIA_victory_bad
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_NIGERIA_PYRRHIC_LOSE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = EMR
+			}
+			event_target:losing_country = {
+					original_tag = HON
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_ELS_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = HON
+			}
+			event_target:losing_country = {
+					original_tag = ELS
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_HON_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = HON
+			}
+			event_target:losing_country = {
+					original_tag = EMR
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_HON_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = AWB
+			}
+			event_target:losing_country = {
+					original_tag = SAF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_AWB_WINS_AGAINST_SAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SAF
+			}
+			event_target:losing_country = {
+					original_tag = AWB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SAF_WINS_AGAINST_AWB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = EFF
+			}
+			event_target:losing_country = {
+					original_tag = AWB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_EFF_WINS_AGAINST_AWB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = EFF
+			}
+			event_target:losing_country = {
+					original_tag = SAF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_EFF_WINS_AGAINST_SAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = AWB
+			}
+			event_target:losing_country = {
+					original_tag = EFF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_AWB_WINS_AGAINST_EFF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SAF
+			}
+			event_target:losing_country = {
+					original_tag = EFF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SAF_WINS_AGAINST_EFF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = NAM
+			}
+			event_target:losing_country = {
+					original_tag = SAF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_NAM_WINS_AGAINST_SAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = PGR
+			}
+			event_target:losing_country = {
+					original_tag = UAE
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_FLAVOR_PGR_WINS_AGAINST_UAE
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = UAE
+			}
+			event_target:losing_country = {
+					original_tag = PGR
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_FLAVOR_UAE_WINS_AGAINST_PGR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = NAM
+			}
+			event_target:losing_country = {
+					original_tag = AWB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_NAM_WINS_AGAINST_AWB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = AWB
+			}
+			event_target:losing_country = {
+					original_tag = NAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_AWB_WINS_AGAINST_NAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SAF
+			}
+			event_target:losing_country = {
+					original_tag = NAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SAF_WINS_AGAINST_NAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SDL
+			}
+			event_target:losing_country = {
+					original_tag = PRU
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SDL_WINS_AGAINST_PRU
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = PRU
+			}
+			event_target:losing_country = {
+					original_tag = SDL
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_PRU_WINS_AGAINST_SDL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = NWG
+			}
+			event_target:losing_country = {
+			original_tag = IND
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_NWG_WINS_AGAINST_IND
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = IND
+			}
+			event_target:losing_country = {
+					original_tag = NWG
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_IND_WINS_AGAINST_NWG
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = ROM
+			}
+			event_target:losing_country = {
+					original_tag = SIB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_ROM_WINS_AGAINST_SIB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = ROM
+			}
+			event_target:losing_country = {
+					original_tag = TRS
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_ROM_WINS_AGAINST_TRS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = SOV
+			}
+			event_target:losing_country = {
+					original_tag = ROM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SOV_WINS_AGAINST_ROM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = AMB
+			}
+			event_target:losing_country = {
+					original_tag = CAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_AMB_WINS_AGAINST_CAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = CAM
+			}
+			event_target:losing_country = {
+					original_tag = AMB
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_CAM_WINS_AGAINST_AMB
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			original_tag = BIA
+			}
+			event_target:losing_country = {
+					original_tag = CAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_AMB_WINS_AGAINST_CAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = ZGM
+					original_tag = ARK
+					original_tag = ARA
+					original_tag = SHA
+				}
+			}
+			event_target:losing_country = {
+					original_tag = BUR
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SEPARATIST_WINS_AGAINST_BUR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BUR
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = ZGM
+					original_tag = ARK
+					original_tag = ARA
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_BUR_WINS_AGAINST_SEPARATIST
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BUR
+				has_country_flag = epicwinburma
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = ZGM
+					original_tag = ARK
+					original_tag = ARA
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_BUR_WINS_AGAINST_SEPARATIST_FINAL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOK
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_KOK_WINS_AGAINST_NEIGHBOR
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KOK
+				has_country_flag = opium_win
+			}
+			event_target:losing_country = {
+				OR = {
+					original_tag = SWA
+					original_tag = KAC
+					original_tag = SHA
+				}
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_KOK_WINS_AGAINST_NEIGHBOR_FINAL
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = MGD
+			}
+			event_target:losing_country = {
+					original_tag = SOM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_MGD_WINS_SOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = UNS
+			}
+			event_target:losing_country = {
+					original_tag = SOM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_UNS_WINS_SOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = SOM
+			}
+			event_target:losing_country = {
+					original_tag = UNS
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SOM_WINS_UNS
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = SOM
+			}
+			event_target:losing_country = {
+					original_tag = EAF
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SOM_WINS_EAF
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = EAF
+			}
+			event_target:losing_country = {
+					original_tag = SOM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_EAF_WINS_SOM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			has_country_flag = SAF_orania_siege
+			original_tag = AWB
+			}
+			event_target:losing_country = {
+					original_tag = EFF
+					has_country_flag = SAF_orania_siege
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_ORANIA_SIEGE_AWB_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			has_country_flag = SAF_orania_siege
+			original_tag = EFF
+			}
+			event_target:losing_country = {
+					original_tag = AWB
+					has_country_flag = SAF_orania_siege
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_ORANIA_SIEGE_EFF_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+			has_country_flag = SAF_orania_siege
+			original_tag = SAF
+			}
+			event_target:losing_country = {
+					original_tag = EFF
+					has_country_flag = SAF_orania_siege
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_ORANIA_SIEGE_SAF_VICTORY
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				is_in_array = { global.southsudan = THIS }
+			}
+			event_target:losing_country = {
+				is_in_array = { global.southsudan = THIS }
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_SOUTHSUDAN_GENERIC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				is_in_array = { global.yugoslavia = THIS }
+			}
+			event_target:losing_country = {
+				is_in_array = { global.yugoslavia = THIS }
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_YUGOSLAVIA_GENERIC
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+					original_tag = KMP
+			}
+			event_target:losing_country = {
+					original_tag = KAM
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_FLAVOR_KMP_WINS_AGAINST_KAM
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				is_in_array = { global.USA_CW_TAGS = THIS }
+			}
+			event_target:losing_country = {
+				is_in_array = { global.USA_CW_TAGS = THIS }
+			}
+		}
+		localization_key = TOTA_PEACE_POPUP_WAR_FLAVOR_USACW_GENERIC
+	}
+	text = {
+	localization_key = TOTA_PEACE_POPUP_FLAVOR_DEFAULT
+	}
+}

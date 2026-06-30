@@ -1,0 +1,424 @@
+focus_tree = {
+    id = SFL_ASI_postwar
+    country = {
+        base = 0
+        modifier = {
+            add = 999
+            tag = SFL
+            has_country_leader = {
+                name = "Augustus Sol Invictus"
+                ruling_only = yes
+            }
+			has_war = no
+        }
+    }
+    focus = {
+        id = SFL_the_sun_rising
+        icon = GFX_SFL_the_sun_rising
+        cost = 5
+        x = 8
+        y = 0
+        completion_reward = {
+            country_event = {
+					id = SFL.707
+					days = 1
+				}
+            add_stability = 0.25
+            add_war_support = 0.25
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_the_sun_rising"
+        }
+    }
+
+    focus = {
+        id = SFL_brothers_of_blood_and_soul
+        icon = GFX_SFL_brothers_of_blood_and_soul
+        cost = 5
+        x = 5
+        y = 1
+        completion_reward = {
+            add_war_support = 0.1
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_brothers_of_blood_and_soul"
+        }
+        relative_position_id = SFL_the_sun_rising
+        prerequisite = { focus = SFL_the_sun_rising }
+    }
+
+    focus = {
+        id = SFL_britannia
+        icon = GFX_SFL_britannia
+        cost = 5
+        x = -2
+        y = 1
+        completion_reward = {
+            ENG = {
+                add_opinion_modifier = {
+			    	target = SFL
+			    	modifier = huge_increase
+			    }
+            }
+            country_event = {
+					id = SFL.704
+					days = 1
+				}
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_britannia"
+        }
+        relative_position_id = SFL_brothers_of_blood_and_soul
+        prerequisite = { focus = SFL_brothers_of_blood_and_soul }
+    }
+
+    focus = {
+        id = SFL_gallia
+        icon = GFX_SFL_gallia
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            FRA = {
+                add_opinion_modifier = {
+			    	target = SFL
+			    	modifier = huge_increase
+			    }
+            }
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_gallia"
+        }
+        relative_position_id = SFL_britannia
+        prerequisite = { focus = SFL_britannia }
+    }
+
+    focus = {
+        id = SFL_those_reduced_to_noricum
+        icon = GFX_SFL_those_reduced_to_noricum
+        cost = 5
+        x = 2
+        y = 1
+        completion_reward = {
+            SGF = {
+                add_opinion_modifier = {
+			    	target = SFL
+			    	modifier = huge_increase
+			    }
+            }
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_those_reduced_to_noricum"
+        }
+        relative_position_id = SFL_brothers_of_blood_and_soul
+        prerequisite = { focus = SFL_brothers_of_blood_and_soul }
+    }
+
+    focus = {
+        id = SFL_italia
+        icon = GFX_SFL_italia
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            ITA = {
+                add_opinion_modifier = {
+			    	target = SFL
+			    	modifier = huge_increase
+			    }
+            }
+             country_event = {
+					id = SFL.709
+					days = 1
+				}
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_italia"
+        }
+        relative_position_id = SFL_those_reduced_to_noricum
+        prerequisite = { focus = SFL_those_reduced_to_noricum }
+    }
+
+    focus = {
+        id = SFL_some_of_our_best_friends_live_in_south_africa
+        icon = GFX_SFL_some_of_our_best_friends_live_in_south_africa
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            if = {
+                limit = {
+                    country_exists = AWB
+                }
+                country_event = {
+					id = SFL.708
+					days = 1
+				}
+                AWB = {
+                    add_stability = 0.5
+                    add_war_support = 0.3
+                    army_experience = 50
+    				add_equipment_to_stockpile = {
+					    type = infantry_equipment
+					    amount = 1000
+					    producer = SFL
+				    }
+                }
+            }
+            else_if = {
+                limit = {
+                    country_exists = SAF
+                }
+                country_event = {
+					id = SFL.708
+					days = 1
+				}
+                SAF = {
+                    add_stability = 0.05
+                    add_war_support = 0.05
+                    army_experience = 10
+    				add_equipment_to_stockpile = {
+					    type = infantry_equipment
+					    amount = 100
+					    producer = SFL
+				    }
+                }
+            }
+            else = {
+                546 = {
+                    add_manpower = 100000
+                }
+                477 = {
+                    add_manpower = -100000
+                }
+            }
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_some_of_our_best_friends_live_in_south_africa"
+        }
+        relative_position_id = SFL_brothers_of_blood_and_soul
+        prerequisite = { focus = SFL_brothers_of_blood_and_soul }
+    }
+
+    focus = {
+        id = SFL_sunshine_on_the_outback
+        icon = GFX_SFL_sunshine_on_the_outback
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            AST = {
+			    add_opinion_modifier = {
+		    		target = SFL
+		    		modifier = huge_increase
+			    }
+            }
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_sunshine_on_the_outback"
+        }
+        relative_position_id = SFL_some_of_our_best_friends_live_in_south_africa
+        prerequisite = { focus = SFL_some_of_our_best_friends_live_in_south_africa }
+    }
+
+    focus = {
+        id = SFL_our_place_at_the_table
+        icon = GFX_SFL_our_place_at_the_table
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = { 
+            FRA = {add_to_faction = SFL }
+	        set_variable = { SFL.FACTIONSTATUS = 5 }
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_our_place_at_the_table"
+        }
+        relative_position_id = SFL_gallia
+        prerequisite = { focus = SFL_gallia }
+        mutually_exclusive = { focus = SFL_fighting_the_grey_world_abroad }
+    }
+
+    focus = {
+        id = SFL_fighting_the_grey_world_abroad
+        icon = GFX_SFL_fighting_the_grey_world_abroad
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            add_war_support = 0.15
+            add_ideas = SFL_volunteers
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_fighting_the_grey_world_abroad"
+        }
+        relative_position_id = SFL_italia
+        prerequisite = { focus = SFL_italia }
+        mutually_exclusive = { focus = SFL_our_place_at_the_table }
+    }
+
+    focus = {
+        id = SFL_the_invictan_agenda
+        icon = GFX_SFL_the_invictan_agenda
+        cost = 5
+        x = -4
+        y = 1
+        completion_reward = {
+            add_research_slot = 1
+            add_ideas = monitored_speech
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_the_invictan_agenda"
+        }
+        relative_position_id = SFL_the_sun_rising
+        prerequisite = { focus = SFL_the_sun_rising }
+    }
+
+    focus = {
+        id = SFL_the_last_bureaucrat
+        icon = GFX_SFL_the_last_bureaucrat
+        cost = 5
+        x = 2
+        y = 1
+        completion_reward = {
+            add_ideas = phoenix_model
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_the_last_bureaucrat"
+        }
+        relative_position_id = SFL_the_invictan_agenda
+        prerequisite = { focus = SFL_the_invictan_agenda }
+    }
+
+    focus = {
+        id = SFL_a_life_with_nature
+        icon = GFX_SFL_a_life_with_nature
+        cost = 5
+        x = 2
+        y = 1
+        completion_reward = {
+            add_stability = 0.15
+            add_ideas = less_than_5
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_a_life_with_nature"
+        }
+        relative_position_id = SFL_the_last_bureaucrat
+        prerequisite = { focus = SFL_the_last_bureaucrat }
+    }
+
+    focus = {
+        id = SFL_slam_the_door_open_a_window
+        icon = GFX_SFL_slam_the_door_open_a_window
+        cost = 5
+        x = 0
+        y = 2
+        completion_reward = {
+            country_event = {
+					id = SFL.706
+					days = 1
+				}
+            add_ideas = SFL_white_immigration
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_slam_the_door_open_a_window"
+        }
+        relative_position_id = SFL_a_life_with_nature
+        prerequisite = { focus = SFL_a_life_with_nature }
+    }
+
+    focus = {
+        id = SFL_the_insurgent_generation
+        icon = GFX_SFL_the_insurgent_generation
+        cost = 5
+        x = -2
+        y = 1
+        completion_reward = {
+            add_research_slot = 1
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_the_insurgent_generation"
+        }
+        relative_position_id = SFL_the_invictan_agenda
+        prerequisite = { focus = SFL_the_invictan_agenda }
+    }
+
+    focus = {
+        id = SFL_fight_for_your_country
+        icon = GFX_SFL_fight_for_your_country
+        cost = 5
+        x = -2
+        y = 1
+        completion_reward = {
+            add_ideas = partial_economic_mobilisation
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_fight_for_your_country"
+        }
+        relative_position_id = SFL_the_insurgent_generation
+        prerequisite = { focus = SFL_the_insurgent_generation }
+    }
+
+    focus = {
+        id = SFL_not_for_your_government
+        icon = GFX_SFL_not_for_your_government
+        cost = 5
+        x = 0
+        y = 2
+        completion_reward = {
+            add_ideas = volunteer_only
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_not_for_your_government"
+        }
+        relative_position_id = SFL_fight_for_your_country
+        prerequisite = { focus = SFL_fight_for_your_country }
+
+    }
+
+    focus = {
+        id = SFL_the_necessary_evil
+        icon = GFX_SFL_the_necessary_evil
+        cost = 5
+        x = 0
+        y = 2
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.1
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_the_necessary_evil"
+        }
+        relative_position_id = SFL_the_invictan_agenda
+        prerequisite = { focus = SFL_the_invictan_agenda }
+    }
+
+    focus = {
+        id = SFL_not_if_you_were_the_last_tyrant_on_earth
+        icon = GFX_SFL_not_if_you_were_the_last_tyrant_on_earth
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = {
+            add_ideas = androcentrism
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_not_if_you_were_the_last_tyrant_on_earth"
+        }
+        relative_position_id = SFL_the_necessary_evil
+        prerequisite = { focus = SFL_the_necessary_evil }
+        mutually_exclusive = { focus = SFL_love_of_excellence }
+    }
+
+    focus = {
+        id = SFL_love_of_excellence
+        icon = GFX_SFL_love_of_excellence
+        cost = 5
+        x = -1
+        y = 1
+        completion_reward = {
+            add_research_slot = 1
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_love_of_excellence"
+        }
+        relative_position_id = SFL_the_necessary_evil
+        prerequisite = { focus = SFL_the_necessary_evil }
+        mutually_exclusive = { focus = SFL_not_if_you_were_the_last_tyrant_on_earth }
+    }
+
+    focus = {
+        id = SFL_against_mass_democracy
+        icon = GFX_SFL_against_mass_democracy
+        cost = 5
+        x = 1
+        y = 1
+        completion_reward = {
+            country_event = {
+					id = SFL.705
+					days = 1
+				}
+            add_ideas = total_state_purview
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_against_mass_democracy"
+        }
+        relative_position_id = SFL_love_of_excellence
+        prerequisite = { focus = SFL_love_of_excellence focus = SFL_not_if_you_were_the_last_tyrant_on_earth }
+
+    }
+
+    focus = {
+        id = SFL_imperium_et_libertas
+        icon = GFX_SFL_imperium_et_libertas
+        cost = 5
+        x = 0
+        y = 1
+        completion_reward = {
+            add_political_power = 250
+            log = "[GetDateText]: [Root.GetName]: Focus SFL_imperium_et_libertas"
+        }
+        relative_position_id = SFL_against_mass_democracy
+        prerequisite = { focus = SFL_against_mass_democracy }
+        prerequisite = {focus = SFL_slam_the_door_open_a_window}
+        prerequisite = {focus = SFL_not_for_your_government}
+    }
+}

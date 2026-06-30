@@ -1,0 +1,214 @@
+﻿capital = 1227
+add_manpower = 30000
+oob = "generic_2021"
+set_stability = 0.05
+set_war_support = 0.25
+add_to_variable = { GDP = 10 } add_to_variable = { DEBT = 0 } add_to_variable = { REAL_GROWTH = 3 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+tota_variable_clamping = yes
+set_country_flag = is_smol_country
+set_country_flag = has_double_leader
+set_country_flag = hendy_clarence
+set_country_flag = contrasanxiety
+add_ideas = {
+	MSK_successfully_free
+}
+country_event = {
+	id = MSK.2
+	days = 140
+}
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	anti_tank_equipment = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	basic_light_tank = 1
+	basic_medium_tank = 1
+	interwar_antiair = 1
+	motorized_equipment = 1
+	mechanized_equipment = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	transport = 1
+}
+recruit_character = MSK_Adolfo_Costanzo
+recruit_character = MSK_Oscar_Sobalvarro
+recruit_character = JohnMcAfee
+recruit_character = MSK_EnriqueMolinaOfreciano
+recruit_character = MSK_ErrolAnthonyHodgCash
+recruit_character = MSK_LottieCunninghamWren
+recruit_character = MSK_ShairaNatashaDownsMorgan
+recruit_character = MSK_stedman_f_muller
+activate_advisor = MSK_henry_molina_idea
+activate_advisor = MSK_errol_idea
+activate_advisor = MSK_lottie_idea
+activate_advisor = MSK_shaira_natasha_idea
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+
+add_to_variable = {
+var = SOCTRENDS_DC
+value = 70
+}
+add_to_variable = {
+var = SOCTRENDS_DE
+value = 70
+}
+add_to_variable = {
+var = SOCTRENDS_EE
+value = 60
+}
+add_to_variable = {
+var = SOCTRENDS_TP
+value = 70
+}
+add_to_variable = {
+var = SOCTRENDS_EA
+value = 70
+}
+set_variable = {
+	var = CONTRASANGER
+	value = 50
+}
+set_variable = {
+	var = MSKvotingshare
+	value = 65
+}
+set_variable = {
+	var = PRIVATEvotingshare
+	value = 20
+}
+set_variable = {
+	var = OTHERCOUNTRYvotingshare
+	value = 15
+}
+set_convoys = 10
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 46
+        revolutionary_right = 3
+        dissident_right = 9
+        liberalism = 13
+        hardline_socialism = 0
+        autocracy = 6
+        reformist_socialism = 16
+        socdem = 7
+        technocracy = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = conservatism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Rev. Hector Williams"
+	desc = ""
+	picture = "gfx/leaders/MSK/Rev. Hector Williams.png"
+	expire = "2040.1.1"
+	ideology = relcon
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Cleaveland T. Webster"
+	desc = ""
+	picture = "gfx/leaders/MSK/CTWebster.png"
+	expire = "2040.1.1"
+	ideology = socpat
+	traits = {
+	}
+}

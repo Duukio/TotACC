@@ -1,0 +1,27 @@
+state={
+id=306
+	name="STATE_306"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	}
+	history={
+			victory_points = {
+			2072 5
+		}
+		owner = TOG
+		buildings = {
+            school = 2
+			infrastructure = 2
+			arms_factory = 1
+		}
+		add_core_of = TOG
+	}
+	provinces={
+		2072 7944
+	}
+	manpower=7070260
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

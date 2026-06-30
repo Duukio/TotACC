@@ -1,0 +1,38 @@
+
+add_namespace = EGY
+
+country_event = { # Sissy gets caged by The Creeping Fascist Threat To Our Democracy
+    id = EGY.1
+    title = EGY.1.t
+    desc = EGY.1.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #There are decades where nothing happens and there are days when nothing happens
+      name = EGY.1.a
+      ai_chance = { factor = 50 }
+
+	}
+    option = { #Ebin Baath Winnage
+      name = EGY.1.b
+      ai_chance = { factor = 50 }
+        set_politics = {
+            ruling_party = revolutionary_right
+        }
+	}
+}
+
+country_event = { # Muslim soyrage during the Israel war, dummied out atm because the Lebanon war doesnt fire
+    id = EGY.5
+    title = EGY.5.t
+    desc = EGY.5.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { 
+      name = EGY.5.a #Holy shit is that the Arab Spring guy
+		set_politics = {
+            ruling_party = conservatism
+        }
+	}
+}

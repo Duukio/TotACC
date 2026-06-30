@@ -1,0 +1,78 @@
+ideas = {
+	country = {
+			WES_europes_lighthouse = {
+			picture = WES_europes_lighthouse
+			allowed = {
+				tag = WES
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			liberalism_drift = 0.03
+			socdem_drift = 0.02
+			conservatism_drift = 0.02
+			monthly_soctrends_drift_TP_P = 0.03
+			}
+		}
+			WES_frail_identity = {
+			picture = WES_frail_identity
+			allowed = {
+				tag = WES
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			surrender_limit = -0.2
+			stability_factor = -0.25
+			war_support_factor = -0.25
+			}
+		}
+			WES_biz_govt_mingling = {
+			picture = WES_biz_govt_mingling
+			allowed = {
+				tag = WES
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_cost = 0.45
+			production_factory_start_efficiency_factor = 0.25
+			monthly_soctrends_drift_EE_E2 = 0.02
+			gdp_growth_modifier = 0.10
+			}
+		}
+	}
+}

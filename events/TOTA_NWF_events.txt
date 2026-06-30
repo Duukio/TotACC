@@ -1,0 +1,68 @@
+add_namespace = NWF
+country_event = {
+    id = NWF.10 # killing montana
+    title = NWF.10.t
+    desc = NWF.10.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = NWF.10.a
+	}
+}
+country_event = {
+    id = NWF.11 # killing wyoming
+    title = NWF.11.t
+    desc = NWF.11.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = NWF.11.a
+	}
+}
+country_event = {
+    id = NWF.12 # lakotah taking eastern montana
+    title = NWF.12.t
+    desc = NWF.12.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = NWF.12.a
+	  NWF = {
+		add_manpower = -10
+	}
+	}
+}
+country_event = {
+    id = NWF.13 # taking north jefferson + eastern oregon
+    title = NWF.13.t
+    desc = NWF.13.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = NWF.13.a
+	}
+}
+country_event = {
+    id = NWF.999 # negotiations
+    title = NWF.999.t
+    desc = NWF.999.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      trigger = {
+        is_ai = no
+      }
+      name = NWF.999.a
+	}
+    option = {
+      trigger = {
+        is_ai = yes
+      }
+      name = NWF.999.b
+      SFL = {
+        country_event = {
+          id = SFL.919
+        }
+      }
+    }
+}

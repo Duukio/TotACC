@@ -1,0 +1,64 @@
+add_namespace = IRAmisc
+
+
+country_event = {
+    id = IRAmisc.1 # Iraqi Political Transformation
+    title = IRAmisc.1.t
+    desc = IRAmisc.1.desc
+    picture = GFX_report_event_generic_parliament
+    
+    trigger = {
+        tag = IRA
+        has_war = no
+        NOT = { has_country_flag = ira_transformation_happened }
+    }
+    
+    mean_time_to_happen = {
+        days = 17
+    }
+    
+    fire_only_once = yes
+
+    option = {
+        name = IRAmisc.1.a # Form Iraqi People's Republic
+        ai_chance = {
+            base = 50
+        }
+        
+        set_cosmetic_tag = IRA_PEOPLES_REPUBLIC
+        set_party_name = {
+            ideology = socdem
+            long_name = "Iraqi Unity Movement"
+            name = "IUM"
+        }
+        set_popularities = {
+            socdem = 65
+            liberalism = 20
+            conservatism = 10
+            autocracy = 5
+        }
+        set_politics = {
+            ruling_party = socdem
+        }
+        add_stability = 0.05
+        add_political_power = 75
+        clr_country_flag = has_double_leader
+        set_country_flag = ira_transformation_happened
+        set_country_flag = peoples_republic_path
+    }
+
+    option = {
+        name = IRAmisc.1.b # Form Iraqi Republic with Allawi
+        ai_chance = {
+            base = 50
+        }
+        
+        set_cosmetic_tag = IRA_REPUBLIC
+        set_variable = { allawi_sigma = 1 }
+        add_stability = 0.03
+        add_political_power = 50
+        set_country_flag = ira_transformation_happened
+        set_country_flag = allawi_republic_path
+        clr_country_flag = has_double_leader
+    }
+}

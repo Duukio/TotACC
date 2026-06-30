@@ -1,0 +1,31 @@
+state={
+	id=1097
+	name="STATE_1097"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			5157 5 #Dehradun
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 8
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		5002 5157 10021 3989 1898
+	}
+	manpower=10086292
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,42 @@
+state={
+id=122
+	
+
+	name="STATE_122"
+
+	resources={
+		oil=10.000
+		rubber=10.000
+		steel=1.000
+	}
+	
+	state_category = city
+	
+	history={
+		owner = ITA
+		victory_points = {
+			11773 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+			11773 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		902 6891 9772 9863 11755 11773 11824 11874 
+	}
+	manpower=1736419
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

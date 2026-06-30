@@ -1,0 +1,173 @@
+ideas = {
+	country = {
+			JAP_diplomatic_problems = {
+			picture = JAP_diplomatic_problems
+			allowed = {
+				tag = JAP
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			trade_opinion_factor = -0.07
+			political_power_gain = -0.05
+			}
+		}
+		JAP_state_shinto = {
+			picture = JAP_state_shinto
+			allowed = {
+				tag = JAP
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			consumer_goods_factor = 0.02
+			stability_factor = 0.1
+			}
+		}
+		JAP_booming_economy = {
+			picture = JAP_booming_economy
+			allowed = {
+				tag = JAP
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = 0.05
+			faction_trade_opinion_factor = 1
+			monthly_soctrends_drift_EA_A = 0.02
+			}
+		}
+		JAP_kokutai_undamaged = {
+			picture = JAP_kokutai_undamaged
+			allowed = {
+				tag = JAP
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			war_support_weekly = 0.01
+			political_power_cost = -0.10
+			monthly_soctrends_drift_DE_E = 0.02
+			}
+		}
+		JAP_hikikomori = {
+			picture = JAP_hikikomori
+			allowed = {
+				tag = JAP
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.05
+			production_factory_start_efficiency_factor = -0.02
+			monthly_soctrends_drift_TP_P = 0.01
+			monthly_population = -0.01
+			}
+		}
+		JAP_extremely_advanced_technology = {
+			picture = JAP_extremely_advanced
+			allowed = {
+				tag = JAP
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			production_speed_school_factor = 0.10 
+			research_speed_factor = 0.10
+			gdp_growth_modifier = 0.10
+			monthly_soctrends_drift_TP_P = 0.05
+			stability_factor = -0.15
+			monthly_population = -0.10
+			}
+		}
+		JAP_keeping_up_with_the_copro = {
+			picture = JAP_keeping_up_with_the_copro
+			allowed = {
+				tag = JAP
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_cost = 0.25
+			custom_modifier_tooltip = "We will check on the PAFCPG yearly."
+			}
+		}
+	}	
+}

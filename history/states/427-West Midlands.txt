@@ -1,0 +1,38 @@
+
+state={
+id=427	
+
+
+	name="STATE_427"
+
+	manpower = 5913000
+	
+	state_category = metropolis
+	resources={
+		steel=50
+	}
+
+	history={
+		owner = ENG
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 5
+			air_base = 6
+		}
+		victory_points = {
+			9297 40 #Birmingham
+		}
+		victory_points = {
+			6270 15 #Coventry
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		3241 3301 6270 6301 7239 9297 11345 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,1128 @@
+###hii :3333
+technologies = {
+	
+	@1980 = 0
+	@1990 = 3
+	@2000 = 6
+	@2010 = 9
+	@2020 = 12
+	@2030 = 15
+	@2040 = 18
+
+	mastercomputing_theory = { #theorycel
+
+        research_speed_factor = 0.01
+		
+		path = {
+			leads_to_tech = mastercomputer_90
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = applied_robotics
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		start_year = 1980
+		folder = {
+			name = robotics_folder
+			position = { x = -1 y = @1980 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mastercomputer_90 = { #mc 90
+
+        research_speed_factor = 0.02
+        on_research_complete = {
+            generate_mastercomp_90 = yes
+            custom_effect_tooltip = "Enables Mastercomputing Economics"
+        }
+
+
+		research_cost = 1.22
+		start_year = 1990
+		folder = {
+			name = robotics_folder
+			position = { x = -1 y = @1990 }
+		}
+		path = {
+			leads_to_tech = mastercomputer_00
+			research_cost_coeff = 1
+		}
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mastercomputer_00 = { #mc 00
+
+        research_speed_factor = 0.02
+		production_speed_buildings_factor = 0.05
+        on_research_complete = {
+            generate_mastercomp_00 = yes
+            custom_effect_tooltip = "Enables 2000s Mastercomputers and disables 90s Mastercomputers"
+        }
+
+
+		research_cost = 1.44
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = -1 y = @2000 }
+		}
+		path = {
+			leads_to_tech = mastercomputer_10
+			research_cost_coeff = 1
+		}		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mastercomputer_10 = { #mc 10
+
+        research_speed_factor = 0.04
+		production_speed_buildings_factor = 0.075
+        on_research_complete = {
+            generate_mastercomp_10 = yes
+            custom_effect_tooltip = "Enables 2010s Mastercomputers and disables 2000s Mastercomputers. Unlocks other cabinet positions for Mastercomputers."
+        }
+
+
+		research_cost = 1.22
+		start_year = 2010
+		path = {
+			leads_to_tech = mastercomputer_20
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = robotics_folder
+			position = { x = -1 y = @2010 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mastercomputer_20 = { #mc 20
+
+        research_speed_factor = 0.04
+		production_speed_buildings_factor = 0.09
+        on_research_complete = {
+            generate_mastercomp_20 = yes
+            custom_effect_tooltip = "Enables 2020s Mastercomputers and disables 2010s Mastercomputers. Unlocks military Mastercomputer advisors."
+        }
+
+		path = {
+			leads_to_tech = mastercomputer_30
+			research_cost_coeff = 1
+		}
+		research_cost = 1.88
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = -1 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mastercomputer_30 = { #mc 30
+
+        research_speed_factor = 0.06
+		production_speed_buildings_factor = 0.12
+        on_research_complete = {
+            generate_mastercomp_30 = yes
+            custom_effect_tooltip = "Enables 2030s Mastercomputers and disables 2020s Mastercomputers."
+        }
+		path = {
+			leads_to_tech = mastercomputer_40
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.22
+		start_year = 2030
+		folder = {
+			name = robotics_folder
+			position = { x = -1 y = @2030 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mastercomputer_40 = { #mc 40
+
+        research_speed_factor = 0.06
+		production_speed_buildings_factor = 0.2
+		stability_factor = -0.2
+		political_power_gain = -0.1
+        on_research_complete = {
+            generate_mastercomp_40 = yes
+            custom_effect_tooltip = "Enables 2040s Mastercomputers and disables 2030s Mastercomputers. God help you."
+        }
+		path = {
+			leads_to_tech = mastercomputer_40
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3.5
+		start_year = 2040
+		folder = {
+			name = robotics_folder
+			position = { x = -1 y = @2040 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	applied_robotics = { #aprobo
+
+        research_speed_factor = 0.03
+        production_factory_max_efficiency_factor = 0.1
+        production_speed_buildings_factor = 0.10
+		industry_repair_factor = 0.10
+		
+		path = {
+			leads_to_tech = boxer_90
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = gump_90
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = dozer_90
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = robotics_folder
+			position = { x = 2 y = @1980 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	boxer_90 = { #box 90
+
+        enable_equipments = {
+			boxer90
+		}
+		enable_subunits = {
+			boxer
+		}
+		
+		path = {
+			leads_to_tech = downsized_hydraulics
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = specialized_engines
+			research_cost_coeff = 1
+		}
+		research_cost = 2.22
+		start_year = 1990
+		folder = {
+			name = robotics_folder
+			position = { x = 2 y = @1990 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	downsized_hydraulics = { #down hydra
+
+        boxer = {
+        	supply_consumption = -0.02
+        	breakthrough = 0.05
+        }
+		
+		path = {
+			leads_to_tech = boxer_10
+			research_cost_coeff = 1
+		}
+		xor = { specialized_engines }
+		research_cost = 2.44
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = 1 y = @2000 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	specialized_engines = { #spec eng
+
+        boxer = {
+        	maximum_speed = 0.05
+        	soft_attack = 0.02
+        }
+		
+		path = {
+			leads_to_tech = boxer_10
+			research_cost_coeff = 1
+		}
+		xor = { downsized_hydraulics }
+		research_cost = 2.44
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = 3 y = @2000 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	boxer_10 = { #box 10
+
+        enable_equipments = {
+			boxer10
+		}
+		
+		path = {
+			leads_to_tech = behavior_based_control_system
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = pack_mentality_control_system
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 2.88
+		start_year = 2010
+		folder = {
+			name = robotics_folder
+			position = { x = 2 y = @2010 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	behavior_based_control_system = { #behave sys
+
+        boxer = {
+        	army_org_factor = -0.05
+        	soft_attack = 0.05
+        }
+		
+		path = {
+			leads_to_tech = boxer_30
+			research_cost_coeff = 1
+		}
+		xor = { pack_mentality_control_system }
+		research_cost = 3.00
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 1 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pack_mentality_control_system = { #pack sys
+
+        boxer = {
+        	army_org_factor = -0.05
+        	defense = 0.05
+        }
+		
+		path = {
+			leads_to_tech = boxer_30
+			research_cost_coeff = 1
+		}
+		xor = { behavior_based_control_system }
+		research_cost = 3.00
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 3 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	boxer_30 = { #box 30
+
+        enable_equipments = {
+			boxer30
+		}
+	
+		research_cost = 3.44
+		start_year = 2030
+		folder = {
+			name = robotics_folder
+			position = { x = 2 y = @2030 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gump_90 = { #gump 90
+
+        enable_equipments = {
+			gump90
+		}
+		enable_subunits = {
+			gump
+		}		
+		path = {
+			leads_to_tech = anthropomorphized_locomotion
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = hybridized_locomotion
+			research_cost_coeff = 1
+		}
+		research_cost = 2.22
+		start_year = 1990
+		folder = {
+			name = robotics_folder
+			position = { x = 6 y = @1990 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	anthropomorphized_locomotion = { #anthro loco
+
+        army_speed_factor = 0.05
+		army_org_factor = -0.01
+		dig_in_speed_factor = 0.15
+		planning_speed = 0.05
+		
+		path = {
+			leads_to_tech = gump_10
+			research_cost_coeff = 1
+		}
+		xor = { hybridized_locomotion }
+		research_cost = 2.44
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = 5 y = @2000 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hybridized_locomotion = { #hybrid loco
+
+        army_speed_factor = 0.015
+		army_org_factor = 0.01
+		dig_in_speed_factor = 0.05
+		planning_speed = 0.01
+		
+		path = {
+			leads_to_tech = gump_10
+			research_cost_coeff = 1
+		}
+		xor = { anthropomorphized_locomotion }
+		research_cost = 2.44
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = 7 y = @2000 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gump_10 = { #gump 10
+
+        enable_equipments = {
+			gump10
+		}
+		
+		path = {
+			leads_to_tech = biometric_reinforcement_learning
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = collabrative_swarm_optimization
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 2.88
+		start_year = 2010
+		folder = {
+			name = robotics_folder
+			position = { x = 6 y = @2010 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	biometric_reinforcement_learning = { #bio learn
+
+        pocket_penalty = -0.25
+		experience_loss_factor = -0.15
+		army_org_regain = 0.05
+		
+		path = {
+			leads_to_tech = gump_30
+			research_cost_coeff = 1
+		}
+		xor = { collabrative_swarm_optimization }
+		research_cost = 3.00
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 5 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	collabrative_swarm_optimization = { #swarm op
+
+        breakthrough_factor = -0.25
+		experience_loss_factor = -0.15
+		air_superiority_bonus_in_combat = 0.05
+		
+		path = {
+			leads_to_tech = gump_30
+			research_cost_coeff = 1
+		}
+		xor = { biometric_reinforcement_learning }
+		research_cost = 3.00
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 7 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gump_30 = { #gump 30
+
+        enable_equipments = {
+			gump30
+		}
+	
+		research_cost = 3.44
+		start_year = 2030
+		folder = {
+			name = robotics_folder
+			position = { x = 6 y = @2030 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dozer_90 = { #doz 90
+
+        enable_equipments = {
+			dozer90
+		}
+		enable_subunits = {
+			dozer
+		}
+		
+		path = {
+			leads_to_tech = inhumane_design_philosophy
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = humane_design_philosophy
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_dozer_90
+			research_cost_coeff = 1
+		}
+		research_cost = 2.22
+		start_year = 1990
+		folder = {
+			name = robotics_folder
+			position = { x = 10 y = @1990 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	heavy_dozer_90 = { # heavy doz 90
+
+        enable_equipments = {
+			heavy_dozer90
+		}
+		enable_subunits = {
+			heavy_dozer
+		}
+
+		research_cost = 2.22
+		start_year = 1990
+		folder = {
+			name = robotics_folder
+			position = { x = 12 y = @1990 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	inhumane_design_philosophy = { #in phil
+
+        army_attack_factor = 0.05
+		army_morale_factor = -0.05
+		dig_in_speed_factor = 0.03
+		land_night_attack = 0.25
+		pocket_penalty = -0.1
+		conscription_factor = -0.05
+		
+		path = {
+			leads_to_tech = dozer_10
+			research_cost_coeff = 1
+		}
+		xor = { humane_design_philosophy }
+		research_cost = 2.44
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = 9 y = @2000 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	humane_design_philosophy = { #hybrid loco
+
+        army_attack_factor = 0.025
+		army_morale_factor = 0.05
+		dig_in_speed_factor = 0.06
+		land_night_attack = 0.15
+		pocket_penalty = -0.05
+		
+		path = {
+			leads_to_tech = dozer_10
+			research_cost_coeff = 1
+		}
+		xor = { inhumane_design_philosophy }
+		research_cost = 2.44
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = 11 y = @2000 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dozer_10 = { #doz 10
+
+        enable_equipments = {
+			dozer10
+		}
+		
+		path = {
+			leads_to_tech = hunter_killer_paradigm
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = emergent_defense_paradigm
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_dozer_10
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 2.88
+		start_year = 2010
+		folder = {
+			name = robotics_folder
+			position = { x = 10 y = @2010 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	heavy_dozer_10 = { # heavy doz 10
+
+        enable_equipments = {
+			heavy_dozer10
+		}
+
+		research_cost = 2.22
+		start_year = 2010
+		folder = {
+			name = robotics_folder
+			position = { x = 12 y = @2010 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	hunter_killer_paradigm = { #hunt kill
+
+        org_loss_when_moving = -0.2
+		planning_speed = 0.1
+		invasion_preparation = -0.05
+		army_speed_factor = -0.1
+		
+		path = {
+			leads_to_tech = dozer_30
+			research_cost_coeff = 1
+		}
+		xor = { emergent_defense_paradigm }
+		research_cost = 3.00
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 9 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	emergent_defense_paradigm = { #def para
+
+        org_loss_when_moving = 0.05
+		planning_speed = 0.33
+		invasion_preparation = 0.05
+		army_speed_factor = 0.2
+		
+		path = {
+			leads_to_tech = dozer_30
+			research_cost_coeff = 1
+		}
+		xor = { hunter_killer_paradigm }
+		research_cost = 3.00
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 11 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dozer_30 = { #doz 30
+
+        enable_equipments = {
+			dozer30
+		}
+		
+		path = {
+			leads_to_tech = heavy_dozer_30
+			research_cost_coeff = 1
+		}
+	
+		research_cost = 3.44
+		start_year = 2030
+		folder = {
+			name = robotics_folder
+			position = { x = 10 y = @2030 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	heavy_dozer_30 = { # heavy doz 30
+
+        enable_equipments = {
+			heavy_dozer30
+		}
+
+		research_cost = 2.22
+		start_year = 2030
+		folder = {
+			name = robotics_folder
+			position = { x = 12 y = @2030 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	strike_uav = { #uav 80
+
+        enable_equipments = {
+			uav80
+		}
+		
+		path = {
+			leads_to_tech = strike_uav_90
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1980
+		folder = {
+			name = robotics_folder
+			position = { x = 17 y = @1980 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	strike_uav_90 = { #uav 90
+
+        enable_equipments = {
+			uav90
+		}
+		
+		path = {
+			leads_to_tech = strike_uav_00
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1990
+		folder = {
+			name = robotics_folder
+			position = { x = 17 y = @1990 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	strike_uav_00 = { #uav 00
+
+        enable_equipments = {
+			uav00
+		}
+		
+		path = {
+			leads_to_tech = autonomous_combat_aerial_vehicle_10
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = autonomous_strike_bomber_10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2000
+		folder = {
+			name = robotics_folder
+			position = { x = 17 y = @2000 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	autonomous_combat_aerial_vehicle_10 = { #ACAV 10
+
+        enable_equipments = {
+			acav10
+		}
+		
+		path = {
+			leads_to_tech = aerial_swarm_tactics
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2010
+		folder = {
+			name = robotics_folder
+			position = { x = 16 y = @2010 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	aerial_swarm_tactics = { #air swarm
+
+        air_accidents_factor = 0.025
+		air_interception_detect_factor = 0.05
+		air_maximum_speed_factor = 0.1
+		air_mission_efficiency = 0.1
+		
+		path = {
+			leads_to_tech = autonomous_combat_aerial_vehicle_30
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 16 y = 14 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	autonomous_combat_aerial_vehicle_30 = { #ACAV 30
+
+        enable_equipments = {
+			acav30
+		}
+
+		research_cost = 1
+		start_year = 2030
+		folder = {
+			name = robotics_folder
+			position = { x = 16 y = 16 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	autonomous_strike_bomber_10 = { #ASB 10
+
+        enable_equipments = {
+			asb10
+		}
+		
+		path = {
+			leads_to_tech = flying_carrier_adoption
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2010
+		folder = {
+			name = robotics_folder
+			position = { x = 18 y = @2010 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	flying_carrier_adoption = { #fly carrier
+
+        enable_equipments = {
+			flycarr
+		}
+		
+		path = {
+			leads_to_tech = autonomous_strike_bomber_30
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 2020
+		folder = {
+			name = robotics_folder
+			position = { x = 18 y = @2020 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	autonomous_strike_bomber_30 = { #ASB 30
+
+        enable_equipments = {
+			asb30
+		}
+		
+		research_cost = 1
+		start_year = 2030
+		folder = {
+			name = robotics_folder
+			position = { x = 18 y = 16 }
+		}
+		
+		categories = {
+			robotics
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

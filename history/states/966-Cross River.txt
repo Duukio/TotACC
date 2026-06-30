@@ -1,0 +1,31 @@
+
+state={
+	id=966
+	name="STATE_966"
+    buildings_max_level_factor = 1
+	provinces={
+		10831 13901 13902 13903 
+	}
+	resources = {
+		oil = 200
+		steel = 20
+	}
+	manpower=15002066
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = BIA
+		buildings = {
+			school = 2
+			infrastructure = 3
+			industrial_complex = 3
+		}
+		victory_points = {
+			10831 5 
+		}
+		add_core_of = BIA
+		add_core_of = NGA
+	}
+}

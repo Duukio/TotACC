@@ -1,0 +1,28 @@
+
+state={
+	id=915
+	name="STATE_915"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = MGD
+		buildings = {
+			infrastructure = 3
+			school = 2
+
+		}
+		victory_points = {
+			4909 4 
+		}
+		add_core_of = MGD
+
+	}
+
+	provinces={
+		4909 10818 
+	}
+	manpower=2030603
+	buildings_max_level_factor=2.000
+	state_category=town
+	local_supplies=0.000
+}

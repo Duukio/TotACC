@@ -1,0 +1,25 @@
+
+state={
+	id=1067
+	name="STATE_1067"
+    buildings_max_level_factor = 1
+	provinces={
+		7013 1349 10270 12269 1405 7119 4072 10019 7177
+	}
+	manpower=50000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=megalopolis
+	history={
+		owner = BHA
+		buildings = {
+			school = 2
+			infrastructure = 5
+		}
+		victory_points = {
+			1349 70 
+		}
+		add_core_of = BHA
+	}
+}

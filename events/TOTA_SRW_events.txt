@@ -1,0 +1,178 @@
+add_namespace = SRW
+
+country_event = {
+    id = SRW.1 # 180 years
+    title = SRW.1.t
+    desc = SRW.1.desc
+    picture = GFX_report_event_180_sarawak
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SRW.1.a
+      add_stability = 0.05
+	}
+}
+country_event = {
+    id = SRW.2 # offers to buy Keningau
+    title = SRW.2.t
+    desc = SRW.2.desc
+    picture = GFX_report_event_180_sarawak
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #sure
+      name = SRW.2.a
+      ai_chance = { factor = 60 }
+      SRW = {
+        country_event = {
+            id = SRW.6
+            days = 1
+        }
+      }
+	}
+    option = { #no thanks
+      name = SRW.2.b
+      ai_chance = { factor = 44 }
+      SRW = {
+        country_event = {
+            id = SRW.7
+            days = 1
+        }
+      }
+	}
+}
+country_event = {
+    id = SRW.3  #offers to fund PHLs existence
+    title = SRW.3.t
+    desc = SRW.3.desc
+    picture = GFX_report_event_180_sarawak
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #fine
+      name = SRW.3.a
+      SRW = {
+        puppet = PHL
+        add_political_power = -150
+      }
+      PHL = {
+        set_politics = {
+          ruling_party = conservatism 
+        }
+      }
+	}
+}
+country_event = {
+    id = SRW.4  # wants japanese Garrison
+    title = SRW.4.t
+    desc = SRW.4.desc
+    picture = GFX_report_event_180_sarawak
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #fine
+    ai_chance = { factor = 66 }
+      name = SRW.4.a
+      SRW = {
+         load_oob = "Japanese Garrison in Sarawak"
+      }
+	}
+    option = { #no
+    ai_chance = { factor = 33 }
+      name = SRW.4.b
+	}
+}
+country_event = {
+    id = SRW.5  # negri elections 2025
+    title = SRW.5.t
+    desc = SRW.5.desc
+    picture = GFX_report_event_negri
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #SUPP
+    ai_chance = { factor = 33 }
+      name = SRW.5.a
+		set_popularities = {
+            autocracy = 50
+            liberalism = 40
+            conservatism = 5
+            socdem = 5
+		}
+        complete_national_focus = SRW_supp_victory
+	}
+
+    option = { #SPP
+    ai_chance = { factor = 33 }
+      name = SRW.5.b
+		set_popularities = {
+            autocracy = 50
+            liberalism = 5
+            conservatism = 40
+            socdem = 5
+		}
+        complete_national_focus = SRW_spp_victory
+	}
+    option = { #Sarawa
+    ai_chance = { factor = 33 }
+      name = SRW.5.c
+		set_popularities = {
+            autocracy = 50
+            liberalism = 5
+            conservatism = 5
+            socdem = 40
+		}
+        complete_national_focus = SRW_sarawa_progress_victory
+	}
+}
+country_event = {
+    id = SRW.6 # Indonesia accepts our purchase
+    title = SRW.6.t
+    desc = SRW.6.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SRW.6.a
+      add_stability = -0.05
+      add_political_power = -50
+      transfer_state = 1216
+	}
+}
+country_event = {
+    id = SRW.7 # Indonesia refuses
+    title = SRW.7.t
+    desc = SRW.7.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SRW.7.a
+      add_political_power = 25
+	}
+}
+country_event = {
+    id = SRW.8 # War between the Indies
+    title = SRW.8.t
+    desc = SRW.8.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SRW.8.a
+      add_to_war = {
+   			targeted_alliance = IND
+   			enemy = NWG
+   			hostility_reason = asked_to_join
+		}
+	}
+    option = {
+      name = SRW.8.b
+      add_to_war = {
+   			targeted_alliance = NWG
+   			enemy = IND
+   			hostility_reason = asked_to_join
+		}
+	}
+}

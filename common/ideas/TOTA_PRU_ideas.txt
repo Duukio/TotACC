@@ -1,0 +1,78 @@
+ideas = {
+	country = {
+			PRU_the_final_battle = {
+			picture = PRU_the_final_battle
+			allowed = {
+				tag = PRU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+					monthly_population = -0.25
+					war_support_factor = 0.15
+					autocracy_drift = 0.01
+					dissident_right_drift = 0.01
+					conscription = 0.03
+			}
+		}
+		PRU_dai_fujimori_teikoku = {
+		picture = PRU_dai_fujimori_teikoku
+		allowed = {
+			tag = PRU
+		}
+
+           available = {
+
+           }
+
+           cancel = {
+
+           }
+
+		allowed_civil_war = {
+			always = no
+		}
+		
+		modifier = {	
+		liberalism_drift = -0.01
+		hardline_socialism_drift = -0.03
+		stability_factor = 0.1
+		gdp_growth_modifier = 0.10
+		custom_modifier_tooltip = "FUJIMORI_TEIKOKU_IDEA_SOCTRENDS"
+		}
+	}
+		PRU_behind_the_shadows = {
+		picture = PRU_behind_the_shadows
+		allowed = {
+			tag = PRU
+		}
+
+           available = {
+
+           }
+
+           cancel = {
+
+           }
+
+		allowed_civil_war = {
+			always = no
+		}
+		
+		modifier = {
+			custom_modifier_tooltip = "Kenji Fujimori may not be entirely independent in his choices..."
+		}
+	}
+	}	
+}

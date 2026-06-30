@@ -1,0 +1,23 @@
+state={
+id=697
+	name="STATE_697"
+    buildings_max_level_factor = 1
+	
+
+	history={
+		owner = ELS
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = ELS
+	}
+
+	provinces={
+		13669
+	}
+	manpower = 100000
+	buildings_max_level_factor=2.000
+	state_category=rural
+	local_supplies=0.000
+}

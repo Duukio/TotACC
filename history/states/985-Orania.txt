@@ -1,0 +1,28 @@
+state={
+id=985
+	
+
+	name="STATE_985"
+
+	manpower = 3000
+
+	state_category = enclave
+
+	history={
+		victory_points = {
+			13928 5 #Orania
+		}		
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+            school = 1
+			infrastructure = 4
+		13928 = {
+			bunker = 8
+		}
+	}
+}
+	provinces={
+		13928
+	}
+}

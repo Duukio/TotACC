@@ -1,0 +1,178 @@
+scripted_gui = {
+	
+	MSK_CCPA_scrgui = {
+		context_type = decision_category
+		window_name = "CCPA_gui"
+
+		ai_enabled = {
+			always = no
+		}
+		
+		visible = {
+			is_ai = no
+			has_idea = CCPA
+		}
+
+        dirty = CCPApie_chart_dirty
+
+		triggers = {
+
+			pin_miskito_visible = {
+				MSK = {
+					has_dynamic_modifier = {
+		 			   modifier = CCPA_DYNMOD
+		 			   scope = MSK
+					}
+				}
+			}
+			pin_san_andres_visible = {
+				491 = {
+					has_state_flag = san_andres
+				}
+				always = yes
+			}
+			pin_belize_visible = {
+				527 = {
+					is_owned_by = WIF
+				}
+				always = yes
+			}
+			pin_jamaica_visible = {
+				634 = {
+					is_owned_by = WIF
+				}
+				always = yes
+			}
+			pin_guyana_visible = {
+				GUY = { #why was this suriname?
+					has_idea = CCPA
+				}
+				always = yes
+			}
+			pin_bay_islands_visible = {
+				1224 = {
+					is_owned_by = MSK
+				}
+				always = yes
+			}
+			pin_limon_visible = {
+				524 = {
+					is_owned_by = MSK
+				}
+				always = yes
+			}
+			pin_bocas_del_toro_visible = {
+				520 = {
+					has_state_flag = bocas_del_toro
+				}
+				always = yes
+
+			}
+		}
+
+		properties = {
+			CCPApie0 = { frame = CCPApie_chart^0 }
+			CCPApie1 = { frame = CCPApie_chart^1 }
+			CCPApie2 = { frame = CCPApie_chart^2 }
+			CCPApie3 = { frame = CCPApie_chart^3 }
+			CCPApie4 = { frame = CCPApie_chart^4 }
+			CCPApie5 = { frame = CCPApie_chart^5 }
+			CCPApie6 = { frame = CCPApie_chart^6 }
+			CCPApie7 = { frame = CCPApie_chart^7 }
+			CCPApie8 = { frame = CCPApie_chart^8 }
+			CCPApie9 = { frame = CCPApie_chart^9 }
+			CCPApie10 = { frame = CCPApie_chart^10 }
+			CCPApie11 = { frame = CCPApie_chart^11 }
+			CCPApie12 = { frame = CCPApie_chart^12 }
+			CCPApie13 = { frame = CCPApie_chart^13 }
+			CCPApie14 = { frame = CCPApie_chart^14 }
+			CCPApie15 = { frame = CCPApie_chart^15 }
+			CCPApie16 = { frame = CCPApie_chart^16 }
+			CCPApie17 = { frame = CCPApie_chart^17 }
+			CCPApie18 = { frame = CCPApie_chart^18 }
+			CCPApie19 = { frame = CCPApie_chart^19 }
+			CCPApie20 = { frame = CCPApie_chart^20 }
+			CCPApie21 = { frame = CCPApie_chart^21 }
+			CCPApie22 = { frame = CCPApie_chart^22 }
+			CCPApie23 = { frame = CCPApie_chart^23 }
+			CCPApie24 = { frame = CCPApie_chart^24 }
+			CCPApie25 = { frame = CCPApie_chart^25 }
+			CCPApie26 = { frame = CCPApie_chart^26 }
+			CCPApie27 = { frame = CCPApie_chart^27 }
+			CCPApie28 = { frame = CCPApie_chart^28 }
+			CCPApie29 = { frame = CCPApie_chart^29 }
+			CCPApie30 = { frame = CCPApie_chart^30 }
+			CCPApie31 = { frame = CCPApie_chart^31 }
+			CCPApie32 = { frame = CCPApie_chart^32 }
+			CCPApie33 = { frame = CCPApie_chart^33 }
+			CCPApie34 = { frame = CCPApie_chart^34 }
+			CCPApie35 = { frame = CCPApie_chart^35 }
+			CCPApie36 = { frame = CCPApie_chart^36 }
+			CCPApie37 = { frame = CCPApie_chart^37 }
+			CCPApie38 = { frame = CCPApie_chart^38 }
+			CCPApie39 = { frame = CCPApie_chart^39 }
+			CCPApie40 = { frame = CCPApie_chart^40 }
+			CCPApie41 = { frame = CCPApie_chart^41 }
+			CCPApie42 = { frame = CCPApie_chart^42 }
+			CCPApie43 = { frame = CCPApie_chart^43 }
+			CCPApie44 = { frame = CCPApie_chart^44 }
+			CCPApie45 = { frame = CCPApie_chart^45 }
+			CCPApie46 = { frame = CCPApie_chart^46 }
+			CCPApie47 = { frame = CCPApie_chart^47 }
+			CCPApie48 = { frame = CCPApie_chart^48 }
+			CCPApie49 = { frame = CCPApie_chart^49 }
+			CCPApie50 = { frame = CCPApie_chart^50 }
+			CCPApie51 = { frame = CCPApie_chart^51 }
+			CCPApie52 = { frame = CCPApie_chart^52 }
+			CCPApie53 = { frame = CCPApie_chart^53 }
+			CCPApie54 = { frame = CCPApie_chart^54 }
+			CCPApie55 = { frame = CCPApie_chart^55 }
+			CCPApie56 = { frame = CCPApie_chart^56 }
+			CCPApie57 = { frame = CCPApie_chart^57 }
+			CCPApie58 = { frame = CCPApie_chart^58 }
+			CCPApie59 = { frame = CCPApie_chart^59 }
+			CCPApie60 = { frame = CCPApie_chart^60 }
+			CCPApie61 = { frame = CCPApie_chart^61 }
+			CCPApie62 = { frame = CCPApie_chart^62 }
+			CCPApie63 = { frame = CCPApie_chart^63 }
+			CCPApie64 = { frame = CCPApie_chart^64 }
+			CCPApie65 = { frame = CCPApie_chart^65 }
+			CCPApie66 = { frame = CCPApie_chart^66 }
+			CCPApie67 = { frame = CCPApie_chart^67 }
+			CCPApie68 = { frame = CCPApie_chart^68 }
+			CCPApie69 = { frame = CCPApie_chart^69 }
+			CCPApie70 = { frame = CCPApie_chart^70 }
+			CCPApie71 = { frame = CCPApie_chart^71 }
+			CCPApie72 = { frame = CCPApie_chart^72 }
+			CCPApie73 = { frame = CCPApie_chart^73 }
+			CCPApie74 = { frame = CCPApie_chart^74 }
+			CCPApie75 = { frame = CCPApie_chart^75 }
+			CCPApie76 = { frame = CCPApie_chart^76 }
+			CCPApie77 = { frame = CCPApie_chart^77 }
+			CCPApie78 = { frame = CCPApie_chart^78 }
+			CCPApie79 = { frame = CCPApie_chart^79 }
+			CCPApie80 = { frame = CCPApie_chart^80 }
+			CCPApie81 = { frame = CCPApie_chart^81 }
+			CCPApie82 = { frame = CCPApie_chart^82 }
+			CCPApie83 = { frame = CCPApie_chart^83 }
+			CCPApie84 = { frame = CCPApie_chart^84 }
+			CCPApie85 = { frame = CCPApie_chart^85 }
+			CCPApie86 = { frame = CCPApie_chart^86 }
+			CCPApie87 = { frame = CCPApie_chart^87 }
+			CCPApie88 = { frame = CCPApie_chart^88 }
+			CCPApie89 = { frame = CCPApie_chart^89 }
+			CCPApie90 = { frame = CCPApie_chart^90 }
+			CCPApie91 = { frame = CCPApie_chart^91 }
+			CCPApie92 = { frame = CCPApie_chart^92 }
+			CCPApie93 = { frame = CCPApie_chart^93 }
+			CCPApie94 = { frame = CCPApie_chart^94 }
+			CCPApie95 = { frame = CCPApie_chart^95 }
+			CCPApie96 = { frame = CCPApie_chart^96 }
+			CCPApie97 = { frame = CCPApie_chart^97 }
+			CCPApie98 = { frame = CCPApie_chart^98 }
+			CCPApie99 = { frame = CCPApie_chart^99 }
+		}
+
+	}
+}
+

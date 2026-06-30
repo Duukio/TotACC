@@ -1,0 +1,43 @@
+
+state={
+	id=246
+	name="STATE_246"
+    buildings_max_level_factor = 1
+	resources={
+		strategic_minerals=200.000
+		steel=100.000
+	}
+
+	history={
+		victory_points = {
+			9932 20 
+		}
+		owner = TUR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			dockyard = 3
+			arms_factory = 1
+			industrial_complex = 6
+			9932 = {
+				naval_base = 5
+
+			}
+			3982 = {
+				naval_base = 2
+
+			}
+
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		9932 3714 11753
+	}
+	manpower=10696132
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

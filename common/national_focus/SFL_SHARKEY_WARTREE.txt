@@ -1,0 +1,491 @@
+focus_tree = {
+    id = SFL_SHARKEY_WARTREE
+    country = {
+        base = 0
+        modifier = {
+            add = 101
+            tag = SFL
+        }
+    }
+	focus = {
+		id = SFL_my_birth
+		icon = GFX_SFL_my_birth
+		cost = 5
+		x = 12
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = SFL.920 #my birth
+				days = 1
+			}
+			add_political_power = 75
+			add_ideas = SFL_rowdy_gangs_1
+            log = "[GetDateText]: [Root.GetName]: SFL_my_birth"
+		}
+	}
+	focus = {
+		id = SFL_my_boys_my_blood
+		icon = GFX_SFL_my_boys_my_blood
+		cost = 5
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#country_event = {
+			#	id = SFL.115 #my boys my blood
+			#	days = 1
+			#}
+			add_war_support = 0.15
+			add_manpower = 3000
+            log = "[GetDateText]: [Root.GetName]: SFL_my_boys_my_blood"
+		}
+		relative_position_id = SFL_my_birth
+		prerequisite = { focus = SFL_my_birth }
+	}
+	focus = {
+		id = SFL_a_coven_most_high
+		icon = GFX_SFL_a_coven_most_high
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.1
+			hidden_effect = {
+	  	        set_popularities = {
+					anarchism = 10
+        			conservatism = 10
+        			revolutionary_right = 5
+        			dissident_right = 10
+        			liberalism = 20
+       	 			hardline_socialism = 0
+        			autocracy = 20
+        			reformist_socialism = 20
+        			socdem = 5
+        			technocracy = 0
+				}
+			}
+			activate_advisor = SFL_donald_trump
+			activate_advisor = SFL_pazuzu_algarad
+			activate_advisor = SFL_ashley_s_palmer
+			activate_advisor = SFL_karla_lavey
+			custom_effect_tooltip = "Party Popularities will change..."
+            log = "[GetDateText]: [Root.GetName]: SFL_a_coven_most_high"
+		}
+		relative_position_id = SFL_my_boys_my_blood
+		prerequisite = { focus = SFL_my_boys_my_blood }
+	}
+	focus = {
+		id = SFL_the_crown_of_sicily
+		icon = GFX_SFL_the_crown_of_sicily
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#country_event = {
+			#	id = SFL.116 #crown of sicily flavor
+			#	days = 1
+			#}
+			add_ideas = SFL_mafia_connections
+			if = {
+    			limit = {
+        			has_idea = SFL_rowdy_gangs_1
+				}
+    			swap_ideas = {
+   					remove_idea = SFL_rowdy_gangs_1
+    				add_idea = SFL_rowdy_gangs_2
+				}
+			}
+			else_if = {
+    			limit = {
+        			has_idea = SFL_rowdy_gangs_3
+    			}
+    			swap_ideas = {
+   					remove_idea = SFL_rowdy_gangs_3
+    				add_idea = SFL_rowdy_gangs_4
+				}
+			}
+			else = {
+				swap_ideas = {
+   					remove_idea = SFL_rowdy_gangs_5
+    				add_idea = SFL_rowdy_gangs_6
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_crown_of_sicily"
+		}
+		relative_position_id = SFL_my_boys_my_blood
+		prerequisite = { focus = SFL_my_boys_my_blood }
+	}
+	focus = {
+		id = SFL_instruments_of_control
+		icon = GFX_SFL_instruments_of_control
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+    			limit = {
+        			has_idea = SFL_rowdy_gangs_1
+				}
+    			swap_ideas = {
+   					remove_idea = SFL_rowdy_gangs_1
+    				add_idea = SFL_rowdy_gangs_3
+				}
+			}
+			else = {
+				swap_ideas = {
+   					remove_idea = SFL_rowdy_gangs_2
+    				add_idea = SFL_rowdy_gangs_4
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_instruments_of_control"
+		}
+		relative_position_id = SFL_a_coven_most_high
+		prerequisite = { focus = SFL_a_coven_most_high }
+	}
+	focus = {
+		id = SFL_the_manufacture_of_satan
+		icon = GFX_SFL_the_manufacture_of_satan
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.075
+			add_timed_idea = {
+      		idea = SFL_satanic_volunteers
+      		days = 365
+    		}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_manufacture_of_satan"
+		}
+		relative_position_id = SFL_instruments_of_control
+		prerequisite = { focus = SFL_instruments_of_control }
+		prerequisite = { focus = SFL_the_golden_cup }
+	}  
+	focus = {
+		id = SFL_the_golden_cup
+		icon = GFX_SFL_the_golden_cup
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.075
+            log = "[GetDateText]: [Root.GetName]: SFL_the_golden_cup"
+		}
+		relative_position_id = SFL_the_crown_of_sicily
+		prerequisite = { focus = SFL_the_crown_of_sicily }
+	}
+	focus = {
+		id = SFL_the_crown_of_the_vampire
+		icon = GFX_SFL_the_crown_of_the_vampire
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#country_event = {
+			#	id = SFL.117 #crown of the vampyre flavor
+			#	days = 1
+			#}
+			if = {
+    			limit = {
+        			has_idea = SFL_rowdy_gangs_3
+				}
+    			swap_ideas = {
+   					remove_idea = SFL_rowdy_gangs_3
+    				add_idea = SFL_rowdy_gangs_5
+				}
+			}
+			else = {
+				swap_ideas = {
+   					remove_idea = SFL_rowdy_gangs_4
+    				add_idea = SFL_rowdy_gangs_6
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_crown_of_the_vampire"
+		}
+		relative_position_id = SFL_instruments_of_control
+		prerequisite = { focus = SFL_instruments_of_control }
+	} 
+	focus = {
+		id = SFL_the_battle_of_stpetersburg
+		icon = GFX_SFL_the_battle_of_stpetersburg
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 50
+			hidden_effect = {
+	  	        set_popularities = {
+					anarchism = 7.5
+        			conservatism = 5
+        			revolutionary_right = 2.5
+        			dissident_right = 5
+        			liberalism = 7.5
+       	 			hardline_socialism = 0
+        			autocracy = 70
+        			reformist_socialism = 0
+        			socdem = 2.5
+        			technocracy = 0
+				}
+			}
+			custom_effect_tooltip = "Party Popularities will change..."
+            log = "[GetDateText]: [Root.GetName]: SFL_the_battle_of_stpetersburg"
+		}
+		relative_position_id = SFL_the_golden_cup
+		prerequisite = { focus = SFL_the_golden_cup }
+	}
+	focus = {
+		id = SFL_hades_my_personal_bitch
+		icon = GFX_SFL_hades_my_personal_bitch
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.20
+			add_war_support = 0.30
+            log = "[GetDateText]: [Root.GetName]: SFL_hades_my_personal_bitch"
+		}
+		relative_position_id = SFL_the_manufacture_of_satan
+		prerequisite = { focus = SFL_the_manufacture_of_satan }
+		prerequisite = { focus = SFL_the_battle_of_stpetersburg }
+		prerequisite = { focus = SFL_the_crown_of_the_vampire }
+	} 
+	focus = {
+		id = SFL_i_ares
+		icon = GFX_SFL_i_ares
+		cost = 4
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_country_flag = SFL_reuinfy_wargoals
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_i_ares"
+		}
+		relative_position_id = SFL_my_birth
+		prerequisite = { focus = SFL_my_birth }
+	}
+	focus = {
+		id = SFL_this_turbulent_hatred
+		icon = GFX_SFL_this_turbulent_hatred
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			controls_province = 12384
+			controls_province = 12735
+		}
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = 0.05
+			538 = {
+				add_manpower = -20000
+			}
+			1015 = {
+				add_manpower = -30000
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_this_turbulent_hatred"
+		}
+		relative_position_id = SFL_i_ares
+		prerequisite = { focus = SFL_i_ares }
+	}
+	focus = {
+		id = SFL_my_throne_my_love
+		icon = GFX_SFL_my_throne_my_love
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_pelosi_attack_bonus
+            log = "[GetDateText]: [Root.GetName]: SFL_my_throne_my_love"
+		}
+		relative_position_id = SFL_this_turbulent_hatred
+		prerequisite = { focus = SFL_this_turbulent_hatred }
+	}
+	focus = {
+		id = SFL_i_laughed_at_the_sun
+		icon = GFX_SFL_i_laughed_at_the_sun
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Unlocks Additional Civil War Decisions"
+            log = "[GetDateText]: [Root.GetName]: SFL_i_laughed_at_the_sun"
+		}
+		relative_position_id = SFL_my_throne_my_love
+		prerequisite = { focus = SFL_my_throne_my_love }
+	}
+	focus = {
+		id = SFL_my_mistaken_girls
+		icon = GFX_SFL_my_mistaken_girls
+		cost = 3
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.10
+            log = "[GetDateText]: [Root.GetName]: SFL_my_mistaken_girls"
+		}
+		relative_position_id = SFL_i_laughed_at_the_sun
+		prerequisite = { focus = SFL_i_laughed_at_the_sun }
+	}
+	focus = {
+		id = SFL_an_unamerican_terror
+		icon = GFX_SFL_an_unamerican_terror
+		cost = 3
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+    			country_exists = NWF
+			}
+		}
+		completion_reward = {
+			add_political_power = 30
+			add_war_support = 0.05
+			1162 = {
+				add_manpower = -40000
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_an_unamerican_terror"
+		}
+		relative_position_id = SFL_i_laughed_at_the_sun
+		prerequisite = { focus = SFL_i_laughed_at_the_sun }
+	}
+	focus = {
+		id = SFL_sore_losers_in_my_goblet
+		icon = GFX_SFL_sore_losers_in_my_goblet
+		cost = 3
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+    			limit = {
+        			has_idea = SFL_pelosi_attack_bonus
+				}
+    			swap_ideas = {
+   					remove_idea = SFL_pelosi_attack_bonus
+    				add_idea = SFL_pelosi_attack_bonus_2
+				}
+			}
+			else = {
+				swap_ideas = {
+   					remove_idea = SFL_pelosi_attack_bonus_3
+    				add_idea = SFL_pelosi_attack_bonus_4
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_sore_losers_in_my_goblet"
+		}
+		relative_position_id = SFL_i_laughed_at_the_sun
+		prerequisite = { focus = SFL_i_laughed_at_the_sun }
+	}
+	focus = {
+		id = SFL_lucifers_sword_on_the_desert
+		icon = GFX_SFL_lucifers_sword_on_the_desert
+		cost = 3
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+    			limit = {
+        			has_idea = SFL_pelosi_attack_bonus
+				}
+    			swap_ideas = {
+   					remove_idea = SFL_pelosi_attack_bonus
+    				add_idea = SFL_pelosi_attack_bonus_3
+				}
+			}
+			else = {
+				swap_ideas = {
+   					remove_idea = SFL_pelosi_attack_bonus_2
+    				add_idea = SFL_pelosi_attack_bonus_4
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_lucifers_sword_on_the_desert"
+		}
+		relative_position_id = SFL_i_laughed_at_the_sun
+		prerequisite = { focus = SFL_i_laughed_at_the_sun }
+	}
+	focus = {
+		id = SFL_worship_leviathan_my_serpent
+		icon = GFX_SFL_worship_leviathan_my_serpent
+		cost = 3
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+    			limit = {
+        			has_idea = SFL_pelosi_attack_bonus_2
+				}
+    			swap_ideas = {
+   					remove_idea = SFL_pelosi_attack_bonus_2
+    				add_idea = SFL_pelosi_attack_bonus_5
+				}
+			}
+			else = {
+				swap_ideas = {
+   					remove_idea = SFL_pelosi_attack_bonus_4
+    				add_idea = SFL_pelosi_attack_bonus_6
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_worship_leviathan_my_serpent"
+		}
+		relative_position_id = SFL_sore_losers_in_my_goblet
+		prerequisite = { focus = SFL_an_unamerican_terror }
+		prerequisite = { focus = SFL_sore_losers_in_my_goblet }
+	}                                          
+}

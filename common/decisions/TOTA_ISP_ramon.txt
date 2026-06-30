@@ -1,0 +1,48 @@
+ISP_impending_doom_dec_cat = {
+	ISP_hardliner_soyrage = {
+		allowed = {
+            original_tag = ISP
+        }
+        activation = {
+			always = no
+        }
+		available = {
+            check_variable = {
+              var = milcoup
+              value = 10
+              compare = greater_than_or_equals
+            }			
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 70
+		timeout_effect = {
+		}
+		complete_effect = {
+			custom_effect_tooltip = "The fate of our goverment will rest in the hands of Elohim."
+			hidden_effect = {
+				clear_variable = milcoup
+				ISP = { country_event = ISP.1948 }
+				load_focus_tree = ISP_coup
+				mark_focus_tree_layout_dirty = yes
+				complete_national_focus = ISP_the_coup
+            	add_country_leader_role = {
+                	character = ISP_efraim_sneh
+               		promote_leader = yes
+                	country_leader = {
+                    	ideology = consoc
+                		expire = "2032.1.1.1"
+                	}
+            	}
+				set_country_flag = snehcab
+				activate_advisor = ISP_bennygantz_idea
+				activate_advisor = ISP_mordechai_bibi_idea
+				activate_advisor = ISP_avigdor_liberman_idea
+				activate_advisor = ISP_haim_katz_idea
+				set_politics = {
+					ruling_party = reformist_socialism
+				}
+			}
+		}
+	}
+}

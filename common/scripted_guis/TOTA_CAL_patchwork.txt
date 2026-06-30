@@ -1,0 +1,124 @@
+scripted_gui = {
+	TOTA_patchworker = {
+		context_type = player_context
+		window_name = "TOTA_patchworker"
+        parent_window_token = politics_tab
+
+		visible = {
+			tag = CAL
+			has_country_flag = CAL_patchworker_basic_edition #only california
+		}
+
+		triggers = {
+            CAL_patchworker_visible = {
+			    tag = CAL
+			    has_country_flag = CAL_patchworker_basic_edition #only california
+            } #failsafe
+            CAL_patchworker_map_sfbay_visible = {
+                tag = CAL
+                has_country_flag = CAL_sfbay
+            }
+            #CAL_patchworker_map_carmel_visible = {
+            #    tag = CAL
+            #    has_country_flag = CAL_carmel
+            #}
+            #CAL_patchworker_map_jefferson_visible = {
+            #    tag = CAL
+            #    has_country_flag = CAL_jefferson
+            #}
+            #CAL_patchworker_map_sdiego_visible = {
+            #    tag = CAL
+            #    has_country_flag = CAL_sdiego
+            #}
+            CAL_patchworker_map_la_visible = {
+                tag = CAL
+                has_country_flag = CAL_la
+            }
+            CAL_patchworker_map_tahoe_visible = {
+                tag = CAL
+                has_country_flag = CAL_map_tahoe #i made this one different because there might be some shit named CAL_tahoe elsewhere
+            }
+            #CAL_patchworker_map_sacr_visible = {
+            #    tag = CAL
+            #    has_country_flag = CAL_sacr
+            #}
+            #CAL_patchworker_map_sierra_visible = {
+            #    tag = CAL
+            #    has_country_flag = CAL_sierra
+            #}
+            #commented out ones dont require their own maps due to low patch count. lets avoid scope creep :)
+
+            ####################FRISCORP PATCHES####################
+            CAL_apple_cupertino_visible = {
+                tag = CAL
+                has_country_flag = CAL_sfbay
+            }
+            CAL_google_mtn_view_visible = {
+                tag = CAL
+                has_country_flag = CAL_sfbay
+            }
+            CAL_microsoftshell_los_gatos_visible = {
+                tag = CAL
+                has_country_flag = CAL_sfbay
+            }
+            CAL_hp_paloalto_visible = {
+                tag = CAL
+                has_country_flag = CAL_sfbay
+            }
+            ##########################TAHOE PATCHES####################
+            #TBD
+            ####################LOS ANGELES PATCHES####################
+            #TBD
+        }
+
+		properties = {
+		}
+
+		effects = {
+			TOTA_patchworker_info_click = {
+				if = {
+					limit = {
+						has_country_flag = TOTA_patchworker_info_open
+					}
+					clr_country_flag = TOTA_patchworker_info_open
+				}
+				else = {
+					set_country_flag = TOTA_patchworker_info_open
+				}				
+			}
+			TOTA_patchworker_close_click = {
+				if = {
+					limit = {
+						has_country_flag = patchworker_open
+					}
+					clr_country_flag = patchworker_open
+				}
+				else = {
+					set_country_flag = patchworker_open
+				}				
+			}
+            CAL_patchworker_map_tahoe_click = {
+                if = {
+					limit = {
+						has_country_flag = CAL_map_tahoe
+					}
+					clr_country_flag = CAL_map_tahoe
+				}
+				else = {
+					set_country_flag = CAL_map_tahoe
+				}
+            }
+            CAL_patchworker_map_sfbay_click = {
+                if = {
+					limit = {
+						has_country_flag = CAL_map_sfbay
+					}
+					clr_country_flag = CAL_map_sfbay
+				}
+				else = {
+					set_country_flag = CAL_map_sfbay
+				}
+            }
+		}
+	}
+}

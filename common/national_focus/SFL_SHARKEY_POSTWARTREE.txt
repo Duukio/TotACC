@@ -1,0 +1,720 @@
+focus_tree = {
+    id = SFL_SHARKEY_POSTWARTREE
+    country = {
+        base = 0
+        modifier = {
+            add = 998
+            tag = SFL
+            has_country_leader = {
+                name = "Jonathon Sharkey"
+                ruling_only = yes
+            }
+			has_war = no
+        }
+    }
+	focus = {
+		id = SFL_the_fields_of_camelot
+		icon = GFX_SFL_the_fields_of_camelot
+		cost = 5
+		x = 16
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			534 = {
+				add_manpower = -200
+			}
+			add_popularity = {
+				ideology = autocracy
+				popularity = -0.05
+			}
+			add_political_power = 50
+			add_stability = -0.1
+			if = {
+				limit = {
+					date < 2026.7.4
+				}
+				country_event = {
+					id = SFL.925
+					days = 1
+				}
+			}
+			else = {}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_fields_of_camelot"
+		}
+	}
+	focus = {
+		id = SFL_my_coronation
+		icon = GFX_SFL_my_coronation
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_trait = {
+			    ideology = autocracy
+			    trait = impaler
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_my_coronation"
+		}
+		relative_position_id = SFL_the_fields_of_camelot
+		prerequisite = { focus = SFL_the_fields_of_camelot }
+	}
+	focus = {
+		id = SFL_a_vampiric_new_deal
+		icon = GFX_SFL_a_vampiric_new_deal
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_very_scary_america
+			division_template = {
+				name = "Death Dealers"		# Infantry Division
+				#division_names_group = ENGL_INF_01
+
+				regiments = {
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+					militia = { x = 1 y = 0 }
+					militia = { x = 1 y = 1 }
+					militia = { x = 1 y = 2 }
+					militia = { x = 2 y = 0 }
+					militia = { x = 2 y = 1 }
+					militia = { x = 2 y = 2 }
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_a_vampiric_new_deal"
+		}
+		relative_position_id = SFL_my_coronation
+		prerequisite = { focus = SFL_my_coronation }
+	}
+	focus = {
+		id = SFL_will_of_the_source
+		icon = GFX_SFL_will_of_the_source
+		cost = 5
+		x = -6
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = regulated_speech
+            log = "[GetDateText]: [Root.GetName]: SFL_will_of_the_source"
+		}
+		relative_position_id = SFL_a_vampiric_new_deal
+		prerequisite = { focus = SFL_a_vampiric_new_deal }
+	}
+	focus = {
+		id = SFL_the_face_of_satan
+		icon = GFX_SFL_the_face_of_satan
+		cost = 5
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			568 = {
+				add_manpower = -2000
+			}
+			add_stability = 0.05
+			add_political_power = -50
+            log = "[GetDateText]: [Root.GetName]: SFL_the_face_of_satan"
+		}
+		relative_position_id = SFL_will_of_the_source
+		prerequisite = { focus = SFL_will_of_the_source }
+	}
+	focus = {
+		id = SFL_in_utero
+		icon = GFX_SFL_in_utero
+		cost = 5
+		x = -2
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_in_utero
+            log = "[GetDateText]: [Root.GetName]: SFL_in_utero"
+		}
+		relative_position_id = SFL_will_of_the_source
+		prerequisite = { focus = SFL_will_of_the_source }
+	}
+	focus = {
+		id = SFL_my_blindness_my_mouth
+		icon = GFX_SFL_my_blindness_my_mouth
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = autocracy
+				popularity = 0.1
+			}
+			add_command_power = -30
+			add_political_power = -75
+			add_stability = 0.1
+            log = "[GetDateText]: [Root.GetName]: SFL_my_blindness_my_mouth"
+		}
+		relative_position_id = SFL_will_of_the_source
+		prerequisite = { focus = SFL_will_of_the_source }
+	}
+	focus = {
+		id = SFL_vlad_your_lord
+		icon = GFX_SFL_vlad_your_lord
+		cost = 5
+		x = 2
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SFL_very_scary_america
+				add_idea = SFL_very_scary_america_1
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_vlad_your_lord"
+		}
+		relative_position_id = SFL_will_of_the_source
+		prerequisite = { focus = SFL_will_of_the_source }
+	}
+	focus = {
+		id = SFL_my_bloody_mess
+		icon = GFX_SFL_my_bloody_mess
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_manpower = -20000
+			add_political_power = 50
+			add_command_power = 50
+			add_popularity = {
+				ideology = autocracy
+				popularity = 0.1
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_my_bloody_mess"
+		}
+		relative_position_id = SFL_will_of_the_source
+		prerequisite = { focus = SFL_will_of_the_source }
+	}
+	focus = {
+		id = SFL_the_day_of_hades
+		icon = GFX_SFL_the_day_of_hades
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = SFL.921
+				days = 1
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_day_of_hades"
+		}
+		relative_position_id = SFL_a_vampiric_new_deal
+		prerequisite = { focus = SFL_a_vampiric_new_deal }
+	}
+	focus = {
+		id = SFL_the_rape_of_los_angeles
+		icon = GFX_SFL_the_rape_of_los_angeles
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = SFL.923
+				days = 1
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_rape_of_los_angeles"
+		}
+		relative_position_id = SFL_the_day_of_hades
+		prerequisite = { focus = SFL_the_day_of_hades }
+	}
+	focus = {
+		id = SFL_luciferian_industry
+		icon = GFX_SFL_luciferian_industry
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_satanic_unions
+			1042 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				create_unit = {
+					division = "name = \"Michigan Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"Michigan Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"Michigan Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"Michigan Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"Michigan Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"Michigan Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_luciferian_industry"
+		}
+		relative_position_id = SFL_the_rape_of_los_angeles
+		prerequisite = { focus = SFL_the_rape_of_los_angeles }
+	}
+	focus = {
+		id = SFL_my_horrors_shining
+		icon = GFX_SFL_my_horrors_shining
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			805 = {
+				create_unit = {
+					division = "name = \"Impaler's Own Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"Impaler's Own Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"Impaler's Own Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_my_horrors_shining"
+		}
+		relative_position_id = SFL_the_day_of_hades
+		prerequisite = { focus = SFL_the_day_of_hades }
+	}
+	focus = {
+		id = SFL_a_world_of_teeth
+		icon = GFX_SFL_a_world_of_teeth
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.1
+            log = "[GetDateText]: [Root.GetName]: SFL_a_world_of_teeth"
+		}
+		relative_position_id = SFL_the_day_of_hades
+		prerequisite = { focus = SFL_the_day_of_hades }
+	}
+	focus = {
+		id = SFL_the_consumer
+		icon = GFX_SFL_the_consumer
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = SFL.922
+				days = 1
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_consumer"
+		}
+		relative_position_id = SFL_my_horrors_shining
+		prerequisite = { focus = SFL_my_horrors_shining }
+	}
+	focus = {
+		id = SFL_i_shit_on_altars
+		icon = GFX_SFL_i_shit_on_altars
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			556 = {
+				add_manpower = -5000
+			}
+			every_owned_state = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 1
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_i_shit_on_altars"
+		}
+		relative_position_id = SFL_the_consumer
+		prerequisite = { focus = SFL_the_consumer }
+	}
+	focus = {
+		id = SFL_a_knock_on_my_door
+		icon = GFX_SFL_a_knock_on_my_door
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			780 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+				create_unit = {
+					division = "name = \"New York Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"New York Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"New York Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"New York Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"New York Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+				create_unit = {
+					division = "name = \"New York Death Dealers\" division_template = \"Death Dealers\" start_experience_factor = 0.8"
+					owner = SFL
+				}
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_a_knock_on_my_door"
+		}
+		relative_position_id = SFL_i_shit_on_altars
+		prerequisite = { focus = SFL_i_shit_on_altars }
+	}
+	focus = {
+		id = SFL_satan_satan_satan
+		icon = GFX_SFL_satan_satan_satan
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.2
+			add_manpower = 10000
+			add_ideas = total_state_purview
+            log = "[GetDateText]: [Root.GetName]: SFL_satan_satan_satan"
+		}
+		relative_position_id = SFL_a_world_of_teeth
+		prerequisite = { focus = SFL_a_world_of_teeth }
+	}
+	focus = {
+		id = SFL_i_am_the_sun
+		icon = GFX_SFL_i_am_the_sun
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = autocracy
+				popularity = 0.2
+			}
+			add_ideas = partial_economic_mobilisation
+            log = "[GetDateText]: [Root.GetName]: SFL_i_am_the_sun"
+		}
+		relative_position_id = SFL_satan_satan_satan
+		prerequisite = { focus = SFL_satan_satan_satan }
+	}
+	focus = {
+		id = SFL_the_black_goat_on_the_prarie
+		icon = GFX_SFL_the_black_goat_on_the_prarie
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			1158 = {
+				add_manpower = -3000
+			}
+			add_war_support = 0.03
+            log = "[GetDateText]: [Root.GetName]: SFL_the_black_goat_on_the_prarie"
+		}
+		relative_position_id = SFL_i_am_the_sun
+		prerequisite = { focus = SFL_i_am_the_sun }
+	}
+	focus = {
+		id = SFL_theres_nothing_solid_down_here
+		icon = GFX_SFL_theres_nothing_solid_down_here
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event = {
+				id = SFL.924
+				days = 1
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_theres_nothing_solid_down_here"
+		}
+		relative_position_id = SFL_luciferian_industry
+		prerequisite = { focus = SFL_a_knock_on_my_door }
+		prerequisite = { focus = SFL_the_black_goat_on_the_prarie }
+	}
+	focus = {
+		id = SFL_decrees_of_hecate
+		icon = GFX_SFL_decrees_of_hecate
+		cost = 5
+		x = 6
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SFL_decrees_of_hecate
+            log = "[GetDateText]: [Root.GetName]: SFL_decrees_of_hecate"
+		}
+		relative_position_id = SFL_a_vampiric_new_deal
+		prerequisite = { focus = SFL_a_vampiric_new_deal }
+	}
+	focus = {
+		id = SFL_the_robin_hood_act
+		icon = GFX_SFL_the_robin_hood_act
+		cost = 5
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_1
+					remove_idea = SFL_decrees_of_hecate
+				}
+			}
+			else_if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate_1
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_2
+					remove_idea = SFL_decrees_of_hecate_1
+				}
+			}
+			else_if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate_2
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_2
+					remove_idea = SFL_decrees_of_hecate_3
+				}
+			}
+			else = {}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_robin_hood_act"
+		}
+		relative_position_id = SFL_decrees_of_hecate
+		prerequisite = { focus = SFL_decrees_of_hecate }
+	}
+	focus = {
+		id = SFL_the_black_list_act
+		icon = GFX_SFL_the_black_list_act
+		cost = 5
+		x = -2
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_1
+					remove_idea = SFL_decrees_of_hecate
+				}
+			}
+			else_if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate_1
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_2
+					remove_idea = SFL_decrees_of_hecate_1
+				}
+			}
+			else_if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate_2
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_2
+					remove_idea = SFL_decrees_of_hecate_3
+				}
+			}
+			else = {}
+            log = "[GetDateText]: [Root.GetName]: SFL_the_black_list_act"
+		}
+		relative_position_id = SFL_decrees_of_hecate
+		prerequisite = { focus = SFL_decrees_of_hecate }
+	}
+	focus = {
+		id = SFL_russian_fats
+		icon = GFX_SFL_russian_fats
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = reformist_socialism
+				popularity = -0.99
+			}
+			add_popularity = {
+				ideology = hardline_socialism
+				popularity = -0.99
+			}
+			add_popularity = {
+				ideology = socdem
+				popularity = -0.99
+			}
+            log = "[GetDateText]: [Root.GetName]: SFL_russian_fats"
+		}
+		relative_position_id = SFL_decrees_of_hecate
+		prerequisite = { focus = SFL_decrees_of_hecate }
+	}
+	focus = {
+		id = SFL_feed_me_drink_for_me
+		icon = GFX_SFL_feed_me_drink_for_me
+		cost = 5
+		x = 2
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_1
+					remove_idea = SFL_decrees_of_hecate
+				}
+			}
+			else_if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate_1
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_2
+					remove_idea = SFL_decrees_of_hecate_1
+				}
+			}
+			else_if = {
+				limit = {
+					SFL = {
+						has_idea = SFL_decrees_of_hecate_2
+					}
+				}
+				swap_ideas = {
+					add_idea = SFL_decrees_of_hecate_2
+					remove_idea = SFL_decrees_of_hecate_3
+				}
+			}
+			else = {}
+            log = "[GetDateText]: [Root.GetName]: SFL_feed_me_drink_for_me"
+		}
+		relative_position_id = SFL_decrees_of_hecate
+		prerequisite = { focus = SFL_decrees_of_hecate }
+	}
+	focus = {
+		id = SFL_i_love_my_children
+		icon = GFX_SFL_i_love_my_children
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = disarmed_nation
+			add_political_power = 100
+			add_stability = 0.25
+			add_war_support = -0.1
+            log = "[GetDateText]: [Root.GetName]: SFL_i_love_my_children"
+		}
+		relative_position_id = SFL_decrees_of_hecate
+		prerequisite = { focus = SFL_decrees_of_hecate }
+	}
+}

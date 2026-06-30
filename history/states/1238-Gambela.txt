@@ -1,0 +1,30 @@
+state={
+	id=1238
+		name="STATE_1238"
+		buildings_max_level_factor = 1
+		state_category = city
+		
+		resources = {
+		}
+		history={
+				victory_points = {
+				7912 5 #Gambela
+			}
+			owner = GAB
+			buildings = {
+				school = 2
+				infrastructure = 3
+				arms_factory = 2
+				industrial_complex = 3
+			}
+			add_core_of = GAB
+	
+		}
+		provinces={
+			7912
+		}
+		manpower=2000000
+		buildings_max_level_factor=2.000
+		local_supplies=0.000
+	}
+	

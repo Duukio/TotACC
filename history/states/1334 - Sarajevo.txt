@@ -1,0 +1,28 @@
+state={
+id=1334
+	name="STATE_1334"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		owner = YUG
+		victory_points = { 11899 30 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 5
+			11899 = {
+			bunker = 4
+			}
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+	}
+	provinces={
+		11899
+	}
+	manpower=769592
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=1157
+	name="STATE_1157"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 3
+
+		}
+		victory_points = {
+			7814 5 
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		4610 4820 7814 10711 
+	}
+	manpower=100803
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

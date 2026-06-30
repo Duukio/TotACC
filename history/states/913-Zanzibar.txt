@@ -1,0 +1,29 @@
+
+state={
+	id=913
+	name="STATE_913"
+    buildings_max_level_factor = 1
+	provinces={
+		11951 
+	}
+	manpower=1303569
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=small_island
+	history={
+		owner = EAF
+		buildings = {
+			infrastructure = 4
+			school = 2
+			11951 = {
+				naval_base = 5
+
+			}
+		}
+		victory_points = {
+			11951 10
+		}
+		add_core_of = EAF
+	}
+}

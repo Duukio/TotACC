@@ -1,0 +1,155 @@
+focus_tree = {
+	id = BIA_defeat
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = BIA
+			has_country_flag = BIA_puppet
+		}
+	}
+	#Parades Where Once Were Tears
+	focus = {
+		id = BIA_parades_where_once_were_tears
+		icon = GFX_BIA_parades_once_were_tears
+		x = 3
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		available = {
+			is_puppet_of = NGA
+		}
+		completion_reward = {
+			#country_event = {
+			#id = BIA.6
+			#days = 0
+			#}
+		}
+	}
+
+	#The Great Teardown
+	focus = {
+		id = BIA_the_great_teardown
+		icon = GFX_BIA_the_great_teardown
+		x = 3
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = BIA_parades_where_once_were_tears  }
+		completion_reward = {
+			set_country_flag = BIA_decisions_teardown
+			custom_effect_tooltip = "Will enable decisions to end Biafra as a nation-state"
+		}
+	}
+
+	#Block Cowards From Fleeing
+	focus = {
+		id = BIA_block_cowards_from_fleeing
+		icon = GFX_BIA_block_cowards_from_fleeing
+		x = 3
+		y = 2
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = BIA_the_great_teardown  }
+		completion_reward = {
+			add_manpower = -50000
+			add_stability = 0.10
+			country_event = {
+			id = BIA.7
+			days = 25
+			}
+		}
+	}
+
+	#Send Reparations To Nigeria
+	focus = {
+		id = BIA_send_reparations_to_nigeria
+		icon = GFX_BIA_reparations_to_NGA
+		x = 2
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
+		prerequisite = { focus = BIA_block_cowards_from_fleeing  }
+		completion_reward = {
+			#add_ideas = BIA_reparations_nigeria
+		}
+	}
+
+	#Summary Executions
+	focus = {
+		id = BIA_summary_executions
+		icon = GFX_BIA_summary_executions
+		x = 4
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = BIA_block_cowards_from_fleeing  }
+		completion_reward = {
+		custom_effect_tooltip = "..."
+		}
+	}
+
+	#Our Work Done?
+	focus = {
+		id = BIA_ourworkdone
+		icon = GFX_BIA_our_work_done
+		x = 3
+		y = 4
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = BIA_send_reparations_to_nigeria  } prerequisite = { focus = BIA_summary_executions  }
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_war = yes
+				}
+			}
+		}
+		select_effect = {
+			if = {
+				limit = {
+					NGA = {
+						is_ai = no
+					}
+				}
+				#let's not fuck over the nigeria player :)
+			}
+			else = {
+				country_event = {
+				id = BIA.8
+				days = 12
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NGA = {
+						is_ai = no
+					}
+				}
+				#let's not fuck over the nigeria player :)
+			}
+			else = {
+				NGA = {
+					annex_country = {
+					    target = BIA
+					    transfer_troops = yes
+					}
+				}
+			}
+		}
+	}
+
+}

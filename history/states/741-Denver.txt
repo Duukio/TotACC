@@ -1,0 +1,33 @@
+
+state={
+	id=741
+	name="STATE_741"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 4
+
+		}
+		add_core_of = USA
+		victory_points = {
+			10588 5 
+		}
+		victory_points = {
+			1827 25 
+		}
+
+	}
+
+	provinces={
+		1827 7780 10588 12642 
+	}
+	manpower=770704
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=8.000
+}

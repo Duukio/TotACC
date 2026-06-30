@@ -1,0 +1,11 @@
+add_namespace = ATI
+country_event = {
+    id = ATI.11 # antifascist-front creation
+    title = ATI.11.t
+    desc = ATI.11.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = ATI.11.a
+	}
+}

@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+        LEB_PLO = {
+			picture = ISP_Back_in_Lebanon
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.5
+				consumer_goods_factor = 0.1
+                defence = 10
+
+			}
+		}
+    }
+}

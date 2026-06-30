@@ -1,0 +1,27 @@
+state={
+id=441
+	name="STATE_441"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		owner = MOR
+		victory_points = { 7069 25 }
+		victory_points = { 10023 20 }
+		victory_points = { 1194 30 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 10
+			dockyard = 6
+		}
+		add_core_of = MOR
+	}
+	provinces={
+		4084 7908 1102 4108 10107 4139 11943 7069 10023 8046 4933 1207 1079 10070 7100 12042 1152 7958 4154 7173 11987 7116 1111 4097 10013 1194 989 12100 7215 4199 12087 10113 13351
+	}
+	manpower=33848242
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

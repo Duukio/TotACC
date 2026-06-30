@@ -1,0 +1,682 @@
+add_namespace = SAF
+add_namespace = EFF
+add_namespace = LST
+add_namespace = LST_WIN
+add_namespace = SAF_WIN
+add_namespace = AWB
+
+country_event = {
+    id = SAF.999 # SACW
+    title = SAF.999.t
+    desc = SAF.999.desc
+    picture = GFX_report_event_SAF_cwevent
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.999.a
+	  hidden_effect = {
+	  SAFCW_begin = yes
+	  }
+	}	
+    option = {
+      name = SAF.999.b
+	  hidden_effect = {
+	  SAFCW_begin = yes
+	  }
+		EFF = {
+			change_tag_from = SAF
+		}
+	}	
+    option = {
+      name = SAF.999.c
+	  hidden_effect = {
+	  SAFCW_begin = yes
+	  }
+		AWB = {
+			change_tag_from = SAF
+		}
+	}	
+}
+country_event = {
+    id = SAF.1 # Gay Capitalism flavor
+    title = SAF.1.t
+    desc = SAF.1.desc
+    picture = GFX_report_event_saf_rainbow_capitalism
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.1.a
+	}
+}
+country_event = {
+    id = SAF.111 # Apartheid referendum
+    title = SAF.111.t
+    desc = SAF.111.desc
+    #picture = GFX_report_event_saf_rainbow_capitalism
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.111.a
+	  add_stability = 0.10
+	}
+    option = {
+      name = SAF.111.b
+	  add_political_power = 50
+	}
+}
+country_event = {
+    id = SAF.112 # Ruby Ridge but in South Africa ??? no way
+    title = SAF.112.t
+    desc = SAF.112.desc
+    #picture = GFX_report_event_saf_rainbow_capitalism
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.112.a
+	}
+}
+country_event = {
+    id = SAF.113 # langs
+    title = SAF.113.t
+    desc = SAF.113.desc
+    #picture = GFX_report_event_saf_rainbow_capitalism
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.113.a
+	  add_political_power = 50
+	  add_stability = -0.10
+	  add_war_support = -0.10
+	}
+    option = {
+      name = SAF.113.b
+	  add_political_power = -50
+	  add_stability = -0.05
+	  add_war_support = 0.10
+	}
+    option = {
+      name = SAF.113.c
+		add_political_power = -100
+		add_stability = 0.05
+		add_war_support = 0.15
+	}
+    option = {
+      name = SAF.113.d
+	  add_political_power = -150
+	  add_stability = 0.1
+	  add_war_support = 0.1
+	}
+}
+country_event = {
+    id = SAF.114 # Democracy?
+    title = SAF.114.t
+    desc = SAF.114.desc
+    #picture = GFX_report_event_saf_rainbow_capitalism
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.114.a
+	  add_popularity = {
+		ideology = liberalism
+		popularity = 0.05
+	  }
+	}
+}
+country_event = {
+    id = SAF.2 # Civil war flavor; prelude
+    title = SAF.2.t
+    desc = SAF.2.desc
+    picture = GFX_report_event_SAF_prelude
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.2.a
+	  country_event = {
+		id = SAF.999
+		days = 5
+	  }
+	}
+}
+country_event = {
+    id = SAF.4 # Ahegao emoji focus
+    title = SAF.4.t
+    desc = SAF.4.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.4.a
+	}
+}
+country_event = {
+    id = SAF.7 # ETB
+    title = SAF.7.t
+    desc = SAF.7.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.7.a
+		add_war_support = 0.07
+		add_stability = -0.03
+		set_country_flag = SAF_chose_blanche
+	}
+}
+country_event = {
+    id = EFF.1337 # pick a leader
+    title = EFF.1337.t
+    desc = EFF.1337.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = EFF.1337.a
+		create_country_leader = {
+			name = "Solly Afrika Mapaila"
+			desc = ""
+			picture = "gfx/leaders/EFF/Solly Afrika Mapaila.png"
+			expire = "2040.1.1"
+			ideology = sovmarsys
+			traits = {
+			}
+		}
+    complete_national_focus = EFF_black_white_and_red_all_over
+		set_cosmetic_tag = EFF_SACP
+	  #country_event = {
+		#id = EFF.1
+		#days = 1
+	  #}
+	}
+    option = {
+      name = EFF.1337.b
+	  set_cosmetic_tag = EFF_SOPA
+    complete_national_focus = EFF_a_bright_future_for_azania
+		create_country_leader = {
+			name = "Tiyani Lybon Mabasa"
+			desc = ""
+			picture = "gfx/leaders/EFF/Tiyani Lybon Mabasa.png"
+			expire = "2040.1.1"
+			ideology = algsoc
+			traits = {
+			}
+		}
+	  #country_event = {
+		#id = EFF.2
+		#days = 1
+	  #}
+	}
+    option = {
+      name = EFF.1337.c #pick more options
+	  country_event = {
+		id = EFF.1338
+		days = 1
+	  }
+	}
+}
+country_event = {
+    id = EFF.1338 # pick a leader
+    title = EFF.1338.t
+    desc = EFF.1338.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = EFF.1338.a
+	  set_cosmetic_tag = EFF_ANDILE
+    complete_national_focus = EFF_a_people_liberated
+		create_country_leader = {
+			name = "Andile Mngxitama"
+			desc = ""
+			picture = "gfx/leaders/EFF/Portrait_EFF_John_Andile_Mngxitama.png"
+			expire = "2040.1.1"
+			ideology = mzt
+			traits = {
+			}
+		}
+	  #country_event = {
+		#id = EFF.3
+		#days = 1
+	  #}
+	}
+    option = {
+      name = EFF.1338.b #anarchoids
+	  set_cosmetic_tag = EFF_ZAB
+	  set_politics = {
+		ruling_party = anarchism
+	  }
+    complete_national_focus = EFF_dismantling_the_pillars_of_oppression
+		create_country_leader = {
+			name = "Lekhetho Mtetwa"
+			desc = ""
+			picture = "gfx/leaders/EFF/Lekhetho Mtetwa.png"
+			expire = "2040.1.1"
+			ideology = collan
+			traits = {
+			}
+		}
+	  #country_event = {
+		#id = EFF.4
+		#days = 1
+	  #}
+	}
+}
+country_event = {
+    id = EFF.1 # SACP (Mainline) wins
+    title = EFF.1.t
+    desc = EFF.1.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = EFF.1.a
+	  custom_effect_tooltip ="Thanks for playing our content for the Black Redemption Front. No more content will occur after this event."
+	}
+}
+country_event = {
+    id = EFF.70 #malema pulls a funni
+    title = EFF.70.t
+    desc = EFF.70.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      ai_chance = {factor = 50 }
+      name = EFF.70.a
+      add_stability = 0.15
+      add_war_support = -0.05
+      add_manpower = -2000
+    }
+    option = {
+      name = EFF.70.b
+      ai_chance = {factor = 50 }
+        create_country_leader = {
+        	name = "Julius Malema"
+        	desc = ""
+        	picture = "gfx/leaders/EFF/Julius Malema.png"
+        	expire = "2040.1.1"
+        	ideology = ethnosupr
+        	traits = {
+        	}
+        }
+        set_country_flag = MALEMA_won
+      set_politics = { ruling_party = revolutionary_right }
+      add_stability = -0.15
+      add_war_support = 0.15
+      add_ideas = extensive_conscription
+	}
+}
+country_event = {
+    id = EFF.2 # SOPA (Chilean faction) wins
+    title = EFF.2.t
+    desc = EFF.2.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = EFF.2.a
+	  custom_effect_tooltip ="Thanks for playing our content for the Black Redemption Front. No more content will occur after this event."
+	}
+}
+country_event = {
+    id = EFF.3 # Andile wins
+    title = EFF.3.t
+    desc = EFF.3.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = EFF.3.a
+	  custom_effect_tooltip ="Thanks for playing our content for the Black Redemption Front. No more content will occur after this event."
+	}
+}
+country_event = {
+    id = EFF.4 # Zabalaza (anarchists) win
+    title = EFF.4.t
+    desc = EFF.4.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = EFF.4.a
+	  custom_effect_tooltip ="Thanks for playing our content for the Black Redemption Front. No more content will occur after this event."
+	}
+}
+country_event = {
+    id = EFF.5 # Malema (burgsus) wins
+    title = EFF.5.t
+    desc = EFF.5.desc
+    #picture = GFX_report_event_SAF_water
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = EFF.5.a
+	  custom_effect_tooltip ="Thanks for playing our content for the Black Redemption Front. No more content will occur after this event."
+	}
+}
+
+
+country_event = {
+    id = SAF.5 # rationing event
+    title = SAF.5.t
+    desc = SAF.5.desc
+   #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.5.a
+			add_war_support = -0.05
+			add_stability = -0.05
+			add_political_power = 25
+			custom_effect_tooltip = "SAF_DEBT_INCREASE_1_GDP_5"
+			hidden_effect ={
+				add_to_variable = { SAF.DEBT = 1 }
+				add_to_variable = { SAF.GDP = 5 }
+			}
+	}
+}
+country_event = {
+    id = SAF.6 # TM
+    title = SAF.6.t
+    desc = SAF.6.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.6.a
+		add_war_support = -0.04
+		add_stability = 0.07
+		set_country_flag = SAF_chose_manuel
+	}
+}
+country_event = {
+    id = SAF.115  # Elections 26
+    title = SAF.115.t
+    desc = SAF.115.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.115.a
+		complete_national_focus =  SAF_psa_victory
+	}
+	option = {
+		name = SAF.115.b
+		complete_national_focus = SAF_freedom_alliance_victory
+	}
+	option = {
+		name = SAF.115.c
+		complete_national_focus = SAF_no_cabinet_majority
+	}
+}
+country_event = {
+    id = SAF.10 # No Stone Unturned
+    title = SAF.10.t
+    desc = SAF.10.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.10.a
+		complete_national_focus = SAF_the_northern_cape_strategy
+		
+	}
+	option = { 
+	name = SAF.10.b
+		complete_national_focus = SAF_the_bloemfontein_strategy	
+	}
+}
+country_event = {
+    id = SAF.11 # Breeze em out
+    title = SAF.11.t
+    desc = SAF.11.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SAF.11.a
+	  EFF = {
+		add_ideas = SAF_blockade
+	  }
+	}
+}
+country_event = {
+    id = AWB.3 # haiii rustenburg ^w^
+    title = AWB.3.t
+    desc = AWB.3.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		ai_chance = { factor = 50 }
+      name = AWB.3.a #throw message away
+	}
+    option = {
+	ai_chance = { factor = 50 }
+      name = AWB.3.b #sure lol
+	  add_stability = -0.15
+	  set_country_flag = RSB_racist_uprising
+	}
+}
+country_event = {
+    id = AWB.5 # negotiations fell apart and RSB is still SAFs bitch
+    title = AWB.5.t
+    desc = AWB.5.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = AWB.5.a #fuck
+	}
+}
+country_event = {
+    id = AWB.6 #uprising failed
+    title = AWB.6.t
+    desc = AWB.6.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = AWB.6.a #fuck
+	}
+}
+country_event = {
+    id = AWB.99 #the gayz
+    title = AWB.99.t
+    desc = AWB.99.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = AWB.99.a # we love our boys
+    add_stability = 0.03
+    add_political_power = -50
+	}
+    option = {
+      name = AWB.99.b # jesus first :chudjak:
+      add_political_power = 30
+      add_stability = -0.01
+	}
+}
+
+
+#country_event = {
+#   id = LST.1 # 
+#    title = LST.1.t
+#    desc = LST.1.desc
+#    #picture = GFX_report_event_SAF_water
+#    is_triggered_only = yes
+#    fire_only_once = no
+#
+#    option = {
+#		name = LST.1.a
+#		random_list = {
+#			33 = {
+#				start_border_war = {
+#				    change_state_after_war = no
+#				    attacker = {
+#				        state = 476
+#				        num_provinces = 2
+#				        on_win = SAF_WIN.1
+#				        on_lose = SAF_WIN.2
+#				        on_cancel = SAF_WIN.69
+#				        modifier = 0.1
+#				        dig_in_factor = 0
+#				        terrain_factor = 0
+#				    }	
+#				    defender = {
+#				        state = 468
+#				        num_provinces = 4
+#				        on_win = LST_WIN.1
+#				        on_lose = LST_WIN.2
+#				        on_cancel = LST_WIN.69
+#				    }
+#				}
+#			}
+#			33 = {
+#				start_border_war = {
+#				    change_state_after_war = no
+#				    attacker = {
+#				        state = 928
+#				        num_provinces = 2
+#				        on_win = SAF_WIN.1
+#				        on_lose = SAF_WIN.2
+#				        on_cancel = SAF_WIN.69
+#				        modifier = 0.1
+#				        dig_in_factor = 0
+#				        terrain_factor = 0
+#				    }	
+#				    defender = {
+#				        state = 468
+#				        num_provinces = 4
+#				        on_win = LST_WIN.1
+#				        on_lose = LST_WIN.2
+#				        on_cancel = LST_WIN.69
+#				    }
+#				}
+#			}
+#			33 = {
+#				start_border_war = {
+#				    change_state_after_war = no
+#				    attacker = {
+#				        state = 465
+#				        num_provinces = 2
+#				        on_win = SAF_WIN.1
+#				        on_lose = SAF_WIN.2
+#				        on_cancel = SAF_WIN.69
+#				        modifier = 0.1
+#				        dig_in_factor = 0
+#				        terrain_factor = 0
+#				    }	
+#				    defender = {
+#				        state = 468
+#				        num_provinces = 4
+#				        on_win = LST_WIN.1
+#				        on_lose = LST_WIN.2
+#				        on_cancel = LST_WIN.69
+#				    }
+#				}
+#			}
+#		}
+#	}
+#}
+
+#country_event = {
+#	id = LST_WIN.1
+#	title = LST_WIN.T.1
+#	desc = LST_WIN.DESC.1
+#	is_triggered_only = yes
+#	fire_only_once = no
+#	option = {
+#		name = LST_WIN.1.a
+#		add_manpower = 100
+#	}
+#}
+#country_event = {
+#	id = LST_WIN.2
+#	title = LST_WIN.T.2
+#	desc = LST_WIN.DESC.2
+#	is_triggered_only = yes
+#	fire_only_once = no
+#	option = {
+#		name = LST_WIN.2.a
+#		add_manpower = -10000
+#	}
+#}
+#country_event = {
+#	id = LST_WIN.69
+#	title = LST_WIN.T.69
+#	desc = LST_WIN.DESC.69
+#	is_triggered_only = yes
+#	fire_only_once = no
+#	option = {
+#		name = LST_WIN.69.a
+#	}
+#}
+#country_event = {
+#	id = SAF_WIN.1
+#	title = SAF_WIN.T.1
+#	desc = SAF_WIN.DESC.1
+#	is_triggered_only = yes
+#	fire_only_once = no
+#	option = {
+#		name = SAF_WIN.1.a
+#		add_manpower = 100
+#	}
+#}
+#country_event = {
+#	id = SAF_WIN.2
+#	title = SAF_WIN.T.2
+#	desc = SAF_WIN.DESC.2
+#	is_triggered_only = yes
+#	fire_only_once = no
+#	option = {
+#		name = SAF_WIN.2.a
+#		add_manpower = -10000
+#	}
+#}
+#country_event = {
+#	id = SAF_WIN.69
+#	title = SAF_WIN.T.69
+#	desc = SAF_WIN.DESC.69
+#	is_triggered_only = yes
+#	fire_only_once = no
+#	option = {
+#		name = SAF_WIN.69.a
+#	}
+#}
+country_event = {
+	id = SAF_WIN.6969
+	title = SAF_WIN.T.6969
+	desc = SAF_WIN.DESC.6969
+	is_triggered_only = yes
+	fire_only_once = no
+	option = {
+		name = SAF_WIN.6969.a
+		load_focus_tree = SAF_postwar
+	}
+}

@@ -1,0 +1,24 @@
+state=
+{
+id=488
+	
+	name="STATE_488"
+	state_category = tiny_island
+	manpower=33042
+	history=
+	{
+		owner = ECU
+		buildings = {
+            school = 2
+			infrastructure = 1
+			5023 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ECU
+	}
+	provinces= { 5023 }
+
+	local_supplies=0.0 
+}
+

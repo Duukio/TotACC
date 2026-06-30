@@ -1,0 +1,23 @@
+
+state={
+	id=1070
+	name="STATE_1070"
+    buildings_max_level_factor = 1
+	provinces={
+		1116 1996 7455 10810 12730 
+	}
+	manpower=1382611
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=rural
+	history={
+		owner = PRC
+		add_core_of = TIB
+		buildings = {
+			school = 2
+			infrastructure = 2
+		}
+		add_core_of = PRC
+	}
+}

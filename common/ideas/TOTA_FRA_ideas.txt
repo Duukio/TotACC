@@ -1,0 +1,139 @@
+ideas = {
+	country = {
+			FRA_jupiterian_president = {
+			picture = FRA_jupiterian_president
+			allowed = {
+				tag = FRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_cost = -0.15
+			autocracy_drift = 0.03
+			technocracy_drift = 0.03
+			monthly_soctrends_drift_DE_E = 0.03
+			conscription_factor = 0.1
+			}
+		}
+		FRA_seychellois_intel = {
+			picture = PAK_empty
+			allowed = {
+				tag = PAK
+			}
+	
+			available = {
+	
+			}
+	
+			cancel = {
+	
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				encryption = 1
+				decryption = 1
+				army_org_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = SEY
+				cic_to_target_factor = 0.05
+				extra_trade_to_target_factor = 0.1
+			}
+		}
+			FRA_burden_beyond = {
+			picture = FRA_burden_beyond
+			allowed = {
+				tag = FRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			gdp_growth_modifier = -0.05
+			political_power_gain = -0.25
+			stability_factor = -0.15
+			war_support_factor = -0.15
+			}
+			targeted_modifier = {
+				tag = CAM
+				trade_cost_for_target_factor = 0.2	
+			}
+		}
+			FRA_bulwark_europe = {
+			picture = FRA_bulwark_europe
+			allowed = {
+				tag = FRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			defence = 0.10
+			gdp_growth_modifier = 0.14
+			trade_opinion_factor = 0.6
+			faction_trade_opinion_factor = 0.8
+			}
+		}
+			FRA_europeanist_geopol = {
+			picture = FRA_europeanist_geopol
+			allowed = {
+				tag = FRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			send_volunteer_size = 6
+			send_volunteers_tension = -0.2
+			intelligence_agency_defense = 0.25
+			intel_network_gain = 0.15
+			decryption_power = 1		
+			min_export = 0.2
+			}
+		}
+	}
+}

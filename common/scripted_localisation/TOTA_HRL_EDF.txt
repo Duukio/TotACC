@@ -1,0 +1,15 @@
+defined_text = {
+    name = ISP_EDF_dyn_loc
+    text = {
+        trigger = {
+            ISP = {
+                has_completed_focus = ISP_towards_a_true_peoples_army
+            }
+        }
+        localization_key = ISP_can_lib_force_key
+    }
+
+    text = {
+        localization_key = ISP_EDF_key
+    }
+}

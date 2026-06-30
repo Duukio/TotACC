@@ -1,0 +1,231 @@
+NGA_war_exhaustion_dec_cat = {
+    NGA_end_the_war = {
+        allowed = {
+            original_tag = NGA
+        }
+        activation = {
+            BIA = {
+                has_completed_focus = BIA_wearing_them_out
+                has_war_with = NGA
+            }
+        }
+        available = {
+           always = no
+        }
+        visible = {
+             original_tag = NGA
+            BIA = {
+                has_completed_focus = BIA_wearing_them_out
+                has_war_with = NGA
+            }
+        }
+        cancel_trigger = {
+            NGA = {
+                has_war = no
+            }            
+        }
+        days_mission_timeout = 30
+        timeout_effect = {
+            if = {
+                limit = {
+                    NGA = {
+                        controls_state = 967
+                    }
+                }
+            clr_global_flag = skip_default_capitulation
+            add_to_variable = { global.peace_popup_dirty = 1 }
+            set_global_flag = war_won
+            set_global_flag = show_peace_popup_alert
+                NGA = {
+                    save_global_event_target_as = winning_country
+                }
+                BIA = {
+                    save_global_event_target_as = losing_country
+                }
+                NGA = {
+                    transfer_state = 967
+                    annex_country = {
+                        target = BED
+                    }
+                    white_peace = BIA
+                    add_to_variable = { NGA.GDP = 125}
+                    puppet = BIA
+                }
+                BIA = {
+                    set_cosmetic_tag = BIA_NGA
+                    load_focus_tree = BIA_defeat
+                    set_politics = {
+                        ruling_party = autocracy
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    BIA = {
+                        controls_state = 967
+                    }
+                }
+                            clr_global_flag = skip_default_capitulation
+            add_to_variable = { global.peace_popup_dirty = 1 }
+            set_global_flag = war_won
+            set_global_flag = show_peace_popup_alert
+                BIA = {
+                    save_global_event_target_as = winning_country
+                }
+                NGA = {
+                    save_global_event_target_as = losing_country
+                }
+                NGA = {
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+					white_peace = BIA
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+                }
+                NGA = {
+					white_peace = BED
+                    complete_national_focus = NGA_im_just_glad_its_over
+                }
+                BIA = {
+                    transfer_state = 24
+                    white_peace = NGA
+                }
+                BIA = {
+                    complete_national_focus = BIA_our_military_proud
+                }                
+            }
+            else = {
+
+            }
+        }
+    }
+}
+
+NGA_cow_eugenicz = {
+    cow_eugenicz_step_I = {
+		cost = 50
+		fire_only_once = yes
+        days_remove = 120
+		complete_effect = {
+            custom_effect_tooltip = "Adds 100 million USD to GDP"
+            add_to_variable = { NGA.GDP = 0.1 }
+            add_manpower = -4000 #scientists and such being exempt from manpower
+            set_country_flag = I_step_done
+	    }
+        remove_effect = {
+            custom_effect_tooltip = "Adds 5 billion USD to debt"
+            add_to_variable = { NGA.DEBT = 5 }
+        }
+                 ai_will_do = {
+            base = 100
+        }
+    }
+    cow_eugenicz_step_II = {
+        available = {
+            NGA = {
+                has_country_flag = I_step_done
+            }
+        }
+		cost = 100
+		fire_only_once = yes
+        days_remove = 240
+		complete_effect = {
+            custom_effect_tooltip = "Adds 5 billion USD to GDP"
+            add_to_variable = { NGA.GDP = 5 }
+            add_manpower = -8000 #scientists and such being exempt from manpower
+            set_country_flag = II_step_done
+	    }
+        remove_effect = {
+            custom_effect_tooltip = "Adds 5 billion USD to debt"
+            add_to_variable = { NGA.DEBT = 5 }
+        }
+         ai_will_do = {
+            base = 100
+        }
+    }
+    cow_eugenicz_step_III = {
+        available = {
+            NGA = {
+                has_country_flag = II_step_done
+            }
+        }
+		cost = 150
+		fire_only_once = yes
+        days_remove = 360
+		complete_effect = {
+            custom_effect_tooltip = "Adds 10 billion USD to GDP"
+            add_to_variable = { NGA.GDP = 10 }
+            set_country_flag = III_step_done
+            add_manpower = -10000 #scientists and such being exempt from manpower
+	    }
+        remove_effect = {
+            custom_effect_tooltip = "Adds 5 billion USD to debt"
+            add_to_variable = { NGA.DEBT = 5 }
+        }
+         ai_will_do = {
+            base = 100
+        }
+    }
+    cow_eugenicz_step_final = {
+        available = {
+            NGA = {
+                has_country_flag = III_step_done
+            }
+        }
+		cost = 150
+		fire_only_once = yes
+        days_remove = 400
+		complete_effect = {
+            add_research_slot = 1
+            custom_effect_tooltip = "Adds 30 billion USD to GDP"
+            add_to_variable = { NGA.GDP = 30 }
+            add_manpower = -10000 #scientists and such being exempt from manpower
+	    }
+        remove_effect = {
+            custom_effect_tooltip = "Adds 5 billion USD to debt"
+            add_to_variable = { NGA.DEBT = 5 }
+        }
+         ai_will_do = {
+            base = 100
+        }
+    }
+}
+
+NGA_development_plan_dec_cat = {
+
+	NGA_development_plan_bloated_defense_1 = {
+        allowed = {
+			 always = no
+        }
+        #activation = {
+			
+
+        #}
+        available = {
+           always = no
+        }
+        visible = {
+             original_tag = NGA
+
+        }
+        cancel_trigger = {
+        
+        }
+
+        timeout_effect = {
+            
+        }
+    }
+}

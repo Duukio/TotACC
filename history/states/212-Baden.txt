@@ -1,0 +1,25 @@
+
+state={
+	id=212
+	name="STATE_212"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = SGF
+		buildings = {
+			school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = SGF
+
+	}
+
+	provinces={
+		3530 3679 3692 6542 6568 6581 6712 6934 11640 13126 
+	}
+	manpower=6000000
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

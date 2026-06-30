@@ -1,0 +1,10 @@
+spriteTypes = {	
+    frameAnimatedSpriteType = {
+		name = "GFX_portrait_ZZZ"
+		texturefile = "gfx/leaders/ZZZ/ZZZ.DDS"
+        noOfFrames = 40
+		animation_rate_fps = 20
+		looping = yes
+		play_on_show = yes
+	}
+} 

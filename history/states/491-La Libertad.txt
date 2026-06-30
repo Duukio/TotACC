@@ -1,0 +1,44 @@
+state={
+id=491
+	
+
+	name="STATE_491"
+
+	manpower = 2826781
+	resources={
+		oil=200 # was: 20
+	}
+	
+	state_category = city
+
+	history={
+		owner = COL
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 10
+			dockyard = 5
+			air_base = 4
+			12790 = {
+				naval_base = 5
+			}
+			8056 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = COL
+		victory_points = {
+			2023 10
+ 		}
+		victory_points = {
+			12790 20 
+		}
+
+	}
+
+	provinces={
+		1937 2023 2085 4969 8056 10494 10864 12703 12790 12845 12872 
+	}
+
+	local_supplies=0.0 
+}

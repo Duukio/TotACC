@@ -1,0 +1,32 @@
+
+state={
+	id=529
+	name="STATE_529"
+    buildings_max_level_factor = 1
+	resources={
+		oil=50.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 5
+			industrial_complex = 3
+
+		}
+		add_core_of = USA
+		victory_points = {
+			1595 20 
+		}
+
+	}
+
+	provinces={
+		1595 4531 7551 9796 9810 
+	}
+	manpower=3026485
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

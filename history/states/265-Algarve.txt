@@ -1,0 +1,31 @@
+state={
+id=265
+	name="STATE_265"
+    buildings_max_level_factor = 1
+	state_category=large_town
+	
+	resources={
+	tungsten = 10
+	}
+
+	history={
+		victory_points = {
+			6880 10
+		}		
+		owner = POR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
+		}
+		add_core_of = POR
+
+	}
+	provinces={
+		3790 6880 
+	}
+	manpower=500000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

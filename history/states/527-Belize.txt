@@ -1,0 +1,27 @@
+state={
+id=527
+	
+	name="STATE_527"
+
+	manpower = 419199
+	
+	state_category = city
+	history=
+	{
+		add_core_of = WIF
+		owner = WIF
+		victory_points = {
+			2077 5
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			2077 = {
+				naval_base = 2
+			}
+		}
+	}
+	provinces= { 2077 }
+
+	local_supplies=0.0 
+}

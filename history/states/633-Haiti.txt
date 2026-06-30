@@ -1,0 +1,37 @@
+state={
+id=633
+	
+	name="STATE_633"
+
+	manpower = 11439646
+	
+	state_category = town
+	
+	resources={
+		strategic_minerals=5 # was: 3
+	}
+	history=
+	{
+		owner = HAI
+		buildings = {
+            school = 2
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 3 
+			air_base = 1
+			4641 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = HAI
+		victory_points = {
+			4641 20
+		}
+
+	}
+	provinces={
+		1594 1635 4641
+	}
+
+	local_supplies=0.0 
+}

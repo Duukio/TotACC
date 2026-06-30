@@ -1,0 +1,108 @@
+on_actions = {
+    on_war = {
+        effect = {
+            if = {
+                limit = {
+                    tag = SOV
+                    SOV_sergey_kurginyan = { is_country_leader = yes }
+                }
+                set_country_leader_portrait = { 
+                    portrait = "gfx/leaders/SOV/kurgin1-glasses.png" 
+                }
+            }
+        }
+    }
+    
+    on_peace = {
+        effect = {
+            if = {
+                limit = {
+                    tag = SOV
+                    SOV_sergey_kurginyan = { is_country_leader = yes }
+                }
+                set_country_leader_portrait = { 
+                    portrait = "gfx/leaders/SOV/kurgin6.png" 
+                }
+            }
+        }
+    }
+
+    on_daily = {
+        effect = {
+            if = {
+                limit = {
+                    date = 2021.4.3
+                    tag = FIZ
+                    country_exists = NCD
+                    NOT = { has_war_with = NCD }
+                    NOT = { has_global_flag = ncd_fiz_war_started }
+                }
+                
+                set_global_flag = ncd_fiz_war_started
+                
+                declare_war_on = {
+                    target = NCD
+                    type = annex_everything
+                }
+                
+                hidden_effect = {
+                    random_list = {
+                        50 = {
+                            NCD = {
+                                add_ideas = hidden_attack_superiority
+                            }
+                        }
+                        50 = {
+                            FIZ = {
+                                add_ideas = hidden_attack_superiority
+                            }
+                        }
+                    }
+                }
+            }
+            
+            if = {
+                limit = {
+                    has_global_flag = {
+                        flag = ncd_fiz_war_ended
+                        days > 59
+                    }
+                    NOT = { has_global_flag = congo_adf_war_started }
+                    country_exists = ADF
+                    OR = {
+                        AND = {
+                            tag = NCD
+                            NOT = { country_exists = FIZ }
+                        }
+                        AND = {
+                            tag = FIZ
+                            NOT = { country_exists = NCD }
+                        }
+                    }
+                }
+                
+                set_global_flag = congo_adf_war_started
+                
+                declare_war_on = {
+                    target = ADF
+                    type = annex_everything
+                }
+                
+                hidden_effect = {
+                    random_list = {
+                        50 = {
+                            ROOT = {
+                                add_ideas = hidden_attack_superiority
+                            }
+                        }
+                        50 = {
+                            ADF = {
+                                add_ideas = hidden_attack_superiority
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

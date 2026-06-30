@@ -1,0 +1,32 @@
+
+state={
+	id=553
+	name="STATE_553"
+    buildings_max_level_factor = 1
+	resources={
+		tungsten=180.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = USA
+		victory_points = {
+			10651 1 
+		}
+
+	}
+
+	provinces={
+		1663 10651 
+	}
+	manpower=1546325
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,41 @@
+ideas = {
+    country = {
+        austerity = {
+            picture = austerity_generic_idea
+            modifier = {
+                gdp_growth_modifier = -0.5
+                weekly_debt_modifier = -0.01
+            }
+        }
+        defaulted_on_debt = {
+            picture = default_epic_fail_generic
+            modifier = {
+                political_power_cost = 0.50
+                gdp_growth_modifier = -0.8
+            }
+        }
+        mobilizing_economy = {
+            picture = mobilizing_economy
+            modifier = {
+                gdp_growth_modifier = 0.03
+                political_power_cost = 0.15
+                war_support_factor = 0.07
+                conscription_factor = -0.5
+                production_factory_efficiency_gain_factor = 0.2
+                consumer_goods_factor = 0.1
+            }
+        }
+        mobilizing_pop = {
+            picture = mobilizing_pop
+            modifier = {
+                gdp_growth_modifier = -0.07
+                political_power_cost = 0.05
+                war_support_factor = -0.15
+                stability_factor = -0.15
+                conscription_factor = 0.66
+                production_factory_efficiency_gain_factor = -0.1
+                consumer_goods_factor = -0.15
+            }
+        }
+    }
+}

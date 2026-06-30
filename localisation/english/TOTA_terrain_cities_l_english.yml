@@ -1,0 +1,5 @@
+﻿l_english:
+ terrain_shimizu: "Shimizu Mega-City, [1239.Owner.GetNameWithFlag]"
+ terrain_tokyo: "City of Tokyo, [397.Owner.GetNameWithFlag]"
+ terrain_washdc: "Washington, D.C., [534.Owner.GetNameWithFlag]"
+ terrain_bodeleville: "Bodéléville, [965.Owner.GetNameWithFlag]"

@@ -1,0 +1,28 @@
+
+state={
+	id=738
+	name="STATE_738"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = USA
+		victory_points = {
+			1767 5 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1767 7760 10587 
+	}
+	manpower=32007
+	buildings_max_level_factor=2.000
+	state_category=rural
+	local_supplies=0.000
+}

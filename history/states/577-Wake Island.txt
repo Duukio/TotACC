@@ -1,0 +1,29 @@
+state={
+id=577
+	
+	name="STATE_577"
+
+	manpower=150
+	state_category = tiny_island
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+            school = 2
+			infrastructure = 2
+			13047 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13047 5
+		}
+
+	}
+	provinces={
+		13047 
+	}
+
+	local_supplies=0.0 
+}

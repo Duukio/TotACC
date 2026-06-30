@@ -1,0 +1,280 @@
+
+
+shared_focus = {
+	id = NGA_a_nomadic_nigeria
+	icon = GFX_NGA_a_nomadic_nigeria
+	cost = 6
+	x = 8
+	y = 0
+	completion_reward = {
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_nomadic_nigeria"
+	}
+}
+
+shared_focus = {
+	id = NGA_bylaws_and_belief_systems
+	icon = GFX_NGA_bylaws_and_belief_systems
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_honor_codes
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_bylaws_and_belief_systems"
+	}
+	relative_position_id = NGA_a_nomadic_nigeria
+	prerequisite = { focus = NGA_a_nomadic_nigeria }
+}
+
+shared_focus = {
+	id = NGA_we_want_fulanization
+	icon = GFX_NGA_we_want_fulanization
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_fulanization
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_we_want_fulanization"
+	}
+	relative_position_id = NGA_a_nomadic_nigeria
+	prerequisite = { focus = NGA_a_nomadic_nigeria }
+}
+
+shared_focus = {
+	id = NGA_radical_izlam
+	icon = GFX_NGA_radical_izlam
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_war_support = 0.2
+		add_ideas = restricted_speech
+		add_ideas = war_economy
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_radical_izlam"
+	}
+	relative_position_id = NGA_we_want_fulanization
+	prerequisite = { focus = NGA_we_want_fulanization }
+}
+
+shared_focus = {
+	id = NGA_smart_sharia
+	icon = GFX_NGA_smart_sharia
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		add_political_power = -150
+		add_ideas = sixtyone_to_eighty
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_smart_sharia"
+	}
+	relative_position_id = NGA_bylaws_and_belief_systems
+	prerequisite = { focus = NGA_bylaws_and_belief_systems }
+}
+
+shared_focus = {
+	id = NGA_emirs_of_the_emerging_economy
+	icon = GFX_NGA_emirs_of_the_emerging_economy
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { NGA.GDP = 100 }
+		custom_effect_tooltip = "Adds 100 billion USD to GDP"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_emirs_of_the_emerging_economy"
+	}
+	relative_position_id = NGA_smart_sharia
+	prerequisite = { focus = NGA_smart_sharia }
+}
+
+shared_focus = {
+	id = NGA_rise_of_the_corporate_caliphate
+	icon = GFX_NGA_rise_of_the_corporate_caliphate
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NGA_honor_codes
+			add_idea = NGA_corporate_honor
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_rise_of_the_corporate_caliphate"
+	}
+	relative_position_id = NGA_emirs_of_the_emerging_economy
+	prerequisite = { focus = NGA_emirs_of_the_emerging_economy }
+}
+
+shared_focus = {
+	id = NGA_northern_values_western_tech
+	icon = GFX_NGA_northern_values_western_tech
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = "Changes your Social Trends values."
+		hidden_effect = {
+			set_variable = { NGA.SOCTRENDS_DC = 20 }
+			set_variable = { NGA.SOCTRENDS_EE = 80 }
+			set_variable = { NGA.SOCTRENDS_TP = 5 }
+			set_variable = { NGA.SOCTRENDS_EA = 15 }			
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_northern_values_western_tech"
+	}
+	relative_position_id = NGA_radical_izlam
+	prerequisite = { focus = NGA_radical_izlam }
+}
+
+shared_focus = {
+	id = NGA_abuja_dream_tone
+	icon = GFX_NGA_abuja_dream_tone
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.2011
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_abuja_dream_tone"
+	}
+	relative_position_id = NGA_northern_values_western_tech
+	prerequisite = { focus = NGA_northern_values_western_tech }
+}
+
+shared_focus = {
+	id = NGA_prioritize_pastoralism
+	icon = GFX_NGA_prioritize_pastoralism
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		add_ideas = anarchist_capitalism #hell yeah brother!
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_prioritize_pastoralism"
+	}
+	relative_position_id = NGA_a_nomadic_nigeria
+	prerequisite = { focus = NGA_a_nomadic_nigeria }
+}
+
+shared_focus = {
+	id = NGA_crispr_cow_commerce
+	icon = GFX_NGA_crispr_cow_commerce
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		unlock_decision_category_tooltip = NGA_cow_eugenicz
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_crispr_cow_commerce"
+	}
+	relative_position_id = NGA_prioritize_pastoralism
+	prerequisite = { focus = NGA_prioritize_pastoralism }
+}
+
+shared_focus = {
+	id = NGA_goat_silk_securities
+	icon = GFX_NGA_goat_silk_securities
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_stock_markets
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_goat_silk_securities"
+	}
+	relative_position_id = NGA_crispr_cow_commerce
+	prerequisite = { focus = NGA_crispr_cow_commerce }
+}
+
+shared_focus = {
+	id = NGA_from_the_field_to_foreigners
+	icon = GFX_NGA_from_the_field_to_foreigners
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = free_trade
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_from_the_field_to_foreigners"
+	}
+	relative_position_id = NGA_goat_silk_securities
+	prerequisite = { focus = NGA_goat_silk_securities }
+}
+
+shared_focus = {
+	id = NGA_converions
+	icon = GFX_NGA_converions
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_islamization
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_converions"
+	}
+	relative_position_id = NGA_a_nomadic_nigeria
+	prerequisite = { focus = NGA_a_nomadic_nigeria }
+}
+
+shared_focus = {
+	id = NGA_a_waqf_from_the_west
+	icon = GFX_NGA_a_waqf_from_the_west
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_waqf_from_the_west"
+	}
+	relative_position_id = NGA_converions
+	prerequisite = { focus = NGA_converions }
+}
+
+shared_focus = {
+	id = NGA_anticolonial_rhetoric
+	icon = GFX_NGA_anticolonial_rhetoric
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_anticolonial_rhetoric"
+	}
+	relative_position_id = NGA_a_waqf_from_the_west
+	prerequisite = { focus = NGA_a_waqf_from_the_west }
+}
+
+shared_focus = {
+	id = NGA_the_israelites_demise
+	icon = GFX_NGA_the_israelites_demise
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_jizyah
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_israelites_demise"
+	}
+	relative_position_id = NGA_anticolonial_rhetoric
+	prerequisite = { focus = NGA_anticolonial_rhetoric }
+}
+
+shared_focus = {
+	id = NGA_the_traditions_of_tomorrow
+	icon = GFX_NGA_the_traditions_of_tomorrow
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		custom_effect_tooltip = "Unifies various national spirits with +15% stability on top."
+		hidden_effect = {
+			remove_ideas = NGA_jizyah
+			remove_ideas = NGA_islamization
+			remove_ideas = NGA_fulanization
+			remove_ideas = NGA_corporate_honor
+			add_ideas = NGA_fulani_boy_summer #Z
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_traditions_of_tomorrow"
+	}
+	relative_position_id = NGA_from_the_field_to_foreigners
+	prerequisite = { focus = NGA_from_the_field_to_foreigners }
+	prerequisite = { focus = NGA_the_israelites_demise }
+	prerequisite = { focus = NGA_rise_of_the_corporate_caliphate }
+	prerequisite = { focus = NGA_abuja_dream_tone }
+}

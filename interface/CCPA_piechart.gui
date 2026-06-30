@@ -1,0 +1,1027 @@
+# Scripted GUI Pie Chart example by Yard1
+
+guiTypes = {
+	containerWindowType = {
+		name = "CCPA_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height = 500 }
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_CCPA_bg"
+		}
+		containerWindowType = {
+			name = "CCPA_map_container"
+			position = { x= -180 y = -180 }
+			clipping = no
+			Orientation = center
+			size = { width = 360 height = 200 }
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_CCPA_MAP"
+			}
+			instantTextboxType = {
+				name = "CCPA_name"
+				position = { x = -60 y = -70 }
+				textureFile = ""
+				font = "sf_30header"
+				borderSize = {x = 0 y = 0}
+				text = "CCPA_TITLE_loc"
+				maxWidth = 500
+				maxHeight = 100
+				format = center	
+			}	
+			iconType = {
+				name = "pin_miskito"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 119 y = 120 }
+				scale = 0.75
+				pdx_tooltip = "MISKITO_TT"
+				pdx_tooltip_delayed = "MISKITO_TT_DESC"
+			}
+			iconType = {
+				name = "pin_belize"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 75 y = 89 }
+				scale = 0.5
+				pdx_tooltip = "MISKITO_TT"
+				pdx_tooltip_delayed = "MISKITO_TT_DESC"
+			}
+			iconType = {
+				name = "pin_san_andres"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 155 y = 103 }
+				scale = 0.5
+				pdx_tooltip = "SAN_ANDRES_TT"
+				pdx_tooltip_delayed = "SAN_ANDRES_TT_DESC"
+			}
+			iconType = {
+				name = "pin_jamaica"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 173 y = 61 }
+				scale = 0.75
+				pdx_tooltip = "JAMAICA_TT"
+				pdx_tooltip_delayed = "JAMAICA_TT_DESC"
+			}
+			iconType = {
+				name = "pin_bay_islands"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 104 y = 94 }
+				scale = 0.5
+				pdx_tooltip = "BAY_ISLANDS_TT"
+				pdx_tooltip_delayed = "BAY_ISLANDS_TT_DESC"
+			}
+			iconType = {
+				name = "pin_limon"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 131 y = 149 }
+				scale = 0.5
+				pdx_tooltip = "LIMON_TT"
+				pdx_tooltip_delayed = "LIMON_TT_DESC"
+			}
+			iconType = {
+				name = "pin_bocas_del_toro"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 144 y = 166 }
+				scale = 0.5
+				pdx_tooltip = "BOCAS_DEL_TORO_TT"
+				pdx_tooltip_delayed = "BOCAS_DEL_TORO_TT_DESC"
+			}
+			iconType = {
+				name = "pin_guyana"
+				quadTextureSprite = "GFX_pin"
+				position = { x = 330 y = 170 }
+				scale = 0.5
+				pdx_tooltip = "GUYANA_TT"
+				pdx_tooltip_delayed = "GUYANA_TT_DESC"
+			}
+		}
+		containerWindowType = {
+			name = "CCPApie_container"
+			position = { x= -150 y = 130 }
+			clipping = no
+			Orientation = center
+			origo = center
+			scale = 0.14 # scale = 1 = 1024px x 1024px
+			iconType = {
+				name = "CCPApie0"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0
+			}
+
+			iconType = {
+				name = "CCPApie1"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.0628318531
+			}
+
+
+			iconType = {
+				name = "CCPApie2"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.1256637061
+			}
+
+
+			iconType = {
+				name = "CCPApie3"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.1884955592
+			}
+
+
+			iconType = {
+				name = "CCPApie4"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.2513274123
+			}
+
+
+			iconType = {
+				name = "CCPApie5"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.3141592654
+			}
+
+
+			iconType = {
+				name = "CCPApie6"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.3769911184
+			}
+
+
+			iconType = {
+				name = "CCPApie7"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.4398229715
+			}
+
+
+			iconType = {
+				name = "CCPApie8"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.5026548246
+			}
+
+
+			iconType = {
+				name = "CCPApie9"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.5654866776
+			}
+
+
+			iconType = {
+				name = "CCPApie10"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.6283185307
+			}
+
+
+			iconType = {
+				name = "CCPApie11"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.6911503838
+			}
+
+
+			iconType = {
+				name = "CCPApie12"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.7539822369
+			}
+
+
+			iconType = {
+				name = "CCPApie13"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.8168140899
+			}
+
+
+			iconType = {
+				name = "CCPApie14"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.8796459430
+			}
+
+
+			iconType = {
+				name = "CCPApie15"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 0.9424777961
+			}
+
+
+			iconType = {
+				name = "CCPApie16"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.0053096491
+			}
+
+
+			iconType = {
+				name = "CCPApie17"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.0681415022
+			}
+
+
+			iconType = {
+				name = "CCPApie18"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.1309733553
+			}
+
+
+			iconType = {
+				name = "CCPApie19"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.1938052084
+			}
+
+
+			iconType = {
+				name = "CCPApie20"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.2566370614
+			}
+
+
+			iconType = {
+				name = "CCPApie21"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.3194689145
+			}
+
+
+			iconType = {
+				name = "CCPApie22"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.3823007676
+			}
+
+
+			iconType = {
+				name = "CCPApie23"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.4451326207
+			}
+
+
+			iconType = {
+				name = "CCPApie24"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.5079644737
+			}
+
+
+			iconType = {
+				name = "CCPApie25"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.5707963268
+			}
+
+
+			iconType = {
+				name = "CCPApie26"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.6336281799
+			}
+
+
+			iconType = {
+				name = "CCPApie27"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.6964600329
+			}
+
+
+			iconType = {
+				name = "CCPApie28"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.7592918860
+			}
+
+
+			iconType = {
+				name = "CCPApie29"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.8221237391
+			}
+
+
+			iconType = {
+				name = "CCPApie30"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.8849555922
+			}
+
+
+			iconType = {
+				name = "CCPApie31"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 1.9477874452
+			}
+
+
+			iconType = {
+				name = "CCPApie32"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.0106192983
+			}
+
+
+			iconType = {
+				name = "CCPApie33"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.0734511514
+			}
+
+
+			iconType = {
+				name = "CCPApie34"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.1362830044
+			}
+
+
+			iconType = {
+				name = "CCPApie35"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.1991148575
+			}
+
+
+			iconType = {
+				name = "CCPApie36"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.2619467106
+			}
+
+
+			iconType = {
+				name = "CCPApie37"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.3247785637
+			}
+
+
+			iconType = {
+				name = "CCPApie38"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.3876104167
+			}
+
+
+			iconType = {
+				name = "CCPApie39"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.4504422698
+			}
+
+
+			iconType = {
+				name = "CCPApie40"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.5132741229
+			}
+
+
+			iconType = {
+				name = "CCPApie41"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.5761059759
+			}
+
+
+			iconType = {
+				name = "CCPApie42"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.6389378290
+			}
+
+
+			iconType = {
+				name = "CCPApie43"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.7017696821
+			}
+
+
+			iconType = {
+				name = "CCPApie44"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.7646015352
+			}
+
+
+			iconType = {
+				name = "CCPApie45"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.8274333882
+			}
+
+
+			iconType = {
+				name = "CCPApie46"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.8902652413
+			}
+
+
+			iconType = {
+				name = "CCPApie47"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 2.9530970944
+			}
+
+
+			iconType = {
+				name = "CCPApie48"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.0159289474
+			}
+
+
+			iconType = {
+				name = "CCPApie49"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.0787608005
+			}
+
+
+			iconType = {
+				name = "CCPApie50"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.1415926536
+			}
+
+
+			iconType = {
+				name = "CCPApie51"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.2044245067
+			}
+
+
+			iconType = {
+				name = "CCPApie52"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.2672563597
+			}
+
+
+			iconType = {
+				name = "CCPApie53"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.3300882128
+			}
+
+
+			iconType = {
+				name = "CCPApie54"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.3929200659
+			}
+
+
+			iconType = {
+				name = "CCPApie55"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.4557519189
+			}
+
+
+			iconType = {
+				name = "CCPApie56"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.5185837720
+			}
+
+
+			iconType = {
+				name = "CCPApie57"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.5814156251
+			}
+
+
+			iconType = {
+				name = "CCPApie58"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.6442474782
+			}
+
+
+			iconType = {
+				name = "CCPApie59"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.7070793312
+			}
+
+
+			iconType = {
+				name = "CCPApie60"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.7699111843
+			}
+
+
+			iconType = {
+				name = "CCPApie61"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.8327430374
+			}
+
+
+			iconType = {
+				name = "CCPApie62"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.8955748905
+			}
+
+
+			iconType = {
+				name = "CCPApie63"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 3.9584067435
+			}
+
+
+			iconType = {
+				name = "CCPApie64"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.0212385966
+			}
+
+
+			iconType = {
+				name = "CCPApie65"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.0840704497
+			}
+
+
+			iconType = {
+				name = "CCPApie66"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.1469023027
+			}
+
+
+			iconType = {
+				name = "CCPApie67"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.2097341558
+			}
+
+
+			iconType = {
+				name = "CCPApie68"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.2725660089
+			}
+
+
+			iconType = {
+				name = "CCPApie69"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.3353978620
+			}
+
+
+			iconType = {
+				name = "CCPApie70"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.3982297150
+			}
+
+
+			iconType = {
+				name = "CCPApie71"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.4610615681
+			}
+
+
+			iconType = {
+				name = "CCPApie72"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.5238934212
+			}
+
+
+			iconType = {
+				name = "CCPApie73"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.5867252742
+			}
+
+
+			iconType = {
+				name = "CCPApie74"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.6495571273
+			}
+
+
+			iconType = {
+				name = "CCPApie75"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.7123889804
+			}
+
+
+			iconType = {
+				name = "CCPApie76"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.7752208335
+			}
+
+
+			iconType = {
+				name = "CCPApie77"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.8380526865
+			}
+
+
+			iconType = {
+				name = "CCPApie78"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.9008845396
+			}
+
+
+			iconType = {
+				name = "CCPApie79"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 4.9637163927
+			}
+
+
+			iconType = {
+				name = "CCPApie80"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.0265482457
+			}
+
+
+			iconType = {
+				name = "CCPApie81"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.0893800988
+			}
+
+
+			iconType = {
+				name = "CCPApie82"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.1522119519
+			}
+
+
+			iconType = {
+				name = "CCPApie83"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.2150438050
+			}
+
+
+			iconType = {
+				name = "CCPApie84"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.2778756580
+			}
+
+
+			iconType = {
+				name = "CCPApie85"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.3407075111
+			}
+
+
+			iconType = {
+				name = "CCPApie86"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.4035393642
+			}
+
+
+			iconType = {
+				name = "CCPApie87"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.4663712172
+			}
+
+
+			iconType = {
+				name = "CCPApie88"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.5292030703
+			}
+
+
+			iconType = {
+				name = "CCPApie89"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.5920349234
+			}
+
+
+			iconType = {
+				name = "CCPApie90"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.6548667765
+			}
+
+
+			iconType = {
+				name = "CCPApie91"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.7176986295
+			}
+
+
+			iconType = {
+				name = "CCPApie92"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.7805304826
+			}
+
+
+			iconType = {
+				name = "CCPApie93"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.8433623357
+			}
+
+
+			iconType = {
+				name = "CCPApie94"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.9061941887
+			}
+
+
+			iconType = {
+				name = "CCPApie95"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 5.9690260418
+			}
+
+
+			iconType = {
+				name = "CCPApie96"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.0318578949
+			}
+
+
+			iconType = {
+				name = "CCPApie97"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.0946897480
+			}
+
+
+			iconType = {
+				name = "CCPApie98"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.1575216010
+			}
+
+
+			iconType = {
+				name = "CCPApie99"
+				quadTextureSprite = "GFX_pie_chart_segment"
+				centerPosition = yes
+				alwaystransparent = yes
+				rotation = 6.2203534541
+			}	
+			iconType ={
+				name ="pol_view_bg"
+				spriteType = "GFX_big_overlay"
+				position = { x= -560 y = -560 }
+				scale = 1
+			}
+		}
+		containerWindowType = {
+			name = "extraneous_info_and_graphics"
+			position = { x = -50 y = -40 }
+			Orientation = center
+			size = { width = 500 height = 500 }
+			instantTextboxType = {
+				name = "CCPA_values"
+				position = { x = 0 y = 70 }
+				textureFile = ""
+				font = "sf_16mbs"
+				borderSize = {x = 0 y = 0}
+				text = "ccpa_piechart_values"
+				maxWidth = 300
+				maxHeight = 200
+				format = center	
+			}
+		}
+	}
+}

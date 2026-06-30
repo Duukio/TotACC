@@ -1,0 +1,106 @@
+leader_traits = {
+	USA_iron_lady_america = {
+		random = no
+		political_power_gain = 0.05
+		command_power_gain = 0.05
+		autocracy_drift = 0.02
+		war_support_factor = -0.07
+		offence = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	il_duce_alaska = {
+		random = no
+		revolutionary_right_drift = 0.01
+		command_power_gain = 0.10
+		political_power_gain = 0.10
+		offence = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	slayer_of_communists = {
+		random = no
+		dissident_right_drift = 0.04
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		command_power_gain = 0.10
+		resistance_activity = -0.1
+		weekly_manpower = -10
+		political_power_gain = 0.10
+		offence = 0.015
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	impaler = {
+		random = no
+		autocracy_drift = 0.01
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		resistance_activity = 0.05
+		weekly_manpower = -25
+		political_power_gain = -0.25
+		offence = 0.015
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	TRP_brotherly_leader = {
+		random = no
+		stability_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	lion_of_sidon = {
+		random = no
+		war_support_factor = 0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	unpopular_compromise = {
+		random = no
+		stability_factor = -0.15
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	FRA_JVPITER_I_KNEEL = {
+		random = no
+		stability_factor = 0.10
+		political_power_gain = 0.07
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	BHA_netaji = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = 0.05
+		war_support_factor = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	HEL_hybrid_playboy = {
+		random = no
+		political_power_gain = -0.1
+		command_power_gain = 0.1
+		revolutionary_right_drift = 0.02
+		revolutionary_right_acceptance = 10
+		war_support_factor = 0.05
+		consumer_goods_factor = 0.05
+		research_speed_factor = 0.035
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	yoda_of_polish_socialism = {
+		political_power_factor = 0.10
+		stability_factor = 0.05
+	}
+	SOV_failed_nationalist = {}	
+}

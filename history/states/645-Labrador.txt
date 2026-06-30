@@ -1,0 +1,32 @@
+
+state={
+	id=645
+	name="STATE_645"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = CAN
+		victory_points = {
+			12503 2 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 1
+			12503 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CAN
+
+	}
+
+	provinces={
+		1426 1785 4720 4787 12503 13180 
+	}
+	manpower=27197
+	buildings_max_level_factor=2.000
+	state_category=wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,7 @@
+ISP_samson = {
+	visible = {
+        has_war = yes
+        
+	}
+	priority = 4
+}

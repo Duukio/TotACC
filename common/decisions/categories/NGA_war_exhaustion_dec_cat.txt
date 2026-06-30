@@ -1,0 +1,9 @@
+NGA_war_exhaustion_dec_cat  = {
+     icon = generic_foreign_policy
+     visible = { 
+        original_tag = NGA
+        BIA = {
+            has_completed_focus = BIA_wearing_them_out
+        }
+    }
+}

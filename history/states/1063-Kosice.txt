@@ -1,0 +1,22 @@
+
+state={
+	id=1063
+	name="STATE_1063"
+    buildings_max_level_factor = 1
+	provinces={
+		3565 6573 9537 
+	}
+	manpower=300000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = CZE
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		add_core_of = CZE
+	}
+}

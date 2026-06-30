@@ -1,0 +1,356 @@
+
+shared_focus = {
+	id = EFF_africas_sons_redeemed
+	icon = GFX_EFF_africas_sons_redeemed
+	cost = 5
+	x = 7
+	y = 0
+	completion_reward = {
+        add_stability = 0.15
+        add_ideas = low_economic_mobilisation
+        add_ideas = volunteer_only
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_africas_sons_redeemed"
+	}
+}
+
+shared_focus = {
+	id = EFF_consolidating_our_control
+	icon = GFX_EFF_consolidating_our_control
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+        add_timed_idea = {
+            idea = EFF_consolidation
+            days = 365
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_consolidating_our_control"
+	}
+	relative_position_id = EFF_africas_sons_redeemed
+	prerequisite = { focus = EFF_africas_sons_redeemed }
+}
+
+shared_focus = {
+	id = EFF_punishing_those_responsible
+	icon = GFX_EFF_punishing_those_responsible
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+        add_manpower = -20000
+        add_war_support = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_consolidating_our_control"
+	}
+	relative_position_id = EFF_africas_sons_redeemed
+	prerequisite = { focus = EFF_africas_sons_redeemed }
+}
+
+shared_focus = {
+	id = EFF_calling_the_first_congress
+	icon = GFX_EFF_calling_the_first_congress
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+        country_event = {
+            id = EFF.1337
+            days = 10
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_calling_the_first_congress"
+	}
+	relative_position_id = EFF_consolidating_our_control
+	prerequisite = { focus = EFF_punishing_those_responsible }
+	prerequisite = { focus = EFF_consolidating_our_control }
+}
+
+shared_focus = {
+	id = EFF_dismantling_the_pillars_of_oppression
+	icon = GFX_EFF_dismantling_the_pillars_of_oppression
+	cost = 5
+    available = {
+        always = no
+    }
+	x = -6
+	y = 1
+	completion_reward = {
+		add_stability = -0.1
+		add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_dismantling_the_pillars_of_oppression"
+	}
+	relative_position_id = EFF_calling_the_first_congress
+	prerequisite = { focus = EFF_calling_the_first_congress }
+	mutually_exclusive = { focus = EFF_black_white_and_red_all_over }
+    mutually_exclusive = { focus = EFF_a_bright_future_for_azania }
+    mutually_exclusive = { focus = EFF_a_people_liberated }
+}
+
+shared_focus = {
+	id = EFF_black_white_and_red_all_over
+	icon = GFX_EFF_black_white_and_red_all_over
+	cost = 5
+	x = -3
+    available = {
+        always = no
+    }
+	y = 1
+	completion_reward = {
+        add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_black_white_and_red_all_over"
+	}
+	relative_position_id = EFF_calling_the_first_congress
+	prerequisite = { focus = EFF_calling_the_first_congress }
+	mutually_exclusive = { focus = EFF_dismantling_the_pillars_of_oppression }
+    mutually_exclusive = { focus = EFF_a_bright_future_for_azania }
+    mutually_exclusive = { focus = EFF_a_people_liberated }
+}
+
+shared_focus = {
+	id = EFF_a_bright_future_for_azania
+	icon = GFX_EFF_a_bright_future_for_azania
+	cost = 5
+	x = 3
+    available = {
+        always = no
+    }
+	y = 1
+	completion_reward = {
+        add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_a_bright_future_for_azania"
+	}
+	relative_position_id = EFF_calling_the_first_congress
+	prerequisite = { focus = EFF_calling_the_first_congress }
+	mutually_exclusive = { focus = EFF_dismantling_the_pillars_of_oppression }
+    mutually_exclusive = { focus = EFF_black_white_and_red_all_over }
+    mutually_exclusive = { focus = EFF_a_people_liberated }
+}
+
+shared_focus = {
+	id = EFF_a_people_liberated
+	icon = GFX_EFF_a_people_liberated
+	cost = 5
+	x = 6
+	y = 1
+    available = {
+        always = no
+    }
+	completion_reward = {
+		add_stability = -0.15
+		add_war_support = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_a_people_liberated"
+	}
+	relative_position_id = EFF_calling_the_first_congress
+	prerequisite = { focus = EFF_calling_the_first_congress }
+	mutually_exclusive = { focus = EFF_dismantling_the_pillars_of_oppression }
+    mutually_exclusive = { focus = EFF_black_white_and_red_all_over }
+    mutually_exclusive = { focus = EFF_a_bright_future_for_azania }
+}
+
+shared_focus = {
+	id = EFF_revolutionary_land_reform
+	icon = GFX_EFF_revolutionary_land_reform
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+        set_country_flag = land_reform_BRF
+        #unlock_decision_category_tooltip = BRF_kick_out_crackers
+		every_state = {
+			limit = {
+				is_owned_by = EFF
+			}
+		add_extra_state_shared_building_slots = 3
+		}
+		add_war_support = 0.15
+		add_stability = -0.15
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_revolutionary_land_reform"
+	}
+	relative_position_id = EFF_a_people_liberated
+	prerequisite = { focus = EFF_a_people_liberated }
+}
+
+shared_focus = {
+	id = EFF_delegation_to_china
+	icon = GFX_EFF_delegation_to_china
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+        EFF = {
+            add_ideas = EFF_chinese_delegation
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_delegation_to_china"
+	}
+	relative_position_id = EFF_a_people_liberated
+	prerequisite = { focus = EFF_a_people_liberated }
+}
+
+shared_focus = {
+	id = EFF_black_redemption_without_compensation
+	icon = GFX_EFF_black_redemption_without_compensation
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+        add_stability = -0.1
+        add_war_support = 0.15
+        add_political_power = 100
+        add_to_variable = { EFF.GDP = 100 }
+        add_to_variable = { EFF.REAL_GROWTH = -0.3 }
+		country_event = {
+			id = EFF.3
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_black_redemption_without_compensation"
+	}
+	relative_position_id = EFF_revolutionary_land_reform
+	prerequisite = { focus = EFF_revolutionary_land_reform }
+	prerequisite = { focus = EFF_delegation_to_china }
+}
+
+shared_focus = {
+	id = EFF_towards_a_cybernetic_economy
+	icon = GFX_EFF_towards_a_cybernetic_economy
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+        add_research_slot = 1
+        #unlock_decision_category_tooltip = EFF_cybersyn
+		country_event = {
+			id = EFF.2 
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_towards_a_cybernetic_economy"
+	}
+	relative_position_id = EFF_a_bright_future_for_azania
+	prerequisite = { focus = EFF_a_bright_future_for_azania }
+}
+
+shared_focus = {
+	id = EFF_nationalization_of_industry
+	icon = GFX_EFF_nationalization_of_industry
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+        every_owned_state = {
+         add_building_construction = {
+          type = arms_factory
+          level = 1
+          instant_build = yes
+         }
+         add_building_construction = {
+          type = industrial_complex
+          level = 1
+          instant_build = yes
+         }
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_nationalization_of_industry"
+	}
+	relative_position_id = EFF_a_bright_future_for_azania
+	prerequisite = { focus = EFF_black_white_and_red_all_over  focus = EFF_a_bright_future_for_azania}
+}
+
+shared_focus = {
+	id = EFF_our_soviet_friends
+	icon = GFX_EFF_our_soviet_friends
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+        EFF = {
+            add_ideas = EFF_soviet_delegation
+        }
+      #  SOV = {
+      #      add_ideas = EFF_friends_in_africa_SOV
+      #  }
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_our_soviet_friends"
+	}
+	relative_position_id = EFF_black_white_and_red_all_over
+	prerequisite = { focus = EFF_black_white_and_red_all_over  focus = EFF_a_bright_future_for_azania}
+}
+
+shared_focus = {
+	id = EFF_a_message_of_unity
+	icon = GFX_EFF_a_message_of_unity
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+        add_stability = 0.1
+		country_event = {
+			id = EFF.1
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_a_message_of_unity"
+	}
+	relative_position_id = EFF_black_white_and_red_all_over
+	prerequisite = { focus = EFF_black_white_and_red_all_over }
+}
+
+shared_focus = {
+	id = EFF_first_steps_of_modernization
+	icon = GFX_EFF_first_steps_of_modernization
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+        add_ideas = EFF_technology_is_epic
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_first_steps_of_modernization"
+	}
+	relative_position_id = EFF_nationalization_of_industry
+	prerequisite = { focus = EFF_nationalization_of_industry }
+	prerequisite = { focus = EFF_our_soviet_friends }
+}
+
+shared_focus = {
+	id = EFF_building_on_tribal_structures
+	icon = GFX_EFF_building_on_tribal_structures
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+        add_popularity = {
+            ideology = anarchism
+            popularity = 0.2
+        }
+        add_ideas = EFF_tribal_anarchism
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_building_on_tribal_structures"
+	}
+	relative_position_id = EFF_dismantling_the_pillars_of_oppression
+	prerequisite = { focus = EFF_dismantling_the_pillars_of_oppression }
+}
+
+shared_focus = {
+	id = EFF_a_confederation_of_free_communes
+	icon = GFX_EFF_a_confederation_of_free_communes
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+		add_stability = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_a_confederation_of_free_communes"
+	}
+	relative_position_id = EFF_dismantling_the_pillars_of_oppression
+	prerequisite = { focus = EFF_dismantling_the_pillars_of_oppression }
+}
+
+shared_focus = {
+	id = EFF_a_truly_african_freedom
+	icon = GFX_EFF_a_truly_african_freedom
+	cost = 5
+	x = -1
+	y = 1
+	completion_reward = {
+        add_political_power = 150
+        add_stability = 0.1
+		country_event = {
+			id = EFF.4
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus EFF_a_truly_african_freedom"
+	}
+	relative_position_id = EFF_building_on_tribal_structures
+	prerequisite = { focus = EFF_building_on_tribal_structures }
+	prerequisite = { focus = EFF_a_confederation_of_free_communes }
+}

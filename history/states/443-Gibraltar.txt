@@ -1,0 +1,26 @@
+state={
+id=443
+	name="STATE_443"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = ENG
+		victory_points = { 4135 1 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 1
+			4135 = {
+			naval_base = 10
+			}
+		}
+		add_core_of = ENG
+	}
+	provinces={
+	4135
+	}
+	manpower=170000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

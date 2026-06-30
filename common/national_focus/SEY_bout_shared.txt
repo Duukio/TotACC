@@ -1,0 +1,13 @@
+focus_tree = {
+	id = SEY_bout
+	country = {
+		factor = 0
+		modifier = {
+			add = 666
+			tag = SEY
+			has_country_flag = BOUT_CHOSEN
+		}
+	}
+	shared_focus = SEY_antifascist_operations
+	shared_focus = SEY_moving_beyond_nationhood
+}

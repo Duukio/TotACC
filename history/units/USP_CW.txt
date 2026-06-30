@@ -1,0 +1,709 @@
+division_template = {
+	name = "Pence Army"		# Infantry Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3960
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10798
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4740
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7138
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11800
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3960
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10798
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4740
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7138
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11800
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3960
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10798
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4740
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7138
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11800
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3960
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10798
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4740
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7138
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11800
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3960
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10798
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4740
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7138
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11800
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3960
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10798
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4740
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7138
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11800
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 3960
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10798
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4740
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12501
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12735
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7138
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1595
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11800
+		division_template = "Pence Army"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.9
+
+	}
+
+}

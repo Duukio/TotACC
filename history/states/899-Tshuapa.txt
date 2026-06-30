@@ -1,0 +1,25 @@
+
+state={
+	id=899
+	name="STATE_899"
+    buildings_max_level_factor = 1
+	provinces={
+		7219 8048 10951 
+	}
+	manpower=822947
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=rural
+	history={
+		owner = ZAI
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		victory_points = {
+			10951 5
+		}
+		add_core_of = ZAI
+	}
+}

@@ -1,0 +1,12 @@
+defined_text = {
+    name = ISP_nat_salvation_gov_dyn_loc
+    text = {
+        trigger = {
+            has_global_flag = ISP_cautious_redemocratization_flag
+        }
+        localization_key = ISP_cautious_redemocratization_key
+    }
+    text = {
+        localization_key = ISP_nat_salvation_gov_dyn_stand_key
+    }
+}

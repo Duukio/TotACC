@@ -1,0 +1,3881 @@
+add_namespace = WNE
+
+news_event = {
+    id = WNE.1 # American Chaos
+    title = WNE.1.t
+    desc = WNE.1.desc
+    picture = GFX_report_event_american_chaos
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 4
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "usachaos_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.1.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.1.a
+	}
+}
+news_event = {
+    id = WNE.2 # Biafra Wins 5NBW
+    title = WNE.2.t
+    desc = WNE.2.desc
+    picture = GFX_report_event_5nbw_biafra
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.2.a
+	}
+}
+news_event = {
+    id = WNE.3 # Nigeria Wins 5NBW
+    title = WNE.3.t
+    desc = WNE.3.desc
+    picture = GFX_report_event_5nbw_nigeria
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.3.a
+	}
+}
+news_event = {
+    id = WNE.4 # South African Civil War
+    title = WNE.4.t
+    desc = WNE.4.desc
+    picture = GFX_report_event_saf_cw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 3
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "saf_cw_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.4.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.4.a
+	}
+}
+news_event = {
+    id = WNE.5 # Samson Option
+    title = WNE.5.t
+    desc = WNE.5.desc
+    picture = GFX_report_event_samson
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 43
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "samson_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.5.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.5.a
+	}
+}
+news_event = {
+    id = WNE.6 # Shining Path Victory - Mainline
+    title = WNE.6.t
+    desc = WNE.6.desc
+    picture = GFX_report_event_pru_sdl
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.6.a
+	}
+}
+news_event = {
+    id = WNE.7 # Shining Path Victory - Militarized Communist Party
+    title = WNE.7.t
+    desc = WNE.7.desc
+    picture = GFX_report_event_pru_militarized
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.7.a
+	}
+}
+news_event = {
+    id = WNE.8 # Shining Path Victory - Tupac Amarú
+    title = WNE.8.t
+    desc = WNE.8.desc
+    picture = GFX_report_event_pru_tupac
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.8.a
+	}
+}
+news_event = {
+    id = WNE.9 # Shining Path Victory - Chaos
+    title = WNE.9.t
+    desc = WNE.9.desc
+    picture = GFX_report_event_pru_chaos
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.9.a
+	}
+}
+news_event = {
+    id = WNE.10 # Fujimorist/White Peru Victory
+    title = WNE.10.t
+    desc = WNE.10.desc
+    picture = GFX_report_event_pru_pru
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.10.a
+	}
+}
+news_event = {
+    id = WNE.11 # Omskduras wins against El Salvador
+    title = WNE.11.t
+    desc = WNE.11.desc
+    picture = GFX_report_event_omskduras
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.11.a
+	}
+}
+news_event = {
+    id = WNE.12 # Omskduras loses against El Salvador
+    title = WNE.12.t
+    desc = WNE.12.desc
+    picture = GFX_report_event_elsalvador
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.12.a
+	}
+}
+news_event = {
+    id = WNE.13 # Mishima moment
+    title = WNE.13.t
+    desc = WNE.13.desc
+    picture = GFX_report_event_mishima_news
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+	major = no
+
+    option = {
+clr_country_flag = event_open
+		trigger = {
+			OR = {
+			TAG = FIJ
+			TAG = BNG
+			TAG = SAM
+			TAG = BHA
+			TAG = KMP
+			}
+		}
+		name = WNE.13.a
+	}
+    option = {
+clr_country_flag = event_open
+		trigger = {
+			OR = {
+			TAG = JAP
+			TAG = KOK
+			}
+		}
+		name = WNE.13.b
+	}
+    option = {
+clr_country_flag = event_open
+		trigger = {
+			OR = {
+			TAG = IND
+			TAG = MLY
+			TAG = PHI
+			TAG = BUR
+			TAG = SIA
+			TAG = SVI
+			}
+		}
+		name = WNE.13.c
+	}
+    option = {
+clr_country_flag = event_open
+		trigger = {
+				NOT = {
+					OR = {
+					TAG = IND
+					TAG = MLY
+					TAG = PHI
+					TAG = BUR
+					TAG = SIA
+					TAG = SVI
+					TAG = JAP
+					TAG = KOK
+					TAG = FIJ
+					TAG = BNG
+					TAG = SAM
+					TAG = BHA
+					TAG = KMP
+				}
+			}
+		}
+		name = WNE.13.d #debug response, not supposed to happen ^_^
+	}
+}
+news_event = {
+    id = WNE.14 # Nnamdi Kanus Biafra 2 Jewish Boogaloo
+    title = WNE.14.t
+    desc = WNE.14.desc
+    picture = GFX_report_event_BIA_kanu_biafra
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.14.a
+	}
+}
+news_event = {
+    id = WNE.16 # FIVME...
+    title = WNE.16.t
+    desc = WNE.16.desc
+    picture = GFX_report_event_fivme
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.16.a
+	}
+}
+news_event = {
+    id = WNE.17 # Soviet Alaska :muscle:
+    title = WNE.17.t
+    desc = WNE.17.desc
+    picture = GFX_report_event_soviet_alaska
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.17.a
+	}
+}
+news_event = {
+    id = WNE.18 # 2nd toyota
+    title = WNE.18.t
+    desc = WNE.18.desc
+    picture = GFX_report_event_toyota
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.18.a
+	}
+}
+news_event = {
+    id = WNE.19 # 2nd toyota - ndjamena win
+    title = WNE.19.t
+    desc = WNE.19.desc
+    picture = GFX_report_event_toyota_chad
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.19.a
+	}
+}
+news_event = {
+    id = WNE.20 # 2nd toyota - libya win
+    title = WNE.20.t
+    desc = WNE.20.desc
+    picture = GFX_report_event_toyota_libya
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.20.a
+	}
+}
+news_event = {
+    id = WNE.21 # White Peru wins after chaos
+    title = WNE.21.t
+    desc = WNE.21.desc
+    picture = GFX_report_event_pru_chaos
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.21.a
+	}
+}
+news_event = {
+    id = WNE.22 # Peruvian Red Guards win out
+    title = WNE.22.t
+    desc = WNE.22.desc
+    picture = GFX_report_event_pru_chaos
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.22.a
+	}
+}
+news_event = {
+    id = WNE.23 # Peru partitioned
+    title = WNE.23.t
+    desc = WNE.23.desc
+    picture = GFX_report_event_pru_chaos
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.23.a
+	}
+}
+news_event = {
+    id = WNE.24 # West Papua War
+    title = WNE.24.t
+    desc = WNE.24.desc
+    picture = GFX_report_event_wpw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.24.a
+	}
+}
+news_event = {
+    id = WNE.25 # New Guinea wins WPW
+    title = WNE.25.t
+    desc = WNE.25.desc
+    picture = GFX_report_event_NWG_wpw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.25.a
+	}
+}
+news_event = {
+    id = WNE.26 # Indonesia wins WPW
+    title = WNE.26.t
+    desc = WNE.26.desc
+    picture = GFX_report_event_IND_wpw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.26.a
+	}
+}
+news_event = {
+    id = WNE.27 # Déby does elections and hands power once his socdem rival wins
+    title = WNE.27.t
+    desc = WNE.27.desc
+    picture = GFX_report_event_deby_resigns
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.27.a
+	}
+}
+news_event = {
+    id = WNE.28 # Déby fucking dies
+    title = WNE.28.t
+    desc = WNE.28.desc
+    picture = GFX_report_event_deby_gets_shot
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.28.a
+	}
+}
+news_event = {
+    id = WNE.29 # ML coup in Chad
+    title = WNE.29.t
+    desc = WNE.29.desc
+    picture = GFX_report_event_chad_is_commie
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.29.a
+	}
+}
+news_event = {
+    id = WNE.30 # Antisemite Pope
+    title = WNE.30.t
+    desc = WNE.30.desc
+    picture = GFX_report_event_PONTIFEX_GREGORIUS
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.30.a
+	}
+}
+news_event = {
+    id = WNE.31 # Communist Pope
+    title = WNE.31.t
+    desc = WNE.31.desc
+    picture = GFX_report_event_PONTIFEX_FRANCISCUS
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.31.a
+	}
+}
+news_event = {
+    id = WNE.32 # Black Pope
+    title = WNE.32.t
+    desc = WNE.32.desc
+    picture = GFX_report_event_PONTIFEX_MARTINUS
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.32.a
+	}
+}
+news_event = {
+    id = WNE.33 # Ambazonia War Begins
+    title = WNE.33.t
+    desc = WNE.33.desc
+    picture = GFX_report_event_ambazonia_war
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.33.a
+	}
+}
+news_event = {
+    id = WNE.34 # Cameroon Victory
+    title = WNE.34.t
+    desc = WNE.34.desc
+    picture = GFX_report_event_aw_cameroon
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.34.a
+	}
+}
+news_event = {
+    id = WNE.35 # Ambazonia Victory
+    title = WNE.35.t
+    desc = WNE.35.desc
+    picture = GFX_report_event_aw_ambazonia
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.35.a
+	}
+}
+news_event = {
+    id = WNE.36 # SAF government (the one in Cape Town) wins
+    title = WNE.36.t
+    desc = WNE.36.desc
+    picture = GFX_report_event_cape_govt
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.36.a
+	}
+}
+news_event = {
+    id = WNE.37 # Andile govt (the one in Durban/Port Elizabeth) wins
+    title = WNE.37.t
+    desc = WNE.37.desc
+    picture = GFX_report_event_andile_govt
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.37.a
+	}
+}
+news_event = {
+    id = WNE.38 # Pretoria govt (the AWB) wins
+    title = WNE.38.t
+    desc = WNE.38.desc
+    picture = GFX_report_event_pretoria_govt
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.38.a
+	}
+}
+news_event = {
+    id = WNE.39 # Democratic Burma
+    title = WNE.39.t
+    desc = WNE.39.desc
+    picture = GFX_report_event_burma_democrat
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.39.a
+	}
+}
+news_event = {
+    id = WNE.40 # Military Burma
+    title = WNE.40.t
+    desc = WNE.40.desc
+    picture = GFX_report_event_burma_military
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.40.a
+	}
+}
+news_event = {
+    id = WNE.41 # Burma cw
+    title = WNE.41.t
+    desc = WNE.41.desc
+    picture = GFX_report_event_burma_cw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.41.a
+	}
+}
+news_event = {
+    id = WNE.42 # separatist epic victory
+    title = WNE.42.t
+    desc = WNE.42.desc
+    picture = GFX_report_event_burma_separatists
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.42.a
+	}
+}
+news_event = {
+    id = WNE.43 # burma military wins
+    title = WNE.43.t
+    desc = WNE.43.desc
+    picture = GFX_report_event_burma_military_win
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.43.a
+	}
+}
+news_event = {
+    id = WNE.44 # CPB wins
+    title = WNE.44.t
+    desc = WNE.44.desc
+    picture = GFX_report_event_burma_cpb
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.44.a
+	}
+}
+news_event = {
+    id = WNE.45 # PVNT wins against EAF (the antichrist)
+    title = WNE.45.t
+    desc = WNE.45.desc
+    picture = GFX_report_event_SOM_WINS_EAF
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.45.a
+	}
+}
+news_event = {
+    id = WNE.46 # EAF wins against soymalia
+    title = WNE.46.t
+    desc = WNE.46.desc
+    picture = GFX_report_event_EAF_WINS_SOM
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.46.a
+	}
+}
+news_event = {
+    id = WNE.47 # EAF invades PVNT
+    title = WNE.47.t
+    desc = WNE.47.desc
+    picture = GFX_report_event_escalation_SOM
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.47.a
+	}
+}
+news_event = {
+    id = WNE.48 # UAE wins against pajeet sirs
+    title = WNE.48.t
+    desc = WNE.48.desc
+    picture = GFX_report_event_UAE
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.48.a
+	}
+}
+news_event = {
+    id = WNE.49 # Total AKHAND BHARAT victory.................... Hindutva Power....
+    title = WNE.49.t
+    desc = WNE.49.desc
+    picture = GFX_report_event_PGR
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 6
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "pgr_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.49.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.49.a
+	}
+}
+news_event = {
+    id = WNE.50 # JDPON natives
+    title = WNE.50.t
+    desc = WNE.50.desc
+    picture = GFX_report_event_ind1
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 32
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "naarp"
+		}
+      clr_country_flag = event_open
+      name = WNE.50.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.50.a
+	}
+}
+news_event = {
+    id = WNE.51 # not so JDPON natives
+    title = WNE.51.t
+    desc = WNE.51.desc
+    picture = GFX_report_event_ind2
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 33
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "arlo"
+		}
+      clr_country_flag = event_open
+      name = WNE.51.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.51.a
+	}
+}
+news_event = {
+    id = WNE.52 # WHY CANT WE BE FRIENDS
+    title = WNE.52.t
+    desc = WNE.52.desc
+    picture = GFX_report_event_ind3
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 34
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "fourthworld"
+		}
+      clr_country_flag = event_open
+      name = WNE.53.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.53.a
+	}
+}
+news_event = {
+    id = WNE.53 # Széklers and Siebenburgers revolt
+    title = WNE.53.t
+    desc = WNE.53.desc
+    picture = GFX_report_event_rom1
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.53.a
+	}
+}
+news_event = {
+    id = WNE.54 # Soviets invade
+    title = WNE.54.t
+    desc = WNE.54.desc
+    picture = GFX_report_event_rom2
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.54.a
+	}
+}
+news_event = {
+    id = WNE.55 # ceasefire
+    title = WNE.55.t
+    desc = WNE.55.desc
+    picture = GFX_report_event_rom3
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.55.a
+	}
+}
+news_event = {
+    id = WNE.56 # DRUM BUN BUN TOBA BATE
+    title = WNE.56.t
+    desc = WNE.56.desc
+    picture = GFX_report_event_rom4
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.56.a
+	}
+}
+news_event = {
+    id = WNE.57 # islam be my chud!
+    title = WNE.57.t
+    desc = WNE.57.desc
+    picture = GFX_report_event_chud_bra
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.57.a
+	}
+}
+news_event = {
+    id = WNE.58 # Epic israeli totally not hezbollah takes a big piss in front of Beirut
+    title = WNE.58.t
+    desc = WNE.58.desc
+    picture = GFX_report_event_isr_intervention_in_lebanon
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.58.a
+	}
+}
+news_event = {
+    id = WNE.59 # Lebanonfalen
+    title = WNE.59.t
+    desc = WNE.59.desc
+    picture = GFX_report_event_leb_coll
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.59.a
+	}
+}
+news_event = {
+    id = WNE.60 # not hezbolah takes over leb
+    title = WNE.60.t
+    desc = WNE.60.desc
+    picture = GFX_report_event_lebsoc
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.60.a
+	}
+}
+news_event = {
+    id = WNE.61 # back to as it was
+    title = WNE.61.t
+    desc = WNE.61.desc
+    picture = GFX_report_event_statquo
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.61.a
+	}
+}
+news_event = {
+    id = WNE.62 # oui oui gaston, je aime le lebanon fasciste
+    title = WNE.62.t
+    desc = WNE.62.desc
+    picture = GFX_report_event_lebkataeb
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.62.a
+	}
+}
+news_event = {
+    id = WNE.63 # islamic soyjak
+    title = WNE.63.t
+    desc = WNE.63.desc
+    picture = GFX_report_event_syrialeb
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.63.a
+	}
+}
+news_event = {
+    id = WNE.64 # oui oui gaston je aime le lebanon democratique
+    title = WNE.64.t
+    desc = WNE.64.desc
+    picture = GFX_report_event_lebkataeb
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.64.a
+	}
+}
+news_event = {
+    id = WNE.65 #TOKYO... I KNEEL....
+    title = WNE.65.t
+    desc = WNE.65.desc
+    picture = GFX_report_event_jap_haw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.65.a
+	}
+}
+news_event = {
+    id = WNE.66 #Total cracker victory
+    title = WNE.66.t
+    desc = WNE.66.desc
+    picture = GFX_report_event_usa_haw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.66.a
+	}
+}
+news_event = {
+    id = WNE.67 #Indy Kdm.
+    title = WNE.67.t
+    desc = WNE.67.desc
+    picture = GFX_report_event_haw
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.67.a
+	}
+}
+news_event = {
+    id = WNE.68 #Pelosi is 'retired'
+    title = WNE.68.t
+    desc = WNE.68.desc
+    picture = GFX_report_event_pelosi_rekt
+    is_triggered_only = yes
+    fire_only_once = yes
+immediate = {
+set_country_flag = event_open
+} 
+
+    option = {
+clr_country_flag = event_open
+      name = WNE.68.a
+	}
+}
+news_event = {
+    id = WNE.69 #SSD win
+    title = WNE.69.t
+    desc = WNE.69.desc
+    picture = GFX_report_event_SSD_win
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.69.a
+	}
+}
+news_event = {
+    id = WNE.70 #NUE win, romanovs
+    title = WNE.70.t
+    desc = WNE.70.desc
+    picture = GFX_report_event_NUE_win
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.70.a
+	}
+}
+news_event = {
+    id = WNE.71 #LRA win
+    title = WNE.71.t
+    desc = WNE.71.desc
+    picture = GFX_report_event_LRA_win
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.71.a
+	}
+}
+news_event = {
+    id = WNE.72 #ARB win
+    title = WNE.72.t
+    desc = WNE.72.desc
+    picture = GFX_report_event_ARB_win
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.72.a
+	}
+}
+news_event = {
+    id = WNE.73 #EAF win
+    title = WNE.73.t
+    desc = WNE.73.desc
+    picture = GFX_report_event_EAF_win
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.73.a
+	}
+}
+news_event = {
+    id = WNE.74 #the funny
+    title = WNE.74.t
+    desc = WNE.74.desc
+    picture = GFX_report_event_ROMANOV_EMPIRE
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.74.a
+	}
+}
+news_event = {
+    id = WNE.75 #war is awesome!
+    title = WNE.75.t
+    desc = WNE.75.desc
+    picture = GFX_report_event_nobody_wins
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.75.a
+	}
+}
+news_event = {
+    id = WNE.76 #Evropa
+    title = WNE.76.t
+    desc = WNE.76.desc
+    picture = GFX_report_event_jerome_lux
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.76.a
+	}
+}
+news_event = {
+    id = WNE.77 #Japan seizes Korea
+    title = WNE.77.t
+    desc = WNE.77.desc
+    picture = GFX_report_event_epic_korea_fail
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.77.a
+	}
+}
+news_event = {
+    id = WNE.78 #China takes Yanbian
+    title = WNE.78.t
+    desc = WNE.78.desc
+    picture = GFX_report_event_yanbian_maoism
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.78.a
+	}
+}
+news_event = {
+    id = WNE.79 #Lolberts
+    title = WNE.79.t
+    desc = WNE.79.desc
+    picture = GFX_report_event_lolberts
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 12
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "lolbert_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.79.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.79.a
+	}
+}
+news_event = {
+    id = WNE.80 #three percenters
+    title = WNE.80.t
+    desc = WNE.80.desc
+    picture = GFX_report_event_tper
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 25
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "der_ewige_boomer_superevent"
+		}
+      clr_country_flag = event_open
+      name = WNE.80.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.80.a
+	}
+}
+news_event = {
+    id = WNE.81 #Yglesias
+    title = WNE.81.t
+    desc = WNE.81.desc
+    picture = GFX_report_event_neolib
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 12
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "lolbert_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.81.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.81.a
+	}
+}
+news_event = {
+    id = WNE.82 #Sinema
+    title = WNE.82.t
+    desc = WNE.82.desc
+    picture = GFX_report_event_kyrsten
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 12
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "lolbert_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.82.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.82.a
+	}
+}
+news_event = {
+    id = WNE.83 #Wigger Reich
+    title = WNE.83.t
+    desc = WNE.83.desc
+    picture = GFX_report_event_wigger
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 11
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "covington_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.83.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.83.a
+	}
+}
+news_event = {
+    id = WNE.84 #SIEGE
+    title = WNE.84.t
+    desc = WNE.84.desc
+    picture = GFX_report_event_AWD
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 39
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "mason_se"
+		}
+      clr_country_flag = event_open
+      name = WNE.84.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.84.a
+	}
+}
+news_event = {
+    id = WNE.85 #ANARCHY NAZISM
+    title = WNE.85.t
+    desc = WNE.85.desc
+    picture = GFX_report_event_mathews
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 37
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "mathews"
+		}
+      clr_country_flag = event_open
+      name = WNE.85.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.85.a
+	}
+}
+news_event = {
+    id = WNE.86 #suit and tie nazism
+    title = WNE.86.t
+    desc = WNE.86.desc
+    picture = GFX_report_event_long_johnson
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 38
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "johnson_se"
+		}
+      clr_country_flag = event_open
+      name = WNE.86.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.86.a
+	}
+}
+news_event = {
+    id = WNE.87 #pence
+    title = WNE.87.t
+    desc = WNE.87.desc
+    picture = GFX_report_event_pence
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 23
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "ULTRALIGHTBEAM_pence_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.87.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.87.a
+	}
+}
+news_event = {
+    id = WNE.88 #fuentes
+    title = WNE.88.t
+    desc = WNE.88.desc
+    picture = GFX_report_event_fuentes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.88.a
+	}
+}
+news_event = {
+    id = WNE.89 #ye
+    title = WNE.89.t
+    desc = WNE.89.desc
+    picture = GFX_report_event_ye
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.89.a
+	}
+}
+news_event = {
+    id = WNE.90 #milo
+    title = WNE.90.t
+    desc = WNE.90.desc
+    picture = GFX_report_event_milo
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.90.a
+	}
+}
+news_event = {
+    id = WNE.91 #Nyx
+    title = WNE.91.t
+    desc = WNE.91.desc
+    picture = GFX_report_event_nyx
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 20
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "neon_genesis_nyxvangelion"
+		}
+      clr_country_flag = event_open
+      name = WNE.91.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.91.a
+	}
+}
+news_event = {
+    id = WNE.92 #Gillis
+    title = WNE.92.t
+    desc = WNE.92.desc
+    picture = GFX_report_event_gillis
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 13
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "gillis"
+		}
+      clr_country_flag = event_open
+      name = WNE.92.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.92.a
+	}
+}
+news_event = {
+    id = WNE.129 #Avakian wins somehow
+    title = WNE.129.t
+    desc = WNE.129.desc
+    picture = GFX_report_event_avakian
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 35
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "avakian_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.129.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.129.a
+	}
+}
+news_event = {
+    id = WNE.93 #Aragorn
+    title = WNE.93.t
+    desc = WNE.93.desc
+    picture = GFX_report_event_aragorn
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        set_variable = {
+          var = global.current_superevent
+          value = 8
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "anticiv_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.93.a
+	}
+}
+news_event = {
+    id = WNE.94 #Yarvin
+    title = WNE.94.t
+    desc = WNE.94.desc
+    picture = GFX_report_event_yarvin
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 26
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "yarvin_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.94.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.94.a
+	}
+}
+news_event = {
+    id = WNE.95 #Scientology
+    title = WNE.95.t
+    desc = WNE.95.desc
+    picture = GFX_report_event_sci
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 17
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "scientology_unification_fireworks"
+		}
+      clr_country_flag = event_open
+      name = WNE.95.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.95.a
+	}
+
+}
+news_event = {
+    id = WNE.96 #Jorjani
+    title = WNE.96.t
+    desc = WNE.96.desc
+    picture = GFX_report_event_jorjani
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 14
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "jorjani"
+		}
+      clr_country_flag = event_open
+      name = WNE.96.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.96.a
+	}
+}
+news_event = {
+    id = WNE.97 #BIG. SPENCE.
+    title = WNE.97.t
+    desc = WNE.97.desc
+    picture = GFX_report_event_big_spence
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 10
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "spencer_goes_driving_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.97.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.97.a
+	}
+}
+news_event = {
+    id = WNE.99 #Obamna
+    title = WNE.99.t
+    desc = WNE.99.desc
+    picture = GFX_report_event_obamna
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 21
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "obamaloca"
+		}
+      clr_country_flag = event_open
+      name = WNE.99.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.99.a
+	}
+}
+news_event = {
+    id = WNE.100 #China wins in Korea
+    title = WNE.100.t
+    desc = WNE.100.desc
+    picture = GFX_report_event_yanbian_maoism
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.100.a
+	}
+}
+news_event = {
+    id = WNE.111 #Pelosi
+    title = WNE.111.t
+    desc = WNE.111.desc
+    picture = GFX_report_event_pelosi
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 22
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "pelosi_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.111.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.111.a
+	}
+}
+news_event = {
+    id = WNE.112 #NYP
+    title = WNE.112.t
+    desc = WNE.112.desc
+    picture = GFX_report_event_nypd
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 19
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "nypd_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.112.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.112.a
+	}
+}
+news_event = {
+    id = WNE.113 #Patsocs
+    title = WNE.113.t
+    desc = WNE.113.desc
+    picture = GFX_report_event_maupin
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 16
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "maupin_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.113.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.113.a
+	}
+}
+news_event = {
+    id = WNE.114 #Srnicek
+    title = WNE.114.t
+    desc = WNE.114.desc
+    picture = GFX_report_event_srnicek
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 24
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "srnicek_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.114.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.114.a
+	}
+}
+news_event = {
+    id = WNE.115 #NWA
+    title = WNE.115.t
+    desc = WNE.115.desc
+    picture = GFX_report_event_NWA
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 27
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "NWA_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.115.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.115.a
+	}
+}
+news_event = {
+    id = WNE.116 #Opossum
+    title = WNE.116.t
+    desc = WNE.116.desc
+    picture = GFX_report_event_opossum
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 28
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "opossum"
+		}
+      clr_country_flag = event_open
+      name = WNE.116.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.116.a
+	}
+}
+news_event = {
+    id = WNE.117 #Peltier
+    title = WNE.117.t
+    desc = WNE.117.desc
+    picture = GFX_report_event_peltier
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 29
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "peltier"
+		}
+      clr_country_flag = event_open
+      name = WNE.117.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.117.a
+	}
+}
+news_event = {
+    id = WNE.118 #honse
+    title = WNE.118.t
+    desc = WNE.118.desc
+    picture = GFX_report_event_vaush
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 30
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "vaush"
+		}
+      clr_country_flag = event_open
+      name = WNE.118.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.118.a
+	}
+}
+news_event = {
+    id = WNE.119 #HOArevolutionary_right
+    title = WNE.119.t
+    desc = WNE.119.desc
+    picture = GFX_report_event_hoarevolutionary_right
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 31
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "hoarevolutionary_right"
+		}
+      clr_country_flag = event_open
+      name = WNE.119.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.119.a
+	}
+}
+news_event = {
+    id = WNE.121 #Italy leaves the EU
+    title = WNE.121.t
+    desc = WNE.121.desc
+    picture = GFX_report_event_italexit
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.121.a
+	}
+}
+news_event = {
+    id = WNE.122 #Second march on rome
+    title = WNE.122.t
+    desc = WNE.122.desc
+    picture = GFX_report_event_italdie
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.122.a
+	}
+}
+news_event = {
+    id = WNE.123 #FranZe
+    title = WNE.123.t
+    desc = WNE.123.desc
+    picture = GFX_report_event_franze
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.123.a
+	}
+}
+news_event = {
+    id = WNE.124 #FranZe epic fail
+    title = WNE.124.t
+    desc = WNE.124.desc
+    picture = GFX_report_event_epic_franze_fail
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.124.a
+	}
+}
+news_event = {
+    id = WNE.125 #FranZe epic win
+    title = WNE.125.t
+    desc = WNE.125.desc
+    picture = GFX_report_event_franze_awesome
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.125.a
+	}
+}
+news_event = {
+    id = WNE.126 #Meloni
+    title = WNE.126.t
+    desc = WNE.126.desc
+    picture = GFX_report_event_meloni
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.126.a
+	}
+}
+news_event = {
+    id = WNE.127 #Zorzi
+    title = WNE.127.t
+    desc = WNE.127.desc
+    picture = GFX_report_event_japanitaly
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.127.a
+	}
+}
+news_event = {
+    id = WNE.128 #Rizzo
+    title = WNE.128.t
+    desc = WNE.128.desc
+    picture = GFX_report_event_rizz_in_ohio
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.128.a
+	}
+}
+news_event = {
+    id = WNE.130 #Monaco
+    title = WNE.130.t
+    desc = WNE.130.desc
+    picture = GFX_report_event_monacosocial
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.130.a
+	}
+}
+news_event = {
+    id = WNE.131 #Logo/Cameron Fuller
+    title = WNE.131.t
+    desc = WNE.131.desc
+    picture = GFX_report_event_logodaedalus
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 15
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "logo_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.131.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.131.a
+	}
+}
+news_event = {
+    id = WNE.132 #Tahoe
+    title = WNE.132.t
+    desc = WNE.132.desc
+    picture = GFX_report_event_fall_of_tahoe
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.132.a
+	}
+}
+news_event = {
+    id = WNE.133 #Luka
+    title = WNE.133.t
+    desc = WNE.133.desc
+    picture = GFX_report_event_batka
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.133.a
+	}
+}
+news_event = {
+    id = WNE.134 #Avakian
+    title = WNE.134.t
+    desc = WNE.134.desc
+    picture = GFX_report_event_avakian
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 9
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "avakian_super"
+		}
+      clr_country_flag = event_open
+      name = WNE.134.a
+	}
+}
+news_event = {
+    id = WNE.135 #new left socialism nippon
+    title = WNE.135.t
+    desc = WNE.135.desc
+    picture = GFX_report_event_libtard_jaabn
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.135.a
+	}
+}
+news_event = {
+    id = WNE.136 #Nikkurando
+    title = WNE.136.t
+    desc = WNE.136.desc
+    picture = GFX_report_event_nikkurando
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 36
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "nikkurando"
+		}
+      clr_country_flag = event_open
+      name = WNE.136.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.136.a
+	}
+}
+news_event = {
+    id = WNE.137 #NIPPON BUT AWESOME
+    title = WNE.137.t
+    desc = WNE.137.desc
+    picture = GFX_report_event_jaabn_z
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.137.a
+	}
+}
+news_event = {
+    id = WNE.138 #Nigeria goes NatCom
+    title = WNE.138.t
+    desc = WNE.138.desc
+    picture = GFX_report_event_natcom_nigeria
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.138.a
+	}
+}
+news_event = {
+    id = WNE.139 #Space Events: Leonov Mars Take-off
+    title = WNE.139.t
+    desc = WNE.139.desc
+    picture = GFX_report_event_leonov1_takeoff
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.139.a
+      hidden_effect = {
+        news_event = {
+            id = WNE.140
+            days = 382
+        }
+        news_event = {
+            id = WNE.148
+            days = 490
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.140 #Space Events: Leonov 2 Take-off
+    title = WNE.140.t
+    desc = WNE.140.desc
+    picture = GFX_report_event_leonov2_takeoff
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+          clr_country_flag = event_open
+          name = WNE.140.a
+          hidden_effect = {
+            news_event = {
+                id = WNE.141
+                days = 1109
+            }
+	    }
+    }
+}
+news_event = {
+    id = WNE.141 #Space Events: Europa Landing
+    title = WNE.141.t
+    desc = WNE.141.desc
+    picture = GFX_report_event_europa_Landing
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+          clr_country_flag = event_open
+          name = WNE.141.a
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 40
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "mars" #europa but keep it labeled as mars for now
+		}
+          hidden_effect = {
+            news_event = {
+                id = WNE.142
+                days = 263
+            }
+	    }
+    }
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+        clr_country_flag = event_oppen
+        name = WNE.141.a
+        hidden_effect = {
+            news_event = {
+                id = WNE.142
+                days = 263
+            }
+        }
+    }
+}
+news_event = {
+    id = WNE.142 #Space Events: Leonov I and II reunion
+    title = WNE.142.t
+    desc = WNE.142.desc
+    picture = GFX_report_event_leonov_meetup
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.142.a
+      hidden_effect = {
+        news_event = {
+            id = WNE.143
+            days = 78
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.143 #Space Events: Initial Drilling, Europa
+    title = WNE.143.t
+    desc = WNE.143.desc
+    picture = GFX_report_event_europa_drilling
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.143.a
+      hidden_effect = {
+        news_event = {
+            id = WNE.144
+            days = 943
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.144 #Space Events: Europan Life?
+    title = WNE.144.t
+    desc = WNE.144.desc
+    picture = GFX_report_event_europa_life
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.144.a
+      hidden_effect = {
+        random_list = {
+            60 = {
+                news_event = {
+                    id = WNE.145
+                    days = 392
+                }
+            }
+            40 = {
+                news_event = {
+                    id = WNE.146
+                    days = 244
+                }
+            }
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.145 #Space Events: no ayy lmaos :c
+    title = WNE.145.t
+    desc = WNE.145.desc
+    picture = GFX_report_event_europa_no_life
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.145.a
+	}
+}
+news_event = {
+    id = WNE.146 #Space Events: ayy lmao
+    title = WNE.146.t
+    desc = WNE.146.desc
+    picture = GFX_report_event_europan_life_confirmed
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.146.a
+      hidden_effect = {
+        news_event = {
+            id = WNE.147
+            days = 87
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.147 #Space Events: Settling Jupiter
+    title = WNE.147.t
+    desc = WNE.147.desc
+    picture = GFX_report_event_jupiter_settlements
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.147.a
+	}
+}
+news_event = {
+    id = WNE.148 #Space Events: African Mass Driver
+    title = WNE.148.t
+    desc = WNE.148.desc
+    picture = GFX_report_event_africa_mass_driver
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.148.a
+      hidden_effect = {
+        news_event = {
+            id = WNE.149
+            days = 195
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.149 #Space Events: Space Industries Furthered
+    title = WNE.149.t
+    desc = WNE.149.desc
+    picture = GFX_report_event_venus_settlements
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.149.a
+      hidden_effect = {
+        news_event = {
+            id = WNE.150
+            days = 294
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.150 #Space Events: Tragedy Strikes Space Industry
+    title = WNE.150.t
+    desc = WNE.150.desc
+    picture = GFX_report_event_asteroid_tragedy
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.150.a
+      hidden_effect = {
+        news_event = {
+            id = WNE.151
+            days = 903
+        }
+      }
+	}
+}
+news_event = {
+    id = WNE.151 #Space Events: Crystal Palace
+    title = WNE.151.t
+    desc = WNE.151.desc
+    picture = GFX_report_event_crystal_palace_opens
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    } 
+    option = {
+      clr_country_flag = event_open
+      name = WNE.151.a
+	}
+}
+#WNE.152 => WNE.166 DEPRECATED
+news_event = {
+    id = WNE.166 #Turkey, Kemalist victory
+    title = WNE.166.t
+    desc = WNE.166.desc
+    picture = GFX_report_event_kemalist_turkey
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.166.a
+   }
+}
+news_event = {
+    id = WNE.167 #Turkey, TKP victory
+    title = WNE.167.t
+    desc = WNE.167.desc
+    picture = GFX_report_event_communist_turkey
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.167.a
+   }
+}
+news_event = {
+    id = WNE.168 #Turkey, Left Technocrat victory
+    title = WNE.168.t
+    desc = WNE.168.desc
+    picture = GFX_report_event_left_tech_turkey
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.168.a
+   }
+}
+news_event = {
+    id = WNE.169 #Turkey, PatSoc victory
+    title = WNE.169.t
+    desc = WNE.169.desc
+    picture = GFX_report_event_patsoc_turkey
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.169.a
+   }
+}
+news_event = {
+    id = WNE.170 #Turkey, Thirdworldist victory
+    title = WNE.170.t
+    desc = WNE.170.desc
+    picture = GFX_report_event_thirdworldist_turkey
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.170.a
+   }
+}
+news_event = {
+    id = WNE.171 #Turkey, Bataillean victory
+    title = WNE.171.t
+    desc = WNE.171.desc
+    picture = GFX_report_event_bataillean_turkey
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.171.a
+   }
+}
+
+#### EXPANDED AMBAZONIA START ####
+
+news_event = {
+    id = WNE.172 #PRA: Lekeaka
+    title = WNE.172.t
+    desc = WNE.172.desc
+    picture = GFX_report_event_lekeaka
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.172.a
+   }
+}
+news_event = {
+    id = WNE.173 #PRA: Tigers
+    title = WNE.173.t
+    desc = WNE.173.desc
+    picture = GFX_report_event_pratigers
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.173.a
+   }
+}
+news_event = {
+    id = WNE.174 #AMB: Bambalang
+    title = WNE.174.t
+    desc = WNE.174.desc
+    picture = GFX_report_event_benard
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.174.a
+   }
+}
+
+news_event = {
+    id = WNE.175 #AMB: Center holds
+    title = WNE.175.t
+    desc = WNE.175.desc
+    picture = GFX_report_event_amb
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.175.a
+   }
+}
+news_event = {
+    id = WNE.176 #PRA: Sovmarsys holds
+    title = WNE.176.t
+    desc = WNE.176.desc
+    picture = GFX_report_event_praamb
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.176.a
+   }
+}
+
+#### EXPANDED AMAZONIA END ####
+
+#### NWG ELECTIONS ####
+
+news_event = {
+    id = WNE.177 #NWG: Knoch wins election
+    title = WNE.177.t
+    desc = WNE.177.desc
+    picture = GFX_report_event_nwg_knoch
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.177.a
+   }
+}
+news_event = {
+    id = WNE.178 #NWG: Soerjosoemarno wins elections
+    title = WNE.178.t
+    desc = WNE.178.desc
+    picture = GFX_report_event_soerjosoemarno
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.178.a
+   }
+}
+news_event = {
+    id = WNE.179 #NWG: Geert Wilders wins elections
+    title = WNE.179.t
+    desc = WNE.179.desc
+    picture = GFX_report_event_geert_wilders
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.179.a
+   }
+}
+####END OF NWG STUFF####
+
+#### Beginning Of Soviet Expanded Content ####
+
+news_event = {
+    id = WNE.180 #SOV: Oleg Komolov
+    title = WNE.180.t
+    desc = WNE.180.desc
+    picture = GFX_report_event_komolov
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.180.a
+   }
+}
+news_event = {
+    id = WNE.181 #SOV: Viktor Argonov
+    title = WNE.181.t
+    desc = WNE.181.desc
+    picture = GFX_report_event_argonov
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.181.a
+   }
+}
+news_event = {
+    id = WNE.182 #SOV: Alexandra Elbakyan
+    title = WNE.182.t
+    desc = WNE.182.desc
+    picture = GFX_report_event_elbakyan
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.182.a
+   }
+}
+news_event = {
+    id = WNE.183 #SOV: Kagarlitsky
+    title = WNE.183.t
+    desc = WNE.183.desc
+    picture = GFX_report_event_kagarlitsky
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.183.a
+   }
+}
+news_event = {
+    id = WNE.184 #SOV: Olga Shalina
+    title = WNE.184.t
+    desc = WNE.184.desc
+    picture = GFX_report_event_shalina
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.184.a
+   }
+}
+news_event = {
+    id = WNE.185 #SOV: Beness Aijo
+    title = WNE.185.t
+    desc = WNE.185.desc
+    picture = GFX_report_event_BLACK_LENIN
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.185.a
+   }
+}
+news_event = {
+    id = WNE.186 #SOV: Sergei Uldatsov
+    title = WNE.186.t
+    desc = WNE.186.desc
+    picture = GFX_report_event_uldatsov
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.186.a
+   }
+}
+news_event = {
+    id = WNE.187 #SOV: Pavel Zarifullin
+    title = WNE.187.t
+    desc = WNE.187.desc
+    picture = GFX_report_event_zarifullin
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.187.a
+   }
+}
+news_event = {
+    id = WNE.188 #SOV: Egor Letov
+    title = WNE.188.t
+    desc = WNE.188.desc
+    picture = GFX_report_event_letov_wtf
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.188.a
+   }
+}
+news_event = {
+    id = WNE.189 #Miskitoreich
+    title = WNE.189.t
+    desc = WNE.189.desc
+    picture = GFX_report_event_miskitoreich
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.189.a
+   }
+}
+news_event = {
+    id = WNE.190 #Honduras
+    title = WNE.190.t
+    desc = WNE.190.desc
+    picture = GFX_report_event_honduras
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.190.a
+   }
+}
+news_event = {
+    id = WNE.191 #Bukele
+    title = WNE.191.t
+    desc = WNE.191.desc
+    picture = GFX_report_event_bukkake
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.191.a
+   }
+}
+news_event = {
+    id = WNE.192 #NiKKKaragua
+    title = WNE.192.t
+    desc = WNE.192.desc
+    picture = GFX_report_event_nicasandist
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.192.a
+   }
+}
+news_event = {
+    id = WNE.193 #Brazil democratizes
+    title = WNE.193.t
+    desc = WNE.193.desc
+    picture = GFX_report_event_demobrazil
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.193.a
+   }
+}
+news_event = {
+    id = WNE.194 #Communist Gangster Computer God In Brazil
+    title = WNE.194.t
+    desc = WNE.194.desc
+    picture = GFX_report_event_brazilcom
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.194.a
+   }
+}
+news_event = {
+    id = WNE.195 #Kogos Konfederation
+    title = WNE.195.t
+    desc = WNE.195.desc
+    picture = GFX_report_event_brazilkogos
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.195.a
+   }
+}
+news_event = {
+    id = WNE.196 #Celebrityreich
+    title = WNE.196.t
+    desc = WNE.196.desc
+    picture = GFX_report_event_brazilceleb
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.196.a
+   }
+}
+news_event = {
+    id = WNE.197 #maoism
+    title = WNE.197.t
+    desc = WNE.197.desc
+    picture = GFX_report_event_braziLMAO
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.197.a
+   }
+}
+news_event = {
+    id = WNE.198 #war in liberia
+    title = WNE.198.t
+    desc = WNE.198.desc
+    picture = GFX_report_event_liberiawar
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.198.a
+   }
+}
+news_event = {
+    id = WNE.199 #war in liberia
+    title = WNE.199.t
+    desc = WNE.199.desc
+    picture = GFX_report_event_PRESIDENT_TUBMAN
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.199.a
+   }
+}
+news_event = {
+    id = WNE.200 #guinea wins
+    title = WNE.200.t
+    desc = WNE.200.desc
+    picture = GFX_report_event_guineanliberia
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.200.a
+   }
+}
+news_event = {
+    id = WNE.201 #Liberians are immune to ZOG
+    title = WNE.201.t
+    desc = WNE.201.desc
+    picture = GFX_report_event_liberia_taylor
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.201.a
+   }
+}
+news_event = {
+    id = WNE.203 #SSomalia Invades JDPON Ethiopia
+    title = WNE.203.t
+    desc = WNE.203.desc
+    picture = GFX_report_event_escalation_SOM
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.203.a
+   }
+}
+news_event = {
+    id = WNE.204 #Somalia is invaded by AbySSinian KKKraKKKers
+    title = WNE.204.t
+    desc = WNE.204.desc
+    picture = GFX_report_event_escalation_SOM
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.204.a
+   }
+}
+news_event = {
+    id = WNE.205 #Khmer War
+    title = WNE.205.t
+    desc = WNE.205.desc
+    picture = GFX_report_event_kmpkam
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.205.a
+   }
+}
+news_event = {
+    id = WNE.206 #Argie civil war
+    title = WNE.206.t
+    desc = WNE.206.desc
+    picture = GFX_report_event_argw
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.206.a
+   }
+}
+news_event = {
+    id = WNE.207 #make love not war!!!! argie
+    title = WNE.207.t
+    desc = WNE.207.desc
+    picture = GFX_report_event_argp
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.207.a
+   }
+}
+
+news_event = {
+    id = WNE.208 #Argie civil war
+    title = WNE.208.t
+    desc = WNE.208.desc
+    picture = GFX_report_event_mishima_news
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.208.a
+   }
+}
+news_event = {
+    id = WNE.210 # JKUT is done
+    title = WNE.210.t
+    desc = WNE.210.desc
+    picture = GFX_report_event_jkut
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.210.a
+   }
+}
+news_event = {
+    id = WNE.211 # Syria intervenes
+    title = WNE.211.t
+    desc = WNE.211.desc
+    picture = GFX_report_event_jkut
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.211.a
+   }
+}
+news_event = {
+    id = WNE.212 # Egypt intervenes
+    title = WNE.212.t
+    desc = WNE.212.desc
+    picture = GFX_report_event_jkut
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.212.a
+   }
+}
+#################################################################################
+##   .::::       .::::          .::        .::.::::::::  .:: ::  .::: .::::::.::##
+## .:    .::   .::    .::       .::        .::.::      .::    .::     .::    .::##
+##.::        .::        .::     .::   .:   .::.::       .::           .::    .::##
+##.::        .::        .::     .::  .::   .::.::::::     .::         .::    .: ##
+##.::   .::::.::        .::     .:: .: .:: .::.::            .::      .::    .: ##
+## .::    .:   .::     .::      .: .:    .::::.::      .::    .::     .::       ##
+##  .:::::       .::::          .::        .::.::::::::  .:: ::       .::    .::##
+#################################################################################
+## #     #       #    ##########        #     ######   #    ### 
+ #   #  #       #             # ##########            #    ### 
+# # #          #        #    #        ##   ########## ##   ### 
+   #          #          # ##       ## #        #     # #   #  
+  # #       ##           ##       ##   #        #     #  #     
+ #   #    ##           ##  #    ##    ##       #      #    ### 
+      # ##           ##     #          #     ##       #    ### 
+                                                               
+news_event = {
+    id = WNE.213 # Barry Soetoro Hussein wins
+    title = WNE.213.t
+    desc = WNE.213.desc
+    picture = GFX_report_event_barack
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.213.a
+   }
+}
+news_event = {
+    id = WNE.214 # Barry Soetoro Hussein loses
+    title = WNE.214.t
+    desc = WNE.214.desc
+    picture = GFX_report_event_ObungaFAILZ
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.214.a
+   }
+}
+news_event = {
+    id = WNE.215 # sharkey
+    title = WNE.215.t
+    desc = WNE.215.desc
+    picture = GFX_report_event_impaler
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 45
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "dragula"
+		}
+      clr_country_flag = event_open
+      name = WNE.215.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.215.a
+	}
+}
+news_event = {
+    id = WNE.216 # ASI
+    title = WNE.216.t
+    desc = WNE.216.desc
+    picture = GFX_report_event_RICE_COOKER_GRIFTER
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 43
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "augustus"
+		}
+      clr_country_flag = event_open
+      name = WNE.216.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.216.a
+	}
+}
+news_event = {
+    id = WNE.217 # preston
+    title = WNE.217.t
+    desc = WNE.217.desc
+    picture = GFX_report_event_freetribes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+        trigger = { THIS = { has_global_flag = superevents_ok} }
+        set_variable = {
+          var = global.current_superevent
+          value = 44
+        }
+        set_global_flag = Super_Event_Visible
+		hidden_effect = {
+			sound_effect = "preston"
+		}
+      clr_country_flag = event_open
+      name = WNE.217.a
+	}
+    option = {
+        trigger = { THIS = { has_global_flag = shut_up_superevents } }
+      clr_country_flag = event_open
+      name = WNE.217.a
+	}
+}
+news_event = {
+    id = WNE.218 # Michaux
+    title = WNE.218.t
+    desc = WNE.218.desc
+    picture = GFX_report_event_michaux
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.218.a
+   }
+}
+news_event = {
+    id = WNE.219 # pelosi sworn in
+    title = WNE.219.t
+    desc = WNE.219.desc
+    picture = GFX_report_event_pelosi_sworn_in
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.219.a
+   }
+}
+news_event = {
+    id = WNE.220 # pence revolts
+    title = WNE.220.t
+    desc = WNE.220.desc
+    picture = GFX_report_event_pence
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.220.a
+   }
+}
+#news_event = {
+#    id = WNE.221 # Heraklion Communists
+#    title = WNE.221.t
+#    desc = WNE.221.desc
+#    picture = GFX_report_event_elenikos
+#    is_triggered_only = yes
+#    fire_only_once = yes
+#    immediate = {
+#    set_country_flag = event_open
+#    }
+#
+#    option = {
+#      clr_country_flag = event_open
+#      name = WNE.221.a
+#   }
+#}
+#news_event = {
+#    id = WNE.222 # BAP Rising
+#    title = WNE.222.t
+#    desc = WNE.222.desc
+#    picture = GFX_report_event_BAP_rising
+#    is_triggered_only = yes
+#    fire_only_once = yes
+#    immediate = {
+#    set_country_flag = event_open
+#    }
+#
+#    option = {
+#      clr_country_flag = event_open
+#      name = WNE.222.a
+#   }
+#} #deprecated
+news_event = {
+    id = WNE.223 # Death of Tus
+    title = WNE.223.t
+    desc = WNE.223.desc
+    picture = GFX_report_event_anton
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.223.a
+   }
+}
+news_event = {
+    id = WNE.224 # Death of Yugoslavia
+    title = WNE.224.t
+    desc = WNE.224.desc
+    picture = GFX_report_event_yugcw
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.224.a
+   }
+}
+news_event = {
+    id = WNE.227
+    title = WNE.227.t
+    desc = WNE.227.desc
+    picture = gfx\interface\event_pictures\BLACK_LENIN.dds
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.227.a
+   }
+}
+
+
+   news_event = {
+    id = WNE.228
+    title = WNE.228.t
+    desc = WNE.228.desc
+    picture = gfx\interface\event_pictures\isr_intervention_in_lebanon.dds
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.228
+   }
+}

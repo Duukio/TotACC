@@ -1,0 +1,554 @@
+ideas = {
+	country = {
+			SAF_memories_of_a_titan = {
+			picture = SAF_memories_of_a_titan
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			war_support_factor = -0.10
+			political_power_gain = -0.10
+			stability_factor = -0.10
+			consumer_goods_factor = 0.03
+			conscription_factor = -0.70
+			}
+		}
+		SAF_boiling_point = {
+			picture = SAF_boiling_point
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			custom_modifier_tooltip = "SAF_TOOLTIP_CHAOS"
+			stability_weekly = -0.10
+			}
+		}
+		SAF_intl_isolation = {
+			picture = SAF_intl_isolation
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			trade_opinion_factor = -0.6
+			gdp_growth_modifier = -0.10
+			}
+		}
+		SAF_bd_contract = {
+			picture = SAF_bd_contract
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			#occupation_cost = -0.1 #TODO: find a replacement
+			required_garrison_factor = -0.1
+			resistance_damage_to_garrison_on_our_occupied_states = -0.1
+			fuel_cost = 10
+			army_attack_factor = 0.10
+			army_defence_factor = 0.10
+			#CUSTOM_MODIFIER_TOOLTIP = "SAF_ARTIFICIAL_DRIFT"
+			monthly_soctrends_drift_EA_A = 0.03
+			}
+		}
+		SAF_chaos_in_the_army = {
+			picture = SAF_chaos_in_the_army
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			gdp_growth_modifier = -0.8
+			conscription = -0.01
+			army_org_factor = -0.55
+			pocket_penalty = -0.2
+			army_strength_factor = -0.2
+			army_core_defence_factor = 0.1
+			army_core_attack_factor = -0.1
+			}
+		}
+		SAF_generic_no_step_back = {
+			picture = SAF_generic_no_step_back
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = -0.01
+				surrender_limit = 0.15
+			}
+		}
+		SAF_blockade = {
+			picture = SAF_blockade
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				attrition = 0.35
+				unit_upkeep_attrition_factor = 0.3
+				no_supply_grace = 10
+				supply_factor = -0.3
+				monthly_population = -0.8
+			}
+		}
+		AWB_pan_white_1 = {
+			picture = AWB_pan_white
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = 0.12
+				conscription = 0.01
+				defensive_war_stability_factor = -0.25
+			}
+		}
+		AWB_pan_white_2 = {
+			picture = AWB_pan_white
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = 0.12
+				conscription = 0.01
+				defensive_war_stability_factor = -0.25
+				party_popularity_stability_factor = 0.3
+				revolutionary_right_drift = 0.01
+			}
+		}
+		AWB_TND = {
+			picture = AWB_TND
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+			country_exists = EFF
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = EFF
+			    attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.015
+			    defense_bonus_against = 0.1
+			}
+			modifier = {
+			}
+		}
+		AWB_destroy_rustenburg = {
+			picture = AWB_destroy_rustenburg
+			allowed = {
+				tag = AWB
+			}
+
+            available = {
+			country_exists = RSB
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = RSB
+			    attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.1
+			    defense_bonus_against = 0.1
+			}
+			modifier = {
+			}
+		}
+		SAF_optimism = {
+			picture = SAF_optimism
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				stability_weekly = 0.03
+			}			
+		}
+		SAF_equalized_businesses = {
+			picture = SAF_equalized_businesses
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				gdp_growth_modifier = -0.04
+				weekly_debt_modifier = 0.01
+				political_power_gain = 0.1
+				stability_weekly = 0.01
+			}			
+		}
+		SAF_pseudo_technocracy = {
+			picture = SAF_pseudo_technocracy
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				gdp_growth_modifier = 0.06
+				research_speed_factor = 0.09
+				political_power_gain = -0.1			
+			}			
+		}
+		SAF_technocracy_for_realsies = {
+			picture = SAF_technocracy_for_realsies
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				gdp_growth_modifier = 0.06
+				research_speed_factor = 0.09
+				political_power_gain = -0.1		
+				consumer_goods_factor = -0.1
+				conscription = 0.01
+				industry_repair_factor = 0.3
+				supply_node_range = 0.1	
+			}			
+		}
+		SAF_black_conscription = {
+			picture = SAF_black_conscription
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.015
+			}			
+		}
+		SAF_SAPD = {
+			picture = SAF_SAPD
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.25
+				war_support_factor = -0.10
+				stability_factor = 0.1
+			}			
+		}
+		SAF_terrorist_cleanup = {
+			picture = SAF_terrorist_cleanup
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_population = -0.1
+				compliance_growth_on_our_occupied_states = 0.2
+				resistance_activity = -0.33
+				required_garrison_factor = 0.15
+			}			
+		}
+		SAF_incentives_to_build_in_bantustans = {
+			picture = SAF_incentives_to_build_in_bantustans
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.1
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = 0.07
+			}			
+		}
+		SAF_multiethnic_front = {
+			picture = SAF_multiethnic_front
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.1
+				conscription_factor = -0.15
+				stability_factor = 0.25
+				war_support_factor = 0.1
+			}		
+		}
+		SAF_pan_europeanism = {
+			picture = SAF_pan_europeanism
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_population = -0.05
+				conscription_factor = -0.3
+				stability_factor = 0.3
+				war_support_factor = -0.1
+			}		
+		}
+		SAF_anti_apartheid = {
+			picture = SAF_anti_apartheid
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_population = -0.25
+				political_power_gain = 0.75
+				stability_factor = -0.05
+			}		
+		}
+		SAF_sudden_halt = {
+			picture = SAF_sudden_halt
+			allowed = {
+				tag = SAF
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.25
+				stability_weekly = 0.03
+				war_support_factor = -0.15
+			}		
+		}
+	}	
+}

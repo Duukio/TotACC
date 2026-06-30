@@ -1,0 +1,37 @@
+add_namespace = LUX
+
+country_event = {
+    id = LUX.1 # TM
+    title = LUX.1.t
+    desc = LUX.1.desc
+    #picture = GFX_report_event_SAF_water2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = LUX.1.a
+		clr_country_flag = henri_luxembourg 
+        clr_country_flag = has_double_leader
+        set_politics = {
+            ruling_party = anarchism
+        }
+        create_country_leader = {
+        	name = "Jerome Reuter"
+        	desc = "POLITICS_J_LEENEY_DESC"
+        	picture = "gfx/leaders/LUX/Jerome Reuter.png"
+        	expire = "2040.1.1"
+        	ideology = nat_an
+        	traits = {
+        	}
+        }
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.76
+					days = 1
+				}
+			}
+	}
+}

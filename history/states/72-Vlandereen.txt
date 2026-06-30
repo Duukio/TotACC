@@ -1,0 +1,31 @@
+state={
+id=72
+	
+	name="STATE_72"
+
+
+	history={
+		owner = BEL
+		victory_points = {
+			516 50 
+		}
+		victory_points = {
+			11419 35 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		516 3488 3576 6446 6560 6598 9574 10893 11419 13068 
+	}
+	manpower=8000000
+	buildings_max_level_factor=2.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

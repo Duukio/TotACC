@@ -1,0 +1,32 @@
+state={
+id=1329
+	
+	name="STATE_1329" # Channel Islands
+	buildings_max_level_factor = 1
+	manpower = 171916
+	
+	state_category = small_island
+	
+	history={
+		add_core_of = ENG
+		add_core_of = FRA
+		owner = ENG
+		
+		buildings = {
+            school = 2
+			infrastructure = 2
+			industrial_complex = 2
+			dockyard = 3
+			air_base = 1
+			13346 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		13346
+	}
+
+	local_supplies=0.0 
+}

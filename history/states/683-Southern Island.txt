@@ -1,0 +1,37 @@
+state={
+id=683
+	name="STATE_683"
+    buildings_max_level_factor = 1
+	manpower = 1196000
+	
+	resources={
+		tungsten=24
+	}
+
+	state_category = city
+
+
+	history={
+		owner = NZL
+		buildings = {
+            school = 2
+			infrastructure = 5
+			air_base = 1
+			2197 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			2197 20 
+		}
+		victory_points = {
+			2211 10
+		}
+		add_core_of = NZL
+	}
+	provinces={
+		2197 2203 2211 4819 5195 7839 8204 8212 8232 8241 10650 12632 12966 12974 12980 12988 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,126 @@
+characters = {
+	BIU_nnamdi_kanu = {
+		name = "Nnamdi Okwu Kanu"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Nnamdi_Kanu.png"
+			}
+			army = {
+				large = "gfx/leaders/BIA/Portrait_BIA_Nnamdi_Kanu_general.png"
+			}
+		}
+		corps_commander = {
+			desc = POLITICS_NNAMDI_KANU_ARMY_DESC
+			traits = { brilliant_strategist politically_connected commando harsh_leader trickster infantry_officer }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		country_leader = {
+			desc = "POLITICS_NNAMDI_KANU_DESC"
+			ideology = lwnat
+		}
+	}
+	BIU_chibuike_nebeokike = {
+			name = "Chibuike Nebeokike"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_chibuike_nebeokike" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+			    original_tag = BIU
+				original_tag = BIA
+				}
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIU_chibuike_nebeokike 
+			traits = {
+			    head_of_government
+			    hog_young_guard
+				reformist_socialism_minister
+			}
+		}
+	}
+	BIU_emma_powerful = {
+			name = "Emma Powerful"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_emma_powerful" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+			    original_tag = BIU
+				original_tag = BIA
+				}
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIU_emma_powerful 
+			traits = {
+			    foreign_minister
+			    for_ideological_crusader
+				revolutionary_right_minister
+			}
+		}
+	}
+	BIU_simon_ekpa = {
+			name = "Simon Ekpa"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_simon_ekpa" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = BIA
+				original_tag = BIU
+				}
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIU_simon_ekpa 
+			traits = {
+			    economy_minister
+			    eco_military_entrepreneur
+				autocracy_minister
+			}
+		}
+	}
+	BIU_sofia_chineyere_kalu = {
+			name = "Sofia Chinyere Kalu"
+			portraits = {
+				civilian = { small = "GFX_idea_BIA_sofia_chineyere_kalu" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = BIA
+				original_tag = BIU
+				}
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = kanu_cabinet
+			}
+			idea_token = BIU_sofia_chineyere_kalu 
+			traits = {
+			    security_minister
+			    sec_health_and_safety
+				revolutionary_right_minister
+			}
+		}
+	}
+}

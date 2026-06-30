@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+
+
+		SEY_PMC_idea = {
+			picture = GEN_SEY_PMC
+			modifier = {
+				political_power_gain = -0.02
+			}
+		}
+
+		mercenary_contract_extension = {
+			picture = GEN_mercenary_contract_extension
+			modifier = {
+				civilian_factory_use = 3
+			}
+		}
+	}
+}

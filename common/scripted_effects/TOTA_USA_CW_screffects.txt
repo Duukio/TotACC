@@ -1,0 +1,807 @@
+appropriate_econ_sys_per_warlord = {
+	for_each_scope_loop	= {
+		array = global.USA_CW_TAGS 
+		add_ideas = post_recession_exceptionalism
+	}
+	ATI = {
+		add_ideas = portlandian_gift_economy
+	}
+	CAL = {
+		add_ideas = mitsubishi_managerialism
+	}
+	SAZ = {
+		add_ideas = phoenix_model
+	}
+	SNM = {
+		add_ideas = cologne_capitalism
+	}
+	DES = {
+		add_ideas = cologne_capitalism
+	}
+	FSA = {
+		add_ideas = phoenix_model
+	}
+	FSA = {
+		add_ideas = phoenix_model
+	}
+	RAS = {
+		add_ideas = kosygin_liberman_econ_theory
+	}
+	NWF = {
+		add_ideas = national_salvation_model
+	}
+	SFL = {
+		add_ideas = phoenix_model
+	}
+	LKT = {
+		add_ideas = beijing_new_course
+	}
+}
+
+usacw_array_gen = {
+	USA = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_4 = THIS }
+	}
+	USP = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_3 = THIS }
+	}
+	CAL = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_1 = THIS }
+	}
+	NWF = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_1 = THIS }
+	}
+	#BSD = {
+	#	add_to_array = { global.USA_CW_TAGS = THIS }
+	#	add_to_array = { global.USA_CW_TAGS_Sector_4 = THIS }
+	#}
+	#SFL = {
+		#add_to_array = { global.USA_CW_TAGS = THIS }
+		#add_to_array = { global.USA_CW_TAGS_Sector_4 = THIS }
+	#}
+	ATI = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_1 = THIS }
+	}
+	#DES = {
+	#	add_to_array = { global.USA_CW_TAGS = THIS }
+	#	add_to_array = { global.USA_CW_TAGS_Sector_1 = THIS }
+	#}
+	LKT = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_2 = THIS }
+	}
+	#DEA = {
+	#	add_to_array = { global.USA_CW_TAGS = THIS }
+	#	add_to_array = { global.USA_CW_TAGS_Sector_3 = THIS }
+	#}
+	#SAZ = {
+		#add_to_array = { global.USA_CW_TAGS = THIS }
+		#add_to_array = { global.USA_CW_TAGS_Sector_2 = THIS }
+	#}
+	#SNM = {
+	#add_to_array = { global.USA_CW_TAGS = THIS }
+	#add_to_array = { global.USA_CW_TAGS_Sector_2 = THIS }
+	#}
+	FSA = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_2 = THIS }
+	}
+	#NYP = {
+	#	add_to_array = { global.USA_CW_TAGS = THIS }
+	#	add_to_array = { global.USA_CW_TAGS_Sector_4 = THIS }
+	#}
+	#RAS = {
+	#	add_to_array = { global.USA_CW_TAGS = THIS }
+	#	add_to_array = { global.USA_CW_TAGS_Sector_4 = THIS }
+	#}
+    #INDEX POSITION: 18
+	for_each_scope_loop	= {
+		array = global.USA_CW_TAGS 
+		add_ideas = post_recession_exceptionalism
+	}
+}
+
+
+
+usacw_array_gen2 = { #do not use this until later, past the demo
+
+	KOH = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_0 = THIS }
+	}
+
+	ALK = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_0 = THIS }
+	}
+}
+
+usacw_puppets_war_start = {
+	
+	remove_from_array = {
+		array = global.USA_CW_TAGS
+		value = USA
+	}
+	RAS = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+	NYP = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+	OBC = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+	BSD = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+
+	GPR = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+	USA = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+
+	GPR = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+
+	OBC = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+	RAS = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+	NYP = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+	OBM = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+	#SFL = {
+	#	add_to_array = { global.USA_CW_TAGS = THIS }
+	#}
+
+	#remove_from_array = {
+	#	array = global.USA_CW_TAGS
+	#	value = USP
+	#}
+
+	DIX = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+	#SFL = { 
+	#	for_each_loop = {
+	#		array = global.USA_CW_TAGS
+	#		if = {
+	#			limit = {
+	#				NOT = {
+	#					tag = var:v
+	#					has_war_with = var:v
+	#					is_puppet_of = var:v
+	#				}
+	#			}
+	#			declare_war_on = { target = var:v type = civil_war }
+	#		}
+	#	}
+	#}
+	FSA = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+	TPR = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+
+	USP = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+
+	DIX = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+
+	TPR = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+	}
+	SFL = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_2 = THIS }		
+	}
+	FSA = {
+		add_to_array = { global.USA_CW_TAGS = THIS }
+		add_to_array = { global.USA_CW_TAGS_Sector_2 = THIS }
+	}
+	OBM = { 
+		for_each_loop = {
+			array = global.USA_CW_TAGS
+			if = {
+				limit = {
+					NOT = {
+						tag = var:v
+						has_war_with = var:v
+						is_puppet_of = var:v
+					}
+				}
+				declare_war_on = { target = var:v type = civil_war }
+			}
+		}
+	}
+}
+usacw_all_us_states_in_array = {
+	every_state = {
+		limit = {
+			is_core_of = USA
+			is_owned_by = USA
+			NOT = {
+				state = 724 #this is terrible, but it is far more stable than using remove_from_array
+				state = 580
+				state = 797
+				state = 796
+				state = 572
+				state = 799
+				state = 801
+				state = 798
+				state = 574
+				state = 576
+				state = 575
+				state = 571
+				state = 579
+				state = 669
+				state = 578
+			}
+		}
+		add_to_array = { global.USASTATES = THIS }
+	}
+}
+COLORADO_FUCK_YOU = {
+			FSA = { declare_war_on = { target = GPR type = civil_war } }
+			FSA = { declare_war_on = { target = DIX type = civil_war } }
+			FSA = { declare_war_on = { target = TPR type = civil_war } }
+			FSA = { declare_war_on = { target = DEA type = civil_war } }
+			FSA = { declare_war_on = { target = OBC type = civil_war } }
+		DES = {
+			add_to_war = {
+			    targeted_alliance = FSA
+			    enemy = DEA
+			    hostility_reason = asked_to_join
+			}
+		}
+}
+BSD_wars = {
+	BSD = {
+		add_to_war = {
+		    targeted_alliance = USA
+		    enemy = USP
+		    hostility_reason = asked_to_join
+		}
+		add_to_war = {
+		    targeted_alliance = USA
+		    enemy = FSA
+		    hostility_reason = asked_to_join
+		}
+		add_to_war = {
+		    targeted_alliance = USA
+		    enemy = DIX
+		    hostility_reason = asked_to_join
+		}
+		add_to_war = {
+		    targeted_alliance = USA
+		    enemy = SFL
+		    hostility_reason = asked_to_join
+		}
+	}
+}
+choose_capital_USUNIFIER = {
+	if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = USP #Pence should do D.C
+			has_country_leader = {
+			    name = "Mike Pence"
+			    ruling_only = yes
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 534 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = GPR 
+			GPR = {
+				has_cosmetic_tag = AVK_UNI #?
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 782 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = USP
+			USP = {
+				has_country_leader = {
+				    name = "Kanye West"
+				    ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 762 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = USP
+			USP = {
+				OR = {
+					NOT = {
+						has_country_leader = {
+						    name = "Mike Pence"
+						    ruling_only = yes
+						}
+					}
+					NOT = {
+						has_country_leader = {
+						    name = "Kanye West"
+						    ruling_only = yes
+						}
+					}
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 547 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = USP
+			USP = {
+				has_country_leader = {
+  				  name = "Mike Lindell"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 564 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = FSA
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 741 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = FSA
+			FSA = {
+				has_country_leader = {
+  				  name = "Alan Hostetter"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 1001 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = NYP
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 780 #Both Obama and Bloomberg use NYC }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = RAS
+			RAS = {
+				has_country_leader = {
+  				  name = "Caleb Maupin"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 547 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = RAS
+			RAS = {
+				has_country_leader = {
+  				  name = "Nick Srnicek"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 760 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = RAS
+			RAS = {
+				has_country_leader = {
+  				  name = "Cameron Fuller"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 808 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = LKT
+			LKT = {
+				has_country_leader = {
+  				  name = "Arlo Looking Cloud"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 563 }
+		set_province_name = {
+		    id = 1747
+		    name = PAHASAPA
+		}
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = LKT
+			LKT = {
+				has_country_leader = {
+  				  name = "Leonard Peltier"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 563 }
+		set_province_name = {
+		    id = 1747
+		    name = PAHASAPA
+		}
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = LKT
+			LKT = {
+				has_country_leader = {
+  				  name = "Tapa Machunashi"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 750 }
+		set_province_name = {
+		    id = 3708
+		    name = Tecumseh
+		}
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = LKT
+			LKT = {
+				has_country_leader = {
+  				  name = "Ezra Miller"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 750 }
+		set_province_name = {
+		    id = 3708
+		    name = Tecumseh
+		}
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = NWF
+			NWF = {
+				has_country_leader = {
+  				  name = "Greg Johnson"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 534 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = NWF
+			NWF = {
+				has_country_leader = {
+  				  name = "James Mason"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 534 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = NWF
+			NWF = {
+				has_country_leader = {
+  				  name = "Robert Jay Mathews"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		#set_capital = { state = 747 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = CAL
+			CAL = {
+				has_country_leader = {
+  				  name = "David Miscavige"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 730 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = ATI
+			ATI = {
+				has_country_leader = {
+  				  name = "Aragorn!"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 750 }
+	}
+	else_if = {
+		limit = {
+			#tooltip = "All Continental American States" #tooltip is not used in screffects obviously...
+			original_tag = ATI
+			ATI = {
+				has_country_leader = {
+  				  name = "Nyxus"
+  				  ruling_only = yes
+				}
+			}
+			all_of_scopes = {
+				array = global.USASTATES
+				ROOT = {
+				owns_state = var:v
+				}
+			}
+		}
+		set_capital = { state = 728 }
+	}
+	else = {
+		set_capital = { state = 534 }
+	}
+}

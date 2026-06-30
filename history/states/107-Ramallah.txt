@@ -1,0 +1,29 @@
+
+state={
+	id=107
+	name="STATE_107"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = ISP
+		victory_points = {
+			7107 5 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = ISP
+
+	}
+
+	provinces={
+		7107 14070
+	}
+	manpower=200000
+	buildings_max_level_factor=2.000
+	state_category=rural
+	local_supplies=0.000
+}

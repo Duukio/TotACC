@@ -1,0 +1,31 @@
+state={
+id=203
+	name="STATE_203"
+    buildings_max_level_factor = 1
+	resources={
+	
+		steel=200
+		oil = 60
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			11531 10
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = FRA
+
+	}
+	provinces={
+		9575 11531 
+	}
+	manpower=1200000
+	state_category=city
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

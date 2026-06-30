@@ -1,0 +1,382 @@
+
+shared_focus = {
+	id = NGA_the_southern_problem
+	icon = GFX_NGA_the_southern_problem
+	cost = 2
+	x = -10
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = -0.07
+		add_war_support = 0.05
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_southern_problem"
+	}
+}
+
+joint_focus = {
+	id = NGA_why_cant_we_be_friends
+	icon = GFX_NGA_why_cant_we_be_friends
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    allow_branch = {
+		OR = {
+		original_tag = BIA
+		original_tag = NGA
+		}
+    }
+	completion_reward = {
+		BIA = {
+			load_focus_tree = {
+			    tree = BIA_why_cant_we_be_friends
+			    keep_completed = yes
+			}
+					mark_focus_tree_layout_dirty = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_why_cant_we_be_friends"
+	}
+	relative_position_id = NGA_the_southern_problem
+	prerequisite = { focus = NGA_the_southern_problem }
+	mutually_exclusive = { focus = NGA_preparations_for_the_sixth_war }
+}
+
+shared_focus = {
+	id = NGA_preparations_for_the_sixth_war
+	icon = GFX_NGA_preparations_for_the_sixth_war
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+    allow_branch = {
+		original_tag = NGA
+		NGA = {
+			NOT = {
+				has_completed_focus = NGA_why_cant_we_be_friends
+			}
+		}
+    }
+	completion_reward = {
+		add_ideas = war_economy
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_preparations_for_the_sixth_war"
+	}
+	relative_position_id = NGA_the_southern_problem
+	prerequisite = { focus = NGA_the_southern_problem }
+	mutually_exclusive = { focus = NGA_why_cant_we_be_friends }
+}
+
+joint_focus = {
+	id = NGA_end_the_embargos
+	icon = GFX_NGA_end_the_embargos
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	joint_trigger = {
+		has_country_flag = NGA_BIA_frens
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 50
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_end_the_embargos"
+	}
+	completion_reward_joint_originator = {
+		add_to_variable = { NGA.GDP = 60 }
+		add_to_variable = { NGA.REAL_GROWTH = 0.01 }
+				add_opinion_modifier = {
+				    target = BIA
+				    modifier = trade_agreement
+				}
+		custom_effect_tooltip = NGA_BIA_EMBARGO_END_TT
+	}
+	completion_reward_joint_member = {
+		add_to_variable = { BIA.GDP = 30 }
+		add_to_variable = { BIA.REAL_GROWTH = 0.06 }
+				add_opinion_modifier = {
+				    target = NGA
+				    modifier = trade_agreement
+				}
+		custom_effect_tooltip = NGA_BIA_EMBARGO_END_TT
+	}
+	relative_position_id = NGA_why_cant_we_be_friends
+	prerequisite = { focus = NGA_why_cant_we_be_friends }
+}
+
+joint_focus = {
+	id = NGA_reopen_the_borders
+	icon = GFX_NGA_reopen_the_borders
+	cost = 6
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward_joint_originator = {
+		build_railway = {
+		    level = 1
+		    controller_priority = {
+		        base = 1
+		        modifier = {
+		            tag = NGA
+		            add = 2
+		        }
+		    }
+		    fallback = yes
+		    path = { 2050 13655 13654 13648 4952 13650 8034 }
+		    start_province = 2050
+		    target_province = 8034
+		}
+		NGA ={
+			add_stability = 0.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_reopen_the_borders"
+	}
+	completion_reward_joint_member = {
+		add_stability = 0.1
+	}
+	relative_position_id = NGA_why_cant_we_be_friends
+	prerequisite = { focus = NGA_why_cant_we_be_friends }
+}
+
+joint_focus = {
+	id = NGA_formal_recognition
+	icon = GFX_NGA_formal_recognition
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_war_support = -0.25
+		add_stability = 0.07
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_formal_recognition"
+	}
+	completion_reward_joint_member = {
+		BIA = {
+   		    add_to_array = { global.UN_member = THIS }
+   		    remove_from_array = { global.non_UN_member = THIS }
+   		    set_country_flag = UN_member
+		 	clr_country_flag = is_un_observer
+   		}
+	}
+	completion_reward_joint_originator = {
+		add_political_power = -100
+	}
+	relative_position_id = NGA_end_the_embargos
+	prerequisite = { focus = NGA_end_the_embargos }
+}
+
+joint_focus = {
+	id = NGA_discussions_of_common_currency
+	icon = GFX_NGA_discussions_of_common_currency
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = West_African_Pound
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_discussions_of_common_currency"
+	}
+	relative_position_id = NGA_reopen_the_borders
+	prerequisite = { focus = NGA_reopen_the_borders }
+}
+
+joint_focus = {
+	id = NGA_the_unthinkable_peace
+	icon = GFX_NGA_the_unthinkable_peace
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = WESTAFRICA_frens
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_unthinkable_peace"
+	}
+	relative_position_id = NGA_formal_recognition
+	prerequisite = { focus = NGA_formal_recognition }
+	prerequisite = { focus = NGA_discussions_of_common_currency }
+}
+
+shared_focus = {
+	id = NGA_back_to_the_drawing_board
+	icon = GFX_NGA_back_to_the_drawing_board
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_back_to_the_drawing_board"
+	}
+	relative_position_id = NGA_preparations_for_the_sixth_war
+	prerequisite = { focus = NGA_preparations_for_the_sixth_war }
+}
+
+shared_focus = {
+	id = NGA_demote_those_responsible
+	icon = GFX_NGA_demote_those_responsible
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_demote_those_responsible"
+	}
+	relative_position_id = NGA_preparations_for_the_sixth_war
+	prerequisite = { focus = NGA_preparations_for_the_sixth_war }
+}
+
+shared_focus = {
+	id = NGA_sensible_spending
+	icon = GFX_NGA_sensible_spending
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -50
+		every_owned_state = {
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			    type = arms_factory
+			    level = 1
+			    instant_build = yes
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_sensible_spending"
+	}
+	relative_position_id = NGA_back_to_the_drawing_board
+	prerequisite = { focus = NGA_back_to_the_drawing_board }
+}
+
+shared_focus = {
+	id = NGA_advanced_african_warfare
+	icon = GFX_NGA_advanced_african_warfare
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+		    bonus = 1
+		    uses = 3
+		    category = infantry_weapons
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_advanced_african_warfare"
+	}
+	relative_position_id = NGA_demote_those_responsible
+	prerequisite = { focus = NGA_demote_those_responsible }
+}
+
+shared_focus = {
+	id = NGA_sixth_time_around
+	icon = GFX_NGA_sixth_time_around
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = {
+			target = BIA
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = BED
+			type = annex_everything
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_sixth_time_around"
+	}
+	relative_position_id = NGA_sensible_spending
+	prerequisite = { focus = NGA_sensible_spending }
+	prerequisite = { focus = NGA_advanced_african_warfare }
+}
+
+joint_focus = {
+	id = NGA_a_decade_of_developments
+	icon = GFX_NGA_a_decade_of_developments
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 2
+			    instant_build = yes
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_decade_of_developments"
+	}
+	relative_position_id = NGA_the_unthinkable_peace
+	prerequisite = { focus = NGA_the_unthinkable_peace }
+}
+
+shared_focus = {
+	id = NGA_we_finally_fucking_won
+	icon = GFX_NGA_we_finally_fucking_won
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		always = no
+	}
+	completion_reward = {
+		add_stability = 0.25
+		add_to_variable = { NGA.GDP = BIA.GDP }
+		add_to_variable = { NGA.GDP = BED.GDP }
+		custom_effect_tooltip = "Adds Benin and Biafra's GDP to Nigeria"
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_we_finally_fucking_won"
+	}
+	relative_position_id = NGA_sixth_time_around
+	prerequisite = { focus = NGA_sixth_time_around }
+}
+
+shared_focus = {
+	id = NGA_a_back_to_back_humiliation
+	icon = GFX_NGA_a_back_to_back_humiliation
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		always = no
+		custom_trigger_tooltip = "We can't afford to account for this possibility..."
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_back_to_back_humiliation"
+	}
+	relative_position_id = NGA_sixth_time_around
+	prerequisite = { focus = NGA_sixth_time_around }
+}

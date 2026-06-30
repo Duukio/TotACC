@@ -1,0 +1,29 @@
+state={
+id=418
+	name="STATE_418"
+    buildings_max_level_factor = 1
+	state_category = rural
+	
+	resources = {
+	}
+	history={
+		owner = PLK
+		victory_points = { 1177 1 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+			dockyard = 1
+			air_base = 1
+			1177 = {
+			naval_base = 1
+			}
+		}
+		add_core_of = PLK
+	}
+	provinces={
+		1177 
+	}
+	manpower=695519
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

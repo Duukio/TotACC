@@ -1,0 +1,60 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_monarch_strip"
+		texturefile = "gfx/interface/minigames/monarch_strip.dds"
+		noOfFrames = 8
+	}
+	spriteType = {
+		name = "GFX_map_monarchs_biafra_outline"
+		texturefile = "gfx/interface/minigames/biafra map outline.dds"
+	}
+	spriteType = {
+		name = "GFX_BIA_monarchy_button"
+		texturefile = "gfx/interface/button_140x29.dds"
+	}
+	spriteType = {
+		name = "GFX_adamawa"
+		texturefile = "gfx/interface/minigames/Adamawa.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_onitsha"
+		texturefile = "gfx/interface/minigames/Onitsha.dds"
+	transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_akwa"
+		texturefile = "gfx/interface/minigames/Akwa Akpa.dds"
+	transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_owerri"
+		texturefile = "gfx/interface/minigames/Owerri.dds"
+	transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_nri"
+		texturefile = "gfx/interface/minigames/Nri.dds"
+	transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_elem"
+		texturefile = "gfx/interface/minigames/Elen Kalabari.dds"
+	transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_brass_kingdom"
+		texturefile = "gfx/interface/minigames/Brass.dds"
+	transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_okrika"
+		texturefile = "gfx/interface/minigames/Okrika.dds"
+	transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_text_monmap"
+		texturefile = "gfx/interface/minigames/biafra traditional kingdoms text.dds"
+		allwaystransparent = yes
+	}
+}

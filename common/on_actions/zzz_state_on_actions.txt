@@ -1,0 +1,33 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#JAPAN
+			1239 = { ##Shimizu
+				add_province_modifier = {
+					static_modifiers = { terrain_shimizu }
+					province = { id = 13978	}
+				}
+			}
+			397 = { ##Shimizu
+				add_province_modifier = {
+					static_modifiers = { terrain_tokyo }
+					province = { id = 1182	}
+				}
+			}
+			#NORTH AMERICA
+			534 = { ##Maryland
+				add_province_modifier = {
+					static_modifiers = { terrain_washdc }
+					province = { id = 3957 }
+				}
+			}
+			#AFRICA
+			965 = { ##Bodeleville
+				add_province_modifier = {
+					static_modifiers = { terrain_bodeleville }
+					province = { id = 13889 }
+				}
+			}
+		}
+	}
+}

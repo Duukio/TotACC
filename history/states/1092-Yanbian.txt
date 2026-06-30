@@ -1,0 +1,33 @@
+
+state={
+	id=1092
+	name="STATE_1092"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = QIE
+		victory_points = {
+			3929 10 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 4
+
+		}
+		add_core_of = QIE
+		add_core_of = PLK
+		add_core_of = PRC
+		set_demilitarized_zone = yes
+
+	}
+
+	provinces={
+		783 800 861 927 944 946 973 3791 3929 3944 3947 6806 6811 6964 9766 9841 9883 9897 9928 11781 11823 11850 11862 11893 11906 
+	}
+	manpower=3567350
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

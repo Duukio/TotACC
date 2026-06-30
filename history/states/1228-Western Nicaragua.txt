@@ -1,0 +1,34 @@
+
+state={
+	id=1228
+	name="STATE_1228"
+    buildings_max_level_factor = 1
+	resources={
+		strategic_minerals=20.000
+	}
+
+	history={
+		owner = NIC
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 6
+			air_base = 1
+
+		}
+		add_core_of = NIC
+		victory_points = {
+			13965 10 
+		}
+
+	}
+
+	provinces={
+		13965 13964 13966 13967 13968
+	}
+	manpower=4484462
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

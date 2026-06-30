@@ -1,0 +1,37 @@
+instant_effect = {
+	create_equipment_variant = {
+		name = "Aradu Class"
+		type = torpedo_cruiser
+		name_group = NGA_GENERIC_SHIP_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Ohue Class"
+		type = ship_hull_submarine_2
+		name_group = NGA_GENERIC_SHIP_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		}
+	}
+}
+units = {
+	fleet = {
+		name = "Western Naval Command"
+		naval_base = 2050
+		task_force = {
+			name = "Western Naval Taskforce"
+			location = 2050
+			ship = { name = "NNS Aradu" definition = light_cruiser equipment = { torpedo_cruiser = { amount = 3 owner = NGA version_name = "Aradu Class" } }
+			}
+			ship = { name = "NNS Ohue" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 4 owner = NGA version_name = "Ohue Class" } }
+			}
+		}
+	}
+}

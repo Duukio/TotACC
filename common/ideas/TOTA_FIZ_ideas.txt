@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+			FIZ_memories_of_kabila = {
+			picture = FIZ_memories_of_kabila
+			allowed = {
+				tag = FIZ
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                hardline_socialism_drift = 0.01
+                political_power_cost = 0.05
+                stability_factor = -0.15
+                war_support_factor = 0.2
+                conscription = 0.01
+                production_lack_of_resource_penalty_factor = -0.5
+                global_building_slots_factor = 0.5
+			}
+		}
+    }
+}

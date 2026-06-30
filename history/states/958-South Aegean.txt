@@ -1,0 +1,37 @@
+
+state={
+	id=958
+	name="STATE_958"
+    buildings_max_level_factor = 1
+	provinces={
+		3401 7003 10007 
+	}
+	manpower=309015
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = HEL
+		buildings = {
+			school = 2
+			infrastructure = 3
+			3401 = {
+				naval_base = 3
+
+			}
+			10007 = {
+				naval_base = 3
+
+			}
+		}
+		victory_points = {
+			3401 10 
+		}
+		victory_points = {
+			10007 10 
+		}
+		add_core_of = HEL
+		add_core_of = GRE
+	}
+}

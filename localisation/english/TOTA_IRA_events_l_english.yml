@@ -1,0 +1,18 @@
+﻿l_english:
+
+# IRA Events
+
+IRAmisc.2.t: "Political Transformation in Iraq"
+IRAmisc.2.desc: "With the end of hostilities and our firm control over our territories, the time has come for Iraq to decide its political future. The people are calling for change, and two paths lie before us. We can establish a People's Republic guided by social democratic principles, bringing together the working classes under a unified banner. Alternatively, we can form a more traditional republic under the guidance of experienced leaders like Allawi, focusing on stability and gradual reform."
+
+IRAmisc.2.a: "Establish the Iraqi People's Republic"
+IRAmisc.2.b: "Form the Iraqi Republic under Allawi"
+
+# Cosmetic Tags
+IRA_PEOPLES_REPUBLIC: "Iraqi People's Republic"
+IRA_PEOPLES_REPUBLIC_DEF: "Iraqi People's Republic"
+IRA_PEOPLES_REPUBLIC_ADJ: "Iraqi"
+
+IRA_REPUBLIC: "Iraqi Republic"
+IRA_REPUBLIC_DEF: "Iraqi Republic"
+IRA_REPUBLIC_ADJ: "Iraqi"

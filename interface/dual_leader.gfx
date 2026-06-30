@@ -1,0 +1,159 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_switch_leader"
+		texturefile = "gfx/interface/switch_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_bg_blank"
+		texturefile = "gfx/interface/portrait_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cockblock"
+		texturefile = "gfx/interface/cockblock.dds"
+	}
+
+	# Country Specific Portraits
+
+	spriteType = {
+		name = "GFX_QIE_Husheng"
+		texturefile = "gfx/leaders/QIE/Portrait_QIE_Husheng.png"
+	}
+	spriteType = {
+		name = "GFX_IRA_feel_the_ash_at_your_shoulders"
+		texturefile = "gfx/leaders/IRA/Portrait_IRA_feel_the_ash_at_your_shoulders.png"
+	}
+	spriteType = {
+		name = "GFX_JAP_Akihito"
+		texturefile = "gfx/leaders/JAP/Portrait_JAP_Akihito.png"
+	}
+	spriteType = {
+		name = "GFX_CHL_CYBERSYN_TITLE"
+		texturefile = "gfx/leaders/CHL/Cybersyn.png"
+	}
+
+	spriteType = {
+		name = "GFX_HOL_WILLEM_ALEX_TITLE"
+		texturefile = "gfx/leaders/HOL/Willem Alexander of the Netherlands.png"
+	}
+	spriteType = {
+		name = "GFX_JOR_BISHER_AL_TITLE"
+		texturefile = "gfx/leaders/JOR/Bisher Al-Khasawneh.png"
+	}
+
+	spriteType = {
+		name = "GFX_LST_LETSIE_TITLE"
+		texturefile = "gfx/leaders/LST/Letsie III.png"
+	}
+	spriteType = {
+		name = "GFX_MNC_PM_DARTOUT_TITLE"
+		texturefile = "gfx/leaders/MNC/Pierre Dartout.png"
+	}
+
+	spriteType = {
+		name = "GFX_SAU_MBS_LEADER_TITLE"
+		texturefile = "gfx/leaders/SAU/MBS.png"
+	}
+	spriteType = {
+		name = "GFX_LUX_HENRI_TITLE"
+		texturefile = "gfx/leaders/LUX/Henri.png"
+	}
+	spriteType = {
+		name = "GFX_PAK_ZAHER_TITLE"
+		texturefile = "gfx/leaders/PAK/Mirwais Zaher.png"
+	}
+	spriteType = {
+		name = "GFX_MNZ_LACROIX"
+		texturefile = "gfx/leaders/ZAI/Jean-Pierre Lacroix.png"
+	}
+	spriteType = {
+		name = "GFX_ZAI_MOBUTU"
+		texturefile = "gfx/leaders/ZAI/Portrait_ZAI_Nzanga_Mobutu.png"
+	}
+	spriteType = {
+		name = "GFX_LIZ"
+		texturefile = "gfx/leaders/ENG/Liz.png"
+	}
+	spriteType = {
+		name = "GFX_RICHARD_LI"
+		texturefile = "gfx/leaders/HKG/Richard Li Tzar-kai.png"
+	}
+	spriteType = {
+		name = "GFX_YAACOB"
+		texturefile = "gfx/leaders/SNG/Yaacob Ibrahim.png"
+	}
+	spriteType = {
+		name = "GFX_EUGENETB"
+		texturefile = "gfx/leaders/AWB/Portrait_AWB_TerreBlanche.png"
+	}
+	spriteType = {
+		name = "GFX_ISMAIL_TRM"
+		texturefile = "gfx/leaders/TRM/İsmail Metin Temel.png"
+	}
+	spriteType = {
+		name = "GFX_VALENTIN_CEAUSESCU"
+		texturefile = "gfx/leaders/ROM/Valentin Ceausescu.png"
+	}
+	spriteType = {
+		name = "GFX_CONSTANTINE_HEL"
+		texturefile = "gfx/leaders/HEL/Constantine II.png"
+	}
+	spriteType = {
+		name = "GFX_PHILIPPE_BEL"
+		texturefile = "gfx/leaders/BEL/Philippe.png"
+	}
+	spriteType = {
+		name = "GFX_QUENTIN_I"
+		texturefile = "gfx/leaders/HAW/Quentin I.png"
+	}
+	spriteType = {
+		name = "GFX_CHARLES_III"
+		texturefile = "gfx/leaders/ENG/Charles.png"
+	}
+	spriteType = {
+		name = "GFX_SEY_WAVEL"
+		texturefile = "gfx/leaders/SEY/Wavel Ramkalawan.png"
+	}
+	spriteType = {
+		name = "GFX_SRW_ABANG"
+		texturefile = "gfx/leaders/SRW/Abang Zulkifli Abang Engkeh.png"
+	}
+	spriteType = {
+		name = "GFX_NEL_DE_WET"
+		texturefile = "gfx/leaders/RSB/Nel De Wet.png"
+	}
+	spriteType = {
+		name = "GFX_efraim_sneh"
+		texturefile = "gfx/leaders/ISP/portrait_efraim_sneh.png"
+	}
+	spriteType = {
+		name = "GFX_MSK_Hendy_Clarence"
+		texturefile = "gfx/leaders/MSK/Hendy Clarence.png"
+	}
+	spriteType = {
+		name = "GFX_PHL_Gregorio_Catapang"
+		texturefile = "gfx/leaders/PHL/Gregorio Catapang.png"
+	}
+	spriteType = {
+		name = "GFX_LKT_Takota_Iron_Eyes"
+		texturefile = "gfx/leaders/LKT/Takota Iron Eyes.png"
+	}
+	spriteType = {
+		name = "GFX_GEORGES_VIET"
+		texturefile = "gfx/leaders/SVI/Georges.png"
+	}
+	spriteType = {
+		name = "GFX_MSK_John_McAfee"
+		texturefile = "gfx/leaders/MSK/McAfee.png"
+	}
+	spriteType = {
+		name = "GFX_LIE_DANIEL"
+		texturefile = "gfx/leaders/LIE/Daniel Risch.png"
+	}
+	spriteType = {
+		name = "GFX_YUZHANG"
+		texturefile = "gfx/leaders/QIE/Yuzhang.png"
+	}
+}

@@ -1,0 +1,38 @@
+state= {
+id=493
+	name="STATE_493"
+    buildings_max_level_factor = 1
+	manpower = 4000000
+	
+	resources={
+		aluminium=30
+	}
+	
+	state_category = city
+
+	history=
+	{
+		owner = DEN
+		victory_points = {
+			6364 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 4
+			air_base = 4
+			394 = {
+				naval_base = 5
+			}
+			6364 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = DEN
+	}
+	provinces=
+	{
+316 332 394 399 3206 3277 3341 6235 6364 11251 	}
+
+	local_supplies=0.0 
+}

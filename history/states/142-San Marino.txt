@@ -1,0 +1,23 @@
+state={
+id=142
+	name="STATE_142"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	
+	history={
+        victory_points = { 13336 15 }
+        owner = SMR
+        buildings = {
+            school = 2
+            infrastructure = 4
+        }
+        add_core_of = SMR
+    }
+	provinces={
+		13336 
+	}
+	manpower=33600
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,244 @@
+SEY_spicer_dec_cat = {
+	SPICER_help_burma = {
+	visible = { 
+	has_completed_focus = SEY_project_yellow_sun
+    BUR = {
+        has_war = yes
+    }
+	}
+		cost = 50
+         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_BUR
+            }
+			BUR = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SPICER_help_indonesia = {
+	visible = { 
+	has_completed_focus = SEY_project_yellow_sun
+    IND = {
+        has_war_with = NWG
+    }
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_NWG
+            }
+			IND = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SPICER_help_cali = {
+	visible = { 
+	has_completed_focus = SEY_project_blue_flame
+    CAL = {
+        has_war = yes
+    }
+	}
+		cost = 50
+         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_CAL
+            }
+			CAL = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SPICER_help_SIB = {
+	visible = { 
+	has_completed_focus = SEY_project_red_snow
+    TRS = {
+		has_war = yes
+    }
+	}
+		cost = 50
+         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_ROM
+            }
+			TRS = {
+				give_military_access = SEY
+			}
+		}
+	}
+	SPICER_help_japan_against_korea_and_china = {
+	visible = { 
+	has_completed_focus = SEY_project_yellow_sun
+	OR = {
+    	PLK = {
+    	    has_war_with = JAP
+    	}
+    	PRC = {
+    	    has_war_with = JAP
+    	}
+	}
+	}
+		cost = 50
+         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_PRC
+				add_ideas = SEY_rodeo_in_PLK
+            }
+			JAP = {
+				give_military_access = SEY
+			}
+		}
+	}
+}
+SEY_supersoldiers_dec_cat = {
+	host_CRISPR_studies = {
+	visible = { 
+        tag = SEY
+	has_country_flag = supersoldiers_SEY
+	}
+			days_remove = 90
+		cost = 50
+         ai_will_do = {
+            base = 100
+        }
+		fire_only_once = yes
+		remove_effect = {
+            add_research_slot = 1
+            add_stability = -0.25
+            add_political_power = -150
+            set_country_flag = supersoldiers_SEY_stepone
+		}
+	}
+	bring_volunteers_from_the_army = {
+	visible = { 
+        tag = SEY
+	has_country_flag = supersoldiers_SEY
+	has_country_flag = supersoldiers_SEY_stepone
+	}
+		cost = 75
+         ai_will_do = {
+            base = 100
+        }
+			days_remove = 120
+		fire_only_once = yes
+		remove_effect = {
+            add_manpower = -20000
+            add_war_support = -0.1
+            set_country_flag = supersoldiers_SEY_steptwo
+		}
+	}
+	fund_superior_armor = {
+	visible = { 
+        tag = SEY
+	has_country_flag = supersoldiers_SEY
+	has_country_flag = supersoldiers_SEY_stepone
+	has_country_flag = supersoldiers_SEY_steptwo
+	}
+		cost = 100
+         ai_will_do = {
+            base = 100
+        }
+			days_remove = 240
+		fire_only_once = yes
+		remove_effect = {
+            add_to_variable = { SEY.GDP = -5 }
+            custom_effect_tooltip = "Removes 5 billion USD from our GDP"
+            add_political_power = 100
+            set_country_flag = supersoldiers_SEY_stepthree
+		}
+	}
+	armywide_steroids_usage = {
+	visible = { 
+        tag = SEY
+	has_country_flag = supersoldiers_SEY
+	has_country_flag = supersoldiers_SEY_stepone
+	has_country_flag = supersoldiers_SEY_steptwo
+	has_country_flag = supersoldiers_SEY_stepthree
+	}
+		cost = 125
+         ai_will_do = {
+            base = 100
+        }
+			days_remove = 120
+		fire_only_once = yes
+		remove_effect = {
+            add_to_variable = { SEY.GDP = -1 }
+            custom_effect_tooltip = "Removes 1 billion USD from our GDP"
+            add_war_support = -0.15
+            add_manpower = -20000
+            set_country_flag = supersoldiers_SEY_stepfour
+		}
+	}
+	meth_distribution = {
+	visible = { 
+        tag = SEY
+	has_country_flag = supersoldiers_SEY
+	has_country_flag = supersoldiers_SEY_stepone
+	has_country_flag = supersoldiers_SEY_steptwo
+	has_country_flag = supersoldiers_SEY_stepthree
+	has_country_flag = supersoldiers_SEY_stepfour
+	}
+		cost = 175
+         ai_will_do = {
+            base = 100
+        }
+			days_remove = 120
+		fire_only_once = yes
+		remove_effect = {
+            add_to_variable = { SEY.GDP = -1 }
+            custom_effect_tooltip = "Removes 1 billion USD from our GDP"
+            add_war_support = -0.10
+            add_manpower = -1000
+            set_country_flag = supersoldiers_SEY_stepfive
+		}
+	}
+	genetic_perfection = {
+	visible = { 
+        tag = SEY
+	has_country_flag = supersoldiers_SEY
+	has_country_flag = supersoldiers_SEY_stepone
+	has_country_flag = supersoldiers_SEY_steptwo
+	has_country_flag = supersoldiers_SEY_stepthree
+	has_country_flag = supersoldiers_SEY_stepfour
+	has_country_flag = supersoldiers_SEY_stepfive
+	}
+		cost = 200
+         ai_will_do = {
+            base = 100
+        }
+			days_remove = 90
+		fire_only_once = yes
+		remove_effect = {
+            add_stability = -0.25
+            add_political_power = 50
+            add_war_support = 0.05
+			if = { 
+				limit = {
+					has_country_flag = diehard_brute
+				}
+				 add_ideas = SEY_supersoldiers_brute
+			}
+			else = { 
+				 add_ideas = SEY_supersoldiers_agility
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+state={
+id=1255
+	name="STATE_1255"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	resources = {
+		oil = 100
+	}
+	history={
+		victory_points = { 13981 50 }
+		owner = TRP
+		buildings = {
+            school = 5
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 5
+
+		}
+		add_core_of = TRP
+
+	}
+	provinces={
+		13986 13987 13981 13982 13983 13989 13985 13979 7076 9977 13984
+13990
+13991
+13992
+13993
+13994
+13995
+13996
+	}
+	manpower=1613749
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

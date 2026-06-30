@@ -1,0 +1,31 @@
+state={
+id=252
+	name="STATE_252"
+    buildings_max_level_factor = 1
+	state_category=large_town
+	
+	resources={
+		oil=10
+		steel = 10
+	}
+
+	history={
+		victory_points = {
+			11688 5
+		}
+		owner = SPA
+		buildings = {
+            school = 2
+			infrastructure = 4
+
+		}
+		add_core_of = SPA
+
+	}
+	provinces={
+		738 9703 11688 
+	}
+	manpower=580229
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

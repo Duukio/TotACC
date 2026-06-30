@@ -1,0 +1,50 @@
+characters = {
+    USA_janeen = {
+		name = "Janeen L. Birckhead"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Janeen L. Birckhead.png"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+    USA_andrew_collins = {
+		name = "Andrew W. Collins"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Andrew W. Collins.png"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+    USA_davidharry = {
+		name = "David C. Harry"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/David C. Harry.png"
+			}
+		}
+		field_marshal = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+}

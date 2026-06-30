@@ -1,0 +1,60 @@
+﻿l_english:
+
+# GUI functionality
+
+ TOTA_NATIONAL_INTRO_BUTTON_TT: "§YDestiny Awaits us.§!"
+
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_SRW: "Forwards, Sarawak Fair!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_BIA: "Woyo!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_SEY: "Vive la guerre!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_SAF: "Ons vir jou, Suid-Afrika!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_NGA: "Arise, O Compatriots!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_MSK: "Kingdom, Arise!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_ISP: "Am Eber Chai!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_CAL: "Excelsior!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_LKT: "Red Power!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_NWF: "Defeat Never, Victory Forever!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_ATI: "Antifa PLaceholder!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_UNH: "On The March!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_SOV: "Onward, Workers!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_AST: "Democracy Manifest!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_USA: "In God We Trust!"
+ TOTA_NATIONAl_INTRO_BUTTON_TEXT_TRP: "Socialism and Unity!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_LIE: "Für Gott!"
+ TOTA_NATIONAL_INTRO_BUTTON_TEXT_GEN: "Let's Go!"
+
+
+Get_Tutorial_Folder_key: "[Get_Tutorial_Folder]"
+
+# 
+TOTA_Welcome_Introduction: "Welcome to Twilight of the Anthropocene!"
+TOTA_Welcome_Introduction_desc: "1935, Germany: Konrad Zuse, in a stroke of luck, accidentally invents the MOSFET transistor, creating a world-changing catalyst - One, however, which did not save the Axis. As Adolf Hitler is shot at by an assailant in 1943 during a flight to Smolensk, the Nazi state collapsed - and the ensuing anarchy resulted in a comfortable peace deal for the Japanese Empire, which survives to this day. As anarchy engulfed Europe into flames, the Western Allies used a significant number of collaborationist and prewar authorities to assist in ending the chaos, eventually resulting in the creation of three German states: Westphalia, Austro-Bavaria and Prussia. The Japanese scraped by the skin of their teeth on not getting a nuclear bomb thrown on their cities, but the impact of the nuclear bomb's invention would come later in November 1967, when North Vietnam received two nuclear bombs; one in Mu Gia Pass and another in the outskirts of western Hanoi, having been intercepted just prior. This extreme escalation in proportional fighting causes international outrage and the USSR is able to show its evidence that this was an authorised attack from the Oval Office. President Goldwater and LeMay would later both be killed in a bombing attack by an American assassin in April 1968. Due to the different end of WWII, as well as no Korean War, Britain ends up with a stronger economy and pursues more of a nation-building approach to decolonisation. The French take inspiration from this, but instead of establishing a loose international group like the Commonwealth, France pursues the French Union system which sought to incorporate many of France's colonies and overseas territories into metropolitan France. While this approach ultimately failed in places such as Indochina and Algeria, it remained successful in a lot of West Africa. In 1969, the assassination attempt against Brezhnev that happened IRL happens to succeed, and because of the assassin's admiration for Suslov, the reformers that helped Brezhnev get into power use this to their advantage to sideline the hardliner factions within the party and manage to take power themselves, with Alexei Kosygin becoming leader of the USSR. He uses this position to pass the 1965 Liberman reforms that he drew up years prior and this starts a trend of economic reforms over his premiership that transition the USSR into a quasi-market system. As the Soviets reformed, collaboration began to spring up between the US and the USSR. This collaboration saw the building of the International Space Station. By the start of 2021, the first truly international expedition to establish a Martian colony is on its way, with a manned crew of astronauts and cosmonauts from NASA, ESA, and Interkosmos."
+ 
+TOTA_Welcome_Introduction_Credit: "Team Credits"
+
+TOTA_Welcome_Introduction_Credit_desc: "§LBrought to you by the§! §5TotA team:§!\n§AAubrey - Bukharin - Dakota - Ezra - Idenn - Kebab - Kettleworks - Matt - Sparrow - Berk - Euxinus - Gazio444 - Gernika - Histo - Inessa Armand - Jotell - K4th - Light_Bro - Lynn - M1 Abrams - MinnMaxing - Mossy - Sadasianstudent - SinisterHawktulian - Squg - Wittukind - Youwant - and all previous developers!§!"
+
+
+### COUNTRY OPENING ###
+NationIntro_tab_name_country: "Country"
+
+NationIntro_tab_name_region: "Region"
+ 
+ 
+### TUTORIALS ###
+NationIntro_tab_name_Globe_Pod_Misc: "Misc"
+
+ 
+### Development ###
+NationIntro_tab_name_Credits: "Credits"
+ 
+
+### COUNTRY ENDING ###
+NationIntro_tab_name_ending: "Afterthought" #?
+
+BIA_Nation_Title_Content.1: "A Dream Realized"
+BIA_Nation_Title_Content.2: "The France Has Fallen, Millions must crazy" 
+BIA_Nation_Title_Content.3: "EEEEHH mayako Chan! Dannunchio San! Sugoiiiiii !!"
+BIA_Nation_Title_Content.4: "I need cook artaud" 
+BIA_Nation_Title_Content_desc_left.1: "The year is 1967, and during the World's turbulent age of Maoist and hippie cultural revolutions, the dream of a new nation in Africa was born through ethnic conflict, the oldest type of conflict in History. As the Igbo, Ijaw and other Southeastern peoples of Nigeria found the Federal government to be increasingly violent, tyrannical and destructive, they took up their arms to defend their homes and societies against Hausa dominance. As 1968 rolled around and the war waged on, French intelligence agents working covertly in Nigeria discover a plan by the commander Yakubu Gowon to starve out Igbo civilians by cutting off food supplies and taking Port Harcourt. As a result of this, both Biafran and foreign troops prioritise the southern flank making sure to keep its logistics paths secure. The war would end up being decided at the Battle of the Benue, after which Nigeria would concede Biafran independence by 1969. This would come as a big blow to the UK's and USSR's prestige as these parties had been key backers of the Federal Government." 
+BIA_Nation_Title_Content_desc_right.1: "Nonetheless, the infant nation felt deep pains. The transitional period from military junta to democratic republic was risky, with power hungry miltary commanders being purged in the 1972 Democracy Commission. As Biafra improved its government structure, built a parliament, and created a real democracy, the nation was once again attacked by Nigeria in 1974, right after Chike Obi was elected to the post of President, with Nigeria believing that he was a "weak" leader. Nonetheless, despite multiple attempts, Biafra has persevered and even thrived as its extremely powerful oil industry created growth in the burgeoning nation."

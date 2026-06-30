@@ -1,0 +1,66 @@
+defined_text = {
+	name = GetNewsGraphic
+	
+
+	text = {
+		trigger = {
+			has_government = socdem
+		}
+		localization_key = news_GUARDIAN
+	}
+	text = {
+		trigger = {
+			has_government = liberalism
+		}
+		localization_key = news_ALJAZEERA
+	}
+	text = {
+		trigger = {
+			has_government = conservatism
+		}
+		localization_key = news_DAILYMAIL
+	}
+	text = {
+		trigger = {
+			has_government = autocracy
+		}
+		localization_key = news_LEMONDE
+	}
+	text = {
+		trigger = {
+			has_government = anarchism
+		}
+		localization_key = news_CRIMETHINC
+	}
+	text = {
+		trigger = {
+			has_government = technocracy
+		}
+		localization_key = news_FINANCIALTIMES
+	}
+	text = {
+		trigger = {
+			has_government = dissident_right
+		}
+		localization_key = news_BREITBART
+	}
+	text = {
+		trigger = {
+			has_government = revolutionary_right
+		}
+		localization_key = news_SECOLO
+	}
+	text = {
+		trigger = {
+			has_government = hardline_socialism
+		}
+		localization_key = news_GLOBALTIMES
+	}
+	text = {
+		trigger = {
+			has_government = reformist_socialism
+		}
+		localization_key = news_PRAVDA
+	}
+
+}

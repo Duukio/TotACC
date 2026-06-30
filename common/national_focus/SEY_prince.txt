@@ -1,0 +1,546 @@
+shared_focus = {
+	id = SEY_a_fortress_of_freedom
+	icon = GFX_SEY_fortress_of_freedom
+	cost = 6
+	x = 13
+	y = 0
+	completion_reward = {
+		add_dynamic_modifier = {
+		    modifier = SEY_fort_free
+		    scope = SEY
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_fortress_of_freedom"
+	}
+}
+
+shared_focus = {
+	id = SEY_god_bless_our_troops
+	icon = GFX_SEY_god_bless_our_troops
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_god_bless_our_troops"
+	}
+	relative_position_id = SEY_a_fortress_of_freedom
+	prerequisite = { focus = SEY_a_fortress_of_freedom }
+}
+
+shared_focus = {
+	id = SEY_calling_forth_the_trumpet
+	icon = GFX_SEY_calling_forth_the_trumpet
+	cost = 6
+	x = -9
+	y = 1
+	completion_reward = {
+		add_war_support = 0.05
+		add_ideas = partial_economic_mobilization
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_calling_forth_the_trumpet"
+	}
+	relative_position_id = SEY_god_bless_our_troops
+	prerequisite = { focus = SEY_god_bless_our_troops }
+}
+
+shared_focus = {
+	id = SEY_keeping_what_works
+	icon = GFX_SEY_keeping_what_works
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = autocracy
+			popularity = 0.15
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_keeping_what_works"
+	}
+	relative_position_id = SEY_god_bless_our_troops
+	prerequisite = { focus = SEY_god_bless_our_troops }
+}
+
+shared_focus = {
+	id = SEY_saving_the_islands
+	icon = GFX_SEY_saving_the_islands
+	cost = 6
+	x = 9
+	y = 1
+	completion_reward = {
+		add_ideas = SEY_towards_a_white_seychelles
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_saving_the_islands"
+	}
+	relative_position_id = SEY_god_bless_our_troops
+	prerequisite = { focus = SEY_god_bless_our_troops }
+}
+
+shared_focus = {
+	id = SEY_native_labor
+	icon = GFX_SEY_native_labor
+	cost = 6
+	x = -4
+	y = 1
+	completion_reward = {
+		add_stability = -0.05
+		add_ideas = SEY_native_labor
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_native_labor"
+	}
+	relative_position_id = SEY_calling_forth_the_trumpet
+	prerequisite = { focus = SEY_calling_forth_the_trumpet }
+}
+
+shared_focus = {
+	id = SEY_enhanced_recruiting_techniques
+	icon = GFX_SEY_enhanced_recruiting_techniques
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		add_to_variable = { SEY_fort_free_conscr = 0.02 }
+		add_to_variable = { SEY_fort_free_army_org = -0.01 }
+		add_to_variable = { SEY_fort_free_consumer_goods = 0.02 }
+		custom_effect_tooltip = "Adds 2% recruitable population, but also gives -1% army org and +2% consumer goods factor to the Fortress of Freedom national spirit."
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_enhanced_recruiting_techniques"
+	}
+	relative_position_id = SEY_calling_forth_the_trumpet
+	prerequisite = { focus = SEY_calling_forth_the_trumpet }
+}
+
+shared_focus = {
+	id = SEY_a_new_hope
+	icon = GFX_SEY_a_new_hope
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		662 = {
+			add_manpower = -20000
+		}
+		swap_ideas = {
+			remove_idea = SEY_towards_a_white_seychelles
+			add_idea = SEY_towards_a_white_seychelles_1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_new_hope"
+	}
+	relative_position_id = SEY_saving_the_islands
+	prerequisite = { focus = SEY_saving_the_islands }
+}
+
+shared_focus = {
+	id = SEY_bringing_them_into_our_wing
+	icon = GFX_SEY_bringing_them_into_our_wing
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		662 = {
+			add_manpower = 15000
+		}
+		add_stability = -0.15
+		add_political_power = 150		
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_bringing_them_into_our_wing"
+	}
+	relative_position_id = SEY_a_new_hope
+	prerequisite = { focus = SEY_a_new_hope }
+}
+
+shared_focus = {
+	id = SEY_maskoff_governance
+	icon = GFX_SEY_maskoff_governance
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { SEY_fort_free_pp_gain = 0.1 }
+		add_to_variable = { SEY_fort_free_drift = 0.02 }
+		add_to_variable = { SEY_fort_free_consumer_goods = 0.01 }
+		custom_effect_tooltip = "Adds +10% political power gain, 2% daily support for Autocracy and +1% consumer goods factor to the Fortress of Freedom national spirit."		
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_maskoff_governance"
+	}
+	relative_position_id = SEY_keeping_what_works
+	prerequisite = { focus = SEY_keeping_what_works }
+}
+
+shared_focus = {
+	id = SEY_his_truth_is_marching_on
+	icon = GFX_SEY_his_truth_is_marching_on
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SEY_native_labor
+			add_idea = SEY_native_labor_1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_his_truth_is_marching_on"
+	}
+	relative_position_id = SEY_native_labor
+	prerequisite = { focus = SEY_native_labor }
+	prerequisite = { focus = SEY_enhanced_recruiting_techniques }
+	prerequisite = { focus = SEY_industrialize_the_islands }
+}
+
+shared_focus = {
+	id = SEY_industrialize_the_islands
+	icon = GFX_SEY_industrialize_the_islands
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		662 = {
+		add_extra_state_shared_building_slots = 7
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 2
+			    instant_build = yes
+			}		
+			add_building_construction = {
+			    type = arms_factory
+			    level = 2
+			    instant_build = yes
+			}		
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_industrialize_the_islands"
+	}
+	relative_position_id = SEY_calling_forth_the_trumpet
+	prerequisite = { focus = SEY_calling_forth_the_trumpet }
+}
+
+shared_focus = {
+	id = SEY_our_benefactors_smiling
+	icon = GFX_SEY_our_benefactors_smiling
+	cost = 6
+	x = 0
+	y = 2
+	completion_reward = {
+		add_to_variable = { SEY_fort_free_stab = 0.15 }
+		add_to_variable = { SEY_fort_free_gdp = 0.1 }
+		custom_effect_tooltip = "Adds +10% GDP growth factor and +15% stability to A Fortress of Freedom"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_our_benefactors_smiling"
+	}
+	relative_position_id = SEY_nucleus_of_a_corporate_state
+	prerequisite = { focus = SEY_nucleus_of_a_corporate_state focus = SEY_bringing_them_into_our_wing  focus = SEY_his_truth_is_marching_on focus = SEY_crown_of_bullets}
+}
+
+shared_focus = {
+	id = SEY_more_work_to_be_done
+	icon = GFX_SEY_more_work_to_be_done
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_more_work_to_be_done"
+	}
+	relative_position_id = SEY_our_benefactors_smiling
+	prerequisite = { focus = SEY_our_benefactors_smiling }
+}
+
+shared_focus = {
+	id = SEY_keeping_our_shareholders_excited
+	icon = GFX_SEY_keeping_our_shareholders_excited
+	cost = 6
+	x = 19
+	y = 1
+	completion_reward = {
+		add_manpower = 10000
+		add_ideas = extensive_conscription
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_keeping_our_shareholders_excited"
+	}
+	relative_position_id = SEY_a_fortress_of_freedom
+	prerequisite = { focus = SEY_a_fortress_of_freedom }
+}
+
+shared_focus = {
+	id = SEY_breaking_the_competitions_knees
+	icon = GFX_SEY_breaking_the_competitions_knees
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		add_to_variable = { SEY.GDP = 20 }
+		add_to_variable = { SEY.REAL_GROWTH = -0.25 }
+		custom_effect_tooltip = "Adds 20 billion USD in GDP, but removes 2.5% Real Growth"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_breaking_the_competitions_knees"
+	}
+	relative_position_id = SEY_keeping_our_shareholders_excited
+	prerequisite = { focus = SEY_keeping_our_shareholders_excited }
+}
+
+shared_focus = {
+	id = SEY_american_values_first
+	icon = GFX_SEY_american_values_first
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_to_variable = { SEY_fort_free_trad_drift = 0.03 }
+		custom_effect_tooltip = "Adds 3% monthly drift to Traditional in Social Trends"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_american_values_first"
+	}
+	relative_position_id = SEY_keeping_our_shareholders_excited
+	prerequisite = { focus = SEY_keeping_our_shareholders_excited }
+}
+
+shared_focus = {
+	id = SEY_no_russian
+	icon = GFX_SEY_no_russian
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = { 
+			id = SEY.127
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_no_russian"
+	}
+	relative_position_id = SEY_breaking_the_competitions_knees
+	prerequisite = { focus = SEY_breaking_the_competitions_knees }
+}
+
+shared_focus = {
+	id = SEY_built_to_standard
+	icon = GFX_SEY_built_to_standard
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { SEY_fort_free_prod = -0.05 }
+		add_to_variable = { SEY_fort_free_power = 0.05 }
+		custom_effect_tooltip = "Removes 5% production efficiency, but increases division attack strength by +5%"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_built_to_standard"
+	}
+	relative_position_id = SEY_american_values_first
+	prerequisite = { focus = SEY_american_values_first }
+}
+
+shared_focus = {
+	id = SEY_crown_of_bullets
+	icon = GFX_SEY_crown_of_bullets
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_war_support = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_crown_of_bullets"
+	}
+	relative_position_id = SEY_no_russian
+	prerequisite = { focus = SEY_no_russian }
+	prerequisite = { focus = SEY_built_to_standard }
+}
+
+shared_focus = {
+	id = SEY_abolishing_military_democracy
+	icon = GFX_SEY_abolishing_military_democracy
+	cost = 6
+	x = 15
+	y = 1
+	completion_reward = {
+		set_variable = { SEY.SOCTRENDS_DE = 5 }
+		custom_effect_tooltip = "Changes Social Trends to 5% Democratic, 95% Autocratic"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_abolishing_military_democracy"
+	}
+	relative_position_id = SEY_more_work_to_be_done
+	prerequisite = { focus = SEY_more_work_to_be_done }
+}
+
+shared_focus = {
+	id = SEY_all_under_the_president
+	icon = GFX_SEY_all_under_the_president
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = autocracy
+			popularity = 0.7
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_all_under_the_president"
+	}
+	relative_position_id = SEY_abolishing_military_democracy
+	prerequisite = { focus = SEY_abolishing_military_democracy }
+}
+
+shared_focus = {
+	id = SEY_officialize_the_stratocracy
+	icon = GFX_SEY_officialize_the_stratocracy
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		add_ideas = war_economy
+		army_experience = 25
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_officialize_the_stratocracy"
+	}
+	relative_position_id = SEY_abolishing_military_democracy
+	prerequisite = { focus = SEY_abolishing_military_democracy }
+}
+
+shared_focus = {
+	id = SEY_blackwater_centralism
+	icon = GFX_SEY_blackwater_centralism
+	cost = 6
+	x = -4
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = SEY.128
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_blackwater_centralism"
+	}
+	relative_position_id = SEY_abolishing_military_democracy
+	prerequisite = { focus = SEY_abolishing_military_democracy }
+}
+
+shared_focus = {
+	id = SEY_nucleus_of_a_corporate_state
+	icon = GFX_SEY_nucleus_of_a_corporate_state
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_nucleus_of_a_corporate_state"
+	}
+	relative_position_id = SEY_maskoff_governance
+	prerequisite = { focus = SEY_maskoff_governance }
+}
+
+shared_focus = {
+	id = SEY_troops_in_tokyo
+	icon = GFX_SEY_troops_in_tokyo
+	cost = 6
+	x = -5
+	y = 1
+	completion_reward = {
+		unlock_decision_category_tooltip = SEY_prince_intervene_in_eastasia
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_troops_in_tokyo"
+	}
+	relative_position_id = SEY_the_anticommunist_sword
+	prerequisite = { focus = SEY_the_anticommunist_sword }
+}
+
+shared_focus = {
+	id = SEY_bases_in_bombay
+	icon = GFX_SEY_bases_in_bombay
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		PAK = {
+			add_ideas = SEY_PAK_friends
+		}
+		BMB = {
+			add_ideas = SEY_BMB_friends
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_bases_in_bombay"
+	}
+	relative_position_id = SEY_the_anticommunist_sword
+	prerequisite = { focus = SEY_the_anticommunist_sword }
+}
+
+shared_focus = {
+	id = SEY_xs_down_in_texas
+	icon = GFX_SEY_xs_down_in_texas
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		unlock_decision_category_tooltip = SEY_prince_intervene_in_americas
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_xs_down_in_texas"
+	}
+	relative_position_id = SEY_the_anticommunist_sword
+	prerequisite = { focus = SEY_the_anticommunist_sword }
+}
+
+shared_focus = {
+	id = SEY_intelligence_in_indonesia
+	icon = GFX_SEY_intelligence_in_indonesia
+	cost = 6
+	x = 6
+	y = 1
+	completion_reward = {
+		unlock_decision_category_tooltip = SEY_prince_intervene_in_south_asia
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_intelligence_in_indonesia"
+	}
+	relative_position_id = SEY_the_anticommunist_sword
+	prerequisite = { focus = SEY_the_anticommunist_sword }
+}
+
+shared_focus = {
+	id = SEY_the_anticommunist_sword
+	icon = GFX_SEY_the_anticommunist_sword
+	cost = 6
+	x = 17
+	y = 8
+	completion_reward = {
+		unlock_decision_category_tooltip = SEY_prince_intervene_in_africa
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_anticommunist_sword"
+	}
+}
+
+shared_focus = {
+	id = SEY_the_american_east_india_company
+	icon = GFX_SEY_the_american_east_india_company
+	cost = 6
+	x = -11
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SEY_native_labor_1
+			add_idea = SEY_aeic
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_the_american_east_india_company"
+	}
+	relative_position_id = SEY_more_work_to_be_done
+	prerequisite = { focus = SEY_more_work_to_be_done }
+}
+
+shared_focus = {
+	id = SEY_welcome_to_the_seychelles_corporation
+	icon = GFX_SEY_welcome_to_the_seychelles_corporation
+	cost = 6
+	x = -4
+	y = 2
+	completion_reward = {
+		add_stability = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_welcome_to_the_seychelles_corporation"
+	}
+	relative_position_id = SEY_stockholding_citizenship
+	prerequisite = { focus = SEY_stockholding_citizenship }
+	prerequisite = { focus = SEY_a_republic_of_finance }
+}
+
+shared_focus = {
+	id = SEY_stockholding_citizenship
+	icon = GFX_SEY_stockholding_citizenship
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		662 = {
+			add_manpower = 2500
+		}
+		add_stability = -0.15
+		add_to_variable = { SEY.GDP = 10 }
+		custom_effect_tooltip = "Adds 10 billion USD in GDP"
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_stockholding_citizenship"
+	}
+	relative_position_id = SEY_the_american_east_india_company
+	prerequisite = { focus = SEY_the_american_east_india_company }
+}
+
+shared_focus = {
+	id = SEY_a_republic_of_finance
+	icon = GFX_SEY_a_republic_of_finance
+	cost = 6
+	x = -4
+	y = 1
+	completion_reward = {
+		add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus SEY_a_republic_of_finance"
+	}
+	relative_position_id = SEY_the_american_east_india_company
+	prerequisite = { focus = SEY_the_american_east_india_company }
+}

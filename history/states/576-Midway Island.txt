@@ -1,0 +1,29 @@
+state={
+id=576
+	
+	name="STATE_576"
+
+	manpower=40	
+	state_category = tiny_island
+
+	history={
+		owner = USA
+		add_core_of = USA
+		buildings = {
+            school = 2
+			infrastructure = 2
+			13052 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13052 5
+		 }
+	}
+	
+	provinces={
+		13052 	
+	}
+
+	local_supplies=0.0 
+}

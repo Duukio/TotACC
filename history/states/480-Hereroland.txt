@@ -1,0 +1,24 @@
+
+state={
+	
+id=480
+	name="STATE_480"
+    buildings_max_level_factor = 1
+	manpower = 1000000
+	
+	state_category = pastoral
+
+	history={
+		victory_points = { 13335 1 }
+		owner = SAF
+		buildings = {
+            school = 2
+			infrastructure = 1
+		}
+		add_core_of = SAF
+	}
+
+	provinces={
+		13222 8136 13221 13229 13228 10957 13224 13335 12519 7770 13227 13226 13225 13217 13236
+	}
+}

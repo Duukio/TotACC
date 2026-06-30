@@ -1,0 +1,31 @@
+
+state={
+	id=792
+	name="STATE_792"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = USA
+		victory_points = {
+			12470 5 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 10
+			arms_factory = 4
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		1433 12325 12470 12498 
+	}
+	manpower=58246
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

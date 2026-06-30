@@ -1,0 +1,33 @@
+state={
+id=594
+	name="STATE_594"
+    buildings_max_level_factor = 1
+
+	
+	history={
+		owner = NWG
+		add_core_of = NWG
+		add_core_of = IND
+		buildings = {
+            school = 2
+			infrastructure = 2
+
+			4579 = {
+				naval_base = 1
+
+			}
+
+
+		}
+
+	}
+
+	provinces={
+		4579 
+	}
+	manpower=102237
+	buildings_max_level_factor=2.000
+	state_category="small_island"
+
+	local_supplies=0.0 
+}

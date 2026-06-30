@@ -1,0 +1,27 @@
+state={
+id=1236
+	name="STATE_1236"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	oil = 20
+	}
+	history={
+		owner = GAB
+		buildings = {
+            school = 2
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		add_core_of = GAB
+
+	}
+	provinces={
+	 12856
+	}
+	manpower=6000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

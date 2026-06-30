@@ -1,0 +1,22 @@
+state={
+id=40
+	name="STATE_40"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	history={
+		owner = BKF
+		victory_points = { 13363 25 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+		}
+		add_core_of = BKF
+	}
+	provinces={
+		13363 
+	}
+	manpower=3000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,1726 @@
+ideas = {
+	country = {
+		#ISP_EDF = {
+		#	picture = ISP_EDF
+		#	allowed = {
+		#		tag = ISP
+		#	}
+        #	available = {
+        #	}
+        #	cancel = {
+        #	}
+		#	allowed_civil_war = {
+		#		always = no
+		#	}			
+		#	modifier = {
+		#		offence = 0.05
+		#		defence = 0.15
+		#		planning_speed = 0.15
+		#		army_morale_factor = 0.15
+		#		war_support_factor = 0.15
+		#		conscription = 0.02
+		#		}
+		#}
+		ISP_last_stand = {
+			picture = ISP_For_Our_Security
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.2
+				conscription = 0.05
+				defence = 0.1
+
+			}
+		}
+		ISP_total_war = {
+			picture = ISP_For_Our_Security
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.2
+				production_speed_arms_factory_factor = 0.3
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+		ISP_total_war_2 = {
+			picture = ISP_For_Our_Security
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.2
+				production_speed_arms_factory_factor = 0.3
+				production_factory_max_efficiency_factor = 0.2
+				army_artillery_attack_factor = 0.15
+				air_attack_factor = 0.15
+			}
+		}
+		ISP_public_mistrust = {
+			picture = ISP_public_mistrust
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.5
+				consumer_goods_factor = 0.1
+
+			}
+		}
+		ISP_public_mistrust_timed = {
+			picture = ISP_public_mistrust
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.2
+				political_power_gain = -0.5
+				consumer_goods_factor = 0.1
+
+			}
+		}
+		ISP_reformist_coalition = {
+			picture = ISP_reformist_coalition
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.2
+				socdem_drift = 0.01
+				technocracy_drift = 0.01
+			}
+		}
+		ISP_reformist_coalition_2 = {
+			picture = ISP_reformist_coalition
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.02
+				political_power_gain = -0.1
+				socdem_drift = 0.01
+				technocracy_drift = 0.01
+			}
+		}
+		ISP_reformist_coalition_3 = {
+			picture = ISP_reformist_coalition
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.02
+				political_power_gain = -0.05
+				socdem_drift = 0.01
+				technocracy_drift = 0.01
+			}
+		}
+		ISP_reformist_coalition_4 = {
+			picture = ISP_reformist_coalition
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				socdem_drift = 0.01
+				technocracy_drift = 0.01
+			}
+		}
+		ISP_fading_dream = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.01
+				conscription_factor = -0.1
+				war_support_factor = -0.05
+			}
+		}
+		ISP_hebrew_of_the_future_idea = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.01
+				research_speed_factor = 0.05
+				monthly_soctrends_drift_EA_A = 0.01
+			}
+		}
+		ISP_reformed_kibbutz_econ = { #unused
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				#always = no
+			}	
+			modifier = {
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.05
+				gdp_growth_modifier = 0.15
+				monthly_soctrends_drift_EE_E2 = 0.01
+			}
+		}
+		ISP_ethnic_edati_divide = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				recruitable_population_factor = -0.35
+			}
+		}
+		ISP_reconciliation_through_education = {
+			picture = ISP_ethnic_edati_divide 
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				recruitable_population_factor = -0.30
+				consumer_goods_factor = 0.02
+				technocracy_drift = 0.1
+			}
+		}
+		ISP_reconciliation_through_education_2 = {
+			picture = ISP_ethnic_edati_divide 
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.06
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				recruitable_population_factor = -0.30
+				consumer_goods_factor = 0.02
+				technocracy_drift = 0.1
+			}
+		}
+		ISP_reconciliation_through_education_3 = {
+			picture = ISP_ethnic_edati_divide 
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				recruitable_population_factor = -0.30
+				consumer_goods_factor = 0.05
+				technocracy_drift = 0.1
+			}
+		}
+		ISP_reconciliation_through_education_4 = {
+			picture = ISP_ethnic_edati_divide 
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				war_support_factor = -0.1
+				political_power_gain = 0.1
+				recruitable_population_factor = -0.30
+				consumer_goods_factor = 0.05
+				technocracy_drift = 0.1
+			}
+		}
+		ISP_new_hebrew_econ1 = { #unused
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.05
+				gdp_growth_modifier = 0.15
+				monthly_soctrends_drift_EE_E2 = 0.01
+			}
+		}
+		ISP_new_hebrew_econ2 = { #unused
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.10
+				gdp_growth_modifier = 0.15
+				monthly_soctrends_drift_EE_E2 = 0.01
+			}
+		}
+		ISP_new_hebrew_econ3 = { #unused
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.15
+				gdp_growth_modifier = 0.17
+				production_speed_buildings_factor = 0.1
+				monthly_soctrends_drift_EE_E2 = 0.02
+			}
+		}
+		ISP_new_hebrew_econ4 = { #unused
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.15
+				gdp_growth_modifier = 0.22
+				production_speed_buildings_factor = 0.1
+				monthly_soctrends_drift_EE_E2 = 0.02
+			}
+		}
+		ISP_uncompromising_on_liberty_idea = {
+			picture = ISP_uncompromising_on_liberty
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.3
+				gdp_growth_modifier = 0.22
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = 0.1
+				monthly_soctrends_drift_EE_E2 = 0.03
+			}
+		}
+		ISP_project_liberty1 = {
+			picture = ISP_project_liberty
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				hardline_socialism_drift = -0.1
+				reformist_socialism_drift = -0.1
+				monthly_soctrends_drift_DE_D = 0.01
+			}
+		}
+		ISP_project_liberty2 = {
+			picture = ISP_project_liberty
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				hardline_socialism_drift = -0.1
+				reformist_socialism_drift = -0.1
+				political_power_gain = 0.05
+				monthly_soctrends_drift_DE_D = 0.01
+			}
+		}
+		ISP_project_liberty3 = {
+			picture = ISP_project_liberty
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				hardline_socialism_drift = -0.1
+				reformist_socialism_drift = -0.1
+				conservatism_drift = 0.1
+				socdem_drift = 0.1
+				liberalism_drift = 0.1
+				political_power_gain = 0.05
+				monthly_soctrends_drift_DE_D = 0.01
+			}
+		}
+		ISP_project_liberty4 = {
+			picture = ISP_project_liberty
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				hardline_socialism_drift = -0.1
+				reformist_socialism_drift = -0.1
+				conservatism_drift = 0.1
+				socdem_drift = 0.1
+				liberalism_drift = 0.1
+				monthly_soctrends_drift_DE_D = 0.02
+
+			}
+		}
+		ISP_project_liberty5 = {
+			picture = ISP_project_liberty
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				hardline_socialism_drift = -0.1
+				reformist_socialism_drift = -0.1
+				conservatism_drift = 0.1
+				socdem_drift = 0.1
+				liberalism_drift = 0.1
+				political_power_gain = -0.05
+				research_speed_factor = 0.05
+				monthly_soctrends_drift_DE_D = 0.03
+			}
+		}
+		ISP_factory_farming = {
+			picture = ISP_factory_farming
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				monthly_population = 0.05
+				consumer_goods_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		ISP_factory_farming_2 = {
+			picture = ISP_factory_farming
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				monthly_population = 0.05
+				consumer_goods_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		ISP_factory_farming_3 = {
+			picture = ISP_factory_farming
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				monthly_population = 0.1
+				consumer_goods_factor = 0.05
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		ISP_free_eber = {
+			picture = ISP_free_eber
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				hardline_socialism_drift = -0.1
+				reformist_socialism_drift = -0.1
+				conservatism_drift = 0.1
+				socdem_drift = 0.1
+				liberalism_drift = 0.1
+				gdp_growth_modifier = 0.22
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = 0.1
+				monthly_soctrends_drift_EE_E2 = 0.03
+				research_speed_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.3
+				stability_factor = 0.1
+				stability_weekly = 0.01
+			}
+		}
+		ISP_rebuilding_national_spirit1 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.01
+				conscription_factor = -0.1
+				war_support_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}
+		ISP_national_salvation_govt = {
+			picture = ISP_national_salvation_govt
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		ISP_national_salvation_govt_1 = {
+			picture = ISP_national_salvation_govt
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		ISP_national_salvation_govt_2 = {
+			picture = ISP_national_salvation_govt
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		ISP_national_salvation_govt_3 = {
+			picture = ISP_national_salvation_govt
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.12
+				war_support_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		ISP_national_salvation_govt_4 = {
+			picture = ISP_national_salvation_govt
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.17
+				war_support_factor = 0.12
+				political_power_gain = -0.1
+				reformist_socialism_drift = 0.01
+			}
+		}
+		ISP_national_salvation_govt_5 = {
+			picture = ISP_national_salvation_govt
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.17
+				war_support_factor = 0.12
+				monthly_soctrends_drift_DE_E = 0.03
+				reformist_socialism_drift = 0.01
+			}
+		}
+		ISP_national_salvation_govt_5_alt = {
+			picture = ISP_national_salvation_govt
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.17
+				war_support_factor = 0.12
+				political_power_gain = -0.06
+				monthly_soctrends_drift_DE_D = 0.05
+				reformist_socialism_drift = 0.02
+				socdem_drift = 0.04
+				conservatism_drift = 0.01
+				liberalism_drift = 0.01
+				consumer_goods_factor = -0.01
+			}
+		}
+		ISP_rebuilding_national_spirit2 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.01
+				conscription_factor = -0.1
+				war_support_factor = -0.05
+				political_power_gain = 0.1
+				monthly_soctrends_drift_TP_T = 0.01
+			}
+		}
+		ISP_rebuilding_national_spirit3 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.01
+				conscription_factor = -0.1
+				war_support_factor = -0.05
+				political_power_gain = 0.3
+				monthly_soctrends_drift_TP_T = 0.02
+				monthly_soctrends_drift_DE_E = 0.01
+			}
+		}
+		ISP_rebuilding_national_spirit4 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.03
+				conscription_factor = -0.1
+				war_support_factor = -0.05
+				political_power_gain = 0.3
+				monthly_soctrends_drift_TP_T = 0.02
+				monthly_soctrends_drift_DE_E = 0.01
+			}
+		}
+		ISP_the_tzabar = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				consumer_goods_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		ISP_the_tzabar2 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				consumer_goods_factor = 0.05
+				war_support_factor = 0.05
+				reformist_socialism_drift = 0.01
+			}
+		}
+		ISP_the_tzabar3 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				reformist_socialism_drift = 0.01
+			}
+		}
+		ISP_the_tzabar4 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				reformist_socialism_drift = 0.01
+				offence = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		ISP_the_tzabar5 = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.06
+				reformist_socialism_drift = 0.01
+				offence = 0.05
+				defence = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+		ISP_renewed_pioneer_spirit = {
+			picture = ISP_fading_dream
+			allowed = {
+				tag = ISP
+			}
+        	available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.06
+				reformist_socialism_drift = 0.01
+				offence = 0.05
+				defence = 0.05
+				army_morale_factor = 0.05
+				political_power_gain = 0.3
+				monthly_soctrends_drift_TP_T = 0.02
+				monthly_soctrends_drift_DE_E = 0.01
+				monthly_soctrends_drift_TP_P = 0.03
+			}
+		}
+		ISP_reformed_kibbutz_econ2 = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.05
+				gdp_growth_modifier = 0.15
+				monthly_soctrends_drift_EE_E2 = 0.02
+			}
+		}
+		ISP_cybernetic_kibbutzi_planning = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.05
+				gdp_growth_modifier = 0.15
+				monthly_soctrends_drift_EE_E2 = 0.01
+				monthly_soctrends_drift_EA_A = 0.01
+				research_speed_factor = 0.1
+			}
+		}
+		ISP_cybernetic_kibbutzi_planning2 = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.10
+				gdp_growth_modifier = 0.25
+				monthly_soctrends_drift_EE_E2 = 0.01
+				monthly_soctrends_drift_EA_A = 0.01
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		ISP_cybernetic_kibbutzi_planning3 = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.10
+				gdp_growth_modifier = 0.3
+				monthly_soctrends_drift_EE_E2 = 0.01
+				monthly_soctrends_drift_EA_A = 0.01
+				research_speed_factor = 0.1
+				stability_factor = 0.1
+			}
+		}
+		ISP_old_school_planning = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.05
+				gdp_growth_modifier = 0.05
+				monthly_soctrends_drift_EE_E2 = 0.01
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.3
+			}
+		}
+		ISP_socialist_austerity = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				consumer_goods_factor = -0.20
+				gdp_growth_modifier = 0.05
+				monthly_soctrends_drift_EE_E2 = 0.01
+				monthly_soctrends_drift_TP_T = 0.01
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor = 0.3
+				stability_factor = -0.5
+			}
+		}
+		ISP_spirit_of_labour = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ISP_hebrew_labour = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		ISP_conquest_of_labour = {
+			picture = ISP_reformed_kibbutz_econ
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}	
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_dockyard = 0.05
+				industrial_capacity_factory = 0.05
+				war_support_factor = 0.10
+				monthly_population = 0.25
+			}
+		}
+		ISP_ethnic_edati_divide2 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				conscription_factor = -0.35
+			}
+		}
+		ISP_ethnic_edati_divide3 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				conscription_factor = -0.35
+			}
+		}
+		ISP_ethnic_edati_divide_4 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				conscription_factor = -0.35
+			}
+		}
+		ISP_ethnic_edati_divide_5 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				political_power_gain = -0.01
+				conscription_factor = -0.35
+			}
+		}
+		ISP_ethnic_edati_divide_6 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.08
+				political_power_gain = -0.01
+				conscription_factor = -0.35
+			}
+		}
+		ISP_ethnic_edati_divide_7 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = -0.08
+				political_power_gain = -0.01
+				conscription_factor = -0.32
+			}
+		}
+		ISP_ethnic_edati_divide_8 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = -0.08
+				political_power_gain = -0.01
+				conscription_factor = -0.31
+			}
+		}
+		ISP_ethnic_edati_divide_9 = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.01
+				war_support_factor = -0.06
+				political_power_gain = -0.01
+				conscription_factor = -0.3
+			}
+		}
+		ISP_ethnic_edati_divide_wholesomejak = {
+			picture = ISP_ethnic_edati_divide
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				war_support_factor = -0.05
+				political_power_gain = -0.01
+				conscription_factor = -0.25
+			}
+		}
+		ISP_pro_consumer_politics = {
+			picture = ISP_pro_consumer_politics
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = 0.05
+				research_speed_factor = 0.02
+				stability_weekly = 0.01
+				production_speed_buildings_factor = 0.02
+			}
+		}
+		ISP_canaanlibforc = {
+			picture = ISP_canaanlibforc
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				army_org_factor = -0.1
+			}
+		}
+		ISP_canaanlibforc_1 = {
+			picture = ISP_canaanlibforc
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				army_org_factor = -0.15
+				consumer_goods_factor = -0.05
+
+			}
+		}
+		ISP_canaanlibforc_2 = {
+			picture = ISP_canaanlibforc
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				army_org_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industry_free_repair_factor = 0.25
+				army_org_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industry_free_repair_factor = 0.25
+				conscription_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		ISP_canaanlibforc_3 = {
+			picture = ISP_canaanlibforc
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				army_org_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industry_free_repair_factor = 0.25
+				army_org_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				industry_free_repair_factor = 0.25
+				conscription_factor = 0.1
+				war_support_factor = 0.05
+				river_crossing_factor = 0.2
+			}
+		}
+		ISP_from_the_ashes = {
+			picture = ISP_from_the_ashes
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				consumer_goods_factor = 0.2
+				industry_free_repair_factor = 0.5
+			}
+		}
+		ISP_from_the_ashes_2 = {
+			picture = ISP_from_the_ashes
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				consumer_goods_factor = 0.2
+				reformist_socialism_drift = 0.01
+				industry_free_repair_factor = 0.5
+			}
+		}
+		ISP_from_the_ashes_3 = {
+			picture = ISP_from_the_ashes
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				consumer_goods_factor = 0.1
+				reformist_socialism_drift = 0.01
+				industry_free_repair_factor = 0.5
+			}
+		}
+		ISP_mending_the_rift = {
+			picture = ISP_mending_the_rift
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				political_power_gain = 0.09
+				recruitable_population_factor = -0.35
+			}
+		}
+		ISP_mending_the_rift_1 = {
+			picture = ISP_mending_the_rift
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_weekly = 0.001
+				war_support_factor = -0.1
+				political_power_gain = 0.09
+				recruitable_population_factor = -0.1
+			}
+		}
+		ISP_mending_the_rift_2 = {
+			picture = ISP_mending_the_rift
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_weekly = 0.001
+				war_support_factor = -0.1
+				political_power_gain = 0.09
+				recruitable_population_factor = -0.1
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				monthly_soctrends_drift_EE_E1 = 0.01
+			}
+		}
+		ISP_mending_the_rift_3 = {
+			picture = ISP_mending_the_rift
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_weekly = 0.001
+				political_power_gain = 0.09
+				recruitable_population_factor = -0.1
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				monthly_soctrends_drift_EE_E1 = 0.01
+			}
+		}
+		ISP_semitic_action_idea = {
+			picture = GFX_idea_ISP_Semetic_Action
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				war_support_factor = 0.1
+				resistance_growth_on_our_occupied_states = -0.2
+				compliance_gain = 0.1
+				political_power_gain = 0.05
+				monthly_soctrends_drift_EA_E = 0.01
+			}			
+		}
+		ISP_semitic_action_idea_1 = {
+			picture = GFX_idea_ISP_Semetic_Action
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				war_support_factor = 0.1
+				compliance_gain = 0.15
+				local_resources_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				monthly_soctrends_drift_EA_E = 0.01
+			}			
+		}
+		ISP_pax_semitica_idea = {
+			picture = GFX_idea_ISP_Semetic_Action
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				war_support_factor = 0.1
+				stability_weekly = 0.001
+				compliance_gain = 0.15
+				local_resources_factor = 0.2
+				production_speed_buildings_factor = 0.1
+				monthly_soctrends_drift_EA_E = 0.01
+				stability_weekly = 0.5
+			}			
+		}
+		ISP_drift_eco = {
+			picture = ISP_drift_eco
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_EA_E = 0.01
+			}
+		}
+		ISP_drift_eco_1 = {
+			picture = ISP_drift_eco
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				monthly_soctrends_drift_EA_E = 0.01
+				offence = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		ISP_mending_the_rift_4 = {
+			picture = ISP_mending_the_rift
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_weekly = 0.002
+				political_power_gain = 0.09
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				monthly_soctrends_drift_EE_E1 = 0.01
+			}
+		}
+		ISP_unified_canaan_natspirits = {
+			picture = ISP_unified_canaan_natspirits
+			allowed = {
+				tag = ISP
+			}
+			available = {
+			}
+			cancel = {
+			}
+			allowed_civil_war = {
+				always = no
+			}				
+			modifier = {
+				stability_weekly = 0.002
+				political_power_gain = 0.09
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				monthly_soctrends_drift_EE_E1 = 0.01
+				monthly_soctrends_drift_TP_P = 0.07
+				revolutionary_right_drift = 0.03
+				encryption_factor = 0.1
+				decryption_factor = 0.1
+				monthly_soctrends_drift_EA_E = 0.01
+				production_speed_buildings_factor = -0.03
+				war_support_weekly = 0.01
+				monthly_soctrends_drift_TP_T = 0.05
+				war_support_factor = 0.15
+				MONTHLY_POPULATION = 0.1
+				research_speed_factor = 0.1
+				reformist_socialism_drift = -0.01
+				army_speed_factor = 0.05
+			}
+		}
+	}	
+}

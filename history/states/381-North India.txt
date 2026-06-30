@@ -1,0 +1,34 @@
+
+state={
+	id=381
+	name="STATE_381" #Delhi
+	resources={
+		steel=100.000
+		strategic_minerals=100.000
+		tungsten=100.000
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			11955 70 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 6
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		11955
+	}
+	manpower=28514000
+	buildings_max_level_factor=2.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

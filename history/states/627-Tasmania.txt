@@ -1,0 +1,30 @@
+state={
+id=627
+	
+	name="STATE_627"
+
+	manpower = 541965
+	
+	state_category = city
+
+	history=
+	{
+		owner = AST
+		victory_points = {
+			2189 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			2189 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = AST
+	}
+	provinces={
+		2183 2189 5181 5187 10665 12645
+	}
+
+	local_supplies=0.0 
+}

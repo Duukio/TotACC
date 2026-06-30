@@ -1,0 +1,335 @@
+ideas = {
+	country = {
+			EFF_fuck_wypipo_bruh = {
+			picture = EFF_fuck_wypipo_bruh
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = -0.5
+            research_speed_factor = -0.25
+			}
+		}
+			EFF_fuck_wypipo_very_much = {
+			picture = EFF_fuck_wypipo_very_much
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = -1
+            research_speed_factor = -0.5
+            political_power_gain = 0.15
+            stability_factor = 0.1
+			}
+		}
+			EFF_KILL_MORE_WHITES = {
+			picture = EFF_KILL_MORE_WHITES
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = -2
+            research_speed_factor = -0.77
+            political_power_gain = 0.33
+            war_support_factor = 0.33
+            revolutionary_right_drift = 0.03
+			}
+		}
+			KILL_ORANIA = {
+			picture = KILL_ORANIA
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+            targeted_modifier = {
+                tag = AWB
+                attack_bonus_against = 0.4
+            }
+		}
+			EFF_consolidation = {
+			picture = EFF_consolidation
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = 0.01
+				political_power_gain = 0.01
+				consumer_goods_factor = 0.05
+			}
+		}
+			EFF_kill_whitepeople_calmly = {
+			picture = EFF_kill_whitepeople_calmly
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                offence = 0.25
+				defence = -0.25
+			}
+		}
+			EFF_kill_whitepeople_nonstop = {
+			picture = EFF_prioritize_their_annihilation
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                offence = 0.5
+				defence = -0.5
+                stability_factor = -0.2
+                war_support_factor = -0.25
+                conscription = -0.01
+			}
+		}
+			EFF_exodus = {
+			picture = EFF_exodus
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = -1
+				monthly_soctrends_drift_EA_E = 0.1
+				gdp_growth_modifier = -0.05
+				stability_weekly = 0.02
+			}
+		}
+			EFF_rejuvenation = {
+			picture = EFF_rejuvenation
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+				war_support_factor = 0.25
+				political_power_gain = 0.05
+			}
+		}
+		EFF_soviet_delegation = {
+			picture = EFF_soviet_delegation
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+				gdp_growth_modifier = 0.1
+			}
+			targeted_modifier = {
+				tag =  SOV
+				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.1
+			}
+		}
+		EFF_chinese_delegation = {
+			picture = EFF_chinese_delegation
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				research_speed_factor = 0.03
+				gdp_growth_modifier = 0.01
+				production_speed_buildings_factor = 0.25
+				war_support_factor = 0.1
+			}
+			targeted_modifier = {
+				tag =  PRC
+				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.1
+			}
+		}
+		EFF_technology_is_epic = {
+			picture = EFF_technology_is_epic
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				research_speed_factor = 0.1
+				gdp_growth_modifier = 0.05
+				technocracy_drift = 0.03
+				weekly_debt_modifier = 0.01
+				political_power_cost = 0.05
+			}
+		}
+		EFF_tribal_anarchism = {
+			picture = EFF_tribal_anarchism
+			allowed = {
+				tag = EFF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				gdp_growth_modifier = -0.03
+				anarchism_drift = 0.03
+				weekly_debt_modifier = -0.01
+				political_power_cost = 0.25
+				conscription = 0.01
+			}
+		}
+	}	
+}

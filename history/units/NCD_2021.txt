@@ -1,0 +1,130 @@
+division_template = {
+	name = "Tutsi Militia"
+	division_names_group = NCD_MIL_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "CNDP Guard"
+	division_names_group = NCD_MIL_02
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Kivu Irregulars"
+	division_names_group = NCD_MIL_03
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st CNDP Brigade"
+		location = 4941
+		division_template = "CNDP Guard"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "2nd CNDP Brigade"
+		location = 14121
+		division_template = "CNDP Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Masisi Militia"
+		location = 14120
+		division_template = "Tutsi Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+		
+	division = {
+		name = "Virunga Militia"
+		location = 14121
+		division_template = "Kivu Irregulars"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Walikale Irregulars"
+		location = 14120
+		division_template = "Tutsi Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+	}
+	
+	division = {
+		name = "Lubero Defense Militia"
+		location = 14121
+		division_template = "Kivu Irregulars"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	
+	division = {
+		name = "Nkunda's Personal Guard"
+		location = 4941
+		division_template = "CNDP Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "CNDP Commandos"
+		location = 14119
+		division_template = "CNDP Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 2000
+		producer = NCD
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 500
+		producer = NCD
+	}
+}

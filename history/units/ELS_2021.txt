@@ -1,0 +1,128 @@
+division_template = {
+	name = "Division Paramilitar Salvador"		# Infantry Division
+	#
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12823
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 12823
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12823
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 13674
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 13674
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12823
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 12823
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 12823
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 13674
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 13674
+		division_template = "Division Paramilitar Salvador"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+}

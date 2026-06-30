@@ -1,0 +1,178 @@
+add_namespace = HON
+add_namespace = ELS
+
+country_event = {
+    id = HON.1 # Invasion of EMR - Prelude Flavor
+    title = HON.1.t
+    desc = HON.1.desc
+    picture = GFX_report_event_honduras_poverty
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = HON.1.a
+	}
+}
+country_event = {
+    id = HON.2 # Invasion of EMR
+    title = HON.2.t
+    desc = HON.2.desc
+    picture = GFX_report_event_honduras_poverty
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = HON.2.a
+		declare_war_on = {
+			target = EMR
+			type = annex_everything
+		}
+	}
+}
+country_event = {
+    id = HON.3 # Victory
+    title = HON.3.t
+    desc = HON.3.desc
+    picture = GFX_report_event_honduras_poverty
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = HON.3.a
+		set_cosmetic_tag = HON_CEN
+		remove_ideas = {
+		HON_football_humiliation
+		HON_population_loss
+		HON_crippling_poverty
+		}
+   	 MSK = {
+   	     remove_from_array = { global.non_UN_member = THIS }
+   	     add_to_array = { global.UN_member = THIS }
+   	     set_country_flag = UN_member
+   	 }
+     GUA = {
+      declare_war_on = {
+        target = HON
+        type = annex_everything
+      }
+     }
+     NIC = {
+      declare_war_on = {
+        target = HON
+        type = annex_everything
+      }     
+     }
+     NC2 = {
+      declare_war_on = {
+        target = HON
+        type = annex_everything
+      }     
+     }
+	}
+}
+country_event = {
+    id = HON.4 # final steps of unification for HON
+    title = HON.4.t
+    desc = HON.4.desc
+    picture = GFX_report_event_honduras_poverty
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = HON.4.a
+      declare_war_on = {
+        target = MSK
+        type = annex_everything
+      }
+      declare_war_on = {
+        target = COS
+        type = annex_everything
+      }
+	}
+}
+country_event = {
+    id = ELS.1 # War flavor
+    title = ELS.1.t
+    desc = ELS.1.desc
+    picture = GFX_report_event_honduras_poverty
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ELS.1.a
+	}
+}
+country_event = {
+    id = ELS.2 # War flavor
+    title = ELS.2.t
+    desc = ELS.2.desc
+    picture = GFX_report_event_honduras_poverty
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ELS.2.a
+		annex_country = {
+		target = EMR
+		}
+    MSK = {
+      transfer_state = 1225
+    }
+    NIC = {
+      country_event = {
+        id = ELS.3
+        days = 5
+      }
+    }
+    NC2 = {
+      country_event = {
+        id = ELS.3
+        days = 5
+      }
+    }
+    GUA = {
+      country_event = {
+        id = ELS.3
+        days = 5
+      }
+    }
+    COS = {
+      country_event = {
+        id = ELS.3
+        days = 5
+      }
+    }
+		transfer_state = 526 #failsafe
+		clear_variable = EMR.GDP
+		clear_variable = EMR.DEBT
+		clear_variable = EMR.REAL_GROWTH
+		add_to_variable = { ELS.GDP = 25 }
+    set_cosmetic_tag = ELS_CEN
+	}
+}
+country_event = {
+    id = ELS.3 # War flavor
+    title = ELS.3.t
+    desc = ELS.3.desc
+    picture = GFX_report_event_honduras_poverty
+    is_triggered_only = yes 
+
+    option = { #no! wtf
+      name = ELS.3.a
+      ai_chance = { factor = 90 }
+      declare_war_on = {
+        target = ELS
+        type = annex_everything
+      }
+	}
+  option = {
+    name = ELS.3.b
+    ai_chance = { factor = 20 }
+    ELS = {
+      annex_country = {
+        target = ROOT #should be the right scope
+        transfer_troops = yes
+      }
+    }
+  }
+}

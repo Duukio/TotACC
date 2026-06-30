@@ -1,0 +1,217 @@
+division_template = {
+	name = "Florida National Guard"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Sunshine State Militia"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Everglades Rangers"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Keys Coastal Defense"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Tampa Bay Motor Pool"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+	}
+}
+
+units = {
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1584
+		division_template = "Florida National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10352
+		division_template = "Sunshine State Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12439
+		division_template = "Florida National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12353
+		division_template = "Everglades Rangers"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.7
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12353
+		division_template = "Sunshine State Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1556
+		division_template = "Everglades Rangers"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.65
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1556
+		division_template = "Keys Coastal Defense"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 7388
+		division_template = "Tampa Bay Motor Pool"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 12439
+		division_template = "Florida National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 10352
+		division_template = "Sunshine State Militia"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.55
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 10407
+		division_template = "Sunshine State Militia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 10407
+		division_template = "Keys Coastal Defense"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.75
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 1584
+		division_template = "Everglades Rangers"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.65
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 7388
+		division_template = "Tampa Bay Motor Pool"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 1556
+		division_template = "Sunshine State Militia"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.4
+	}
+
+}

@@ -1,0 +1,317 @@
+
+shared_focus = {
+	id = AWB_totale_oorwinning
+	icon = GFX_AWB_totale_oorwinning
+	cost = 5
+	x = 7
+	y = 0
+	completion_reward = {
+		add_ideas = partial_economic_mobilisation
+		add_ideas = volunteer_only
+		add_to_variable = { AWB.GDP = 250 }
+		custom_effect_tooltip  = "Adds 250 billion USD in GDP"
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_totale_oorwinning"
+	}
+}
+
+shared_focus = {
+	id = AWB_the_republic_restored
+	icon = GFX_AWB_the_republic_restored
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		add_stability = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_the_republic_restored"
+	}
+	relative_position_id = AWB_totale_oorwinning
+	prerequisite = { focus = AWB_totale_oorwinning }
+}
+
+shared_focus = {
+	id = AWB_the_saboteurs_uprooted
+	icon = GFX_AWB_the_saboteurs_uprooted
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_war_support = 0.15
+		country_event = {
+			id = AWB.99
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_the_saboteurs_uprooted"
+	}
+	relative_position_id = AWB_totale_oorwinning
+	prerequisite = { focus = AWB_totale_oorwinning }
+}
+
+shared_focus = {
+	id = AWB_the_triskellion_blazing
+	icon = GFX_AWB_the_triskellion_blazing
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_political_power = 50	
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_the_triskellion_blazing"
+	}
+	relative_position_id = AWB_the_republic_restored
+	prerequisite = { focus = AWB_the_republic_restored }
+	prerequisite = { focus = AWB_the_saboteurs_uprooted }
+}
+
+shared_focus = {
+	id = AWB_patch_up_the_ship
+	icon = GFX_AWB_patch_up_the_ship
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		add_ideas = AWB_national_reform
+		create_country_leader = {
+			name = "Steyn Von Rönge"
+			desc = "POLITICS_VON_RONGE_DESC"
+			picture = "gfx/leaders/AWB/Portrait_AWB_Steyn_Von_Ronge.png"
+			expire = "2040.1.1"
+			ideology = natthirdpos
+			traits = {
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_patch_up_the_ship"
+	}
+	relative_position_id = AWB_the_triskellion_blazing
+	prerequisite = { focus = AWB_the_triskellion_blazing }
+	mutually_exclusive = { focus =  AWB_prepare_the_lifeboats }
+}
+
+shared_focus = {
+	id = AWB_prepare_the_lifeboats
+	icon = GFX_AWB_prepare_the_lifeboats
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_ideas = AWB_revolutionary_identity
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_prepare_the_lifeboats"
+	}
+	relative_position_id = AWB_the_triskellion_blazing
+	prerequisite = { focus = AWB_the_triskellion_blazing }
+	mutually_exclusive = { focus =  AWB_patch_up_the_ship }
+}
+
+shared_focus = {
+	id = AWB_spoons_in_white_mouths
+	icon = GFX_AWB_spoons_in_white_mouths
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		add_ideas = AWB_white_welfare
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_spoons_in_white_mouths"
+	}
+	relative_position_id = AWB_the_triskellion_blazing
+	prerequisite = { focus = AWB_the_triskellion_blazing }
+}
+
+shared_focus = {
+	id = AWB_apartheid_as_it_was
+	icon = GFX_AWB_apartheid_as_it_was
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		480 = {
+			set_demilitarized_zone = yes
+		}
+		928 = {
+			set_demilitarized_zone = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_apartheid_as_it_was"
+	}
+	relative_position_id = AWB_patch_up_the_ship
+	prerequisite = { focus = AWB_patch_up_the_ship }
+}
+
+shared_focus = {
+	id = AWB_lessons_from_jim_crow
+	icon = GFX_AWB_lessons_from_jim_crow
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AWB_national_reform
+			add_idea = AWB_national_reform_1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_lessons_from_jim_crow"
+	}
+	relative_position_id = AWB_patch_up_the_ship
+	prerequisite = { focus = AWB_patch_up_the_ship }
+}
+
+shared_focus = {
+	id = AWB_back_across_the_zambezi
+	icon = GFX_AWB_back_across_the_zambezi
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		474 = {
+			add_manpower = -200000
+		}
+		478 = {
+			add_manpower = -200000
+		}
+		add_stability = -0.1
+		add_war_support = 0.1
+		add_manpower = -200000
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_back_across_the_zambezi"
+	}
+	relative_position_id = AWB_prepare_the_lifeboats
+	prerequisite = { focus = AWB_prepare_the_lifeboats }
+}
+
+shared_focus = {
+	id = AWB_repatriate_the_yeomen
+	icon = GFX_AWB_repatriate_the_yeomen
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		add_stability = -0.15
+			add_offsite_building = { type = industrial_complex level = 2 }
+			add_to_variable = { AWB.GDP = 20 }
+		custom_effect_tooltip = "Adds 20 billion USD in GDP."
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_repatriate_the_yeomen"
+	}
+	relative_position_id = AWB_prepare_the_lifeboats
+	prerequisite = { focus = AWB_prepare_the_lifeboats }
+}
+
+shared_focus = {
+	id = AWB_seeds_in_white_fields
+	icon = GFX_AWB_seeds_in_white_fields
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AWB_white_welfare
+			add_idea = AWB_white_agrarianism
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_seeds_in_white_fields"
+	}
+	relative_position_id = AWB_spoons_in_white_mouths
+	prerequisite = { focus = AWB_spoons_in_white_mouths }
+}
+
+shared_focus = {
+	id = AWB_hate_in_white_hearts
+	icon = GFX_AWB_hate_in_white_hearts
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_war_support = 0.2
+		471 = {
+			add_manpower = -200000
+		}
+		465 = {
+			add_manpower = -200000
+		}
+		add_political_power = -200
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_hate_in_white_hearts"
+	}
+	relative_position_id = AWB_seeds_in_white_fields
+	prerequisite = { focus = AWB_seeds_in_white_fields }
+}
+
+shared_focus = {
+	id = AWB_verwoerd_up_above
+	icon = GFX_AWB_verwoerd_up_above
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_verwoerd_up_above"
+	}
+	relative_position_id = AWB_apartheid_as_it_was
+	prerequisite = { focus = AWB_apartheid_as_it_was }
+	prerequisite = { focus = AWB_lessons_from_jim_crow }
+}
+
+shared_focus = {
+	id = AWB_gods_land_for_gods_people
+	icon = GFX_AWB_gods_land_for_gods_people
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		add_to_variable = { AWB.SOCTRENDS_EE = -30 }
+		add_to_variable = { AWB.SOCTRENDS_DC = 25 }
+		add_to_variable = { AWB.SOCTRENDS_TP = 30 }
+		custom_effect_tooltip = "Changes our Social Trends values."
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_gods_land_for_gods_people"
+	}
+	relative_position_id = AWB_back_across_the_zambezi
+	prerequisite = { focus = AWB_back_across_the_zambezi }
+	prerequisite = { focus = AWB_repatriate_the_yeomen }
+}
+
+shared_focus = {
+	id = AWB_the_sword_and_shield_of_whiteness
+	icon = GFX_AWB_the_sword_and_shield_of_whiteness
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		add_war_support = 0.15
+		add_manpower = 20000
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_the_sword_and_shield_of_whiteness"
+	}
+	relative_position_id = AWB_hate_in_white_hearts
+	prerequisite = { focus = AWB_hate_in_white_hearts }
+	prerequisite = { focus = AWB_new_skin_same_bones focus = AWB_verwoerd_up_above focus = AWB_gods_land_for_gods_people focus = AWB_calling_out_for_home }
+}
+
+shared_focus = {
+	id = AWB_calling_out_for_home
+	icon = GFX_AWB_calling_out_for_home
+	cost = 5
+	x = 3
+	y = 2
+	completion_reward = {
+		add_stability = 0.1
+		477 = {
+			add_manpower = 100000
+		}
+		985 = {
+			add_manpower = 30000
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_calling_out_for_home"
+	}
+	relative_position_id = AWB_prepare_the_lifeboats
+	prerequisite = { focus = AWB_prepare_the_lifeboats }
+}
+
+shared_focus = {
+	id = AWB_new_skin_same_bones
+	icon = GFX_AWB_new_skin_same_bones
+	cost = 5
+	x = -3
+	y = 2
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = AWB_national_reform
+			add_idea = AWB_national_reform_1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus AWB_new_skin_same_bones"
+	}
+	relative_position_id = AWB_patch_up_the_ship
+	prerequisite = { focus = AWB_patch_up_the_ship }
+}

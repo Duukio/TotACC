@@ -1,0 +1,263 @@
+﻿capital = 397
+
+set_variable = { GDP = 20000.230 } set_variable = { DEBT = 12000 } set_variable = { REAL_GROWTH = 1.3 }
+oob = "JAP_2021"
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+set_country_flag = has_double_leader
+set_country_flag = akihito
+set_global_flag = JKUT_UNFINISHED
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+	gw_artillery = 1
+interwar_artillery = 1
+
+
+}
+create_faction = COPRO_SPHERE
+JAP = { add_to_faction = QIE }
+JAP = { add_to_faction = SVI }
+JAP = { add_to_faction = IND }
+JAP = { add_to_faction = PHL }
+JAP = { add_to_faction = KAM }
+JAP = { add_to_faction = SRW }
+JAP = { add_to_faction = SIA }
+JAP = { add_to_faction = PLK }
+set_variable = { JAP.FACTIONSTATUS = 7 }
+set_variable = { SVI.FACTIONSTATUS = 6 }
+set_variable = { IND.FACTIONSTATUS = 6 }
+set_variable = { PHL.FACTIONSTATUS = 6 }
+set_variable = { KAM.FACTIONSTATUS = 8 }
+set_variable = { SRW.FACTIONSTATUS = 6 }
+set_variable = { SIA.FACTIONSTATUS = 6 }
+set_variable = { PLK.FACTIONSTATUS = 6 }
+set_variable = { CAL.FACTIONSTATUS = 8 }
+set_variable = { AST.FACTIONSTATUS = 8 }
+set_variable = { NZL.FACTIONSTATUS = 8 }
+set_variable = { PGN.FACTIONSTATUS = 8 }
+set_variable = { BUR.FACTIONSTATUS= 6 }
+set_variable = { BNG.FACTIONSTATUS = 8 }
+set_variable = { QIE.FACTIONSTATUS = 6 }
+
+
+add_ideas = {
+JAP_diplomatic_problems
+JAP_booming_economy
+#JAP_korean_frens
+JAP_kokutai_undamaged
+JAP_hikikomori
+JAP_state_shinto
+JAP_keeping_up_with_the_copro
+JAP_extremely_advanced_technology
+mitsubishi_managerialism
+}
+JAP = {
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = PLK
+			autonomy_state = JAP_associate
+		}
+	}
+	else = {
+		puppet = PLK
+	}
+}
+JAP = {
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = QIE
+			autonomy_state = JAP_associate
+		}
+	}
+	else = {
+		puppet = QIE
+	}
+}
+set_variable = {
+var = SOCTRENDS_DC
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 50
+}
+tota_variable_clamping = yes
+set_convoys = 100
+set_popularities = {
+        anarchism = 0
+        conservatism = 25
+        
+        
+        
+        
+        revolutionary_right = 5
+        
+        dissident_right = 0
+        liberalism = 10
+        hardline_socialism = 0
+        
+        autocracy = 37
+        
+        
+        reformist_socialism = 1
+        socdem = 0
+        technocracy = 22
+
+}
+
+set_politics = {
+	
+	ruling_party = autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Koizumi Junichiro"
+	desc = "POLITICS_JAP_KOIZUMI_DESC"
+	picture = "gfx/leaders/JAP/Koizumi Junichiro.png"
+	expire = "2040.1.1"
+	ideology = anodir
+}
+create_country_leader = {
+	name = "Ikeuchi Saori"
+	desc = ""
+	picture = "Ikeuchi Saori.dds"
+	expire = "2040.1.1"
+	ideology = sovmarsys
+}
+create_country_leader = {
+	name = "Hagiuda Koichi"
+	desc = ""
+	picture = "Hagiuda Koichi.dds"
+	expire = "2040.1.1"
+	ideology = manbur
+}
+create_country_leader = {
+	name = "Toyama Koichi"
+	desc = ""
+	picture = "Toyama Koichi.dds"
+	expire = "2040.1.1"
+	ideology = p_l_a
+}
+
+
+#create_country_leader = {
+#	name = "Rando Nikku"
+#	desc = "POLITICS_JAP_YOSHIHIDE_DESC"
+#	picture = "Portrait_JAP_Nikku_Rando.dds"
+#	expire = "2040.1.1"
+#	ideology = algodesp
+#}

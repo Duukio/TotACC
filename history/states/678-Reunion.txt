@@ -1,0 +1,27 @@
+state={
+id=678
+	name="STATE_678"
+    buildings_max_level_factor = 1
+	manpower = 868846
+	
+	
+	state_category = small_island
+
+	history={
+		owner = FRA
+		add_core_of = FRA
+		buildings = {
+            school = 2
+			infrastructure = 2
+			13017 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		13017 
+	}
+
+	local_supplies=0.0 
+}

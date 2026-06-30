@@ -1,0 +1,124 @@
+ideas = {
+	country = {
+			SOV_digital_proletkult = {
+			picture = SOV_digital_proletkult
+			allowed = {
+				tag = SOV
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_soctrends_drift_TP_T = 0.02
+			monthly_soctrends_drift_DE_D = 0.01
+			monthly_soctrends_drift_EA_A = 0.01
+			}
+		}
+		SOV_rising_bearers_of_the_bureaucracy = {
+			picture = SOV_rising_bearers_of_the_bureaucracy
+			allowed = {
+				tag = SOV
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			technocracy_drift = 0.01
+			monthly_soctrends_drift_DC_C = 0.01
+			}
+		}
+		SOV_orthodoxys_quiet_death = {
+			picture = SOV_orthodoxys_quiet_death
+			allowed = {
+				tag = SOV
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			hardline_socialism_drift = -0.01
+			war_support_factor = -0.10
+			}
+		}
+		SOV_socialism_for_the_new_era = {
+			picture = SOV_socialism_for_the_new_era
+			allowed = {
+				tag = SOV
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			gdp_growth_modifier = 0.05
+			research_speed_factor = 0.07
+			stability_factor = 0.15
+			monthly_soctrends_drift_EE_E2 = 0.01
+			}
+		}
+		SOV_whispers_from_shadows = {
+			picture = SOV_whispers_from_shadows
+			allowed = {
+				tag = SOV
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {	
+			political_power_cost = 0.20
+			stability_factor = -0.1
+			hardline_socialism_drift = 0.03
+			#political_power_cost = 0.20
+			}
+		}
+	}	
+}

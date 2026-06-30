@@ -1,0 +1,176 @@
+MSK_contras_anxiety = {
+	do_a_military_exercise = {
+		cost = 50
+		fire_only_once = no
+        days_remove = 60
+		complete_effect = {
+            army_experience = 15
+            add_manpower = -100
+            add_war_support = -0.05
+	    }
+         ai_will_do = {
+            base = 100
+        }
+        remove_effect = {
+            custom_effect_tooltip = "Subtracts 10 Anxiety Points"
+            subtract_from_variable = { CONTRASANGER = 10 }
+        }
+	}
+	use_contras_for_project = {
+		cost = 150
+        days_remove = 20
+         ai_will_do = {
+            base = 0
+            modifier = {
+                factor = 100
+                check_variable = {
+                    CONTRASANGER < 80
+                }
+            }
+        }
+		complete_effect = {
+            MSK = {
+            add_to_variable = { CONTRASANGER = 15 }
+                random_owned_state = {
+			        add_extra_state_shared_building_slots = 2
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+                }
+                custom_effect_tooltip = "Adds 15 Anxiety Points"
+                if = {
+                    limit = {
+                        check_variable = { CONTRASANGER > 80 }
+                    }
+                    country_event = MSK.10
+                }
+            }
+		}
+	}
+}
+MSK_raid_shadow_legends = {
+    MSK_raid_small_island = {
+            cost = 100
+            fire_only_once = no
+            available = {
+                 has_completed_focus = MSK_copirates_of_the_caribbean
+            }
+         ai_will_do = {
+            base = 100
+        }
+            days_remove = 60
+            complete_effect = {
+                army_experience = 20
+                add_manpower = -250
+                add_war_support = -0.1
+                hidden_effect = {
+                    add_to_variable = { MSK.GDP = 0.5 }
+                    subtract_from_variable = { MSK.REAL_GROWTH = -0.005 }
+                }
+                custom_effect_tooltip = "Adds 500 million USD to the Miskito Economy, at the cost of some real growth (0.5%)"
+            }
+            remove_effect = {
+                WIF = {
+                    add_stability = -0.05
+                }
+            }
+        }
+        MSK_raid_continental_area = {
+            available = {
+                 has_completed_focus = MSK_copirates_of_the_caribbean
+            }
+         ai_will_do = {
+            base = 100
+        }
+            cost = 200
+            fire_only_once = no
+            days_remove = 120
+            complete_effect = {
+                army_experience = 40
+                add_manpower = -500
+                add_war_support = -0.2
+                hidden_effect = {
+                    add_to_variable = { MSK.GDP = 1.2 }
+                    subtract_from_variable = { MSK.REAL_GROWTH = -0.02 }
+                }
+                custom_effect_tooltip = "Adds 1.2 billion USD to the Miskito Economy, at the cost of some real growth (1%)"
+            }
+            remove_effect = {
+                random_country = {
+                    limit = {
+                        NOT = {
+                            tag = MSK #if MSK try again, remember this is an AND statement
+                        }
+                        THIS = {
+                            capital_scope = {
+                                region = 115 #if capital is in 115 raid it
+                            }
+                        }
+                    }
+                    add_stability = -0.05
+                    add_war_support = 0.05
+                }
+            }
+        }
+}
+MSK_CCPA_dec_cat = {
+	sell_government_shares = {
+		cost = 150
+        days_remove = 20
+		complete_effect = {
+            MSK = {
+                subtract_from_variable = { MSKvotingshare = 5  }
+                add_to_variable = { MSK.GDP = 1}
+                add_to_variable = { PRIVATEvotingshare = 5}
+                custom_effect_tooltip = "Removes 5% of government-owned shares and hands them over to private institutions, granting 1 billion GDP"
+            }
+		}
+	}
+	invite_colombia = {
+		cost = 150
+        fire_only_once = yes
+        days_remove = 20
+		complete_effect = {
+            MSK = {
+                add_to_variable = { MSK_shares_stab_factor = 0.15 }
+                add_to_variable = { MSK_gdp_cpa = 0.03 }
+                add_to_variable = { MSK_pp_gain_ccpa = -0.05 }
+                 add_to_variable = { MSK_consumer = 0.02 }
+                subtract_from_variable = { MSKvotingshare = 10  }
+                add_to_variable = { MSK.GDP = 1}
+                add_to_variable = { OTHERCOUNTRYvotingshare = 10}
+                custom_effect_tooltip = COLOMBIA_TT_MSK
+            }
+        	491 = {
+				set_state_flag = san_andres
+			}
+		}
+	}
+	invite_panama = {
+		cost = 150
+        days_remove = 20
+        fire_only_once = yes
+		complete_effect = {
+            MSK = {
+                add_to_variable = { MSK_shares_stab_factor = 0.15 }
+                add_to_variable = { MSK_gdp_cpa = 0.03 }
+                add_to_variable = { MSK_pp_gain_ccpa = -0.05 }
+                 add_to_variable = { MSK_consumer = 0.02 }
+                subtract_from_variable = { MSKvotingshare = 10  }
+                add_to_variable = { MSK.GDP = 1}
+                add_to_variable = { OTHERCOUNTRYvotingshare = 10}
+                custom_effect_tooltip = PANAMA_TT_MSK
+            }
+        	520 = {
+				set_state_flag = bocas_del_toro
+			}
+		}
+	}
+}

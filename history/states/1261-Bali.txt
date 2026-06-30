@@ -1,0 +1,37 @@
+state={
+id=1261
+	name="Bali"
+    buildings_max_level_factor = 1
+	resources={
+	
+		rubber=40
+	}
+
+	history={
+		owner = NWG
+		add_core_of = NWG
+		victory_points = {
+		4273 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 3
+			dockyard = 3
+			4273 = {
+				naval_base = 5
+			}
+
+		}
+
+	}
+
+	provinces={
+		4273 7293
+	}
+	manpower=4361106
+	buildings_max_level_factor=2.000
+	state_category="city"
+
+	local_supplies=3.0 
+}

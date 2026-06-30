@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "Western Naval Command"
+		naval_base = 2050
+		task_force = {
+			name = "Western Naval Taskforce"
+			location = 2050
+			ship = { name = "NNS Aradu" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 3 owner = NGA version_name = "Aradu Class" } }
+			}
+			ship = { name = "NNS Ohue" definition = submarine equipment = { submarine_2 = { amount = 4 owner = NGA version_name = "Ohue Class" } }
+			}
+		}
+	}
+}

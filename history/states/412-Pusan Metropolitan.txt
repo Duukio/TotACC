@@ -1,0 +1,38 @@
+
+state={
+	id=412
+	name="STATE_412"
+		state_category=megalopolis
+	buildings_max_level_factor=4.000
+	resources={
+		tungsten=100.000
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			12060 30 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 5
+			industrial_complex = 10
+			arms_factory = 10
+			dockyard = 5
+			air_base = 5
+			12060 = {
+				naval_base = 10
+			}
+
+		}
+		set_demilitarized_zone = yes
+		add_core_of = PLK
+
+	}
+
+	provinces={
+		12060 
+	}
+	manpower=20000000
+	local_supplies=0.000
+}

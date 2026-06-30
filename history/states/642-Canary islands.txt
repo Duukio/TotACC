@@ -1,0 +1,30 @@
+state={
+id=642
+	
+	name="STATE_642"
+
+	manpower = 2153389
+	
+	state_category = city
+
+	history={
+		owner = SPA
+		victory_points = {
+			13071 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			13071 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = SPA
+	}
+
+	provinces={
+		13071 
+	}
+
+	local_supplies=0.0 
+}

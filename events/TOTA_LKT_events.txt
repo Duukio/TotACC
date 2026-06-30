@@ -1,0 +1,204 @@
+add_namespace = LKT
+country_event = {
+    id = LKT.10 # taking dakotas
+    title = LKT.10.t
+    desc = LKT.10.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.10.a
+      set_cosmetic_tag = LKT_autocracy
+	}
+}
+
+country_event = {
+    id = LKT.11 # getting eastern montana
+    title = LKT.11.t
+    desc = LKT.11.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.11.a
+	}
+}
+
+country_event = {
+    id = LKT.12 # losing grand forks
+    title = LKT.12.t
+    desc = LKT.12.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.12.a
+	}
+}
+country_event = {
+    id = LKT.13 # Frank Star Resigns
+    title = LKT.13.t
+    desc = LKT.13.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.13.a
+      create_country_leader = {
+	      name = "Arlo Looking Cloud"
+	      desc = "POLITICS_ARLOLC_DESC"
+	      picture = "gfx/leaders/LKT/Arlo Looking Cloud.png"
+	      expire = "2040.1.1"
+	      ideology = lwnat
+	      traits = {
+	    }
+    }
+    set_politics = {
+		  ruling_party = reformist_socialism
+    }
+    drop_cosmetic_tag = yes
+    set_cosmetic_tag = LKT_OGLALA
+    remove_ideas = LKT_unpopular_government 
+    mark_focus_tree_layout_dirty = yes
+	}
+}
+country_event = {
+    id = LKT.14 # flavor event for red cloud focus
+    title = LKT.14.t
+    desc = LKT.14.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.14.a
+	}
+}
+country_event = {
+    id = LKT.15 # flavor event for crazy horse focus
+    title = LKT.15.t
+    desc = LKT.15.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.15.a
+	}
+}
+country_event = {
+    id = LKT.16 # flavor event for looking outside focus
+    title = LKT.16.t
+    desc = LKT.16.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.16.a
+      add_offsite_building = { type = arms_factory level = 3 }
+	}
+}
+country_event = {
+    id = LKT.17 # flavor event for boisewards focus
+    title = LKT.17.t
+    desc = LKT.17.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.17.a
+      add_timed_idea = {
+      idea = LKT_next_stop_boise
+      days = 175
+    }
+	}
+}
+country_event = {
+    id = LKT.18 # let's do land reform
+    title = LKT.18.t
+    desc = LKT.18.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+    option = {
+      name = LKT.18.a
+      ai_chance = { factor = 33 }
+      create_country_leader = {
+	      name = "Harold Cardinal"
+	      desc = "POLITICS_HC_DESC"
+	      picture = "gfx/leaders/LKT/Harold Cardinal.png"
+	      expire = "2040.1.1"
+	      ideology = demsoc
+	      traits = {
+        }
+      }
+      set_politics = {
+		  ruling_party = socdem
+	  }
+      mark_focus_tree_layout_dirty = yes
+      load_focus_tree = LKT_war_tree
+      complete_national_focus = LKT_the_long_road_to_peace
+      #lets see cardnials cards
+	}
+  option = {
+    name = LKT.18.b #yes land reform but it's peltier
+    ai_chance = { factor = 22 }
+    create_country_leader = {
+	    name = "Leonard Peltier"
+	    desc = "POLITICS_ARLOLC_DESC"
+	    picture = "gfx/leaders/LKT/Leonard Peltier.png"
+	    expire = "2040.1.1"
+	    ideology = nl_s
+	    traits = {
+		}
+  }
+  set_politics = {
+		  ruling_party = reformist_socialism
+	  }
+  mark_focus_tree_layout_dirty = yes
+  load_focus_tree = LKT_war_tree
+  complete_national_focus = LKT_the_long_road_to_peace
+	}
+  option = {
+    name = LKT.18.c #no land reform i want to be couped
+    ai_chance = { factor = 44 }
+    create_country_leader = {
+			name = "Provisional Revolutionary Government"
+			desc = ""
+			picture = "gfx/leaders/LKT/ProvRevGov.png"
+			expire = "2040.1.1"
+			ideology = monitdem
+			traits = {
+			}
+		}
+    set_politics = {
+		  ruling_party = autocracy
+	  }
+    country_event = {
+			id = LKT.100
+			days = 1
+		}
+  }
+}
+
+country_event = {
+    id = LKT.100
+    title = LKT.100.t
+    desc = LKT.100.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #Elect Tapa
+      name = LKT.100.a
+	  ai_chance = { factor = 33 }
+	   set_politics = {
+		ruling_party = revolutionary_right
+	   }
+	   add_popularity = {
+		ideology = revolutionary_right
+		popularity = 0.3
+	   }
+	  mark_focus_tree_layout_dirty = yes
+      load_focus_tree = LKT_war_tree
+      complete_national_focus = LKT_the_grim_jobs_of_our_ancestors
+	}
+    option = { #Elect Arlo
+      name = LKT.100.b
+	  ai_chance = { factor = 34 }
+	   set_politics = {
+		ruling_party = reformist_socialism
+	   }
+	  mark_focus_tree_layout_dirty = yes
+      load_focus_tree = LKT_war_tree
+      complete_national_focus = LKT_the_grim_jobs_of_our_ancestors
+	}
+}

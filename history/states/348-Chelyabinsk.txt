@@ -1,0 +1,26 @@
+state={
+id=348
+	name="STATE_348"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	resources = {
+	}
+	history={
+        victory_points = { 9292 25 } 
+        owner = SOV
+		add_core_of = SOV
+        buildings = {
+            school = 2
+            infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 5
+        }
+    }
+	provinces={
+		1292 1327 1334 1775 7328 7401 9292 10170 10185 10213 10542 12157 
+	}
+	manpower=4000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

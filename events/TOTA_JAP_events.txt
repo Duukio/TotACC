@@ -1,0 +1,1045 @@
+add_namespace = JPNflavor
+add_namespace = JPNskeleton
+add_namespace = JPN
+add_namespace = JKUT
+
+country_event = {
+    id = JPN.1 # backed down during korea
+    title = JPN.1.t
+    desc = JPN.1.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #let the JSP take over
+      name = JPN.1.a
+	  ai_chance = { factor = 60 }
+	  set_politics = {
+		ruling_party = technocracy
+	  }
+	  add_popularity = {
+		ideology = technocracy
+		popularity = 0.3
+	  }
+		create_country_leader = {
+			name = "Kazuhiro Araki"
+			desc = ""
+			picture = "gfx/leaders/JAP/Kazuhiro_Araki.png"
+			expire = "2040.1.1"
+			ideology = soctechno
+		}
+	}
+    option = { #Cross the rubicon, elect Araki for Z
+      name = JPN.1.b
+	  ai_chance = { factor = 40 }
+		set_autonomy = {
+		    target = PLK
+		    autonomous_state = autonomy_free
+		    end_wars = yes
+		    end_civil_wars = yes
+		}
+	  add_stability = -0.10
+	  set_politics = {
+		ruling_party = reformist_socialism
+	  }
+	  add_popularity = {
+		ideology = reformist_socialism
+		popularity = 0.3
+	  }
+		create_country_leader = {
+			name = "Kazuhiro Araki"
+			desc = ""
+			picture = "gfx/leaders/JAP/Kazuhiro_Araki.png"
+			expire = "2040.1.1"
+			ideology = lwnat
+		}
+		add_ideas = war_economy
+		declare_war_on = {
+			target = PLK
+			type = annex_everything
+		}
+		load_oob = "JAP_KOREA"
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.137
+				days = 2
+			}
+		}
+	}
+    #option = { #Ban JSP and gommies coup
+    #  name = JPN.1.c
+	#  ai_chance = { factor = 40 }
+	#  add_stability = -0.10
+	#  set_politics = {
+	#	ruling_party = anarchism
+	#  }
+	#  add_popularity = {
+	#	ideology = anarchism
+	#	popularity = 0.3
+	#  }
+	#	create_country_leader = {
+	#		name = "Ikeuchi Saori"
+	#		desc = ""
+	#		picture = "gfx/leaders/JAP/Ikeuchi Saori.png"
+	#		expire = "2040.1.1"
+	#		ideology = nl_s
+	#	}
+	#	#every_country = {
+	#	#	limit = {
+	#	#		is_ai = no
+	#	#	}
+	#	#	news_event = {
+	#	#		id = WNE.135
+	#	#		days = 2
+	#	#	}
+	#	#}
+	#}
+}
+country_event = {
+    id = JPN.2 # did not back down during korea
+    title = JPN.2.t
+    desc = JPN.2.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #yes we are at war with china, elect Hiroyuki as the wartime leader
+      name = JPN.2.a
+	  trigger = {
+		has_war_with = PRC
+	  }
+	  add_ideas = war_economy
+		create_country_leader = {
+			name = "Hiroyuki Hosoda"
+			desc = ""
+			picture = "gfx/leaders/JAP/Hiroyuki Hosoda.png"
+			expire = "2040.1.1"
+			ideology = manbur
+		}
+	}
+    option = { #we are not at war with china, elect Kishida
+      name = JPN.2.b
+	  trigger = {
+		NOT = {
+		has_war_with = PRC
+		}
+	  }
+	  ai_chance = { factor = 40 }
+		create_country_leader = {
+			name = "Kishida Fumio"
+			desc = ""
+			picture = "gfx/leaders/JAP/Kishida Fumio.png"
+			expire = "2040.1.1"
+			ideology = anodir
+		}
+	}
+    option = { #we are not at war with china, elect Toshimitsu
+      name = JPN.2.c
+	  trigger = {
+		NOT = {
+		has_war_with = PRC
+		}
+	  }
+	  ai_chance = { factor = 40 }
+		create_country_leader = {
+			name = "Toshimitsu Motegi"
+			desc = ""
+			picture = "gfx/leaders/JAP/Toshimitsu Motegi.png"
+			expire = "2040.1.1"
+			ideology = anolib
+		}
+	}
+}
+country_event = {
+    id = JPN.3 # we are SO BACK
+    title = JPN.3.t
+    desc = JPN.3.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #yes
+      name = JPN.3.a
+	  set_politics = {
+		ruling_party = technocracy
+	  }
+	  add_popularity = {
+		ideology = technocracy
+		popularity = 0.3
+	  }
+		create_country_leader = {
+			name = "Hagiuda Koichi"
+			desc = ""
+			picture = "gfx/leaders/JAP/Hagiuda Koichi.png"
+			expire = "2040.1.1"
+			ideology = algolib
+		}
+		random = {
+			chance = 30
+			country_event = {
+				id = JPN.4
+				days = 200
+			}
+		}
+	}
+}
+country_event = {
+    id = JPN.4 # haha its nikku rando
+    title = JPN.4.t
+    desc = JPN.4.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #yes
+      name = JPN.4.a
+	  add_popularity = {
+		ideology = technocracy
+		popularity = 0.3
+	  }
+		create_country_leader = {
+			name = "Nikku Rando"
+			desc = ""
+			picture = "gfx/leaders/JAP/Portrait_JAP_Nikku_Rando.png"
+			expire = "2040.1.1"
+			ideology = algodesp
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.136
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+    id = JPNflavor.1 # Mishima's Death
+    title = JPNflavor.1.t
+    desc = JPNflavor.1.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNflavor.1.a
+	}
+}
+
+country_event = {
+    id = JPNskeleton.2 # skeleton content: Burma Civil War
+    title = JPNskeleton.2.t
+    desc = JPNskeleton.2.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.2.a
+		
+		SWA = {
+			transfer_state = 919
+			add_state_core = 919
+			load_oob = "SWA_2021"
+			declare_war_on = {
+				target = BUR
+				type = annex_everything
+			}
+		}
+		SHA = {
+			transfer_state = 922
+			add_state_core = 922
+			load_oob = "SHA_2021"
+			declare_war_on = {
+				target = BUR
+				type = annex_everything
+			}
+		}
+		KAC = {
+			transfer_state = 921
+			add_state_core = 921
+			load_oob = "SWA_2021"
+			declare_war_on = {
+				target = BUR
+				type = annex_everything
+			}
+		}
+		ZGM = {
+			transfer_state = 927
+			add_state_core = 927
+			load_oob = "SWA_2021"
+			declare_war_on = {
+				target = BUR
+				type = annex_everything
+			}
+		}
+		ARA = {
+			transfer_state = 925
+			add_state_core = 925
+			load_oob = "SWA_2021"
+			declare_war_on = {
+				target = BUR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ARK
+				type = annex_everything
+			}
+		}
+		ARK = {
+			transfer_state = 926
+			add_state_core = 926
+			load_oob = "SWA_2021"
+			declare_war_on = {
+				target = BUR
+				type = annex_everything
+			}
+		}
+		KAW = {
+			transfer_state = 923
+			add_state_core = 923
+			add_state_core = 924
+			load_oob = "SWA_2021"
+			declare_war_on = {
+				target = BUR
+				type = annex_everything
+			}
+		}
+		BUR = {
+			load_oob = "BUR_TATMADAW_SOUTH"
+		}
+		KOK = {
+			transfer_state = 920
+			add_state_core = 920
+			add_state_core = 922
+			add_state_core = 919
+			add_state_core = 921
+			load_oob = "KOK_2021"
+			declare_war_on = {
+				target = SWA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SHA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = KAC
+				type = annex_everything
+			}
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.41
+			DAYS = 0
+			}
+		}
+	}
+}
+country_event = {
+    id = JPNskeleton.3 # Burma elects Aung Kyi (demonrat)
+    title = JPNskeleton.3.t
+    desc = JPNskeleton.3.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	ai_chance = { factor = 15 }
+      name = JPNskeleton.3.a
+		set_politics = {
+			ruling_party = liberalism
+		}
+		country_event = {
+		id = JPNskeleton.4
+		days = 150
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.39
+			DAYS = 0
+			}
+		}		
+	}
+}
+country_event = {
+    id = JPNskeleton.4 # Burma elects Aung (and gets rekt)
+    title = JPNskeleton.4.t
+    desc = JPNskeleton.4.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.4.a
+		set_politics = {
+			ruling_party = revolutionary_right
+		}
+		create_country_leader = {
+			name = "Min Aung Hlaing"
+			desc = "POLITICS_MIN_AUNG_HLAING_DESC"
+			picture = "gfx/leaders/BUR/Min Aung Hlaing.png"
+			expire = "2040.1.1"
+			ideology = natthirdpos
+			traits = {
+			}
+		}
+		country_event = {
+			id = JPNskeleton.2
+			days = 30
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.40
+			DAYS = 0
+			}
+		}
+	}
+}
+country_event = {
+    id = JPNskeleton.5 # Burma gets couped by communists once they lose
+    title = JPNskeleton.5.t
+    desc = JPNskeleton.5.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.5.a
+		set_politics = {
+			ruling_party = hardline_socialism
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = 0.4
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.44
+			DAYS = 0
+			}
+		}
+	}
+}
+country_event = {
+    id = JPNskeleton.6 # do we support japan or kingdom or usa
+    title = JPNskeleton.6.t
+    desc = JPNskeleton.6.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.6.a #kdm
+		set_politics = {
+			ruling_party = liberalism 
+		}
+		set_country_flag = has_double_leader
+		set_country_flag = quentin_i
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.67
+			DAYS = 0
+			}
+		}
+	}
+    option = {
+      name = JPNskeleton.6.b #nippon
+		set_politics = {
+			ruling_party = socdem 
+		}
+		JAP = {
+			set_autonomy = {
+			    target = KOH
+			    autonomy_state = JAP_associate
+			    end_wars = yes
+			    end_civil_wars = no
+			}
+		}
+		KOH = {
+			set_cosmetic_tag = KOH_SOCDEM_INDEPENDENT_JAP
+			set_variable = { FACTIONSTATUS = 8}
+		}
+		set_politics = {
+			ruling_party = socdem 
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.65
+			DAYS = 0
+			}
+		}
+	}
+    option = {
+      name = JPNskeleton.6.c #usa
+		set_politics = {
+			ruling_party = autocracy
+		}
+		USA = {
+			set_autonomy = {
+			    target = KOH
+			    autonomy_state = puppet
+			    end_wars = no
+			    end_civil_wars = no
+			}
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.66
+			DAYS = 0
+			}
+		}
+	}
+}
+country_event = {
+    id = JPNskeleton.666 # Korea elects populist
+    title = JPNskeleton.666.t
+    desc = JPNskeleton.666.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.666.a
+	  set_politics = {
+		ruling_party = dissident_right
+	  }
+	  leave_faction = yes
+	  JAP = {
+	  	country_event = {
+			id = JPNskeleton.667
+			days = 30
+	  	}
+	  }
+	}
+}
+country_event = {
+    id = JPNskeleton.667 # Korea demands their cities back from the corpos
+    title = JPNskeleton.667.t
+    desc = JPNskeleton.667.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		ai_chance = { factor = 30 }
+      name = JPNskeleton.667.a #sure
+	  PLK = {
+		transfer_state = 1078
+		transfer_state = 412
+	  }
+	  JAP = {
+		country_event = {
+			id = JPN.1
+			days = 30
+		}
+	  }
+	}
+    option = {
+		ai_chance = { factor = 60 } 
+      name = JPNskeleton.667.b #bruhhh no rizz in ohio
+		set_autonomy = {
+		    target = PLK
+		    autonomous_state = autonomy_free
+		    end_wars = yes
+		    end_civil_wars = yes
+		}
+	  PLK = {
+			declare_war_on = {
+				target = JAP
+				type = take_state
+				generator = { 1078 }
+			}
+		}
+		1078 = {
+			set_demilitarized_zone = no
+		}
+		412 = {
+			set_demilitarized_zone = no
+		}
+		JAP = {
+			load_oob = "JAP_KOREA"
+			country_event = {
+				id = JPN.2
+				days = 200
+			}
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.137
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+    id = JPNskeleton.668 # Korea do be losing doe
+    title = JPNskeleton.668.t
+    desc = JPNskeleton.668.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		ai_chance = { factor = 50 }
+      name = JPNskeleton.668.a #shor we'll accept choinese help
+	  add_stability = -0.33
+	  add_war_support = -0.25
+		PRC = {
+			declare_war_on = {
+				target = JAP
+				type = take_state
+			}
+		}
+		IND = {
+			add_to_war = {
+			    targeted_alliance = JAP
+			    enemy = PRC
+			    hostility_reason = asked_to_join
+			}
+		}
+		PRC = {
+			declare_war_on = {
+				target = QIE
+				type = take_state
+			}
+		}
+		PLK = {
+			give_military_access = PRC
+		}
+	  set_country_flag = PLK_accepted_choina
+	}
+    option = {
+			ai_chance = { factor = 50 }
+      name = JPNskeleton.668.b #why would we ever do this they hate us
+	  country_event = {
+		id = JPNskeleton.670 #you chose poorly
+		days = 15
+	  }
+	  set_country_flag = PLK_refused_choina
+	}
+}
+country_event = {
+    id = JPNskeleton.669 # it escalates (no way)
+    title = JPNskeleton.669.t
+    desc = JPNskeleton.669.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.669.a #fuck
+	  PRC = {
+		declare_war_on = {
+			target = JAP
+			type = take_state
+		}
+	  }
+	}
+} #might not be needed
+country_event = {
+    id = JPNskeleton.670 # it escalates (no way)
+    title = JPNskeleton.670.t
+    desc = JPNskeleton.670.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.670.a #fuck
+	  PRC = {
+		declare_war_on = {
+			target = PLK
+			type = take_state
+		}
+	  }
+	 PLK = {
+		set_country_flag = PLK_survive_for_90_days
+	 } 
+	}
+}
+country_event = {
+    id = JPNskeleton.691 #are you winning son?
+    title = JPNskeleton.691.t
+    desc = JPNskeleton.691.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.691.a
+	  trigger = {
+		NOT = {
+			controls_state = 597 
+		}
+	  }
+	  #its over
+			clear_global_event_target = winning_country
+			clear_global_event_target = losing_country
+			clr_country_flag = IND_the_clock_ticks_mission
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = skip_default_capitulation
+			NWG = {
+				save_global_event_target_as = winning_country
+			}
+			IND = {
+				save_global_event_target_as = losing_country
+			}
+			add_to_variable = { global.peace_popup_dirty = 1 }
+			set_global_flag = war_won #?
+			IND = {
+			 white_peace = NWG
+			}
+			NWG = {
+			transfer_state = 597
+			country_event = {
+				id = JPNskeleton.700
+				days = 30
+			}
+			} 
+			clr_global_flag = skip_default_capitulation
+				every_country = {
+					limit = {
+						is_ai = no
+					}
+					news_event = {
+						id = WNE.25
+					DAYS = 0
+				}
+			}
+	}
+    option = {
+      name = JPNskeleton.691.b
+	  trigger = {
+			controls_state = 597 
+	  }
+	  #keep going bud
+	}
+}
+country_event = {
+    id = JPNskeleton.700 #New Guinea elections postwar
+    title = JPNskeleton.700.t
+    desc = JPNskeleton.700.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  ai_chance = { factor = 30}
+      name = JPNskeleton.700.a # Humbertus Knoch
+	  set_politics = {
+		ruling_party = socdem
+	  }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.177
+				days = 2
+			}
+		}
+	}
+    option = {
+		ai_chance = { factor = 30 }
+      name = JPNskeleton.700.b # Soerjosoemarno
+	  set_politics = {
+		ruling_party = autocracy
+	  }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.178
+				days = 2
+			}
+		}
+	}
+    option = {
+		ai_chance = { factor = 40}
+      name = JPNskeleton.700.c # Geert Wilders
+	  set_politics = {
+		ruling_party = reformist_socialism
+	  }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.179
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+    id = JPNskeleton.710 #Times up Dao, give in for new elections
+    title = JPNskeleton.710.t
+    desc = JPNskeleton.710.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  ai_chance = { factor = 30}
+      name = JPNskeleton.710.a #NO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.198
+				days = 2
+			}
+		}
+		SVI = {
+			country_event = {
+				id = JPNskeleton.711
+				days = 3
+			}
+		}
+	}
+    option = { # Đinh Đồng Phụng Việt and Big Business baby
+		ai_chance = { factor = 30 }
+      name = JPNskeleton.710.b 
+	  set_politics = {
+		ruling_party = autocracy
+	  }
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	news_event = {
+		#		id = WNE.199
+		#		days = 2
+		#	}
+		#}
+	}
+    option = {
+		ai_chance = { factor = 40}
+      name = JPNskeleton.700.c # Ngô Đình Quỳnh and Can Lao
+	  set_politics = {
+		ruling_party = socdem
+	  }
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	#news_event = {
+		#	#	id = WNE.200
+		#	#	days = 2
+		#	#}
+		#}
+		SVI = {
+			country_event = {
+				id = JPNskeleton.712
+				days = 1460
+			}
+		}
+	}
+}
+
+country_event = {
+    id = JPNskeleton.711 #Jan 6 in Saigon :skull:
+    title = JPNskeleton.711.t
+    desc = JPNskeleton.711.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  ai_chance = { factor = 30}
+      name = JPNskeleton.710.a #military sides with Dao and he declares the Empire of Vietnam
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	#news_event = {
+		#	#	id = WNE.201
+		#	#	days = 2
+		#	#}
+		#}
+		SVI = {
+	  set_politics = {
+		ruling_party = autocracy
+	  }
+	  remove_country_leader_role = {
+		character = dinh_dong_phung_viet
+		ideology = anodir
+	  }
+			add_country_leader_role = {
+			    character = dao_minh_quan
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = absolmon
+			        expire = "2040.1.1.1"
+			    }
+			}		
+			set_cosmetic_tag = SVI_DAOMINHQUAN
+		}
+	}
+    option = { # military sides with Dao but favors Georges and the Nguyen dynasty
+		ai_chance = { factor = 30 }
+      name = JPNskeleton.710.b 
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	news_event = {
+		#		id = WNE.202
+		#		days = 2
+		#	}
+		#}
+		SVI = {
+			set_country_flag = has_double_leader
+			set_country_flag = georges_viet
+			set_cosmetic_tag = SVI_EMPIRE
+		}
+	}
+    option = {
+		ai_chance = { factor = 40}
+      name = JPNskeleton.700.c # Military tells Dao to fuck off
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	news_event = {
+		#		id = WNE.203
+		#		days = 2
+		#	}
+		#}
+		promote_character = {
+		    character = Nguyen_Huu_Chanh
+		    ideology = rightlib
+		}
+	}
+}
+country_event = {
+    id = JPNskeleton.712 #Can Lao successor
+    title = JPNskeleton.712.t
+    desc = JPNskeleton.712.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  ai_chance = { factor = 30}
+      name = JPNskeleton.712.a # Giuseppe
+	  retire_country_leader = yes
+		promote_character = {
+		    character = giuseppe_thanh_nguyen
+		    ideology = socpat
+		}	  
+	}
+}
+country_event = {
+    id = JPNskeleton.713 #Khmer War
+    title = JPNskeleton.713.t
+    desc = JPNskeleton.713.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  ai_chance = { factor = 30}
+      name = JPNskeleton.713.a # war time
+	  KMP = {
+		declare_war_on = {
+			target = KAM
+			type = annex_everything
+		}
+	  }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.205
+				days = 2
+			}
+		}
+	}
+}
+country_event = {
+    id = JPNskeleton.714 # Nusantara invades EIC
+    title = JPNskeleton.714.t
+    desc = JPNskeleton.714.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = JPNskeleton.714.a
+	  IND = {
+		leave_faction = yes
+		declare_war_on = {
+			target = NWG
+			type = take_state
+		}
+	  }
+	  every_country = {
+		limit = {
+			is_ai = no
+		}
+		news_event = {
+			id = WNE.24
+			days = 1
+		}
+	  }
+	}
+} 
+country_event = {
+    id = JKUT.1 #thing is done
+    title = JKUT.1.t
+    desc = JKUT.1.desc
+    picture = GFX_report_event_mishima
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  ai_chance = { factor = 30}
+      name = JKUT.1.a # yay
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.210
+				days = 2
+			}
+		}
+		clr_global_flag = JKUT_UNFINISHED
+	}
+}

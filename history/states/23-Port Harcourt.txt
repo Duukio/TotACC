@@ -1,0 +1,32 @@
+state={
+id=23
+	name="STATE_23"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	resources = {
+		steel = 10
+		tungsten = 10
+		oil = 400
+	}
+	history={
+		owner = BIA
+		victory_points = { 8034 30 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 4
+			8034 = {
+			naval_base = 6
+			}
+		}
+		add_core_of = BIA
+		add_core_of = NGA
+	}
+	provinces={
+		8034 
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

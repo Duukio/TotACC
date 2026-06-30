@@ -1,0 +1,1291 @@
+
+shared_focus = {
+	id = BIA_5_times_over_we_will_win
+	icon = GFX_BIA_5_times_over_we_will_win
+	cost = 1
+	x = 13
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_5_times_over_we_will_win"
+		add_ideas = fiveTOWWW
+	}
+}
+
+shared_focus = {
+	id = BIA_taking_initiative
+	icon = GFX_BIA_TI
+	cost = 2
+	x = -7
+	y = 2
+	available = {
+		hidden_trigger = {
+		NOT = {
+		BIA = {
+			has_country_flag = {
+				flag = fnbw_started_now
+				days > 60
+			}
+		}
+		}
+		}
+		custom_trigger_tooltip = {
+		    tooltip = HAS_WAR_FOR_60_DAYS
+			tooltip = HAS_WAR_FOR_60_DAYS_NOT
+		NOT = {
+		BIA = {
+			has_country_flag = {
+				flag = fnbw_started_now
+				days > 60
+			}
+		}
+		}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_taking_initiative"
+		swap_ideas = {
+			remove_idea = fiveTOWWW
+			add_idea = BIA_initiative
+		}
+	}
+	relative_position_id = BIA_5_times_over_we_will_win 
+	prerequisite = { focus = BIA_5_times_over_we_will_win }
+	mutually_exclusive = { focus = BIA_holding_the_line }
+	mutually_exclusive = { focus = BIA_setback_after_setback }
+}
+
+shared_focus = {
+	id = BIA_holding_the_line
+	icon = GFX_BIA_HTL
+	cost = 2
+	x = -1
+	y = 2
+	available = {
+		hidden_trigger = {
+		NOT = {
+		BIA = {
+			has_country_flag = {
+				flag = fnbw_started_now
+				days > 60
+			}
+		}
+		}
+		}
+		custom_trigger_tooltip = {
+		    tooltip = HAS_WAR_FOR_60_DAYS
+			tooltip = HAS_WAR_FOR_60_DAYS_NOT
+		NOT = {
+		BIA = {
+			has_country_flag = {
+				flag = fnbw_started_now
+				days > 60
+			}
+		}
+		}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_holding_the_line"
+		swap_ideas = {
+			remove_idea = fiveTOWWW
+			add_idea = BIA_NSB_awesome
+		}
+	}
+	relative_position_id =  BIA_5_times_over_we_will_win
+	prerequisite = { focus = BIA_5_times_over_we_will_win }
+	mutually_exclusive = { focus = BIA_taking_initiative }
+	mutually_exclusive = { focus = BIA_setback_after_setback }
+}
+
+shared_focus = {
+	id = BIA_setback_after_setback
+	icon = GFX_BIA_SAS
+	cost = 2
+	x = 6
+	available = {
+		hidden_trigger = {
+		BIA = {
+			has_country_flag = {
+				flag = fnbw_started_now
+				days > 60
+			}
+		}
+		}
+		custom_trigger_tooltip = {
+		    tooltip = HAS_WAR_FOR_60_DAYS
+		BIA = {
+			has_country_flag = {
+				flag = fnbw_started_now
+				days > 60
+			}
+		}
+		}
+	}
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_setback_after_setback"
+		add_stability = -0.04
+		remove_ideas = {
+			fiveTOWWW
+			BIA_initiative
+			BIA_NSB_awesome
+		}
+		add_ideas = BIA_desperate_measures
+	}
+	relative_position_id =  BIA_5_times_over_we_will_win
+	prerequisite = { focus = BIA_5_times_over_we_will_win }
+	mutually_exclusive = { focus = BIA_taking_initiative }
+	mutually_exclusive = { focus = BIA_holding_the_line }
+}
+
+shared_focus = {
+	id = BIA_a_gun_in_every_hand
+	icon = GFX_BIA_AGIEH
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_a_gun_in_every_hand"
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 2000
+		    producer = BIA
+		}
+		#add_ideas = BIA_resistance_occupied
+		add_stability = -0.15
+	}
+	relative_position_id =  BIA_setback_after_setback
+	prerequisite = { focus = BIA_setback_after_setback }
+	#mutually_exclusive = { focus = BIA_seeking_outside_help }
+}
+
+shared_focus = {
+	id = BIA_seeking_outside_help
+	icon = GFX_BIA_SOH
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_seeking_outside_help"
+		BIA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = SEY
+			}
+		}
+		add_war_support = -0.10
+			add_to_variable =  { BIA.DEBT = -1 }
+			custom_effect_tooltip = "Adds 1 billion USD in debt"
+	}
+	relative_position_id =  BIA_setback_after_setback
+	prerequisite = { focus = BIA_setback_after_setback }
+	#mutually_exclusive = { focus = BIA_a_gun_in_every_hand }
+}
+
+shared_focus = {
+	id = BIA_biafraland_is_untakable
+	icon = GFX_BIA_BIAIU
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_biafraland_is_untakable"
+		swap_ideas = {
+		remove_idea = BIA_desperate_measures
+		add_idea = BIA_untakable
+		}
+	}
+	relative_position_id =  BIA_a_gun_in_every_hand
+	prerequisite = { focus = BIA_a_gun_in_every_hand focus = BIA_seeking_outside_help }
+}
+
+shared_focus = {
+	id = BIA_war_of_attrition
+	icon = GFX_BIA_WOA
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_war_of_attrition"
+		hidden_effect = {
+		add_to_variable = { BIA.DEBT = 2 }
+		967 = {
+			add_building_construction = {
+			    type = bunker
+			    level = 2
+			    instant_build = yes
+			    province = {
+			        all_provinces = yes
+			        limit_to_border_country = NGA
+			    }
+			}
+		}
+		21 = {
+			add_building_construction = {
+			    type = bunker
+			    level = 2
+			    instant_build = yes
+			    province = {
+			        all_provinces = yes
+			        limit_to_border_country = NGA
+			    }
+			}
+		}
+		19 = {
+			add_building_construction = {
+			    type = bunker
+			    level = 2
+			    instant_build = yes
+			    province = {
+			        all_provinces = yes
+			        limit_to_border_country = NGA
+			    }
+			}
+		}
+		}
+		custom_effect_tooltip = "Adds level 2 forts to every province bordering Nigeria, and adds 2 billion USD in debt"
+	}
+	relative_position_id =  BIA_holding_the_line
+	prerequisite = { focus = BIA_holding_the_line }
+	#mutually_exclusive = { focus = BIA_looking_to_the_home_front }
+}
+
+shared_focus = {
+	id = BIA_looking_to_the_home_front
+	icon = GFX_BIA_LTTH
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_looking_to_the_home_front"
+		swap_ideas = {
+			remove_idea = BIA_NSB_awesome
+			add_idea = BIA_NSB_awesome_1
+		}
+	}
+	relative_position_id =  BIA_holding_the_line
+	prerequisite = { focus = BIA_holding_the_line }
+	#mutually_exclusive = { focus = BIA_war_of_attrition }
+}
+
+shared_focus = {
+	id = BIA_wearing_them_out
+	icon = GFX_BIA_WTO
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_wearing_them_out"
+		custom_effect_tooltip = "Nigeria may not be able to keep the war going for much longer... (Hold them off for 30 days!)"
+	}
+	relative_position_id =  BIA_war_of_attrition 
+	prerequisite = { focus = BIA_war_of_attrition  focus = BIA_looking_to_the_home_front }
+}
+
+shared_focus = {
+	id = BIA_taking_lagos
+	icon = GFX_BIA_TL
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_taking_lagos"
+
+	}
+	relative_position_id =  BIA_taking_initiative 
+	prerequisite = { focus = BIA_taking_initiative }
+	mutually_exclusive = { focus = BIA_towards_the_devils_nest }
+}
+
+shared_focus = {
+	id = BIA_towards_the_devils_nest
+	icon = GFX_BIA_TTDN
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_towards_the_devils_nest"
+	}
+	relative_position_id =  BIA_taking_initiative 
+	prerequisite = { focus = BIA_taking_initiative }
+	mutually_exclusive = { focus = BIA_taking_lagos }
+}
+
+shared_focus = {
+	id = BIA_forcing_a_ceasefire
+	icon = GFX_BIA_FAC
+	cost = 5
+	x = 2
+	available = {
+		BIA = {
+			OR = {
+			controls_state = 22
+			controls_state = 27
+			}
+		}
+	}
+	bypass = {
+		OR = {
+		has_completed_focus = BIA_our_military_proud
+		has_completed_focus = BIA_beaten_back_but_not_lost
+		}
+	}
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_forcing_a_ceasefire"
+		custom_effect_tooltip = "This might be a premature choice."
+		hidden_effect = {
+                BIA = {
+                    add_stability = -0.05
+                    add_war_support = 0.15
+                   #country_event = {
+                   #id = BIA.16
+                   #days = 1
+                   #}
+                }
+            add_to_variable = { global.peace_popup_dirty = 1 }
+            set_global_flag = war_won
+            set_global_flag = show_peace_popup_alert
+                BIA = {
+                    save_global_event_target_as = winning_country
+                }
+                NGA = {
+                    save_global_event_target_as = losing_country
+					remove_wargoal = {
+						target = BIA
+						type = all
+					}
+					remove_wargoal = {
+						target = BED
+						type = all
+					}
+					white_peace = BED
+					white_peace = BIA
+                }
+                BIA = {
+                    transfer_state = 24
+                }
+                BIA = {
+                    complete_national_focus = BIA_our_military_proud
+                    white_peace = NGA
+                }
+		}
+	}
+	relative_position_id =  BIA_taking_lagos 
+	prerequisite = { focus = BIA_taking_lagos focus = BIA_towards_the_devils_nest }
+}
+
+shared_focus = {
+	id = BIA_liberation_of_the_south
+	icon = GFX_BIA_LOTS
+	cost = 5
+	x = -2
+	y = 2
+	allow_branch = {
+		has_country_flag = {
+			flag = BIA_is_holding_lagos
+			days > 89
+		}
+		BIA = {
+			has_war_with = NGA
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_liberation_of_the_south"
+		22 = {
+			add_compliance = 30
+		}
+		969 = {
+			add_compliance = 30
+		}
+	}
+	relative_position_id =  BIA_taking_lagos 
+	prerequisite = { focus = BIA_taking_lagos }
+}
+
+shared_focus = {
+	id = BIA_embracing_our_sister_republics
+	icon = GFX_BIA_EOSR
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_embracing_our_sister_republics"
+		YOR = {
+			transfer_state = 26
+			transfer_state = 969
+			transfer_state = 25
+		}
+		26 = {
+			add_core_of = YOR
+		}
+		969 = {
+			add_core_of = YOR
+		}
+		25 = {
+			add_core_of = YOR
+		}
+		LRC = {
+			transfer_state = 22
+			transfer_state = 1256
+		}
+		22 = { 
+			add_core_of = LRC
+		}
+		1256 = { 
+			add_core_of = LRC
+		}
+		BIA = {
+			puppet = YOR
+			puppet = LRC
+		}
+		LRC = {
+			set_politics = {
+				ruling_party = socdem
+			}
+		}
+	}
+	relative_position_id =  BIA_liberation_of_the_south 
+	prerequisite = { focus = BIA_liberation_of_the_south }
+}
+
+shared_focus = {
+	id = BIA_united_in_faith
+	icon = GFX_BIA_UIFA
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_united_in_faith"
+		LRC = {
+			add_war_support = 0.10
+		}
+		YOR = {
+			add_war_support = 0.10
+		}
+		BIA = {
+			add_war_support = 0.10
+		}
+		BED = {
+			add_war_support = 0.10
+		}
+	}
+	relative_position_id =  BIA_embracing_our_sister_republics 
+	prerequisite = { focus = BIA_embracing_our_sister_republics }
+}
+
+shared_focus = {
+	id = BIA_united_in_freedom
+	icon = GFX_BIA_UIFR
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_united_in_freedom"
+		LRC = {
+			add_stability = 0.08
+		}
+		BIA = {
+			add_stability = 0.08
+		}
+		YOR = {
+			add_stability = 0.08
+		}
+		BED = {
+			add_stability = 0.08
+		}	
+	}
+	relative_position_id =  BIA_embracing_our_sister_republics 
+	prerequisite = { focus = BIA_embracing_our_sister_republics }
+}
+
+shared_focus = {
+	id = BIA_united_against_oppression
+	icon = GFX_BIA_UAO
+	cost = 5
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_united_against_oppression"
+		LRC = {
+			add_ideas = BIA_against_the_zoo
+		}
+		BIA = {
+			add_ideas = BIA_against_the_zoo
+		}
+		YOR = {
+			add_ideas = BIA_against_the_zoo
+		}
+		BED = {
+			add_ideas = BIA_against_the_zoo
+		}		
+	}
+	relative_position_id =  BIA_united_in_faith 
+	prerequisite = { focus = BIA_united_in_faith }
+	prerequisite = { focus = BIA_united_in_freedom }
+}
+
+shared_focus = {
+	id = BIA_treaty_of_mutual_defense
+	icon = GFX_BIA_TOMD
+	cost = 5
+	x = -2
+	y = 2
+	completion_reward = {
+		create_faction = CIS_BIA
+		BED = {army_experience = 25}
+		BIA = {army_experience = 25}
+		LRC = {army_experience = 25}
+		YOR = {army_experience = 25}
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_treaty_of_mutual_defense"	
+	}
+	relative_position_id =  BIA_united_against_oppression 
+	prerequisite = { focus = BIA_united_against_oppression }
+	mutually_exclusive = { focus = BIA_a_commonwealth_of_independent_states }
+}
+
+shared_focus = {
+	id = BIA_a_commonwealth_of_independent_states
+	icon = GFX_BIA_ACIS
+	cost = 5
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_a_commonwealth_of_independent_states"
+		create_faction = CIS_BIA
+		BED = { add_ideas = CIS }
+		BIA = { add_ideas = CIS }
+		LRC = { add_ideas = CIS }
+		YOR = { add_ideas = CIS }
+	}
+	relative_position_id =  BIA_united_against_oppression 
+	prerequisite = { focus = BIA_united_against_oppression }
+	mutually_exclusive = { focus = BIA_treaty_of_mutual_defense }
+}
+
+shared_focus = {
+	id = BIA_aiding_african_liberation_movements
+	icon = GFX_BIA_AALM
+	cost = 5
+	x = 2
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_aiding_african_liberation_movements"
+		set_country_flag = CAN_INVITE_AMBAZONIA
+		custom_effect_tooltip = "Will be able to invite Ambazonia to your faction via decision"
+	}
+	relative_position_id =  BIA_treaty_of_mutual_defense 
+	prerequisite = { focus = BIA_treaty_of_mutual_defense focus = BIA_a_commonwealth_of_independent_states }
+}
+
+shared_focus = {
+	id = BIA_rising_sun_of_africa
+	icon = GFX_BIA_RSOA
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_rising_sun_of_africa"
+		add_political_power = 200
+		add_stability = 0.2
+		add_war_support = 0.2
+	}
+	relative_position_id =  BIA_aiding_african_liberation_movements 
+	prerequisite = { focus = BIA_aiding_african_liberation_movements }
+}
+
+shared_focus = {
+	id = BIA_our_military_proud
+	icon = GFX_our_military_proud
+	cost = 5
+	x = -3
+	y = 2
+	available = {
+		always = no
+	}
+	bypass = {
+		NOT = {
+			country_exists = BED
+		}
+	}
+	completion_reward = {
+	#hidden_effect = {
+	#	NGA = {
+	#		country_event = {
+	#			id = NGA.2 
+	#			days = 12
+	#		}
+	#	}
+	#}
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_our_military_proud"
+			custom_effect_tooltip = "We will increase the salaries of our soldiers slightly..."
+			hidden_effect = {
+				add_to_variable = { GDP = -0.03 }
+			}
+	}
+	relative_position_id =  BIA_wearing_them_out 
+	prerequisite = { focus = BIA_wearing_them_out focus = BIA_forcing_a_ceasefire }
+}
+
+shared_focus = {
+	id = BIA_joint_military_exercises
+	icon = GFX_focus_joint_military_exercises
+	cost = 5
+	x = 0
+	y = 1
+	bypass = {
+		NOT = {
+			country_exists = BED
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_joint_military_exercises"
+		country_event = {
+		id = BIA.24
+		days = 2
+		}
+	}
+	relative_position_id =  BIA_our_military_proud 
+	prerequisite = { focus = BIA_our_military_proud }
+}
+
+shared_focus = {
+	id = BIA_benin_our_greatest_friend
+	icon = GFX_focus_edoourgreatestfriend
+	cost = 5
+	x = -1
+	y = 2
+	bypass = {
+		NOT = {
+			country_exists = BED
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_benin_our_greatest_friend"
+			hidden_effect = {
+				BED = {
+				add_to_variable = { GDP = 1 }
+				}
+				BIA = {
+				add_to_variable = { GDP = -1 }
+				}
+			}
+			custom_effect_tooltip = "We will grant even more favorable trade deals to Benin."
+	}
+	relative_position_id =  BIA_joint_military_exercises 
+	prerequisite = { focus = BIA_joint_military_exercises }
+}
+
+shared_focus = {
+	id = BIA_beaten_back_but_not_lost
+	icon = GFX_BIA_beaten_back_but_not_lost
+	cost = 5
+	x = -4
+	available = {
+		NOT = {
+			country_exists = BED
+		}
+	}
+	y = 2
+	completion_reward = {
+		hidden_effect = {
+			NGA = {
+				complete_national_focus = NGA_no_more_fails
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_beaten_back_but_not_lost"
+			add_timed_idea = {
+				idea = BIA_catastrophe
+				days = 365
+			}
+			
+	}
+	relative_position_id =  BIA_biafraland_is_untakable 
+	prerequisite = { focus = BIA_biafraland_is_untakable focus = BIA_wearing_them_out }
+}
+
+shared_focus = {
+	id = BIA_preparing_for_the_next_war
+	icon = GFX_BIA_PFTNW
+	cost = 5
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_preparing_for_the_next_war"
+		add_to_variable = { BIA.GDP = -10 }
+		add_timed_idea = {
+			idea = BIA_prepare
+			days = 200
+		}
+	}
+	relative_position_id =  BIA_our_military_proud 
+	prerequisite = { focus = BIA_our_military_proud  focus = BIA_beaten_back_but_not_lost }
+}
+
+shared_focus = {
+	id = BIA_maintaining_morale
+	icon = GFX_BIA_MM
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_maintaining_morale"
+		add_ideas = volunteer_only
+		add_stability = 0.05
+	}
+	relative_position_id =  BIA_beaten_back_but_not_lost 
+	prerequisite = { focus = BIA_beaten_back_but_not_lost }
+}
+
+shared_focus = {
+	id = BIA_investing_in_the_arms_industry
+	icon = GFX_BIA_IITAI
+	cost = 5
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_investing_in_the_arms_industry"
+		add_tech_bonus = {
+		    bonus = 0.66
+		    uses = 3
+		    category = infantry_weapons
+		}
+	}
+	relative_position_id =  BIA_preparing_for_the_next_war 
+	prerequisite = { focus = BIA_preparing_for_the_next_war }
+}
+
+shared_focus = {
+	id = BIA_diversifying_our_contractors
+	icon = GFX_BIA_DOC
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_diversifying_our_contractors"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 250
+			producer = FRA
+		}
+	}
+	relative_position_id =  BIA_investing_in_the_arms_industry 
+	prerequisite = { focus = BIA_investing_in_the_arms_industry }
+}
+
+shared_focus = {
+	id = BIA_safeguarding_biafra
+	icon = GFX_BIA_SB
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_safeguarding_biafra"
+		add_ideas = BIA_safe_biafra
+	}
+	relative_position_id =  BIA_preparing_for_the_next_war 
+	prerequisite = { focus = BIA_preparing_for_the_next_war }
+	mutually_exclusive = { focus = BIA_revanchist_ambitions }
+}
+
+shared_focus = {
+	id = BIA_a_peoples_army
+	icon = GFX_BIA_APA
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_a_peoples_army"
+		add_ideas = BIA_peoples_army
+	}
+	relative_position_id =  BIA_safeguarding_biafra 
+	prerequisite = { focus = BIA_safeguarding_biafra }
+}
+
+shared_focus = {
+	id = BIA_revanchist_ambitions
+	icon = GFX_BIA_RA
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_revanchist_ambitions"
+		#?
+	}
+	relative_position_id =  BIA_maintaining_morale 
+	prerequisite = { focus = BIA_maintaining_morale }
+	mutually_exclusive = { focus = BIA_safeguarding_biafra }
+}
+
+shared_focus = {
+	id = BIA_military_first_policy
+	icon = GFX_BIA_MFP
+	cost = 5
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BIA_military_first_policy"
+		add_ideas = partial_economic_mobilisation
+	}
+	relative_position_id =  BIA_revanchist_ambitions 
+	prerequisite = { focus = BIA_revanchist_ambitions }
+}
+
+#Our Patriotism Bolstered
+	shared_focus = {
+		id = BIA_our_patriotism_bolstered
+		icon = GFX_our_patriotism_bolstered
+		x = -2
+		y = 1
+		relative_position_id = BIA_a_peoples_army
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_diversifying_our_contractors  }
+		prerequisite = { focus = BIA_a_peoples_army  focus = BIA_military_first_policy }
+		completion_reward = {
+			add_stability = 0.05
+			
+			add_war_support = 0.05
+			
+			add_political_power = 25
+			
+			country_event = {
+			id = BIA.23
+			days = 1
+			}
+		}
+	}
+
+	#Our New Money Flowing
+	shared_focus = {
+		id = BIA_our_new_money_flowing
+		icon = GFX_focus_our_new_money_flowing
+		x = 2
+		y = 1
+		relative_position_id = BIA_a_peoples_army
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_diversifying_our_contractors  }
+		prerequisite = { focus = BIA_a_peoples_army  focus = BIA_military_first_policy }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = {
+				var = BIA.REAL_GROWTH
+				value = 0.0025
+				}
+			}
+		custom_effect_tooltip = "REAL_GROWTH_025_TT_BIA"
+			country_event = {
+			id = BIA.27
+			days = 1
+			}		
+		}
+	}
+	shared_focus = {
+		id = BIA_fund_edu_tour
+		icon = GFX_focus_fund_edu_tour
+		x = 1
+		y = 1
+		relative_position_id = BIA_our_new_money_flowing
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_our_new_money_flowing  }
+		completion_reward = {
+			hidden_effect = {
+			add_to_variable = {
+			var = BIA.DEBT
+			value = 10
+			}
+			}
+			add_stability = 0.05
+			custom_effect_tooltip = "REAL_DEBT_10_TT_BIA"
+		}
+	}
+	shared_focus = {
+		id = BIA_econ_divers
+		icon = GFX_focus_econ_divers
+		x = -1
+		y = 1
+		relative_position_id = BIA_our_new_money_flowing
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_our_new_money_flowing  }
+		completion_reward = {
+			hidden_effect = {
+				add_to_variable = {
+				var = BIA.REAL_GROWTH
+				value = 0.01
+				}
+				add_to_variable = {
+				var = BIA.DEBT
+				value = 10
+				}
+			}
+			custom_effect_tooltip = "REAL_DEBT_10_AND_RG_1_TT_BIA"
+			add_stability = -0.07
+			add_war_support = 0.05
+			add_political_power = -100
+		}
+	}
+	shared_focus = {
+		id = BIA_keep_econ_growing
+		icon = GFX_focus_keep_econ_growing
+		x = 0
+		y = 2
+		relative_position_id = BIA_our_new_money_flowing
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_econ_divers  }
+		prerequisite = { focus = BIA_fund_edu_tour  }
+		completion_reward = {	
+				hidden_effect = {
+				add_to_variable = {
+			var = BIA.REAL_GROWTH
+			value = 0.01
+			}
+			add_to_variable = {
+			var = BIA.DEBT
+			value = 20
+			}	
+			}	
+			custom_effect_tooltip = "REAL_DEBT_20_RG_1_BIA"
+		}
+	}
+	shared_focus = {
+		id = BIA_bring_benefits
+		icon = GFX_focus_bring_benefits
+		x = 0
+		y = 1
+		relative_position_id = BIA_keep_econ_growing
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_keep_econ_growing  }
+		completion_reward = {		
+		add_ideas = BIA_bonuses_to_citizenry
+		}
+	}
+
+	#Opening Up To New Parties
+	shared_focus = {
+		id = BIA_opening_up_to_new_parties
+		icon = GFX_focus_opening_up_to_new_parties
+		x = -1
+		y = 1
+		relative_position_id = BIA_our_patriotism_bolstered
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_our_patriotism_bolstered  }
+		completion_reward = {
+			custom_effect_tooltip = "We will decide whether or not to enact a snap election."
+			hidden_effect = {
+				country_event = {
+					id = BIA.37
+					days = 1
+				}
+			}
+		}
+	}
+
+	#Cross-River Trade
+	shared_focus = {
+		id = BIA_crossriver_trade
+		icon = GFX_focus_crossriver_trade
+		x = 1
+		y = 1
+		relative_position_id = BIA_our_patriotism_bolstered
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_our_patriotism_bolstered  }
+		completion_reward = {
+			country_event = {
+			id = BIA.28
+			days = 2
+			}
+		}
+	}
+
+	#Democratic Naissance
+	shared_focus = {
+		id = BIA_democratic_naissance
+		icon = GFX_focus_democratic_naissance
+		x = 0
+		y = 2
+		relative_position_id = BIA_our_patriotism_bolstered
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = { #TODO: CHANGE TO OVERRIDE_TOOLTIP
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_opening_up_to_new_parties  } prerequisite = { focus = BIA_crossriver_trade  }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BIA_ahiara_declaration
+				add_idea = BIA_ahiara_declaration_1
+			}
+		}
+	}
+
+	#Contain Extremists
+	shared_focus = {
+		id = BIA_contain_extremists
+		icon = GFX_focus_contain_extremists
+		x = 0
+		y = 1
+		relative_position_id = BIA_democratic_naissance
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_democratic_naissance  }
+		completion_reward = {
+		# event about Kanu getting rekt
+		}
+	}
+	shared_focus = {
+		id = BIA_peaceathome
+		icon = GFX_focus_peaceathome
+		x = -1
+		y = 2
+		relative_position_id = BIA_contain_extremists
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_contain_extremists  } prerequisite = { focus = BIA_talks_with_lagos  }
+		completion_reward = {
+			add_stability = 0.10
+			#flavor maybe?
+		}		
+	}
+	shared_focus = {
+		id = BIA_talks_with_lagos
+		icon = GFX_focus_talks_with_lagos
+		x = 0
+		y = 5
+		relative_position_id = BIA_a_peoples_army
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_diversifying_our_contractors  }
+		prerequisite = { focus = BIA_a_peoples_army  focus = BIA_military_first_policy }
+		completion_reward = {
+			NGA = {
+				country_event = {
+					id = NGA.5
+					days = 1
+				}
+			}
+			#flavor event with some effects
+		}		
+	}
+	shared_focus = {
+		id = BIA_vision_2030
+		icon = GFX_focus_vision_2030
+		x = 1
+		y = 2
+		relative_position_id = BIA_bring_benefits
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_talks_with_lagos }
+		prerequisite = { focus = BIA_bring_benefits }
+		completion_reward = {
+			country_event = {
+			id = BIA.33
+			days = 2
+			}
+		load_focus_tree = BIA_vision_2030_tree
+		}		
+	}
+	shared_focus = {
+		id = BIA_and_a_beautiful_world_to_see
+		icon = GFX_focus_and_a_beautiful_world_to_see
+		x = 1
+		y = 2
+		relative_position_id = BIA_contain_extremists
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		prerequisite = { focus = BIA_talks_with_lagos } prerequisite = { focus = BIA_bring_benefits }
+		completion_reward = {
+			diplomatic_relation = {
+				country = NGA
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = AMB
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = BEN
+				relation = non_aggression_pact
+				active = yes
+			}
+			diplomatic_relation = {
+				country = GHA
+				relation = non_aggression_pact
+				active = yes
+			}
+		}		
+	}

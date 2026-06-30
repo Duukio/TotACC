@@ -1,0 +1,56 @@
+add_namespace = HEL
+
+country_event = {
+    id = HEL.1 # flavor for crete
+    title = HEL.1.t
+    desc = HEL.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = HEL.1.a
+      news_event = {
+        id = WNE.221
+        days = 0
+      }
+      335 = {
+        set_demilitarized_zone = yes
+      }
+      country_event = {
+        id = HEL.2
+        days = 12
+      }
+	}
+}
+country_event = {
+    id = HEL.2 # flavor for crete
+    title = HEL.2.t
+    desc = HEL.2.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = HEL.2.a
+      news_event = {
+        id = WNE.222
+        days = 0
+      }
+      335 = {
+        set_demilitarized_zone = no
+      }
+      set_politics = {
+        ruling_party = revolutionary_right 
+      }
+      clr_country_flag = has_double_leader
+      clr_country_flag = constantine_ii
+      add_ideas = ethnic_testudo
+      add_ideas = social_protections
+      add_ideas = phoenix_model
+      add_ideas = free_speech
+      add_ideas = androcentrism
+      add_ideas = HEL_athenian_rhythms
+      remove_ideas = HEL_brit_ass_tur_super
+	}
+}

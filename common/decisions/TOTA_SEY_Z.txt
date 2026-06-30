@@ -1,0 +1,229 @@
+SEY_Z = {
+	SMO_honny_blahaj = {
+	visible = { 
+	has_country_flag = SMO_HONDURAS_ON
+    HON = {
+        has_war_with = ELS
+    }
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_HON
+            }
+			ELS = {
+				give_military_access = SEY
+			}
+		}
+	         ai_will_do = {
+            base = 100
+        }
+	}
+	SMO_iraq_lobster = {
+	visible = { 
+	has_country_flag = SMO_IRAQ_ON
+    KUR = {
+        has_war = yes
+    }
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_IRQ
+            }
+			KUR = {
+				give_military_access = SEY
+			}
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	SMO_kill_the_boer = {
+	visible = { 
+	has_country_flag = SMO_SAF_ON
+    SAF = {
+        has_war = yes
+    }
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_SAF
+            }
+			EFF = {
+				give_military_access = SEY
+			}
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	SMO_alazka = {
+	visible = { 
+	has_country_flag = SMO_ALASKA_ON
+    SVK = {
+        has_war = yes
+    }
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_ALK_bout
+            }
+			SVK = {
+				give_military_access = SEY
+			}
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+	SMO_ZOV_bless_america = {
+	visible = { 
+	has_country_flag = SMO_AMERICA_ON
+    RAS= {
+        has_war = yes
+    }
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+            SEY = {
+                add_ideas = SEY_rodeo_in_RAS_bout
+            }
+			RAS = {
+				give_military_access = SEY
+			}
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}
+}
+SEY_doctrine_bout = {
+	focus_on_land_bout = {
+	visible = { 
+	has_country_flag = SEY_doctrine_decision
+	NOT = {
+		has_country_flag = chose_doctrine_SEY
+	}
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = chose_doctrine_SEY
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}	
+	air_experiments_bout = {
+	visible = { 
+	has_country_flag = SEY_doctrine_decision
+	NOT = {
+		has_country_flag = chose_doctrine_SEY
+	}
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = chose_doctrine_SEY
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}	
+	naval_prowess_bout = {
+	visible = { 
+	has_country_flag = SEY_doctrine_decision
+	NOT = {
+		has_country_flag = chose_doctrine_SEY
+	}
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = chose_doctrine_SEY
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}	
+}
+fiveyearplan_sey = {
+	military_sey_plan = {
+	visible = { 
+	has_country_flag = fiveyearplan_sey
+	NOT = {
+		has_country_flag = chose_fiveyearplan_sey
+	}
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_political_power = -200
+			add_ideas = SEY_Z_GLORY_TO_Z_FOREVER
+			set_country_flag = chose_fiveyearplan_sey
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}	
+	keep_everything_the_same_lol = {
+	visible = { 
+	has_country_flag = fiveyearplan_sey
+	NOT = {
+		has_country_flag = chose_fiveyearplan_sey
+	}
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = 0.15
+			add_war_support = 0.15
+			add_political_power = 25
+			set_country_flag = chose_fiveyearplan_sey
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}	
+	five_year_plan_general_sey = {
+	visible = { 
+	has_country_flag = fiveyearplan_sey
+	NOT = {
+		has_country_flag = chose_fiveyearplan_sey
+	}
+	}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_political_power = -200
+			add_ideas = SEY_general_five_year_plan
+			set_country_flag = chose_fiveyearplan_sey
+		}
+		         ai_will_do = {
+            base = 100
+        }
+	}	
+}

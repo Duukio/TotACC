@@ -1,0 +1,14 @@
+focus_tree = {
+	id = ISP_ashkenazi
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ISP
+		}
+	}
+	shared_focus = ISP_general_secretary_ashkenazi
+	shared_focus = ISP_the_edf_focus
+	shared_focus = ISP_crisis_at_home
+	shared_focus = ISP_tis_the_final_battle
+}

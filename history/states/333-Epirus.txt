@@ -1,0 +1,34 @@
+
+state={
+	id=333
+	name="STATE_333"
+	resources={
+		strategic_minerals=200.000
+		steel=100.000
+	}
+
+	history={
+		victory_points = {
+			3914 10 
+		}
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			school = 2
+			infrastructure = 5
+			dockyard = 2
+			industrial_complex = 5
+			arms_factory = 2
+
+		}
+
+	}
+
+	provinces={
+		3914 9805 9916 
+	}
+	manpower=336856
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

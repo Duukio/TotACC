@@ -1,0 +1,61 @@
+SEY_Z  = {
+    icon = generic_foreign_policy
+	visible_when_empty = yes
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = SMO_activated
+		}
+    }
+}
+SEY_doctrine_bout = {
+     icon = generic_foreign_policy
+	visible_when_empty = no
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = SEY_doctrine_decision
+		}
+    }
+}
+fiveyearplan_sey = {
+     icon = generic_foreign_policy
+	visible_when_empty = no
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = fiveyearplan_sey
+		}
+    }
+}
+SEY_barlow_dec_cat = {
+     icon = generic_foreign_policy
+	visible_when_empty = no
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = BARLOW_CHOSEN
+		}
+    }
+}
+SEY_spicer_dec_cat = {
+     icon = generic_foreign_policy
+	visible_when_empty = no
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = SPICER_CHOSEN
+		}
+    }
+}
+SEY_supersoldiers_dec_cat = {
+     icon = generic_foreign_policy
+	visible_when_empty = no
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = SPICER_CHOSEN
+        has_country_flag = supersoldiers_SEY
+		}
+    }
+}

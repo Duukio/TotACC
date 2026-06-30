@@ -1,0 +1,31 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+IND_fuck_you_NWG = {
+
+	allowed = {
+		original_tag = IND
+		}
+
+	enable = {
+		NWG = {
+		has_war_with = IND
+		}
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 100
+	}
+}
+

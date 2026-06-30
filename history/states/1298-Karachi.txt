@@ -1,0 +1,35 @@
+
+state={
+	id=1298
+	name="STATE_1298"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		buildings = {
+			school = 4
+			infrastructure = 5
+			dockyard = 10
+			arms_factory = 5
+			industrial_complex = 5
+			3456 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			3456 50
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		3456 4110 4003
+	}
+	manpower=20000000
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
+}

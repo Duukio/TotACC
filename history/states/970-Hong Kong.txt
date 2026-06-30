@@ -1,0 +1,31 @@
+
+state={
+	id=970
+	name="STATE_970"
+    buildings_max_level_factor = 1
+	resources = {
+	steel = 12
+	oil = 10
+	}
+	provinces={
+		10062 
+	}
+	manpower=8082000
+	buildings_max_level_factor=2.000
+	local_supplies=10
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=metropolis
+	history={
+		owner = HKG
+		buildings = {
+			school = 12
+			infrastructure = 5
+			industrial_complex = 5
+			arms_factory = 5
+		}
+		victory_points = {
+			10062 75
+		}
+		add_core_of = HKG
+	}
+}

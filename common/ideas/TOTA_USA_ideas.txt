@@ -1,0 +1,181 @@
+ideas = {
+	country = {
+			USA_big_tech_hysteria = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			research_speed_factor = 0.10
+			political_power_cost = 0.15
+			stability_factor = -0.05
+			gdp_growth_modifier = 7
+			custom_modifier_tooltip = "USA_autocracy_drift"
+			monthly_soctrends_drift_DE_E = 0.01
+			}
+		}
+		ATI_singular = {
+			picture = ATI_singular
+			allowed = {
+				tag = ATI
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.88
+			research_speed_factor = 0.05
+			army_org_factor = 0.15
+			offence = 0.15
+			defence = 0.15
+			war_support_factor = 0.2
+			weekly_manpower = 200
+			}
+		}
+		USA_rural_paramil_troubles = {
+		picture = USA_unruly
+		allowed = {
+			tag = USA
+		}
+
+           available = {
+
+           }
+
+           cancel = {
+
+           }
+
+		allowed_civil_war = {
+			always = no
+		}
+		
+		modifier = {
+		army_speed_factor = -0.25
+		land_reinforce_rate = -0.10
+		stability_factor = -0.10
+		research_speed_factor = -0.01
+		conscription = -0.003
+		}
+		}
+		USA_panopticon = {
+			picture = USA_panopticon
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_gain = 0.15
+			nuclear_production_factor = 0.02
+			production_speed_buildings_factor = 0.15
+			production_oil_factor = 0.15
+			industry_repair_factor = 0.05
+			gdp_growth_modifier = 1
+			}
+		}
+		USA_mass_econ_inequality = {
+			picture = USA_econ_inequality
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_cost = 0.10
+			monthly_soctrends_drift_EE_E2 = 0.01
+			}
+		}
+		USA_the_moldy_rusty_depressed_belt = {
+			picture = USA_rust_belt
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_soctrends_drift_EA_E = 0.0012
+			custom_modifier_tooltip = "USA_drift_ecological_slightly_plus_junk"
+			}
+		}
+		USA_guerilla_warfare = {
+			picture = guerilla
+			allowed = {
+				is_in_array = { global.USA_CW_TAGS = THIS }
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				supply_factor = 0.3
+				out_of_supply_factor = -0.1
+			}
+		}
+	}	
+}

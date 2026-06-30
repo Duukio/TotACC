@@ -1,0 +1,325 @@
+﻿capital = 918
+
+oob = "ISP_2021"
+
+set_variable = { GDP = 510 } set_variable = { DEBT = 100 } set_variable = { REAL_GROWTH = 5 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+set_variable = { ISP_bonuses_for_dec = 0.1 }
+add_ideas = {
+	ISP_fading_dream
+}
+set_country_flag = barakcab
+set_country_flag = ISP_decide_yarmouk_flag
+set_variable = {
+	var = terrorism_rate_ISP #FLAT DAYS COUNT
+	value = 120
+}
+#edati variables
+add_dynamic_modifier = {
+	modifier = ISP_ethnic_edati_divide_dyn
+	scope = ISP
+}
+set_variable = {
+	var = ISP_edati_stab
+	value = -0.1
+}
+set_variable = {
+	var = ISP_edati_ws
+	value = -0.1
+}
+set_variable = {
+	var = ISP_edati_pp
+	value = -0.01
+}
+set_variable = {
+	var = ISP_edati_recruit
+	value = -0.35
+}
+#kibbutz variables
+set_variable = {
+	var = ISPKD_war_support
+	value = -0.05
+}
+set_variable = {
+	var = ISPKD_con_goods_factor
+	value = -0.05
+}
+set_variable = {
+	var = ISPKD_gdp_growth
+	value = 0.15
+}
+set_variable = {
+	var = ISPKD_social_drift
+	value = 0.01
+}
+set_variable = {
+	var = ISP_reform_socdem
+	value = 0.01
+}
+set_variable = {
+	var = ISP_reform_technocracy_drift
+	value = 0.01
+}
+add_dynamic_modifier = {
+	modifier = ISP_Kibbutz_econ_dyn
+	scope = ISP
+}
+add_dynamic_modifier = {
+	modifier = ISP_EDF
+	scope = ISP
+}
+#EDF variables
+set_variable = {
+	var = ISP_EDF_offence
+	value = 0.05
+}
+set_variable = {
+	var = ISP_EDF_defence
+	value = 0.05
+}
+set_variable = {
+	var = ISP_EDF_morale
+	value = 0.15
+}
+set_variable = {
+	var = ISP_EDF_planningspeed
+	value = 0.15
+}
+set_variable = {
+	var = ISP_EDF_ws
+	value = 0.15
+}
+set_variable = {
+	var = ISP_EDF_con_goods
+	value = 0.1
+}
+set_variable = {
+	var = ISP_EDF_CONSC
+	value = 0.02
+}
+
+set_research_slots = 3
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	anti_tank_equipment = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	mechanised_infantry = 1
+	basic_light_tank = 1
+	basic_medium_tank = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	motorized_equipment = 1
+	mechanized_equipment = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	transport = 1
+	MSPcamo = 1
+	recon_drone = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+	tech_support = 1
+	transport = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	landing_craft = 1
+	basic_machine_tools = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	fuel_silos = 1
+	mastercomputing_theory = 1
+	mastercomputer_90 = 1
+	mastercomputer_00 = 1
+	mastercomputer_10 = 1
+	applied_robotics = 1
+	boxer_90 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	fighter1 = 1
+	tactical_bomber1 = 1
+	early_bomber = 1
+	tech_recon = 1
+	tech_maintenance_company = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
+	support_weapons = 1
+	tech_special_forces = 1
+	support_weapons2 = 1
+	kevlar = 1
+	plate_vest = 1
+	night_vision = 1
+	basic_train = 1
+	hand_recon_drone = 1
+}
+
+set_variable = {
+var = SOCTRENDS_DC
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 50
+}
+tota_variable_clamping = yes
+set_convoys = 100
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 11
+        
+        revolutionary_right = 7
+        
+        dissident_right = 6
+        liberalism = 6
+        hardline_socialism = 7
+        
+        autocracy = 2
+        
+        reformist_socialism = 39
+        socdem = 11
+        technocracy = 11
+
+}
+
+set_politics = {
+	ruling_party = reformist_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+recruit_character = ISP_ehud_barak #sovmark
+recruit_character = ISP_gabi_ashkenazi #sovmark
+recruit_character = ISP_shalom_simhon #soctech
+recruit_character = ISP_efraim_sneh #lwnat
+recruit_character = ISP_dov_khenin #sovmark
+recruit_character = ISP_omer_bar_lev #lwnat
+recruit_character = ISP_haim_ramon #thway
+recruit_character = ISP_moshe_yaalon #sovmark
+recruit_character = ISP_yehuda_fox #sovmark
+recruit_character = ISP_amir_baram #soctech
+recruit_character = ISP_rafi_milo #lwnat
+recruit_character = ISP_yair_natnas #sovmark
+recruit_character = ISP_david_bar_klifa #lwnat
+recruit_character = ISP_dan_noyman #thway
+recruit_character = ISP_haim_ramon_minister
+recruit_character = ISP_manuel_trajtenberg
+recruit_character = ISP_mordechai_bibi
+recruit_character = ISP_avigdor_liberman
+recruit_character = ISP_haim_katz
+recruit_character = ISP_yorailahavhertzanu
+recruit_character = ISP_oritnoked
+recruit_character = ISP_amosyadlin
+recruit_character = ISP_naorshiri
+recruit_character = ISP_eitanginzburg
+recruit_character = ISP_bennygantz
+recruit_character = ISP_uzibaram
+recruit_character = ISP_matanvilnai
+recruit_character = ISP_avrahamburg
+recruit_character = ISP_Sami_Abu_Shehadeh
+recruit_character = ISP_jamal_zahalka
+recruit_character = ISP_saadia_marciano
+recruit_character = ISP_ami_ayalon
+		activate_advisor = ISP_avrahamburg_idea
+		activate_advisor = ISP_matanvilnai_idea
+		activate_advisor = ISP_uzibaram_idea
+		activate_advisor = ISP_bennygantz_idea
+		recruit_character = ISP_naorshiri_2

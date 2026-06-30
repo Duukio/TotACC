@@ -1,0 +1,32 @@
+state={
+id=662
+	name="STATE_662"
+    buildings_max_level_factor = 1
+	manpower = 98462
+	
+	
+	state_category = town
+	
+	history=
+	{
+		owner = SEY
+		add_core_of = SEY
+		victory_points = { 2188 4 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 2
+			2188 = {
+				naval_base = 3
+			}
+		}
+	}
+	
+	provinces={
+		2188 
+	}
+
+	local_supplies=0.0 
+}

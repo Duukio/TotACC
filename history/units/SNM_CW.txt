@@ -1,0 +1,81 @@
+division_template = {
+	name = "Free New Mexico Army"		# Infantry Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4975
+		division_template = "Free New Mexico Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10914
+		division_template = "Free New Mexico Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8070
+		division_template = "Free New Mexico Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10914
+		division_template = "Free New Mexico Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8070
+		division_template = "Free New Mexico Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10914
+		division_template = "Free New Mexico Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+
+	}
+}

@@ -1,0 +1,34 @@
+
+state={
+id=497
+	
+	name="STATE_497"
+	manpower = 1900000
+	
+	state_category = city
+
+	history={
+		owner = VEN
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = VEN
+		victory_points = {
+			10879 20
+		}
+		victory_points = {
+			7915 5
+		}
+		victory_points = {
+			10736 10
+		}
+	}
+
+	provinces={
+		1981 5317 7915 8050 10736 10849 10879 
+	}
+
+	local_supplies=0.0 
+}

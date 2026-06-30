@@ -1,0 +1,29 @@
+state={
+	id=1111
+	name="STATE_1111" #Jharkhand
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			12035 12 #Jamshedpur
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		1569 10471 4571 1637 4544 4516 7537 7593 12452 12035 10358 12307
+	}
+	manpower=32988134
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

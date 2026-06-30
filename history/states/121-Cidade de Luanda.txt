@@ -1,0 +1,27 @@
+state={
+id=121
+	name="STATE_121"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	resources = {
+	oil = 20
+	}
+	history={
+		victory_points = { 13613 20 }
+		victory_points = { 13614 10 }
+		owner = ANG
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = ANG
+ 	}
+	provinces={
+		13613 13614 
+	}
+	manpower=1487444
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

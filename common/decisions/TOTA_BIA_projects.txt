@@ -1,0 +1,301 @@
+planned_cap_dec_biafra_dec = {
+    BIA_choose_a_location = {
+	    fire_only_once = yes
+        cost = 150
+        complete_effect = {
+		    BIA = {
+                country_event = {
+                    id = BIA.40
+                    days = 1
+                }
+                set_country_flag = location_chosen
+		    }
+        }
+        visible = {
+            original_tag = BIA
+        }
+    }
+    BIA_acquire_funding = {
+	    fire_only_once = yes
+        cost = 150
+        visible = {
+            original_tag = BIA
+        }
+        available = {
+        BIA = {
+            has_country_flag =  location_chosen
+        }
+        }
+        complete_effect = {
+		    BIA = {
+                #country_event = {
+                #    id = BIA.41
+                #    days = 1
+                #}
+                set_country_flag = funding_acquired
+		    }
+        }
+    }
+    BIA_choose_name = {
+	    fire_only_once = yes
+        cost = 150
+        visible = {
+            original_tag = BIA
+        }
+        available = {
+            BIA = {
+                has_country_flag =  funding_acquired
+                has_country_flag =  location_chosen
+            }
+        }
+        complete_effect = {
+		    BIA = {
+                country_event = {
+                    id = BIA.38
+                    days = 1
+                }
+                set_country_flag = name_chosen
+		    }
+        }
+    }
+    BIA_architecture = {
+	    fire_only_once = yes
+        cost = 150
+        visible = {
+            original_tag = BIA
+        }
+        available = {
+            BIA = {
+                has_country_flag =  name_chosen
+                has_country_flag =  funding_acquired
+                has_country_flag =  location_chosen
+            }
+        }
+        complete_effect = {
+		    BIA = {
+                country_event = {
+                    id = BIA.39
+                    days = 1
+                }
+                set_country_flag = cap_ready_to_go
+		    }
+        }
+    }
+}
+diversify_economy_biafra_dec = {
+    BIA_dig_for_coal = { #dig for gemmy next time jak...
+        cost = 200
+        days_remove = 120
+	    fire_only_once = yes
+        visible = {
+            original_tag = BIA
+            has_country_flag = diversify_economy_biafra
+        }
+        available = {
+            check_variable = { BIA_dependence_on_oil < 20 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will take in a reasonable amount of debt (25 Billion USD) to stimulate our coal-producing industry. This is a short-term plan and is the least risky of all of them.."
+		    BIA = {
+                add_to_variable = { BIA.DEBT = 25 }
+		    }
+        }
+        remove_effect= {
+            BIA = { add_to_variable = { BIA.GDP = 20 } }
+            subtract_from_variable = { BIA_dependence_on_oil = 15 }
+        }
+    }
+    BIA_innovate_the_gemstone_industry = { #omg so BASED! the sharty will live on!
+        cost = 200
+        days_remove = 240
+	    fire_only_once = yes
+        visible = {
+            original_tag = BIA
+            has_country_flag = diversify_economy_biafra
+        }
+        available = {
+            check_variable = { BIA_dependence_on_oil < 20 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will take in a large amount of debt (40 Billion USD) to centralize and spur on our gemstone industry. This will take a bit of time to turn a profit, but will turn good revenue."
+		    BIA = {
+                add_to_variable = { BIA.DEBT = 40 }
+		    }
+        }
+        remove_effect= {
+            BIA = { add_to_variable = { BIA.GDP = 15 } }
+            subtract_from_variable = { BIA_dependence_on_oil = 20 }
+        }
+    }
+    BIA_uranium_fever = {
+        cost = 200
+        days_remove = 365
+	    fire_only_once = yes
+        visible = {
+            original_tag = BIA
+            has_country_flag = diversify_economy_biafra
+        }
+        available = {
+            check_variable = { BIA_dependence_on_oil < 20 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will take in a very large amount of debt (125 Billion USD) to kickstart an uranium industry. This will take a long time to turn a profit, but will bring us the largest revenue."
+		    BIA = {
+                add_to_variable = { BIA.DEBT = 125 }
+		    }
+        }
+        remove_effect= {
+            BIA = { add_to_variable = { BIA.GDP = 140 } }
+            966 = { set_state_category = large_city }
+            subtract_from_variable = { BIA_dependence_on_oil = 40 }
+            966 = {
+                add_resource = {
+                    type = uranium
+                    amount = 150
+                }
+            }
+        }
+    }
+}
+NPHS_BIA_dec_cat = {
+        BIA_create_biafraland_hospital_network = {
+        visible = {
+            original_tag = BIA
+            has_country_flag = NPHS_BIA
+        }
+        cost = 200
+        days_remove = 700
+	    fire_only_once = yes
+        available = {
+            check_variable = { BIA_dependence_on_oil < 20 }
+        }
+        custom_cost_trigger = {
+            BIA = {
+                check_variable = {
+                    var = BIA.GDP
+                    value > 429
+                }
+            }
+        }
+        custom_cost_text = BIA_NEED_430_GDP
+        complete_effect = {
+            custom_effect_tooltip = "We will take in a very large amount of debt (130 billion USD) to connect and build the nation's largest hospital network yet, to serve all of Biafra. This will cost us dearly."
+		    BIA = {
+                add_to_variable = { BIA.DEBT = 130 }
+                subtract_from_variable = { BIA.GDP = 50 }
+		    }
+        }
+        remove_effect= {
+		country_event = {
+			id = BIA.9124
+			days = 5
+		}
+           #BIA = { add_ideas = profound_gratitude }
+            add_stability = 0.20
+            add_political_power = 100
+				every_state = {
+					limit = {
+						is_core_of = BIA
+					}
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = school
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+}
+
+#THIS MECHANIC IS DEPRECATED BECAUSE DEBT MANAGEMENT IS NOW UNIVERSAL
+#BIA_too_much_debt_dec_cat = {
+#        pay_debts = {
+#	    fire_only_once = no
+#        days_remove = 365
+#        available = {
+#            check_variable = { BIA.DEBT > 399 }
+#        }
+#        custom_cost_trigger = {
+#            BIA = {
+#                check_variable = {
+#                    var = BIA.DEBT
+#                    value > 399
+#                }
+#            }
+#        }
+#        custom_cost_text = BIA_NEED_399_DEBT
+#        complete_effect = {
+#            custom_effect_tooltip = "We will pay part of our debts with foreign nations and private corporations, at a rate of 50 billion USD a year to pay off 50 billion USD in debt."
+#		    BIA = {
+#                subtract_from_variable = { BIA.GDP = 50 }
+#                subtract_from_variable = { BIA.DEBT = 50 }
+#		    }
+#        }
+#        remove_effect= {
+#		    BIA = {
+#                add_to_variable = { BIA.GDP = 30 }
+#		    }
+#        }
+#    }
+#}
+connect_bia = {
+        BIA_create_bianet = {
+        cost = 200
+        days_remove = 700
+        visible = {
+            original_tag = BIA
+            has_country_flag = online_BIA
+        }
+	    fire_only_once = yes
+        available = {
+            check_variable = { BIA_dependence_on_oil < 20 }
+        }
+        custom_cost_trigger = {
+            BIA = {
+                check_variable = {
+                    var = BIA.GDP
+                    value > 429
+                }
+            }
+        }
+        custom_cost_text = BIA_NEED_430_GDP
+        complete_effect = {
+            custom_effect_tooltip = "We will take in debt (20 billion USD) to create a state-run public Internet service, which will provide low-cost internet to all."
+		    BIA = {
+                add_to_variable = { BIA.DEBT = 20 }
+                subtract_from_variable = { BIA.GDP = 10 }
+		    }
+            every_state = {
+                limit = {
+                    is_owned_by = BIA
+                }
+                add_to_variable = { THIS.intreach = 10 }
+            }
+        }
+        remove_effect= {
+            country_event = {
+                id = BIA.9123
+                days = 2
+            }
+            #BIA = { add_ideas = profound_gratitude }
+            add_stability = 0.20
+            add_political_power = 100
+
+			every_state = { 
+			    limit = {
+			    	is_core_of = BIA
+			    }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+}

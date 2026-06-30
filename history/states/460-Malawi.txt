@@ -1,0 +1,29 @@
+
+state={
+	id=460
+	name="STATE_460"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = ZAM
+		add_core_of = ZAM
+		victory_points = {
+			12986 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		12986 13209 13778 13789 
+	}
+	manpower=19129952
+	buildings_max_level_factor=2.000
+	state_category=town
+	local_supplies=0.000
+}

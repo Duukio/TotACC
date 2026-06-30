@@ -1,0 +1,282 @@
+﻿capital = 539
+
+oob = ""
+
+set_variable = { GDP = 1000 } set_variable = { DEBT = 0 } set_variable = { REAL_GROWTH = 0 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+set_research_slots = 3
+
+add_ideas = {
+	free_speech
+	fortyone_to_sixty
+	free_trade
+	phoenix_model
+	free_love_and_family
+	social_glass_ceilings
+	multiculturalism
+}
+set_country_flag = american_cw_polity
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+
+set_variable = {
+var = SOCTRENDS_DC
+value = 70
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 65
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 80
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 55
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 40
+}
+tota_variable_clamping = yes
+set_convoys = 100
+
+set_popularities = {
+        anarchism = 10
+        conservatism = 20
+        revolutionary_right = 5
+        dissident_right = 10
+        liberalism = 40
+        hardline_socialism = 0
+        autocracy = 10
+        reformist_socialism = 0
+        socdem = 5
+        technocracy = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = liberalism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+create_country_leader = {
+	name = "Paul Stanton"
+	desc = "POLITICS_J_LEENEY_DESC"
+	picture = "gfx/leaders/SFL/Paul Stanton.png"
+	expire = "2040.1.1"
+	ideology = marlib
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Jeb Bush"
+	desc = "POLITICS_J_LEENEY_DESC"
+	picture = "gfx/leaders/SFL/Jeb Bush.png"
+	expire = "2040.1.1"
+	ideology = socpat_con
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Jonathon Sharkey"
+	desc = "POLITICS_J_LEENEY_DESC"
+	picture = "gfx/leaders/SFL/The Impaler.png"
+	expire = "2040.1.1"
+	ideology = perdict
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Keith Preston"
+	desc = "POLITICS_J_LEENEY_DESC"
+	picture = "gfx/leaders/SFL/Keith Preston.png"
+	expire = "2040.1.1"
+	ideology = nat_an
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Simon Michaux"
+	desc = "POLITICS_J_LEENEY_DESC"
+	picture = "gfx/leaders/SFL/Simon Michaux.png"
+	expire = "2040.1.1"
+	ideology = classtech
+	traits = {
+	}
+}
+create_country_leader = {
+    name = "Augustus Sol Invictus"
+    desc = "POLITICS_J_LEENEY_DESC"
+    picture = "gfx/leaders/SFL/UnconqueredSun.png"
+    expire = "2040.1.1"
+    ideology = newright
+    traits = {
+    }
+}
+create_country_leader = {
+    name = "Marcus Faella"
+    desc = "POLITICS_J_LEENEY_DESC"
+    picture = "gfx/leaders/SFL/Marcus Faella.png"
+    expire = "2040.1.1"
+    ideology = insurrfash
+    traits = {
+    }
+}
+create_country_leader = {
+    name = "Samson LeBeau Kpadenou"
+    desc = "POLITICS_J_LEENEY_DESC"
+    picture = "gfx/leaders/SFL/Samson LeBeau Kpadenou.png"
+    expire = "2040.1.1"
+    ideology = greenpol
+    traits = {
+    }
+}
+create_country_leader = {
+    name = "Brian Moore"
+    desc = "POLITICS_J_LEENEY_DESC"
+    picture = "gfx/leaders/SFL/Brian Moore.png"
+    expire = "2040.1.1"
+    ideology = popsoc
+    traits = {
+    }
+}
+create_country_leader = {
+    name = "Ruth Beltran"
+    desc = "POLITICS_J_LEENEY_DESC"
+    picture = "gfx/leaders/SFL/Ruth Beltran.png"
+    expire = "2040.1.1"
+    ideology = antirevml
+    traits = {
+    }
+}
+set_country_flag = SFL_starting_cabinet
+recruit_character = SFL_Andrew_Yeoman
+recruit_character = SFL_Dominic_Pezzola
+recruit_character = SFL_Ethan_Nordean
+recruit_character = SFL_James_Porrazzo
+recruit_character = SFL_Marcus_Faella
+recruit_character = SFL_Joseph_Biggs
+recruit_character = SFL_Zachary_Rehl
+recruit_character = SFL_ashanti_alston
+recruit_character = SFL_kristin_noble
+recruit_character = SFL_parker_anthony_wilson
+recruit_character = SFL_donald_trump
+recruit_character = SFL_pazuzu_algarad
+recruit_character = SFL_ashley_s_palmer
+recruit_character = SFL_karla_lavey
+recruit_character = SFL_nathan_larson
+recruit_character = SFL_gonzalo_lira
+recruit_character = SFL_steve_sailer
+recruit_character = SFL_enrique_tarrio
+recruit_character = SFL_mike_ter_maat
+recruit_character = SFL_roger_stone
+recruit_character = SFL_adrian_wyllie
+
+activate_advisor = SFL_adrian_wyllie
+activate_advisor = SFL_roger_stone
+activate_advisor = SFL_mike_ter_maat
+activate_advisor = SFL_enrique_tarrio

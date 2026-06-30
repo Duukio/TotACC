@@ -1,0 +1,22 @@
+state={
+id=44
+	name="STATE_44"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		owner = GHA
+		victory_points = { 10862 25 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+		}
+		add_core_of = GHA
+	}
+	provinces={
+		10862 
+	}
+	manpower=5600000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

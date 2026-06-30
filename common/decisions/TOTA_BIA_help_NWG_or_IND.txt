@@ -1,0 +1,116 @@
+help_NWG_or_IND = {
+	commit_to_help_NWG = {
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			NOT = { has_country_flag = BIA_chose_IND }
+			NWG = {
+				has_war_with = IND
+			}
+		}
+		complete_effect = {
+			set_country_flag = BIA_chose_NWG
+			add_opinion_modifier = {
+				target = NWG
+				modifier = took_stand_for_us
+			}
+			add_opinion_modifier = {
+				target = IND
+				modifier = condemn_aggression
+			}
+		}
+	}
+	commit_to_help_IND = {
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			NOT = { has_country_flag = BIA_chose_NWG }
+			NWG = {
+				has_war_with = IND
+			}
+		}
+		complete_effect = {
+			set_country_flag = BIA_chose_IND
+			add_opinion_modifier = {
+				target = IND
+				modifier = offered_support
+			}
+			add_opinion_modifier = {
+				target = NWG
+				modifier = protest_action_strong
+			}
+		}
+	}
+	help_IND_further = {
+	days_remove = 90
+	days_re_enable = 120
+	visible = { 
+			NWG = {
+				has_war_with = IND
+			}
+	has_country_flag = BIA_chose_IND
+	#has_country_flag = IND_the_clock_ticks_mission
+	}
+		custom_cost_trigger = {
+		has_equipment = {
+		infantry_equipment_1 > 999
+			}
+		}
+		custom_cost_text = 1000_infantry_equipment
+		modifier = {
+			political_power_cost = 0.08
+		}
+		remove_effect = {
+			IND = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = BIA
+				}
+			}
+			BIA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -1000
+					producer = BIA
+				}
+			}
+		}		
+	}
+	help_NWG_further = {
+	visible = { 
+			NWG = {
+				has_war_with = IND
+			}
+	has_country_flag = BIA_chose_NWG 
+	#has_country_flag = IND_the_clock_ticks_mission
+	}
+	days_re_enable = 120
+	days_remove = 90
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment_1 > 999
+			}
+		}
+		modifier = {
+			political_power_cost = 0.08
+		}
+		custom_cost_text = 1000_infantry_equipment
+		remove_effect = {
+			NWG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = BIA
+				}
+			}
+			BIA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -1000
+					producer = BIA
+				}
+			}
+		}
+	}
+}

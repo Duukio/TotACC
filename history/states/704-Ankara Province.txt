@@ -1,0 +1,27 @@
+
+state={
+	id=704
+	name="STATE_704"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = TUR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		804 6871 6908 6925 9806 9901 11784 
+	}
+	manpower=696969
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

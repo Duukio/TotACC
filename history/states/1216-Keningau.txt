@@ -1,0 +1,28 @@
+
+state={
+	id=1216
+	name="STATE_1216"
+    buildings_max_level_factor = 1
+	provinces={
+		1335 4338 12171 
+	}
+	manpower=70000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=pastoral
+	history={
+		owner = IND
+		add_core_of = IND
+		buildings = {
+			school = 2
+			infrastructure = 2
+			4338 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4338 2
+		}
+	}
+}

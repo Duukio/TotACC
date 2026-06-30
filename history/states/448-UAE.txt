@@ -1,0 +1,41 @@
+state={
+id=448
+	
+
+	name="STATE_448"
+
+	manpower = 4177059
+	
+	state_category = megalopolis
+	resources={
+		oil=500
+		rubber = 250
+	}
+
+	history={
+		owner = PGR
+		buildings = {
+            school = 5
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 4
+			7960 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			7960 50
+		}
+		#victory_points = {
+		#	10904 51
+		#}
+		add_core_of = PGR
+		add_core_of = UAE
+	}
+
+	provinces={
+	7960 10904
+	}
+
+	local_supplies=0.0 
+}

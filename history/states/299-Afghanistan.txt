@@ -1,0 +1,25 @@
+state={
+id=299
+	name="STATE_299"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		victory_points = { 10737 50 }
+		owner = PAK
+		buildings = {
+            school = 4
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
+		}
+		add_core_of = PAK 
+
+	}
+	provinces={
+		10737
+	}
+	manpower=10218234
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

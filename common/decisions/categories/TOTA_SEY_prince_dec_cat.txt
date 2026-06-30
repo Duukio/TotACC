@@ -1,0 +1,40 @@
+SEY_prince_intervene_in_eastasia = {
+    icon = generic_foreign_policy
+	visible_when_empty = yes
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_completed_focus = SEY_troops_in_tokyo
+		}
+    }
+}
+SEY_prince_intervene_in_africa = {
+    icon = generic_foreign_policy
+	visible_when_empty = yes
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_completed_focus = SEY_the_anticommunist_sword
+		}
+    }
+}
+SEY_prince_intervene_in_americas = {
+    icon = generic_foreign_policy
+	visible_when_empty = yes
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_completed_focus = SEY_xs_down_in_texas
+		}
+    }
+}
+SEY_prince_intervene_in_south_asia = {
+    icon = generic_foreign_policy
+	visible_when_empty = yes
+    visible = { 
+        tag = SEY
+		SEY = {
+		has_completed_focus = SEY_intelligence_in_indonesia
+		}
+    }
+}

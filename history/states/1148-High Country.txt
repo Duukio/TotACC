@@ -1,0 +1,30 @@
+
+state={
+	id=1148
+	name="STATE_1148"
+    buildings_max_level_factor = 1
+	resources={
+		steel=20.000
+		aluminium=20.000
+	}
+	provinces={
+		4796 6897 7747 
+	}
+	manpower=3084562
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			6897 2
+		}
+		add_core_of = USA
+	}
+}

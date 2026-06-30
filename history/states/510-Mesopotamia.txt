@@ -1,0 +1,35 @@
+state={
+id=510
+	
+	name="STATE_510"
+
+	manpower = 3347217
+	resources={
+		oil=40
+	}
+	
+	state_category = city
+
+	history={
+		owner = ARG
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+			air_base = 2
+			arms_factory = 4
+		}
+		victory_points = {
+			7500 20
+		}
+		add_core_of = ARG
+		add_core_of = ARP
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		1449 2172 5163 7500 8187 8208 8238 10515 10943 10975 10985 11007 12453 12964 13000 
+	}
+
+	local_supplies=0.0 
+}

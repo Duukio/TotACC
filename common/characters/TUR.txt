@@ -1,0 +1,74 @@
+characters = {
+	TUR_ekrem_imamoglu = {
+		name = "Ekrem İmamoğlu"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/TUR/Portrait_TUR_ekrem_imamoglu.png"
+				}
+		}
+		country_leader = {
+				desc = TUR_ekrem_imamoglu_desc
+				ideology = demsoc
+		}
+	}
+	TUR_dogu_princek = {
+		name = "Doğu Perinçek"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/TUR/Portrait_TUR_dogu_perincek.png"
+				}
+		}
+		#country_leader = {
+		#		desc = TUR_dogu_perincek_desc
+		#		ideology = lwnat
+		#}
+	}
+	TUR_gokce_firat_culhaoglu = {
+		name = "Gökçe Fırat Çulhaoğlu"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/TUR/Portrait_TUR_gokce_firat_culhaoglu.png"
+				}
+		}
+		country_leader = {
+				desc = TUR_gokce_firat_culhaoglu_desc
+				ideology = natcom
+		}
+	}
+	TUR_kemal_okuyan = {
+		name = "Kemal Okuyan"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/TUR/Portrait_TUR_kemal_okuyan.png"
+				}
+		}
+		country_leader = {
+				desc = TUR_kemal_okuyan_desc
+				ideology = sovmarsys
+		}
+	}
+	TUR_mete_ulas_aksoy = {
+		name = "Mete Ulaş Aksoy"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/TUR/Portrait_TUR_mete_ulas_aksoy.png"
+				}
+		}
+		country_leader = {
+				desc = TUR_mete_ulas_aksoy_desc
+				ideology = l_acc
+		}
+	}
+	TUR_orsan_senalp = {
+		name = "Örsan Şenalp"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/TUR/Portrait_TUR_orsan_senalp.png"
+				}
+		}
+		#country_leader = {
+		#		desc = TUR_orsan_senalp_desc
+		#		ideology = l_acc
+		#}
+	}
+}

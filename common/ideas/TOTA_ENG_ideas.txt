@@ -1,0 +1,148 @@
+ideas = {
+	country = {
+			ENG_post_empire_syndrome = {
+			picture = ENG_post_empire_syndrome
+			allowed = {
+				tag = ENG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			drift_defence_factor = -0.25
+			political_power_cost = 0.15
+			conservatism_drift = 0.01
+			dissident_right_drift = 0.01
+			improve_relations_maintain_cost_factor = 0.02
+			}
+		}
+			ENG_home_commonwealth = {
+			picture = ENG_home_commonwealth
+			allowed = {
+				tag = ENG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			trade_opinion_factor = 0.20
+			political_power_gain = 0.1
+			}
+		}
+			ENG_oil_gas_broker = {
+			picture = ENG_oil_gas_broker
+			allowed = {
+				tag = ENG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			war_support_factor = 0.1
+			stability_factor = 0.05
+			min_export = 0.15
+			}
+		}
+			ENG_post_industrial_blues = {
+			picture = ENG_post_industrial_blues
+			allowed = {
+				tag = ENG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			production_speed_infrastructure_factor = -0.15
+			}
+		}
+			ENG_postwar_comp_heritage = {
+			picture = ENG_postwar_comp_heritage
+			allowed = {
+				tag = ENG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.1
+			gdp_growth_modifier = 0.01
+			research_speed_factor = 0.03
+			monthly_soctrends_drift_TP_P = 0.01
+			}
+		}
+			ENG_disunited_union = {
+			picture = ENG_disunited_union
+			allowed = {
+				tag = ENG
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_weekly = -0.005
+			party_popularity_stability_factor = 0.2
+			recruitable_population_factor = 0.15
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=969
+	name="STATE_969"
+    buildings_max_level_factor = 1
+	resources = {
+	steel = 10
+	oil = 40
+	}
+	provinces={
+		12900 13643 13644 13645 13654 
+	}
+	manpower=6000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = NGA
+		buildings = {
+			school = 2
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			13645 1
+		}
+		add_core_of = NGA
+	}
+}

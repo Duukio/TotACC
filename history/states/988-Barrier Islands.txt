@@ -1,0 +1,32 @@
+
+state={
+	id=988
+	name="STATE_988"
+    buildings_max_level_factor = 1
+	provinces={
+		1480 11975 
+	}
+	manpower=2020405
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 5
+			industrial_complex = 3
+			dockyard = 6
+			arms_factory = 2
+			11975 = {
+				naval_base = 5
+
+			}
+		}
+		victory_points = {
+			11975 15
+		}
+		add_core_of = USA
+	}
+}

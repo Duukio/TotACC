@@ -1,0 +1,17 @@
+focus_tree = {
+	id = AWB_postwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 400
+			tag = AWB
+			NOT =  {
+				has_war_with = RSB
+				has_war_with = SAF
+				has_war_with = NAM
+				has_war_with = EFF
+			}
+		}
+	}
+	shared_focus = AWB_totale_oorwinning
+}

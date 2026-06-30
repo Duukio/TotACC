@@ -1,0 +1,139 @@
+####BEHOLD
+####MILITARY AUTISM 2
+
+
+division_template = {
+	name = "EDF Palmach Reserve 1"		# Palmach Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+	}
+	support = {
+  	      recon = { x = 0 y = 0 }
+		  anti_tank = { x = 0 y =1 }
+		  engineer = { x = 0 y = 2 }
+		  signal_company = { x = 0 y = 3 }
+ 	}
+}
+division_template = {
+	name = "EDF Gad'Am Reserve 1"		# Palmach Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+  	      recon = { x = 0 y = 0 }
+		  anti_tank = { x = 0 y =1 }
+		  engineer = { x = 0 y = 2 }
+		  signal_company = { x = 0 y = 3 }
+		  artillery = { x = 0 y = 4 }
+ 	}
+}
+division_template = {
+	name = "EDF Armor Reserve 1"		# Palmach Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_armor = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		mechanized = { x =  1 y = 4 }
+	}
+	support = {
+  	      recon = { x = 0 y = 0 }
+		  engineer = { x = 0 y = 1 }
+		  signal_company = { x = 0 y = 2 }
+		  artillery = { x = 0 y = 3 }
+ 	}
+}
+division_template = {
+	name = "EDF Alpinist Reserve 1"		# Palmach Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+	}
+	support = {
+  	      recon = { x = 0 y = 0 }
+		  engineer = { x = 0 y = 1 }
+		  signal_company = { x = 0 y = 2 }
+		  artillery = { x = 0 y = 3 }
+ 	}
+}
+division_template = {
+	name = "EDF Spec Ops Reserve 1"		# Palmach Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		marine = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 3 }
+	}
+	support = {
+  	      recon = { x = 0 y = 0 }
+		  anti_tank = { x = 0 y =1 }
+		  engineer = { x = 0 y = 2 }
+		  signal_company = { x = 0 y = 3 }
+		  artillery = { x = 0 y = 4 }
+ 	}
+}
+
+units = {
+	division= {	#
+		name = "3rd "Alexandroni" Palmach Brigade"
+		location = 4088
+		division_template = "EDF Palmach Reserve 1"
+		start_experience_factor = 0.77
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		name = "5th "Sharon" Gad'Am Brigade"
+		location = 13867
+		division_template = "EDF Gad'Am Reserve 1"
+		start_experience_factor = 0.77
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		name = "9th "Oded" Gad'Am Brigade"
+		location = 13870
+		division_template = "EDF Gad'Am Reserve 1"
+		start_experience_factor = 0.77
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		name = "4th "Kiryati" Armor Brigade"
+		location = 1015
+		division_template = "EDF Armor Reserve 1"
+		start_experience_factor = 0.77
+		start_equipment_factor = 1
+
+	}
+}

@@ -1,0 +1,348 @@
+revitalize_bantustans_dec_cat = {
+    transkei_city_umtata = {
+        cost = 150
+        days_remove = 240
+	    fire_only_once = yes
+        available = {
+            check_variable = { SAF_urbanization_in_bantustans < 16 }
+            check_variable = { SAF_urbanization_in_bantustans > 75 }
+        }
+                 ai_will_do = {
+            base = 100
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will spend 20 billion USD to revitalize, expand, and improve Transkei's capital, Umtata."
+		    SAF = { 
+                add_to_variable = { SAF.DEBT = 20 }
+            add_victory_points = {
+            	province = 13274
+            	value = 10
+            }
+		    }
+        }
+        remove_effect= {
+            hidden_effect = {
+                add_to_variable = { SAF_urbanization_in_bantustans = 20 }
+                add_to_variable = { SAF.REAL_GROWTH = 0.1 }
+            }
+        }
+    }
+    witsieshoek_city_qwaqwa = {
+        cost = 150
+        days_remove = 240
+	    fire_only_once = yes
+        available = {
+            check_variable = { SAF_urbanization_in_bantustans < 16 }
+            check_variable = { SAF_urbanization_in_bantustans > 75 }
+        }
+                 ai_will_do = {
+            base = 100
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will spend 30 billion USD to revitalize, expand, and improve QwaQwa's capital, Witsieshoek."
+		    SAF = { 
+                add_to_variable = { SAF.DEBT = 30 }
+            add_victory_points = {
+            	province = 12064
+            	value = 15
+            }
+		    }
+        }
+        remove_effect= {
+            hidden_effect = {
+                add_to_variable = { SAF_urbanization_in_bantustans = 25 }
+                add_to_variable = { SAF.REAL_GROWTH = 0.15 }
+            }
+        }
+    }
+    lebowakgomo_lebowa = {
+        cost = 150
+        days_remove = 240
+	    fire_only_once = yes
+        available = {
+            check_variable = { SAF_urbanization_in_bantustans < 16 }
+            check_variable = { SAF_urbanization_in_bantustans > 75 }
+        }
+                 ai_will_do = {
+            base = 100
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will spend 30 billion USD to revitalize, expand, and improve Lebowa's capital, Lebowakgomo."
+		    SAF = { 
+                add_to_variable = { SAF.DEBT = 30 }
+            add_victory_points = {
+            	province = 2171
+            	value = 15
+            }
+		    }
+        }
+        remove_effect= {
+            hidden_effect = {
+                add_to_variable = { SAF_urbanization_in_bantustans = 20 }
+                add_to_variable = { SAF.REAL_GROWTH = 0.1 }
+            }
+        }
+    }
+    kwazulu_ulundi = {
+        cost = 150
+        days_remove = 240
+	    fire_only_once = yes
+        available = {
+            check_variable = { SAF_urbanization_in_bantustans < 16 }
+            check_variable = { SAF_urbanization_in_bantustans > 75 }
+        }
+                 ai_will_do = {
+            base = 100
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will spend 30 billion USD to revitalize, expand, and improve KwaZulu's capital, Ulundi."
+		    SAF = { 
+                add_to_variable = { SAF.DEBT = 30 }
+            add_victory_points = {
+            	province = 13296
+            	value = 15
+            }
+		    }
+        }
+        remove_effect= {
+            hidden_effect = {
+                add_to_variable = { SAF_urbanization_in_bantustans = 20 }
+                add_to_variable = { SAF.REAL_GROWTH = 0.1 }
+            }
+        }
+    }
+}
+operation_EFF = {
+    exterminate_northern_exclave = {
+    selectable_mission = yes
+    fire_only_once = yes
+     activation = { 
+        original_tag = SAF
+        has_country_flag = SAF_get_EFF_decisions
+        has_war_with = EFF
+    }
+    available = {
+        original_tag = SAF
+        SAF = {
+        controls_state = 472
+        }
+        has_war_with = EFF
+    }
+    cancel_trigger = {
+        has_war = no
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    days_mission_timeout = 90
+    complete_effect = {
+        add_political_power = 100
+        add_stability = 0.20
+        add_war_support = 0.20
+    }
+    timeout_effect = {
+        add_political_power = -100
+        add_war_support = -0.20
+    }
+             ai_will_do = {
+            base = 100
+        }
+    }
+}
+operation_AWB = {
+    take_pretoria = {
+    selectable_mission = yes
+    fire_only_once = yes
+    available = {
+        original_tag = SAF
+        SAF = {
+        controls_state = 477
+        }
+        has_war_with = AWB
+    }
+             ai_will_do = {
+            base = 100
+        }
+     activation = { 
+        original_tag = SAF
+        has_country_flag = SAF_get_AWB_decisions
+        has_war_with = AWB
+    }
+    cancel_trigger = {
+        has_war = no
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    days_mission_timeout = 20
+    complete_effect = {
+        add_political_power = 100
+        add_stability = 0.20
+        add_war_support = 0.20
+    }
+    timeout_effect = {
+        add_political_power = -100
+        add_war_support = -0.20
+    }
+    }
+    take_bloemfontein = {
+    selectable_mission = yes
+             ai_will_do = {
+            base = 100
+        }
+    available = {
+        original_tag = SAF
+        SAF = {
+        controls_province =5231
+        }
+        has_war_with = AWB
+    }
+     activation = { 
+        original_tag = SAF
+        has_country_flag = SAF_get_AWB_decisions
+        has_war_with = AWB
+    }
+    cancel_trigger = {
+        has_war = no
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    days_mission_timeout = 20
+    complete_effect = {
+        add_political_power = 25
+        add_stability = 0.10
+        add_war_support = 0.10
+    }
+    timeout_effect = {
+        add_political_power = -100
+        add_war_support = -0.20
+    }
+    }
+}
+end_slums_dec_cat = {
+    demolish_johannesburg_slums = {
+        cost = 150
+        days_remove = 120
+                 ai_will_do = {
+            base = 100
+        }
+	    fire_only_once = yes
+        available = {
+                    original_tag = SAF
+            check_variable = { SAF_slum_rate_in_cities > 20 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will destroy and demolish most slums in Johannesburg and compensate the families."
+		    SAF = { 
+                add_stability = -0.10
+		    }
+            subtract_from_variable = { SAF.GDP = 2 }
+            477 = {
+				remove_building = {
+					type = school
+					level = 1
+				}
+				remove_building = {
+					type = infrastructure
+					level = 1
+				}
+            }
+        }
+        remove_effect= {
+            hidden_effect = {
+                subtract_from_variable = { SAF_slum_rate_in_cities = 20 }
+                add_to_variable = { SAF.REAL_GROWTH = 0.1 }
+            }
+        }
+    }
+    build_new_affordable_housing_joburg = {
+        cost = 150
+        days_remove = 240
+	    fire_only_once = yes
+                 ai_will_do = {
+            base = 100
+        }
+        available = {
+                    original_tag = SAF
+            check_variable = { SAF_urbanization_in_bantustans < 16 }
+            check_variable = { SAF_urbanization_in_bantustans > 75 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will spend 10 billion USD in affordable housing across the suburbs of Johannesburg."
+		    SAF = { 
+                add_to_variable = { SAF.DEBT = 10 }
+             477 = {
+				set_building_level = {
+					type = school
+					level = 3
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+                add_manpower = 120000
+            }           
+		    }
+        }
+    }
+    demolish_kaap_slums = {
+        cost = 150
+        days_remove = 120
+	    fire_only_once = yes
+                 ai_will_do = {
+            base = 100
+        }
+        available = {
+                    original_tag = SAF
+            check_variable = { SAF_slum_rate_in_cities > 20 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will destroy and demolish most slums in Cape Town and compensate the families."
+		    SAF = { 
+                add_stability = -0.10
+		    }
+            subtract_from_variable = { SAF.GDP = 2 }
+            470 = {
+				remove_building = {
+					type = school
+					level = 1
+				}
+				remove_building = {
+					type = infrastructure
+					level = 1
+				}
+            }
+        }
+        remove_effect= {
+            hidden_effect = {
+                subtract_from_variable = { SAF_slum_rate_in_cities = 20 }
+                add_to_variable = { SAF.REAL_GROWTH = 0.1 }
+            }
+        }
+    }
+    build_new_affordable_housing_kaap = {
+        cost = 150
+        days_remove = 240
+	    fire_only_once = yes
+                 ai_will_do = {
+            base = 100
+        }
+        available = {
+                    original_tag = SAF
+            check_variable = { SAF_urbanization_in_bantustans < 16 }
+            check_variable = { SAF_urbanization_in_bantustans > 75 }
+        }
+        complete_effect = {
+            custom_effect_tooltip = "We will spend 20 billion USD in affordable housing across the suburbs of Cape Town."
+		    SAF = { 
+                add_to_variable = { SAF.DEBT = 20 }
+             470 = {
+				set_building_level = {
+					type = school
+					level = 3
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 5
+				}
+                add_manpower = 240000
+            }           
+		    }
+        }
+    }
+}

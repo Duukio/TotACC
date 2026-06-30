@@ -1,0 +1,35 @@
+state={
+id=980
+	name="Huambo"
+    buildings_max_level_factor = 1
+	
+	resources={
+
+		rubber=200
+		oil = 50
+	}
+
+	history={
+		owner = ANG
+		buildings = {
+            school = 2
+			infrastructure = 3
+			12958 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			10966 15
+		}
+		add_core_of = ANG
+	}
+
+	provinces={
+		12985 8202 8138 10966 12391 4735
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	state_category=city
+
+	local_supplies=0.0 
+}

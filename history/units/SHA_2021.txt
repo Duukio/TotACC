@@ -1,0 +1,96 @@
+division_template = {
+	name = "Shan Federal Army"		# Infantry Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7603
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4654
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7047
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7909
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7603
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 4654
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7047
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7909
+		division_template = "Shan Federal Army"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.7
+	}
+
+}

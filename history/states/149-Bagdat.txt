@@ -1,0 +1,29 @@
+state={
+id=149
+	name="STATE_149"
+    buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	resources = {
+	oil = 200
+	}
+	history={
+		victory_points = { 12413 5 }
+        owner = ALQ
+        buildings = {
+            school = 2
+            infrastructure = 4
+        }
+        add_core_of = ALQ
+		add_core_of = IRQ
+		add_core_of = IRA
+		add_core_of = TRM
+
+    }
+	provinces={
+		1938 12372 12413 1631
+	}
+	manpower=1932264
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

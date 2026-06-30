@@ -1,0 +1,37 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+FRA_watch_out_gaddafi = {
+
+	allowed = {
+		original_tag = FRA
+	}
+
+	enable = {
+		TRP = {
+		has_war_with = FRA
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = TRP
+		value = 200
+	}
+	ai_strategy = {
+	    type = ignore_army_incompetence
+	    value = 100
+	}
+}
+

@@ -1,0 +1,198 @@
+TOTA_Debug = {
+	debug_ISP_intro = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_starting
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_ISP_ashkenazi = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_ashkenazi
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_ISP_reformist = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_simhonramon
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_ISP_edf = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_edftree
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_ISP_canaan = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_canaanites_this_tree_is_huge_help
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_ISP_fopo = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_fopo
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_ISP_coup = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_coup
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_ISP_sneh = {
+        allowed = {
+            tag = ISP
+        }
+        complete_effect = {
+            load_focus_tree = ISP_sneh
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_NGA_intro = {
+        allowed = {
+            tag = NGA
+        }
+        complete_effect = {
+            load_focus_tree = NGA_starting
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_NGA_epicwin = {
+        allowed = {
+            tag = NGA
+        }
+        complete_effect = {
+            load_focus_tree = NGA_postwar_victory
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_NGA_fulanimemestate = {
+        allowed = {
+            tag = NGA
+        }
+        complete_effect = {
+            load_focus_tree = NGA_fulanomad
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_NGA_natcom = {
+        allowed = {
+            tag = NGA
+        }
+        complete_effect = {
+            load_focus_tree = NGA_natcom
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_NGA_jade = {
+        allowed = {
+            tag = NGA
+        }
+        complete_effect = {
+        	set_country_flag = NGA_jade
+            load_focus_tree = NGA_jade
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_NGA_democrat = {
+        allowed = {
+            tag = NGA
+        }
+        complete_effect = {
+        	set_country_flag = NGA_democrat_path
+            load_focus_tree = NGA_democrat
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+
+    debug_NGA_technocrat = {
+        allowed = {
+            tag = NGA
+        }
+        complete_effect = {
+            load_focus_tree = NGA_technocrat
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+     debug_LKT_war_tree = {
+        allowed = {
+            tag = LKT
+        }
+        complete_effect = {
+            load_focus_tree = LKT_war_tree
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+    debug_SFL_ASI_wartree = {
+        allowed = {
+            tag = SFL
+        }
+        complete_effect = {
+            load_focus_tree = SFL_ASI_WARTREE
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+    debug_SFL_SHARKEY_WARTREE = {
+        allowed = {
+            tag = SFL
+        }
+        complete_effect = {
+            load_focus_tree = SFL_SHARKEY_WARTREE
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+    debug_SFL_shark_postwar = {
+        allowed = {
+            tag = SFL
+        }
+        complete_effect = {
+            load_focus_tree = SFL_SHARKEY_POSTWARTREE
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+    debug_SFL_asi_postwar = {
+        allowed = {
+            tag = SFL
+        }
+        complete_effect = {
+            load_focus_tree = SFL_ASI_postwar
+            mark_focus_tree_layout_dirty = yes
+        }
+    }
+}

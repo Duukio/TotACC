@@ -1,0 +1,33 @@
+
+state={
+	id=560
+	name="STATE_560"
+    buildings_max_level_factor = 1
+	resources={
+		steel=20.000
+		tungsten=30.000
+	}
+
+	history={
+		owner = NWF
+		buildings = {
+			school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = NWF
+		add_core_of = USA
+		victory_points = {
+			4778 2 
+		}
+
+	}
+
+	provinces={
+		1832 3781 4778 12124 
+	}
+	manpower=450612
+	buildings_max_level_factor=2.000
+	state_category=town
+	local_supplies=7.000
+}

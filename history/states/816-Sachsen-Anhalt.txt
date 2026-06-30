@@ -1,0 +1,23 @@
+state={
+id=816
+	name="STATE_816"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		victory_points = { 3522 30 }
+		owner = DDR
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = DDR
+	}
+	provinces={
+		425 3522 6487 6582 9375 9456 9560 11359 11468 11545 
+	}
+	manpower=5000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

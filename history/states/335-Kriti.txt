@@ -1,0 +1,35 @@
+state={
+id=335
+	name="STATE_335"
+    buildings_max_level_factor = 1
+	state_category = large_town
+	
+	resources = {
+	strategic_minerals = 20
+	steel = 10
+	oil = 10
+	}
+	history={
+        victory_points = { 9940 10 }  
+        owner = HEL
+		add_core_of = HEL
+		add_core_of = GRE
+        buildings = {
+            school = 2
+            infrastructure = 3
+			dockyard = 2
+			9940 = {
+			naval_base = 5
+			}
+			4170 = {
+			naval_base = 2
+			}
+        }
+    }
+	provinces={
+		1164 4170 9940 12058 
+	}
+	manpower=600000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

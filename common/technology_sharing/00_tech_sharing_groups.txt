@@ -1,0 +1,50 @@
+
+technology_sharing_group = {
+
+	id = us_research
+	name = us_research_name
+	desc = us_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = USA
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = continuous_tech_share
+	name = continuous_tech_share_group_name
+	desc = continuous_tech_share_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+	is_faction_sharing = yes
+
+    available = {
+        is_in_faction = yes
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = SOV_soviet_academies_of_sciences_joint_program
+	name = SOV_soviet_academies_of_sciences_joint_program_name
+	desc = SOV_soviet_academies_of_sciences_joint_program_desc
+	picture = GFX_technology_sharing_default
+
+	research_sharing_per_country_bonus = 0.05
+
+	categories = { industry electronics nuclear rocketry }
+
+	available = {
+		OR = {
+			original_tag = PRC
+		}
+	}
+}
+

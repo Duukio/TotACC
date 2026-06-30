@@ -1,0 +1,27 @@
+state={
+id=185
+	name="STATE_185"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	history={
+		owner = YUG
+		victory_points = { 6799 5 } #tuzla
+		victory_points = { 11572 5 } #Zenica
+
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 5
+		}
+		add_core_of = YUG
+		add_core_of = BOS
+	}
+	provinces={
+		  6799 9922 11572 11872 
+	}
+	manpower=1469592
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

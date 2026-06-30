@@ -1,0 +1,109 @@
+add_namespace = SYR
+country_event = {
+    id = SYR.1
+    title = SYR.1.t
+    desc = SYR.1.desc
+    is_triggered_only = yes
+    option = {
+        name = SYR.1.a
+        ALA = {
+            inherit_technology = SYR
+            transfer_state = 1263
+            add_political_power = 300
+            set_country_flag = TAG_decisions_for_mobilization
+            declare_war_on = {
+                target = SYR
+                type= annex_everything
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 3000
+            }
+            load_oob = ALA_CW
+        }
+        ALQ = {
+            transfer_state = 1264
+            transfer_state = 157
+            declare_war_on = {
+                target = SYR
+                type= annex_everything
+            }
+            declare_war_on = {
+                target = ALA
+                type= annex_everything
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 3000
+            }
+            load_oob = ALQ_CW
+            set_cosmetic_tag = ALQ_in_syria
+        }
+        if = {
+            limit = {
+                SYR = {
+                    any_neighbor_country = {
+                        original_tag = KUR
+                    }
+                }
+            }
+            KUR = {
+                transfer_state = 1262
+                declare_war_on = {
+                    target = SYR
+                    type= annex_everything
+                }
+                declare_war_on = {
+                    target = ALQ
+                    type= annex_everything
+                }
+                declare_war_on = {
+                    target = ALA
+                    type= annex_everything
+                }
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 3000
+                }
+                load_oob = KUR_CW 
+            }
+        
+        }
+        else = {
+            KU2 = {
+              inherit_technology = SYR
+              transfer_state = 1262
+              add_political_power = 300
+              set_country_flag = TAG_decisions_for_mobilization
+              declare_war_on = {
+                    target = SYR
+                    type= annex_everything
+                }
+                declare_war_on = {
+                    target = ALQ
+                    type= annex_everything
+                }
+                declare_war_on = {
+                    target = ALA
+                    type= annex_everything
+                }
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 3000
+                }
+                load_oob = KUR_CW 
+            }
+        }
+        SYR = {
+            set_equipment_fraction = 0.3
+            every_core_state = {
+                add_core_of = ALA
+                add_core_of = ALQ
+                add_core_of = KU2
+                add_core_of = KUR
+            }
+        } 
+
+    }
+    fire_only_once = yes
+}

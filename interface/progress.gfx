@@ -1,0 +1,124 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_global_social_trends_bar"
+		textureFile1 = "gfx/interface/orange_drift.dds"
+		textureFile2 = "gfx/interface/blue_drift.dds"
+		size = { x = 380 y = 16 } 
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+        steps = 100
+	}
+	progressbartype = {
+		name = "GFX_global_social_trends_bar_poltab"
+		textureFile1 = "gfx/interface/orange_drift_soctrends_pol.dds"
+		textureFile2 = "gfx/interface/blue_drift_soctrends_pol.dds"
+		size = { x = 199 y = 16 } 
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+        steps = 100
+	}
+    spriteType = {
+        name = "GFX_social_trends_box"
+        texturefile = "gfx/interface/social_trends.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_info_soctrend"
+        texturefile = "gfx/interface/info_soctrend.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_social_trends_button_topbar"
+        texturefile = "gfx/interface/topbar/toolbar/soctrends_placeholder.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_closebutton_soctrend"
+        texturefile = "gfx/interface/closebutton_soctrend.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_open_soctrend"
+        texturefile = "gfx/interface/open_soctrend.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_economic_clippy"
+        texturefile = "gfx/interface/economic_clippy.dds"
+    }
+    spriteType = {
+        name = "GFX_economic_values_anarchy"
+        texturefile = "gfx/interface/economic_actions_anarchy.dds"
+    }
+    spriteType = {
+        name = "GFX_header_bg_anarchy"
+        texturefile = "gfx/interface/header_bg_anarchy.dds"
+    }
+	progressbartype = {
+		name = "GFX_SEY_progress_bar"
+		textureFile1 = "gfx/interface/orange_drift_smaller.dds"
+		textureFile2 = "gfx/interface/blue_drift_smaller.dds"
+		size = { x = 20 y = 214 } 
+		effectFile = "gfx/FX/progress.lua"
+        steps = 100
+        horizontal = no
+	}
+	progressbartype = {
+		name = "GFX_NGA_bias_meter"
+		textureFile1 = "gfx/interface/nigeria/southern_drift.dds"
+		textureFile2 = "gfx/interface/nigeria/northern_drift.dds"
+		size = { x = 220 y = 220 } 
+		effectFile = "gfx/FX/progress.lua"
+        steps = 100
+        horizontal = no
+	}
+    spriteType = {
+        name = "GFX_leader_SEY_Barlow"
+        texturefile = "gfx/leaders/SEY/Eeben Barlow.dds"
+    }
+    spriteType = {
+        name = "GFX_leader_SEY_Prince"
+        texturefile = "gfx/leaders/SEY/Erik Prince.dds"
+    }
+    spriteType = {
+        name = "GFX_leader_SEY_Spicer"
+        texturefile = "gfx/leaders/SEY/Tim Spicer.dds"
+    }
+    spriteType = {
+        name = "GFX_leader_SEY_Viktor"
+        texturefile = "gfx/leaders/SEY/Viktor Bout.dds"
+    }
+    spriteType = {
+        name = "GFX_SEY_prog_background_bar"
+        texturefile = "gfx/interface/SEY_prog_background_bar.dds"
+    }
+    spriteType = {
+        name = "GFX_leader_background_Bout"
+        texturefile = "gfx/interface/seychelles frames/bout.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_leader_background_Barlow"
+        texturefile = "gfx/interface/seychelles frames/eeben barlow.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_nigeria_o_meter_button"
+        texturefile = "gfx/interface/nigeria/nigeria_o_meter_button.dds"
+    }
+    spriteType = {
+        name = "GFX_leader_background_Prince"
+        texturefile = "gfx/interface/seychelles frames/erik prince.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_leader_background_Spicer"
+        texturefile = "gfx/interface/seychelles frames/pol_leader_frame_spicer.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_subid_icon_dynamic"
+        texturefile = "gfx/interface/ideologies/ideology_spritesheet.dds"
+        noOfFrames = 58
+    }
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=1258
+	name="STATE_1258"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = USA
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 3
+			12211 = {
+				naval_base = 5
+
+			}
+
+		}
+		add_core_of = ATI
+		add_core_of = USA
+		victory_points = {
+			4328 20 #salem 
+		}
+
+	}
+
+	provinces={
+		4328 4380 10183 12211 12281 
+	}
+	manpower=1507050
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

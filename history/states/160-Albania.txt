@@ -1,0 +1,23 @@
+state={
+id=160
+	name="STATE_160"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = ALB
+		victory_points = { 9914 20 }
+		victory_points = { 11767 10 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		add_core_of = ALB
+	}
+	provinces={
+		914 3448 3884 3896 6900 9780 9875 9914 11762 11767 
+	}
+	manpower=3000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

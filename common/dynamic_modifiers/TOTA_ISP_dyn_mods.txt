@@ -1,0 +1,322 @@
+ISP_simhon_dynmod = {
+	icon = GFX_ISP_simhon_dynmod
+	enable = {
+        ISP = {
+            has_completed_focus = ISP_always_forward
+        }
+	}
+    stability_factor = simhon_stab
+    technocracy_drift = simhon_drift
+    political_power_gain = simhon_pp
+    consumer_goods_factor = simhon_consumer
+    research_speed_factor = simhon_research
+    war_support_factor = simhonwars
+    stability_weekly = simhon_weekstab
+    production_speed_buildings_factor = simhon_construction
+    gdp_growth_modifier = simhon_gdp
+    monthly_soctrends_drift_TP_P = simhon_reformist_drift
+    monthly_soctrends_drift_EA_A = simhon_artificial_drift
+}
+ISP_ethnic_edati_divide_dyn = {
+    icon = GFX_idea_ISP_ethnic_edati_divide
+    enable = {
+        original_tag = ISP
+    }
+    stability_factor = ISP_edati_stab
+    war_support_factor = ISP_edati_ws
+    political_power_gain = ISP_edati_pp
+    recruitable_population_factor = ISP_edati_recruit
+    consumer_goods_factor = ISP_edati_con_goods
+    technocracy_drift = ISP_edati_techno
+    conscription_factor = ISP_edati_cons_fact
+
+}
+ISP_reformist_coalition_dyn = {
+    icon = GFX_idea_ISP_reformist_coalition
+    enable = {
+        original_tag = ISP
+    }
+    stability_factor = ISP_reform_stab
+    political_power_gain = ISP_reform_pp
+    research_speed_factor = ISP_reform_science_speed
+    consumer_goods_factor = ISP_reform_con_goods
+    socdem_drift = ISP_reform_socdem
+    technocracy_drift = ISP_reform_technocracy_drift
+}
+ISP_nat_salvation_gov_dyn = {
+    icon = GFX_idea_ISP_national_salvation_govt
+    enable = {
+        original_tag = ISP
+    }
+    political_power_gain = ISPNS_pp
+    stability_factor = ISPNS_stab
+    war_support_factor = ISPNS_war_support
+    monthly_soctrends_drift_DE_D = ISPNS_dem
+    socdem_drift = ISPNS_socdem
+    hardline_socialism_drift = ISPNS_hard
+    reformist_socialism_drift = ISPNS_reform
+    revolutionary_right_drift = ISPNS_revright
+    monthly_soctrends_drift_TP_P = ISPNS_trad
+    stability_weekly = ISPNS_week_stab
+}
+ISP_rebuilding_national_spirit_dyn = {
+    icon = GFX_idea_ISP_fading_dream
+    enable = {
+        has_completed_focus = ISP_reviving_the_national_spirit
+    }
+    political_power_gain = ISPRBNS_pp
+    monthly_soctrends_drift_TP_P = ISPRBNS_trad
+    monthly_soctrends_drift_DE_D = ISPRBNS_dem
+    stability_factor = ISPRBNS_stab
+    war_support_factor = ISPRBNS_war_support
+    conscription_factor = ISPRBNS_recruit
+}
+ISP_tzabar_dyn = {
+    icon = GFX_idea_ISP_fading_dream
+    enable = {
+        original_tag = ISP
+    }
+    war_support_factor = ISPTZ_war_support
+    consumer_goods_factor = ISPTZ_con_goods
+    stability_factor = ISPTZ_stab
+    reformist_socialism_drift = ISPTZ_neo_soc
+    army_attack_factor = ISPTZ_attack
+    army_morale_factor = ISPTZ_recovery
+    army_defence_factor = ISPTZ_defence
+    war_support_weekly = ISPTZ_war_support_weekly
+}
+
+ISP_renewed_pioneer_spirit_dyn = {
+    icon = GFX_idea_ISP_fading_dream
+    enable = {
+        has_completed_focus = ISP_the_new_hebrew_man_rejuvenated
+    }
+
+    consumer_goods_factor = ISPTZ_con_goods
+    stability_factor = ISPRNPS_stab
+    reformist_socialism_drift = ISPTZ_neo_soc
+    army_attack_factor = ISPTZ_attack
+    army_morale_factor = ISPTZ_recovery
+    army_defence_factor = ISPTZ_defence
+    war_support_weekly = ISPTZ_war_support_weekly
+    political_power_gain = ISPRBNS_pp
+    monthly_soctrends_drift_TP_P = ISPRBNS_trad
+    monthly_soctrends_drift_DE_D = ISPRBNS_dem
+    war_support_factor = ISPRNPS_war_support
+    conscription_factor = ISPRBNS_recruit
+}
+
+ISP_EDF = {
+	icon = GFX_idea_ISP_EDF
+	enable = {
+        original_tag = ISP
+	} 
+    army_attack_factor = ISP_EDF_offence
+    army_core_attack_factor = ISP_EDF_core_off
+    army_defence_factor = ISP_EDF_defence
+    planning_speed = ISP_EDF_planningspeed
+    army_morale_factor = ISP_EDF_morale
+    war_support_factor = ISP_EDF_ws
+    conscription = ISP_EDF_CONSC	
+    special_forces_cap_flat = ISP_EDF_SPECFORC
+    research_speed_factor = ISP_EDF_rescspeed
+    conscription_factor = ISP_EDF_consc_factor
+    attrition = ISP_EDF_attr
+    supply_consumption_factor = ISP_EDF_supply_con
+    training_time_factor = ISP_EDF_train_time
+    line_change_production_efficiency_factor = ISP_EDF_eff_retention
+    decryption_factor = ISP_EDF_decryption
+    recon_factor = ISP_EDF_recon
+    production_factory_efficiency_gain_factor = ISP_EDF_eff_growth
+    weekly_casualties_war_support = ISP_EDF_casual_factor
+    consumer_goods_factor = ISP_EDF_con_goods
+    army_speed_factor = ISP_EDF_speed
+    breakthrough_factor = ISP_EDF_break
+    army_core_defence_factor = ISP_EDF_core_def
+    resistance_growth_on_our_occupied_states = ISP_EDF_core_resist
+    army_artillery_attack_factor = ISP_EDF_art_damage
+    army_org_factor = ISP_EDF_org
+    production_speed_buildings_factor = ISP_EDF_build_speed
+    industry_free_repair_factor = ISP_EDF_free_repair
+    river_crossing_factor = ISP_EDF_river_cross
+}
+ISP_project_liberty_dyn = {
+    icon = GFX_idea_ISP_project_liberty
+    enable = {
+        original_tag = ISP
+    }
+    hardline_socialism_drift = ISPPLD_hardline
+    reformist_socialism_drift = ISPPLD_reformist
+    revolutionary_right_drift = ISPPLD_revright
+    dissident_right_drift = ISPPLD_dissright
+    conservatism_drift = ISPPLD_conservatism
+    socdem_drift = ISPPLD_socdem
+    liberalism_drift = ISPPLD_liberal
+    political_power_gain = ISPPLD_pp
+    research_speed_factor = ISPPLD_science_speed
+    monthly_soctrends_drift_DE_D = ISPPLD_democracy
+}
+ISP_Kibbutz_econ_dyn = { #!!NEEDS DESCRIPTION
+    icon = GFX_idea_ISP_reformed_kibbutz_econ
+    enable = {
+        original_tag = ISP
+    }
+    war_support_factor = ISPKD_war_support
+    consumer_goods_factor = ISPKD_con_goods_factor
+	gdp_growth_modifier = ISPKD_gdp_growth
+	monthly_soctrends_drift_EE_E2 = ISPKD_social_drift
+    monthly_soctrends_drift_EA_A = ISPKD_artifical_drift
+	research_speed_factor = ISPKD_science_speed
+    production_speed_buildings_factor = ISPKD_build_speed
+    production_factory_efficiency_gain_factor = ISPKD_eff_grow
+    production_factory_max_efficiency_factor = ISPKD_eff_max
+    line_change_production_efficiency_factor = ISPKD_eff_ret
+    global_building_slots_factor = ISPKD_build_slots
+    min_export = ISPKD_minexport
+}
+ISP_uncompromising_on_liberty_dyn = { #!!NEEDS DESCRIPTION
+    icon = GFX_idea_ISP_uncompromising_on_liberty
+    enable = {
+        original_tag = ISP
+    }
+    war_support_factor = ISPULD_war_support
+    consumer_goods_factor = ISPULD_con_goods_factor
+	gdp_growth_modifier = ISPULD_gdp_growth
+	monthly_soctrends_drift_EE_E2 = ISPULD_social_drift
+    monthly_soctrends_drift_EA_A = ISPULD_artifical_drift
+	research_speed_factor = ISPULD_science_speed
+    stability_factor = ISPULD_stab
+    production_speed_buildings_factor = ISPULD_build_speed
+    industrial_capacity_factory = ISPULD_fact_out
+}
+ISP_new_hebrew_dyn = { #!!NEEDS NEW ICON AND DESCRIPTION
+    icon = GFX_ISP_salvation
+    enable = {
+        ISP = {
+            has_completed_focus = ISP_to_salvage_an_outdated_system
+        }
+    }
+    war_support_factor = ISPNHD_war_support
+    consumer_goods_factor = ISPNHD_con_goods_factor
+	gdp_growth_modifier = ISPNHD_gdp_growth
+	monthly_soctrends_drift_EE_E2 = ISPNHD_social_drift
+	research_speed_factor = ISPNHD_science_speed
+    production_speed_buildings_factor = ISPNHD_build_speed
+    stability_factor = ISPNHD_stab
+    political_power_gain = ISPNHD_pp
+}
+ISP_cybernetic_kibbutzi_planning_dyn = { #!!NEEDS NEW ICON AND DESCRIPTION
+    icon = GFX_idea_ISP_reformed_kibbutz_econ
+    enable = {
+        ISP = {
+            has_completed_focus = ISP_lessons_from_santiago
+        }
+    }
+    war_support_factor = ISPCKD_war_support
+    consumer_goods_factor = ISPCKD_con_goods_factor
+	gdp_growth_modifier = ISPCKD_gdp_growth
+	monthly_soctrends_drift_EE_E2 = ISPCKD_social_drift
+    monthly_soctrends_drift_EA_A = ISPCKD_artifical_drift
+	research_speed_factor = ISPCKD_science_speed
+    stability_factor = ISPCKD_stab
+    production_speed_buildings_factor = ISPCKD_build_speed
+}
+ISP_old_school_planning_dyn = { #!!NEEDS NEW ICON AND DESCRIPTION
+    icon = GFX_idea_ISP_reformed_kibbutz_econ
+    enable = {
+        ISP = {
+            has_completed_focus = ISP_old_school_planning
+        }
+    }
+    war_support_factor = ISPOSP_war_support
+    consumer_goods_factor = ISPOSP_con_goods_factor
+	gdp_growth_modifier = ISPOSP_gdp_growth
+	monthly_soctrends_drift_EE_E2 = ISPOSP_social_drift
+    monthly_soctrends_drift_EA_A = ISPOSP_artifical_drift
+    monthly_soctrends_drift_TP_T = ISPOSP_social_drift_two
+	research_speed_factor = ISPOSP_science_speed
+    stability_factor = ISPOSP_stab
+    production_speed_buildings_factor = ISPOSP_build_speed
+    production_speed_industrial_complex_factor = ISPOSP_ind_speed
+    production_speed_arms_factory_factor = ISPOSP_arms_speed
+}
+ISP_free_eber_dyn = {
+    icon = GFX_idea_ISP_free_eber
+    enable = {
+        original_tag = ISP
+    }
+    hardline_socialism_drift = ISPFED_hardline
+    reformist_socialism_drift = ISPFED_reformist
+    revolutionary_right_drift = ISPFED_revright
+    dissident_right_drift = ISPFED_dissright
+    conservatism_drift = ISPFED_conservatism
+    socdem_drift = ISPFED_socdem
+    liberalism_drift = ISPFED_liberal
+    political_power_gain = ISPFED_pp
+    research_speed_factor = ISPFED_science_speed
+    monthly_soctrends_drift_DE_D = ISPFED_democracy
+    war_support_factor = ISPFED_war_support
+    consumer_goods_factor = ISPFED_con_goods_factor
+	gdp_growth_modifier = ISPFED_gdp_growth
+	monthly_soctrends_drift_EE_E2 = ISPFED_social_drift
+    monthly_soctrends_drift_EA_A = ISPFED_artifical_drift
+    stability_factor = ISPFED_stab
+    production_speed_buildings_factor = ISPFED_build_speed
+    industrial_capacity_factory = ISPFED_fact_out
+
+}
+ISP_eighth_aliyah_dyn ={
+    icon = GFX_idea_ISP_8th_Aliyah
+    enable ={
+        original_tag = ISP
+    }
+    monthly_population = ISPEAD_pop
+	research_speed_factor = ISPEAD_science_speed
+	stability_factor = ISPEAD_stab
+	production_factory_efficiency_gain_factor = ISPEAD_eff_growth
+	army_org_factor = ISPEAD_org
+	reformist_socialism_drift = ISPEAD_ref_soc_drift
+    consumer_goods_factor = ISPEAD_con_goods
+    production_speed_buildings_factor = ISPEAD_build_speed
+    industrial_capacity_factory = ISPEAD_output
+}
+ISP_back_in_lebanon_dyn = {
+    icon = GFX_idea_ISP_back_in_leb
+    enable = {
+        original_tag = ISP
+    }
+    send_volunteer_size = ISPBLD_vol
+    war_support_factor = ISPBLD_war_support
+    marine_attack_factor = ISPBLD_special_force
+    marine_commando_attack_factor = ISPBLD_special_force
+    mountaineers_attack_factor = ISPBLD_special_force
+    paratrooper_attack_factor = ISPBLD_special_force
+    industrial_capacity_factory = ISPBLD_output
+    experience_loss_factor = ISPBLD_exp_loss
+    army_attack_factor = ISPBLD_off
+    army_speed_factor = ISPBLD_speed
+}
+ISP_canaan_dynmod = {
+    icon = GFX_idea_ISP_project_liberty
+    enable = {
+        original_tag = ISP
+    }
+    monthly_soctrends_drift_TP_P = canaansoctrendstppmod
+    revolutionary_right_drift = canaanrevrightdrift
+    stability_factor = canaanst
+    encryption_factor = canaanencrypt
+    decryption_factor = canaandecrypt
+    monthly_soctrends_drift_EA_E = canaansoctrendsdeaemod
+    production_speed_buildings_factor = canaanconstspeed
+    war_support_weekly = canaanweeklyws
+    monthly_soctrends_drift_TP_T = canaansoctrendstptmod
+    war_support_factor = canaanws
+    MONTHLY_POPULATION = canaanmonthpop
+    conscription_factor = canaanconscrfact
+    research_speed_factor = canaanresearch
+    reformist_socialism_drift = canaanneosocdrift
+    army_speed_factor = canaandivspeed
+    army_morale_factor = canaanrecovery
+    army_org_factor = canaanorg
+    political_power_gain = canaanppgain
+}

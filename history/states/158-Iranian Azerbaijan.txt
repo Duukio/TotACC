@@ -1,0 +1,33 @@
+state={
+id=158
+	name="STATE_158"
+    buildings_max_level_factor = 1
+	state_category = large_town
+	
+	history={
+		owner = IRN
+		victory_points = {
+			1896 10 
+		}
+		victory_points = {
+			4609 15
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 5
+			4609 = {
+				naval_base = 4
+			}
+		}
+		add_core_of = IRN
+
+	}
+	provinces={
+		1636 1822 1896 2071 4609 4755 4825 4901 7604 10454 12793 12861 
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

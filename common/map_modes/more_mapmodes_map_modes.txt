@@ -1,0 +1,553 @@
+scripted_map_modes = {
+	TOTA_GDP_mapmode = {
+		top = {
+			type = country
+
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 0.8 }
+					if = {
+							limit = {
+								check_variable = {
+									var = THIS.GDP
+									value = 3999
+									compare = greater_than
+								}
+							}
+							set_temp_variable = { red = 0.1 }
+							set_temp_variable = { green = 0.6 }
+							set_temp_variable = { blue = 0.8 }
+						else_if = {
+							limit = {
+								check_variable = {
+									var = THIS.GDP
+									value = 1999
+									compare = greater_than
+								}
+							}
+							set_temp_variable = { red = 0.0 }
+							set_temp_variable = { green = 0.8 }
+							set_temp_variable = { blue = 0.4 }
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = THIS.GDP
+									value = 999
+									compare = greater_than
+								}
+							}
+							set_temp_variable = { red = 0.0 }
+							set_temp_variable = { green = 1 }
+							set_temp_variable = { blue = 0.4 }
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = THIS.GDP
+									value = 499
+									compare = greater_than
+								}
+							}
+							set_temp_variable = { red = 0.2 }
+							set_temp_variable = { green = 0.8 }
+							set_temp_variable = { blue = 0.2 }
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = THIS.GDP
+									value = 199
+									compare = greater_than
+								}
+							}
+							set_temp_variable = { red = 0.4 }
+							set_temp_variable = { green = 0.8 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = THIS.GDP
+									value = 81
+									compare = greater_than
+								}
+							}
+							set_temp_variable = { red = 0.6 }
+							set_temp_variable = { green = 0.6 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									var = THIS.GDP
+									value = 81
+									compare = less_than_or_equals
+								}
+							}
+							set_temp_variable = { red = 0.8 }
+							set_temp_variable = { green = 0.4 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else_if = {
+							limit = {
+								THIS = {
+									has_idea = portlandian_gift_economy
+								}
+							}
+							set_temp_variable = { red = 0.4 }
+							set_temp_variable = { green = 0.0 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else = {
+							set_temp_variable = { red = 1.2 }
+							set_temp_variable = { green = 0.0 }
+							set_temp_variable = { blue = 0.0 }
+						}
+				}
+			}
+		}
+
+			thickness = yes
+
+			targets = {
+			#	target_array = core_states
+			#	target_array = owned_states
+			#	target_array = controlled_states
+				target_array = global.countries
+			}
+		}
+
+		bottom = { #lower layer of the mapmode
+			type = country
+
+			color = {
+				set_temp_variable = { alpha = 1.0 }
+				set_temp_variable = { thickness = 10.0 }
+				set_temp_variable = { red = 0.0 }
+				set_temp_variable = { green = 0.0 }
+				set_temp_variable = { blue = 0.0 }
+			}
+
+			thickness = no
+
+			targets = {
+				targets = { ROOT }
+			}
+		}
+
+		far_text = country
+		near_text = country
+
+		update_daily = yes
+	}
+	TOTA_internet_reach_mapmode = {
+		top = {
+			type = state
+
+			color = {
+				FROM = {
+						set_temp_variable = { alpha = 0.7 }
+						if = {
+							limit = {
+									check_variable = {
+										var = THIS.intreach
+										value = 85
+										compare = greater_than_or_equals
+									}
+							}
+							set_temp_variable = { red = 0.1 }
+							set_temp_variable = { green = 0.9 }
+							set_temp_variable = { blue = 0.9 }
+						}
+						else_if = {
+							limit = {
+									check_variable = {
+										var = THIS.intreach
+										value = 60
+										compare = greater_than_or_equals
+									}
+							}
+							set_temp_variable = { red = 0.1 }
+							set_temp_variable = { green = 0.9 }
+							set_temp_variable = { blue = 0.2 }
+						}
+						else_if = {
+								limit = {
+									check_variable = {
+										var = THIS.intreach
+										value = 51
+										compare = greater_than_or_equals
+									}
+							}
+							set_temp_variable = { red = 0.3 }
+							set_temp_variable = { green = 0.7 }
+							set_temp_variable = { blue = 0.2 }
+							}
+						else_if = {
+							limit = {
+									check_variable = {
+										var = THIS.intreach
+										value = 30
+										compare = greater_than_or_equals
+									}
+							}
+							set_temp_variable = { red = 0.6 }
+							set_temp_variable = { green = 0.4 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else_if = {
+							limit = {
+									check_variable = {
+										var = THIS.intreach
+										value = 29
+										compare = less_than
+									}
+							}
+							set_temp_variable = { red = 0.8 }
+							set_temp_variable = { green = 0.2 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else_if = {
+							limit = {
+									check_variable = {
+										var = THIS.intreach
+										value = 20
+										compare = less_than_or_equals
+									}								
+							}
+							set_temp_variable = { red = 1 }
+							set_temp_variable = { green = 0.0 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else = {
+						}
+				}
+			}
+
+			thickness = yes
+
+			targets = {
+				target_array = global.states
+			}
+		}
+		bottom = {
+			type = state
+
+			color = {
+				set_temp_variable = { alpha = 0.25 }
+				set_temp_variable = { thickness = 10.0 }
+				set_temp_variable = { red = 0.0 }
+				set_temp_variable = { green = 0.0 }
+				set_temp_variable = { blue = 0.0 }
+			}
+
+			thickness = no
+
+		}
+
+		far_text = country
+		near_text = state
+
+		update_daily = yes
+	}
+		UN_map_mode = {
+		    top = {
+		        type = country
+
+		        color = {
+		            FROM = {
+		            set_temp_variable = { alpha = 1.0 }
+		                if = {
+		                    limit = {
+		                        has_country_flag = UN_member
+		                    }
+		                    set_temp_variable = { red = 0.0 }
+		                    set_temp_variable = { green = 0.62 }
+		                    set_temp_variable = { blue = 0.859 }
+		                    set_temp_variable = { alpha = 0.75 }
+		                }
+						else_if = {
+							limit = {
+								OR = {
+								has_country_flag = is_the_united_nations
+								has_country_flag = is_the_united_nations_hq
+								} 
+							}
+		                    set_temp_variable = { red = 0.0 }
+		                    set_temp_variable = { green = 0.32 }
+		                    set_temp_variable = { blue = 0.559 }
+		                    set_temp_variable = { alpha = 0.8 }							
+						}
+						else_if = {
+							limit = {
+								has_country_flag = is_un_observer
+							}
+		                    set_temp_variable = { red = 0.0 }
+		                    set_temp_variable = { green = 0.32 }
+		                    set_temp_variable = { blue = 0.4 }
+		                    set_temp_variable = { alpha = 0.5 }							
+						}
+		                else = {
+		                    set_temp_variable = { red = 0.325 }                        
+		                    set_temp_variable = { green = 0.325 }    
+		                    set_temp_variable = { blue = 0.325 }
+		                    set_temp_variable = { alpha = 0.75 }        
+		                }
+					}
+		            }
+				targets = {
+				#	target_array = core_states
+				#	target_array = owned_states
+				#	target_array = controlled_states
+					target_array = global.countries
+				}
+			}
+		    bottom = {
+		        type = country
+
+		        color = {
+		            set_temp_variable = { alpha = 0.75 }
+		            set_temp_variable = { thickness = 10.0 }
+		            set_temp_variable = { red = 0.3 }
+		            set_temp_variable = { green = 0.3 }
+		            set_temp_variable = { blue = 0.3 }
+		        }
+
+		        thickness = yes
+
+		        targets = {
+		            targets = { ROOT }
+		        }
+
+		    update_daily = no
+			}
+		    far_text = country
+		    near_text = state
+		}
+TOTA_f_mapmode = {
+		top = {
+			type = country
+
+			color = {
+				FROM =	 {
+					set_temp_variable = { alpha = 0.8 }
+					if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 1
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.1 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.5 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 2
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.4 }
+						set_temp_variable = { green = 0.2 }
+						set_temp_variable = { blue = 0.7 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 3
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.3 }
+						set_temp_variable = { green = 0.4 }
+						set_temp_variable = { blue = 0.7 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 4
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.4 }
+						set_temp_variable = { blue = 0.1 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 5
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.1 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.5 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 6
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0.8 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 7
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0.8 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 8
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.8 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0.5	 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 9
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.7 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.4 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 10
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.6 }
+						set_temp_variable = { green = 0.1 }
+						set_temp_variable = { blue = 0.0 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 11
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.6 }
+						set_temp_variable = { green = 0.39 }
+						set_temp_variable = { blue = 0.29 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 12
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.6 }
+						set_temp_variable = { green = 0.1 }
+						set_temp_variable = { blue = 0.0 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 13
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0.4 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 14
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0.4 }
+					}
+					else_if = {
+						limit = {
+							check_variable = {
+								var = THIS.FACTIONSTATUS
+								value = 15
+								compare = equals
+							}
+						}
+						set_temp_variable = { red = 0.3 }
+						set_temp_variable = { green = 0.4 }
+						set_temp_variable = { blue = 0.3 }
+					}
+					else = {
+						set_temp_variable = { red = 0.3 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.3 }
+					}
+				}
+			}
+
+			thickness = yes
+
+			targets = {
+				target_array = global.countries
+			}
+		}
+
+		bottom = {
+			type = country
+
+			color = {
+				set_temp_variable = { alpha = 1.0 }
+				set_temp_variable = { thickness = 10.0 }
+				set_temp_variable = { red = 0.0 }
+				set_temp_variable = { green = 0.0 }
+				set_temp_variable = { blue = 0.0 }
+			}
+
+			thickness = no
+
+			targets = {
+				targets = { ROOT }
+			}
+		}
+
+		far_text = country
+		near_text = country
+
+		update_daily = yes
+	}
+}

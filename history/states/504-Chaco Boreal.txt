@@ -1,0 +1,30 @@
+state={
+id=504
+	name="STATE_504"
+    buildings_max_level_factor = 1
+	manpower = 120000
+	
+	
+	state_category = pastoral
+	
+	resources={
+		tungsten=20
+		steel=12
+	}
+
+	history={
+		owner = PAR
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = PAR
+		add_core_of = BOL
+	}
+	
+	provinces={
+		2195 2209 5165 8203 10973 
+	}
+
+	local_supplies=0.0 
+}

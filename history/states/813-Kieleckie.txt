@@ -1,0 +1,24 @@
+state={
+id=813
+	name="STATE_813"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+
+	history={
+		owner = POL
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 7
+			arms_factory = 4
+		}
+		add_core_of = POL
+	}
+	provinces={
+		562 3497 6416 11430 11532 
+	}
+	manpower=1500000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

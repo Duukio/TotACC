@@ -1,0 +1,41 @@
+
+state={
+	
+id=1220
+	name="STATE_1220" #Izabal
+    buildings_max_level_factor = 1
+	manpower = 408688
+	resources={
+		strategic_minerals=5
+		steel = 5
+	}
+	
+	state_category = large_town
+
+	history={
+		owner = GUA
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 3 
+			air_base = 1
+			13085 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GUA
+		victory_points = {
+			13085 10
+		}
+
+	}
+
+	provinces={
+		 13085 
+	}
+	
+
+	local_supplies=0.0 
+}

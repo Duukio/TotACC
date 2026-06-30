@@ -1,0 +1,30 @@
+
+state={
+	id=1076
+	name="STATE_1076"
+    buildings_max_level_factor = 1
+	provinces={
+		10321 12251 
+	}
+	manpower=543125
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = ADM
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			12251 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			12251 10
+		}
+		add_core_of = ADM
+	}
+}

@@ -1,0 +1,63 @@
+NGA_defanging_the_fula_dec_cat = {
+	NGA_depastoralization = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 120
+		complete_effect = {
+            NGA = {
+                every_owned_state = {
+                    add_manpower = 5000
+                }
+                add_to_variable = { NGA_NORF_SOUF = 5 }
+                NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+                custom_effect_tooltip = "Adds 5 points to Southern Bias."
+            }
+		}
+                 ai_will_do = {
+            base = 100
+        }
+	}
+	NGA_absorb_sharia_courts = {
+		cost = 150
+        visible = {
+            has_government = conservatism
+        }
+		fire_only_once = yes
+        days_remove = 200
+		complete_effect = {
+            NGA = {
+                add_stability = 0.1
+                add_war_support = -0.07
+                add_to_variable = { NGA_NORF_SOUF = 5 }
+                NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+                custom_effect_tooltip = "Adds 5 points to Southern Bias."
+            }
+		}
+                 ai_will_do = {
+            base = 100
+        }
+	}
+	NGA_secularizing_the_legal_system = {
+		cost = 150
+        visible = {
+            OR = {
+            has_government = technocracy
+            has_government = liberalism
+            }
+        }
+		fire_only_once = yes
+        days_remove = 200
+		complete_effect = {
+            NGA = {
+                add_stability = -0.1
+                add_to_variable = { NGA.REAL_GROWTH = 0.01 }
+                add_to_variable = { NGA_NORF_SOUF = 15 }
+                NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+                custom_effect_tooltip = "Adds 15 points to Southern Bias and 1% Real Growth"
+            }
+		}
+                 ai_will_do = {
+            base = 100
+        }
+	}
+}

@@ -1,0 +1,25 @@
+# |===[ On Actions ]===|
+
+on_actions = {
+
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = { is_in_array = { global.USA_CW_TAGS = THIS } }
+				}
+				#FROM = { USA_CW_TagDeadLol = yes }
+				every_state = { # clean up cores
+					limit = {
+						is_core_of = FROM
+					}
+					remove_core_of = FROM
+					add_core_of = ROOT
+				}
+			}
+			else = {
+
+			}
+		}
+	}
+}

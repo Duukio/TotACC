@@ -1,0 +1,32 @@
+state={
+id=472
+	
+
+	name="STATE_472"
+
+	manpower = 795723
+
+	state_category = town
+
+	history={
+		#victory_points = {
+		#	1509 5
+		#}
+		victory_points = {
+			13261 10 #Kimberley
+		}
+		owner = SAF
+		set_demilitarized_zone = yes
+		add_core_of = SAF
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 3
+		
+	}
+}
+	provinces={
+		5203 13243 13254 13255 13257 1509 13260 13256 10668 13259 13261 2213 13281 13282 13272
+	}
+}

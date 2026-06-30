@@ -1,0 +1,27 @@
+state={
+id=1089
+	name="STATE_1089" #Jayawijaya
+	manpower = 1437775
+	
+
+	state_category = town
+
+	history= {
+		owner = NWG
+		add_core_of = NWG
+		victory_points = {
+			7570 5 #Wamena
+		}
+		buildings = {
+            school = 3
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	provinces={
+		7570 10436 8235 8250 10990
+	}
+
+	local_supplies=1.0 
+}

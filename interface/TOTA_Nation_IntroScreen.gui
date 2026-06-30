@@ -1,0 +1,291 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TOTA_Nation_Intro_Screen_Topbar_Opener"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height = 100%% }
+
+		buttonType = {
+			name = "topbar_opening_button"
+			position = { x = -148 y = 4 }
+			quadTextureSprite = "GFX_topbar_star_button"
+			Orientation = "UPPER_RIGHT"
+			scale = 0.75
+		}
+	} 
+
+	containerwindowtype = {
+		name = "TOTA_Nation_Intro_Screen"
+		size = { width = 1200 height = 690 }
+		orientation = center
+		position = { x = -600 y = -345 }
+		moveable = yes
+		click_to_front = yes
+		clipping = no
+		background = {
+			name = "bg"
+			quadtexturesprite = "GFX_tiled_window_transparent"
+		}
+		iconType = {
+			name = "background"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_NationIntro_background"
+			alwaystransparent = yes
+			
+		}
+		iconType = {
+			name = "poster"
+			position = { x = -100 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "poster2"
+			position = { x = 800 y = 100 }
+			alwaystransparent = yes
+		}
+
+		### Tabs at the top ###
+		# NationIntro_top_tabs_entry
+		gridboxtype = {
+			name = "top_tabs"
+			position = { x = 150 y = -67 }
+			slotsize = { width = 300 height = 45 }
+			add_horizontal = yes
+			max_slots_horizontal = 4
+		}
+
+		### Flag and country name at the top left ###
+
+		iconType = {
+			name = "flag"
+			position = { x = 23 y = 0 }
+			spriteType = "GFX_flag_medium"
+		}
+
+		### Folders and content entries on the left side ###
+
+		containerWindowType = {
+			name = "gridbox_container"
+			size = { width = 177 height = 379 }
+			position = { x = 14 y = 49 }
+			clipping = yes
+			# NationIntro_Folder_Entry and NationIntro_Content_Entry
+			gridboxtype = {
+				name = "entry_gridbox"
+				slotsize = { width = 0 height = 36 }
+				add_horizontal = no
+				max_slots_horizontal = 1
+			}
+		}
+
+		### Center piece ###
+
+		instantTextBoxType = {
+			name = "center_title"
+			position = { x = 150 y = 35 }
+			text = "[NationIntro_GET_Content_Country]"
+			font = "sf_26b"
+			maxwidth = 545
+			maxheight = 32
+			format = left
+		}
+		instantTextBoxType = {
+			name = "center_desc_left"
+			position = { x = 150 y = 75 }
+			text = "[NationIntro_GET_Content_desc_Country_left]"
+			font = "sf_20bs"
+			maxwidth = 405
+			maxheight = 577
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "center_desc_right"
+			position = { x = 650 y = 50 }
+			text = "[NationIntro_GET_Content_desc_Country_right]"
+			font = "sf_20bs"
+			maxwidth = 405
+			maxheight = 577
+			format = left
+		}
+
+
+		### First screen ###
+		iconType = {
+			name = "Start_logo_1"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_Start_logo"
+		}
+		iconType = {
+			name = "Start_logo_2"
+			position = { x = -180 y = 500 }
+			spriteType = "GFX_intro_note"
+		}
+
+		instantTextBoxType = {
+			name = "TOTA_Introduction_Start"
+			position = { x = 125 y = 190 }
+			text = intro1
+			font = "sf_18mbs"
+			maxwidth = 515
+			maxheight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "TOTA_Introduction_Start_Desc"
+			position = { x = 125 y = 210 }
+			text = intro2
+			font = "tooltip_segoe"
+			maxwidth = 970
+			maxheight = 0
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "TOTA_Introduction_Credit"
+			position = { x = 655 y = 5 }
+			text = intro3
+			font = "sf_18mbs"
+			maxwidth = 300
+			maxheight = 900
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "TOTA_Introduction_Credit_Desc"
+			position = { x = 655 y = 30 }
+			text = intro4
+			font = "sf_16mbs"
+			maxwidth = 400
+			maxheight = 300
+			format = left
+		}
+
+		### flip_pages
+		buttonType = {
+			name = "flip_left_page_button"
+			position = { x = 103 y = 481 }
+			quadTextureSprite = "GFX_flip_left_button"
+			pdx_tooltip = "Flip"
+		}
+		instantTextBoxType = {
+			name = "flip_left_page_num"
+			position = {  x = 110 y = 620 }
+			text = "[?NationIntro_left_page_num]/[?NationIntro_page_max_num]"
+			font = "tooltip_segoe"
+			maxwidth = 505
+			maxheight = 36
+			format = left
+		}
+		
+		buttonType = {
+			name = "flip_right_page_button"
+			position = { x = 900 y = 481 }
+			quadTextureSprite = "GFX_flip_right_button"
+			pdx_tooltip = "Flip"
+		}
+		instantTextBoxType = {
+			name = "flip_right_page_num"
+			position = {  x = 1050 y = 620 }
+			text = "[?NationIntro_right_page_num]/[?NationIntro_page_max_num]"
+			font = "tooltip_segoe"
+			maxwidth = 505
+			maxheight = 36
+			format = left
+		}
+
+		### Start panel ###
+		containerWindowType = {
+			name = "Start_panel"
+			position = { x = 1100 y = 580}
+			size = { width= 241 height=110 }
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window2_1b_border"
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "state name"
+				position = { x = 22 y = 22 }
+				font = "sf_16mbs"
+				text = "Press Here To Start"
+				maxWidth = 450
+				maxHeight = 20
+				orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+		}
+
+
+		### Close button ###
+		buttonType = {
+			name = "close_button"
+			position = { x = 1110 y = 640 }
+			quadTextureSprite = "GFX_button_221x34"
+			buttonFont = "sf_16mbs"
+			buttonText = "[GET_CLOSEBUTTON_TEXT]"
+			pdx_tooltip = TOTA_Nation_Intro_BUTTON_TT
+			shortcut = "ESCAPE"
+		}
+
+		
+	}
+
+	### GRIDBOX ENTRIES ###
+
+	# Belonging to `top_tabs`
+	containerWindowType = {
+		name = "NationIntro_top_tabs_entry"
+		size = { width = 300 height = 45 }
+		buttonType = {
+			name = "tab_button"
+			spriteType = "GFX_NationIntro_top_tabs"
+			clicksound = "open_sub_window"
+		}
+		containerWindowType = {
+			name = "clipper"
+			position = { x = 9 y = 9 }
+			size = { width = 300%% height = 41 }
+			clipping = yes
+			iconType = {
+				name = "tab_icon"
+				position = { x = 10 y = 9 }
+				alwaystransparent = yes
+			}
+		}
+		instantTextBoxType = {
+			name = "tab_text"
+			position = { x = 55 y = 20 }
+			text = "Intro / Credits"
+			font = "sf_20b"
+			maxwidth = 200
+			maxheight = 50
+			vertical_alignment = center
+			alwaystransparent = yes
+		}
+	}
+
+	# Belonging to `gridbox_container`
+	containerWindowType = {
+		name = "NationIntro_Folder_Entry"
+		size = { width = 150 height = 36 }
+		buttonType = {
+			name = "Folder_button"
+			spriteType = "GFX_NationIntro_entry_folder"
+			clicksound = "decisions_ui_tab"
+			pdx_tooltip = NationIntro_Folder_button_tt
+		}
+		instantTextBoxType = {
+			name = "folder_text"
+			position = { x = 5 y = 0 }
+			text = [NationIntro_GET_Folder_Country]
+			font = "sf_typewriter22_inverted"
+			maxwidth = 150
+			maxheight = 30
+			vertical_alignment = center
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	}
+}

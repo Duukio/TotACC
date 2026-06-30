@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		DDR_die_andere_liebe = {
+			picture = DDR_die_andere_liebe
+			allowed = {
+				tag = DDR
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.03
+				stability_factor = 0.05
+				gdp_growth_modifier = 0.03
+			}
+		}
+			DDR_armeerundschau = {
+			picture = DDR_armeerundschau
+			allowed = {
+				tag = DDR
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.05
+				army_org_factor = 0.05
+				army_attack_factor = 0.07
+				army_defence_factor = 0.07
+				research_speed_factor = 0.05
+			}
+		}
+			DDR_a_stumped_stasi = {
+			picture = DDR_a_stumped_stasi
+			allowed = {
+				tag = DDR
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.15
+				intelligence_agency_defense = -0.10
+				intel_network_gain = -0.1
+				drift_defence_factor = -0.10
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

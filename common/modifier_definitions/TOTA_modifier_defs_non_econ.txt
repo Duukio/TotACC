@@ -1,0 +1,12 @@
+monthly_state_population_FLAT = {
+	color_type = good
+	value_type = number
+	precision = 0 #?
+	category = state
+}
+monthly_state_population_factor = {
+	color_type = good
+	value_type = percentage_in_hundred
+	precision = 3
+	category = state
+}

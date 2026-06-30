@@ -1,0 +1,16 @@
+focus_tree = {
+	id = SAF_cw
+	country = {
+		factor = 0
+		modifier = {
+			add = 120
+			tag = SAF
+			has_country_flag = just_getting_started
+		}
+	}
+	shared_focus = SAF_the_car_crash
+	shared_focus = SAF_breakthrough_in_the_orange_river #?
+	shared_focus = SAF_breakthrough_in_the_tugela
+	shared_focus = SAF_breakthrough_in_ovamboland
+	shared_focus = SAF_help_our_klerksdorpers
+}

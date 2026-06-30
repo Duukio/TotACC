@@ -1,0 +1,125 @@
+ideas = {
+	country = {
+        SRW_two_sarawaks = {
+			picture = SRW_two_sarawaks
+			allowed = {
+				tag = SRW
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+                stability_factor = 0.1
+                political_power_cost = 0.1
+                production_speed_infrastructure_factor = 0.05
+                monthly_soctrends_drift_TP_P = 0.01
+                monthly_soctrends_drift_EA_A = 0.01
+                global_building_slots_factor = -0.05
+			}
+		}
+        SRW_heaven_has_a_landlord = {
+			picture = SRW_heaven_has_a_landlord
+			allowed = {
+				tag = SRW
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+                local_supply_impact_factor = 0.1
+                conscription_factor = 0.05
+                monthly_population = 0.1
+			}
+		}
+        SRW_heaven_has_a_landlord_1 = {
+			picture = SRW_heaven_has_a_landlord
+			allowed = {
+				tag = SRW
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+                local_supply_impact_factor = 0.1
+                conscription_factor = 0.05
+                monthly_population = 0.1
+				global_building_slots_factor = 0.15
+				research_speed_factor = 0.05
+			}
+		}
+        SRW_eurasian_investment = {
+			picture = SRW_eurasian_investment
+			allowed = {
+				tag = SRW
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+                research_speed_factor = 0.05
+                hardline_socialism_drift = -0.025
+                reformist_socialism_drift = -0.025
+                monthly_soctrends_drift_EE_E2 = 0.02
+			}
+            targeted_modifier = {
+                tag = ENG
+                extra_trade_to_target_factor = 0.5
+            }
+            targeted_modifier = {
+                tag = JAP
+                extra_trade_to_target_factor = 0.5
+            }
+		}
+        SRW_whispers_of_kalimantan = {
+			picture = SRW_whispers_of_kalimantan
+			allowed = {
+				tag = SRW
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+                production_speed_buildings_factor = -0.025
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                political_power_gain = -0.05
+			}
+		}
+		SRW_american_refugees = {
+			picture = SRW_american_refugees
+			allowed = {
+				tag = SRW
+			}
+        	available = {
+        	}
+        	cancel = {
+        	}
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+			}
+		}
+    }
+}

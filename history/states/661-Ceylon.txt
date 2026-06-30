@@ -1,0 +1,40 @@
+state={
+id=661
+	
+	name="STATE_661"
+
+	manpower = 19456000
+	
+	state_category = city
+
+	resources={
+		rubber=200
+	}
+
+	history={
+		add_core_of = SRL
+		owner = SRL
+		victory_points = {
+			7260 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 4
+			dockyard = 1
+			air_base = 3
+			7260 = {
+				naval_base = 3
+				coastal_bunker = 3
+			}
+		}
+
+	}
+	
+	provinces={
+		1213 4219 7260 10287 12258 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,31 @@
+state={
+id=512
+	
+	name="STATE_512" # Mendoza
+
+	manpower = 3000000
+	
+	state_category = large_town
+
+	history={
+		owner = ARG
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 4
+			air_base = 4
+		}
+		add_core_of = ARG
+		add_core_of = ARP
+		victory_points = {
+			12942 10
+		}
+		set_demilitarized_zone = yes
+	}
+
+	provinces={
+		2158 2215 5152 5184 5219 7550 8215 11021 11022 12942 12970 
+	}
+
+	local_supplies=0.0 
+}

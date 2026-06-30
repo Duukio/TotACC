@@ -1,0 +1,28 @@
+state={
+	id=700
+	name="STATE_700"
+    buildings_max_level_factor = 1
+	provinces={
+		4112 6992 7130 10038 
+	}
+	history={
+		victory_points = {
+			4112 20 
+		}
+		owner = TUR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			dockyard = 3
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = TUR
+
+	}
+	manpower=696969
+	state_category=metropolis
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

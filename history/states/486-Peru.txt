@@ -1,0 +1,38 @@
+
+state={
+id=486
+	
+	name="STATE_486" # Lima
+	manpower = 19563249
+	resources={
+		oil=60
+		steel = 20
+	}
+	
+	state_category = metropolis
+
+	history={
+		owner = PRU
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 4
+			industrial_complex = 8
+			air_base = 3
+			12997 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = PRU
+		victory_points = {
+			12997 25
+		}
+
+	}
+
+	provinces={
+		2156 2162 5190 8199 12969 12983 12997 2225
+	}
+
+	local_supplies=0.0 
+}

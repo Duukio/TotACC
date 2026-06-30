@@ -1,0 +1,31 @@
+
+state={
+	id=1287
+	name="STATE_1287"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		victory_points = {
+			4979 10 #Sargodha 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex = 3
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		8106 4979 10173
+	}
+	manpower=9591275
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

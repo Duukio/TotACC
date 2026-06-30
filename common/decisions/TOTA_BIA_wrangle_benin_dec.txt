@@ -1,0 +1,89 @@
+wrangle_benin = {
+     BIA_dec_develop_infrastructure = {
+			days_remove = 30
+			days_re_enable = 30
+          complete_effect = {
+			custom_effect_tooltip = BIA_develop_infrastructure
+				BIA = {
+               add_manpower = -500				
+			}
+			subtract_from_variable = {
+			var = BED.SOCTRENDS_EA
+			value = 15
+			}			
+          }
+      }
+     BIA_dec_increase_cultural_funding = {
+			days_remove = 30
+			days_re_enable = 30
+          complete_effect = {
+			custom_effect_tooltip = BIA_increase_cultural_funding
+				BIA = {
+               add_political_power = -50
+			}
+			subtract_from_variable = {
+			var = BED.SOCTRENDS_TP
+			value = 15
+			}			
+          }
+      }
+     BIA_dec_encourage_entrepeneurship = {
+			days_remove = 30 
+			days_re_enable = 30
+          complete_effect = {
+			custom_effect_tooltip = BIA_encourage_entrepeneurship
+				BIA = {
+				add_political_power = -25
+				add_manpower = -600
+			}
+			add_to_variable = {
+			var = BED.SOCTRENDS_EE
+			value = 15
+			}			
+          }
+      }
+     BIA_dec_defend_local_business_owners = {
+			days_remove = 30
+			days_re_enable = 30
+          complete_effect = {
+			custom_effect_tooltip = BIA_defend_local_biz
+				BIA = {
+				add_political_power = -25
+				add_command_power = -10
+				add_manpower = -200
+			}
+			subtract_from_variable = {
+			var = BED.SOCTRENDS_EE
+			value = 15
+			}			
+          }
+      }
+		BIA_dec_strengthen_democracy = {
+			days_remove = 30
+			days_re_enable = 30
+          complete_effect = {
+			custom_effect_tooltip = BIA_strengthen_democracy
+				BIA = {
+				add_political_power = -25
+			}
+			add_to_variable = {
+			var = BED.SOCTRENDS_DE
+			value = 15
+			}			
+          }
+      }
+		BIA_dec_encourage_regionalism = {
+			days_remove = 30
+			days_re_enable = 30
+          complete_effect = {
+			custom_effect_tooltip = BIA_enc_regionalism
+				BIA = {
+				add_political_power = -25
+			}
+			add_to_variable = {
+			var = BED.SOCTRENDS_DC
+			value = 15
+			}			
+          }
+      }
+}

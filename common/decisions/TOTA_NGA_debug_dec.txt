@@ -1,0 +1,41 @@
+#  ::::    ::: ::::::::::: ::::::::  :::::::::: :::::::::  :::::::::::     :::     
+#  :+:+:   :+:     :+:    :+:    :+: :+:        :+:    :+:     :+:       :+: :+:   
+#  :+:+:+  +:+     +:+    +:+        +:+        +:+    +:+     +:+      +:+   +:+  
+#  +#+ +:+ +#+     +#+    :#:        +#++:++#   +#++:++#:      +#+     +#++:++#++: 
+#  +#+  +#+#+#     +#+    +#+   +#+# +#+        +#+    +#+     +#+     +#+     +#+ 
+#  #+#   #+#+#     #+#    #+#    #+# #+#        #+#    #+#     #+#     #+#     #+# 
+#  ###    #### ########### ########  ########## ###    ### ########### ###     ###
+
+###########################
+# Nigeria Debug Decisions #
+###########################
+NGA_debug_category_dec_cat = {
+	### Boring, Unfun Democracy Debug ###
+	NGA_democrat_debug_setup = {
+		visible = { always = no } #not needed
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NGA_democrat_debug_setup"
+			set_country_flag = NGA_democrat_path
+			
+			load_focus_tree = {
+				tree = NGA_democratic
+			}
+			
+			country_event = {
+				
+			}
+			
+			every_country = {
+				
+			}
+
+			
+		}
+	}
+}
+

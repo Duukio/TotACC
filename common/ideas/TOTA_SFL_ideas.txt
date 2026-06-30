@@ -1,0 +1,1329 @@
+ideas = {
+	country = {
+			SFL_united_against_obamunism = {
+			picture = SFL_united_against_obamunism
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+				
+            }
+
+            cancel = {
+				NOT = {
+    			country_exists = OBM
+				}
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                stability_factor = 0.15
+				political_power_gain = 0.3
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				conscription_factor = 0.05
+				army_defence_factor = 0.03
+				attrition = -0.1
+			}
+		}
+		SFL_salt_life_scavengers = {
+			picture = SFL_salt_life_scavengers
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                equipment_capture = 0.2
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.05
+				army_morale = 5
+			}
+		}
+		SFL_veterans_of_unpopular_wars = {
+			picture = SFL_veterans_of_unpopular_wars
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                assign_army_leader_cp_cost = -5
+				army_attack_factor = 0.05
+				army_org = 8
+			}
+		}
+		SFL_spring_offensive = {
+			picture = SFL_spring_offensive
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_attack_factor = 0.1
+				breakthrough_factor = 0.15
+			}
+		}
+		SFL_rowdy_gangs_1 = {
+			picture = SFL_rowdy_gangs
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                army_attack_factor = 0.075
+				army_defence_factor = -0.06
+				supply_consumption_factor = 0.075
+				stability_factor = -0.20
+			}
+		}
+		SFL_rowdy_gangs_2 = {
+			picture = SFL_rowdy_gangs
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                army_attack_factor = 0.075
+				army_defence_factor = -0.06
+				stability_factor = -0.20
+			}
+		}
+		SFL_rowdy_gangs_3 = {
+			picture = SFL_rowdy_gangs
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                army_attack_factor = 0.075
+				army_defence_factor = -0.06
+				supply_consumption_factor = 0.075
+				stability_factor = -0.05
+			}
+		}
+		SFL_rowdy_gangs_4 = {
+			picture = SFL_rowdy_gangs
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                army_attack_factor = 0.075
+				army_defence_factor = -0.06
+				stability_factor = -0.05
+			}
+		}
+		SFL_rowdy_gangs_5 = {
+			picture = SFL_rowdy_gangs
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                army_attack_factor = 0.075
+				supply_consumption_factor = 0.075
+				stability_factor = -0.05
+			}
+		}
+		SFL_rowdy_gangs_6 = {
+			picture = SFL_rowdy_gangs
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                army_attack_factor = 0.075
+				stability_factor = -0.05
+			}
+		}
+		SFL_mafia_connections = {
+			picture = SFL_mafia_connections
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                add_stability = 0.05
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				weekly_manpower = -7
+			}
+		}
+		SFL_satanic_volunteers = {
+			picture = SFL_satanic_volunteers
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
+		SFL_mythos_of_landauer = {
+			picture = SFL_mythos_of_landauer
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.03
+				anarchism_drift = 0.025
+				political_power_cost = 0.1
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+				army_org_factor = 0.05
+				army_speed_factor = 0.1
+			}
+		}
+		SFL_yankee_anarchy = {
+			picture = SFL_yankee_anarchy
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.01
+				anarchism_drift = 0.01
+				dissident_right_drift = 0.01
+				political_power_cost = 0.05
+				production_speed_buildings_factor = 0.03
+				local_resources_factor = 0.1
+				army_org_factor = 0.07
+				research_speed_factor = 0.04
+				army_speed_factor = 0.1
+			}
+		}
+		SFL_yankee_anarchy_1 = {
+			picture = SFL_yankee_anarchy
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_soctrends_drift_TP_T = 0.01
+				anarchism_drift = 0.025
+				dissident_right_drift = 0.02
+				political_power_cost = 0.1
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.12
+				army_org_factor = 0.1
+				research_speed_factor = 0.06
+				army_speed_factor = 0.12
+			}
+		}
+		SFL_yankee_anarchy_2 = {
+			picture = SFL_yankee_anarchy
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_soctrends_drift_TP_T = 0.02
+				anarchism_drift = 0.05
+				dissident_right_drift = 0.05
+				political_power_cost = 0.15
+				production_speed_buildings_factor = 0.08
+				local_resources_factor = 0.15
+				army_org_factor = 0.12
+				research_speed_factor = 0.08
+				army_speed_factor = 0.14
+			}
+		}
+		SFL_mythos_of_landauer_1 = {
+			picture = SFL_mythos_of_landauer
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_soctrends_drift_TP_P = 0.03
+				anarchism_drift = 0.025
+				political_power_cost = 0.1
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+				army_org_factor = 0.05
+				army_speed_factor = 0.1
+				stability_factor = -0.25
+			}
+		}
+		SFL_ongoing_deurbanization = {
+			picture = SFL_ongoing_deurbanization
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				global_building_slots_factor = -0.15
+				political_power_gain = 0.15
+				gdp_growth_modifier = 0.1
+				surrender_limit = -0.15
+				army_speed_factor = 0.15
+			}
+		}
+		SFL_deurbanized_society = {
+			picture = SFL_deurbanized_society
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				global_building_slots_factor = -0.25
+				MONTHLY_POPULATION = 0.8
+				political_power_gain = 0.2
+				gdp_growth_modifier = 0.1
+				surrender_limit = -0.2
+				army_speed_factor = 0.2
+				army_org_factor = 0.08
+			}
+		}
+		SFL_communalism = {
+			picture = SFL_communalism
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				stability_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		SFL_very_scary_america = {
+			picture = SFL_very_scary_america
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				autocracy_drift = 0.01
+				stability_factor = 0.05
+			}
+		}
+		SFL_very_scary_america_1 = {
+			picture = SFL_very_scary_america
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				autocracy_drift = 0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+		SFL_satanic_unions = {
+			picture = SFL_satanic_unions
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		SFL_in_utero = {
+			picture = SFL_in_utero
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.2
+			}
+		}
+		SFL_decrees_of_hecate = {
+			picture = SFL_decrees_of_hecate
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				
+			}
+		}
+		SFL_decrees_of_hecate_1 = {
+			picture = SFL_decrees_of_hecate
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+				gdp_growth_modifier = 0.1
+			}
+		}
+		SFL_decrees_of_hecate_2 = {
+			picture = SFL_decrees_of_hecate
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+				gdp_growth_modifier = 0.1
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SFL_decrees_of_hecate_3 = {
+			picture = SFL_decrees_of_hecate
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				gdp_growth_modifier = 0.1
+				research_speed_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.1
+			}
+		}
+		SFL_ISAIF = {
+			picture = SFL_ISAIF
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				global_building_slots_factor = -0.15
+				MONTHLY_POPULATION = 0.6
+				political_power_gain = 0.2
+				gdp_growth_modifier = 0.1
+				surrender_limit = -0.1
+				army_speed_factor = 0.1
+				army_org_factor = 0.08
+			}
+		}
+		SFL_out_of_the_wilderness = {
+			picture = SFL_out_of_the_wilderness
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.05
+				dissident_right_drift = 0.015
+				production_speed_buildings_factor = 0.05
+				monthly_soctrends_drift_TP_T = 0.02
+			}
+		}
+		SFL_know_who_to_shoot = {
+			picture = SFL_know_who_to_shoot
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.05
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+			targeted_modifier = {
+                tag = GPR
+                attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+			targeted_modifier = {
+                tag = USP
+                attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+			targeted_modifier = {
+                tag = DIX
+                attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+			targeted_modifier = {
+                tag = TPR
+                attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+            }
+		}
+		SFL_know_who_to_shoot_2 = {
+			picture = SFL_know_who_to_shoot
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = GPR
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = USP
+                attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+            }
+			targeted_modifier = {
+                tag = DIX
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = TPR
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_pelosi_attack_bonus = {
+			picture = SFL_pelosi_attack_bonus
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_pelosi_attack_bonus_2 = {
+			picture = SFL_pelosi_attack_bonus
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = LKT
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_pelosi_attack_bonus_3 = {
+			picture = SFL_pelosi_attack_bonus
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = FSA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_pelosi_attack_bonus_4 = {
+			picture = SFL_pelosi_attack_bonus
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = FSA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = LKT
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_pelosi_attack_bonus_5 = {
+			picture = SFL_pelosi_attack_bonus
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = CAL
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = LKT
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_pelosi_attack_bonus_6 = {
+			picture = SFL_pelosi_attack_bonus
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = FSA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = LKT
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = CAL
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_pence_attack_bonus = {
+			picture = SFL_pence_attack_bonus
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			}
+			targeted_modifier = {
+                tag = USP
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = DIX
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = DEA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = TPR
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_bonus_against_CAL = {
+			picture = SFL_bonus_against_CAL
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+
+			}
+			targeted_modifier = {
+                tag = CAL
+                attack_bonus_against = 0.125
+				defense_bonus_against = 0.125
+            }
+		}
+		SFL_bonus_against_RAS = {
+			picture = SFL_bonus_against_RAS
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+
+			}
+			targeted_modifier = {
+                tag = RAS
+                attack_bonus_against = 0.125
+				defense_bonus_against = 0.125
+            }
+		}
+		SFL_pelosi_attack_bonus_preston = {
+			picture = SFL_pelosi_attack_bonus_preston
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_weekly_factor = 0.07
+			}
+			targeted_modifier = {
+                tag = USA
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = BSD
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+			targeted_modifier = {
+                tag = OBC
+                attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+            }
+		}
+		SFL_volunteers = {
+			picture = SFL_volunteers
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+				gdp_growth_modifier = 0.02
+			}
+		}
+		SFL_white_immigration = {
+			picture = SFL_white_immigration
+			allowed = {
+				tag = SFL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+			}
+		}
+	}	
+}

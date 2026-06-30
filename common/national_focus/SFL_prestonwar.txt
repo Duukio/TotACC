@@ -1,0 +1,275 @@
+focus_tree = {
+    id = SFL_prestonwar
+    country = {
+        base = 0
+        modifier = {
+            add = 999
+            tag = SFL
+            has_country_leader = {
+                name = "Keith Preston"
+                ruling_only = yes
+            }
+			has_war = yes
+        }
+    }
+focus = {
+	id = SFL_refresh_the_tree_of_liberty
+	icon = GFX_SFL_refresh_the_tree_of_liberty
+	cost = 3
+	x = 3
+	y = 0
+	completion_reward = {
+		activate_advisor = SFL_andrew_yeoman
+		activate_advisor = SFL_ashanti_alston
+		activate_advisor = SFL_kristin_noble
+		activate_advisor = SFL_parker_anthony_wilson
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_refresh_the_tree_of_liberty"
+	}
+}
+
+focus = {
+	id = SFL_trash_the_clyburniate
+	icon = GFX_SFL_trash_the_clyburniate
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		declare_war_on = {
+			target = BSD
+			type = annex_everything
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_trash_the_clyburniate"
+	}
+	relative_position_id = SFL_refresh_the_tree_of_liberty
+	prerequisite = { focus = SFL_refresh_the_tree_of_liberty }
+}
+
+focus = {
+	id = SFL_war_plan_shilling
+	icon = GFX_SFL_war_plan_shilling
+	cost = 3
+	x = -3
+	y = 1
+	completion_reward = {
+		add_war_support = 0.1
+		add_manpower = 10000
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_war_plan_shilling"
+	}
+	relative_position_id = SFL_trash_the_clyburniate
+	prerequisite = { focus = SFL_trash_the_clyburniate }
+}
+
+focus = {
+	id = SFL_war_plan_peso
+	icon = GFX_SFL_war_plan_peso
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.1
+		add_manpower = 10000
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_war_plan_peso"
+	}
+	relative_position_id = SFL_trash_the_clyburniate
+	prerequisite = { focus = SFL_trash_the_clyburniate }
+}
+
+focus = {
+	id = SFL_war_plan_dollar
+	icon = GFX_SFL_war_plan_dollar
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.1
+		add_manpower = 10000
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_war_plan_dollar"
+	}
+	relative_position_id = SFL_trash_the_clyburniate
+	prerequisite = { focus = SFL_trash_the_clyburniate }
+}
+
+focus = {
+	id = SFL_the_red_psychopaths
+	icon = GFX_SFL_the_red_psychopaths
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SFL_bonus_against_RAS
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_the_red_psychopaths"
+	}
+	relative_position_id = SFL_war_plan_dollar
+	prerequisite = { focus = SFL_war_plan_dollar }
+}
+
+focus = {
+	id = SFL_the_liberal_rotters
+	icon = GFX_SFL_the_liberal_rotters
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SFL_pelosi_attack_bonus_preston
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_the_liberal_rotters"
+	}
+	relative_position_id = SFL_war_plan_peso
+	prerequisite = { focus = SFL_war_plan_peso }
+}
+
+focus = {
+	id = SFL_the_conservative_squares
+	icon = GFX_SFL_the_conservative_squares
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SFL_pence_attack_bonus
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_the_conservative_squares"
+	}
+	relative_position_id = SFL_war_plan_shilling
+	prerequisite = { focus = SFL_war_plan_shilling }
+}
+
+focus = {
+	id = SFL_embolden_the_willing
+	icon = GFX_SFL_embolden_the_willing
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.1
+		add_manpower = 20000
+		add_ideas = volunteer_only
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_embolden_the_willing"
+	}
+	relative_position_id = SFL_the_liberal_rotters
+	prerequisite = { focus = SFL_the_liberal_rotters }
+	prerequisite = { focus = SFL_the_conservative_squares }
+	mutually_exclusive = { focus = SFL_contract_outsiders }
+	mutually_exclusive = { focus = SFL_amnesty_for_our_enemies }
+}
+
+focus = {
+	id = SFL_contract_outsiders
+	icon = GFX_SFL_contract_outsiders
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		load_oob = "Preston's Mercenaries"
+		add_political_power = -200
+		add_stability = -0.1
+		add_war_support = -0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_contract_outsiders"
+	}
+	relative_position_id = SFL_the_red_psychopaths
+	prerequisite = { focus = SFL_the_red_psychopaths }
+	prerequisite = { focus = SFL_the_liberal_rotters }
+	mutually_exclusive = { focus = SFL_embolden_the_willing }
+	mutually_exclusive = { focus = SFL_amnesty_for_our_enemies }
+}
+
+focus = {
+	id = SFL_war_plan_yen
+	icon = GFX_SFL_war_plan_yen
+	cost = 3
+	x = 3
+	y = 1
+	completion_reward = {
+		add_war_support = 0.1
+		add_manpower = 10000
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_war_plan_yen"
+	}
+	relative_position_id = SFL_trash_the_clyburniate
+	prerequisite = { focus = SFL_trash_the_clyburniate }
+}
+
+focus = {
+	id = SFL_the_tahoe_whores
+	icon = GFX_SFL_the_tahoe_whores
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = SFL_bonus_against_CAL
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_the_tahoe_whores"
+	}
+	relative_position_id = SFL_war_plan_yen
+	prerequisite = { focus = SFL_war_plan_yen }
+}
+
+focus = {
+	id = SFL_amnesty_for_our_enemies
+	icon = GFX_SFL_amnesty_for_our_enemies
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		load_oob = "Dissident Batallions"
+		add_political_power = -100
+		add_stability = -0.05
+		set_popularities = {
+			anarchism = 30
+			dissident_right = 30
+			autocracy = 30
+			liberalism = 10
+		}
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_amnesty_for_our_enemies"
+	}
+	relative_position_id = SFL_the_red_psychopaths
+	prerequisite = { focus = SFL_the_red_psychopaths }
+	prerequisite = { focus = SFL_the_tahoe_whores }
+	mutually_exclusive = { focus = SFL_contract_outsiders }
+	mutually_exclusive = { focus = SFL_embolden_the_willing }
+}
+
+focus = {
+	id = SFL_raid_the_factories
+	icon = GFX_SFL_raid_the_factories
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = BSD
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_raid_the_factories"
+	}
+	relative_position_id = SFL_embolden_the_willing
+	prerequisite = { focus = SFL_embolden_the_willing focus = SFL_contract_outsiders focus = SFL_amnesty_for_our_enemies}
+}
+
+focus = {
+	id = SFL_mobilize_the_workshops
+	icon = GFX_SFL_mobilize_the_workshops
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_mobilize_the_workshops"
+	}
+	relative_position_id = SFL_contract_outsiders
+	prerequisite = { focus = SFL_contract_outsiders focus = SFL_amnesty_for_our_enemies focus = SFL_embolden_the_willing}
+}
+
+focus = {
+	id = SFL_plunge_fearlessly_into_war
+	icon = GFX_SFL_plunge_fearlessly_into_war
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		unlock_decision_category_tooltip = SFL_unify_wargoals
+		log = "[GetDateText]: [Root.GetName]: Focus SFL_plunge_fearlessly_into_war"
+	}
+	relative_position_id = SFL_raid_the_factories
+	prerequisite = { focus = SFL_raid_the_factories }
+	prerequisite = { focus = SFL_mobilize_the_workshops }
+}
+
+}

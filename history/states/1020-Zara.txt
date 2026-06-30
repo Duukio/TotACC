@@ -1,0 +1,31 @@
+
+state={
+	id=1020
+	name="STATE_1020"
+    buildings_max_level_factor = 1
+	provinces={
+		13932
+	}
+	manpower=60000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = ITA
+		buildings = {
+			school = 2
+			dockyard = 1
+			infrastructure = 4
+			13932 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			13932 9
+		}
+		add_core_of = ITA
+		add_core_of = YUG
+	}
+}

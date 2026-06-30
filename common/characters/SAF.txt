@@ -1,0 +1,234 @@
+characters = {
+	SAF_carlo_gagiano = {
+		name = SAF_carlo_gagiano
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/Carlo Gagiano.png"
+			}
+		}
+		field_marshal = {
+			traits = { trickster reckless brilliant_strategist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SAF_janse_van_rensburg = {
+		name = SAF_janse_van_rensburg
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/Janse van Rensburg.png"
+			}
+		}
+		corps_commander = {
+			traits = { cautious infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SAF_roy_andersen = {
+		name = SAF_roy_andersen
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/Roy Andersen.png"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SAF_rsa = {
+		name = SAF_rsa
+		portraits = {
+			army = {
+				large = "gfx/leaders/SAF/Robert Simpson-Anderson.png"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_officer old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}		
+	}
+	SAF_natasha_mazzone = {
+			name = "Natasha Mazzone"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_natasha_mazzone" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+			}
+			idea_token = SAF_natasha_mazzone 
+			traits = {
+			    head_of_government
+			    hog_naive_optimist
+				liberalism_minister
+			}
+		}
+	}
+	SAF_nkosazana_dlamini_zuma = {
+			name = "Nkosazana Dlamini-Zuma"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_nkosazana_dlamini_zuma" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+			}
+			idea_token = SAF_nkosazana_dlamini_zuma 
+			traits = {
+			    foreign_minister
+			    for_great_compromiser
+				socdem_minister
+			}
+		}
+	}
+	SAF_trevor_manuel = {
+			name = "Trevor Manuel"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_trevor_manuel" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+			}
+			idea_token = SAF_trevor_manuel 
+			traits = {
+			    economy_minister
+			    eco_keynesian_economy
+				socdem_minister
+			}
+		}
+	}
+	SAF_reginald_otto = {
+			name = "Reginald Otto"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_reginald_otto" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+			}
+			idea_token = SAF_reginald_otto 
+			traits = {
+			    security_minister
+			    sec_crime_fighter
+				autocracy_minister
+			}
+		}
+	}
+	SAF_fw_de_klerk = {
+			name = "F. W. De Klerk"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_fw_de_klerk" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+			}
+			idea_token = SAF_fw_de_klerk 
+			traits = {
+			    head_of_government
+			    hog_pragmatic_statesman
+				conservatism_minister
+			}
+		}
+	}
+	SAF_ebrahim_rasool = {
+			name = "Ebrahim Rasool"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_ebrahim_rasool" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+			}
+			idea_token = SAF_ebrahim_rasool 
+			traits = {
+			    foreign_minister
+			    for_the_cloak_n_dagger_schemer
+				socdem_minister
+			}
+		}
+	}
+	SAF_derek_hanekom = {
+			name = "Derek Hanekom"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_derek_hanekom" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+			}
+			idea_token = SAF_derek_hanekom 
+			traits = {
+			    economy_minister
+			    eco_administrative_genius
+				socdem_minister
+			}
+		}
+	}
+	SAF_roelf_meyer = {
+			name = "Roelf Meyer"
+			portraits = {
+				civilian = { small = "GFX_idea_SAF_roelf_meyer" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SAF
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+			}
+			idea_token = SAF_roelf_meyer 
+			traits = {
+			    security_minister
+			    sec_silent_lawyer
+				liberalism_minister
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=1192
+	name="STATE_1192"
+    buildings_max_level_factor = 1
+	provinces={
+		4137 10068 11822 
+	}
+	manpower=13866009
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_city
+	history={
+		owner = PRC
+		add_core_of = PRC
+		buildings = {
+			school = 2
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 3
+			10068 = { 
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			10068 20 
+		}
+	}
+}

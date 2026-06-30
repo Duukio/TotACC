@@ -1,0 +1,29 @@
+state={
+id=641
+	name="STATE_641"
+    buildings_max_level_factor = 1
+	manpower=63913
+	
+	state_category = small_island
+
+	history={
+		owner = WIF
+		add_core_of = WIF
+		victory_points = {
+			13010 5
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			13010 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13010 
+	}
+
+	local_supplies=0.0 
+}

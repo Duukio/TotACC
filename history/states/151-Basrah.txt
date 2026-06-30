@@ -1,0 +1,34 @@
+
+state={
+	id=151
+	name="STATE_151"
+    buildings_max_level_factor = 1
+	resources={
+		oil=200.000
+	}
+
+	history={
+		victory_points = {
+			2089 20 
+		}
+		owner = IRA
+		buildings = {
+			school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = IRQ
+		add_core_of = IRA
+		add_core_of = ALQ
+		add_core_of = TRM
+
+	}
+
+	provinces={
+		2089 12726 
+	}
+	manpower=2900000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

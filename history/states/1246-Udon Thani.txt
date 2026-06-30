@@ -1,0 +1,33 @@
+
+state={
+	id=1246
+	name="STATE_1246"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = SIA
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 2
+            arms_factory = 2
+			air_base = 1
+
+		}
+		add_core_of = SIA
+
+
+
+	}
+
+	provinces={
+		12360 10384 7516 4511
+	}
+	manpower=10017248
+	buildings_max_level_factor=2.000
+	state_category=city
+	
+	local_supplies=0.000
+}

@@ -1,0 +1,43 @@
+add_namespace = stalemate #lovingly borrowed from RF xoxo sweeties love you lots smiley face
+
+country_event = { #Libya doesnt fight France forever #Should proly have a news event
+  id = stalemate.1
+  title = stalemate.1.t
+  desc = stalemate.1.d
+  picture = GFX_report_event_sarney
+  fire_only_once = yes
+  trigger = {
+    date > 2023.9.20
+    tag = TRP
+    has_war_with = FRA
+    is_ai = yes
+    FRA = { is_ai = yes } #Player should have infinity time I think, unless they want to actively lose
+  }
+  option = {
+    name = stalemate.1.a
+    if = {
+      num_of_controlled_states >= 5
+      FRA = {
+        white_peace = GUN
+      }
+      FRA = {
+        white_peace = GBS
+      }
+      FRA = {
+        white_peace = MLI
+      }
+      FRA = {
+        white_peace = BKF
+      }
+      FRA = {
+        white_peace = BEN
+      }
+      FRA = {
+        white_peace = TRP
+      }
+    }
+    else = {
+      #Nothing ever happens
+    }
+  }
+}

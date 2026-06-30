@@ -1,0 +1,25 @@
+
+state={
+	id=1320
+	name="STATE_1320"
+	provinces={
+		14086 14089 14090 
+	}
+	manpower=101867
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=pastoral
+	history={
+		owner = DHO
+		add_core_of = OMA
+		add_core_of = DHO
+		buildings = {
+			school = 2
+			infrastructure = 1
+		}
+		victory_points = {
+			14089 1
+		}
+	}
+}

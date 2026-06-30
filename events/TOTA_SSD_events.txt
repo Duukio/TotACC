@@ -1,0 +1,135 @@
+add_namespace = SSD
+add_namespace = NUE
+
+country_event = {
+    id = SSD.1 # total bazooka anarchy
+    title = SSD.1.t
+    desc = SSD.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SSD.1.a
+      SSD = {
+        declare_war_on = {
+            target = LRA
+            type = annex_everything
+        }
+      }
+      SDE = {
+        declare_war_on = {
+            target = SSD
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = LRA
+            type = annex_everything
+        }
+      }
+    LRA = {
+        declare_war_on = {
+            target = SSD
+            type = annex_everything
+        }
+      }   
+	}
+}
+
+country_event = {
+    id = SSD.69 # total bazooka anarchy
+    title = SSD.69.t
+    desc = SSD.69.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SSD.69.a
+      set_country_flag = NGA_EAF_FOCUS_FLAG
+      ARB = {
+        transfer_state = 1077
+        declare_war_on = {
+            target = SSD
+            type = annex_everything
+        }
+        load_oob = "ARB_2021"
+      }   
+      NUE = {
+        transfer_state = 302
+        transfer_state = 1080
+        transfer_state = 1082
+        declare_war_on = {
+            target = SSD
+            type = annex_everything
+        }
+        load_oob = "NUE_2021"
+      }
+	}
+}
+country_event = {
+    id = NUE.1
+    title = NUE.1.t
+    desc = NUE.1.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = NUE.1.a
+        set_cosmetic_tag = NUE_romanov
+        #set_country_flag = has_double_leader
+        create_country_leader = {
+			name = "Nicholas III"
+			desc = "POLITICS_PLACEHOLDER_DESC"
+			picture = "gfx/leaders/NUE/Nicholas III.png"
+			expire = "2040.1.1"
+			ideology = absolmon
+			traits = {
+			}
+        }
+        set_politics = {
+            ruling_party = autocracy
+        }
+        every_country = {
+            limit = {
+                is_ai = no
+            }
+            news_event = {
+                id = WNE.74
+                days = 1
+            }
+        }
+    }
+}
+country_event = {
+    id = SSD.2
+    title = SSD.2.t
+    desc = SSD.2.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = SSD.2.a
+        set_cosmetic_tag = UNIFIED_SSD
+    }
+}
+country_event = {
+    id = SSD.3
+    title = SSD.3.t
+    desc = SSD.3.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = SSD.3.a
+        set_cosmetic_tag = UNIFIED_ARB
+    }
+}
+country_event = {
+    id = SSD.4
+    title = SSD.4.t
+    desc = SSD.4.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = SSD.4.a
+        set_cosmetic_tag = UNIFIED_LRA
+    }
+}

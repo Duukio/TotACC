@@ -1,0 +1,13 @@
+focus_tree = {
+	id = SEY_spicer
+	country = {
+		factor = 0
+		modifier = {
+			add = 110
+			tag = SEY
+			has_country_flag = SPICER_CHOSEN
+		}
+	}
+	shared_focus = SEY_fresh_market_opportunities
+	shared_focus = SEY_building_the_next_tomorrow
+}

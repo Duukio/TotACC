@@ -1,0 +1,37 @@
+state={
+    id=974
+        
+    
+        name="STATE_974"
+    
+        manpower = 500000
+        
+        state_category = city
+        resources={
+            oil=65
+        }
+    
+        history={
+            owner = UAE
+            buildings = {
+                school = 2
+                infrastructure = 5
+                arms_factory = 1
+                industrial_complex = 4
+                13913 = {
+                    naval_base = 5
+                }
+            }
+            victory_points = {
+                13913 15 #Ras Al Khaimah
+            }
+            add_core_of = UAE
+			add_core_of = PGR
+        }
+    
+        provinces={
+        13913
+        }
+    
+        local_supplies=0.0 
+    }

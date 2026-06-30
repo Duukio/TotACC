@@ -1,0 +1,53 @@
+    ideas = {
+        country = {
+                ZAI_failed_miner_retraining_programme  = {
+                picture = ZAI_failed_miner_retraining_programme
+                allowed = {
+                    tag = ZAI
+                }
+
+                available = {
+
+                }
+
+                cancel = {
+
+                }
+
+                allowed_civil_war = {
+                    always = yes
+                }
+                
+                modifier = {
+                    monthly_soctrends_drift_TP_T = -0.001
+                    stability_factor = -0.028                     
+                    weekly_debt_modifier = 0.004
+                }
+            }
+                ZAI_sleeping_through_the_crisis = {
+                picture = ZAI_sleeping_through_the_crisis
+                allowed = {
+                    tag = ZAI
+                }
+
+                available = {
+                    
+                }
+
+                cancel = {
+
+                }
+
+                allowed_civil_war = {
+                    always = yes
+                }
+                
+                modifier = {
+                    stability_factor = -0.04                                    
+                    monthly_soctrends_drift_TP_T = -0.015                           
+                    gdp_growth_modifier = -0.02                     
+                    weekly_debt_modifier = 0.005                    
+                }
+            }
+        }
+    }

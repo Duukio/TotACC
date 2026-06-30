@@ -1,0 +1,96 @@
+equipments = {
+	exo_equipment = {
+		is_archetype = yes
+		active = no
+		picture = archetype_exo
+		is_buildable = no
+		type = { infantry }
+		group_by = archetype
+		interface_category = interface_category_land
+
+		# Misc Abilities
+		reliability   = 0.6 # 60% reliable
+		maximum_speed = 10  # 10km/h
+		recon         = 1
+
+		# Defensive Abilities
+		defense      = 12
+		breakthrough = 2.5
+		hardness     = 0.1
+		armor_value  = 4
+		entrenchment = 2
+
+		# Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack   = 0
+		air_attack  = 0
+
+		lend_lease_cost = 1
+		build_cost_ic = 4
+		resources = {
+			aluminium = 1
+			steel = 2
+		}
+	}
+	exo_equipment_0 = {
+		abbreviation = "exz"
+		active = no
+		visual_level = 0
+		archetype = exo_equipment
+		priority = 1000
+		module_slots = inherit
+		resources = {       # +1 strategic_minerals
+            steel = 1
+			strategic_minerals = 1
+		}
+	}
+	exo_equipment_1 = {
+		abbreviation = "exu"
+		active = no
+		visual_level = 1
+		archetype = exo_equipment
+		parent = exo_equipment_0
+		priority = 2000
+		
+		reliability   = 0.7 # +10%
+		maximum_speed = 12  # +2km/h
+		recon         = 2   # +1
+		breakthrough  = 7   # +4.5
+		defense       = 16  # +4 
+		hardness      = 0.2 # +10%
+		armor_value   = 16  # +12
+		entrenchment  = 4   # +2
+
+		build_cost_ic = 6   # +2 IC
+		resources = {       # +1 strategic_minerals
+			aluminium = 2
+			steel = 2
+			strategic_minerals = 3
+		}
+	}
+	exo_equipment_2 = {
+		abbreviation = "ext"
+		active = no
+		visual_level = 1
+		archetype = exo_equipment
+		parent = exo_equipment_1
+		priority = 2000
+		
+		reliability   = 0.8 # +10%
+		maximum_speed = 14  # +2km/h
+		recon         = 3   # +1
+		breakthrough  = 11   # +4.5
+		defense       = 20  # +4 
+		hardness      = 0.3 # +10%
+		armor_value   = 20  # +12
+		entrenchment  = 6   # +2
+
+		build_cost_ic = 8   # +2 IC
+		resources = {       # +1 strategic_minerals
+			aluminium = 2
+			steel = 2
+			strategic_minerals = 5
+		}
+	}
+}

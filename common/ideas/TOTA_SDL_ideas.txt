@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+			SDL_4_decades_of_peoples_war = {
+			picture = SDL_4_decades_peoples_war
+			allowed = {
+				tag = SDL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+					monthly_population = -0.3
+					stability_factor = -0.2
+					war_support_factor = 0.10
+					conscription = 0.25
+					gdp_growth_modifier = -0.07
+					army_cost_modifier = -0.25
+			}
+		}
+		SDL_dodgy_money_sources = {
+		picture = SDL_dodgy_money_sources
+		allowed = {
+			tag = SDL
+		}
+
+           available = {
+
+           }
+
+           cancel = {
+
+           }
+
+		allowed_civil_war = {
+			always = no
+		}
+		
+		modifier = {
+				stability_factor = -0.15
+				taxable_population_modifier = -0.15
+				gdp_growth_modifier = 0.15
+				hidden_modifier = {
+				debt_to_GDP_ceiling_modifier = -1
+			}
+		custom_modifier_tooltip = "We may not take in debt, for now."
+		}
+	}
+		SDL_temporary_alliance = {
+		picture = SDL_temporary_alliance
+		allowed = {
+			tag = SDL
+		}
+
+           available = {
+
+           }
+
+           cancel = {
+
+           }
+
+		allowed_civil_war = {
+			always = no
+		}
+		
+		modifier = {
+			hardline_socialism_drift = 0.01
+			weekly_manpower = 100
+			production_lack_of_resource_penalty_factor = -0.3
+			production_factory_start_efficiency_factor = 0.2
+		}
+	}
+	}	
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=1193
+	name="STATE_1193"
+    buildings_max_level_factor = 1
+	provinces={
+		1959 2087 3427 4525 4960 4986 7048 7631 10424 10451 10629 10854 12331 12403 12609 12706 12880 
+	}
+	manpower=12110780
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = PRC
+		add_core_of = PRC
+		buildings = {
+			school = 2
+			infrastructure = 4
+		}
+		victory_points = {
+			10424 20 
+		}
+	}
+}

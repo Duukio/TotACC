@@ -1,0 +1,20 @@
+spriteTypes = {
+	# Map Modes:
+	spriteType = {
+		name = "GFX_mapmode_buttons_deselected_small_TOTA_gdp_map_mode"
+		textureFile = "gfx/interface/mapmodes/button deselected GDP map mode.dds"
+	}
+	spriteType = {
+		name = "GFX_mapmode_buttons_selected_small_TOTA_gdp_map_mode"
+		textureFile = "gfx/interface/mapmodes/button selected GDP map mode.dds"
+	}
+
+	spriteType = {
+		name = "GFX_mapmode_buttons_deselected_small_TOTA_intreach_map_mode"
+		textureFile = "gfx/interface/mapmodes/button deselected intreach map mode.dds"
+	}
+	spriteType = {
+		name = "GFX_mapmode_buttons_selected_small_TOTA_intreach_map_mode"
+		textureFile = "gfx/interface/mapmodes/button selected intreach map mode.dds"
+	}
+}

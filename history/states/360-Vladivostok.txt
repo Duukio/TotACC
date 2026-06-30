@@ -1,0 +1,30 @@
+state={
+id=360
+	name="STATE_360"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	}
+	history={
+		owner = SOV
+		victory_points = { 957 25 }
+		buildings = {
+            school = 2
+			dockyard = 3
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			957 = {
+				naval_base = 10
+			}
+		}
+		add_core_of = SOV
+	}
+	provinces={
+		957 
+	}
+	manpower=600000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

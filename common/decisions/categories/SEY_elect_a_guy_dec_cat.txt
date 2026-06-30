@@ -1,0 +1,11 @@
+SEY_succession  = {
+     icon = generic_foreign_policy
+	 visible_when_empty = yes
+     visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = SEY_succession_flag
+		}
+     }
+	 scripted_gui = SEY_succession
+}

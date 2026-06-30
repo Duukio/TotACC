@@ -1,0 +1,13 @@
+focus_tree = {
+	id = SEY_prince
+	country = {
+		factor = 0
+		modifier = {
+			add = 110
+			tag = SEY
+			has_country_flag = PRINCE_CHOSEN
+		}
+	}
+	shared_focus = SEY_the_anticommunist_sword
+	shared_focus = SEY_a_fortress_of_freedom
+}

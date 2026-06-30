@@ -1,0 +1,33 @@
+ideas = {
+	hidden_ideas = {
+		
+		hidden_attack_superiority = {
+			
+			allowed = {
+				has_war = yes
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+                ai_focus_aggressive_factor = 999999.0
+                ai_badass_factor = 5.0
+				land_attack_factor = 2.0
+				army_attack_factor = 5.0
+				army_morale_factor = 3.0
+				planning_speed = 1.0
+				army_org_regain = 5.5
+                army_strength_factor = 5.0
+                breakthrough_factor = 9.0
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

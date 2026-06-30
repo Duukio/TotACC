@@ -1,0 +1,49 @@
+instant_effect = {
+	create_equipment_variant = {
+		name = "Ojukwu Class"
+		type = torpedo_cruiser
+		name_group = BIA_GENERIC_SHIP_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Effiong Class"
+		type = ship_hull_cruiser_2
+		name_group = BIA_GENERIC_SHIP_NAMES
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_medium_battery_2
+			rear_1_custom_slot = ship_airplane_launcher_1
+		}
+	}
+}
+units = {
+	fleet = {
+		name = "Harcourt Naval Command"
+		naval_base = 8034
+		task_force = {
+			name = "Harcourt Naval Taskforce"
+			location = 8034
+			ship = { name = "BNS Ojukwu" definition = light_cruiser equipment = { torpedo_cruiser = { amount = 1 owner = BIA version_name = "Ojukwu Class" } }
+			}
+			ship = { name = "BNS Effiong" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = BIA version_name = "Effiong Class" } }
+			}
+		}
+	}
+}

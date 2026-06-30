@@ -1,0 +1,352 @@
+add_namespace = ARG
+
+country_event = {
+    id = ARG.1 # interior soyrage
+    title = ARG.1.t
+    desc = ARG.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ARG.1.a
+	  ai_chance = { factor = 50 }
+	  510 = {
+		set_demilitarized_zone = no
+	  }
+	  country_event = {
+		id = ARG.2
+		days = 60
+	  }
+	}
+    option = { #this one has worse chances
+		name = ARG.1.b
+		ai_chance = { factor = 50 }
+		512 = {
+		  set_demilitarized_zone = no
+		}
+		country_event = {
+			id = ARG.3
+			days = 60
+		  }
+	  }
+}
+country_event = {
+    id = ARG.2 # interior soyrage II better chances
+    title = ARG.2.t
+    desc = ARG.2.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #this one is more risky/worse chances
+      name = ARG.2.a
+	  ai_chance = { factor = 66 }
+	  random_list = {
+		40 = {
+			ARG = {
+				511 = {
+					set_demilitarized_zone = no
+				}
+				country_event = {
+					id = ARG.4
+					days = 60
+				}
+			}
+		}
+		60 = {
+			ARP = {
+				transfer_state = 511
+			}
+			ARG = {
+				add_stability = -0.25
+				set_country_flag = fuckeduponceARG
+				country_event = {
+					id = ARG.4
+					days = 60
+				}
+			}
+		}
+	  }
+	}
+    option = { #this one is more cautious/slow but less risky
+		name = ARG.2.b
+		ai_chance = { factor = 33 }
+		random_list = {
+			66 = {
+				ARG = {
+					512 = {
+						set_demilitarized_zone = no
+					}
+					country_event = {
+						id = ARG.4
+						days = 60
+					}
+				}
+			}
+			33 = {
+				512 = {
+					set_demilitarized_zone = no
+				}
+				ARP = {
+					transfer_state = 511
+				}
+				ARG = {
+					country_event = {
+						id = ARG.4
+						days = 60
+					}
+					add_stability = -0.1
+					add_war_support = -0.1
+				}
+			}
+		  }
+	  }
+}
+country_event = {
+    id = ARG.3 # interior soyrage II worse chances
+    title = ARG.3.t
+    desc = ARG.3.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #this one is more risky/worse chances
+      name = ARG.3.a
+	  ai_chance = { factor = 66 }
+	  random_list = {
+		22 = {
+			ARG = {
+			country_event = {
+				id = ARG.5
+				days = 60
+			}
+				511 = {
+					set_demilitarized_zone = no
+				}
+			}
+		}
+		77 = {
+			ARP = {
+				transfer_state = 511
+			}
+			ARG = {
+			country_event = {
+				id = ARG.5
+				days = 60
+			}
+				add_stability = -0.25
+				set_country_flag = fuckeduponceARG
+			}
+		}
+	  }
+	}
+    option = { #this one is more cautious/slow but less risky
+		name = ARG.3.b
+		ai_chance = { factor = 33 }
+		random_list = {
+			44 = {
+				ARG = {
+					512 = {
+						set_demilitarized_zone = no
+					}
+					country_event = {
+						id = ARG.5
+						days = 60
+					}
+				}
+			}
+			55 = {
+				512 = {
+					set_demilitarized_zone = no
+				}
+				ARP = {
+					transfer_state = 511
+				}
+				ARG = {
+					add_stability = -0.1
+					add_war_support = -0.1
+				}
+			}
+		  }
+	  }
+}
+country_event = {
+    id = ARG.4 # interior soyrage III better chances
+    title = ARG.4.t
+    desc = ARG.4.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #this one is more risky/worse chances
+      name = ARG.4.a
+	  ai_chance = { factor = 66 }
+	  random_list = {
+		33 = {
+			ARG = {
+				511 = {
+					set_demilitarized_zone = no
+				}
+				country_event = {
+					id = ARG.6
+					days = 60
+				}
+			}
+		}
+		66 = {
+			ARP = {
+				transfer_state = 511
+			}
+			ARG = {
+				country_event = {
+					id = ARG.6
+					days = 60
+				}
+				add_stability = -0.25
+				set_country_flag = fuckeduponceARG
+			}
+		}
+	  }
+	}
+    option = { #this one is more cautious/slow but less risky
+		name = ARG.4.b
+		ai_chance = { factor = 33 }
+		random_list = {
+			50 = {
+				ARG = {
+					512 = {
+						set_demilitarized_zone = no
+					}
+					country_event = {
+						id = ARG.6
+						days = 60
+					}
+				}
+			}
+			50 = {
+				512 = {
+					set_demilitarized_zone = no
+				}
+				ARP = {
+					transfer_state = 511
+				}
+				ARG = {
+					add_stability = -0.1
+					add_war_support = -0.1
+				}
+			}
+		  }
+	  }
+}
+country_event = {
+    id = ARG.5 # interior soyrage IV worse chancces
+    title = ARG.5.t
+    desc = ARG.5.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+	option = { #INVADE NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		name = ARG.5.a
+		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				ARG = {
+					has_country_flag = fuckeduponceARG
+				}
+			}
+			ARG = {
+				declare_war_on = {
+					target = ARP
+					type = civil_war
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				news_event = {
+					id = WNE.206
+					days = 1
+				}
+			}
+		}
+		else = {
+			ARG = {
+				annex_country = {
+					target = ARP
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = ARG
+				}
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	option = { #INVADE later...
+		name = ARG.5.b
+		ai_chance = { factor = 50 }
+		513 = {
+			set_demilitarized_zone = no
+		}
+		ARG = {
+			load_oob = generic_lite_2021 #backup
+		}
+	}
+}
+country_event = {
+    id = ARG.6 # interior soyrage IV better chancces
+    title = ARG.6.t
+    desc = ARG.6.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+	option = { #INVADE NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		name = ARG.6.a
+		ai_chance = { factor = 50 }
+		ARG = {
+			annex_country = {
+				target = ARP
+			}
+		}
+		every_state = {
+			limit = {
+				is_owned_by = ARG
+			}
+			set_demilitarized_zone = no
+		}
+		#every_country = {
+		#	limit = {
+		#		is_ai = no
+		#	}
+		#	news_event = {
+		#		id = WNE.207
+		#		days = 1
+		#	}
+		#}
+	}
+	option = { #INVADE later...
+		name = ARG.6.b
+		ai_chance = { factor = 50 }
+		ARP = {
+			load_oob = generic_2021 #you let them build up dumbass
+		}
+		ARP = {
+			declare_war_on = {
+				target = ARG
+				type = civil_war
+			}
+		}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.206
+				days = 1
+			}
+		}
+	}
+}

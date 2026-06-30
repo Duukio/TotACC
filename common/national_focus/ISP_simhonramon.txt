@@ -1,0 +1,1573 @@
+
+shared_focus = {
+	id = ISP_general_secretary_ramon
+	icon = GFX_ISP_general_secretary_ramon
+	cost = 7
+	x = 7
+	y = 0
+	available = {
+	always = no
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		ISP = { set_variable = { milcoup = 0 } }
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_general_secretary_ramon"
+	}
+}
+
+shared_focus = {
+	id = ISP_the_long_road_to_democracy
+	icon = GFX_ISP_the_long_road_to_democracy
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 20
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_long_road_to_democracy"
+	}
+	relative_position_id = ISP_general_secretary_ramon
+	prerequisite = { focus = ISP_general_secretary_ramon }
+}
+
+shared_focus = {
+	id = ISP_general_secretary_simhon
+	icon = GFX_ISP_general_secretary_simhon
+	cost = 7
+	x = 25
+	y = 0
+	available = {
+	always = no
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_general_secretary_simhon"
+	}
+}
+
+shared_focus = {
+	id = ISP_always_forward
+	icon = GFX_ISP_always_forward
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_dynamic_modifier = {
+			modifier = ISP_simhon_dynmod
+			scope = ISP 
+		}
+		add_to_variable = {
+			var = simhon_research
+			value = 0.05
+		}
+		add_to_variable = {
+			var = simhon_artificial_drift
+			value = 0.01
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_always_forward"
+		custom_effect_tooltip = "Add National Spirit 'Ever Forwards', which grants +5% research speed and 1% monthly drift towards artificial."
+	}
+	relative_position_id = ISP_general_secretary_simhon
+	prerequisite = { focus = ISP_general_secretary_simhon }
+}
+
+shared_focus = {
+	id = ISP_promises_of_reform
+	icon = GFX_ISP_promises_of_reform
+	cost = 10
+	x = 9
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.12
+			days = 1
+		}
+		add_political_power = 50
+		add_stability = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_promises_of_reform"
+	}
+	relative_position_id = ISP_general_secretary_ramon
+	prerequisite = {
+		focus = ISP_general_secretary_ramon
+		focus = ISP_general_secretary_simhon
+	}
+}
+
+shared_focus = {
+	id = ISP_to_salvage_an_outdated_system
+	icon = GFX_ISP_to_salvage_an_outdated_system
+	cost = 7
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -150
+		set_variable = {
+			var = ISPNHD_war_support
+			value = ISPKD_war_support
+		}
+		set_variable = {
+			var = ISPNHD_con_goods_factor
+			value = ISPKD_con_goods_factor
+		}
+		set_variable = {
+			var = ISPNHD_gdp_growth
+			value = ISPKD_gdp_growth
+		}
+		set_variable = {
+			var = ISPNHD_social_drift
+			value = ISPKD_social_drift
+		}
+		set_variable = {
+			var = ISPNHD_science_speed
+			value = ISPKD_science_speed
+		}
+		set_variable = {
+			var = ISPNHD_build_speed
+			value = ISPKD_build_speed
+		}
+		set_variable = {
+			var = ISPNHD_stab
+			value = -0.1
+		}
+		add_dynamic_modifier = {
+			modifier = ISP_new_hebrew_dyn
+			scope = ISP
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_Kibbutz_econ_dyn
+		}
+		custom_effect_tooltip = "Replace 'Reformed Kibbutz Economy' with 'New Hebrew Economy', effective change: -5% stability."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_to_salvage_an_outdated_system"
+	}
+	relative_position_id = ISP_the_long_road_to_democracy
+	prerequisite = { focus = ISP_the_long_road_to_democracy }
+}
+
+shared_focus = {
+	id = ISP_dissolving_the_partystate
+	icon = GFX_ISP_dissolving_the_partystate
+	cost = 7
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = milcoup
+			value = 2
+		}
+		add_political_power = -50
+		add_dynamic_modifier ={
+			modifier = ISP_project_liberty_dyn
+			scope = ISP
+		} 
+		add_to_variable = {
+			var = ISPPLD_hardline
+			value = -0.01
+		}
+		add_to_variable = {
+			var = ISPPLD_reformist
+			value = -0.01
+		}
+		add_to_variable = {
+			var = ISPPLD_democracy
+			value = 0.01
+		}
+		custom_effect_tooltip = "Add national spirit 'Project Liberty' which grants -0.01 daily popularity of hardline socialism and neosocialism, +1% monthly drift towards democratic."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_dissolving_the_partystate"
+	}
+	relative_position_id = ISP_the_long_road_to_democracy
+	prerequisite = { focus = ISP_the_long_road_to_democracy }
+}
+
+shared_focus = {
+	id = ISP_easing_censorship
+	icon = GFX_ISP_easing_censorship
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = technocracy
+			popularity = 0.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_easing_censorship"
+	}
+	relative_position_id = ISP_promises_of_reform
+	prerequisite = { focus = ISP_promises_of_reform }
+}
+
+shared_focus = {
+	id = ISP_cautious_privatization
+	icon = GFX_ISP_cautious_privatization
+	cost = 7
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPKD_con_goods_factor
+			value = -0.05
+		}
+		custom_effect_tooltip = "Modify 'Reformed Kibbutz Economy' by -5% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_cautious_privatization"
+	}
+	relative_position_id = ISP_promises_of_reform
+	prerequisite = { focus = ISP_promises_of_reform }
+}
+
+shared_focus = {
+	id = ISP_cutting_needless_weight
+	icon = GFX_ISP_cutting_needless_weight
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = milcoup
+			value = 2
+		}
+		107 = {
+			remove_building = {     
+			type = infrastructure 			
+			level = 1
+			}
+		}
+		917 = {
+			remove_building = {     
+			type = industrial_complex   			
+			level = 1
+			}
+		} 
+		add_to_variable = {
+			var = ISPNHD_con_goods_factor
+			value = -0.05
+		}
+		add_to_variable = {
+			var = ISPNHD_build_speed
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISPNHD_gdp_growth
+			value = 0.2
+		}
+		add_to_variable = {
+			var = ISPNHD_social_drift
+			value = 0.01
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_cutting_needless_weight"
+	}
+	relative_position_id = ISP_to_salvage_an_outdated_system
+	prerequisite = { focus = ISP_to_salvage_an_outdated_system }
+}
+
+shared_focus = {
+	id = ISP_antibureaucratic_campaign
+	icon = GFX_ISP_antibureaucratic_campaign
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -50
+		add_to_variable = {
+			var = milcoup
+			value = 2
+		} 
+		add_to_variable = {
+			var = ISPNHD_pp
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPNHD_con_goods_factor
+			value = -0.05
+		}
+		custom_effect_tooltip = "Modify 'New Hebrew Economy' by -5% consumer good factories, +5% political power gain."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_antibureaucratic_campaign"
+	}
+	relative_position_id = ISP_to_salvage_an_outdated_system
+	prerequisite = { focus = ISP_to_salvage_an_outdated_system }
+}
+
+shared_focus = {
+	id = ISP_shutting_simhon_up #simhons musings
+	icon = GFX_ISP_shutting_simhon_up
+	cost = 3
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -25
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_shutting_simhon_up"
+	}
+	relative_position_id = ISP_cutting_needless_weight
+	prerequisite = { focus = ISP_cutting_needless_weight }
+	prerequisite = { focus = ISP_antibureaucratic_campaign }
+}
+
+shared_focus = {
+	id = ISP_calling_a_constitutional_convention
+	icon = GFX_ISP_calling_a_constitutional_convention
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.17
+			days = 1
+		}
+		add_to_variable	= {
+			var = ISPPLD_pp
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_calling_a_constitutional_convention"
+	}
+	relative_position_id = ISP_dissolving_the_partystate
+	prerequisite = { focus = ISP_dissolving_the_partystate }
+}
+
+shared_focus = {
+	id = ISP_enshrining_civil_liberties
+	icon = GFX_ISP_enshrining_civil_liberties
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.05
+		add_to_variable = {
+			var = milcoup
+			value = 2
+		}
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_enshrining_civil_liberties"
+	}
+	relative_position_id = ISP_easing_censorship
+	prerequisite = { focus = ISP_easing_censorship }
+	prerequisite = { focus = ISP_calling_a_constitutional_convention }
+}
+
+shared_focus = {
+	id = ISP_reforming_the_electoral_system
+	icon = GFX_ISP_reforming_the_electoral_system
+	cost = 7
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.27
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reforming_the_electoral_system"
+	}
+	relative_position_id = ISP_calling_a_constitutional_convention
+	prerequisite = { focus = ISP_calling_a_constitutional_convention }
+}
+
+shared_focus = {
+	id = ISP_zionism_before_socialism
+	icon = GFX_ISP_zionism_before_socialism
+	cost = 5
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = -0.05
+		}
+		add_to_variable = {
+			var = ISPPLD_conservatism
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPPLD_liberal
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPPLD_socdem
+			value = 0.01
+		}
+		add_to_variable = {
+			var = ISPPLD_dissright
+			VALUE = 0.01
+		}
+		custom_effect_tooltip = "Modify 'Project Liberty' by +0.01 daily popularity of conservatism, liberalism, social democracy and dissident right."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_zionism_before_socialism"
+	}
+	relative_position_id = ISP_calling_a_constitutional_convention
+	prerequisite = { focus = ISP_calling_a_constitutional_convention }
+}
+
+shared_focus = {
+	id = ISP_a_pragmatic_compromise
+	icon = GFX_ISP_a_pragmatic_compromise
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_to_variable = {
+			var = milcoup
+			value = -2
+		}
+		set_variable = {
+			var = ISPNHD_stab 
+			value = 0.05
+		}	
+		add_to_variable = {
+			var = ISPNHD_gdp_growth
+			value = 0.05
+		}
+		custom_effect_tooltip = "Modify 'New Hebrew Economy' by +5% stability and +5% GDP growth modifier."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_pragmatic_compromise"
+	}
+	relative_position_id = ISP_shutting_simhon_up
+	prerequisite = { focus = ISP_shutting_simhon_up }
+	mutually_exclusive = { focus = ISP_uncompromising_on_liberty }
+}
+
+shared_focus = {
+	id = ISP_uncompromising_on_liberty
+	icon = GFX_ISP_uncompromising_on_liberty
+	cost = 4
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -200
+		add_stability = -0.2
+		add_to_variable = {
+			var = milcoup
+			value = 6
+		}
+   		set_variable = {
+			var = ISPULD_war_support
+			value = ISPKD_war_support
+		}
+		set_variable = {
+			var = ISPULD_con_goods_factor
+			value = ISPKD_con_goods_factor
+		}
+		set_variable = {
+			var = ISPULD_gdp_growth
+			value = ISPKD_gdp_growth
+		}
+		set_variable = {
+			var = ISPULD_social_drift
+			value = ISPKD_social_drift
+		}
+		set_variable = {
+			var = ISPULD_science_speed
+			value = ISPKD_science_speed
+		}
+		set_variable = {
+			var = ISPULD_build_speed
+			value = ISPKD_build_speed
+		}
+		add_to_variable = {
+			var = ISPULD_con_goods_factor
+			value = -0.15
+		}
+		add_to_variable = {
+			var = ISPULD_stab
+			value = -0.1
+		}
+		add_to_variable = {
+			var = ISPULD_fact_out
+			value = -0.2
+		}
+		add_to_variable = {
+			var = ISPULD_social_drift
+			value = 0.01
+		}
+		add_dynamic_modifier = {
+			modifier = ISP_uncompromising_on_liberty_dyn
+			scope = ISP
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_new_hebrew_dyn
+		}
+		activate_advisor = ISP_manuel_trajtenberg_idea
+		custom_effect_tooltip = "Replace 'New Hebrew Economy' with 'Uncompromising on Liberty', effective change: -15% consumer good factories, -10% stability, -20% factory output, +2% drift towards elitist."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_uncompromising_on_liberty"
+	}
+	relative_position_id = ISP_shutting_simhon_up
+	prerequisite = { focus = ISP_shutting_simhon_up }
+	mutually_exclusive = { focus = ISP_a_pragmatic_compromise }
+}
+
+shared_focus = {
+	id = ISP_dissolution_of_the_national_front
+	icon = GFX_ISP_dissolution_of_the_national_front
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = milcoup
+			value = 1
+		}
+		add_to_variable = {
+			var = ISPPLD_pp
+			value = -0.05
+		}
+		add_to_variable = {
+			var = ISPPLD_democracy
+			value = 0.01
+		}
+		custom_effect_tooltip = "Modify 'Project Liberty' by -5% political power gain and 1% monthly drift towards democratic."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_dissolution_of_the_national_front"
+	}
+	relative_position_id = ISP_enshrining_civil_liberties
+	prerequisite = { focus = ISP_enshrining_civil_liberties }
+	prerequisite = { focus = ISP_reforming_the_electoral_system }
+}
+
+shared_focus = {
+	id = ISP_entrench_eternity_clauses #yakut avino
+	icon = GFX_ISP_entrench_eternity_clauses
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPPLD_pp
+			value = -0.1
+		}
+		add_to_variable = {
+			var = ISPPLD_science_speed
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPPLD_democracy
+			value = 0.01
+		}
+		custom_effect_tooltip = "Modify 'Project Liberty' by -10% political power gain, +5% research speed, and 1% monthly drift towards democratic."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_entrench_eternity_clauses"
+	}
+	relative_position_id = ISP_reforming_the_electoral_system
+	prerequisite = { focus = ISP_reforming_the_electoral_system }
+	prerequisite = { focus = ISP_zionism_before_socialism }
+}
+
+shared_focus = {
+	id = ISP_appeasing_the_military
+	icon = GFX_ISP_appeasing_the_military
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.16
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_appeasing_the_military"
+	}
+	relative_position_id = ISP_zionism_before_socialism
+	prerequisite = { focus = ISP_zionism_before_socialism }
+}
+
+shared_focus = {
+	id = ISP_an_equitable_eber #A NEW STATE
+	icon = GFX_ISP_an_equitable_eber #A NEW STATE
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	country_event = {
+		id = ISP.14
+		days = 1
+	}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_an_equitable_eber"
+	}
+	relative_position_id = ISP_dissolution_of_the_national_front
+	prerequisite = { focus = ISP_dissolution_of_the_national_front }
+	prerequisite = { focus = ISP_entrench_eternity_clauses }
+}
+
+shared_focus = {
+	id = ISP_appeal_to_secular_liberals
+	icon = GFX_ISP_appeal_to_secular_liberals
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = milcoup
+			value = -1
+		}
+		add_political_power = 20
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_appeal_to_secular_liberals"
+	}
+	relative_position_id = ISP_enshrining_civil_liberties
+	prerequisite = { focus = ISP_enshrining_civil_liberties }
+}
+
+shared_focus = { #nice and simple focus, good luck
+	id = ISP_ratifying_the_constitution
+	icon = GFX_ISP_ratifying_the_constitution
+	available = { 
+		OR = {
+			has_completed_focus = ISP_a_pragmatic_compromise
+			has_completed_focus = ISP_uncompromising_on_liberty
+		}
+	}
+	cost = 14
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		hidden_effect = {
+			ISP = {
+			country_event = {
+				id = ISP.769
+				days = 69
+			}
+		}
+		}
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.1
+		}
+		if = {
+			limit = { has_completed_focus = ISP_uncompromising_on_liberty }
+			remove_dynamic_modifier = {
+				modifier = ISP_uncompromising_on_liberty_dyn
+			}
+			set_variable = {
+				var = ISPFED_war_support
+				value = ISPULD_war_support
+			}
+			set_variable = {
+				var = ISPFED_con_goods_factor
+				value = ISPULD_con_goods_factor
+			}
+			set_variable = {
+				var = ISPFED_gdp_growth
+				value = ISPULD_gdp_growth
+			}
+			set_variable = {
+				var = ISPFED_social_drift
+				value = ISPULD_social_drift
+			}
+			set_variable = {
+				var = ISPFED_artifical_drift
+				value = ISPULD_artifical_drift
+			}
+			set_variable = {
+				var = ISPFED_science_speed
+				value = ISPULD_science_speed
+			}
+			set_variable = {
+				var = ISPFED_stab
+				value = ISPULD_stab
+			}
+			set_variable = {
+				var = ISPFED_build_speed
+				value = ISPULD_build_speed
+			}
+			set_variable = {
+				var = ISPFED_fact_out
+				value = ISPULD_fact_out
+			}
+		}
+		else = {
+			remove_dynamic_modifier = {
+				modifier = ISP_new_hebrew_dyn
+			}
+			set_variable = {
+				var = ISPFED_war_support
+				value = ISPNHD_war_support
+			}
+			set_variable = {
+				var = ISPFED_con_goods_factor
+				value = ISPNHD_con_goods_factor
+			}
+			set_variable = {
+				var = ISPFED_gdp_growth
+				value = ISPNHD_gdp_growth
+			}
+			set_variable = {
+				var = ISPFED_social_drift
+				value = ISPNHD_social_drift
+			}
+			set_variable = {
+				var = ISPFED_science_speed
+				value = ISPNHD_science_speed
+			}
+			set_variable = {
+				var = ISPFED_stab
+				value = ISPNHD_stab
+			}
+			set_variable = {
+				var = ISPFED_build_speed
+				value = ISPNHD_build_speed
+			}
+			set_variable = {
+				var = ISPFED_pp
+				value = ISPNHD_pp
+			}
+		}
+		remove_dynamic_modifier = {
+			modifier = ISP_project_liberty_dyn
+		}
+		add_to_variable = {
+			var = ISPFED_hardline
+			value = ISPPLD_hardline
+		}
+		add_to_variable = {
+			var = ISPFED_reformist
+    		value = ISPPLD_reformist
+		}
+		add_to_variable = {
+			var = ISPFED_revright
+			value = ISPPLD_revright
+		}
+		add_to_variable = {
+			var = ISPFED_dissright
+			value = ISPPLD_dissright
+		}
+		add_to_variable = {
+			var = ISPFED_conservatism
+    		value = ISPPLD_conservatism
+		}
+		add_to_variable = {
+			var = ISPFED_socdem
+    		value = ISPPLD_socdem
+		}
+		add_to_variable = {
+			var = ISPFED_liberal
+    		value = ISPPLD_liberal
+		}
+		add_to_variable = {
+			var = ISPFED_pp
+			value = ISPPLD_pp
+		}
+    	add_to_variable = {
+			var = ISPFED_science_speed
+			value = ISPPLD_science_speed
+		}
+    	add_to_variable = {
+			var = ISPFED_democracy
+			value = ISPPLD_democracy
+		}
+		add_to_variable = {
+			var = ISPFED_pp
+			value = 0.1
+		}
+    	add_dynamic_modifier = {
+			modifier = ISP_free_eber_dyn
+			scope = ISP
+		}
+		custom_effect_tooltip = "The Project Liberty and New Hebrew Economy ideas will be merged into Free Eber, retaining their preexisting bonuses and gaining additional political power!"
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_ratifying_the_constitution"
+	}
+	relative_position_id = ISP_an_equitable_eber
+	prerequisite = { focus = ISP_an_equitable_eber }
+}
+
+shared_focus = {
+	id = ISP_promise_new_elections
+	icon = GFX_ISP_promise_new_elections
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = 0.25
+		hidden_effect = {
+			country_event = {
+				id = ISP.750
+				days = 900 
+			}
+		}
+		custom_effect_tooltip = "In 3 years, new elections will take place."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_promise_new_elections"
+	}
+	relative_position_id = ISP_ratifying_the_constitution
+	prerequisite = { focus = ISP_ratifying_the_constitution }
+}
+
+shared_focus = {
+	id = ISP_rallying_the_nationalists
+	icon = GFX_ISP_rallying_the_nationalists
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = milcoup
+			value = -2
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = dissident_right
+			popularity = 0.05
+		}
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_rallying_the_nationalists"
+	}
+	relative_position_id = ISP_appeasing_the_military
+	prerequisite = { focus = ISP_appeasing_the_military }
+}
+
+shared_focus = {
+	id = ISP_reinvigorating_the_state_machine
+	icon = GFX_ISP_reinvigorating_the_state_machine
+	cost = 10
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+		hidden_effect = {
+			add_political_power = -150
+			add_to_variable = { ISP.DEBT = 50 }
+			add_to_variable = {
+				var = simhon_construction
+				value = 0.05
+			}
+			add_to_variable = {
+				var = simhon_pp
+				value = 0.1
+			}
+		}		
+		custom_effect_tooltip = "Add 5% construction speed and 10% political power gain to 'Ever Forwards' at the cost of 150 political power and 50 milliom USD in debt."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reinvigorating_the_state_machine"
+	}
+	relative_position_id = ISP_always_forward
+	prerequisite = { focus = ISP_always_forward }
+}
+
+shared_focus = {
+	id = ISP_utilizing_unused_potential
+	icon = GFX_ISP_utilizing_unused_potential
+	cost = 10
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -50
+		add_to_variable = {
+			var = simhon_consumer
+			value = 0.05
+		}	
+		custom_effect_tooltip = "Modify 'Ever Forwards' by +5% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_utilizing_unused_potential"
+	}
+	relative_position_id = ISP_always_forward
+	prerequisite = { focus = ISP_always_forward }
+}
+
+shared_focus = {
+	id = ISP_fine_tuning_statemarket_cooperation
+	icon = GFX_ISP_fine_tuning_statemarket_cooperation
+	cost = 7
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = ISPKD_eff_grow
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPKD_eff_max
+			value = 0.05
+		}	
+		add_to_variable = {
+			var = ISPKD_eff_ret
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPKD_gdp_growth
+			value = 0.03
+		}
+		custom_effect_tooltip = "Modify 'Reformed Kibbutz Economy' by +5% production efficiency growth, cap and retention and +3% gdp growth modifier."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_fine_tuning_statemarket_cooperation"
+	}
+	relative_position_id = ISP_cautious_privatization
+	prerequisite = { focus = ISP_cautious_privatization }
+	prerequisite = { focus = ISP_reinvigorating_the_state_machine }
+}
+
+shared_focus = {
+	id = ISP_digitization_drive
+	icon = GFX_ISP_digitization_drive
+	cost = 7
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = -50
+		hidden_effect = {
+			add_to_variable = { 
+				var = simhon_research 
+				value = 0.05 
+			}
+			add_to_variable = {
+				var = simhon_gdp
+				value = 0.03
+			}
+			add_to_variable = {
+				var = simhon_consumer
+				value = 0.02
+			}		
+		}		
+		custom_effect_tooltip = "Modify 'Ever Forwards' by +5% research speed, +3% gdp growth modifier, +2% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_digitization_drive"
+	}
+	relative_position_id = ISP_reinvigorating_the_state_machine
+	prerequisite = { focus = ISP_reinvigorating_the_state_machine }
+}
+
+shared_focus = {
+	id = ISP_backbone_of_the_nation
+	icon = GFX_ISP_backbone_of_the_nation
+	cost = 7
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = ISP_factory_farming
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_backbone_of_the_nation"
+	}
+	relative_position_id = ISP_utilizing_unused_potential
+	prerequisite = { focus = ISP_utilizing_unused_potential }
+}
+
+shared_focus = {
+	id = ISP_increasing_the_education_budget
+	icon = GFX_ISP_increasing_the_education_budget
+	cost = 4
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.20
+			days = 1
+		}
+		ISP = {
+			set_country_flag = ISP_reconciliation
+		}
+		add_to_variable = {
+			var = ISP_edati_stab
+			value = 0.02
+		}
+		add_to_variable = {
+			var = ISP_edati_recruit
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISP_edati_con_goods
+			value = 0.02
+		}
+		add_to_variable = {
+			var = ISP_edati_techno
+			value = 0.01
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_increasing_the_education_budget"
+	}
+	relative_position_id = ISP_utilizing_unused_potential
+	prerequisite = { focus = ISP_utilizing_unused_potential }
+}
+
+shared_focus = {
+	id = ISP_21st_century_agriculture
+	icon = GFX_ISP_21st_century_agriculture
+	cost = 7
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.24
+			days = 1
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 4
+			category = industry 
+		}
+		add_to_variable = {
+			var =  terrorism_rate_ISP
+			value = 30
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_21st_century_agriculture"
+	}
+	relative_position_id = ISP_digitization_drive
+	prerequisite = { focus = ISP_digitization_drive }
+	prerequisite = { focus = ISP_digitization_drive }
+	prerequisite = { focus = ISP_backbone_of_the_nation }
+	prerequisite = { focus = ISP_backbone_of_the_nation }
+}
+
+shared_focus = {
+	id = ISP_technocratic_appointments
+	icon = GFX_ISP_technocratic_appointments
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.25
+			days = 1
+		}
+		add_political_power = -50
+		add_to_variable = {
+			var = simhon_pp
+			value = 0.05
+		}
+		add_to_variable = {
+			var = simhon_consumer
+			value = -0.05
+		}
+		custom_effect_tooltip = "Modify 'Ever Forwards' by +5% political power gain and -5% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_technocratic_appointments"
+	}
+	relative_position_id = ISP_reinvigorating_the_state_machine
+	prerequisite = { focus = ISP_reinvigorating_the_state_machine }
+	
+}
+
+shared_focus = {
+	id = ISP_investing_in_marginalized_communities
+	icon = GFX_ISP_investing_in_marginalized_communities
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+            107 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }  
+            }
+			104 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }  
+            }
+			105 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }  
+            }
+			959 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }  
+            }
+			440 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }  
+            }
+			add_to_variable = {
+				var = ISP_edati_stab
+				value = 0.02
+			}
+			add_to_variable = {
+				var =  terrorism_rate_ISP
+				value = 10
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_investing_in_marginalized_communities"
+	}
+	relative_position_id = ISP_utilizing_unused_potential
+	prerequisite = { focus = ISP_utilizing_unused_potential }
+}
+
+shared_focus = {
+	id = ISP_promoting_innovation
+	icon = GFX_ISP_promoting_innovation
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_research_slot = 1
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_promoting_innovation"
+	}
+	relative_position_id = ISP_increasing_the_education_budget
+	prerequisite = { focus = ISP_increasing_the_education_budget }
+}
+
+shared_focus = {
+	id = ISP_purge_histradrut_radicals
+	icon = GFX_ISP_purge_histradrut_radicals
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = hardline_socialism
+			popularity = -0.04
+		}
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = -0.04
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_purge_histradrut_radicals"
+	}
+	relative_position_id = ISP_promises_of_reform
+	prerequisite = { focus = ISP_promises_of_reform }
+}
+
+shared_focus = {
+	id = ISP_democratic_deregulation
+	icon = GFX_ISP_democratic_deregulation
+	cost = 7
+	x = 0
+	y = 2
+
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+            917 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = school
+                    level = 1
+                    instant_build = yes
+                }
+				swap_ideas = {
+    				remove_idea = ISP_reformist_coalition_3
+   					add_idea = ISP_reformist_coalition_4
+				}
+            }
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_democratic_deregulation"
+	}
+	relative_position_id = ISP_cautious_privatization
+	prerequisite = { focus = ISP_cautious_privatization }
+	prerequisite = { focus = ISP_purge_histradrut_radicals }
+}
+
+shared_focus = {
+	id = ISP_for_the_consumer
+	icon = GFX_ISP_for_the_consumer
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = ISP_pro_consumer_politics
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_for_the_consumer"
+	}
+	relative_position_id = ISP_democratic_deregulation
+	prerequisite = { focus = ISP_democratic_deregulation }
+}
+
+shared_focus = {
+	id = ISP_slashing_labor_laws
+	icon = GFX_ISP_slashing_labor_laws
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_stability = -0.1
+		 add_to_variable = {
+			var = ISPKD_construction
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPKD_con_goods_factor
+			value = -0.05
+		}
+		custom_effect_tooltip = "Modify 'Reformed Kibbutz Economy' by +5% construction speed and -5% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_slashing_labor_laws"
+	}
+	relative_position_id = ISP_democratic_deregulation
+	prerequisite = { focus = ISP_democratic_deregulation }
+	
+}
+
+shared_focus = {
+	id = ISP_state_directed_development
+	icon = GFX_ISP_state_directed_development
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+        add_to_variable = {
+			var = ISPKD_construction
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPKD_build_slots
+			value = 0.1
+		}
+		add_to_variable = {
+			var = ISPKD_con_goods_factor
+			value = 0.05
+		}
+		add_to_variable = {
+			var = ISPKD_gdp_growth
+			value = 0.03
+		}
+		custom_effect_tooltip = "Modify 'Reformed Kibbutz Economy' by +5% construction speed, +10% construction slots, +5% consumer good factories, and +3% gdp growth modifier."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_state_directed_development"
+	}
+	relative_position_id = ISP_fine_tuning_statemarket_cooperation
+	prerequisite = { focus = ISP_fine_tuning_statemarket_cooperation }
+	prerequisite = { focus = ISP_technocratic_appointments }
+}
+
+shared_focus = {
+	id = ISP_the_infallible_bureaucrat
+	icon = GFX_ISP_the_infallible_bureaucrat
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.21
+			days = 1
+		}
+		hidden_effect = {
+			add_to_variable = {
+				var = simhon_consumer
+				value = -0.05
+			}			
+		}		
+		custom_effect_tooltip = "Modify 'Ever Forwards' by -5% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_infallible_bureaucrat"
+	}
+	relative_position_id = ISP_digitization_drive
+	prerequisite = { focus = ISP_digitization_drive }
+	prerequisite = { focus = ISP_technocratic_appointments }
+}
+
+shared_focus = {
+	id = ISP_reforming_the_kibbutzim
+	icon = GFX_ISP_reforming_the_kibbutzim
+	cost = 7
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.23
+			days = 1
+		}
+		swap_ideas = {
+			remove_idea = ISP_factory_farming
+			add_idea = ISP_factory_farming_2
+		}
+		ISP = {
+			add_stability = -0.1
+			add_political_power = -150
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reforming_the_kibbutzim"
+	}
+	relative_position_id = ISP_backbone_of_the_nation
+	prerequisite = { focus = ISP_backbone_of_the_nation }
+
+}
+
+shared_focus = {
+	id = ISP_ending_unemployment
+	icon = GFX_ISP_ending_unemployment
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.22
+			days = 1
+		}
+		add_to_variable = {
+			var = ISP_edati_stab 
+			value = 0.03
+		}
+		add_to_variable = {
+			var = ISP_edati_con_goods
+			value = 0.03
+		}
+		unlock_decision_category_tooltip = ISP_ending_unemployment_dec_cat
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_ending_unemployment"
+	}
+	relative_position_id = ISP_increasing_the_education_budget
+	prerequisite = { focus = ISP_increasing_the_education_budget }
+	prerequisite = { focus = ISP_investing_in_marginalized_communities }
+	
+}
+
+shared_focus = {
+	id = ISP_hebrew_of_the_future
+	icon = GFX_ISP_hebrew_of_the_future
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		country_event = {
+			id = ISP.26
+			days = 1
+		}
+		swap_ideas = {
+			remove_idea = ISP_fading_dream
+			add_idea = ISP_hebrew_of_the_future_idea
+		}
+		add_to_variable = {
+			var =  terrorism_rate_ISP
+			value = 10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_hebrew_of_the_future"
+	}
+	relative_position_id = ISP_promoting_innovation
+	prerequisite = { focus = ISP_promoting_innovation }
+}
+
+shared_focus = {
+	id = ISP_efficiency_first
+	icon = GFX_ISP_efficiency_first
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_to_variable = {
+			var = simhon_construction
+			value = 0.05
+		}	
+		add_to_variable = {
+			var = simhon_consumer
+			value = -0.05
+		}
+		custom_effect_tooltip = "Modify 'Ever Forwards' by +5% construction speed, -5% consumer good factories."
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_efficiency_first"
+	}
+	relative_position_id = ISP_technocratic_appointments
+	prerequisite = { focus = ISP_state_directed_development }
+	prerequisite = { focus = ISP_the_infallible_bureaucrat }
+}
+
+shared_focus = {
+	id = ISP_agricultural_spearhead
+	icon = GFX_ISP_agricultural_spearhead
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = ISP_factory_farming_2
+			add_idea = ISP_factory_farming_3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_agricultural_spearhead"
+	}
+	relative_position_id = ISP_21st_century_agriculture
+	prerequisite = { focus = ISP_21st_century_agriculture }
+	prerequisite = { focus = ISP_the_infallible_bureaucrat }
+	prerequisite = { focus = ISP_reforming_the_kibbutzim }
+}
+
+shared_focus = {
+	id = ISP_peace_through_labor
+	icon = GFX_ISP_peace_through_labor
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_variable = {
+			var = ISP_edati_stab
+			value = 0
+		}
+		set_variable = {
+			var = ISP_edati_pp
+			value = 0.1
+		}
+		add_to_variable = {
+			var =  terrorism_rate_ISP
+			value = 30
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_peace_through_labor"
+	}
+	relative_position_id = ISP_investing_in_marginalized_communities
+	prerequisite = { focus = ISP_reforming_the_kibbutzim }
+	prerequisite = { focus = ISP_ending_unemployment }
+}
+
+shared_focus = {
+	id = ISP_hebrew_economic_miracle
+	icon = GFX_ISP_hebrew_economic_miracle
+	cost = 10
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_global_flag = ISP_hebrew_economic_miracle_flag
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = technocracy
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = autocracy
+			popularity = 0.1
+		}
+		add_to_variable = {
+			var = ISPKD_gdp_growth
+			value = 0.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_hebrew_economic_miracle"
+	}
+	relative_position_id = ISP_efficiency_first
+	prerequisite = { focus = ISP_efficiency_first }
+	prerequisite = { focus = ISP_agricultural_spearhead }
+	prerequisite = { focus = ISP_peace_through_labor }
+}

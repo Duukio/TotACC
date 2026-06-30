@@ -1,0 +1,35 @@
+
+state={
+	id=153
+	name="STATE_153"
+    buildings_max_level_factor = 1
+	resources={
+		oil=20.000
+	}
+
+	history={
+		victory_points = {
+			10106 10 
+		}
+		owner = TRM
+		buildings = {
+			school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = TRM
+		add_core_of = KUR
+		add_core_of = IRQ
+		add_core_of = IRA
+		add_core_of = ALQ
+
+	}
+
+	provinces={
+		3916 10106 10804 
+	}
+	manpower=2516351
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

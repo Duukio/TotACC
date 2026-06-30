@@ -1,0 +1,26 @@
+ISP_mobilize = {
+
+	icon = eng_organize_the_blackshirts
+	visible = {
+        tag = ISP
+	}
+}
+ISP_ending_unemployment_dec_cat = {
+	icon = eng_organize_the_blackshirts
+	visible = {
+		tag = ISP
+		has_completed_focus = ISP_ending_unemployment
+	}
+}
+ISP_pali_soyrage = {
+	icon = eng_organize_the_blackshirts
+	visible = {
+		tag = ISP
+	}
+}
+ISP_impending_doom_dec_cat = {
+	icon = eng_organize_the_blackshirts
+	visible = {
+		tag = ISP
+	}
+}

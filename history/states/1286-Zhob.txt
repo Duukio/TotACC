@@ -1,0 +1,29 @@
+
+state={
+	id=1286
+	name="STATE_1286"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		victory_points = {
+			4990 2 #Zhob 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		5105 4990 8044
+	}
+	manpower=355692
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

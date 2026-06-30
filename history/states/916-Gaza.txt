@@ -1,0 +1,31 @@
+
+state={
+	id=916
+	name="STATE_916"
+    buildings_max_level_factor = 1
+	provinces={
+		13868 13869
+	}
+	manpower=2047969
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = EGY
+		buildings = {
+			infrastructure = 2
+			school = 2
+			arms_factory = 1
+			air_base = 2
+			13868 = {
+				naval_base = 2
+
+			}
+		}
+		victory_points = {
+			13868 10
+		}
+		add_core_of = EGY
+	}
+}

@@ -1,0 +1,368 @@
+shared_focus = {
+	id = BIA_anglophone_crisis_revived
+	icon = GFX_focus_anglophone_crisis_revived
+	x = 28
+	y = 0
+	cost = 1
+	completion_reward = {
+		add_stability = -0.25
+		#maybe an event?
+		add_war_support = 0.10
+		add_political_power = -50
+	}
+}
+shared_focus = {
+	id = BIA_moderate_support
+	icon = GFX_focus_moderate_support
+	x = 25
+	y = 1
+	cost = 2
+	prerequisite = { focus = BIA_anglophone_crisis_revived  }
+	mutually_exclusive = { focus = BIA_our_friends_against_autocracy }
+	completion_reward = {
+		add_stability = 0.10
+		add_war_support = -0.30
+		add_political_power = -100
+		#flavor event
+		custom_effect_tooltip = "AMBAZONIA_WILL_REMEMBER"
+		hidden_effect = {
+			AMB = {
+			set_country_flag = BIA_betrayed_us
+			}
+		}
+	}
+}
+shared_focus = {
+	id = BIA_denounce_cameroonian_aggression
+	icon = GFX_focus_denounce_cameroonian_aggression
+	x = 23
+	y = 2
+	cost = 2
+	prerequisite = { focus = BIA_moderate_support  }
+	completion_reward = {
+		CAM = {
+		add_war_support = -0.05
+		}
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = BIA_demand_cameroonian_civility
+	icon = GFX_focus_demand_cameroonian_civility
+	x = 25
+	y = 2
+	cost = 2
+	prerequisite = { focus = BIA_moderate_support  }
+	completion_reward = {
+		CAM	= {
+			add_timed_idea = {
+				idea = CAM_forced_by_UN
+				days = 365
+			}
+		}
+	}
+}
+shared_focus = {
+	id = BIA_stay_on_our_lane
+	icon = GFX_focus_stay_on_our_lane
+	x = 27
+	y = 2
+	cost = 1
+	prerequisite = { focus = BIA_moderate_support  }
+	completion_reward = {
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}
+shared_focus = {
+	id = BIA_expand_border_security
+	icon = GFX_focus_expand_border_security
+	x = 23
+	y = 3
+	cost = 5
+	prerequisite = { focus = BIA_denounce_cameroonian_aggression  }
+	completion_reward = {
+		966 = {
+		add_building_construction = {
+			type = bunker
+			level = 3
+			instant_build = yes
+			province = {
+				id = 7978
+				id = 13636
+				id = 10831
+				id = 13635
+			}
+		}
+		}
+		if = {
+			limit = {
+				BKS = {
+					country_exists = yes
+				}
+			}
+			BIA = {
+				annex_country = {
+					target = BKS
+					transfer_troops = yes
+				}
+			}
+		}
+		else = {
+			
+		}
+	add_political_power = -50
+	add_stability = -0.07
+	}
+}
+shared_focus = {
+	id = BIA_call_for_a_ceasefire
+	icon = GFX_focus_call_for_a_ceasefire
+	x = 25
+	y = 3
+	cost = 4
+	prerequisite = { focus = BIA_demand_cameroonian_civility  }
+	completion_reward = {
+		add_political_power = -25
+		add_stability = 0.03
+		add_war_support = -0.03
+		hidden_effect = {
+			country_event = {
+				id = BIA.800
+				days = 10
+			}
+		}
+		custom_effect_tooltip = "We may speak at the UN against Cameroon."
+	}
+}
+shared_focus = {
+	id = BIA_keep_our_money_to_ourselves
+	icon = GFX_focus_keep_our_money_to_ourselves
+	x = 27
+	y = 3
+	cost = 2
+	prerequisite = { focus = BIA_stay_on_our_lane  }
+	completion_reward = {
+		add_stability = 0.07
+		add_ideas = limited_exports
+		add_war_support = -0.05
+	}
+}
+shared_focus = {
+	id = BIA_not_our_problem
+	icon = GFX_focus_not_our_problem
+	x = 25
+	y = 4
+	cost = 2
+	prerequisite = { focus = BIA_keep_our_money_to_ourselves  } prerequisite = { focus = BIA_call_for_a_ceasefire  } prerequisite = { focus = BIA_expand_border_security  }
+	completion_reward = {
+		add_stability = 0.05
+	}
+}
+shared_focus = {
+	id = BIA_our_friends_against_autocracy
+	icon = GFX_focus_our_friends_against_autocracy
+	x = 32
+	y = 1
+	cost = 1
+	available = {
+		NOT = {
+			has_war = yes
+		}
+	}
+	prerequisite = { focus = BIA_anglophone_crisis_revived  }
+	mutually_exclusive = { focus = BIA_moderate_support }
+	completion_reward = {
+		add_war_support = 0.15
+		add_stability = 0.05
+		hidden_effect = {
+			add_to_variable = {
+				var = BIA.GDP
+				value = -5
+			}
+		}
+		custom_effect_tooltip = "Our investors will not like this."
+	}
+}
+shared_focus = {
+	id = BIA_send_volunteers
+	icon = GFX_focus_BIA_send_volunteers
+	x = 30
+	y = 2
+	cost = 2
+	prerequisite = { focus = BIA_our_friends_against_autocracy  }
+	completion_reward = {
+		add_ideas = BIA_volunteers
+	}
+}
+shared_focus = {
+	id = BIA_operation_common_law
+	icon = GFX_focus_operation_common_law
+	x = 30
+	y = 3
+	cost = 4
+	prerequisite = { focus = BIA_send_volunteers  }
+	completion_reward = {
+		if = {
+			limit = {
+				AMB = {
+					has_capitulated = yes
+				}
+			}
+			become_exiled_in = { 
+			target = BIA 
+			legitimacy = 35
+			}
+		}
+		else_if = {
+			limit = {
+				AMB = {
+					has_capitulated = no
+				}
+			}
+			AMB = {
+				add_timed_idea = {
+					idea = AMB_biafra_backing
+					days = 180
+				}
+			}
+		}
+		else = {
+		}
+	}
+}
+shared_focus = {
+	id = BIA_prepare_the_contingencies
+	icon = GFX_focus_prepare_the_contingencies
+	x = 32
+	y = 2
+	cost = 2
+	prerequisite = { focus = BIA_our_friends_against_autocracy  }
+	completion_reward = {
+		AMB = {
+			add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = BIA				
+			}
+			add_manpower = 2000
+			add_political_power = -200
+		}
+		BIA = {
+			hidden_effect = {
+				subtract_from_variable = { BIA.DEBT = 1 }
+			}
+			custom_effect_tooltip = "Takes out 1 billion USD from our national debt."
+		}
+	}
+}
+shared_focus = {
+	id = BIA_focus_on_our_unity
+	icon = GFX_focus_focus_on_our_unity
+	x = 32
+	y = 3
+	cost = 4
+	prerequisite = { focus = BIA_prepare_the_contingencies  }
+	completion_reward = {
+		add_war_support = 0.10
+		PRA = {
+			add_stability = 0.2
+			give_military_access = BIA
+		}
+		AMB = {
+			add_stability = 0.2
+			give_military_access = BIA
+		}
+	}
+}
+shared_focus = {
+	id = BIA_send_guns
+	icon = GFX_focus_send_guns
+	x = 34
+	y = 2
+	cost = 3
+	prerequisite = { focus = BIA_our_friends_against_autocracy  }
+	completion_reward = {
+		hidden_effect = {
+			set_country_flag = BIA_helped_AMB
+		}
+		custom_effect_tooltip = "BIA_GUNS_TT_DESC"
+	}
+}
+shared_focus = {
+	id = BIA_and_planes
+	icon = GFX_focus_and_planes
+	x = 34
+	y = 3
+	cost = 3
+	prerequisite = { focus = BIA_send_guns  }
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = {
+				var = BIA.GDP
+				value = -5
+			}
+			set_country_flag = BIA_helped_AMB_planes
+		}
+		custom_effect_tooltip = "BIA_AND_PLANES_TT_DESC"
+	}
+}
+shared_focus = {
+	id = BIA_decide_on_intervention
+	icon = GFX_focus_decide_on_intervention
+	x = 32
+	y = 4
+	cost = 1
+	prerequisite = { focus = BIA_operation_common_law  } prerequisite = { focus = BIA_and_planes  }
+	completion_reward = {
+		country_event = {
+		id = AW_BIA.3
+		days = 0
+		}
+	}
+}
+shared_focus = {
+	id = BIA_failure
+	icon = GFX_focus_BIA_failure
+	x = 34
+	y = 5
+	cost = 1
+	available = {
+	always = no
+	}
+	prerequisite = { focus = BIA_decide_on_intervention  }
+	completion_reward = {
+	add_stability = -0.15
+	add_war_support = -0.15
+		hidden_effect = {
+			add_to_variable = {
+				var = BIA.GDP
+				value = -5
+			}
+		}
+		custom_effect_tooltip = "Our investments in Ambazonia are now gone."
+	}
+}
+shared_focus = {
+	id = BIA_victorious
+	icon = GFX_focus_BIA_victorious
+	x = 30
+	y = 5
+	cost = 1
+	available = {
+	always = no
+	}
+	prerequisite = { focus = BIA_decide_on_intervention  }
+	completion_reward = {
+	add_stability = 0.07
+	add_war_support = 0.20
+		hidden_effect = {
+			add_to_variable = {
+				var = BIA.GDP
+				value = 5
+			}
+		}
+		custom_effect_tooltip = "Our investments in Ambazonia survive!"
+	}
+}
+

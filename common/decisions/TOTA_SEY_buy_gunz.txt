@@ -1,0 +1,169 @@
+SEY_buy_gunz_dec_cat = {
+        SEY_infantry_equipment_shipment = {
+        visible = {
+            original_tag = SEY
+            has_country_flag = SEY_buy_gunz
+        }
+        ai_will_do = {
+            base = 100
+        }
+        cost = 30
+        custom_cost_trigger = {
+            check_variable = { SEY_RAINY_DAY_FUND > 99 }
+        }
+        custom_cost_text = SEY_GDP_99
+        days_remove = 20
+        available = {
+            has_political_power > 29
+            check_variable = { SEY_RAINY_DAY_FUND > 99 }
+        }
+        complete_effect = {
+            add_political_power = -30
+            custom_effect_tooltip = "We will use 100 million USD of our rainy day fund money to buy infantry equipment."
+		    SEY = {
+                subtract_from_variable = { SEY_RAINY_DAY_FUND = 100 }
+		    }
+        }
+        remove_effect= {
+		    add_equipment_to_stockpile = {
+		        type = infantry_equipment
+		        amount = 500
+		        producer = var:sey_dealer
+		    }
+        }
+    }
+    SEY_truck_shipment = {
+        visible = {
+            original_tag = SEY
+            has_country_flag = SEY_buy_gunz
+        }
+        ai_will_do = {
+            base = 100
+        }
+        cost = 50
+        custom_cost_trigger = {
+            has_political_power > 49
+            check_variable = { SEY_RAINY_DAY_FUND > 199 }
+        }
+        custom_cost_text = SEY_GDP_199
+        days_remove = 90
+        available = {
+            check_variable = { SEY_RAINY_DAY_FUND > 199 }
+        }
+        complete_effect = {
+            add_political_power = -50
+            custom_effect_tooltip = "We will use 200 million USD of our rainy day fund money to buy trucks."
+		    SEY = {
+                subtract_from_variable = { SEY_RAINY_DAY_FUND = 200 }
+		    }
+        }
+        remove_effect= {
+		    add_equipment_to_stockpile = {
+		        type = motorized_equipment
+		        amount = 150
+		        producer = var:sey_dealer
+		    }
+        }
+    }
+    SEY_tank_shipment = {
+        visible = {
+            original_tag = SEY
+            has_country_flag = SEY_buy_gunz
+        }
+        ai_will_do = {
+            base = 100
+        }
+        cost = 50
+        custom_cost_trigger = {
+            has_political_power > 49
+            check_variable = { SEY_RAINY_DAY_FUND > 299 }
+        }
+        custom_cost_text = SEY_GDP_299
+        days_remove = 60
+        available = {
+            check_variable = { SEY_RAINY_DAY_FUND > 299 }
+        }
+        complete_effect = {
+            add_political_power = -50
+            custom_effect_tooltip = "We will use 300 million USD of our rainy day fund money to buy tanks."
+		    SEY = {
+                subtract_from_variable = { SEY_RAINY_DAY_FUND = 300 }
+		    }
+        }
+        remove_effect= {
+		    add_equipment_to_stockpile = {
+		        type = light_tank_chassis
+		        amount = 200
+		        producer = var:sey_dealer
+		    }
+        }
+    }
+    SEY_plane_shipment = {
+        visible = {
+            original_tag = SEY
+            has_country_flag = SEY_buy_gunz
+        }
+        ai_will_do = {
+            base = 100
+        }
+        cost = 75
+        custom_cost_trigger = {
+            has_political_power > 74
+            check_variable = { SEY_RAINY_DAY_FUND > 399 }
+        }
+        custom_cost_text = SEY_GDP_399
+        days_remove = 90
+        available = {
+            check_variable = { SEY_RAINY_DAY_FUND > 399 }
+        }
+        complete_effect = {
+            add_political_power = -75
+            custom_effect_tooltip = "We will use 400 million USD of our rainy day fund money to buy planes."
+		    SEY = {
+                subtract_from_variable = { SEY_RAINY_DAY_FUND = 400 }
+		    }
+        }
+        remove_effect= {
+		    add_equipment_to_stockpile = {
+		        type = small_plane_cas_airframe
+		        amount = 150
+		        producer = var:sey_dealer
+		    }
+		    add_equipment_to_stockpile = {
+		        type = medium_plane_fighter_airframe
+		        amount = 150
+		        producer = var:sey_dealer
+		    }
+        }
+    }
+    SEY_sell_assets = {
+        visible = {
+            original_tag = SEY
+            has_country_flag = SEY_buy_gunz
+        }
+        ai_will_do = {
+            base = 1
+        }
+        cost = 75
+        custom_cost_trigger = {
+            has_political_power > 74
+            check_variable = { SEY.GDP > 7 }
+        }
+        custom_cost_text = SEY_GDP_7_B
+        days_remove = 10
+        available = {
+            check_variable = { SEY.GDP > 7 }
+        }
+        complete_effect = {
+            add_political_power = -75
+            custom_effect_tooltip = "We will sell about 300 million in assets to funnel to our Rainy Day Fund."
+		    SEY = {
+                subtract_from_variable = { SEY.GDP = 0.1 }
+		    }
+        }
+        remove_effect= {
+            custom_effect_tooltip = "Gains 300 million USD in the Rainy Day Fund."
+            add_to_variable = { SEY_RAINY_DAY_FUND = 300 }
+        }
+    }
+}

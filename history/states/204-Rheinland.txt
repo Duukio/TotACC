@@ -1,0 +1,34 @@
+state={
+id=204
+	name="STATE_204"
+    buildings_max_level_factor = 1
+	resources={
+	
+		steel=300
+		oil = 100
+	}
+
+	history={
+		owner = WES
+		victory_points = {
+			587 30
+		}
+		victory_points = {
+			11560 10
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = WES
+
+	}
+	provinces={
+		563 587 3423 3547 3558 11435 11470 11494 11547 11560 
+	}
+	manpower=6093903
+	state_category=metropolis
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

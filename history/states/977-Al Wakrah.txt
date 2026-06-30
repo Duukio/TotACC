@@ -1,0 +1,40 @@
+state={
+    id=977
+        
+    
+        name="STATE_977"
+    
+        manpower = 400000
+        
+        state_category = city
+        resources={
+            oil=27
+        }
+    
+        history={
+            owner = UAE
+            buildings = {
+                school = 4
+                infrastructure = 5
+                arms_factory = 2
+                industrial_complex = 8
+                13919 = {
+                    naval_base = 4
+                }
+            }
+            victory_points = {
+                13919 10 #Al Wakrah
+            }
+            victory_points = {
+                13918 10 #Mesaieed
+            }
+            add_core_of = UAE
+			add_core_of = PGR
+        }
+    
+        provinces={
+        13918 13919 13924
+        }
+    
+        local_supplies=0.0 
+    }

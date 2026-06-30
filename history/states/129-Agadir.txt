@@ -1,0 +1,26 @@
+state={
+id=129
+	name="STATE_129"
+    buildings_max_level_factor = 1
+	
+	
+	state_category = city
+	
+	history={
+        victory_points = { 7203 2 }
+        owner = MOR
+        buildings = {
+            school = 2
+            infrastructure = 3
+
+        }
+        add_core_of = MOR
+    }
+	
+	provinces={
+		1989 4022 5046 7203 12857 13350 
+	}
+	manpower=3000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

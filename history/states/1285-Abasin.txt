@@ -1,0 +1,31 @@
+
+state={
+	id=1285
+	name="STATE_1285"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = PAK
+		victory_points = {
+			12717 50 #Peshawar 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		add_core_of = PAK
+
+	}
+
+	provinces={
+		1978 4998 12717
+	}
+	manpower=19772710
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

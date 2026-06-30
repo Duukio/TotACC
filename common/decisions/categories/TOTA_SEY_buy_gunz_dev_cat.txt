@@ -1,0 +1,10 @@
+SEY_buy_gunz_dec_cat  = {
+     icon = generic_foreign_policy
+	 visible_when_empty = yes
+     visible = { 
+        tag = SEY
+		SEY = {
+		has_country_flag = SEY_buy_gunz
+		}
+     }
+}

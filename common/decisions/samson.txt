@@ -1,0 +1,859 @@
+ISP_samson = {
+    ISP_samson1dec = {
+        allowed = {
+            tag = ISP
+        }
+        visible = {
+            has_war = yes
+        }
+        available = {
+            ISP = {
+                surrender_progress > 0.05
+            }
+        }
+        priority = 8
+        fire_only_once = yes
+        complete_effect = {
+            add_timed_idea = {
+			idea = ISP_last_stand
+			days = 180
+		}
+        }
+        ai_will_do = {
+            base = 100
+        }
+    }
+    ISP_samson2dec = { #nuke!
+        allowed = {
+            tag = ISP
+        }
+        visible = {
+            has_war = yes
+            ISP = {
+                surrender_progress > 0.2
+            }
+        }
+        available = {
+            ISP = {
+                surrender_progress > 0.2
+            }
+        }
+        priority = 9
+        fire_only_once = yes
+         complete_effect = {
+            random_list = {
+            90 = {
+            set_global_flag = ISP_samson_declared
+                launch_nuke = {
+                    state = 100
+                    controller = EGY
+                    use_nuke = no
+                }
+                EGY = {
+                    delete_unit = {
+                    state = 916
+                    disband = no 
+                    }
+                }
+                launch_nuke = {
+                    state = 916
+                    controller = EGY
+                    use_nuke = no
+                }
+                launch_nuke = {
+                    state = 1265
+                    controller = JOR
+                    use_nuke = no
+                }
+                JOR = {
+                    delete_unit = {
+                    state = 1265
+                    disband = no 
+                    }
+                }
+                launch_nuke = {
+                    state = 1085
+                    controller = LEB
+                    use_nuke = no
+                }
+                LEB = {
+                    delete_unit = {
+                    state = 1085
+                    disband = no 
+                    }
+                }
+                launch_nuke = {
+                    state = 154
+                    controller = SYR
+                    use_nuke = no
+                }
+                EGY = {
+                    add_stability = -0.3
+                    add_war_support = -0.67
+                    add_manpower = -10000
+                }
+                JOR = {
+                    add_stability = -0.3
+                    add_war_support = -0.67
+                    add_manpower = -10000
+                }
+                LEB = {
+                    add_stability = -0.3
+                    add_war_support = -0.67
+                    add_manpower = -10000
+                }
+                SYR = {
+                    add_stability = -0.3
+                    add_war_support = -0.67
+                    add_manpower = -10000
+                }
+                every_country = {
+                    add_opinion_modifier = {
+                        target = ISP
+                        modifier = embargo #oops!
+                    }
+                }
+             }
+             10 = {
+                add_stability = -0.25
+                set_country_flag = no_more_samson
+             }
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+    }
+    ISP_samson3dec = { #nuke!
+        allowed = {
+            tag = ISP
+        }
+        visible = {
+            has_war = yes
+            ISP = {
+                surrender_progress > 0.4
+            }
+        }
+        available = {
+            NOT = {
+                has_country_flag = no_more_samson
+            }
+            ISP = {
+                surrender_progress > 0.4
+            }
+        }
+        priority = 10
+        fire_only_once = yes
+         complete_effect = {
+            launch_nuke = {
+                state = 96
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 96
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 97
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 97
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 95
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 95
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 100
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 100
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 916
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 916
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 188
+                controller = JOR
+                use_nuke = no
+            }
+            JOR = {
+                delete_unit = {
+                state = 188
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 1265
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 1268
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 108
+                controller = LEB
+                use_nuke = no
+            }
+            LEB = {
+                delete_unit = {
+                state = 1085
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 108
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 155
+                controller = SYR
+                use_nuke = no
+            }
+            SYR = {
+                delete_unit = {
+                state = 154
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 155
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 96
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 97
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 95
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 100
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 916
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 188
+                controller = JOR
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 108
+                controller = LEB
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 155
+                controller = SYR
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 96
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 97
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 95
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 100
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 916
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 188
+                controller = JOR
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 108
+                controller = LEB
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 1268
+                controller = JOR
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 96
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 97
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 95
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 100
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 916
+                controller = EGY
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 188
+                controller = JOR
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 108
+                controller = LEB
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 444
+                controller = SAU
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 444
+                controller = SAU
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 444
+                controller = SAU
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 444
+                controller = SAU
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 444
+                controller = SAU
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 444
+                controller = SAU
+                use_nuke = no
+            }
+            EGY = {
+                add_stability = -0.3
+                add_war_support = -0.67
+                add_manpower = -1000000
+            }
+            JOR = {
+                add_stability = -0.3
+                add_war_support = -0.67
+                add_manpower = -100000
+            }
+            LEB = {
+                add_stability = -0.3
+                add_war_support = -0.67
+                add_manpower = -100000
+            }
+            SYR = {
+                add_stability = -0.3
+                add_war_support = -0.67
+                add_manpower = -1000000
+            }
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+                news_event = {
+                    id = WNE.5
+                    days = 5
+                }
+            }
+            every_country = {
+                add_opinion_modifier = {
+                    target = ISP
+                    modifier = embargo #oops!
+                }
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+    }
+    ISP_samson4_dec = { #bah, nothingburger
+        allowed = {
+            tag = ISP
+        }
+        visible = {
+            has_war = yes
+            ISP = {
+                surrender_progress > 0.66
+            }
+        }
+        available = {
+            ISP = {
+                surrender_progress > 0.66
+            NOT = {
+                has_country_flag = no_more_samson
+            }
+            }
+        }
+        priority = 7
+        fire_only_once = yes
+        complete_effect = {
+            hidden_effect = {
+            ISP = {
+                country_event = {
+                    id = ISP.1
+                    days = 15
+                }
+            }
+            }
+            launch_nuke = {
+                state = 96
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 96
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 97
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 97
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 95
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 95
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 100
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 100
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 916
+                controller = EGY
+                use_nuke = no
+            }
+            EGY = {
+                delete_unit = {
+                state = 916
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 188
+                controller = JOR
+                use_nuke = no
+            }
+            JOR = {
+                delete_unit = {
+                state = 188
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 1265
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 1268
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 108
+                controller = LEB
+                use_nuke = no
+            }
+            LEB = {
+                delete_unit = {
+                state = 1085
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 108
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 155
+                controller = SYR
+                use_nuke = no
+            }
+            SYR = {
+                delete_unit = {
+                state = 154
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 155
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 106
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 105
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 104
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 107
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 918
+                disband = no 
+                }
+            }
+            SYR = {
+                delete_unit = {
+                state = 917
+                disband = no 
+                }
+            }
+            EGY = {
+                delete_unit = {
+                state = 106
+                disband = no 
+                }
+            }
+            EGY = {
+                delete_unit = {
+                state = 105
+                disband = no 
+                }
+            }
+            EGY = {
+                delete_unit = {
+                state = 104
+                disband = no 
+                }
+            }
+            EGY = {
+                delete_unit = {
+                state = 107
+                disband = no 
+                }
+            }
+            EGY = {
+                delete_unit = {
+                state = 918
+                disband = no 
+                }
+            }
+            EGY = {
+                delete_unit = {
+                state = 917
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 106
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 105
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 104
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 107
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 918
+                disband = no 
+                }
+            }
+            JOR = {
+                delete_unit = {
+                state = 917
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 106
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 105
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 104
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 107
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 918
+                disband = no 
+                }
+            }
+            LEB = {
+                delete_unit = {
+                state = 917
+                disband = no 
+                }
+            }
+            launch_nuke = {
+                state = 104
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 105
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 918
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 107
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 917
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 440
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 104
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 105
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 918
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 107
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 917
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 440
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 104
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 105
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 918
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 107
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 917
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 440
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 104
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 105
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 918
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 107
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 917
+                use_nuke = no
+            }
+            launch_nuke = {
+                state = 440
+                use_nuke = no
+            }
+            add_stability = -1
+            add_war_support = -1
+            EGY = {
+                add_stability = -1
+                add_war_support = -1
+                add_manpower = -1000000
+            }
+            JOR = {
+                add_stability = -1
+                add_war_support = -1
+                add_manpower = -1000000
+            }
+            LEB = {
+                add_stability = -1
+                add_war_support = -1
+                add_manpower = -1000000
+            }
+            SYR = {
+                add_stability = -1
+                add_war_support = -1
+                add_manpower = -1000000
+            }
+            every_country = {
+                add_opinion_modifier = {
+                    target = ISP
+                    modifier = embargo #oops!
+                }
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+    }
+}

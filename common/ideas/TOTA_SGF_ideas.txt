@@ -1,0 +1,111 @@
+ideas = {
+	country = {
+		SGF_ostpolitik = {
+			picture = SGF_ostpolitik
+			allowed = {
+				tag = SGF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.15
+				research_speed_factor = 0.08
+				monthly_soctrends_drift_EA_A = 0.01
+			}
+			targeted_modifier = {
+				tag = JAP
+				extra_trade_to_target_factor = 0.30
+			}
+		}
+			SGF_postnazification = {
+			picture = SGF_postnazification
+			allowed = {
+				tag = SGF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.10
+				monthly_soctrends_drift_EE_E2 = 0.03
+				trade_opinion_factor = -0.20
+				war_support_factor = 0.05
+			}
+		}
+			SGF_fuhrer_and_loathing = {
+			picture = SGF_fuhrer_and_loathing
+			allowed = {
+				tag = SGF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.08
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.03
+				reformist_socialism_drift = 0.01
+				revolutionary_right_drift = 0.02
+			}
+		}
+			SGF_partizipation = {
+			picture = SGF_partizipation
+			allowed = {
+				tag = SGF
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.15
+				drift_defence_factor = 0.15
+				monthly_soctrends_drift_DC_C = 0.01
+				monthly_soctrends_drift_DE_E = 0.01
+				conservatism_drift = 0.02
+				autocracy_drift = 0.02
+				liberalism_drift = 0.03
+			}
+		}
+	}
+}

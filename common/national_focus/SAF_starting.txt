@@ -1,0 +1,145 @@
+focus_tree = {
+	id = SAF_starting
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SAF
+		}
+	}
+	#redirect
+
+	#ahegao emoji focus
+	focus = {
+		id = SAF_100_thirsty_days
+		icon = GFX_SAF_100_thirsty_days
+		x = 5
+		y = 1
+		cost = 6
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = {
+				id = SAF.4
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = SAF_redirect_water
+		icon = GFX_SAF_redirect_water
+		x = 5
+		y = 2
+		cost = 7
+		prerequisite = { focus = SAF_100_thirsty_days  }
+		completion_reward = {
+			add_stability = 0.25
+			add_political_power = -50
+		}
+	}
+
+	#rationing
+	focus = {
+		id = SAF_enact_rationing
+		icon = GFX_SAF_enact_rationing
+		x = 5
+		y = 3
+		cost = 8
+		prerequisite = { focus = SAF_redirect_water  }
+		completion_reward = {
+			country_event = {
+				id = SAF.5
+				days = 1
+			}			
+		}
+	}
+
+	#host distractions
+	focus = {
+		id = SAF_host_distractions
+		icon = GFX_SAF_host_distractions
+		x = 3
+		y = 4
+		cost = 9
+		prerequisite = { focus = SAF_enact_rationing  }
+		mutually_exclusive = { focus = SAF_send_in_dogs  }
+		completion_reward = {
+		country_event = {
+			id = SAF.1
+			days = 1
+		}
+		}
+	}
+
+	#send in dogs
+	focus = {
+		id = SAF_send_in_dogs
+		icon = GFX_SAF_send_in_dogs
+		x = 7
+		y = 4
+		cost = 9
+		prerequisite = { focus = SAF_enact_rationing  }
+		mutually_exclusive = { focus = SAF_host_distractions  }
+		completion_reward = {
+			add_war_support = 0.07
+			add_stability = 0.05
+			add_manpower = -2000
+		}
+	}
+
+	#speak with manuel
+	focus = {
+		id = SAF_speak_with_manuel
+		icon = GFX_SAF_speak_with_manuel
+		x = 3
+		y = 5
+		cost = 5
+		prerequisite = { focus = SAF_host_distractions  }
+		completion_reward = {
+			country_event = {
+				id = SAF.6
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = SAF_speak_with_blanche
+		icon = GFX_SAF_speak_with_blanche
+		x = 7
+		y = 5
+		cost = 5
+		prerequisite = { focus = SAF_send_in_dogs  }
+		completion_reward = {
+			country_event = {
+				id = SAF.7
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = SAF_deciding_new_policy #this focus is meant to cut midway
+		icon = GFX_SAF_deciding_new_policy
+		x = 5
+		y = 6
+		cost = 8
+		prerequisite = { focus = SAF_speak_with_blanche focus = SAF_speak_with_manuel  }
+		select_effect = {
+			country_event = {
+				id = SAF.2
+				days = 50
+			}
+		}
+		completion_reward = {
+		}
+	}
+	#focus = {
+	#	id = SAF_car_crash #demonstration purposes only
+	#	icon = GFX_SAF_car_crash
+	#	x = 5
+	#	y = 8
+	#	cost = 5
+	#	completion_reward = {
+	#	#event
+	#	}
+	#}
+
+}

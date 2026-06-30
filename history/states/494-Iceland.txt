@@ -1,0 +1,29 @@
+state={
+id=494
+	
+	name="STATE_494"
+
+	manpower = 371580
+	
+	state_category = large_town
+	
+	
+	history=
+	{
+		owner = ICE
+		victory_points = { 12674 20 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+			12674 ={
+				naval_base = 5
+			}
+		}
+		add_core_of = ICE
+	}
+	provinces=
+	{
+4861 12674 12689 	}
+
+	local_supplies=0.0 
+}

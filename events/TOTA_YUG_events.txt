@@ -1,0 +1,199 @@
+add_namespace = YUG
+
+country_event = {
+    id = YUG.1 # Tus catches Biafran AIDS
+    title = YUG.1.t
+    desc = YUG.1.desc
+    picture = GFX_report_event_jerzy
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = YUG.1.a
+	  every_country = {
+		limit = {
+			is_ai = no
+		}
+	  news_event = {
+		id = WNE.223
+		days = 1
+	  }
+	  }
+	  ai_chance = { factor = 60 }
+		create_country_leader = {
+			name = "League of Communists of Yugoslavia"
+			desc = ""
+			picture = "gfx/leaders/YUG/leagueofcoms.png"
+			expire = "2040.1.1"
+			ideology = natcom
+			traits = {
+			}
+		}
+		country_event = {
+		id = YUG.2
+		days = 20
+		}
+	}
+    option = {
+      name = YUG.1.b
+	  news_event = {
+		id = WNE.223
+		days = 1
+	  }
+	  ai_chance = { factor = 40 }
+		create_country_leader = {
+			name = "League of Communists of Yugoslavia"
+			desc = ""
+			picture = "gfx/leaders/YUG/leagueofcoms.png"
+			expire = "2040.1.1"
+			ideology = natcom
+			traits = {
+			}
+		}
+		country_event = {
+		id = YUG.3
+		days = 20
+		}
+	}
+}
+
+country_event = {
+    id = YUG.2 # Yugo collapses
+    title = YUG.2.t
+    desc = YUG.2.desc
+    picture = GFX_report_event_jerzy
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = YUG.2.a
+	  every_country = {
+		limit = {
+			is_ai = no
+		}
+	  news_event = {
+		id = WNE.224
+		days = 1
+	  }
+	  }
+	  ai_chance = { factor = 60 }
+		create_country_leader = {
+			name = "Jadranko Prlic"
+			desc = ""
+			picture = "gfx/leaders/YUG/jadranko.png"
+			expire = "2040.1.1"
+			ideology = natcom
+			traits = {
+			}
+		}
+		SRB = {
+			transfer_state = 173
+			transfer_state = 166
+			transfer_state = 183
+			transfer_state = 164
+			load_oob = "generic_2021"
+		}
+		BOS = {
+			transfer_state = 185
+			transfer_state = 184
+			load_oob = "generic_2021"
+			load_oob = "generic_2021" #bosnia needs a leg up, needs testing
+		}
+		SLO = {
+			transfer_state = 187
+			load_oob = "generic_2021"
+		}
+		YUG = {
+			declare_war_on = {
+				target = SRB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BOS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SLO
+				type = annex_everything
+			}
+		}
+		add_to_array = { global.yugoslavia = SLO }
+		add_to_array = { global.yugoslavia = YUG }
+		add_to_array = { global.yugoslavia = BOS }
+		add_to_array = { global.yugoslavia = SRB }
+
+	}
+}
+country_event = {
+    id = YUG.3 # Congrats you survived. pick a leader now
+    title = YUG.3.t
+    desc = YUG.3.desc
+    picture = GFX_report_event_jerzy
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = YUG.3.a
+	  ai_chance = { factor = 10 }
+		create_country_leader = {
+			name = "Uroš Macerl"
+			desc = ""
+			picture = "gfx/leaders/YUG/urosmacerl.png"
+			expire = "2040.1.1"
+			ideology = nl_s
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = reformist_socialism
+		}
+	}
+    option = {
+      name = YUG.3.b
+	  ai_chance = { factor = 10 }
+		create_country_leader = {
+			name = "Dragan Markovina"
+			desc = ""
+			picture = "gfx/leaders/YUG/draganmarkovina.png"
+			expire = "2040.1.1"
+			ideology = popsoc
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = reformist_socialism
+		}
+	}
+    option = {
+      name = YUG.3.c
+	  ai_chance = { factor = 10 }
+		create_country_leader = {
+			name = "Edin Forto"
+			desc = ""
+			picture = "gfx/leaders/YUG/edinforto.png"
+			expire = "2040.1.1"
+			ideology = greenpol
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = reformist_socialism
+		}
+	}
+    option = {
+      name = YUG.3.d
+	  ai_chance = { factor = 40 }
+		create_country_leader = {
+			name = "Ivo Josipovic"
+			desc = ""
+			picture = "gfx/leaders/YUG/ivojosipovic.png"
+			expire = "2040.1.1"
+			ideology = sovmarsys
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = reformist_socialism
+		}
+	}
+}

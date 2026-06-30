@@ -1,0 +1,232 @@
+add_namespace = CHD
+add_namespace = CHD_FLAVOR #chud flavor
+
+country_event = {
+    id = CHD.1 # war start
+    title = CHD.1.t
+    desc = CHD.1.d
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = CHD.1.a
+		TRP = {
+			declare_war_on = {
+			target = FRA
+            type = annex_everything
+			}
+		}
+		GUN = {
+			add_to_war = {
+			    targeted_alliance = TRP
+			    enemy = FRA
+			    hostility_reason = asked_to_join
+			}
+		}
+		MLI = {
+			add_to_war = {
+			    targeted_alliance = TRP
+			    enemy = FRA
+			    hostility_reason = asked_to_join
+			}
+		}
+		BEN = {
+			add_to_war = {
+			    targeted_alliance = TRP
+			    enemy = FRA
+			    hostility_reason = asked_to_join
+			}
+		}
+		BKF = {
+			add_to_war = {
+			    targeted_alliance = TRP
+			    enemy = FRA
+			    hostility_reason = asked_to_join
+			}
+		}
+		FRA ={
+			load_oob = "CHD_2021"
+		}
+		WES = {
+			add_to_war = {
+			    targeted_alliance = FRA
+			    enemy = TRP
+			    hostility_reason = asked_to_join
+			}
+		}
+		if = {
+			limit = {
+				NGA = {
+					has_government = hardline_socialism
+				}
+			}
+		NGA = {
+			country_event = {
+				id = NGA.1959
+				days = 30 
+			}
+		}
+		}
+		else = {}
+		every_country = {
+			limit = {
+			is_ai = no	
+			}
+		news_event = {
+		id = WNE.18
+		days = 0
+		}
+		}
+	}
+}
+#country_event = {
+#    id = CHD.2 # Déby does a democracy, gets shot or remains in power, hmmm
+#    title = CHD.2.t
+#    desc = CHD.2.d
+#    picture = GFX_report_event_sarney
+#    is_triggered_only = yes
+#    fire_only_once = yes 
+#
+#    option = {
+#      name = CHD.2.a #assasinated, kino leader takes over
+#		ai_chance = { factor = 40 }
+#		kill_country_leader = yes
+#		create_country_leader = {
+#        	name = "Mahamat Déby"
+#        	desc = "POLITICS_BRA_CARETAKER_GOVERNMENT_DESC"
+#        	picture = "gfx/leaders/CHD/Portrait_CHD_Mahamat_Deby.png"
+#        	expire = "2080.3.1"
+#        	ideology = milgov
+#        	traits = {
+#        		
+#        	}
+#        }
+#		set_politics = {
+#        	ruling_party = autocracy 
+#		}
+#		add_popularity = {
+#		ideology = autocracy
+#		popularity = 0.5
+#		}
+#		every_country = {
+#			limit = {
+#			is_ai = no	
+#			}
+#		news_event = {
+#		id = WNE.28
+#		days = 0
+#		}
+#		}
+#	}
+#    option = {
+#      name = CHD.2.b #allows elections
+#		ai_chance = { factor = 20 }
+#		retire_country_leader = yes
+#		create_country_leader = {
+#        	name = "Albert Padacké"
+#        	desc = "POLITICS_BRA_CARETAKER_GOVERNMENT_DESC"
+#        	picture = "gfx/leaders/CHD/Portrait_CHD_Albert_Pahimi_Padacke.png"
+#        	expire = "2080.3.1"
+#        	ideology = thway
+#        	traits = {
+#        		
+#        	}
+#        }
+#		set_politics = {
+#        	ruling_party = socdem 
+#		}
+#		add_popularity = {
+#		ideology = socdem
+#		popularity = 0.5
+#		}
+#		every_country = {
+#			limit = {
+#			is_ai = no	
+#			}
+#		news_event = {
+#		id = WNE.27
+#		days = 0
+#		}
+#		}
+#	}
+#    option = {
+#		ai_chance = { factor = 40 }
+#      name = CHD.2.c #allows elections? idk he remains anyway
+#	}
+#}
+country_event = {
+    id = CHD.3 # LCH has issues going on
+    title = CHD.3.t
+    desc = CHD.3.d
+    picture = GFX_report_event_sarney
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = CHD.3.a #ML coup
+		ai_chance = { factor = 40 }
+		retire_country_leader = yes
+		create_country_leader = {
+        	name = "Fidèle Moungar"
+        	desc = "POLITICS_BRA_CARETAKER_GOVERNMENT_DESC"
+        	picture = "gfx/leaders/LCH/Portrait_LCH_Fidele_Moungar.png"
+        	expire = "2080.3.1"
+        	ideology = antirevml
+        	traits = {
+        		
+        	}
+        }
+		set_politics = {
+        	ruling_party = hardline_socialism 
+		}
+		add_popularity = {
+		ideology = hardline_socialism
+		popularity = 0.4
+		}
+		every_country = {
+			limit = {
+			is_ai = no	
+			}
+		news_event = {
+		id = WNE.29
+		days = 0
+		}
+		}
+	}
+    option = {
+	ai_chance = { factor = 10 }
+      name = CHD.3.b #elections happen and a more reformist secular guy takes over
+		retire_country_leader = yes
+		create_country_leader = {
+        	name = "Yaya Dillo Djérou"
+        	desc = "POLITICS_BRA_CARETAKER_GOVERNMENT_DESC"
+        	picture = "gfx/leaders/LCH/Portrait_LCH_Yaya_Dillo_Djerou.png"
+        	expire = "2080.3.1"
+        	ideology = lwnat
+        	traits = {
+        		
+        	}
+        }
+		add_popularity = {
+		ideology = reformist_socialism
+		popularity = 0.1
+		}
+	}
+    option = {
+	ai_chance = { factor = 50 }
+      name = CHD.3.c #gaddafis old fart puppet stays :angry:
+	}
+}
+country_event = {
+    id = CHD_FLAVOR.1 # war start
+    title = CHD_FLAVOR.1.t
+    desc = CHD_FLAVOR.1.desc
+    picture = GFX_report_event_CHD_flavor
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = CHD_FLAVOR.1.a
+	}
+}

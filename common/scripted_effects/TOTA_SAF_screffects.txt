@@ -1,0 +1,155 @@
+SAFCW_begin ={
+	SAF = {
+	set_politics = {
+		ruling_party = liberalism
+		}
+		add_ideas = cologne_capitalism
+		every_core_state = {
+			add_core_of = EFF
+			add_core_of = AWB
+		}
+		load_focus_tree = {
+			tree = SAF_cw
+		}
+	
+		remove_ideas = {
+		    SAF_boiling_point
+		    SAF_intl_isolation
+		}
+		subtract_from_variable = { SAF.GDP = 600 }
+		add_to_variable = { SAF.REAL_GROWTH = -0.10 }
+		add_timed_idea = {
+		    idea = SAF_chaos_in_the_army
+		    days = 300
+		}
+		add_ideas = SAF_generic_no_step_back
+		set_country_flag = just_getting_started	
+	}
+	set_global_flag = SA_CW_ongoing
+	SEY = {
+		mark_focus_tree_layout_dirty = yes
+	}
+	EFF = {
+		transfer_state = 472
+		transfer_state = 465
+		transfer_state = 928
+		declare_war_on = {
+			target = SAF
+			type = annex_everything
+		}
+		country_event = {
+			id = EFF.70
+			days = 180
+		}
+		add_ideas = kosygin_liberman_econ_theory
+		load_oob = "EFF_SCW"
+		#set_country_flag = SAF_orania_siege
+		add_ideas = SAF_generic_no_step_back
+		}
+	NAM = { 
+	transfer_state = 480
+		declare_war_on = {
+			target = SAF
+			type = annex_everything
+		}
+		add_ideas = national_salvation_model
+	load_oob = "NAM_SCW"
+	}
+	SAF = {
+		load_oob = "SAF_2021"
+		#set_country_flag = SAF_orania_siege
+	}
+	RSB = {
+		add_manpower = 50000
+		transfer_state = 478
+		load_oob = "RSB_2021"
+		add_ideas = cologne_capitalism
+	}
+    478 = {
+        add_core_of = RSB
+    }
+	SAF = {
+		puppet = RSB
+		RSB = {
+			set_politics = {
+				ruling_party = autocracy
+			}
+		}
+	}
+	AWB = { 
+		add_ideas = national_salvation_model
+	transfer_state = 477
+	transfer_state = 476
+	#transfer_state = 474
+	transfer_state = 985
+	transfer_state = 929
+
+	load_oob = "AWB_SCW"
+	load_focus_tree = AWB_cw
+	 mark_focus_tree_layout_dirty = yes
+	#set_country_flag = SAF_orania_siege
+		declare_war_on = {
+			target = NAM
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = EFF
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SAF
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = RSB
+			type = annex_everything
+		}
+	}
+	EFF ={
+		declare_war_on = {
+			target = RSB
+			type = annex_everything
+		}
+	}
+	add_ideas = SAF_generic_no_step_back
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+				id = WNE.4
+			}
+		}
+		SAF = {
+			930 = {
+			add_resistance = 45
+			}
+			add_stability = 0.30 #balancing
+		}
+		if = {
+			limit = {
+				SAF = {
+					has_country_flag = SAF_chose_manuel
+				}
+			}
+			EFF = {
+				transfer_state = 474
+			}
+		}
+		else_if = {
+			limit = {
+				SAF = {
+					has_country_flag = SAF_chose_blanche
+				}
+			}
+			AWB = {
+				transfer_state = 474
+			}			
+		}
+	EFF = {
+		inherit_technology = SAF
+	}
+	AWB = {
+		inherit_technology = SAF
+	}
+}

@@ -1,0 +1,33 @@
+
+state={
+id=552
+	
+	name="STATE_552"
+	manpower = 1210103
+	
+	state_category = city
+	
+	resources={
+		steel=70
+		tungsten=55
+		aluminium=40
+		uranium=100
+	}
+
+	history={
+		owner = USA
+		victory_points = { 10591 5 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		1862 4816 7756 7827 7879 10591 12399 
+	}
+
+	local_supplies=0.0 
+}

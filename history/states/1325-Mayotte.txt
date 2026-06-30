@@ -1,0 +1,29 @@
+state={
+	id=1325
+	name="STATE_1325"
+
+	history={
+		victory_points = {
+			14113 5 
+		}
+		owner = ANJ
+		add_core_of = ANJ
+		add_claim_by = COM
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 2
+			14113 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		14116 
+	}
+	manpower=72437
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}

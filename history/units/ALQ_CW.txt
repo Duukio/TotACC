@@ -1,0 +1,127 @@
+division_template = {
+	name = "ISIS"		# Infantry Division
+	#
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14039
+		division_template = "ISIS"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14039
+		division_template = "ISIS"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+    division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14039
+		division_template = "ISIS"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+    division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12316
+		division_template = "ISIS"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1634
+		division_template = "ISIS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+
+	}
+    division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1634
+		division_template = "ISIS"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+
+	}
+    division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1634
+		division_template = "ISIS"
+		start_experience_factor = 0.66
+		start_equipment_factor = 0.5
+
+	}
+    division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 14051
+		division_template = "ISIS"
+		start_experience_factor = 0.66
+		start_equipment_factor = 0.5
+
+	}
+    division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10882
+		division_template = "ISIS"
+		start_experience_factor = 0.66
+		start_equipment_factor = 0.5
+
+	}
+    division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 901
+		division_template = "ISIS"
+		start_experience_factor = 0.66
+		start_equipment_factor = 0.5
+
+	}
+}

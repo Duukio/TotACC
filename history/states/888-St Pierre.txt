@@ -1,0 +1,26 @@
+state={
+id=888
+	name="STATE_888" #Dakota was here 6/20/2022
+	manpower = 8888
+	
+
+	state_category = tiny_island
+
+	history={
+		add_core_of = FRA
+		owner = FRA
+		buildings = {
+            school = 2
+			infrastructure = 2
+			373= {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		373 
+	}
+
+	local_supplies=3.0 
+}

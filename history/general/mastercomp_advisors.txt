@@ -1,0 +1,28 @@
+# For minor countries where advisors are not defined
+# Generate them from a generic template
+
+# Political advisors
+every_possible_country = {
+	limit = {
+		always = no
+	}
+    generate_character = {
+    	     token_base = mastercomputer_90_idea
+    	     name = "Mastercomputing: Economy"
+    	     advisor = {
+    	         slot = economy_minister
+    	         cost = 150
+		     ledger = civilian
+    	         traits = {
+    	            economy_minister
+    	             eco_mc90
+    	         }
+    	         available = {
+    	             has_tech = mastercomputer_90
+    	         }
+    	     }
+		portraits = {
+			civilian = { small = "GFX_idea_MASTERCOMP_90" } 
+		}
+    }
+}

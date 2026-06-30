@@ -1,0 +1,9 @@
+BIA_great_teardown  = {
+     icon = generic_foreign_policy
+     visible = { 
+        original_tag = BIA
+        BIA = {
+            has_country_flag = BIA_decisions_teardown
+        }
+    }
+}

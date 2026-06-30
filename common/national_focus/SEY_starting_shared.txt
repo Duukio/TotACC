@@ -1,0 +1,12 @@
+focus_tree = {
+	id = SEY_starting
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SEY
+		}
+	}
+	shared_focus = SEY_another_year_in_paradise
+	shared_focus = SEY_ah_shit
+}

@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+			EMR_farabundist_haven = {
+			picture = EMR_farabundist_haven
+			allowed = {
+				tag = EMR
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = 1
+			stability_factor = -0.3
+			war_support_factor = -0.3
+			conscription = -0.5
+			}
+		}
+	}	
+}

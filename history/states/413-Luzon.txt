@@ -1,0 +1,33 @@
+state={
+id=413
+	name="STATE_413"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	resources = {
+	oil = 100
+	}
+	history={
+		owner = PHI
+		victory_points = { 10165 10 }
+		victory_points = { 10241 10 }
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 5
+			arms_factory = 5
+			dockyard = 3
+			air_base = 3
+			10241 = {
+			naval_base = 5
+			}
+		}
+		add_core_of = PHI
+	}
+	provinces={
+		13354 13355 13357 13356 1221 1288 1372 1388 1415 4101 4214 4228 4233 4288 4350 4368 4377 4423 4429 7275 7307 7325 7351 7419 7439 10145 10165 10167 10236 10241 10252 10272 10280 10298 10306 12213 12236 12253 12279 
+	}
+	manpower=50000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

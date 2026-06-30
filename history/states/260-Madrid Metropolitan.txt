@@ -1,0 +1,30 @@
+state={
+id=260
+	name="STATE_260"
+    buildings_max_level_factor = 1
+	state_category=metropolis
+	
+	resources={
+	}
+
+	history={
+		victory_points = {
+			3938 50
+		}		
+		owner = SPA
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 10
+			arms_factory = 1
+		}
+		add_core_of = SPA
+
+	}
+	provinces={
+		896 3794 3938 9767 
+	}
+	manpower=6661949
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

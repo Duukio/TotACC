@@ -1,0 +1,289 @@
+﻿capital = 477
+
+#oob = "" #gets fired up after the CW begins
+
+set_variable = { GDP = 1000 } set_variable = { DEBT = 500 } set_variable = { REAL_GROWTH = 1 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+set_research_slots = 5
+set_stability = 1
+
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+set_variable = {
+var = SOCTRENDS_DC
+value = 45
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 35
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 20
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 15
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 25
+}
+tota_variable_clamping = yes
+set_convoys = 1000
+#country_event = {
+#id = SAF.999
+#days = 323
+#}
+add_ideas = { 
+SAF_memories_of_a_titan
+SAF_boiling_point
+SAF_intl_isolation
+SAF_bd_contract
+}
+set_popularities = {
+        anarchism = 10
+        conservatism = 0
+        
+        
+        
+        
+        revolutionary_right = 10
+        
+        dissident_right = 40
+        liberalism = 15
+        hardline_socialism = 15
+        
+        autocracy = 5
+        
+        
+        reformist_socialism = 0
+        socdem = 0
+        technocracy = 5
+
+}
+
+set_politics = {
+	
+	ruling_party = dissident_right
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Andries Breytenbach"
+	desc = "POLITICS_ANDRIES_BREYTENBACH_DESC"
+	picture = "gfx/leaders/SAF/Portrait_SAF_Andries_Breytenbach.png"
+	expire = "2040.1.1"
+	ideology = natpop
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "John Steeinhusen"
+	desc = "POLITICS_JOHN_STEEINHUSEN_DESC"
+	picture = "gfx/leaders/SAF/Portrait_SAF_John_Steeinhusen.png"
+	expire = "2040.1.1"
+	ideology = soclib
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Pieter Groenewald"
+	desc = ""
+	picture = "gfx/leaders/SAF/Pieter Groenewald.png"
+	expire = "2040.1.1"
+	ideology = socpat_con
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Cyril Ramaphosa"
+	desc = ""
+	picture = "gfx/leaders/SAF/Cyril Ramaphosa.png"
+	expire = "2040.1.1"
+	ideology = socpat
+	traits = {
+	}
+}
+
+
+recruit_character = SAF_carlo_gagiano
+recruit_character = SAF_janse_van_rensburg
+recruit_character = SAF_roy_andersen
+recruit_character = SAF_rsa
+recruit_character = SAF_reginald_otto
+recruit_character = SAF_fw_de_klerk
+recruit_character = SAF_ebrahim_rasool
+recruit_character = SAF_derek_hanekom
+recruit_character = SAF_roelf_meyer
+
+add_ideas = {
+SAF_fw_de_klerk
+SAF_ebrahim_rasool
+SAF_derek_hanekom
+SAF_roelf_meyer
+}

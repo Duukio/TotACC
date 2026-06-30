@@ -1,0 +1,32 @@
+state={
+id=883
+	
+
+	name="STATE_883"
+
+	resources={
+		oil=25
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			1864 5 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1668 1749 1818 1864 4661 4674 4764 4867 7784 7890 10161 10218 10290 10584 10610 10653 12427 12564 12594 12635 12662 13151 13197 
+	}
+	manpower=1369597
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

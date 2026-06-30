@@ -1,0 +1,84 @@
+#AWB_bring_back_rhodesia = {
+#    arm_whites_in_rhodesia = {
+#	   #fire_only_once = yes
+#        cost = 25
+#	    days_remove = 30
+#        visible = {
+#            original_tag = AWB
+#            has_completed_focus = AWB_back_across_the_zambezi
+#             check_variable = { RHODESIA_POWER < 70 }
+#        }
+#        custom_cost_trigger = {
+#            has_equipment = {
+#                infantry_equipment > 199
+#            }
+#        }
+#         custom_cost_text = 200_GUNZ_AWB
+#        complete_effect = {
+#            add_equipment_to_stockpile = {
+#                type = infantry_equipment
+#                amount = -200
+#                producer = AWB
+#            }
+#        }
+#        remove_effect = {
+#            add_to_variable = { RHODESIA_POWER = 20 }
+#        }
+#    }
+#    instigate_race_riots = {
+#	    #fire_only_once = yes
+#        cost = 50
+#	    days_remove = 15
+#        visible = {
+#            original_tag = AWB
+#            has_completed_focus = AWB_back_across_the_zambezi
+#             check_variable = { RHODESIA_POWER < 70 }
+#        }
+#        complete_effect = {
+#            ZAM = {
+#                add_stability = -0.1
+#                add_war_support = -0.1
+#            }
+#        }
+#        remove_effect = {
+#            add_to_variable = { RHODESIA_POWER = 10 }
+#        }
+#    }
+#    initiate_the_insurrection = {
+#	    #fire_only_once = yes
+#        cost = 50
+#        visible = {
+#            original_tag = AWB
+#            has_completed_focus = AWB_back_across_the_zambezi
+#        }
+#        custom_cost_trigger = {
+#            check_variable = { RHODESIA_POWER > 50 }
+#        }
+#        custom_cost_text = RHODESIAPOWEROVER50
+#        complete_effect = {
+#            ZIM = {
+#                transfer_state = 459
+#                transfer_state = 890
+#                transfer_state = 889
+#                load_oob = "generic_2021"
+#            }
+#            every_state = {
+#                limit = {
+#                    is_owned_by = ZIM
+#                }
+#                add_core_of = ZIM
+#            }
+#            ZAM = {
+#                load_oob = "generic_2021"
+#            }
+#            ZIM = {
+#                declare_war_on = {
+#                    target = ZAM
+#                    type = annex_everything
+#                }
+#            }
+#        }
+#    }
+#}
+
+#apparently my dev team hates being clear about the reason certain foci exist

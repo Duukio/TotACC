@@ -1,0 +1,576 @@
+
+shared_focus = {
+	id = SAF_the_car_crash
+	icon = GFX_SAF_car_crash
+	cost = 2
+	x = 6
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_the_car_crash"
+		add_ideas = partial_economic_mobilisation
+	}
+}
+
+shared_focus = {
+	id = SAF_a_more_humanist_approach
+	icon = GFX_a_more_humanist_approach
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_a_more_humanist_approach"
+		add_political_power = -100
+		add_stability = 0.25
+		add_war_support = 0.15
+	}
+	relative_position_id =  SAF_the_car_crash 
+	prerequisite = { focus = SAF_the_car_crash }
+	#prerequisite = { focus = SAF_harness_the_sapd } #lolwut
+	mutually_exclusive = { focus = SAF_harness_the_sapd }
+}
+
+shared_focus = {
+	id = SAF_harness_the_sapd
+	icon = GFX_harness_the_sapd
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_harness_the_sapd"
+		add_ideas = SAF_SAPD
+	}
+	relative_position_id = SAF_the_car_crash 
+	prerequisite = { focus = SAF_the_car_crash }
+	mutually_exclusive = { focus = SAF_a_more_humanist_approach }
+}
+
+shared_focus = {
+	id = SAF_accelerate_the_dissolution_of_apartheid
+	icon = GFX_accelerate_the_dissolution_of_apartheid
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_accelerate_the_dissolution_of_apartheid"
+		add_timed_idea = {
+			idea = SAF_anti_apartheid
+			days = 100
+		}
+	}
+	relative_position_id =  SAF_a_more_humanist_approach
+	prerequisite = { focus = SAF_a_more_humanist_approach }
+}
+
+shared_focus = {
+	id = SAF_halt_the_gas
+	icon = GFX_halt_the_gas
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_halt_the_gas"
+		add_timed_idea = {
+			idea = SAF_sudden_halt
+			days = 100
+		}
+	}
+	relative_position_id =  SAF_harness_the_sapd 
+	prerequisite = {focus = SAF_harness_the_sapd }
+}
+
+shared_focus = {
+	id = SAF_put_project_eumeswil_to_action
+	icon = GFX_put_project_eumeswil_to_action
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_put_project_eumeswil_to_action"
+		set_politics = {
+			ruling_party = autocracy
+		}
+		create_country_leader = {
+			name = "Koos Louw"
+			desc = ""
+			picture = "gfx/leaders/SAF/Koos Louw.png"
+			expire = "2040.1.1"
+			ideology = milgov
+			traits = {
+			}
+		}
+	}
+	relative_position_id =  SAF_halt_the_gas
+	prerequisite = {focus = SAF_halt_the_gas }
+}
+
+shared_focus = {
+	id = SAF_expand_our_ranks
+	icon = GFX_expand_our_ranks
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_expand_our_ranks"
+		add_ideas = SAF_black_conscription
+	}
+	relative_position_id =  SAF_accelerate_the_dissolution_of_apartheid
+	prerequisite = {focus = SAF_accelerate_the_dissolution_of_apartheid }
+}
+
+shared_focus = {
+	id = SAF_put_our_strategies_in_motion
+	icon = GFX_put_our_strategies_in_motion
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_put_our_strategies_in_motion"
+		add_ideas = war_economy
+	}
+	relative_position_id =  SAF_put_project_eumeswil_to_action 
+	prerequisite = {focus = SAF_put_project_eumeswil_to_action focus = SAF_expand_our_ranks }
+}
+
+shared_focus = {
+	id = SAF_breakthrough_in_the_orange_river
+	icon = GFX_breakthrough_in_the_orange_river
+	cost = 2
+	x = 12
+	y = 3
+	available = {
+		NOT = {
+			country_exists = AWB
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_breakthrough_in_the_orange_river"
+		add_manpower = 10000
+		add_stability = 0.10
+		hidden_effect = {
+			add_to_variable = { SAF.GDP = 200 }
+			add_to_variable = { SAF.REAL_GROWTH = 0.01 }
+		}
+		custom_effect_tooltip = "Returns 200 Billion USD to the South African GDP along with 1% real growth"
+	}
+}
+
+shared_focus = {
+	id = SAF_breakthrough_in_the_tugela
+	icon = GFX_breakthrough_in_the_tugela
+	cost = 2
+	x = 17
+	y = 3
+	available = {
+		NOT = {
+			country_exists = EFF
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_breakthrough_in_the_tugela"
+		hidden_effect = {
+			add_to_variable = { SAF.GDP = 200 }
+			add_to_variable = { SAF.REAL_GROWTH = -0.01 }
+			}
+		custom_effect_tooltip = "Returns 200 Billion USD to the South African GDP and reduces real growth slightly"
+	}
+}
+
+shared_focus = {
+	id = SAF_breakthrough_in_ovamboland
+	icon = GFX_breakthrough_in_ovamboland
+	cost = 2
+	x = 20
+	y = 3
+	available = {
+		NOT = {
+			country_exists = NAM
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_breakthrough_in_ovamboland"
+		hidden_effect = {
+			add_to_variable = { SAF.GDP = 10 }
+			add_to_variable = { SAF.REAL_GROWTH = -0.01 }
+			}
+		custom_effect_tooltip = "Returns 10 Billion USD to the South African GDP and reduces real growth slightly"
+	}
+}
+
+shared_focus = {
+	id = SAF_help_our_klerksdorpers #RUSTENBURGERS
+	icon = GFX_help_our_klerksdorpers
+	cost = 2
+	x = 27
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_help_our_klerksdorpers"
+		RSB = {
+			add_war_support = 0.5
+		}
+	}
+}
+
+shared_focus = {
+	id = SAF_airdrop_supplies
+	icon = GFX_airdrop_supplies
+	cost = 2
+	x = 0
+	y = 1
+	available = { 
+	has_manpower > 2000
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_airdrop_supplies"
+		RSB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 250
+				producer = SAF
+			}
+			add_manpower = 2000
+		}
+		SAF = {
+			add_political_power = -100
+			add_manpower = -2000
+		}
+	}
+	relative_position_id =  SAF_help_our_klerksdorpers
+	prerequisite = { focus = SAF_help_our_klerksdorpers }
+}
+
+shared_focus = {
+	id = SAF_the_northern_cape_strategy
+	icon = GFX_the_northern_cape_strategy
+	cost = 2
+	x = -2
+	y = 1
+	available = {
+		always = no
+	}	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_the_northern_cape_strategy"
+		#add_ideas = power_against_EFF
+		set_country_flag = SAF_get_EFF_decisions
+		custom_effect_tooltip = "We will enact decisions to improve our attacks against the Black Redemption Front."
+	}
+	relative_position_id =  SAF_airdrop_supplies
+	prerequisite = { focus = SAF_airdrop_supplies }
+	#prerequisite = { focus = SAF_the_bloemfontein_strategy }
+	mutually_exclusive = { focus = SAF_the_bloemfontein_strategy }
+}
+
+shared_focus = {
+	id = SAF_the_bloemfontein_strategy
+	icon = GFX_the_bloemfontein_strategy
+	cost = 2
+	x = 2
+	y = 1
+	available = {
+		always = no
+	}	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_the_bloemfontein_strategy"
+		set_country_flag = SAF_get_AWB_decisions
+		add_war_support = -0.1
+		custom_effect_tooltip = "We will enact decisions to improve our attacks against the AWB."
+	}
+	relative_position_id =  SAF_airdrop_supplies
+	prerequisite = { focus = SAF_airdrop_supplies }
+	mutually_exclusive = { focus = SAF_the_northern_cape_strategy }
+}
+
+shared_focus = {
+	id = SAF_reassure_our_pioneers
+	icon = GFX_reassure_our_pioneers
+	cost = 2
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_reassure_our_pioneers"
+		add_manpower = 20000
+		add_political_power = -100
+		add_war_support = -0.10
+	}
+	relative_position_id =  SAF_breakthrough_in_the_orange_river
+	prerequisite = { focus = SAF_breakthrough_in_the_orange_river }
+	mutually_exclusive = { focus = SAF_hold_off_white_flight }
+}
+
+shared_focus = {
+	id = SAF_hold_off_white_flight
+	icon = GFX_hold_off_white_flight
+	cost = 2
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_reassure_our_pioneers"
+		add_to_variable = { SAF.REAL_GROWTH = 0.05 }
+		custom_effect_tooltip = "Increases real growth by 5%"
+	}
+	relative_position_id =  SAF_breakthrough_in_the_orange_river
+	prerequisite = { focus = SAF_breakthrough_in_the_orange_river }
+	mutually_exclusive = {focus = SAF_reassure_our_pioneers }
+}
+
+shared_focus = {
+	id = SAF_dismantle_the_anc_gang
+	icon = GFX_dismantle_the_anc_gang
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_dismantle_the_anc_gang"
+		add_stability = -0.15
+		add_war_support = -0.15
+		add_political_power = 100
+		add_popularity = {
+			ideology = var:SAF.current_party_ideology_group #maybe scoping fixes it
+			popularity = 0.4
+		}
+	}
+	relative_position_id =  SAF_breakthrough_in_the_tugela 
+	prerequisite = {focus = SAF_breakthrough_in_the_tugela }
+}
+
+shared_focus = {
+	id = SAF_clean_up_durban
+	icon = GFX_clean_up_durban
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_clean_up_durban"
+		930 = {
+		add_compliance = 25
+		}
+		SAF = {
+		add_political_power = -50
+		}
+	}
+	relative_position_id =  SAF_dismantle_the_anc_gang 
+	prerequisite = {focus = SAF_dismantle_the_anc_gang }
+}
+
+shared_focus = {
+	id = SAF_wipe_out_terrorists
+	icon = GFX_wipe_out_terrorists
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_wipe_out_terrorists"
+		add_ideas = SAF_terrorist_cleanup
+	}
+	relative_position_id =  SAF_dismantle_the_anc_gang 
+	prerequisite = {focus = SAF_dismantle_the_anc_gang }
+}
+
+shared_focus = {
+	id = SAF_expand_the_bantustans
+	icon = GFX_expand_the_bantustans
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_expand_the_bantustans"
+		470 = {
+			remove_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+		hidden_effect = {
+		subtract_from_variable = { SAF.GDP = -20 }
+		add_to_variable = { SAF.REAL_GROWTH = 0.1 }
+		}
+		custom_effect_tooltip = "Removes 20 Billion USD in GDP, but increases real growth by 1%."
+	}
+	relative_position_id =  SAF_breakthrough_in_ovamboland 
+	prerequisite = {focus = SAF_breakthrough_in_ovamboland }
+}
+
+shared_focus = {
+	id = SAF_and_give_them_more_rights
+	icon = GFX_and_give_them_more_rights
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_and_give_them_more_rights"
+		add_stability = 0.20
+		add_ideas = volunteer_only
+	}
+	relative_position_id =  SAF_expand_the_bantustans 
+	prerequisite = {focus = SAF_protect_their_sovereignity }
+}
+
+shared_focus = {
+	id = SAF_protect_their_sovereignity
+	icon = GFX_protect_their_sovereignity
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_protect_their_sovereignity"
+		#flavor?
+	}
+	relative_position_id =  SAF_expand_the_bantustans 
+	prerequisite = {focus = SAF_expand_the_bantustans }
+}
+
+shared_focus = {
+	id = SAF_a_slow_integration_into_society
+	icon = GFX_a_slow_integration_into_society
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_a_slow_integration_into_society"
+		add_ideas = SAF_incentives_to_build_in_bantustans
+	}
+	relative_position_id =  SAF_and_give_them_more_rights 
+	prerequisite = {focus = SAF_and_give_them_more_rights }
+	prerequisite = {focus = SAF_protect_their_sovereignity }
+}
+
+shared_focus = {
+	id = SAF_punish_those_responsible
+	icon = GFX_punish_those_responsible
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_punish_those_responsible"
+		hidden_effect = {
+			subtract_from_variable = { SAF.GDP = -25 }
+			add_to_variable = { SAF.REAL_GROWTH = 0.01 }
+		}
+		custom_effect_tooltip = "Pro-AWB businesses will be nationalized, removing 25 Billion USD in GDP, but returning 1% real growth."
+	}
+	relative_position_id =  SAF_hold_off_white_flight 
+	prerequisite = {focus = SAF_hold_off_white_flight focus = SAF_reassure_our_pioneers}
+	#prerequisite = {focus = SAF_unite_against_majoritarianism }
+	mutually_exclusive = {focus = SAF_unite_against_majoritarianism }
+}
+
+shared_focus = {
+	id = SAF_unite_against_majoritarianism
+	icon = GFX_unite_against_majoritarianism
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_unite_against_majoritarianism"
+		add_ideas = SAF_multiethnic_front
+	}
+	relative_position_id =  SAF_hold_off_white_flight 
+	prerequisite = {focus = SAF_hold_off_white_flight }
+	mutually_exclusive = {focus = SAF_punish_those_responsible }
+}
+
+shared_focus = {
+	id = SAF_south_africa_is_white
+	icon = GFX_south_africa_is_white
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_south_africa_is_white"
+		swap_ideas = {
+			remove_idea = SAF_multiethnic_front
+			add_idea = SAF_pan_europeanism
+		}
+	}
+	relative_position_id =  SAF_punish_those_responsible 
+	prerequisite = {focus = SAF_punish_those_responsible focus = SAF_unite_against_majoritarianism}
+	#prerequisite = {focus = SAF_south_africa_is_a_rainbow }
+	mutually_exclusive ={ focus = SAF_south_africa_is_a_rainbow }
+}
+
+shared_focus = {
+	id = SAF_south_africa_is_a_rainbow
+	icon = GFX_south_africa_is_a_rainbow
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_south_africa_is_a_rainbow"
+		add_stability = 0.25
+		add_war_support = 0.15
+		add_political_power = -100
+	}
+	relative_position_id =  SAF_unite_against_majoritarianism 
+	prerequisite = {focus = SAF_punish_those_responsible focus = SAF_unite_against_majoritarianism}
+	mutually_exclusive = {focus = SAF_south_africa_is_white }
+}
+
+shared_focus = {
+	id = SAF_an_unique_cultural_identity
+	icon = GFX_an_unique_cultural_identity
+	cost = 2
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_an_unique_cultural_identity"
+		add_stability = 0.20
+	}
+	relative_position_id =  SAF_south_africa_is_white 
+	prerequisite = {focus = SAF_south_africa_is_white focus = SAF_south_africa_is_a_rainbow}
+}
+
+shared_focus = {
+	id = SAF_put_a_bandaid_over_it
+	icon = GFX_put_a_bandaid_over_it
+	cost = 2
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_put_a_bandaid_over_it"
+		add_political_power = 50
+		add_stability = 0.03
+	}
+	relative_position_id =  SAF_clean_up_durban 
+	prerequisite = {focus = SAF_clean_up_durban }
+	prerequisite = {focus = SAF_wipe_out_terrorists }
+	#prerequisite = {focus = SAF_rub_alcohol_on_the_wound }
+	mutually_exclusive = {focus = SAF_rub_alcohol_on_the_wound }
+}
+
+shared_focus = {
+	id = SAF_rub_alcohol_on_the_wound
+	icon = GFX_rub_alcohol_on_the_wound
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_rub_alcohol_on_the_wound"
+		#flavor
+		add_political_power = -100
+		add_stability = -0.10
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = SAF
+		}
+	}
+	relative_position_id =  SAF_clean_up_durban
+	prerequisite = {focus = SAF_clean_up_durban }
+	mutually_exclusive = {focus = SAF_put_a_bandaid_over_it }
+}
+
+shared_focus = {
+	id = SAF_misson_accomplished
+	icon = GFX_misson_accomplished
+	cost = 2
+	x = -5
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_misson_accomplished"
+		load_focus_tree = SAF_postwar
+		add_stability = 1
+	}
+	relative_position_id =  SAF_a_slow_integration_into_society
+	#prerequisite = {focus = SAF_a_slow_integration_into_society }
+	prerequisite = {focus = SAF_an_unique_cultural_identity }
+	prerequisite = {focus = SAF_rub_alcohol_on_the_wound focus = SAF_put_a_bandaid_over_it }
+}

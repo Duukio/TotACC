@@ -1,0 +1,33 @@
+state={
+id=603
+	
+	name="STATE_603"
+
+	manpower = 760000
+	
+	state_category = large_town
+
+	history={
+		owner = NOR
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 4
+			3022 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+		victory_points = {
+			3022 10
+		}
+		add_core_of = NOR
+	}
+
+	provinces={
+		21 107 115 3018 3022 3098 3183 6038 6041 6116 6118 6173 9069 9132 9139 11118 11173 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+			COM_Isolated_Revolution = {
+			picture = COM_Isolated_Revolution
+			allowed = {
+				tag = COM
+			}
+
+            available = {
+               	tag = COM
+            }
+
+            cancel = {
+              
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_cost = 0.2
+    		stability_factor = -0.2
+			hardline_socialism_drift  = -0.01
+		    available = { has_government = hardline_socialism }
+			}
+		}
+		    COM_Faith_in_Flames = {
+			picture = COM_Faith_in_Flames
+			allowed = {
+				tag = COM
+			}
+
+        	available = {
+				tag = COM
+			}
+			cancel = {
+
+			}
+
+			allowed_civil_war = {
+				always = no
+			}				
+			
+			modifier = {
+			monthly_soctrends_drift_DE_E2 = 0.01
+			stability_factor = -0.2
+			autocracy_drift  = 0.02
+			available = { has_government = hardline_socialism }
+			}
+		}
+	}
+}

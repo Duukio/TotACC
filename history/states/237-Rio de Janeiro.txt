@@ -1,0 +1,28 @@
+state={
+id=237
+	name="STATE_237"
+    buildings_max_level_factor = 1
+	state_category = megalopolis
+	
+	history={
+			victory_points = {
+			10980 50
+		}
+		owner = BRA
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 6
+			arms_factory = 3
+			dockyard = 2
+		}
+		add_core_of = BRA
+
+	}
+	provinces={
+		5172 8190 10980 
+	}
+	manpower=17264943
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

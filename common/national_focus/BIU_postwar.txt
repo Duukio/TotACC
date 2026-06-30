@@ -1,0 +1,309 @@
+
+shared_focus = {
+	id = BIU_the_final_redemption
+	icon = GFX_BIU_the_final_redemption
+	cost = 6
+	x = 3
+	y = 0
+	completion_reward = {
+		add_stability = 0.10
+		add_war_support = 0.10
+		hidden_effect = {
+			add_to_variable = { BIU.GDP = 250 }
+			add_to_variable = { BIU.REAL_GROWTH = 0.2 }
+		}
+		custom_effect_tooltip = "Adds 250 billion USD in GDP and 1% Real Growth"
+	}
+}
+
+shared_focus = {
+	id = BIU_raids_on_abuja
+	icon = GFX_BIU_raids_on_abuja
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		set_country_flag = BIU_raids
+		custom_effect_tooltip = "Enables decisions to raid and loot Abuja"
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_raids_on_abuja"
+	}
+	relative_position_id = BIU_the_final_redemption
+	prerequisite = { focus = BIU_the_final_redemption }
+}
+
+shared_focus = {
+	id = BIU_for_our_posterity
+	icon = GFX_BIU_for_our_posterity
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		add_ideas = BIU_igbo_favoritism
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_for_our_posterity"
+	}
+	relative_position_id = BIU_the_final_redemption
+	prerequisite = { focus = BIU_the_final_redemption }
+}
+
+shared_focus = {
+	id = BIU_the_savior_of_the_nation
+	icon = GFX_BIU_the_savior_of_the_nation
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		add_trait = {
+		     character = BIU_nnamdi_kanu
+		     ideology = lwnat
+		     trait = BIU_our_beloved_leader
+		}
+		country_event = {
+			id = BIA.18
+			days = 10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_the_savior_of_the_nation"
+	}
+	relative_position_id = BIU_the_final_redemption
+	prerequisite = { focus = BIU_the_final_redemption }
+}
+
+shared_focus = {
+	id = BIU_burn_our_promises
+	icon = GFX_BIU_burn_our_promises
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = BIA.19
+			days = 10
+		}
+		set_popularities = {
+			reformist_socialism = 80
+			socdem = 5
+			dissident_right = 5
+			revolutionary_right = 10
+		}
+		add_stability = 0.10
+		add_political_power = -125
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_burn_our_promises"
+	}
+	relative_position_id = BIU_the_final_redemption
+	prerequisite = { focus = BIU_the_final_redemption }
+}
+
+shared_focus = {
+	id = BIU_igbo_jewish_renaissance
+	icon = GFX_BIU_igbo_jewish_renaissance
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BIU_igbo_favoritism
+			add_idea = BIU_igbo_jewish_renaissance
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_igbo_jewish_renaissance"
+	}
+	relative_position_id = BIU_for_our_posterity
+	prerequisite = { focus = BIU_for_our_posterity }
+}
+
+shared_focus = {
+	id = BIU_celebrate_our_modern_age
+	icon = GFX_BIU_celebrate_our_modern_age
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = BIU_futurism
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_celebrate_our_modern_age"
+	}
+	relative_position_id = BIU_the_savior_of_the_nation
+	prerequisite = { focus = BIU_the_savior_of_the_nation }
+}
+
+shared_focus = {
+	id = BIU_forever_in_emergency
+	icon = GFX_BIU_forever_in_emergency
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		random_owned_state = {
+			add_building_construction = {
+			    type = arms_factory
+			    level = 2
+			    instant_build = yes
+			}
+		}
+		add_ideas = war_economy
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_forever_in_emergency"
+	}
+	relative_position_id = BIU_burn_our_promises
+	prerequisite = { focus = BIU_burn_our_promises }
+}
+
+shared_focus = {
+	id = BIU_national_salvation
+	icon = GFX_BIU_national_salvation
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BIU_igbo_jewish_renaissance
+			add_idea = BIU_totalitarian_culture
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_national_salvation"
+	}
+	relative_position_id = BIU_leave_nothing
+	prerequisite = { focus = BIU_leave_nothing }
+}
+
+shared_focus = {
+	id = BIU_cultural_salvation
+	icon = GFX_BIU_cultural_salvation
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = BIU_futurism
+			add_idea = BIU_new_hebrew_biafran_man
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_cultural_salvation"
+	}
+	relative_position_id = BIU_igbo_jewish_renaissance
+	prerequisite = { focus = BIU_igbo_jewish_renaissance }
+	prerequisite = { focus = BIU_celebrate_our_modern_age }
+}
+
+shared_focus = {
+	id = BIU_political_salvation
+	icon = GFX_BIU_political_salvation
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.25
+		add_war_support = 0.25
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_political_salvation"
+	}
+	relative_position_id = BIU_forever_in_emergency
+	prerequisite = { focus = BIU_forever_in_emergency }
+}
+
+shared_focus = {
+	id = BIU_enter_into_the_world
+	icon = GFX_BIU_enter_into_the_world
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_ideas = BIU_renewed_diplomacy
+		hidden_effect = {
+			add_to_variable = { BIU.GDP = 120 }
+			add_to_variable = { BIU.DEBT = 150 }
+		}
+		custom_effect_tooltip = "Adds 150 billion USD in debt from loans, but adds 120 billion USD in GDP as investments come in."
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_enter_into_the_world"
+	}
+	relative_position_id = BIU_national_salvation
+	prerequisite = { focus = BIU_national_salvation }
+	prerequisite = { focus = BIU_cultural_salvation }
+	prerequisite = { focus = BIU_political_salvation }
+}
+
+shared_focus = {
+	id = BIU_talks_with_japan
+	icon = GFX_BIU_talks_with_japan
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = BIA.10
+			days = 10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_talks_with_japan"
+	}
+	relative_position_id = BIU_enter_into_the_world
+	prerequisite = { focus = BIU_enter_into_the_world }
+}
+
+shared_focus = {
+	id = BIU_patriotic_socialism
+	icon = GFX_BIU_patriotic_socialism
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		add_ideas = BIU_patsoc
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_patriotic_socialism"
+	}
+	relative_position_id = BIU_talks_with_japan
+	prerequisite = { focus = BIU_talks_with_japan }
+}
+
+shared_focus = {
+	id = BIU_let_there_be_expats
+	icon = GFX_BIU_let_there_be_expats
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		add_ideas = BIU_japanese_expats
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_let_there_be_expats"
+	}
+	relative_position_id = BIU_talks_with_japan
+	prerequisite = { focus = BIU_talks_with_japan }
+}
+
+shared_focus = {
+	id = BIU_biafraland_lives
+	icon = GFX_BIU_biafraland_lives
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = BIA.21
+			days = 10
+		}		
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_biafraland_lives"
+	}
+	relative_position_id = BIU_patriotic_socialism
+	prerequisite = { focus = BIU_patriotic_socialism }
+	prerequisite = { focus = BIU_let_there_be_expats }
+}
+
+shared_focus = {
+	id = BIU_leave_nothing
+	icon = GFX_BIU_leave_nothing
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		set_country_flag = BIU_total_abuja_destruction
+		custom_effect_tooltip = "Enables decisions to completely destroy all remnants of Abuja."
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_leave_nothing"
+	}
+	relative_position_id = BIU_raids_on_abuja
+	prerequisite = { focus = BIU_raids_on_abuja }
+}
+
+shared_focus = {
+	id = BIU_the_lagos_dream
+	icon = GFX_BIU_the_lagos_dream
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		set_country_flag = operation_lake
+		custom_effect_tooltip = "Enables decisions for Operation 'Lake', an incursion into Lagos to seize it from whatever warlord owns it..."
+		log = "[GetDateText]: [Root.GetName]: Focus BIU_the_lagos_dream"
+	}
+	relative_position_id = BIU_biafraland_lives
+	prerequisite = { focus = BIU_biafraland_lives }
+}

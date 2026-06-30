@@ -1,0 +1,33 @@
+scripted_gui = {
+
+	TOTA_patchworker_open = {
+		context_type = player_context
+		window_name = "TOTA_patchworker_open"
+        parent_window_token = politics_tab
+
+		visible = {
+			tag = CAL
+			has_country_flag = CAL_patchworker_basic_edition #only california
+		}
+
+		triggers = {
+		}
+
+		properties = {
+		}
+
+		effects = {
+			TOTA_patchworker_button_click = {
+				if = {
+					limit = {
+						has_country_flag = patchworker_open
+					}
+					clr_country_flag = patchworker_open
+				}
+				else = {
+					set_country_flag = patchworker_open
+				}
+			}
+		}
+	}
+}

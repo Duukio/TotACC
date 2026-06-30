@@ -1,0 +1,671 @@
+characters = {
+	ISP_ehud_barak = {
+		name = "Ehud Barak"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/ISP/Ehud_Barak.png"
+				}
+		}
+		country_leader = {
+				desc = POLITICS_EHUD_BARAK_DESC
+				ideology = sovmarsys
+		}
+	}
+	ISP_gabi_ashkenazi = {
+		name = "Gabi Ashkenazi"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/ISP/portrait_gabi_ashkenazi.png"
+				}
+		}
+		#country_leader = {
+		#		desc = ISP_gabi_ashkenazi_desc
+		#		ideology = sovmarsys
+		#}
+	}
+	ISP_haim_ramon = {
+		name = "Haim Ramon"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/ISP/portrait_haim_ramon.png"
+						small = "gfx/interface/ideas/ISP/Ramon_Reformist_Shalom_Simhon_Minister.png"
+				}
+		}
+		advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = shalomsimhonreformcab
+			}
+			idea_token = ISP_haim_ramon_idea
+			traits = {
+			    head_of_government
+			    hog_party_elder
+				socdem_minister
+			}
+			#country_leader = {
+			#		desc = ISP_haim_ramon_desc
+			#		ideology = thway
+			#}
+		}
+	}
+	ISP_shalom_simhon = {
+		name = "Shalom Simhon"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/ISP/portrait_shalom_simhon.png"
+						small = "gfx/ideas/ISP/Ramon_Reformist_Shalom_Simhon_Minister.png"
+				}
+		}
+		#country_leader = {
+		#		desc = ISP_shalom_simhon_desc
+		#		ideology = soctechno
+		#}
+		advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = ramonreformistcab
+			}
+			idea_token = ISP_shalomsimhon_idea
+			traits = {
+			    economy_minister
+			    eco_administrative_genius
+				technocracy_minister
+			}
+		}
+	}
+	ISP_efraim_sneh = {
+		name = "Efraim Sneh"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/ISP/portrait_efraim_sneh.png"
+				}
+			army = {
+				large = "gfx/leaders/ISP/Efraim Sneh.png"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard politically_connected organizer }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+		#country_leader = {
+		#		desc = ISP_efraim_sneh_desc
+		#		ideology = lwnat
+		#}
+	}
+	ISP_omer_bar_lev = {
+		name = "Omer Bar-Lev"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/ISP/portrait_omer_bar_lev.png"
+				}
+		}
+		#country_leader = {
+		#		desc = ISP_omer_bar_lev_desc
+		#		ideology = lwnat
+		#}
+	}
+	ISP_dov_khenin = {
+		name = "Dov Khenin"
+		portraits = {
+				civilian = {
+						large = "gfx/leaders/ISP/portrait_dov_khenin.png"
+				}
+		}
+		#country_leader = {
+		#		desc = ISP_dov_khenin_desc
+		#		ideology = lwnat
+		#}
+	}
+	#generals
+	ISP_moshe_yaalon = {
+		name = "Moshe Ya'alon"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISP/Moshe Bogie Ya alon.png"
+			}
+		}
+		field_marshal = {
+			traits = { thorough_planner harsh_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	ISP_yehuda_fox = {
+		name = "Yehuda Fox"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISP/Yehuda Fox.png"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	ISP_amir_baram = {
+		name = "Amir Baram"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISP/Amir Baram.png"
+			}
+		}
+		field_marshal = {
+			traits = { career_officer organisational_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	ISP_rafi_milo = {
+		name = "Rafi Milo"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISP/Rafi Milo.png"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist trait_reckless commando trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	ISP_yair_natnas = {
+		name = "Yair Natnas"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISP/Yair Natnas.png"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery organizer brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	ISP_david_bar_klifa = {
+		name = "David Bar Klifa"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISP/David Bar Klifa.png"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	ISP_dan_noyman = {
+		name = "Dan Noyman"
+		portraits = {
+			army = {
+				large = "gfx/leaders/ISP/Dan Noyman.png"
+			}
+		}
+		corps_commander = {
+			traits = { organizer armor_officer panzer_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#BARAK CABINET
+	ISP_avrahamburg = {
+			name = "Avraham \"Avrum\" Burg"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Barak_Starting_Abraham_Avrum_Burg_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = barakcab
+			}
+			idea_token = ISP_avrahamburg_idea
+			traits = {
+			    head_of_government
+			    incompetent_politician
+				socdem_minister
+			}
+		}
+	}
+	ISP_matanvilnai = {
+			name = "Matan Vilnai"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Barak_Starting_Matan_Vilnai_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = barakcab
+			}
+			idea_token = ISP_matanvilnai_idea
+			traits = {
+			    foreign_minister
+			    for_great_compromiser
+				reformist_socialism_minister
+			}
+		}
+	}
+	ISP_uzibaram = {
+			name = "Uzi Baram"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Barak_Starting_Uzi_Baram_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = barakcab
+			}
+			idea_token = ISP_uzibaram_idea
+			traits = {
+			    economy_minister
+			    eco_mixed_economy
+				reformist_socialism_minister
+			}
+		}
+	}
+	ISP_bennygantz = {
+			name = "Benny Gantz"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Benny Gantz.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				OR = {
+				has_country_flag = barakcab
+				has_country_flag = snehcab
+				}
+			}
+			idea_token = ISP_bennygantz_idea
+			traits = {
+			    security_minister
+			    sec_compassionate_gentleman
+				reformist_socialism_minister
+			}
+		}
+	}
+	#shalomsimhonreform
+	ISP_eitanginzburg = {
+			name = "Eitan Ginzburg"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Simhon_Reformist_Eitan_Ginzburg_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				OR = {
+				has_country_flag = shalomsimhonreformcab
+				has_country_flag = ramonreformistcab
+				has_country_flag = ramonpostdem_cab
+				}
+			}
+			idea_token = ISP_eitanginzburg_idea
+			traits = {
+			    foreign_minister
+			    for_great_compromiser
+				socdem_minister
+			}
+		}
+	}
+	ISP_naorshiri = {
+			name = "Naor Shiri"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Simhon_Reformist_Naor_Shiri_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = shalomsimhonreformcab
+			}
+			idea_token = ISP_naorshiri_idea
+			traits = {
+			    economy_minister
+			    eco_administrative_genius
+				technocracy_minister
+			}
+		}
+		advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = ramonreformistcab
+			}
+			idea_token = ISP_naorshiri_idea_hog_ramon
+			traits = {
+			    head_of_government
+			    hog_political_protege
+				technocracy_minister
+			}
+		}
+	}
+	ISP_naorshiri_2 = { #fak u pdx
+			name = "Naor Shiri"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Simhon_Reformist_Naor_Shiri_Minister.png" } 
+			}
+		advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = shalomsimhonautocab
+			}
+			idea_token = ISP_naorshiri_idea_hog
+			traits = {
+			    head_of_government
+			    hog_political_protege
+				autocracy_minister
+			}
+		}
+	}
+	ISP_amosyadlin = {
+			name = "Amos Yadlin"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Ramon_Reformist_Amos_Yadlin_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				OR = {
+				has_country_flag = shalomsimhonreformcab
+				has_country_flag = shalomsimhonautocab
+				has_country_flag = ramonreformistcab
+				has_country_flag = ramonpostdem_cab
+				}
+			}
+			idea_token = ISP_amosyadlin_idea
+			traits = {
+			    security_minister
+			    sec_compassionate_gentleman
+				socdem_minister
+			}
+		}
+	}
+	ISP_oritnoked = {
+			name = "Orit Noked"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Simhon_Autocratic_Orit_Noked_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = shalomsimhonautocab
+			}
+			idea_token = ISP_oritnoked_idea
+			traits = {
+			    foreign_minister
+			    for_apologetic_clerk
+				autocracy_minister
+			}
+		}
+	}
+	ISP_yorailahavhertzanu = {
+			name = "Yorai Lahav-Hertzanu"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Ramon_Post_Dem_Yorai_Lahav-Hertzanu_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = ramonpostdem_cab
+			}
+			idea_token = ISP_yorailahavhertzanu_idea
+			traits = {
+			    head_of_government
+			    hog_flamboyant_tough_guy
+				liberalism_minister
+			}
+		}
+	}
+	ISP_manuel_trajtenberg = {
+			name = "Manuel Trajtenberg"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Ramon_Post_Dem_Manuel_Trajtenberg_Minister.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = ramonpostdem_cab
+			}
+			idea_token = ISP_manuel_trajtenberg_idea
+			traits = {
+			    economy_minister
+			    eco_laissez_faire_capitalist
+				liberalism_minister
+			}
+		}
+	}
+	#CANAANITE AND SNEH CABINETS
+	ISP_mordechai_bibi = {
+			name = "Mordechai Bibi"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Mordechai Bibi.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = snehcab
+			}
+			idea_token = ISP_mordechai_bibi_idea
+			traits = {
+			    head_of_government
+			    hog_silent_workhorse
+				reformist_socialism_minister
+			}
+		}
+	}
+	ISP_avigdor_liberman = {
+			name = "Avigdor Liberman"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Avigdor Liberman.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = snehcab
+			}
+			idea_token = ISP_avigdor_liberman_idea
+			traits = {
+			    foreign_minister
+			    for_iron_fisted_brute
+				hardline_socialism_minister
+			}
+		}
+	}	
+	ISP_haim_katz = {
+			name = "Haim Katz"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Haim Katz.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = snehcab
+			}
+			idea_token = ISP_haim_katz_idea
+			traits = {
+			    economy_minister
+			    eco_corrupt_kleptocrat
+				hardline_socialism_minister
+			}
+		}
+	}	
+	ISP_Sami_Abu_Shehadeh = {
+			name = "Sami Abu Shehadeh"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Sami Abu Shehadeh.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = CANAANCAB
+			}
+			idea_token = ISP_Sami_Abu_Shehadeh_idea
+			traits = {
+			    head_of_government
+			    hog_backroom_backstabber
+				revolutionary_right_minister
+			}
+		}
+	}	
+	ISP_jamal_zahalka = {
+			name = "Jamal Zahalka"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Jamal Zahalka.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = CANAANCAB
+			}
+			idea_token = ISP_jamal_zahalka_idea
+			traits = {
+			    foreign_minister
+			    for_iron_fisted_brute
+				revolutionary_right_minister
+			}
+		}
+	}
+	ISP_saadia_marciano = {
+			name = "Saadia Marciano"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Saadia Marciano.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = CANAANCAB
+			}
+			idea_token = ISP_saadia_marciano_idea
+			traits = {
+			    economy_minister
+			    eco_mixed_economy
+				reformist_socialism_minister
+			}
+		}
+	}
+	ISP_ami_ayalon = {
+			name = "Ami Ayalon"
+			portraits = {
+				civilian = { small = "gfx/interface/ideas/ISP/Ami Ayalon.png" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = ISP
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = CANAANCAB
+			}
+			idea_token = ISP_ami_ayalon_idea
+			traits = {
+			    security_minister
+			    sec_secret_police_chief
+				reformist_socialism_minister
+			}
+		}
+	}
+}

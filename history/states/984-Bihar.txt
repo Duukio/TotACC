@@ -1,0 +1,24 @@
+state={
+    id=984
+        name="STATE_984"
+        state_category = large_town
+        
+    
+        history={
+            owner = ROM
+            victory_points = { 3696 10 }
+            buildings = {
+                school = 2
+                infrastructure = 3
+                arms_factory = 2
+            }
+            add_core_of = ROM
+        }
+        provinces={
+            713 746 3709 3696
+        }
+        manpower=600000
+        buildings_max_level_factor=2.000
+        local_supplies=0
+    }
+    

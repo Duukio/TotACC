@@ -1,0 +1,31 @@
+
+state={
+	id=1095
+	name="STATE_1095"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			12844 4 #Mithi
+		}
+		buildings = {
+			school = 1
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		12844 7998 12041 12876 12718 10866 10847
+	}
+	manpower=2064602
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

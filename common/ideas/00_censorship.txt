@@ -1,0 +1,91 @@
+ideas = {
+    censorship = {
+		law = yes
+        free_speech = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.05
+				gdp_growth_modifier = 0.025
+				stability_factor = -0.15
+				war_support_factor = -0.25
+				drift_defence_factor = -0.03
+				political_power_gain = -0.02
+				monthly_soctrends_drift_DE_D = 0.025
+				monthly_soctrends_drift_DC_D = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		monitored_speech = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.03
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				political_power_gain = 0.01
+				drift_defence_factor = 0.025
+				monthly_soctrends_drift_DE_D = -0.01
+			}
+            default = yes
+			cancel_if_invalid = no
+		}
+		regulated_speech = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.015
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				drift_defence_factor = 0.03
+				monthly_soctrends_drift_DE_D = -0.02
+				monthly_soctrends_drift_DC_C = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		restricted_speech = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.01
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				drift_defence_factor = 0.05
+				monthly_soctrends_drift_DE_D = -0.035
+				monthly_soctrends_drift_DC_C = 0.015
+			}
+			cancel_if_invalid = no
+		}
+		total_state_purview = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = 0.08
+				war_support_factor = 0.1
+				political_power_gain = 0.1
+				drift_defence_factor = 0.1
+				monthly_soctrends_drift_DE_D = -0.04
+				monthly_soctrends_drift_DC_C = 0.02
+			}
+			cancel_if_invalid = no
+		}
+    }
+}

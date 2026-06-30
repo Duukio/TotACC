@@ -1,0 +1,44 @@
+state={
+id=429
+	
+
+	name="STATE_429"
+
+	manpower = 6788200
+	
+	state_category = metropolis
+	
+	resources={
+		steel=120
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			9379 25 
+		}
+		victory_points = {
+			11297 10 
+		}
+		victory_points = {
+			9315 30
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 5
+			air_base = 10
+			11297 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = ENG
+	}
+
+	provinces={
+		6268 9269 9315 9332 9379 9397 11297 11317 11382 
+	}
+
+	local_supplies=0.0 
+}

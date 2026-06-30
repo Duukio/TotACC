@@ -1,0 +1,44 @@
+state={
+id=728
+	
+	name="STATE_728"
+
+	manpower = 4730003
+	
+	state_category = megalopolis
+
+	history={
+		owner = CAL
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 5
+			dockyard = 8
+			air_base = 5
+			1562 = {
+				naval_base = 10
+			}
+			9671 = {
+				naval_base = 4
+			}
+			9814 = {
+				naval_base = 5
+			}
+			610 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CAL
+		add_core_of = USA
+		victory_points = {
+			9671 80
+		}
+	}
+
+	provinces={
+		 3678 6699 9671 3677
+	}
+
+	local_supplies=2.0 
+}

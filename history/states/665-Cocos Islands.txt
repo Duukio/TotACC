@@ -1,0 +1,26 @@
+state={
+id=665
+	name="STATE_665"
+    buildings_max_level_factor = 1
+	manpower=554	
+	
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = AST
+		buildings = {
+            school = 2
+			infrastructure = 2
+			13002 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13002 
+	}
+
+	local_supplies=0.0 
+}

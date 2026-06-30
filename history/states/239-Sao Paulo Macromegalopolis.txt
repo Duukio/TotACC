@@ -1,0 +1,40 @@
+state={
+id=239
+	name="STATE_239"
+	state_category = megalopolis
+	
+	resources = {
+	steel = 150
+	oil = 50
+	}
+	history={
+			victory_points = {
+			10513 50
+		}
+			victory_points = {
+			5112 20
+		}
+			victory_points = {
+			10432 10
+		}
+		owner = BRA
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 14
+			arms_factory = 10
+			dockyard = 12
+			5112 = {
+			naval_base = 10
+			}
+		}
+		add_core_of = BRA
+
+	}
+	provinces={
+		5112 10432 10513 
+	}
+	manpower=34000000
+	buildings_max_level_factor=3.000
+	local_supplies=0.000
+}

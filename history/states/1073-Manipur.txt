@@ -1,0 +1,24 @@
+state={
+	id=1073
+	name="STATE_1073"
+    buildings_max_level_factor = 1
+	provinces={
+		1581 
+	}
+	manpower=2855794
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = NEA
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			1581 2
+		}
+		add_core_of = MNI
+	}
+}

@@ -1,0 +1,40 @@
+state={
+id=585
+	
+	name="STATE_585" # Jalisco
+
+	manpower = 10000000
+	
+	state_category = metropolis
+	
+	resources={
+		tungsten=24 # was: 10
+	}
+
+	history={
+		owner = MEX
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = MEX
+		victory_points = {
+			13089 25
+		}
+		victory_points = {
+			10172 20
+		}
+		victory_points = {
+			12746 5
+		}
+
+	}
+
+	provinces={
+		2051 5052 10172 12746 12873 13089 
+	}
+	
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,33 @@
+state={
+id=93
+	name="STATE_93"
+    buildings_max_level_factor = 1
+	state_category = large_city
+	
+	resources = {
+		oil = 400
+	}
+	history={
+		victory_points = { 11954 20 }
+		owner = TRP
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 3
+			11954 = {
+				naval_base = 2
+			}
+			arms_factory = 5
+			industrial_complex = 5
+
+		}
+		add_core_of = TRP
+
+	}
+	provinces={
+		1127 1198 4057 8069 1060 1062 1130 1186 1204 4060 4063 4120 4136 4151 4962 7063 7082 7139 7206 9992 10049 10120 10123 11954 12025 12079 12094 13078 
+	}
+	manpower=1613749
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

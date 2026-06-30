@@ -1,0 +1,29 @@
+
+state={
+	id=971
+	name="STATE_971"
+    buildings_max_level_factor = 1
+	resources = {
+	}
+	provinces={
+		12167 4596 
+	}
+	manpower=350000 #added a few more thousand to represent Kampuchea forces
+	buildings_max_level_factor=2.000
+	local_supplies=1
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = KMP
+		buildings = {
+			school = 1
+			infrastructure = 2
+			#industrial_complex = 1
+			#arms_factory = 1
+		}
+		victory_points = {
+			4596 2
+		}
+		add_core_of = KMP
+	}
+}

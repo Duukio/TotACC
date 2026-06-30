@@ -1,0 +1,159 @@
+
+ideas = {
+	country = {
+			LKT_prairie_troubles = {
+			picture = LKT_prairie_troubles
+			allowed = {
+				tag = LKT
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.3
+				weekly_manpower = 250
+				army_defence_factor = 0.07
+				army_morale_factor = 0.07
+				army_org_regain = 0.06
+			}
+		}
+		    LKT_unpopular_government = {
+			picture = LKT_unpopular_government
+			allowed = {
+				tag = LKT
+			}
+	
+			available = {
+	
+			}
+	
+			cancel = {
+	
+			}
+	
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = -0.10
+				stability_weekly_factor = -0.15
+				party_popularity_stability_factor = -0.05
+			}
+		}
+			LKT_legacy_of_dawes = {
+			picture = LKT_legacy_of_dawes
+			allowed = {
+				tag = LKT
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = -0.25
+				revolutionary_right_drift = 0.01
+				hardline_socialism_drift = 0.05
+				reformist_socialism_drift = 0.07
+				socdem_drift = 0.05
+			}
+		}
+			LKT_foreign_backing = {
+			picture = LKT_foreign_backing
+			allowed = {
+				tag = LKT
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+			}
+			targeted_modifier = {
+                tag = PRC
+                extra_trade_to_target_factor = 0.50
+            }
+			targeted_modifier = {
+                tag = DDR
+                extra_trade_to_target_factor = 0.50
+            }
+		}
+			LKT_next_stop_boise = {
+			picture = LKT_next_stop_boise
+			allowed = {
+			tag = LKT
+			}
+
+           	available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+                tag = NWF
+                attack_bonus_against = 0.1
+            }
+		}
+			LKT_next_stop_boise_2 = {
+			picture = LKT_next_stop_boise
+			allowed = {
+			tag = LKT
+			}
+
+           	available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				weekly_manpower = 500
+			}
+			targeted_modifier = {
+                tag = NWF
+                attack_bonus_against = 0.1
+            }
+		}
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=1317
+	name="STATE_1317"
+		resources={
+		oil=50
+	}
+	provinces={
+		1947 8020 14093 14095 14099 
+	}
+	manpower=315460
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=town
+	history={
+		owner = OMA
+		add_core_of = OMA
+		buildings = {
+			school = 2
+			infrastructure = 2
+		}
+		victory_points = {
+			14099 3
+		}
+	}
+}

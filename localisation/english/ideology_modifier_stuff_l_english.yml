@@ -1,0 +1,28 @@
+﻿l_english:
+liberalism_drift:0 "Daily Liberal Support"
+socdem_drift:0 "Daily Social Democratic Support"
+conservatism_drift:0 "Daily Conservative Drift"
+autocracy_drift:0 "Daily Autocracy Drift"
+anarchism_drift:0 "Daily Anarchist Drift"
+technocracy_drift:0 "Daily Technocracy Drift"
+dissident_right_drift:0 "Daily Dissident Right Drift"
+revolutionary_right_drift:0 "Daily Revolutionary Right Drift"
+hardline_socialism_drift:0 "Daily Hardline Socialism Drift"
+reformist_socialism_drift:0 "Daily Neo-Socialism Drift"
+
+liberalism_acceptance:0 "Acceptance of Liberal Support"
+socdem_acceptance:0 "Acceptance of Social Democratic Support"
+conservatism_acceptance:0 "Acceptance of Conservative diplomacy"
+autocracy_acceptance:0 "Acceptance of Autocracy diplomacy"
+anarchism_acceptance:0 "Acceptance of Anarchist diplomacy"
+technocracy_acceptance:0 "Acceptance of Technocracy diplomacy"
+dissident_right_acceptance:0 "Acceptance of Dissident Right diplomacy"
+revolutionary_right_acceptance:0 "Acceptance of Revolutionary Right diplomacy"
+hardline_socialism_acceptance:0 "Acceptance of Hardline Socialism diplomacy"
+reformist_socialism_acceptance:0 "Acceptance of Neo-Socialism diplomacy"
+
+modifier_production_speed_school_factor: "School Construction Speed"
+ 
+SOCTRENDS_TOOLTIP_TOPBAR:0 "§YSocial Trends§!\n\nLook into your nation's social trends here."
+
+ECON_TOOLTIP_TOPBAR:0 "§YEconomy§!\n\nManage your economy, purchase supplies and watch out for debt here."

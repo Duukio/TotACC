@@ -1,0 +1,219 @@
+
+shared_focus = {
+	id = ISP_70_years_of_mapam_rule
+	icon = GFX_70_years_of_mapam_rule
+	cost = 2
+	x = 3
+	y = 0
+	completion_reward = {
+		add_stability = 0.1
+		hidden_effect = {
+			country_event = {
+				id = ISP.2
+				days = 98
+			}
+		}
+		#history event goes here
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_70_years_of_mapam_rule"
+	}
+}
+
+shared_focus = {
+	id = ISP_a_brand_new_year
+	icon = GFX_a_brand_new_year
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = 50
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_brand_new_year"
+	}
+	relative_position_id = ISP_70_years_of_mapam_rule
+	prerequisite = { focus = ISP_70_years_of_mapam_rule }
+}
+
+shared_focus = {
+	id = ISP_14th_five_year_plan__year_2
+	icon = GFX_14th_five_year_plan__year_2
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+	
+		add_political_power = 25
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_14th_five_year_plan__year_2"
+	}
+	relative_position_id = ISP_a_brand_new_year
+	prerequisite = { focus = ISP_a_brand_new_year }
+}
+
+shared_focus = {
+	id = ISP_delegation_to_moscow
+	icon = GFX_delegation_to_moscow
+	cost = 4
+	x = -3
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+		    target = SOV
+		    modifier = huge_increase
+		}
+		SOV = {
+			add_opinion_modifier = {
+			    target = ISP
+			    modifier = huge_increase
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_delegation_to_moscow"
+	}
+	relative_position_id = ISP_a_brand_new_year
+	prerequisite = { focus = ISP_a_brand_new_year }
+}
+
+shared_focus = {
+	id = ISP_maintaining_the_national_front
+	icon = GFX_maintaining_the_national_front
+	cost = 4
+	x = 3
+	y = 1
+	completion_reward = {
+		add_stability = 0.02
+		add_political_power = -25
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_maintaining_the_national_front"
+	}
+	relative_position_id = ISP_a_brand_new_year
+	prerequisite = { focus = ISP_a_brand_new_year }
+}
+
+shared_focus = {
+	id = ISP_for_a_lasting_peoples_friendship
+	icon = GFX_for_a_lasting_peoples_friendship
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		add_opinion_modifier = {
+			target = POL
+			modifier = huge_increase
+		}
+		POL = {
+			add_opinion_modifier = {
+				target = ISP
+				modifier = huge_increase
+			}
+		}
+		add_opinion_modifier = {
+			target = DDR
+			modifier = huge_increase
+		}
+		DDR = {
+			add_opinion_modifier = {
+				target = ISP
+				modifier = huge_increase
+				}
+		}
+		add_opinion_modifier = {
+			target = CZE
+			modifier = huge_increase
+		}
+		CZE = {
+			add_opinion_modifier = {
+				target = ISP 
+				modifier = huge_increase
+				}
+		}
+		add_opinion_modifier = {
+			target = HUN
+			modifier = huge_increase
+		}
+		HUN = {
+			add_opinion_modifier = {
+				target = ISP
+				modifier = huge_increase
+				}
+		}
+		add_opinion_modifier = {
+			target = BUL
+			modifier = huge_increase
+		}
+		BUL = {
+			add_opinion_modifier = {
+				target = ISP
+				modifier = huge_increase
+				}
+		}
+		add_opinion_modifier = {
+			target = IRN
+			modifier = huge_increase
+		}
+		IRN = {
+			add_opinion_modifier = {
+			target = ISP
+			modifier = huge_increase
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_for_a_lasting_peoples_friendship"
+	}
+	relative_position_id = ISP_delegation_to_moscow
+	prerequisite = { focus = ISP_delegation_to_moscow }
+}
+
+shared_focus = {
+	id = ISP_balancing_the_budget
+	icon = GFX_balancing_the_budget
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+		id = ISP.18
+		days = 0
+
+	}
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_balancing_the_budget"
+	}
+	relative_position_id = ISP_14th_five_year_plan__year_2
+	prerequisite = { focus = ISP_14th_five_year_plan__year_2 }
+}
+
+shared_focus = {
+	id = ISP_reassure_the_military
+	icon = GFX_reassure_the_national_front
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+	country_event = {
+		id = ISP.19
+		days = 0
+	}
+		add_war_support = 0.02
+		#le event goes here
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_reassure_the_military"
+		add_stability = 0.02
+	}
+	relative_position_id = ISP_maintaining_the_national_front
+	prerequisite = { focus = ISP_maintaining_the_national_front }
+}
+
+shared_focus = {
+	id = ISP_all_is_good_in_the_land_of_zion
+	icon = GFX_all_is_good_in_the_land_of_zion
+	cost = 10
+	x = 3
+	y = 1
+	available = {
+	always = no
+	}
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus ISP_all_is_good_in_the_land_of_zion"
+		add_political_power = 100
+		custom_effect_tooltip = "The future seems bright for the Hebrew Republic of Labor, for now..."
+	}
+	relative_position_id = ISP_for_a_lasting_peoples_friendship
+	prerequisite = { focus = ISP_for_a_lasting_peoples_friendship }
+	prerequisite = { focus = ISP_balancing_the_budget }
+	prerequisite = { focus = ISP_reassure_the_military }
+}

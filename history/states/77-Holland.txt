@@ -1,0 +1,36 @@
+state={
+id=77
+	name="STATE_77"
+    buildings_max_level_factor = 1
+	state_category = megalopolis
+	
+	history={
+		owner = HOL
+		victory_points = {
+			3211 30
+		}
+		victory_points = {
+			391 50
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 4
+			industrial_complex = 3
+			dockyard = 3
+			air_base = 5
+			3314 = {
+				naval_base = 5
+
+			}
+		}
+		add_core_of = HOL
+
+	}
+	provinces={
+		68 391 3211 3314 
+	}
+	manpower=8000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

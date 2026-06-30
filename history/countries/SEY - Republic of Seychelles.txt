@@ -1,0 +1,213 @@
+﻿capital = 662
+
+oob = "SEY_2021"
+add_manpower = 20000
+set_country_flag = is_smol_country
+set_variable = { GDP = 10 } set_variable = { DEBT = 2 } set_variable = { REAL_GROWTH = 4 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+set_research_slots = 3
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	anti_tank_equipment = 1
+	motorized_equipment = 1
+	mechanized_equipment = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	#mechanised_infantry = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+#
+
+set_variable = {
+var = SOCTRENDS_DC
+value = 70
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 45
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 30
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 70
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 20
+}
+tota_variable_clamping = yes
+set_convoys = 1000
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 16
+        revolutionary_right = 1
+        dissident_right = 10
+        liberalism = 15
+        hardline_socialism = 10
+        autocracy = 34
+        reformist_socialism = 10
+        socdem = 4
+        technocracy = 0
+
+}
+set_variable = { BARLOW_DRIFT = 40 }
+set_variable = { PRINCE_DRIFT = 25 }
+set_variable = { SPICER_DRIFT = 40 }
+set_variable = { VIKTOR_DRIFT = 40 }
+
+set_variable = { sey_dealer = USA }
+set_country_flag = SEY_succession_flag
+add_ideas = {
+SEY_merc_capital
+SEY_men_who_sell_world
+}
+#set_power_balance = {
+#	id = SEY_mercs_civs_balance
+#}
+set_politics = {
+	
+	ruling_party = autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+recruit_character = Tullio_Moneta #failsafe
+add_country_leader_role = {
+    character = Tullio_Moneta
+    promote_leader = yes
+    country_leader = {
+        ideology = milgov
+        expire = "2040.1.1.1"
+        traits = { }
+    }
+}
+set_country_flag = SEY_buy_gunz
+set_country_flag = Moneta_Cabinet
+recruit_character = Eeben_Barlow
+recruit_character = Viktor_Bout
+recruit_character = Tim_Spicer
+recruit_character = Erik_Prince
+recruit_character = Yevgeny_Prigozhin
+recruit_character = Simon_Mann
+recruit_character = Neall_Ellis
+activate_advisor = 	SEY_eeben_barlow
+activate_advisor = 	SEY_viktor_bout
+activate_advisor = 	SEY_simon_mann
+activate_advisor = 	SEY_neall_ellis
+recruit_character = James_Michel
+recruit_character = Caroline_Abel
+recruit_character = Andrei_Troshev
+recruit_character = Leonid_Minin
+recruit_character = Wavel_Ramkalawan
+recruit_character = Satya_Naidu
+recruit_character = Mark_Thatcher
+recruit_character = Douglas_Carswell
+recruit_character = Jonathan_Garratt
+recruit_character = Morgan_Ortagus
+recruit_character = Jason_DeYonker
+recruit_character = Craig_Williamson
+
+
+#create_country_leader = {
+#	name = "Tullio Moneta"
+#	desc = "POLITICS_TULLIO_MONETA_DESC"
+#	picture = "gfx/leaders/SEY/Tullio Moneta.dds"
+#	expire = "2040.1.1"
+#	ideology = milgov
+#	traits = {
+#	}
+#}
+#create_country_leader = {
+#	name = "Tim Spicer"
+#	desc = "POLITICS_SPICER_DESC"
+#	picture = "gfx/leaders/SEY/Tim Spicer.dds"
+#	expire = "2040.1.1"
+#	ideology = manbur
+#	traits = {
+#	}
+#}
+#create_country_leader = {
+#	name = "Viktor Bout"
+#	desc = "POLITICS_VIKTOR_BOUT_DESC"
+#	picture = "gfx/leaders/SEY/Viktor Bout.dds"
+#	expire = "2040.1.1"
+#	ideology = sovmarsys
+#	traits = {
+#	}
+#}

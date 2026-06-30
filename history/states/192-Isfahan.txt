@@ -1,0 +1,29 @@
+state={
+id=192
+	name="STATE_192"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {
+	oil = 600
+	}
+	history={
+		owner = IRN
+		victory_points = {
+			4928 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 2
+		}
+		add_core_of = IRN
+
+	}
+	provinces={
+		1889 1963 2026 4928 4959 4966 4983 5089 7982 8074 8117 10797 10881 12832 
+	}
+	manpower=12973089
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

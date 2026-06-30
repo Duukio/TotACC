@@ -1,0 +1,29 @@
+
+state={
+	id=1155
+	name="STATE_1155"
+    buildings_max_level_factor = 1
+	resources={
+		oil=50.000
+	}
+	provinces={
+		1651 4657 4727 10387 12303 
+	}
+	manpower=8575003
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = CAL
+		buildings = {
+			school = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			10387 4
+		}
+		add_core_of = CAL
+		add_core_of = USA
+	}
+}

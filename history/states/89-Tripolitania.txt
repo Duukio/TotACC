@@ -1,0 +1,26 @@
+state={
+id=89
+	name="STATE_89"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = TRP
+		victory_points = {
+			4051 5
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = TRP
+
+	}
+	provinces={
+		1118 1174 4051 4117 4176 7066 7154 10037 10067 11940 12009 
+	}
+	manpower=300000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

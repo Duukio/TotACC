@@ -1,0 +1,25 @@
+
+state={
+	id=948
+	name="STATE_948"
+    buildings_max_level_factor = 1
+	provinces={
+		893 3937 6923 6982 11813 
+	}
+	manpower=815039
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = BUL
+		buildings = {
+			school = 2
+			infrastructure = 4
+		}
+		victory_points = {
+			6923 10
+		}
+		add_core_of = BUL
+	}
+}

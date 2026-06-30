@@ -1,0 +1,43 @@
+state={
+    id=972
+        
+    
+        name="STATE_972"
+    
+        manpower = 3784490
+        
+        state_category = metropolis
+        resources={
+            oil=350
+        }
+    
+        history={
+            owner = UAE
+            buildings = {
+                school = 2
+                infrastructure = 5
+                arms_factory = 5
+                industrial_complex = 5
+                13916 = {
+                    naval_base = 9
+                }
+            }
+            victory_points = {
+                13916 30 #abu dhabi
+            }
+            victory_points = {
+                13914 10 #Al Ain
+            }
+            victory_points = {
+                8108 3 #Madinat Zayed
+            }
+            add_core_of = UAE
+			add_core_of = PGR
+        }
+    
+        provinces={
+        13916 2048 8108 13915 13914 13917
+        }
+    
+        local_supplies=0.0 
+    }

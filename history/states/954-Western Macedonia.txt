@@ -1,0 +1,25 @@
+
+state={
+	id=954
+	name="STATE_954"
+    buildings_max_level_factor = 1
+	provinces={
+		841 966 3980 9837 
+	}
+	manpower=283689
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = GRE
+		buildings = {
+			school = 2
+			infrastructure = 4
+		}
+		victory_points = {
+			966 10
+		}
+		add_core_of = GRE
+	}
+}

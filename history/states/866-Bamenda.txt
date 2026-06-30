@@ -1,0 +1,25 @@
+state={
+id=866
+	name="STATE_866"
+    buildings_max_level_factor = 1
+	state_category = large_town
+	
+	history={
+		owner = PRA
+		victory_points = { 13747 5 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = AMB
+		add_core_of = PRA
+		add_core_of = CAM
+	}
+	provinces={
+		13747 13748 13749 13746 13743 13744
+	}
+	manpower=1906000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

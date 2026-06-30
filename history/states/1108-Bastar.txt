@@ -1,0 +1,29 @@
+state={
+	id=1108
+	name="STATE_1108" #Bastar
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			1622 3 
+		}	
+		buildings = {
+			school = 1
+			infrastructure = 2
+			arms_factory = 1
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		10171 4557 12490 1622 7465 7428
+	}
+	manpower=1000000
+	buildings_max_level_factor=2.000
+	state_category=town
+	local_supplies=0.000
+}

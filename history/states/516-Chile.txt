@@ -1,0 +1,44 @@
+state={
+id=516
+	
+	name="STATE_516" # Santiago
+
+	manpower = 14000000
+	buildings_max_level_factor=2.000
+	state_category = megalopolis
+	
+	resources={
+		steel=120
+	}
+
+	history={
+		owner = CHL
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 10
+			industrial_complex = 20
+			air_base = 5
+			8222 = {
+				naval_base = 5
+			}
+			5121 = {
+				naval_base = 1
+			}
+			650 = {
+				bunker = 1
+			}
+		}
+		add_core_of = CHL
+		victory_points = {
+			650 40
+		}
+
+	}
+
+	provinces={
+		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 
+	}
+
+	local_supplies=0.0 
+}

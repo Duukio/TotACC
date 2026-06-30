@@ -1,0 +1,664 @@
+ideas = {
+	country = {
+			BIA_pockets_lined_with_black = {
+			picture = BIA_pockets_lined_with_black
+			allowed = {
+				tag = BIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.15
+			war_support_factor = 0.05
+			political_power_gain = 0.20
+			min_export = 0.7
+			trade_opinion_factor = 1
+			monthly_soctrends_drift_EA_A = 0.01
+			gdp_growth_modifier = 0.05
+			}
+		}
+		BIA_ahiara_declaration = {
+			picture = BIA_ahiara_declaration
+			allowed = {
+				tag = BIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				socdem_drift = 0.03
+				reformist_socialism_drift = 0.02
+				monthly_soctrends_drift_DE_D = 0.01
+				drift_defence_factor = 0.25
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+		BIA_ahiara_declaration_1 = {
+			picture = BIA_ahiara_declaration
+			allowed = {
+				tag = BIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				socdem_drift = 0.03
+				reformist_socialism_drift = 0.02
+				monthly_soctrends_drift_DE_D = 0.01
+				drift_defence_factor = 0.25
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.02
+			political_power_gain = 0.05
+			}
+		}
+		BIA_crisis_of_postmodernity = {
+			picture = BIA_crisis_of_postmodernity
+			allowed = {
+				tag = BIA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			research_sharing_per_country_bonus = 0.1
+			research_speed_factor = 0.07
+			consumer_goods_factor = 0.03
+			monthly_soctrends_drift_TP_P = 0.01
+			}
+		}
+		BIA_dosh_from_lagos = {
+			picture = BIA_dosh_from_lagos
+			allowed = {
+				OR = {
+				tag = BIA
+				tag = BED
+				}
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			research_speed_factor = 0.03
+			production_speed_buildings_factor = 0.2
+			stability_factor = 0.1
+			gdp_growth_modifier = 0.03
+			}
+		}
+		BIA_bonuses_to_citizenry = {
+			picture = BIA_btc
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			weekly_debt_modifier = 0.025
+			gdp_growth_modifier = -0.025
+			research_speed_factor = 0.03
+			production_speed_buildings_factor = 0.1
+			stability_factor = 0.07
+			political_power_cost = 0.05
+			}				
+		}
+		fiveTOWWW = {
+			picture = BIA_fiveTOWWW
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			war_support_factor = 0.1
+			army_core_defence_factor = 0.05
+			}				
+		}
+		BIA_initiative = {
+			picture = BIA_initiative
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			war_support_factor = 0.1
+			stability_factor = -0.1
+			army_core_defence_factor = -0.10
+			breakthrough_factor = 0.1
+			planning_speed = 0.1
+			offence = 0.1
+			}				
+		}
+		BIA_NSB_awesome = {
+			picture = BIA_NSB_awesome
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			war_support_factor = 0.1
+			army_core_defence_factor = 0.15
+			dig_in_speed_factor = 0.2
+			max_dig_in_factor = 0.2
+			}				
+		}
+		BIA_NSB_awesome_1 = {
+			picture = BIA_NSB_awesome
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			war_support_factor = 0.2
+			stability_factor = 0.1
+			army_core_defence_factor = 0.15
+			dig_in_speed_factor = 0.2
+			max_dig_in_factor = 0.2
+			}				
+		}
+		BIA_desperate_measures = {
+			picture = BIA_desperate_measures
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			war_support_factor = 0.1
+			stability_factor = -0.2
+			consumer_goods_factor = -0.2
+			dig_in_speed_factor = 0.2
+			max_dig_in_factor = 0.3
+			army_core_defence_factor = 0.15
+			}				
+		}
+		BIA_untakable = {
+			picture = BIA_untakable
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			war_support_factor = 0.1
+			stability_factor = -0.2
+			consumer_goods_factor = -0.2
+			dig_in_speed_factor = 0.2
+			max_dig_in_factor = 0.3
+			army_core_defence_factor = 0.15
+			surrender_limit = 0.15
+			}				
+		}
+		BIA_catastrophe = {
+			picture = BIA_catastrophe
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.3
+				consumer_goods_factor = 0.2
+			}				
+		}
+		BIA_prepare = {
+			picture = BIA_prepare
+			allowed = {
+				tag = BIA
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				stability_factor = -0.15
+				political_power_gain = -0.35
+			}				
+		}
+		CIS = {
+			picture = BIA_ACIS
+			allowed = {
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				min_export = 0.2
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+			}				
+		}
+		BIA_peoples_army = {
+			picture = BIA_peoples_army
+			allowed = {
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				CONSCRIPTION = 0.01
+				army_org_factor = -0.06
+			}				
+		}
+		BIA_against_the_zoo = {
+			picture = BIA_against_the_zoo
+			allowed = {
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			targeted_modifier = {
+			    tag = NGA
+			    attack_bonus_against = 0.15
+			    defense_bonus_against = 0.15
+			}				
+		}
+		BIA_safe_biafra = {
+			picture = BIA_safe_biafra
+			allowed = {
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			    defence = 0.1
+				consumer_goods_factor = -0.04
+			}				
+		}
+		BIA_volunteers = {
+			picture = BIA_volunteers
+			allowed = {
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = -1
+			}				
+		}
+		profound_gratitude = {
+			picture = profound_gratitude
+			allowed = {
+			}
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				stability_weekly = 0.01
+				political_power_gain = 0.3
+			}				
+		}
+			BIU_igbo_favoritism = {
+			picture = BIU_igbo_favoritism
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = -0.01
+				reformist_socialism_drift = 0.01
+			}
+		}
+			BIU_igbo_jewish_renaissance = {
+			picture = BIU_igbo_jewish_renaissance
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.02
+				reformist_socialism_drift = 0.03
+				political_power_gain = 0.01
+				monthly_soctrends_drift_TP_P = 0.05
+			}
+		}
+			BIU_totalitarian_culture = {
+			picture = BIU_totalitarian_culture
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.02
+				reformist_socialism_drift = 0.03
+				political_power_gain = 0.01
+				monthly_soctrends_drift_TP_P = 0.05
+				production_speed_buildings_factor = 0.07
+				monthly_population = 0.25
+			}
+		}
+			BIU_futurism = {
+			picture = BIU_futurism
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				surrender_limit = -0.1
+				local_resources_factor = 0.3
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+			BIU_new_hebrew_biafran_man = {
+			picture = BIU_new_hebrew_biafran_man
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				surrender_limit = -0.1
+				local_resources_factor = 0.3
+				research_speed_factor = 0.1
+				consumer_goods_factor = -0.1
+				gdp_growth_modifier = 0.02
+				reformist_socialism_drift = 0.03
+				political_power_gain = 0.01
+				monthly_soctrends_drift_TP_P = 0.05
+				monthly_population = 0.25				
+			}
+		}
+			BIU_renewed_diplomacy = {
+			picture = BIU_renewed_diplomacy
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			send_volunteer_size = 5
+			send_volunteers_tension = -1
+			embargo_cost_factor = -0.4
+			}
+		}
+			BIU_patsoc = {
+			picture = BIU_patsoc
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				reformist_socialism_drift = 0.02
+				war_support_factor = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+			BIU_japanese_expats = {
+			picture = BIU_japanese_expats
+			allowed = {
+				tag = BIU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				monthly_population = 0.20
+				monthly_soctrends_drift_DC_C = 0.2
+				monthly_soctrends_drift_EE_E2 = 0.1
+			}
+		}
+	}	
+}

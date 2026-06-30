@@ -1,0 +1,31 @@
+state={
+id=414
+	name="STATE_414"
+    buildings_max_level_factor = 1
+	state_category = megalopolis
+	
+	resources = {
+	}
+	history={
+		owner = PHI
+		victory_points = { 10265 50 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			industrial_complex = 20
+			arms_factory = 5
+			dockyard = 5
+			air_base = 5
+			10265 = {
+			naval_base = 10
+			}
+		}
+		add_core_of = PHI
+	}
+	provinces={
+		7323 10265 
+	}
+	manpower=15000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

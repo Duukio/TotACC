@@ -1,0 +1,283 @@
+NGA_ELDA_DEC_CAT = {
+	hire_japanese_construction_advisors = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value > -1
+			}
+        }
+        days_remove = 25
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = -0.1
+			 tooltip_side = JAPS_SIDE
+			}
+			
+		}
+	}
+	invest_in_hospitality_industries = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value > -1
+			}
+        }
+        days_remove = 25
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = -0.12
+			 tooltip_side = JAPS_SIDE
+			}
+		}
+	}
+	promote_japanese_language_schools = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value > -1
+			}
+        }
+        days_remove = 25
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = -0.15
+			 tooltip_side = JAPS_SIDE
+			}
+		}
+	}
+	buy_up_tourism_ads_in_the_pafcpg = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value > -1
+			}
+        }
+        days_remove = 25
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = -0.18
+			 tooltip_side = JAPS_SIDE
+			}
+		}
+	}
+	assist_keiretsu_corporate_espionage = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value > -1
+			}
+        }
+        days_remove = 25
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = -0.20
+			 tooltip_side = JAPS_SIDE
+			}
+		}
+	}
+	encourage_pafcpg_immigrants = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value > -1
+			}
+        }
+        days_remove = 25
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = -0.22
+			 tooltip_side = JAPS_SIDE
+			}
+		}
+	}
+	hire_soviet_construction_advisors = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value < 1
+			}
+        }
+        days_remove = 10
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = 0.05
+			 tooltip_side = RUSSIANS_SIDE
+			}
+		}
+	}
+	prioritise_COMECON_goods_imports = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value < 1
+			}
+        }
+        days_remove = 10
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = 0.08
+			 tooltip_side = RUSSIANS_SIDE
+			}
+		}
+	}
+	establish_culture_exchange_programs = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value < 1
+			}
+        }
+        days_remove = 10
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = 0.13
+			 tooltip_side = RUSSIANS_SIDE
+			}
+		}
+	}
+	invest_in_trade_schools = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value < 1
+			}
+        }
+        days_remove = 10
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = 0.16
+			 tooltip_side = RUSSIANS_SIDE
+			}
+		}
+	}
+	increase_computerisation_funding = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value < 1
+			}
+        }
+        days_remove = 10
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = 0.18
+			 tooltip_side = RUSSIANS_SIDE
+			}
+		}
+	}
+	land_dredged_pre_sales = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value < 1
+			}
+        }
+        days_remove = 10
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = 0.22
+			 tooltip_side = RUSSIANS_SIDE
+			}
+		}
+	}
+	encourage_COMECON_migrants = {
+		cost = 50
+        ai_will_do = {
+            base = 100
+        }
+        available = {
+			power_balance_value = {
+				id = NGA_ELDA_SOVJAP
+				value < 1
+			}
+        }
+        days_remove = 10
+		complete_effect = {
+			add_power_balance_value	= {
+			 id = NGA_ELDA_SOVJAP
+			 value = 0.24
+			 tooltip_side = RUSSIANS_SIDE
+			}
+		}
+	}
+}
+
+#Japan
+#Hire Japanese advisors
+#Prioritise Japanese Goods imports
+#Invest in Hospitality industries
+#Promote Japanese language classes
+#Buy up tourism ad spots in Japan
+#Backroom deals with the Keiretsu
+#Assist Keiretsu corporate espionage
+#Encourage [japan faction name] migrants
+#
+#Soviet
+#Hire Soviet advisors
+#Prioritise COMECON Goods imports
+#Establish culture exchange programs
+#Invest in trade-schools
+#Increase cyberization funding
+#Open up construction contracts
+#Private dredged-land pre-sales
+#Encourage COMECON migrants

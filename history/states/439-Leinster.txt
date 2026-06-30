@@ -1,0 +1,44 @@
+state={
+id=439
+	
+
+	name="STATE_439" # Leinster
+
+	manpower = 2630720
+	resources={
+		aluminium=10
+		steel=10
+	}
+	
+	state_category = metropolis
+	
+	history={
+		owner = IRE
+		victory_points = {
+			285 5 #Wexford
+		}
+		victory_points = {
+			303 5 #Tullamore
+		}
+		victory_points = {
+			11293 25 #Dublin
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 6
+			industrial_complex = 6
+			air_base = 4
+			11293 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = IRE
+	}
+
+	provinces={
+		285 303 369 3342 3359 7377 11293 11303 
+	}
+
+	local_supplies=0.0 
+}

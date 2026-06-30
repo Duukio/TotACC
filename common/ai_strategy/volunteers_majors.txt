@@ -1,0 +1,617 @@
+JAP_help_CAL = {
+    allowed = {
+        original_tag = JAP
+    }
+	enable = {
+        CAL = {
+            has_war = yes
+        }
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CAL
+		value = 999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USP
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SNM
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SAZ
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = FCO
+		value = -100
+	}
+}
+PRC_help_LKT = {
+    allowed = {
+        original_tag = PRC
+    }
+	abort = {
+		GPR = {
+            has_country_leader = {
+                name = "Bob Avakian"
+                ruling_only = yes
+            }
+		}
+	}
+	enable = {
+        LKT = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LKT
+		value = 100
+	}
+}
+PRC_help_Avakian = {
+    allowed = {
+        original_tag = PRC
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+		GPR = {
+            has_country_leader = {
+                name = "Bob Avakian"
+                ruling_only = yes
+            }
+		}
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = GPR
+		value = 100
+	}
+}
+IRN_help_socialist_arabia = {
+    allowed = {
+        original_tag = IRN
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        DHO = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DHO
+		value = 999
+	}	
+}
+IRN_help_PGR = {
+    allowed = {
+        original_tag = IRN
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        PGR = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = PGR
+		value = 100
+	}	
+}
+IRN_help_YE2 = {
+    allowed = {
+        original_tag = IRN
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        YE2 = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = YE2
+		value = 100
+	}	
+}
+IRN_help_ISP = {
+    allowed = {
+        original_tag = IRN
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        ISP = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ISP
+		value = 100
+	}	
+}
+IRN_help_KUR = {
+    allowed = {
+        original_tag = IRN
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        KUR = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KUR
+		value = 100
+	}	
+}
+ISP_help_SHL = {
+    allowed = {
+        original_tag = ISP
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        SHL = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SHL
+		value = 999
+	}	
+}
+SYR_help_LEB = {
+    allowed = {
+        original_tag = SYR
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        LEB = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LEB
+		value = 999
+	}	
+}
+DDR_help_LKT = {
+    allowed = {
+        original_tag = DDR
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        LKT = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LKT
+		value = 100
+	}
+}
+WES_help_FCO = {
+    allowed = {
+        original_tag = WES
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        FCO = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = FCO
+		value = 100
+	}
+}
+SOV_help_ARC = {
+    allowed = {
+        original_tag = SOV
+    }
+	abort = {
+		SOV = {
+            has_country_leader = {
+                name = "Alexander Lukashenko"
+                ruling_only = yes
+            }
+		}
+	}
+	enable = {
+        RAS = {
+            has_war = yes
+        }
+        SOV = {
+            has_country_leader = {
+                name = "Sergey Kurginyan"
+                ruling_only = yes
+            }
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = RAS
+		value = 999
+	}
+}
+JAP_help_IRQ = {
+    allowed = {
+        original_tag = JAP
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        IRQ = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = IRQ
+		value = 999
+	}
+}
+SOV_help_ARC_2 = {
+    allowed = {
+        original_tag = SOV
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        USA = {
+            has_war = yes
+        }
+        SOV = {
+            has_country_leader = {
+                name = "Alexander Lukashenko"
+                ruling_only = yes
+            }
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USA
+		value = 999
+	}
+}
+QIE_help_CAL = {
+    allowed = {
+        original_tag = QIE
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        CAL = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = CAL
+		value = 100
+	}
+}
+SGF_help_NWF = {
+    allowed = {
+        original_tag = SGF
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        NWF = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NWF
+		value = 100
+	}
+}
+FRA_help_USA = {
+    allowed = {
+        original_tag = FRA
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        USA = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USA
+		value = 100
+	}
+}
+FRA_do_not_help_USP = {
+    allowed = {
+        original_tag = FRA
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        USP = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USP
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = DIX
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = TPR
+		value = -9999
+	}
+}
+SOV_do_not_help_SYR = {
+    allowed = {
+        original_tag = SOV
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        SYR = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SYR
+		value = -999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LEB
+		value = -999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = JOR
+		value = -999
+	}
+}
+SOV_do_not_help_JOR = {
+    allowed = {
+        original_tag = SOV
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        JOR = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SYR
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LEB
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = JOR
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = EGY
+		value = -9999
+	}
+}
+FRA_do_not_help_SYR = {
+    allowed = {
+        original_tag = FRA
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        SYR = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SYR
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = LEB
+		value = -9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = JOR
+		value = -9999
+	}
+}
+ITA_help_NWF = {
+    allowed = {
+        original_tag = ITA
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        NWF = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NWF
+		value = 100
+	}
+}
+PAK_help_USP = {
+    allowed = {
+        original_tag = PAK
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        USP = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = USP
+		value = 100
+	}
+}
+SOV_help_NWG = {
+    allowed = {
+        original_tag = SOV
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        NWG = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = NWG
+		value = 9999
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = IND
+		value = -9999 #STOP IT
+	}
+}
+SOV_help_KUR = {
+    allowed = {
+        original_tag = SOV
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+		KUR = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = KUR
+		value = 100
+	}
+}
+SOV_help_ISP = {
+    allowed = {
+        original_tag = SOV
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+		ISP = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ISP
+		value = 100
+	}
+}
+JAP_help_IND = {
+    allowed = {
+        original_tag = JAP
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        NWG = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = IND
+		value = 100
+	}
+}
+PAK_help_IND = {
+    allowed = {
+        original_tag = PAK
+    }
+	abort = {
+		always = no
+	}
+	enable = {
+        NWG = {
+            has_war = yes
+        }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = IND
+		value = 100
+	}
+}

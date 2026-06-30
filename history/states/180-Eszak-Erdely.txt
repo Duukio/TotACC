@@ -1,0 +1,23 @@
+state={
+id=180
+	name="STATE_180"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+
+	history={
+		owner = ROM
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = ROM
+	}
+	provinces={
+	  727 6714 6731 9672 9685 9687 9704 11676 
+	}
+	manpower=3200000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,37 @@
+state={
+    id=978
+        
+    
+        name="STATE_978"
+    
+        manpower = 	1463265
+        
+        state_category = metropolis
+        resources={
+            oil=400
+        }
+    
+        history={
+            owner = UAE
+            buildings = {
+                school = 4
+                infrastructure = 5
+                arms_factory = 4
+                industrial_complex = 8
+                13926 = {
+                    naval_base = 4
+                }
+            }
+            victory_points = {
+                13926 35 #Manama
+            }
+            add_core_of = UAE
+			add_core_of = PGR
+        }
+    
+        provinces={
+        13925 13926
+        }
+    
+        local_supplies=0.0 
+    }

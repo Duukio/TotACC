@@ -1,0 +1,23 @@
+state={
+id=85
+	name="STATE_85"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = ALG
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = ALG
+
+	}
+	provinces={
+		1013 1126 1128 1967 4018 4046 4131 4146 4970 5053 7033 7040 7149 7166 9960 9964 10059 11939 12020 12760 12888 13077 
+	}
+	manpower=4000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

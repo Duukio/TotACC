@@ -1,0 +1,22 @@
+state={
+id=440
+	name="STATE_440"
+    buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history={
+		owner = ISP
+		buildings = {
+            school = 2
+            industrial_complex = 1
+			infrastructure = 2
+		}
+		add_core_of = ISP
+	}
+	provinces={
+		1074 13876
+	}
+	manpower=50000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

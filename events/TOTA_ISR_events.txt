@@ -1,0 +1,2016 @@
+add_namespace = ISP
+add_namespace = LEB
+add_namespace = SAU
+add_namespace = CANAAN
+add_namespace = SNEH
+
+country_event = {
+    id = ISP.1 # Sarney resigns
+    title = ISP.1.t
+    desc = ISP.1.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.1.a
+		RAD = {
+			annex_country = {
+				target = EGY
+				transfer_troops = no
+			}
+			annex_country = {
+				target = LEB
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SYR
+				transfer_troops = no
+			}
+			annex_country = {
+				target = JOR
+				transfer_troops = no
+			}
+			annex_country = {
+				target = SAU
+				transfer_troops = no
+			}
+			annex_country = {
+				target = ISP
+				transfer_troops = no
+			}
+		}
+		news_event = {
+		id = WNE.5
+		days = 0
+		}
+	}
+}
+country_event = {
+    id = ISP.2 # flavor for israel
+    title = ISP.2.t
+    desc = ISP.2.desc
+    picture = GFX_report_event_ehud
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.2.a
+		country_event = {
+			id = ISP.15
+			days = 14
+		}
+		retire_ideology_leader = reformist_socialism
+		create_country_leader = {
+			name = "Mapam Central Committee"
+			desc = ""
+			picture = "gfx/leaders/ISP/mapam.png"
+			expire = "2040.1.1"
+			ideology = sovmarsys
+			traits = {
+			}
+		}
+		load_focus_tree = ""
+		add_ideas = ISP_public_mistrust
+	}
+}
+country_event = {
+    id = ISP.15 # flavor for israel
+    title = ISP.15.t
+    desc = ISP.15.desc
+    picture = GFX_report_event_ehud
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.15.a
+		country_event = {
+			id = ISP.4
+			days = 14
+		}
+	}
+}
+country_event = {
+    id = ISP.750 # flavor for israel
+    title = ISP.750.t
+    desc = ISP.750.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.750.a
+	  add_popularity = {
+		ideology = socdem
+		popularity = 0.1
+	  }
+	  add_popularity = {
+		ideology = liberalism
+		popularity = 0.1
+	  }
+	  add_stability = 0.25
+	  set_country_flag = ramonpostdem_cab
+	  activate_advisor = ISP_eitanginzburg_idea
+	  activate_advisor = ISP_amosyadlin_idea
+	  activate_advisor = ISP_yorailahavhertzanu_idea
+	  activate_advisor = ISP_manuel_trajtenberg_idea
+	}
+}
+country_event = {
+	id = ISP.759 #
+	title = ISP.759.t
+	desc = ISP.759.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.759.a
+		add_stability = 0.01
+	}
+	option = {
+		name = ISP.759.b
+		set_party_name = {
+			ideology = socdem
+			name = "Kadima"
+			long_name = "Forward Party"
+		}
+		set_party_name = {
+			ideology = neosoc
+			name = "Kadima"
+			long_name = "Forward Party"
+		}
+		set_party_name = {
+			ideology = liberalism
+			name = "Kadima"
+			long_name = "Forward Party"
+		}
+		set_party_name = {
+			ideology = technocracy
+			name = "Kadima"
+			long_name = "Forward Party"
+		}
+	}
+}
+country_event = {
+	id = ISP.769 #
+	title = ISP.769.t
+	desc = ISP.769.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.769.a
+		set_party_name = {
+			ideology = socdem
+			name = "Labour"
+			long_name = "Labour Party"
+		}
+		set_party_name = {
+			ideology = neosoc
+			name = "Labour"
+			long_name = "Labour Party"
+		}
+		set_party_name = {
+			ideology = hardsoc
+			name = "Hebrew Workers Front"
+			long_name = "Hebrew Workers Front"
+		}
+		set_party_name = {
+			ideology = technocracy
+			name = "Labour"
+			long_name = "Labour Party"
+		}
+		set_party_name = {
+			ideology = technocracy
+			name = "Labour"
+			long_name = "Labour Party"
+		}
+		set_party_name = {
+			ideology = revolutionary_right
+			name = "Semitic Action"
+			long_name = "Semitic Action - Young Canaan Society"
+		}
+		set_party_name = {
+			ideology = autocracy
+			name = "Hebrew Workers Front"
+			long_name = "Hebrew Workers Front"
+		}
+		hidden_effect = {
+			ISP = {
+			country_event = {
+				id = ISP.759
+				days = 269
+			}
+		}
+		}
+	}
+}
+country_event = {
+    id = ISP.3 # invade lebanon
+    title = ISP.3.t
+    desc = ISP.3.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.3.a
+	  set_country_flag = yarmouk_already_happened
+	  hidden_effect = {
+	  LEB = {
+		load_oob = "LEB_CW"
+	  }
+	    #LEB = {
+		#add_timed_idea = {
+		#	idea = LEB_PLO
+		#	days = 90
+		#}
+	    #}
+	  every_state = {
+		limit = {
+			is_owned_by = LEB
+		}
+		add_core_of = SHL
+	  }
+	  SHL = {
+		transfer_state = 979
+		declare_war_on = {
+			target = LEB
+			type = annex_everything
+		}
+		load_oob = "SHL_CW"
+		give_military_access = ISP
+	  }
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.58
+			DAYS = 0
+			}
+		}
+		ISP = {
+			give_military_access = SHL
+		ISP = {
+			country_event = {
+				id = ISP.712
+				days = 30
+			}
+		}
+			set_country_flag = PLO_attack_flag
+			mark_focus_tree_layout_dirty = yes
+			complete_national_focus = ISP_the_darkest_day
+		}
+		if = {
+			limit = {
+				EGY = {
+					has_government = autocracy
+				}
+			}
+			EGY = {
+				country_event = {
+					id = EGY.5
+					days = 30
+				}
+			}
+		}
+		else = {
+			
+		}
+	  }
+	}
+}
+country_event = {
+    id = ISP.711 #and eber bleeds
+    title = ISP.711.t
+    desc = ISP.711.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.711.a
+	  country_event = {
+		id = ISP.3
+		days = 1
+	  }
+	  add_manpower = -500
+	  hidden_effect = {
+		add_to_variable = {
+			var = terrorism_rate_ISP
+			value = -50
+		}
+	  }
+
+	}
+}
+country_event = {
+    id = ISP.712 #who must go?
+    title = ISP.712.t
+    desc = ISP.712.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.712.a
+	 	SYR = {
+			create_faction = SHAM
+		}
+		SYR = {
+		 	add_to_faction = LEB
+		}
+		SYR = {
+		 add_to_faction = JOR
+		}
+		declare_war_on = {
+			target = LEB
+			type = annex_everything
+		}
+	  	declare_war_on = {
+			target = SYR
+			type = annex_everything
+		}
+		SHL = {
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+		}
+		set_country_flag = caniac
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = ISP_tis_the_final_battle
+	  	declare_war_on = {
+			target = JOR
+			type = annex_everything
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			EGY = {
+				country_event = {
+					id = ISP.714
+					days = 20
+				}
+			}
+		}
+	}
+
+    option = {
+      name = ISP.712.b
+	  hidden_effect = {
+	  			SYR = {
+					country_event = {
+					id = ISP.713
+					days = 20
+				}
+	  		}
+			EGY = {
+				country_event = {
+					id = ISP.714
+					days = 40
+				}
+			}
+	  	}
+	}
+}
+country_event = {
+    id = LEB.1 #haz event
+    title = LEB.1.t
+    desc = LEB.1.desc
+    picture = GFX_report_event_haz
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = LEB.1.a
+	}
+}
+country_event = {
+    id = ISP.713 #syr
+    title = ISP.713.t
+    desc = ISP.713.desc
+    picture = GFX_report_event_haz
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		SYR = {
+			create_faction = SHAM
+		}
+		SYR = {
+		 	add_to_faction = LEB
+		}
+		SYR = {
+		 	add_to_faction = JOR
+		}
+		ISP = { 
+			declare_war_on = {
+				target = JOR
+				type = annex_everything
+			}
+		}
+      	ISP = { 
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+		}
+		ISP = { 
+			declare_war_on = {
+				target = LEB
+				type = annex_everything
+			}
+		}
+		SHL = {
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+		}
+		set_country_flag = caniac
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = ISP_tis_the_final_battle
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.211
+			DAYS = 1
+			}
+		}
+	}
+}
+country_event = {
+    id = ISP.714 #egy
+    title = ISP.714.t
+    desc = ISP.714.desc
+    picture = GFX_report_event_haz
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ISP.714.a
+	  	declare_war_on = {
+			target = ISP
+			type = annex_everything
+		}
+		if = {
+			limit = {
+				KUR = {
+					any_neighbor_country = { original_tag = SYR }
+				}
+			}
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+		}
+		else = {}
+		every_country = {
+			limit = {
+				is_ai = no
+			}
+			news_event = {
+			id = WNE.212
+			DAYS = 1
+			}
+		}
+		SAU = {
+			country_event = {
+				id = SAU.1
+				days = 30
+			}
+		}
+		set_global_flag = MASSIVEMIDDLEEASTWARLOL
+	}
+}
+country_event = {
+    id = LEB.2 # michel aoun
+    title = LEB.2.t
+    desc = LEB.2.desc
+    picture = GFX_report_event_haz
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = LEB.2.a
+	  ai_chance = { factor = 50 }
+		create_country_leader = {
+			name = "Michel Suleiman"
+			desc = ""
+			picture = "gfx/leaders/LEB/Michel Suleiman.png"
+			expire = "2040.1.1"
+			ideology = anolib
+			traits = {
+			}
+		}
+	}
+    #option = {
+    #  name = LEB.2.b
+	#  ai_chance = { factor = 50 }
+	#	SYL = {
+	#		transfer_state = 1088
+	#		transfer_state = 1086
+	#		transfer_state = 1087
+	#		transfer_state = 1085
+	#		load_oob = "SYL_CW"
+	#	}
+	#	every_country = {
+	#		limit = {
+	#			is_ai = no
+	#		}
+	#		news_event = {
+	#		id = WNE.59
+	#		DAYS = 0
+	#		}
+	#	}
+	#	DRZ = {
+	#		transfer_state = 1084
+	#		load_oob = "DRZ_CW"
+	#	}
+	#}
+}
+country_event = {
+    id = ISP.4 # Simhon-Ramon choice
+    title = ISP.4.t
+    desc = ISP.4.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+	
+	option = {
+		name = ISP.4.a #Simhon
+		ai_chance = {
+        base = 30
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = ISP_ai_route
+                option = SIMHON
+            }
+        }
+      }
+		set_country_flag = ISP_simhon_flag
+		country_event = {
+			id = ISP.11
+			days = 14
+		}
+	}
+	option = {
+		name = ISP.4.b #Ramon
+		ai_chance = {
+        base = 35
+        modifier = {
+            factor = 1000
+			OR = {
+            	has_game_rule = {
+            	    rule = ISP_ai_route
+            	    option = RAMON
+            	}
+            	has_game_rule = {
+            	    rule = ISP_ai_route
+            	    option = CANAAN
+            	}
+            	has_game_rule = {
+            	    rule = ISP_ai_route
+            	    option = SNEH
+            	}
+			}
+        }
+      }
+		set_country_flag = ISP_ramon_flag
+		country_event = {
+			id = ISP.13
+			days = 14
+		}
+	}
+	#option = {
+	#	name = ISP.4.c #Negotiations die of AIDS in Ohio
+	#	ai_chance = { factor = 25 }
+	#	set_country_flag = ISP_negotations_broke_down
+	#	country_event = {
+	#		id = ISP.11
+	#		days = 14
+	#	}
+	#}	
+}
+country_event = {
+	id = ISP.5 # Give Me Liberty
+	title = ISP.5.t
+	desc = ISP.5.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.5.a
+	  load_focus_tree = ISP_simhonramon
+		complete_national_focus = ISP_general_secretary_ramon
+		retire_country_leader = yes
+            add_country_leader_role = {
+                character = ISP_haim_ramon
+                promote_leader = yes
+                country_leader = {
+                    ideology = thway
+                    expire = "2032.1.1.1"
+                }
+            }
+		set_politics = {
+			ruling_party = socdem
+		}
+		set_country_flag = ramonreformistcab
+		activate_advisor = ISP_naorshiri_idea_hog_ramon
+		activate_advisor = ISP_eitanginzburg_idea
+		activate_advisor = ISP_shalomsimhon_idea
+		activate_advisor = ISP_amosyadlin_idea
+
+		remove_ideas = ISP_public_mistrust
+		add_dynamic_modifier = {
+			modifier = ISP_reformist_coalition_dyn
+			scope = ISP
+		}
+	}
+}
+country_event = {
+	id = ISP.6 # Man of Steel and Silicon
+	title = ISP.6.t
+	desc = ISP.6.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.6.a
+	  load_focus_tree = ISP_simhonramon
+	  complete_national_focus = ISP_general_secretary_simhon
+	  retire_country_leader = yes
+            add_country_leader_role = {
+                character = ISP_shalom_simhon
+                promote_leader = yes
+                country_leader = {
+                    ideology = soctechno
+                    expire = "2032.1.1.1"
+                }
+            }
+		set_politics = {
+			ruling_party = technocracy
+		}
+		set_country_flag = shalomsimhonreformcab
+		activate_advisor = ISP_haim_ramon_idea
+		activate_advisor = ISP_eitanginzburg_idea
+		activate_advisor = ISP_naorshiri_idea
+		activate_advisor = ISP_amosyadlin_idea
+		remove_ideas = ISP_public_mistrust
+		add_dynamic_modifier = {
+			modifier = ISP_reformist_coalition_dyn
+			scope = ISP
+		}
+	}	
+
+}
+country_event = {
+	id = ISP.7 # Emperor of all the world
+	title = ISP.7.t
+	desc = ISP.7.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.7.a
+	  load_focus_tree = ISP_ashkenazi
+	  complete_national_focus = ISP_general_secretary_ashkenazi
+	  retire_country_leader = yes
+            add_country_leader_role = {
+                character = ISP_gabi_ashkenazi
+                promote_leader = yes
+                country_leader = {
+                    ideology = sovmarsys
+                    expire = "2032.1.1.1"
+                }
+            }
+		set_politics = {
+			ruling_party = reformist_socialism
+		}
+		remove_ideas = ISP_public_mistrust
+	  	add_timed_idea = {
+			idea = ISP_public_mistrust_timed
+			days = 720
+		}
+	}
+}
+country_event = {
+	id = ISP.8 # Here lies the Hebrew Republic
+	title = ISP.8.t
+	desc = ISP.8.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.8.a
+	}
+}
+country_event = {
+	id = ISP.9 # and ambition destroyed its possessor
+	title = ISP.9.t
+	desc = ISP.9.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.9.a
+	}
+}
+country_event = {
+	id = ISP.10 # a brewing revolution
+	title = ISP.10.t
+	desc = ISP.10.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.10.a
+	}
+}
+
+country_event = {
+	id = ISP.17 # constitution
+	title = ISP.17.t
+	desc = ISP.17.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.17.a
+	}
+}
+
+country_event = {
+	id = ISP.11 # Election Simhon
+	title = ISP.11.t
+	desc = ISP.11.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+      name = ISP.11.a
+      ai_chance = {
+        base = 35
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = ISP_ai_route
+                option = SIMHON
+            }
+        }
+      }
+	  trigger = {
+		has_country_flag = ISP_simhon_flag
+	  }
+		country_event = {
+			id = ISP.6
+			days = 1
+		}
+	}
+	option = {
+		name = ISP.11.b
+		ai_chance = {
+        base = 35
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = ISP_ai_route
+                option = ASHKENAZI
+            }
+        }
+      }
+		country_event = {
+			id = ISP.7
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = ISP.13 # Election Ramon
+	title = ISP.13.t
+	desc = ISP.13.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+      name = ISP.13.a
+      ai_chance = {
+        base = 35
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = ISP_ai_route
+                option = RAMON
+            }
+        }
+      }
+	  trigger = {
+		has_country_flag = ISP_ramon_flag
+	  }
+		country_event = {
+			id = ISP.5
+			days = 1
+		}
+	}
+	option = {
+		name = ISP.13.b
+		ai_chance = {
+        base = 35
+        modifier = {
+            factor = 1000
+            has_game_rule = {
+                rule = ISP_ai_route
+                option = ASHKENAZI
+            }
+        }
+      }
+		country_event = {
+			id = ISP.7
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = ISP.12 # flaveur
+	title = ISP.12.t
+	desc = ISP.12.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = ISP.12.a
+		add_political_power = 50
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = ISP.14 # New Name
+	title = ISP.14.t
+	desc = ISP.14.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+      name = ISP.14.a #Keeping the name
+	}
+	option = {
+		name = ISP.14.b #Hebrew Republic
+				ai_chance = {
+			base = 30
+				}
+		add_to_variable = {
+			var = milcoup
+			value = 1
+		} 
+		set_cosmetic_tag = ISP_nocommie
+	}
+	option = {
+		name = ISP.14.c #State of Eber
+		add_to_variable = {
+			var = milcoup
+			value = 2
+		} 
+		set_cosmetic_tag = ISP_Eber
+		ai_chance = {
+			base = 30
+			modifier = {
+        	    factor = 1000
+				OR = {
+        	   		has_game_rule = {
+        	   		    rule = ISP_ai_route
+        	   		    option = SNEH
+        	   		}
+        	   		has_game_rule = {
+        	   		    rule = ISP_ai_route
+        	   		    option = CANAAN
+        	   		}
+				}
+        	}
+		}
+	}
+	option = {
+		name = ISP.14.d #State of Israel :lion:
+		add_to_variable = {
+			var = milcoup
+			value = 3
+		}
+				ai_chance = {
+			base = 30
+		modifier = {
+            factor = 1000
+			OR = {
+           		has_game_rule = {
+           		    rule = ISP_ai_route
+           		    option = SNEH
+           		}
+           		has_game_rule = {
+           		    rule = ISP_ai_route
+           		    option = CANAAN
+           		}
+			}
+        }
+	} 
+		set_cosmetic_tag = ISP_AWAKE_O_YISRAEL
+	}
+}
+
+country_event = {
+	id = ISP.27 # Electoral Reform
+	title = ISP.27.t
+	desc = ISP.27.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+		name = ISP.27.a #Reforming the 1948 constitution
+			ai_chance = {
+				base = 30}
+		add_to_variable = {
+			var = milcoup
+			value = 1
+		} 
+	}
+	option = {
+		name = ISP.27.b #National proportional representation
+						ai_chance = {
+				base = 30}
+		add_to_variable = {
+			var = milcoup
+			value = 2
+		} 
+	}
+	option = {
+		name = ISP.27.c #France larp
+		add_to_variable = {
+			var = milcoup
+			value = 3
+		}
+				ai_chance = {
+				base = 30
+				modifier = {
+        		    factor = 1000
+					OR = {
+        		   		has_game_rule = {
+        		   		    rule = ISP_ai_route
+        		   		    option = SNEH
+        		   		}
+        		   		has_game_rule = {
+        		   		    rule = ISP_ai_route
+        		   		    option = CANAAN
+        		   		}
+					}
+        		} 
+		}
+	}
+}
+
+country_event = {
+	id = ISP.16 # Appeasing the Military
+	title = ISP.16.t
+	desc = ISP.16.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+    option = {
+		name = ISP.16.a #Sneh thumbs up
+						ai_chance = {
+				base = 25
+						}
+		add_to_variable = {
+			var = milcoup
+			value = -4
+		} 
+	}
+	option = {
+		name = ISP.16.b #Sneh soyrage
+		add_to_variable = {
+			var = milcoup
+			value = 6
+		}
+				ai_chance = {
+				base = 30
+		modifier = {
+            factor = 1000
+			OR = {
+           		has_game_rule = {
+           		    rule = ISP_ai_route
+           		    option = SNEH
+           		}
+           		has_game_rule = {
+           		    rule = ISP_ai_route
+           		    option = CANAAN
+           		}
+			}
+        }
+				} 
+	}
+}
+
+country_event = {
+    id = ISP.18 #planning problems
+    title = ISP.18.t
+    desc = ISP.18.d
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+		name = ISP.18.a #research buff
+		add_to_variable = {
+			var = ISPKD_science_speed
+			value = 0.05
+		}
+	}
+	option = {
+		name = ISP.18.b #construction buff
+		add_to_variable = {
+			var = ISPKD_build_speed
+			value = 0.05
+		}
+		
+	}
+	option = {
+		name = ISP.18.c #GDP buff
+		add_to_variable = {
+			var = ISPKD_gdp_growth
+			value = 0.5
+		}
+		
+	}
+}
+
+country_event = {
+	id = ISP.19 # house of cards
+	title = ISP.19.t
+	desc = ISP.19.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.19.a
+	}
+}
+country_event = {
+	id = ISP.20 # E-ducation
+	title = ISP.20.t
+	desc = ISP.20.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.20.a
+	}
+}
+country_event = {
+	id = ISP.21 # digitalization
+	title = ISP.21.t
+	desc = ISP.21.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.21.a
+	}
+}
+country_event = {
+	id = ISP.22 # monday morning in rumania
+	title = ISP.22.t
+	desc = ISP.22.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.22.a
+	}
+}
+country_event = {
+	id = ISP.23 # sticking to the Qlan
+	title = ISP.23.t
+	desc = ISP.23.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.23.a
+	}
+}
+country_event = {
+	id = ISP.24 # slow life
+	title = ISP.24.t
+	desc = ISP.24.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.24.a
+	}
+}
+country_event = {
+	id = ISP.25 # habah lehorgecha
+	title = ISP.25.t
+	desc = ISP.25.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.25.a
+	}
+	option = {
+		name = ISP.25.b
+	}
+}
+country_event = {
+	id = ISP.26 # Light to the nations
+	title = ISP.26.t
+	desc = ISP.26.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = ISP.26.a
+	}
+}
+
+country_event = {
+	id = ISP.1948 # COUP!!!!!!!!!!!!!!!!!!!!!
+	title = ISP.1948.t
+	desc = ISP.1948.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1948.a
+		add_political_power = -30
+		add_stability = -0.2
+		set_party_name = {
+			ideology = reformist_socialism
+			name = "Government of National Salvation"
+			long_name = "Government of National Salvation"
+		}
+	}
+}
+
+###################### Sneh Events ######################
+country_event = {
+	id = SNEH.1 # The Joy of Labour
+	title = SNEH.1.t
+	desc = SNEH.1.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.1.a
+		add_political_power = 25
+	}
+}
+country_event = {
+	id = SNEH.2 # Cultivating Virtue
+	title = SNEH.2.t
+	desc = SNEH.2.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.2.a
+		add_stability = 0.03
+	}
+}
+country_event = {
+	id = SNEH.3 # A Model Citizen 
+	title = SNEH.3.t
+	desc = SNEH.3.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.3.a
+	}
+}
+country_event = {
+	id = SNEH.4 # The Whole Country a Front, the Whole People an Army
+	title = SNEH.4.t
+	desc = SNEH.4.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.4.a
+		army_experience = 25
+	}
+}
+country_event = {
+	id = SNEH.5 # Red Flag
+	title = SNEH.5.t
+	desc = SNEH.5.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.5.a
+		add_popularity = {
+			ideology = reformist_socialism
+			popularity = 0.05
+		}
+	}
+}
+country_event = {
+	id = SNEH.6 # Blue and White
+	title = SNEH.6.t
+	desc = SNEH.6.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.6.a
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = SNEH.7 # Romance of Two Flags
+	title = SNEH.7.t
+	desc = SNEH.7.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.7.a
+	}
+}
+country_event = {
+	id = SNEH.8 # No room for reaction
+	title = SNEH.8.t
+	desc = SNEH.8.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.8.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = -0.1
+		}
+	}
+}
+country_event = {
+	id = SNEH.9 # Revolution Realized
+	title = SNEH.9.t
+	desc = SNEH.9.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.9.a
+	}
+}
+country_event = {
+	id = SNEH.10 # The old man, the new guard
+	title = SNEH.10.t
+	desc = SNEH.10.d
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name = SNEH.10.a
+	}
+}
+
+#######################TERRORISM EVENTS -- MAY BE REPEATED#######################
+
+country_event = {
+	id = ISP.1000 # Rocket Volley from Lebanon
+	title = ISP.1000.t
+	desc = ISP.1000.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1000.a
+		add_political_power = -25
+		add_stability = -0.01
+		random_owned_state = {
+			damage_building = {
+			    type = infrastructure
+			    damage = 0.3
+			}
+		}
+	}
+}
+country_event = {
+	id = ISP.1001 # Stabbing in City
+	title = ISP.1001.t
+	desc = ISP.1001.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1001.a
+		add_political_power = -25
+		add_stability = -0.01
+	}
+}
+country_event = {
+	id = ISP.1002 # Shooting in City
+	title = ISP.1002.t
+	desc = ISP.1002.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1002.a
+		add_political_power = -25
+		add_stability = -0.01
+		add_manpower = -5
+	}
+}
+country_event = {
+	id = ISP.1003 # Shooting in City ver 2
+	title = ISP.1003.t
+	desc = ISP.1003.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1003.a
+		add_political_power = -50
+		add_stability = -0.01
+		add_manpower = -10
+	}
+}
+country_event = {
+	id = ISP.1004 # Suicide bombing in city
+	title = ISP.1004.t
+	desc = ISP.1004.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1004.a
+		add_political_power = -25
+		add_stability = -0.01
+		add_manpower = -20
+	}
+}
+country_event = {
+	id = ISP.1005 # Campus protests in city's universities
+	title = ISP.1005.t
+	desc = ISP.1005.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1005.a
+		add_political_power = -50
+		add_stability = -0.03
+	}
+}
+country_event = {
+	id = ISP.1006 # Ethnic Violence in Lod and Haifa
+	title = ISP.1006.t
+	desc = ISP.1006.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1006.a
+		add_political_power = -10
+		add_stability = -0.01
+	}
+}
+country_event = {
+	id = ISP.1007 # Riots across Arab settlements
+	title = ISP.1007.t
+	desc = ISP.1007.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1007.a
+		add_political_power = -10
+		add_stability = -0.02
+	}
+}
+country_event = {
+	id = ISP.1008 # Protests across the West Bank
+	title = ISP.1008.t
+	desc = ISP.1008.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1008.a
+		add_political_power = -5
+		add_stability = -0.02
+	}
+}
+country_event = {
+	id = ISP.1009 # Activists and Protesters bloc major roads
+	title = ISP.1009.t
+	desc = ISP.1009.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1009.a
+		add_political_power = 25
+		add_stability = -0.03
+	}
+}
+country_event = {
+	id = ISP.1010 # “Price Tag” in the West Bank
+	title = ISP.1010.t
+	desc = ISP.1010.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = ISP.1010.a
+		add_political_power = -30
+		add_stability = -0.01
+	}
+}
+#############################
+country_event = {
+	id = SAU.1 # sau
+	title = SAU.1.t
+	desc = SAU.1.desc
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+		name = SAU.1.a
+		add_stability = -0.44
+		447 = {
+			add_core_of = DHO
+		}
+		1318 = {
+			add_core_of = DHO
+		}
+		1317 = {
+			add_core_of = DHO
+		}
+		1316 = {
+			add_core_of = DHO
+		}
+		1315 = {
+			add_core_of = DHO
+		}
+		1314 = {
+			add_core_of = DHO
+		}
+		1313 = {
+			add_core_of = DHO
+		}
+		445 = {
+			add_core_of = YE2
+		}
+		446 = {
+			add_core_of = YEM
+		}
+		YE2 = {
+			create_faction = PFLA
+		}
+		YE2 = {
+		 add_to_faction = DHO
+		}
+		YE2 = {
+		 add_to_faction = PGR
+		}
+		if = {
+			limit = {
+				country_exists = PGR
+			}
+			declare_war_on = {
+				target = PGR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DHO
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = YE2
+				type = annex_everything
+			}
+			YEM = {
+				add_to_war = {
+				    targeted_alliance = SAU
+				    enemy = YE2
+				    hostility_reason = asked_to_join
+				}
+			}
+			UAE = {
+				add_to_war = {
+				    targeted_alliance = SAU
+				    enemy = YE2
+				    hostility_reason = asked_to_join
+				}
+			}
+			OMA = {
+				add_to_war = {
+				    targeted_alliance = SAU
+				    enemy = DHO
+				    hostility_reason = asked_to_join
+				}
+			}
+		}
+		else = {
+			set_country_flag = ignore_pgr
+			declare_war_on = {
+				target = DHO
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = YE2
+				type = annex_everything
+			}
+			YEM = {
+				add_to_war = {
+				    targeted_alliance = SAU
+				    enemy = YE2
+				    hostility_reason = asked_to_join
+				}
+			}
+			OMA = {
+				add_to_war = {
+				    targeted_alliance = SAU
+				    enemy = DHO
+				    hostility_reason = asked_to_join
+				}
+			}
+			UAE = {
+				add_to_war = {
+				    targeted_alliance = SAU
+				    enemy = YE2
+				    hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = CANAAN.1 #
+	title = CANAAN.1.t
+	desc = CANAAN.1.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.1.a
+		add_political_power = 25
+		set_party_name = {
+			ideology = revolutionary_right
+			name = "Semitic Freedom Party of Canaan"
+			long_name = "Semitic Freedom Party of Canaan"
+		}
+	}
+	option = {
+		name = CANAAN.1.b
+		add_political_power = 25
+		set_party_name = {
+			ideology = revolutionary_right
+			name = "Young Canaan Society"
+			long_name = "Young Canaan Society"
+		}
+	}
+	option = {
+		add_stability = 0.05
+		name = CANAAN.1.c
+	}
+}
+country_event = {
+	id = CANAAN.2 #
+	title = CANAAN.2.t
+	desc = CANAAN.2.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.2.a
+	}
+}
+country_event = {
+	id = CANAAN.3 #
+	title = CANAAN.3.t
+	desc = CANAAN.3.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.3.a
+		add_political_power = 25
+	}
+	option = {
+		name = CANAAN.3.b
+		add_stability = 0.02
+	}
+}
+country_event = {
+	id = CANAAN.4 #
+	title = CANAAN.4.t
+	desc = CANAAN.4.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.4.a
+		add_dynamic_modifier = {
+			modifier = ISP_canaan_dynmod
+			scope = ISP
+		}
+		remove_ideas = ISP_fading_dream
+	}
+}
+#country_event = {
+#	id = CANAAN.5 #
+#	title = CANAAN.5.t
+#	desc = CANAAN.5.desc
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+#	option = {
+#		name = CANAAN.5.a
+#	}
+#	#dummy event
+#}
+country_event = {
+	id = CANAAN.6 #
+	title = CANAAN.6.t
+	desc = CANAAN.6.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.6.a
+		ISP = {
+			declare_war_on = {
+				target = JOR
+				type = annex_everything
+			}
+		}
+		SYR = {
+			declare_war_on = {
+				target = ISP
+				type = annex_everything
+			}	
+		}
+		LEB = {
+			declare_war_on = {
+				target = ISP
+				type = annex_everything
+			}	
+		}
+		EGY = {
+			declare_war_on = {
+				target = ISP
+				type = annex_everything
+			}
+			hidden_effect = {	
+				load_oob = "generic_2021"
+			}
+		}
+		TRP = {
+			declare_war_on = {
+				target = EGY
+				type = annex_everything
+			}
+		}
+		LEB = {
+			load_oob = "LEB_CW"
+	  	}
+		every_state = {
+			limit = {
+				is_owned_by = LEB
+			}
+			add_core_of = SHL
+	  	}
+		SHL = {
+			transfer_state = 979
+			declare_war_on = {
+				target = LEB
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SYR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = EGY
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = JOR
+				type = annex_everything
+			}
+			load_oob = "SHL_CW"
+			give_military_access = ISP
+	  	}
+		ISP = {
+			give_military_access = SHL
+		}
+		ISP = {
+			add_to_faction = SHL
+		}
+	}
+}
+country_event = {
+	id = CANAAN.7 #
+	title = CANAAN.7.t
+	desc = CANAAN.7.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.7.a
+		add_manpower = 500
+	}
+}
+country_event = {
+	id = CANAAN.8 #
+	title = CANAAN.8.t
+	desc = CANAAN.8.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.8.a
+		add_popularity = {
+			ideology = socdem
+			popularity = -0.1
+		}
+	}
+}
+
+country_event = {
+	id = CANAAN.9 #
+	title = CANAAN.9.t
+	desc = CANAAN.9.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.9.a
+		add_to_variable = { canaanweeklymanp = -20 }
+		add_to_variable = { canaanws = 0.1 }
+		add_to_variable = { canaanatk = 0.1}
+		add_to_variable = { canaanbrkthru = 0.1}
+		custom_effect_tooltip = "Removes 20 manpower weekly, adds +10% war support, adds +10% division attack and breakthrough"
+	}
+}
+
+country_event = {
+	id = CANAAN.10 #
+	title = CANAAN.10.t
+	desc = CANAAN.10.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.10.a
+		remove_dynamic_modifier = { modifier = ISP_canaan_dynmod }
+		remove_ideas = ISP_mending_the_rift_4
+		add_idea = ISP_national_renaissance_idea
+	}
+}
+country_event = {
+	id = CANAAN.11 #
+	title = CANAAN.11.t
+	desc = CANAAN.11.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.11.a
+		add_to_variable = { ROWROWFIGHTDAPOWACANAAN = 1 }
+		custom_effect_tooltip = FAVORSBARLEV
+		ai_chance = {
+			base = 30
+			modifier = {
+            	factor = 1000
+            		has_game_rule = {
+            		    rule = ISP_ai_route
+            		    option = CANAAN
+            	}
+			}
+		}
+	}
+	option = {
+		name = CANAAN.11.b
+		ai_chance = {
+			base = 30
+			modifier = {
+            	factor = 1000
+            		has_game_rule = {
+            		    rule = ISP_ai_route
+            		    option = SNEH
+            	}
+			}
+		}
+		add_to_variable = { PATRIOTICWHITEANDBLUENATSOC = 1 }
+		custom_effect_tooltip = FAVORSSNEH
+	}
+}
+country_event = {
+	id = CANAAN.12 #
+	title = CANAAN.12.t
+	desc = CANAAN.12.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.12.a
+		ISP = {
+			add_country_leader_role = {
+			    character = ISP_omer_bar_lev
+			    promote_leader = yes
+			    country_leader = {
+			        ideology = socnat
+			        expire = "2050.1.1.1"
+			        traits = { }
+			    }
+			}
+			set_politics = { ruling_party = revolutionary_right }
+			set_cosmetic_tag = ISP_CANAAN_COSM
+            load_focus_tree = ISP_canaanites_this_tree_is_huge_help
+            mark_focus_tree_layout_dirty = yes
+			complete_national_focus = ISP_patriots_in_control
+			set_country_flag = CANAANCAB
+			activate_advisor = ISP_Sami_Abu_Shehadeh_idea
+			activate_advisor = ISP_jamal_zahalka_idea
+			activate_advisor = ISP_saadia_marciano_idea
+			activate_advisor = ISP_ami_ayalon_idea
+		}
+	}
+}
+country_event = {
+	id = CANAAN.13 #
+	title = CANAAN.13.t
+	desc = CANAAN.13.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.13.a
+		ISP = {
+            load_focus_tree = ISP_sneh
+            mark_focus_tree_layout_dirty = yes
+			complete_national_focus = ISP_general_secretary_sneh
+		}
+	}
+}
+country_event = {
+	id = CANAAN.14 #
+	title = CANAAN.14.t
+	desc = CANAAN.14.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.14.a
+		add_stability = 0.05
+		add_to_variable = { canaanorg = -0.03 }
+		add_to_variable = { canaanconstspeed = 0.05 }
+		custom_effect_tooltip = "Adds a -3% Army organization debuff, and +5% construction speed"
+	}
+}
+country_event = {
+	id = CANAAN.15 #
+	title = CANAAN.15.t
+	desc = CANAAN.15.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.15.a
+		add_stability = 0.01
+		add_to_variable = { canaanrevrightdrift = 0.01 }
+		add_to_variable = { canaanppgain = 0.1 }
+		custom_effect_tooltip = "Adds +10% political power gain and +1% daily Revolutionary Right popularity"
+	}
+}
+country_event = {
+	id = CANAAN.20 #
+	title = CANAAN.20.t
+	desc = CANAAN.20.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.20.a
+		every_state = {
+			limit = {
+				is_owned_by = ISP
+			}
+			add_core_of = ISP
+		}
+	}
+}
+country_event = {
+	id = CANAAN.21 #
+	title = CANAAN.21.t
+	desc = CANAAN.21.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.21.a
+		add_stability = 0.05
+	}
+}
+country_event = {
+	id = CANAAN.22 #
+	title = CANAAN.22.t
+	desc = CANAAN.22.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = CANAAN.22.a
+	}
+}
+country_event = {
+    id = ISP.1999 # flavor for israel
+    title = ISP.1999.t
+    desc = ISP.1999.desc
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+      name = ISP.1999.a
+	  add_stability = 0.02
+	  hidden_effect = {
+		limit {
+			NOT = {
+				ISP = {
+					has_country_flag = CANAANCAB
+				}
+			}
+		}
+		country_event = {
+			id = ISP.1999
+			days = 350
+		}
+	  }
+	}
+}
+country_event = {
+    id = ISP.2000 # flavor for israel
+    title = ISP.2000.t
+    desc = ISP.2000.desc
+    is_triggered_only = yes
+    fire_only_once = no
+
+    option = {
+      name = ISP.2000.a
+	  add_stability = 0.01
+	  add_political_power = 10
+	  hidden_effect = {
+		limit {
+			NOT = {
+				ISP = {
+					has_country_flag = CANAANCAB
+				}
+			}
+		}
+		country_event = {
+			id = ISP.2000
+			days = 360
+		}
+	  }
+	}
+}
+country_event = {
+    id = ISP.2001 # flavor for israel
+    title = ISP.2001.t
+    desc = ISP.2001.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+      name = ISP.2001.a
+	}
+}
+country_event = {
+    id = ISP.2002 # flavor for israel
+    title = ISP.2002.t
+    desc = ISP.2002.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+      name = ISP.2002.a
+	  every_state = {
+		limit = {
+			is_core_of = JOR
+		}
+		transfer_state_to = JOR
+	  }
+	  add_stability = 0.1
+	}
+}
+country_event = {
+    id = ISP.2003 # flavor for israel
+    title = ISP.2003.t
+    desc = ISP.2003.desc
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+      name = ISP.2003.a
+	  every_state = {
+		limit = {
+			is_core_of = JOR
+		}
+		transfer_state_to = JOR
+	  }
+	  add_stability = 0.1
+	}
+    option = {
+      name = ISP.2003.b
+	  add_stability = -0.05
+	  add_to_variable = {
+			var = terrorism_rate_ISP
+			value = -70
+		}
+	}
+}

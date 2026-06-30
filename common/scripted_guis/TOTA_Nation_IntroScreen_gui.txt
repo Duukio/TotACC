@@ -1,0 +1,226 @@
+scripted_gui = {
+	TOTA_Nation_Intro_Screen = {
+		context_type = player_context
+		window_name = "TOTA_Nation_Intro_Screen"
+		visible = { 
+			has_country_flag = TOTA_National_IntroduceScreen_Visible
+		}
+		dynamic_lists = {
+			top_tabs = {
+				array = NationIntro_top_tab_array
+				entry_container = "NationIntro_top_tabs_entry"
+				value = d
+			}
+		}
+		
+		### top_tabs
+		
+		effects = {
+			tab_button_click = {
+				if = {
+					limit = {
+						check_variable = { d = 1 }
+					}
+					clear_array = NationIntro_array_main
+					for_each_loop = {
+						array = NationIntro_storage_array
+						add_to_array = { NationIntro_array_main = v }
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { d = 2 }
+					}
+					clear_array = NationIntro_array_main
+					for_each_loop = {
+						array = NationIntro_economic_store
+						add_to_array = { NationIntro_array_main = v }
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { d = 3 }
+					}
+					clear_array = NationIntro_array_main
+					for_each_loop = {
+						array = NationIntro_tutorial_store
+						add_to_array = { NationIntro_array_main = v }
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = { d = 4 }
+					}
+					clear_array = NationIntro_array_main
+					for_each_loop = {
+						array = NationIntro_development_store
+						add_to_array = { NationIntro_array_main = v }
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							check_variable = { d = NationIntro_tab }
+						}
+					}
+					#set_variable = { NationIntro_Selected = 1 }
+				}
+				set_variable = { NationIntro_tab = d }
+			}
+			
+		}
+		
+		### top_tabs end ###
+
+		### Left RightPage shifting pages ##
+
+		effects = {
+			flip_left_page_button_click = {
+				subtract_from_variable = {  NationIntro_Selected = 1 }
+				clamp_variable = {
+					var = NationIntro_Selected
+					min = 1
+					max = NationIntro_Max
+				}
+				set_variable = {NationIntro_left_page_num =NationIntro_Selected }
+				subtract_from_variable = {  NationIntro_left_page_num = 1 }
+				multiply_variable ={NationIntro_left_page_num=2}
+				set_variable = {NationIntro_right_page_num =NationIntro_left_page_num }
+				add_to_variable = {  NationIntro_right_page_num = 1 }
+				
+			}
+			flip_right_page_button_click = {
+				add_to_variable = {  NationIntro_Selected = 1 }
+				clamp_variable = {
+					var = NationIntro_Selected
+					min = 1
+					max = NationIntro_Max
+				}
+				set_variable = {NationIntro_left_page_num =NationIntro_Selected }
+				subtract_from_variable = {  NationIntro_left_page_num = 1 }
+				multiply_variable ={NationIntro_left_page_num=2}
+				set_variable = {NationIntro_right_page_num =NationIntro_left_page_num }
+				add_to_variable = {  NationIntro_right_page_num = 1 }
+			}
+
+		}
+		triggers = {
+			flip_left_page_button_visible ={
+				if = {
+					AND = {
+						check_variable = {NationIntro_Selected > 1}
+						check_variable = {NationIntro_tab = 1}
+					}
+				}
+			}
+			flip_left_page_num_visible ={
+				if = {
+					AND = {
+						check_variable = {NationIntro_tab = 1}
+					}
+				}
+			}
+
+			flip_right_page_button_visible ={
+				if = {
+					AND = {
+						check_variable = {NationIntro_Selected < NationIntro_Max}
+						check_variable = {NationIntro_tab = 1}
+					}
+				}
+			}
+			flip_right_page_num_visible ={
+				if = {
+					AND = {
+						check_variable = {NationIntro_tab = 1}
+					}
+				}
+			}
+
+		}
+
+
+		
+		## Frame control
+		
+		triggers = {
+			Content_button_visible = {
+				if = {
+					limit = {
+						check_variable = { NationIntro_Selected = f }
+					}
+					set_temp_variable = { content_frame = 2 }
+				}
+				else = {
+					set_temp_variable = { content_frame = 1 }
+				}
+			}
+			tab_button_visible = {
+				if = {
+					limit = {
+						check_variable = { NationIntro_tab = d }
+					}
+					set_temp_variable = { tab_frame = 1 }
+				}
+				else = {
+					set_temp_variable = { tab_frame = 2 }
+				}
+			}
+		}
+		## Gridboxes end ###
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = TOTA_National_IntroduceScreen_Visible
+				country_event = {
+					id = superevent_stfu.1
+				}
+				#country_event = annex.event
+			}
+		}
+		
+		triggers = {
+			center_title_visible = {
+				NOT = {
+					check_variable = { NationIntro_tab = 4 }
+				}
+			}
+			center_desc_left_visible = {
+				NOT = {
+					check_variable = { NationIntro_tab = 4 }
+				}
+			}
+			center_desc_right_visible = {
+				NOT = {
+					check_variable = { NationIntro_tab = 4 }
+				}
+			}
+
+			Start_logo_1_visible = {check_variable = { NationIntro_tab = 4 }}
+			Start_logo_2_visible = {check_variable = { NationIntro_tab = 4 }}
+			TOTA_Introduction_Start_visible = {check_variable = { NationIntro_tab = 4 }}
+			TOTA_Introduction_Start_Desc_visible = {check_variable = { NationIntro_tab = 4 }}
+			TOTA_Introduction_Credit_visible = { check_variable = { NationIntro_tab = 4 }}
+			TOTA_Introduction_Credit_Desc_visible = {check_variable = { NationIntro_tab = 4 }}
+
+			
+		}
+		
+		properties = {
+			flag = 				{ image = "[ROOT.GetFlag]" }
+			poster = 			{ image = "[GET_POSTER]" }
+			poster2 = 			{ image = "[GET_POSTER2]" }
+			# Top tabs
+			tab_button = {
+				frame = tab_frame
+			}
+			tab_icon = {
+				image = "GFX_NationIntro_top_tabs_icon_[?d]"
+				y = 14
+				frame = tab_frame
+			}
+			tab_text= {
+			}
+		}
+	}
+}

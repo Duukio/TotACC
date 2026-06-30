@@ -1,0 +1,41 @@
+state={
+id=1259
+	
+	name="Batavia"
+
+	manpower = 27795436
+	buildings_max_level_factor=2.000
+	state_category = megalopolis
+	
+	resources={
+		rubber=250
+		oil=73
+	}
+
+	history={
+		owner = HOL
+		add_core_of = HOL
+        add_core_of = IND
+		victory_points = {
+			7381 50
+		}
+
+		buildings = {
+            school = 5
+			infrastructure = 5
+			industrial_complex = 10
+			dockyard = 5
+			air_base = 5
+			arms_factory = 5
+			7381 = {
+				naval_base = 10
+			}
+		}
+	}
+
+	provinces={
+		7381
+	}
+
+	local_supplies=5.0 
+}

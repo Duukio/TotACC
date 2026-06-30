@@ -1,0 +1,12 @@
+spriteTypes = {
+	textSpriteType = {
+		name = "GFX_mainlobby_button_alt"
+		textureFile = "gfx/interface/main_lobby_button_alt.png"
+		noOfFrames = 4
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_mainmenu_bgg"
+		texturefile = "gfx/interface/mainmenu_bg.png"
+	}
+}

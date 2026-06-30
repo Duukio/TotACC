@@ -1,0 +1,31 @@
+state={
+id=220
+	name="STATE_220"
+    buildings_max_level_factor = 1
+	state_category = city
+	resources = {
+	oil = 5
+	uranium = 150
+	}
+
+	history={
+	
+			victory_points = {
+			2168 5
+		}
+		owner = BRA
+		buildings = {
+            school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = BRA
+
+	}
+	provinces={
+		2168 5151 13554 13565 13566 13567 13568 13569 13570 13571 13572 13573 13574 
+	}
+	manpower=1572866
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

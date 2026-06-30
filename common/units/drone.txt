@@ -1,0 +1,58 @@
+sub_units = {
+    drone_support = {
+        sprite = infantry #idk
+		abbreviation = "DRN"        
+        # Controls the map icon category used for the unit
+        map_icon_category = infantry #placeholder
+
+        priority = 0
+        ai_priority = 0
+
+        active = yes #?       # Whether the unit is usable without explicit unlocking in technology
+
+        transport = drone_equipment
+        
+        group = support
+        
+        # Internal types
+        type = {
+            infantry
+            support
+        }
+        
+        # Categories the unit belongs to.
+        categories = {
+            category_support_battalions
+            category_anti_air
+            category_army
+        }
+        
+		combat_width = 0
+		training_time = 120
+
+		need = {
+			drone_equipment = 100
+		}
+
+		can_be_parachuted = yes
+		
+		#Size Definitions
+		max_strength = 0.33
+		max_organisation = 0
+		default_morale = 0.9
+		manpower = 150
+		weight = 0.15
+		
+        supply_consumption = 0.25
+
+		defense = -0.25
+		breakthrough = 0.1
+		soft_attack =-0.1
+		hard_attack = -0.1
+		air_attack = -0.2
+		urban = {
+			attack = 0.3
+			defence = 0.3
+		}
+   }
+}

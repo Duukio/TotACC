@@ -1,0 +1,128 @@
+ideas = {
+    computerization = {
+		law = yes
+		less_than_5 = {
+
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = 0.15
+                war_support_factor = 0.1
+                political_power_gain = 0.15
+				monthly_soctrends_drift_TP_P = -0.01
+			}
+
+			cancel_if_invalid = no
+		}
+		five_to_fifteen = { #iirc the game doesnt like ideas with numbers at the beginning
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = 0.05
+                war_support_factor = 0.05
+                political_power_gain = 0.05
+                research_speed_factor = 0.01
+                production_speed_buildings_factor = 0.01
+				monthly_soctrends_drift_TP_P = -0.005
+			}
+            default = yes
+			cancel_if_invalid = no
+		}
+		sixteen_to_forty = { #iirc the game doesnt like ideas with numbers at the beginning
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.05
+                political_power_gain = -0.1
+                research_speed_factor = 0.035
+                production_speed_buildings_factor = 0.07
+                gdp_growth_modifier = 0.03
+				monthly_soctrends_drift_TP_P = 0.015
+			}
+			cancel_if_invalid = no
+		}
+		fortyone_to_sixty = { #iirc the game doesnt like ideas with numbers at the beginning
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.2
+                war_support_factor = -0.15
+                political_power_gain = -0.15
+                research_speed_factor = 0.06
+                production_speed_buildings_factor = 0.07
+                gdp_growth_modifier = 0.06
+                production_factory_max_efficiency_factor = 0.1
+				monthly_soctrends_drift_TP_P = 0.025
+			}
+			cancel_if_invalid = no
+		}
+		sixtyone_to_eighty = { #iirc the game doesnt like ideas with numbers at the beginning
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.35
+                war_support_factor = -0.4
+                political_power_gain = -0.35
+                research_speed_factor = 0.1
+                production_speed_buildings_factor = 0.12
+                gdp_growth_modifier = 0.09
+                production_factory_max_efficiency_factor = 0.12
+				monthly_soctrends_drift_TP_P = 0.04
+			}
+			cancel_if_invalid = no
+		}
+		eighty_to_ninety = { #iirc the game doesnt like ideas with numbers at the beginning
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.4
+                war_support_factor = -0.4
+                political_power_gain = -0.4
+                research_speed_factor = 0.12
+                production_speed_buildings_factor = 0.15
+                gdp_growth_modifier = 0.11
+                production_factory_max_efficiency_factor = 0.14
+				monthly_soctrends_drift_TP_P = 0.05
+			}
+			cancel_if_invalid = no
+		}
+		pure_algocracy = { #iirc the game doesnt like ideas with numbers at the beginning
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+			modifier = {
+                political_power_gain = -0.1
+                research_speed_factor = 0.12
+                production_speed_buildings_factor = 0.15
+                gdp_growth_modifier = 0.11
+                production_factory_max_efficiency_factor = 0.14
+                min_export = 0.25
+                trade_opinion_factor = -0.1
+				monthly_soctrends_drift_TP_P = 0.08
+			}
+			cancel_if_invalid = no
+		}
+    }
+}

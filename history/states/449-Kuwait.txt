@@ -1,0 +1,36 @@
+state={
+id=449
+	
+
+	name="STATE_449"
+
+	manpower = 4420110
+	
+	state_category = metropolis
+	resources={
+		oil=800
+	}
+
+	history={
+		owner = KUW
+		buildings = {
+            school = 2
+			infrastructure = 5
+			arms_factory = 2
+			industrial_complex = 5
+			8085 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			8085 30
+		}
+		add_core_of = KUW
+	}
+
+	provinces={
+	8085
+	}
+
+	local_supplies=0.0 
+}

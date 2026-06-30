@@ -1,0 +1,26 @@
+leader_traits = {
+
+	### Custom Traits ###
+	# Mercenaries #
+	SEY_PMC_trait = { 
+	
+		type = all
+		trait_type = personality_trait
+		
+		allowed = {
+			always = no
+		}
+		
+		modifier = {
+			planning_speed = 0.20
+		}
+
+		attack_skill_factor = 1
+		
+		non_shared_modifier = {
+			experience_gain_factor = -0.25
+		}
+	
+		new_commander_weight = { factor = 0 }
+	}
+}

@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+			ERI_eritrean_multiculturalism = {
+			picture = ERI_eritrean_multiculturalism
+			allowed = {
+				tag = ERI
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.07
+			war_support_factor = -0.15
+			political_power_gain = 0.1
+            gdp_growth_modifier = 0.03
+			}
+		}
+	}	
+}

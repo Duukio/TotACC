@@ -1,0 +1,28 @@
+	#A Righteous - And Expected - Victory
+	shared_focus = {
+		id = BIA_a_righteous__and_expected__victory
+		icon = GFX_focus_arighteousvictory
+		x = 7
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+				has_global_flag = anglophone_crisis
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = anglophone_crisis_tooltip
+			}
+		}
+		completion_reward = {
+			add_stability = 0.10
+			hidden_effect = {
+			add_to_variable = { REAL_GROWTH = 0.003 }
+			}
+			custom_effect_tooltip = "BIA_REAL_GROWTH_ADD_03"
+		}
+	}

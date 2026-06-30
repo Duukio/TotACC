@@ -1,0 +1,26 @@
+
+state={
+	id=967
+	name="STATE_967"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = BIA
+		buildings = {
+			school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = BIA
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		13656 13910 
+	}
+	manpower=2520354
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

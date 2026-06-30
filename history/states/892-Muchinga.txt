@@ -1,0 +1,25 @@
+
+state={
+	id=892
+	name="STATE_892"
+    buildings_max_level_factor = 1
+	provinces={
+		5221 10930 13770 13772 13780 13782 13784 13788 13791 
+	}
+	manpower=2645824
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = ZAM
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			5221 10
+		}
+		add_core_of = ZAM
+	}
+}

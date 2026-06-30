@@ -1,0 +1,281 @@
+ideas = {
+	country = {
+			HON_football_humiliation = {
+			picture = HON_football_humiliation
+			allowed = {
+				tag = HON
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			political_power_gain = -0.3
+			stability_factor = -0.3
+			}
+		}
+		HON_population_loss = {
+			picture = HON_population_loss
+			allowed = {
+				tag = HON
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			monthly_population = -1
+			#conscription = -0.03
+			stability_factor = -0.1
+			}
+		}
+		HON_crippling_poverty = {
+			picture = HON_crippling_poverty
+			allowed = {
+				tag = HON
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			industrial_capacity_factory = -0.4
+			war_support_factor = -0.1
+			stability_weekly = -0.01
+			custom_modifier_tooltip = "HON_elitist_drift"
+			}
+		}
+		MSK_successfully_free = {
+			picture = MSK_successfully_free
+			allowed = {
+				tag = MSK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				surrender_limit = 0.2
+				stability_factor = 0.25
+				war_support_factor = 0.3
+				conscription_factor = 0.33
+			}
+		}
+		SEY_MSK_contract = {
+			picture = SEY_MSK_contract
+			allowed = {
+				tag = MSK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				offence = 0.1
+				defence = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.12
+				land_night_attack = 0.1
+			}
+			targeted_modifier = {
+				tag = SEY
+				extra_trade_to_target_factor = 0.45				
+			}
+		}
+		MSK_CAL_friend = {
+			picture = MSK_CAL_friend
+			allowed = {
+				tag = MSK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.03
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				research_speed_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = CAL
+				extra_trade_to_target_factor = 0.44				
+			}
+		}
+		MSK_YDWM = {
+			picture = MSK_YDWM
+			allowed = {
+				tag = MSK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				weekly_manpower = 150
+				army_morale_factor = 0.1
+			}
+		}
+		MSK_jungle_blitz = {
+			picture = MSK_jungle_blitz
+			allowed = {
+				tag = MSK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				army_speed_factor = 0.25
+				army_org_factor = -0.07
+				weekly_manpower = -10
+			}
+		}
+		CCPA = {
+			picture = CCPA
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.02
+				min_export = 0.15
+				consumer_goods_factor = 0.01
+				stability_factor = 0.1
+			}
+		}
+		MSK_drug = {
+			picture = MSK_drug
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				stability_weekly = -0.01
+				political_power_gain = 0.1
+				conservatism_drift = 0.02
+				war_support_weekly = 0.02
+			}
+		}
+		PAFCPG_observer = {
+			picture = PAFCPG_observer
+			allowed = {
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				gdp_growth_modifier = 0.03
+				monthly_soctrends_drift_TP_P = 0.01
+			}
+			targeted_modifier = {
+				tag = JAP
+				extra_trade_to_target_factor = 0.25
+			}
+		}
+	}	
+}

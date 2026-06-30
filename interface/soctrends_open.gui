@@ -1,0 +1,14 @@
+guiTypes = {
+	containerWindowType = {
+		name = "soctrends_open"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height = 250 }
+		Orientation = center
+	
+		buttonType = {
+			name = "OPEN_SOCTRENDS_BUTTON"
+			spriteType = "GFX_open_soctrend"
+			position = { x = 0 y = 0 }
+		}
+	}
+}

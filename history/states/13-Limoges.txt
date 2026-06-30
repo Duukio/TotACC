@@ -1,0 +1,22 @@
+state={
+id=13
+	name="STATE_13"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	history={
+		owner = FRA
+		victory_points = { 620 15 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		620 755 3598 3771 6618 6773 6775 6792 9593 9734 9751 11576 11718 11720 
+	}
+	manpower=700000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,90 @@
+#this is where buildings get their modifiers and soctrends stuff
+
+soctrends_mod = {
+	#icon =
+	enable = {
+		check_variable = {
+			var = THIS.SOCTRENDS_DC
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_DE
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_EE
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_TP
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_EA
+			value = 100
+			compare = less_than_or_equals
+		}
+	}
+        political_power_gain = var:pol_power_calc
+        stability_factor = var:stability_calc
+        war_support_factor = var:ws_calc
+        gdp_growth_modifier = var:gdp_mod_calc
+        production_speed_buildings_factor = var:construc_speed_calc
+        monthly_population = var:monthly_pop_calc
+        surrender_limit = var:surr_lim_calc
+        min_export = var:min_exp_calc
+        army_speed_factor = var:un_speed_calc
+}
+
+soctrends_law_mismatch_mod = {
+	#icon =
+	enable = {
+		check_variable = {
+			var = THIS.SOCTRENDS_DC
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_DE
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_EE
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_TP
+			value = 100
+			compare = less_than_or_equals
+		}
+		check_variable = {
+			var = THIS.SOCTRENDS_EA
+			value = 100
+			compare = less_than_or_equals
+		}
+	}
+        political_power_gain = var:mismatch_pp_gain
+        stability_factor = var:mismatch_stab
+        war_support_factor = var:mismatch_ws
+        gdp_growth_modifier = var:mismatch_gdp
+        production_speed_buildings_factor = var:mismatch_constspeed
+        monthly_population = var:mismatch_mpop
+        surrender_limit = var:mismatch_surrlim
+}
+school_mod = {
+	#icon = 
+	enable = {
+		THIS = {
+			any_controlled_state = {
+				school > 2 #this nukes the dynmod calc for shithole countries  :^3
+			}
+		}
+	}
+	research_speed_factor = var:res_calc
+}

@@ -1,0 +1,101 @@
+#kept as a reference, same as on_actions_west_africa.txt
+
+
+#on_actions = {
+#	on_state_control_changed = {
+#		effect = {
+#			if = {
+#				limit = {
+#					HON = {
+#						controls_state = 526
+#						controls_state = 523
+#						has_war_with = ELS
+#					}
+#				}
+#			white_peace = {
+#				tag = ELS
+#				message = "Treaty of San Miguel"
+#			}
+#			ELS = {
+#			clear_variable = ELS.GDP
+#			clear_variable = ELS.DEBT
+#			clear_variable = ELS.REAL_GROWTH
+#			}
+#			EMR = {			
+#			clear_variable = EMR.GDP
+#			clear_variable = EMR.DEBT
+#			clear_variable = EMR.REAL_GROWTH
+#			}
+#			HON = {	
+#				annex_country = {
+#					target = ELS
+#					transfer_troops = no
+#				}
+#				annex_country = {
+#					target = EMR
+#					transfer_troops = no
+#				}
+#			}
+#			every_country = {
+#			limit = {
+#			is_ai = no
+#			}
+#			news_event = { days = 1 id = WNE.11 }
+#			}
+#			set_country_flag = OMSKDURAS_win			
+#			}
+#			else_if = {
+#				limit = {
+#					OR = {
+#						ELS = {
+#							controls_state = 521
+#							has_war_with = HON
+#						}
+#						EMR = {
+#							controls_state = 521
+#							has_war_with = HON
+#						}
+#					}
+#				}
+#			white_peace = {
+#				tag = HON
+#				message = "Treaty of Tegucigalpa"
+#			}
+#			every_country = {
+#			limit = {
+#			is_ai = no
+#			}
+#			news_event = { days = 1 id = WNE.12 }
+#			}
+#			ELS = {
+#			puppet = HON
+#				annex_country = {
+#					target = EMR
+#					transfer_troops = yes
+#				}
+#			clear_variable = EMR.GDP
+#			clear_variable = EMR.DEBT
+#			clear_variable = EMR.REAL_GROWTH
+#			add_to_variable = { ELS.GDP = 25 }
+#			}
+#			HON = {
+#			add_to_variable = { HON.DEBT = 50 }
+#				create_country_leader = {
+#					name = "Juan Orlando Hernández"
+#					desc = "POLITICS_JOSEPH_STALIN_DESC"
+#					picture = "Portrait_HON_Juan_Hernandez.dds"
+#					expire = "2040.1.1"
+#					ideology = illiberal_dem_subideology
+#					traits = {
+#						
+#					}
+#				}
+#			}	
+#			set_country_flag = ELS_win
+#			}
+#			else = {
+#			
+#			}
+#		}
+#	}
+#}

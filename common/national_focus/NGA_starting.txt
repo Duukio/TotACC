@@ -1,0 +1,401 @@
+
+shared_focus = {
+	id = NGA_fifth_times_the_charm
+	icon = GFX_NGA_fifth_times_the_charm
+	cost = 2
+	x = 4
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_fifth_times_the_charm"
+        add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = NGA_tigthen_wartime_economy
+	icon = GFX_NGA_tigthen_wartime_economy
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = partial_economic_mobilisation
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_tigthen_wartime_economy"
+	}
+	relative_position_id = NGA_fifth_times_the_charm
+	prerequisite = { focus = NGA_fifth_times_the_charm }
+}
+
+shared_focus = {
+	id = NGA_pact_with_islamists
+	icon = GFX_NGA_pact_with_islamists
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        add_popularity = {
+            ideology = revolutionary_right
+            popularity = 0.2
+        }
+		hidden_effect = {
+        load_oob = "NGA_ISLAMISTS"
+		}
+		custom_effect_tooltip = "Calls Islamist paramilitary units in Kano City to help us."
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_pact_with_islamists"
+	}
+	relative_position_id = NGA_tigthen_wartime_economy
+	prerequisite = { focus = NGA_tigthen_wartime_economy }
+    mutually_exclusive = { focus = NGA_we_want_our_invasion focus = NGA_call_victoria }
+}
+
+shared_focus = {
+	id = NGA_we_want_our_invasion
+	icon = GFX_NGA_we_want_our_invasion
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+        add_war_support = 0.1
+        add_ideas = limited_conscription
+        add_stability = -0.05
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_we_want_our_invasion"
+	}
+	relative_position_id = NGA_tigthen_wartime_economy
+	prerequisite = { focus = NGA_tigthen_wartime_economy }
+     mutually_exclusive = { focus = NGA_pact_with_islamists focus = NGA_call_victoria }
+}
+
+shared_focus = {
+	id = NGA_call_victoria
+	icon = GFX_NGA_call_victoria
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+        add_timed_idea = {
+			idea = NGA_contract_with_SEY
+			days = 300
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_call_victoria"
+	}
+	relative_position_id = NGA_tigthen_wartime_economy
+	prerequisite = { focus = NGA_tigthen_wartime_economy }
+     mutually_exclusive = { focus = NGA_we_want_our_invasion focus = NGA_pact_with_islamists }
+}
+
+shared_focus = {
+	id = NGA_one_does_not_simply_cross_the_niger
+	icon = GFX_NGA_one_does_not_simply_cross_the_niger
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+        27 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                    limit_to_victory_point > 1
+                }
+            }
+        }
+        33 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                }
+            }
+        }
+        32 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                }
+            }
+        }
+        28 = {
+            add_building_construction = {
+                type = bunker
+                level = 2
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                }
+            }
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_one_does_not_simply_cross_the_niger"
+	}
+	relative_position_id = NGA_we_want_our_invasion
+	prerequisite = { focus = NGA_we_want_our_invasion }
+}
+
+shared_focus = {
+	id = NGA_no_longer_a_brother_war
+	icon = GFX_NGA_no_longer_a_brother_war
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        BIA = {
+            add_stability = -0.1
+            add_war_support = -0.1
+        }
+        NGA = {
+            add_political_power = -100
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_no_longer_a_brother_war"
+	}
+	relative_position_id = NGA_one_does_not_simply_cross_the_niger
+	prerequisite = { focus = NGA_one_does_not_simply_cross_the_niger }
+}
+
+shared_focus = {
+	id = NGA_a_peoples_war
+	icon = GFX_NGA_a_peoples_war
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = extensive_conscription
+		add_war_support = 0.1
+		add_stability = -0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_peoples_war"
+	}
+	relative_position_id = NGA_we_want_our_invasion
+	prerequisite = { focus = NGA_we_want_our_invasion focus = NGA_pact_with_islamists }
+}
+
+shared_focus = {
+	id = NGA_promises_to_minorities
+	icon = GFX_NGA_promises_to_minorities
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        968 = {
+            add_resistance = 30
+        }
+        23 = {
+            add_resistance = 30
+        }
+        NGA = {
+            add_political_power = 50
+            add_war_support = 0.05
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_promises_to_minorities"
+	}
+	relative_position_id = NGA_a_peoples_war
+	prerequisite = { focus = NGA_a_peoples_war }
+}
+
+shared_focus = {
+	id = NGA_a_holy_war
+	icon = GFX_NGA_a_holy_war
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = NGA_holy_war
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_holy_war"
+	}
+	relative_position_id = NGA_pact_with_islamists
+	prerequisite = { focus = NGA_pact_with_islamists  }
+}
+
+shared_focus = {
+	id = NGA_enhanced_occupation_techniques
+	icon = GFX_NGA_enhanced_occupation_techniques
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        add_ideas = NGA_enhanced_occupation_techniques
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_enhanced_occupation_techniques"
+	}
+	relative_position_id = NGA_a_holy_war
+	prerequisite = { focus = NGA_a_holy_war }
+}
+
+shared_focus = {
+	id = NGA_a_fast_war
+	icon = GFX_NGA_a_fast_war
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_fast_war_baby
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_fast_war"
+	}
+	relative_position_id = NGA_call_victoria
+	prerequisite = { focus = NGA_call_victoria }
+}
+
+shared_focus = {
+	id = NGA_trust_the_experts
+	icon = GFX_NGA_trust_the_experts
+	cost = 2
+	x = 2
+	available = {
+		has_political_power > 99
+	}
+	y = 1
+	completion_reward = {
+		add_research_slot = 1
+		add_political_power = -100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_trust_the_experts"
+	}
+	relative_position_id = NGA_call_victoria
+	prerequisite = { focus = NGA_call_victoria }
+}
+
+shared_focus = {
+	id = NGA_crushing_clientelism
+	icon = GFX_NGA_crushing_clientelism
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = -0.05
+		add_war_support = 0.1
+		add_political_power = 50
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_crushing_clientelism"
+	}
+	relative_position_id = NGA_trust_the_experts
+	prerequisite = { focus = NGA_trust_the_experts }
+}
+
+shared_focus = {
+	id = NGA_the_gun_fever
+	icon = GFX_NGA_the_gun_fever
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = NGA_gun_fever
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_the_gun_fever"
+	}
+	relative_position_id = NGA_a_fast_war
+	prerequisite = { focus = NGA_a_fast_war }
+}
+
+shared_focus = {
+	id = NGA_planned_reforms
+	icon = GFX_NGA_planned_reforms
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = NGA.6
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_planned_reforms"
+	}
+	relative_position_id = NGA_promises_to_minorities
+	prerequisite = { focus = NGA_promises_to_minorities focus = NGA_no_longer_a_brother_war }
+}
+
+shared_focus = {
+	id = NGA_patriotic_confiscations
+	icon = GFX_NGA_patriotic_confiscations
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_controlled_by = NGA
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 1
+			    instant_build = yes
+			}
+		}
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -50
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_patriotic_confiscations"
+	}
+	relative_position_id = NGA_enhanced_occupation_techniques
+	prerequisite = { focus = NGA_enhanced_occupation_techniques }
+}
+
+shared_focus = {
+	id = NGA_lessons_from_the_last_four
+	icon = GFX_NGA_lessons_from_the_last_four
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		army_experience = 50
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_lessons_from_the_last_four"
+	}
+	relative_position_id = NGA_crushing_clientelism
+	prerequisite = { focus = NGA_the_gun_fever  focus = NGA_crushing_clientelism}
+}
+
+shared_focus = {
+	id = NGA_no_more_fails
+	icon = GFX_NGA_no_more_fails
+	cost = 2
+	x = 1
+	y = 1
+	available = {
+		always = no
+	}
+	completion_reward = {
+		add_stability = 0.35
+		add_war_support = 0.35
+		add_to_variable = { NGA.GDP = 200 }
+		load_focus_tree = NGA_postwar_victory
+		 remove_ideas = NGA_holy_war
+		 remove_ideas = NGA_gun_fever
+		 remove_ideas = NGA_fast_war_baby
+		 remove_ideas = NGA_enhanced_occupation_techniques
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_no_more_fails"
+	}
+	relative_position_id = NGA_planned_reforms
+	prerequisite = { focus = NGA_patriotic_confiscations focus = NGA_lessons_from_the_last_four focus = NGA_planned_reforms }
+    mutually_exclusive = { focus = NGA_im_just_glad_its_over }
+}
+
+shared_focus = {
+	id = NGA_im_just_glad_its_over
+	icon = GFX_NGA_im_just_glad_its_over
+	cost = 2
+	x = 1
+	y = 1
+	available = {
+		always = no
+	}
+	completion_reward = {
+		add_stability = -0.35
+		add_war_support = -0.35
+		add_to_variable = { NGA.GDP = -50 }
+         country_event = {
+             id = NGA.1999
+             days = 1
+         }
+		 remove_ideas = NGA_holy_war
+		 remove_ideas = NGA_gun_fever
+		 remove_ideas = NGA_fast_war_baby
+		 remove_ideas = NGA_enhanced_occupation_techniques
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_im_just_glad_its_over"
+	}
+	relative_position_id = NGA_patriotic_confiscations
+	prerequisite = { focus = NGA_patriotic_confiscations focus = NGA_lessons_from_the_last_four focus = NGA_planned_reforms }
+    mutually_exclusive = { focus = NGA_no_more_fails }
+}

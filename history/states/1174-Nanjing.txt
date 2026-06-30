@@ -1,0 +1,30 @@
+
+state={
+	id=1174
+	name="STATE_1174"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = PRC
+		victory_points = {
+			11913 50 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 4
+
+		}
+		add_core_of = PRC
+
+	}
+
+	provinces={
+		1099 1146 11913 
+	}
+	manpower=9314685
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=20.000
+}

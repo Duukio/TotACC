@@ -1,0 +1,51 @@
+ideas = {
+	country = {
+			LIE_Nutzlos_Krone = {
+			picture = LIE_Nutzlos_Krone
+			allowed = {
+				tag = LIE
+			}
+
+            available = {
+               	tag = LIE
+            }
+
+            cancel = {
+              
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			socdem_drift = 0.01
+			dissident_right_drift  = 0.05
+			liberalism_drift = 0.04
+			monthly_soctrends_drift_EE_E2 = 0.01
+		    available = { has_government = autocracy }
+			}
+		}
+		    LIE_Heimat_Fur_Goop = {
+			picture = LIE_Heimat_Fur_Goop
+			allowed = {
+				tag = LIE
+			}
+
+        	available = {
+				tag = LIE
+			}
+			cancel = {
+
+			}
+
+			allowed_civil_war = {
+				always = no
+			}				
+			
+			modifier = {
+			revolutionary_right_drift  = 0.01
+			}
+		}
+	}
+}

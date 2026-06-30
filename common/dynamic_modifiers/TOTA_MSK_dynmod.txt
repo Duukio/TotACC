@@ -1,0 +1,12 @@
+CCPA_DYNMOD = {
+	icon = GFX_idea_CCPA
+	enable = {
+        MSK = {
+            has_completed_focus = MSK_found_the_creolecaribbean_peoples_association
+        }
+	}
+    stability_factor = MSK_shares_stab_factor
+    gdp_growth_modifier = MSK_gdp_ccpa
+    political_power_gain = MSK_pp_gain_ccpa
+    consumer_goods_factor = MSK_consumer_gain_ccpa
+}

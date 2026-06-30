@@ -1,0 +1,475 @@
+focus_tree = {
+    id = MSK_mcafee
+    country = {
+        base = 0
+        modifier = {
+            add = 101
+            tag = MSK
+			has_country_flag = MSK_mcafee
+        }
+    }
+
+	focus = {
+		id = MSK_the_computer_king_of_corn_island
+		icon = GFX_MSK_the_computer_king_of_corn_island
+		cost = 8
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_political_power = 100
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_the_computer_king_of_corn_island"
+		}
+	}
+	
+	focus = {
+		id = MSK_rearrange_our_priorities
+		icon = GFX_MSK_rearrange_our_priorities
+		cost = 8
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+			}
+			add_war_support = 0.1
+			add_manpower = 10000
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_rearrange_our_priorities"
+		}
+		relative_position_id = MSK_the_computer_king_of_corn_island
+		prerequisite = { focus = MSK_the_computer_king_of_corn_island }
+	}
+	
+	focus = {
+		id = MSK_copirates_of_the_caribbean
+		icon = GFX_MSK_copirates_of_the_caribbean
+		cost = 8
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			unlock_decision_category_tooltip = MSK_raid_shadow_legends
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_copirates_of_the_caribbean"
+		}
+		relative_position_id = MSK_rearrange_our_priorities
+		prerequisite = { focus = MSK_rearrange_our_priorities }
+	}
+	
+	focus = {
+		id = MSK_the_emperors_new_groove
+		icon = GFX_MSK_the_emperors_new_groove
+		cost = 8
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = SOV
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_the_emperors_new_groove"
+		}
+		relative_position_id = MSK_rearrange_our_priorities
+		prerequisite = { focus = MSK_rearrange_our_priorities }
+	}
+	
+	focus = {
+		id = MSK_appeasing_the_conquistadors
+		icon = GFX_MSK_appeasing_the_conquistadors
+		cost = 8
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_to_variable = { MSK.GDP = -1 }
+			add_stability = -0.05
+			add_war_support = 0.05
+			add_ideas = extensive_conscription
+			add_ideas = partial_economic_mobilisation
+			add_ideas = national_salvation_model
+			custom_effect_tooltip = "We will give our Contras nice homes, warm food and plenty of women."
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_appeasing_the_conquistadors"
+		}
+		relative_position_id = MSK_rearrange_our_priorities
+		prerequisite = { focus = MSK_rearrange_our_priorities }
+	}
+	
+	focus = {
+		id = MSK_prince_of_seychelles
+		icon = GFX_MSK_prince_of_seychelles
+		cost = 8
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = SEY_MSK_contract
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_prince_of_seychelles"
+		}
+		relative_position_id = MSK_rearrange_our_priorities
+		prerequisite = { focus = MSK_rearrange_our_priorities }
+	}
+	
+	focus = {
+		id = MSK_corrupt_the_king
+		icon = GFX_MSK_corrupt_the_king
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			clr_country_flag = hendy_clarence
+			clr_country_flag = has_double_leader
+			custom_effect_tooltip = "Joseph will resign."
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_corrupt_the_king"
+		}
+		relative_position_id = MSK_copirates_of_the_caribbean
+		prerequisite = { focus = MSK_copirates_of_the_caribbean }
+		prerequisite = { focus = MSK_the_emperors_new_groove }
+	}
+	
+	focus = {
+		id = MSK_held_together_by_solder
+		icon = GFX_MSK_held_together_by_solder
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+			    bonus = 0.8
+			    uses = 2
+			    category = infantry_tech
+			}			
+			add_tech_bonus = {
+			    bonus = 0.66
+			    uses = 2
+			    category = electronics
+			}			
+			add_tech_bonus = {
+			    bonus = 0.44
+			    uses = 2
+			    category = industry
+			}			
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_held_together_by_solder"
+		}
+		relative_position_id = MSK_appeasing_the_conquistadors
+		prerequisite = { focus = MSK_appeasing_the_conquistadors }
+		prerequisite = { focus = MSK_prince_of_seychelles }
+	}
+	
+	focus = {
+		id = MSK_no_enemies_only_customers
+		icon = GFX_MSK_no_enemies_only_customers
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_to_variable = { MSK.REAL_GROWTH = 0.03 }
+			custom_effect_tooltip = "Adds 3% Real Growth"
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_no_enemies_only_customers"
+		}
+		relative_position_id = MSK_the_emperors_new_groove
+		prerequisite = { focus = MSK_the_emperors_new_groove }
+		prerequisite = { focus = MSK_appeasing_the_conquistadors }
+	}
+	
+	focus = {
+		id = MSK_throw_bukele_in_the_trash
+		icon = GFX_MSK_throw_bukele_in_the_trash
+		cost = 8
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ELS = {
+				add_opinion_modifier = {
+				    target = MSK
+				    modifier = embargo
+				}				
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = ELS
+			}
+			add_stability = 0.05
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_throw_bukele_in_the_trash"
+		}
+		relative_position_id = MSK_corrupt_the_king
+		prerequisite = { focus = MSK_corrupt_the_king }
+		prerequisite = { focus = MSK_held_together_by_solder }
+		prerequisite = { focus = MSK_no_enemies_only_customers }
+	}
+	
+	focus = {
+		id = MSK_against_the_world
+		icon = GFX_MSK_against_the_world
+		cost = 8
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Your Social Trends will significantly change. Go check them later."
+			hidden_effect = {
+				set_variable = {
+				var = MSK.SOCTRENDS_DC
+				value = 20
+				}
+				set_variable = {
+				var = MSK.SOCTRENDS_DE
+				value = 10
+				}
+				set_variable = {
+				var = MSK.SOCTRENDS_EE
+				value = 10
+				}
+				set_variable = {
+				var = MSK.SOCTRENDS_TP
+				value = 40
+				}
+				set_variable = {
+				var = MSK.SOCTRENDS_EA
+				value = 50
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_against_the_world"
+		}
+		relative_position_id = MSK_throw_bukele_in_the_trash
+		prerequisite = { focus = MSK_throw_bukele_in_the_trash }
+	}
+	
+	focus = {
+		id = MSK_convince_the_japs
+		icon = GFX_MSK_convince_the_japs
+		cost = 8
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = {
+				    target = MSK
+				    modifier = trade_agreement
+				}
+				add_opinion_modifier = {
+				    target = MSK
+				    modifier = huge_increase
+				}				
+			}
+			MSK = {
+				add_research_slot = 1
+				add_to_variable = { MSK.DEBT = 4 }
+				custom_effect_tooltip = "We will be indebted 4 billion USD to Japan."
+			}			
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_convince_the_japs"
+		}
+		relative_position_id = MSK_throw_bukele_in_the_trash
+		prerequisite = { focus = MSK_throw_bukele_in_the_trash }
+	}
+	
+	focus = {
+		id = MSK_text_tahoe
+		icon = GFX_MSK_text_tahoe
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MSK_CAL_friend
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_text_tahoe"
+		}
+		relative_position_id = MSK_throw_bukele_in_the_trash
+		prerequisite = { focus = MSK_throw_bukele_in_the_trash }
+	}
+	
+	focus = {
+		id = MSK_appeal_to_the_ydwm
+		icon = GFX_MSK_appeal_to_the_ydwm
+		cost = 8
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MSK_YDWM
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_appeal_to_the_ydwm"
+		}
+		relative_position_id = MSK_throw_bukele_in_the_trash
+		prerequisite = { focus = MSK_throw_bukele_in_the_trash }
+	}
+	
+	focus = {
+		id = MSK_jungle_blitzkrieg
+		icon = GFX_MSK_jungle_blitzkrieg
+		cost = 8
+		x = 3
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = MSK_jungle_blitz
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_jungle_blitzkrieg"
+		}
+		relative_position_id = MSK_against_the_world
+		prerequisite = { focus = MSK_against_the_world }
+		prerequisite = { focus = MSK_convince_the_japs }
+	}
+	
+	focus = {
+		id = MSK_the_kino_effect
+		icon = GFX_MSK_the_kino_effect
+		cost = 8
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.33
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_the_kino_effect"
+		}
+		relative_position_id = MSK_text_tahoe
+		prerequisite = { focus = MSK_text_tahoe }
+		prerequisite = { focus = MSK_appeal_to_the_ydwm }
+	}
+	
+	focus = {
+		id = MSK_drag_the_peasantry_towards_the_sun
+		icon = GFX_MSK_drag_the_peasantry_towards_the_sun
+		cost = 8
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 2025.1.1
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = war_economy
+			MSK = {
+				load_oob = "generic_2021"
+				declare_war_on = {
+					target = HON
+					type = topple_government					
+				}
+				declare_war_on = {
+					target = ELS
+					type = topple_government					
+				}
+				declare_war_on = {
+					target = EMR
+					type = topple_government					
+				}
+				declare_war_on = {
+					target = GUA
+					type = topple_government					
+				}
+				declare_war_on = {
+					target = COS
+					type = topple_government					
+				}
+				declare_war_on = {
+					target = NIC
+					type = topple_government					
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_drag_the_peasantry_towards_the_sun"
+		}
+		relative_position_id = MSK_jungle_blitzkrieg
+		prerequisite = { focus = MSK_jungle_blitzkrieg }
+		prerequisite = { focus = MSK_the_kino_effect }
+	}
+	
+	focus = {
+		id = MSK_merry_england_lives_on
+		icon = GFX_MSK_merry_england_lives_on
+		cost = 8
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			525 = {
+				is_owned_by = MSK
+			}
+			521 = {
+				is_owned_by = MSK
+			}
+			523 = {
+				is_owned_by = MSK
+			}
+			522 = {
+				is_owned_by = MSK
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+			MSK = {
+				every_owned_state = {
+					add_core_of = MSK
+				}
+				set_cosmetic_tag = MSK_CEN
+				set_country_flag = MSK_CEN_ac
+			}
+			hidden_effect = {
+				news_event = {
+					id = WNE.189
+					days = 1
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus MSK_merry_england_lives_on"
+		}
+		relative_position_id = MSK_drag_the_peasantry_towards_the_sun
+		prerequisite = { focus = MSK_drag_the_peasantry_towards_the_sun }
+	}
+}

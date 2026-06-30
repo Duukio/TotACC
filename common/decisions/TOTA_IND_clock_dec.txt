@@ -1,0 +1,55 @@
+#IND_the_clock_ticks = {
+#	IND_clock_ticks = {
+#		activation = {
+#			has_country_flag = IND_the_clock_ticks_mission
+#		}
+#		available = {
+#			has_country_flag = IND_won_in_WPW
+#		}
+#		visible = {
+#			has_war_with = NWG
+#			has_country_flag = IND_the_clock_ticks_mission
+#			original_tag = IND #does this solve it
+#		}
+#		cancel_trigger = {
+#			has_war = no
+#		}
+#		days_mission_timeout = 90
+#		complete_effect = {
+#		add_stability = 0.10
+#		}
+#		timeout_effect = {
+#			clr_country_flag = IND_the_clock_ticks_mission
+#			add_to_variable = { global.peace_popup_dirty = 1 }
+#			set_global_flag = skip_default_capitulation
+#				NWG = {
+#					save_global_event_target_as = winning_country
+#				}
+#				IND = {
+#					save_global_event_target_as = losing_country
+#					white_peace = NWG
+#				}
+#				#IND = {
+#				#	diplomatic_relation = { country = NWG relation = war_relation active = no }
+#			    #}
+#				#NWG = {
+#				#	diplomatic_relation = { country = IND relation = war_relation active = no }
+#				#}
+#				set_global_flag = show_peace_popup_alert
+#
+#					every_country = {
+#						limit = {
+#							is_ai = no
+#						}
+#						news_event = {
+#						id = WNE.25
+#						DAYS = 0
+#						}
+#					}
+#				set_global_flag = war_won
+#			clr_global_flag = skip_default_capitulation
+#		}
+#	}
+#}
+
+#DEPRECATED. KEPT HERE FOR REFERENCE.

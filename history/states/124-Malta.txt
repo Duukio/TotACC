@@ -1,0 +1,27 @@
+state={
+id=124
+	name="STATE_124"
+    buildings_max_level_factor = 1
+	
+	provinces={
+
+		12003 
+	}
+	
+	state_category = city
+	
+	history={
+        victory_points = { 12003 3 }
+        owner = ENG
+        buildings = {
+            school = 2
+            infrastructure = 2
+
+        }
+        add_core_of = ENG
+    }
+	
+	manpower = 535721
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

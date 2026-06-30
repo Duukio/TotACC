@@ -1,0 +1,30 @@
+add_namespace = Liberia
+
+country_event = {
+    id = Liberia.1 # war
+    title = Liberia.1.t
+    desc = Liberia.1.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = Liberia.1.a
+      LUR = {
+        declare_war_on = {
+            target = ULI
+            type = annex_everything
+        }
+        declare_war_on = {
+            target = LBT
+            type = annex_everything
+        }
+      }
+      LBT = {
+        declare_war_on = {
+            target = ULI
+            type = annex_everything
+        }
+      }
+	}
+}

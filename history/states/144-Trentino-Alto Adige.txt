@@ -1,0 +1,32 @@
+state={
+id=144
+	
+
+	name="STATE_144"
+
+	resources={
+		steel=100.000
+	}
+
+	history={
+		victory_points = {
+			11598 10 
+		}
+		owner = ITA
+		buildings = {
+            school = 2
+			infrastructure = 4
+
+		}
+		add_core_of = ITA
+
+	}
+
+	provinces={
+		6631 6675 9598 9630 11598 11615 
+	}
+	manpower=1072276
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,71 @@
+ideas = {
+
+	womens_rights = {
+		law = yes
+		androcentrism = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.2
+				political_power_cost = -0.25
+				political_power_gain = -0.05
+				stability_factor = -0.05
+				war_support_factor = 0.10
+				research_speed_factor = -0.03
+				production_speed_buildings_factor = 0.03
+				monthly_soctrends_drift_TP_T = 0.01
+				monthly_soctrends_drift_EE_E2 = 0.01
+			}
+			cancel_if_invalid = no
+		}
+		feminine_emancipation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.02
+				gdp_growth_modifier = 0.01
+			}
+			cancel_if_invalid = no
+			default = yes
+		}
+		social_glass_ceilings = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+				stability_factor = 0.15
+				war_support_factor = -0.05
+				research_speed_factor = 0.02
+				production_speed_buildings_factor = -0.02
+				monthly_soctrends_drift_EE_E1 = 0.01
+				gdp_growth_modifier = 0.02
+			}
+			cancel_if_invalid = no
+		}
+		no_second_sex = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+				stability_factor = 0.2
+				war_support_factor = -0.1
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				monthly_soctrends_drift_EE_E1 = 0.02
+				gdp_growth_modifier = 0.02
+				army_org_factor = 0.02
+			}
+			cancel_if_invalid = no
+		}
+	}
+}

@@ -1,0 +1,27 @@
+state={
+	id=709
+	name="STATE_709"
+    buildings_max_level_factor = 1
+	provinces={
+		933 979 3967 3982 6920 6938 6995 9844 9871 11826 11839 11897 
+	}
+	history={
+		victory_points = {
+			3982 10 
+		}
+		owner = TUR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = TUR
+
+	}
+	manpower=696969
+	state_category=city
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

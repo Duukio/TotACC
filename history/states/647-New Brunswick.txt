@@ -1,0 +1,29 @@
+state={
+id=647
+	
+	name="STATE_647"
+
+	manpower = 794300
+	
+	state_category = city
+
+	history={
+		owner = CAN
+		victory_points = { 4285 4 }
+		buildings = {
+            school = 2
+			infrastructure = 5 #was: 5
+			industrial_complex = 2
+			4285 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = CAN
+	}
+
+	provinces={
+		634 1424 4285 4342 4362 4432 7379 12289 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,699 @@
+
+shared_focus = {
+	id = SAF_now_leaving_frownland
+	icon = GFX_NowLeavingFrownland
+	cost = 6
+	x = 4
+	y = 0
+	completion_reward = {
+		remove_ideas = SAF_generic_no_step_back
+		add_stability = 0.10
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_now_leaving_frownland"
+	}
+}
+
+shared_focus = {
+	id = SAF_step_back_from_the_rubicon
+	icon = GFX_NowLeavingFrownland #TODO, where the fuck is this icon?
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+			id = SAF.114
+		}
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_step_back_from_the_rubicon"
+	}
+	relative_position_id =  SAF_now_leaving_frownland
+	prerequisite = { focus = SAF_now_leaving_frownland }
+}
+
+shared_focus = {
+	id = SAF_disarm_the_mines
+	icon = GFX_SAF_DTM
+	cost = 6
+	x = -4
+	#available = {
+	#	has_manpower > 2499
+	#}
+	y = 1
+	completion_reward = {
+		add_manpower = -2500
+		add_stability = 0.2
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_disarm_the_mines"
+	}
+	relative_position_id =  SAF_step_back_from_the_rubicon
+	prerequisite = { focus = SAF_step_back_from_the_rubicon }
+}
+
+shared_focus = {
+	id = SAF_undo_the_barricades
+	icon = GFX_NowLeavingFrownland
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		985 = {
+			set_building_level = {
+			    type = bunker
+			    level = 1
+				province = 13928
+			}
+		}
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_undo_the_barricades"
+	}
+	relative_position_id =  SAF_step_back_from_the_rubicon
+	prerequisite = { focus = SAF_step_back_from_the_rubicon }
+}
+
+shared_focus = {
+	id = SAF_clear_out_the_barracks
+	icon = GFX_SAF_COTB
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		random_state = {
+			limit = {
+				is_controlled_by = SAF
+			}
+			remove_building = {
+			    type = arms_factory
+			    level = 1
+			}
+		}
+		random_state = {
+			limit = {
+				is_controlled_by = SAF
+			}
+			remove_building = {
+			    type = arms_factory
+			    level = 1
+			}
+		}
+		random_state = {
+			limit = {
+				is_controlled_by = SAF
+			}
+			remove_building = {
+			    type = arms_factory
+			    level = 1
+			}
+		}
+		hidden_effect = {
+			add_to_variable = { SAF.GDP = 25 }
+			add_to_variable = { SAF.REAL_GROWTH = 0.02 }
+		}
+		add_stability = 0.1
+		custom_effect_tooltip = "Adds 25 billion GDP after decomissioning military factories, and 2% real growth."
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_clear_out_the_barracks"
+	}
+	relative_position_id =  SAF_step_back_from_the_rubicon
+	prerequisite = { focus = SAF_step_back_from_the_rubicon }
+}
+
+shared_focus = {
+	id = SAF_your_children_back_home
+	icon = GFX_NowLeavingFrownland
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		delete_unit_template_and_units = {
+		    division_template = "South African Army"
+		    disband = yes #will refund equipment and manpower
+		}
+		hidden_effect = {
+			add_to_variable = { SAF.GDP = 15 }
+			add_to_variable = { SAF.REAL_GROWTH = -0.01 }
+		}
+		add_stability = 0.25
+		custom_effect_tooltip = "Adds 15 billion GDP after standing down most of the Army, and removes 1% real growth."
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_your_children_back_home"
+	}
+	relative_position_id =  SAF_step_back_from_the_rubicon
+	prerequisite = { focus = SAF_step_back_from_the_rubicon }
+}
+
+shared_focus = {
+	id = SAF_referendum_on_apartheid
+	icon = GFX_SAF_ROA
+	cost = 6
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_referendum_on_apartheid"
+		country_event = {
+			id = SAF.111
+		}
+	}
+	relative_position_id =  SAF_disarm_the_mines
+	prerequisite = { focus = SAF_disarm_the_mines }
+	prerequisite = { focus = SAF_undo_the_barricades }
+	prerequisite = { focus = SAF_clear_out_the_barracks }
+	prerequisite = { focus = SAF_your_children_back_home }
+}
+
+shared_focus = {
+	id = SAF_a_nation_breathes_once_more
+	icon = GFX_A_NationBreathesOnceMore
+	cost = 6
+	x = 4
+	y = 4
+	completion_reward = {
+		add_stability = 0.15
+		add_political_power = 100
+		add_ideas = civilian_economy
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_a_nation_breathes_once_more"
+	}
+}
+
+shared_focus = {
+	id = SAF_deflate_the_army
+	icon = GFX_DeflateTheArmy
+	cost = 6
+	x = 1
+	y = 5
+	completion_reward = {
+		add_ideas = disarmed_nation
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_deflate_the_army"
+	}
+	relative_position_id =  SAF_a_nation_breathes_once_more
+	prerequisite = { focus = SAF_a_nation_breathes_once_more }
+}
+
+shared_focus = {
+	id = SAF_open_up_to_parties
+	icon = GFX_OpenUpToParties
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		set_popularities = {
+			liberalism = 30
+			autocracy = 10
+			reformist_socialism = 15
+			technocracy = 15
+			conservatism = 20
+			socdem = 10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_open_up_to_parties"
+	}
+	relative_position_id =  SAF_a_nation_breathes_once_more
+	prerequisite = { focus = SAF_a_nation_breathes_once_more }
+}
+
+shared_focus = {
+	id = SAF_the_language_debate
+	icon = GFX_TheLanguageDebate
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		country_event ={
+			id = SAF.113
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_the_language_debate"
+	}
+	relative_position_id =  SAF_a_nation_breathes_once_more
+	prerequisite = { focus = SAF_a_nation_breathes_once_more }
+}
+
+shared_focus = {
+	id = SAF_define_our_communities
+	icon = GFX_DefineOurCommunities
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_define_our_communities"
+	}
+	relative_position_id =  SAF_a_nation_breathes_once_more
+	prerequisite = { focus = SAF_a_nation_breathes_once_more }
+}
+
+#shared_focus = {
+#	id = SAF_ending_apartheid_once_and_for_all
+#	icon = GFX_generic_suspend_constitution
+#	cost = 6
+#	x = 13
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SAF_ending_apartheid_once_and_for_all"
+#	}
+#}
+#
+#shared_focus = {
+#	id = SAF_put_down_the_signs
+#	icon = GFX_generic_suspend_constitution
+#	cost = 6
+#	x = -2
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SAF_put_down_the_signs"
+#	}
+#	relative_position_id =  SAF_ending_apartheid_once_and_for_all
+#	prerequisite = { focus = SAF_ending_apartheid_once_and_for_all }
+#}
+#
+#shared_focus = {
+#	id = SAF_repair_our_mistakes
+#	icon = GFX_generic_suspend_constitution
+#	cost = 6
+#	x = 0
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SAF_repair_our_mistakes"
+#	}
+#	relative_position_id =  SAF_ending_apartheid_once_and_for_all
+#	prerequisite = { focus = SAF_ending_apartheid_once_and_for_all }
+#}
+#
+#shared_focus = {
+#	id = SAF_our_liberties_now_for_all
+#	icon = GFX_generic_suspend_constitution
+#	cost = 6
+#	x = 2
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SAF_our_liberties_now_for_all"
+#	}
+#	relative_position_id =  SAF_ending_apartheid_once_and_for_all
+#	prerequisite = { focus = SAF_ending_apartheid_once_and_for_all }
+#}
+#
+#shared_focus = {
+#	id = SAF_we_are_one
+#	icon = GFX_generic_suspend_constitution
+#	cost = 6
+#	x = 2
+#	y = 2
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SAF_we_are_one"
+#	}
+#	relative_position_id =  SAF_put_down_the_signs
+#	prerequisite = { focus = SAF_put_down_the_signs }
+#	prerequisite = { focus = SAF_repair_our_mistakes }
+#	prerequisite = { focus = SAF_our_liberties_now_for_all }
+#}
+
+shared_focus = {
+	id = SAF_chin_up_and_the_sun_in_our_faces
+	icon = GFX_ChinUpAndTheSunInOurFaces
+	cost = 6
+	x = 4
+	y = 4
+	completion_reward = {
+		add_ideas = SAF_optimism
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_chin_up_and_the_sun_in_our_faces"
+	}
+	relative_position_id = SAF_deflate_the_army
+	prerequisite = { focus = SAF_deflate_the_army }
+	prerequisite = { focus = SAF_open_up_to_parties }
+	prerequisite = { focus = SAF_the_language_debate }
+	prerequisite = { focus = SAF_define_our_communities }
+}
+
+#shared_focus = {
+#	id = SAF_yet_more_must_be_done
+#	icon = GFX_generic_suspend_constitution
+#	cost = 6
+#	x = 0
+#	y = 1
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus SAF_yet_more_must_be_done"
+#	}
+#	relative_position_id =  SAF_we_are_one
+#	prerequisite = { focus = SAF_we_are_one }
+#}
+
+shared_focus = {
+	id = SAF_restoring_the_economy
+	icon = GFX_SAF_Restoring_the_economy
+	cost = 6
+	x = 10
+	y = 7
+	completion_reward = {
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_restoring_the_economy"
+	}
+}
+
+shared_focus = {
+	id = SAF_democratize_the_businesses
+	icon = GFX_DemocratizeTheBusinesses
+	cost = 6
+	x = -3
+	y = 1
+	completion_reward = {
+		add_ideas = SAF_equalized_businesses
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_democratize_the_businesses"
+	}
+	relative_position_id =  SAF_restoring_the_economy
+	prerequisite = { focus = SAF_restoring_the_economy }
+}
+
+shared_focus = {
+	id = SAF_chat_with_the_imf
+	icon = GFX_ChatWithTheIMF
+	cost = 6
+	x = -1
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = { SAF.DEBT = 200 }
+			add_to_variable = { SAF.GDP = 150 }
+		}
+		custom_effect_tooltip = "Adds 200 billion in debt from IMF loans and 150 billion in GDP."
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_chat_with_the_imf"
+	}
+	relative_position_id =  SAF_restoring_the_economy
+	prerequisite = { focus = SAF_restoring_the_economy }
+}
+
+shared_focus = {
+	id = SAF_talk_with_the_experts
+	icon = GFX_TalkWithTheExperts
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = technocracy
+			popularity = 0.1
+		}
+		add_ideas = SAF_pseudo_technocracy
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_talk_with_the_experts"
+	}
+	relative_position_id =  SAF_restoring_the_economy
+	prerequisite = { focus = SAF_restoring_the_economy }
+}
+
+shared_focus = {
+	id = SAF_new_cities_across_the_nation
+	icon = GFX_New_cities_across_the_nation
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		set_country_flag = revitalize_bantustans_dec
+		custom_effect_tooltip = "Opens up decisions of creating cities in Homelands"
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_new_cities_across_the_nation"
+	}
+	relative_position_id =  SAF_restoring_the_economy
+	prerequisite = { focus = SAF_restoring_the_economy }
+}
+
+shared_focus = {
+	id = SAF_antiracism_codified
+	icon = GFX_AntiRacismCodified
+	cost = 6
+	x = 1
+	y = 2
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_antiracism_codified"
+	}
+	relative_position_id =  SAF_democratize_the_businesses
+	prerequisite = { focus = SAF_democratize_the_businesses }
+	prerequisite = { focus = SAF_chat_with_the_imf }
+}
+
+shared_focus = {
+	id = SAF_print_borrow_beg
+	icon = GFX_PrintBorrowBeg
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			add_to_variable = { SAF.DEBT = 250 }
+			add_to_variable = { SAF.REAL_GROWTH = 0.05 }
+		}
+		custom_effect_tooltip = "Adds 250 billion in debt and 5% real growth."
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_print_borrow_beg"
+	}
+	relative_position_id =  SAF_chat_with_the_imf
+	prerequisite = { focus = SAF_chat_with_the_imf }
+	prerequisite = { focus = SAF_talk_with_the_experts }
+}
+
+shared_focus = {
+	id = SAF_efficiency_over_rancor
+	icon = GFX_EfficiencyOverRancor
+	cost = 6
+	x = 1
+	y = 1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SAF_pseudo_technocracy
+			add_idea = SAF_technocracy_for_realsies
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_efficiency_over_rancor"
+	}
+	relative_position_id =  SAF_talk_with_the_experts
+	prerequisite = { focus = SAF_talk_with_the_experts }
+	prerequisite = { focus = SAF_new_cities_across_the_nation }
+}
+
+shared_focus = {
+	id = SAF_save_our_people_from_slums
+	icon = GFX_SaveOurPeopleFromSlums
+	cost = 6
+	x = 1
+	y = 2
+	completion_reward = {
+		set_country_flag = anti_slum_aktion
+		custom_effect_tooltip = "Opens up decisions to end slums in South Africa"
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_save_our_people_from_slums"
+	}
+	relative_position_id =  SAF_new_cities_across_the_nation
+	prerequisite = { focus = SAF_new_cities_across_the_nation }
+}
+
+shared_focus = {
+	id = SAF_away_from_the_hunger_map
+	icon = GFX_AwayFromTheHungerMap
+	cost = 6
+	x = 3
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+			subtract_from_variable = { SAF.GDP = 30 }
+			add_to_variable = { SAF.REAL_GROWTH = 0.01 }
+			add_political_power = -350
+		}
+		custom_effect_tooltip = "Pushes a very large food aid package through legislation, costing 350 political power and adding 30 billion to GDP, plus 1 percent real growth."
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_away_from_the_hunger_map"
+	}
+	relative_position_id =  SAF_antiracism_codified
+	prerequisite = { focus = SAF_antiracism_codified }
+	prerequisite = { focus = SAF_print_borrow_beg }
+	prerequisite = { focus = SAF_efficiency_over_rancor }
+	prerequisite = { focus = SAF_save_our_people_from_slums }
+}
+
+shared_focus = {
+	id = SAF_prepare_for_democracy
+	icon = GFX_PrepareForDemocracy
+	cost = 6
+	x = 20
+	y = 5
+	completion_reward = {
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_prepare_for_democracy"
+	}
+}
+
+shared_focus = {
+	id = SAF_consider_lifting_bans
+	icon = GFX_ConsiderLiftingBans
+	cost = 6
+	x = 0
+	y = 1
+	completion_reward = {
+		#country_event = {
+		#	id = SAF.9498723
+		#	days = 1
+		#}
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_consider_lifting_bans"
+	}
+	relative_position_id =  SAF_prepare_for_democracy
+	prerequisite = { focus = SAF_prepare_for_democracy }
+}
+
+shared_focus = {
+	id = SAF_the_red_olive_branch
+	icon = GFX_TheRedOliveBranch
+	cost = 6
+	#available = {
+	#	always = no
+	#}
+	x = -2
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.15
+		}
+		set_country_flag = gommies_can_win
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_the_red_olive_branch"
+	}
+	relative_position_id =  SAF_consider_lifting_bans
+	prerequisite = { focus = SAF_consider_lifting_bans }
+	#prerequisite = { focus = SAF_no_mercy }
+	mutually_exclusive = { focus = SAF_no_mercy }
+	mutually_exclusive = { focus = SAF_the_orange_sword }
+}
+
+shared_focus = {
+	id = SAF_the_orange_sword
+	icon = GFX_TheOrangeSword
+	cost = 6
+#	available = {
+#		always = no
+#	}
+	x = 2
+	y = 1
+	completion_reward = {
+		add_popularity = {
+			ideology = dissident_right
+			popularity = 0.15
+		}
+		set_country_flag = racists_can_win
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_the_orange_sword"
+	}
+	relative_position_id =  SAF_consider_lifting_bans
+	prerequisite = { focus = SAF_consider_lifting_bans }
+	#prerequisite = { focus = SAF_no_mercy }
+	mutually_exclusive = { focus = SAF_no_mercy }
+	mutually_exclusive = { focus = SAF_the_red_olive_branch }
+}
+
+shared_focus = {
+	id = SAF_no_mercy
+	icon = GFX_NoMercy
+	cost = 6
+#	available = {
+#		always = no
+#	}
+	x = 0
+	y = 1
+	completion_reward = {
+		set_popularities = {
+			liberalism = 70
+			autocracy = 0
+			reformist_socialism = 0
+			technocracy = 0
+			conservatism = 20
+			socdem = 10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_no_mercy"
+	}
+	relative_position_id =  SAF_consider_lifting_bans
+	prerequisite = { focus = SAF_consider_lifting_bans }
+	mutually_exclusive = { focus = SAF_the_red_olive_branch }
+	mutually_exclusive = { focus = SAF_the_orange_sword }
+}
+
+shared_focus = {
+	id = SAF_democracy_is_best_served_hot
+	icon = GFX_Democracy_is_best_served_hot
+	cost = 6
+	x = 2
+	y = 1
+	completion_reward = {
+		#unlocks elections 26
+		set_country_flag = democracy_ready
+		add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_democracy_is_best_served_hot"
+	}
+	relative_position_id =  SAF_the_red_olive_branch
+	prerequisite = { focus = SAF_the_red_olive_branch focus = SAF_no_mercy focus = SAF_the_orange_sword }
+}
+
+shared_focus = {
+	id = SAF_elections_26
+	icon = GFX_Elections_26
+	cost = 6
+	available = {
+		date > 2025.12.31
+		has_country_flag = democracy_ready
+	}
+	x = 18
+	y = 11
+	completion_reward = {
+		country_event = {
+			id = SAF.115
+			days = 10
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_elections_26"
+	}
+}
+
+shared_focus = {
+	id = SAF_psa_victory
+	icon = GFX_PSA_Victory
+	cost = 6
+	available = {
+		always = no
+	}
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_psa_victory"
+		set_politics = {
+			ruling_party = socdem
+		}
+		add_ideas = kosygin_liberman_econ_theory
+	}
+	relative_position_id = SAF_elections_26 
+	prerequisite = { focus = SAF_elections_26 }
+}
+
+shared_focus = {
+	id = SAF_freedom_alliance_victory
+	icon = GFX_FreedomAllianceVictory
+	cost = 6
+	available = {
+		always = no
+	}
+	x = 3
+	y = 1
+	completion_reward = {
+		set_politics = {
+			ruling_party = conservatism
+		}
+		add_ideas = phoenix_model
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_freedom_alliance_victory"
+	}
+	relative_position_id = SAF_elections_26
+	prerequisite = { focus = SAF_elections_26 }
+}
+
+shared_focus = {
+	id = SAF_no_cabinet_majority
+	icon = GFX_NoCabinetMajority
+	cost = 6
+	available = {
+		always = no
+	}
+	x = 0
+	y = 2
+	completion_reward = {
+		#emergency cabinet
+		set_popularities = {
+			liberalism = 99
+			autocracy = 1
+		}
+		add_ideas = nouveau_dirigisme
+		log = "[GetDateText]: [Root.GetName]: Focus SAF_no_cabinet_majority"
+	}
+	relative_position_id =  SAF_elections_26
+	prerequisite = { focus = SAF_elections_26 }
+}

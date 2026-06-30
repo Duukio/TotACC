@@ -1,0 +1,29 @@
+state={
+	id=1110
+	name="STATE_1110" #Bihar
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			10361 30 #Patna 
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 3
+			arms_factory = 4
+			industrial_complex = 7
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		4459 10878 10361 7475 1656
+	}
+	manpower=104099452
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

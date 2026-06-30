@@ -1,0 +1,12 @@
+focus_tree = {
+	id = ISP_fopo
+	country = {
+		factor = 0
+		modifier = {
+			add = 2
+			tag = ISP
+		}
+	}
+	shared_focus = ISP_crisis_at_home
+	#shared_focus = ISP_the_edf_focus
+}

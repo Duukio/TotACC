@@ -1,0 +1,12 @@
+animation = {
+    name = "GUMP_Walking"
+    file = "GUMPWALK.anim"
+}
+animation = {
+    name = "GUMP_Standing"
+    file = "GUMPSTAND.anim"
+}
+animation = {
+    name = "GUMP_Blank"
+    file = "GUMPREF.anim"
+}

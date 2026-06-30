@@ -1,0 +1,17 @@
+focus_tree = {
+	id = NGA_fulanomad
+	country = {
+		factor = 0
+		modifier = {
+			add = 150
+			tag = NGA
+			has_country_flag = nga_dambazau_cabinet
+		}
+	}
+	shared_focus = NGA_old_friends_and_new_suitors
+	shared_focus = NGA_litigating_liberia
+	shared_focus = NGA_a_headache_in_the_horn
+	shared_focus = NGA_going_down_south
+	shared_focus = NGA_saving_south_sudan
+	shared_focus = NGA_a_nomadic_nigeria
+}

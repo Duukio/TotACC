@@ -1,0 +1,26 @@
+state={
+id=75
+	name="STATE_75"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+		owner = HOL
+		victory_points = {
+			3262 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 5
+
+		}
+		add_core_of = HOL
+
+	}
+	provinces={
+		480 3262 6496 9431 
+	}
+	manpower=3062566
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

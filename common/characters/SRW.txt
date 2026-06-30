@@ -1,0 +1,118 @@
+characters = {
+	SRW_David_Fu_Chee_Ming = {
+		name = "David Fu Chee Ming"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRW/David Fu Chee Ming.png"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard war_hero }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	SRW_Jamaluddin_bin_Yaacob = {
+		name = "Jamaluddin bin Yaacoob"
+		portraits = {
+			army = {
+				large = "gfx/leaders/SRW/Jamaluddin Bin Yaacob.png"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SRW_abang_jo = {
+			name = "Abang \"Jo\" Johari"
+			portraits = {
+				civilian = { small = "GFX_idea_SRW_abang_jo" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SRW
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+			}
+			idea_token = SRW_abang_jo 
+			traits = {
+			    foreign_minister
+			    for_great_compromiser
+				socdem_minister
+			}
+		}
+	}
+	SRW_council_negri = {
+			name = "Council Negri"
+			portraits = {
+				civilian = { small = "GFX_idea_SRW_council_negri" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SRW
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+			}
+			idea_token = SRW_council_negri 
+			traits = {
+			    head_of_government
+			    hog_silent_workhorse
+				autocracy_minister
+			}
+		}
+	}
+	SRW_sirajuddin_of_perlis = {
+			name = "Sirajuddin of Perlis"
+			portraits = {
+				civilian = { small = "GFX_idea_SRW_sirajuddin_of_perlis" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SRW
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+			}
+			idea_token = SRW_sirajuddin_of_perlis 
+			traits = {
+			    security_minister
+			    sec_health_and_safety
+				autocracy_minister
+			}
+		}
+	}
+	SRW_sim_kui_hian = {
+			name = "Sim Kui Hian"
+			portraits = {
+				civilian = { small = "GFX_idea_SRW_sim_kui_hian" } 
+			}
+			advisor = {
+			allowed = {
+			    original_tag = SRW
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+			}
+			idea_token = SRW_sim_kui_hian 
+			traits = {
+			    economy_minister
+			    eco_administrative_genius
+				conservatism_minister
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+state={
+id=658
+	name="STATE_658"
+    buildings_max_level_factor = 1
+
+	
+	history={
+		owner = CAN
+		victory_points = { 1869 2 }
+		buildings = {
+            school = 2
+			infrastructure = 2
+
+			1869 = {
+				naval_base = 1
+
+			}
+
+
+		}
+		add_core_of = CAN
+	}
+
+	provinces={
+		1869
+	}
+	manpower=4761
+	buildings_max_level_factor=2.000
+	state_category="small_island"
+
+	local_supplies=0.0 
+}

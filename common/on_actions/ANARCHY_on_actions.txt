@@ -1,0 +1,60 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					THIS = {
+						has_idea = portlandian_gift_economy
+						num_of_controlled_states < 4
+						NOT = {
+							has_decision = PGE_voluntary_community_project
+						}
+					}
+				}
+				activate_decision = PGE_voluntary_community_project
+			}
+			else_if = {
+				limit = {
+					THIS = {
+						has_idea = portlandian_gift_economy
+						num_of_controlled_states > 6
+						NOT = {
+							has_decision = PGE_voluntary_community_project
+						}
+					}
+				}
+				activate_decision = PGE_voluntary_community_project
+				activate_decision = PGE_voluntary_community_project
+			}
+			else_if = {
+				limit = {
+					THIS = {
+						has_idea = portlandian_gift_economy
+						num_of_controlled_states > 12
+						NOT = {
+							has_decision = PGE_voluntary_community_project
+						}
+					}
+				}
+				activate_decision = PGE_voluntary_community_project
+				activate_decision = PGE_voluntary_community_project
+				activate_decision = PGE_voluntary_community_project
+			}
+			else_if = {
+				limit = {
+					THIS = {
+						has_idea = portlandian_gift_economy
+						num_of_controlled_states > 24
+						NOT = {
+							has_decision = PGE_voluntary_community_project
+						}
+					}
+				}
+				activate_decision = PGE_voluntary_community_project
+				activate_decision = PGE_voluntary_community_project
+				activate_decision = PGE_voluntary_community_project
+				activate_decision = PGE_voluntary_community_project
+			}
+		}
+	}
+}

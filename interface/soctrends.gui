@@ -1,0 +1,94 @@
+guiTypes = {
+	containerWindowType = {
+		clipping = yes
+		moveable = yes
+		fade_type = linear
+		fade_time = 300
+		name = "TOTA_soctrends_gui"
+		moveable = yes
+		position = { x = 0 y = 0 }
+		size = { width = 622 height = 560 }
+		orientation = center
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_social_trends_box"
+		}
+		buttonType = {
+			name = "info_soctrend"
+			quadTextureSprite = "GFX_info_soctrend"
+			position = { x = 560 y = 17 }
+			pdx_tooltip = "Help"
+		}
+			iconType = {
+				name = "SOCTRENDS_EA"
+				spriteType = "GFX_global_social_trends_bar"
+				position = { x = 124 y = 85 }
+				pdx_tooltip = "SOCTRENDS_EA_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_EA"
+			}
+			iconType = {
+				name = "SOCTRENDS_TP"
+				spriteType = "GFX_global_social_trends_bar"
+				position = { x = 123 y = 191 }
+				pdx_tooltip = "SOCTRENDS_TP_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_TP"
+			}
+			iconType = {
+				name = "SOCTRENDS_EE"
+				spriteType = "GFX_global_social_trends_bar"
+				position = { x = 122 y = 292 }
+				pdx_tooltip = "SOCTRENDS_EE_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_EE"
+			}
+			iconType = {
+				name = "SOCTRENDS_DE"
+				spriteType = "GFX_global_social_trends_bar"
+				position = { x = 126 y = 391 }
+				pdx_tooltip = "SOCTRENDS_DE_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_DE"
+			}
+			iconType = {
+				name = "SOCTRENDS_DC"
+				spriteType = "GFX_global_social_trends_bar"
+				position = { x = 126 y = 493 }
+				pdx_tooltip = "SOCTRENDS_DC_TOOLTIP"
+				#frame = "BRA_SOCTRENDS_DC"
+			}
+		buttonType = {
+			name = "closebutton_soctrend"
+			quadTextureSprite = "GFX_closebutton_soctrend" 
+			position = { x = 584 y = 17 }
+			shortcut = "ESCAPE"
+		}	
+	}
+		containerWindowType = {
+			clipping = yes
+			moveable = yes
+			fade_type = linear
+			fade_time = 300
+			name = "TOTA_SOCTRENDS_INFO"
+			moveable = yes
+			position = { x = 120 y = 0 }
+			size = { width = 260 height = 360  }
+			orientation = center		
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+			instantTextBoxType = {
+				name = "SOCTRENDS_INFO_TEXT"
+				position = { x = 12 y = 25 }
+				font = "sf_14"
+				text = "SOCTRENDS_INFO_LOC"
+				maxWidth = 235
+				format = centre
+			}
+			buttonType = {
+				name = "closebutton_soctrend_info"
+				quadTextureSprite = "GFX_closebutton_soctrend" 
+				position = { x = 235 y = 5 }
+				shortcut = "ESCAPE"				
+			}			
+		}
+}

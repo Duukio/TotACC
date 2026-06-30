@@ -1,0 +1,25 @@
+
+state={
+	id=932
+	name="STATE_932"
+    buildings_max_level_factor = 1
+	provinces={
+		1181 12783 
+	}
+	manpower=5827128
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = ADF
+		buildings = {
+            school = 2
+			infrastructure = 3
+		}
+		victory_points = {
+			1181 18
+		}
+		add_core_of = ADF
+	}
+}

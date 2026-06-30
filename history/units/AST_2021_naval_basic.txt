@@ -1,0 +1,14 @@
+units = {
+	fleet = {
+		name = "Alice Command"
+		naval_base = 12992
+		task_force = {
+			name = "Alice Command"
+			location = 12992
+			ship = { name = "HMAS Adelaide" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = AST version_name = "Canberra Class" } }
+			}
+			ship = { name = "HMAS Hobart" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = AST version_name = "Hobart Class" } }
+			}
+		}
+	}
+}

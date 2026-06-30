@@ -1,0 +1,26 @@
+state={
+id=1065
+	name="STATE_1065"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	rubber = 50
+	}
+	history={
+		owner = VIE
+		buildings = {
+            school = 2
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = VIE
+	}
+	provinces={
+		1362 10326 4260 10195 10238 12210 7426
+	}
+	manpower=1000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

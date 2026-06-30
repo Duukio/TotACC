@@ -1,0 +1,282 @@
+﻿capital = 27
+
+set_variable = { GDP = 350.230 } set_variable = { DEBT = 400 } set_variable = { REAL_GROWTH = -1 }#
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+set_power_balance = {
+    id = NGA_ELDA_SOVJAP
+    left_side = JAPS_SIDE
+    right_side = RUSSIANS_SIDE
+
+}
+add_power_balance_value = {
+    id = NGA_ELDA_SOVJAP
+    value = 0.33
+    tooltip_side = there_is_no_tt_for_this
+}
+set_stability = 0.77
+set_country_flag = NGA_coalition_mechanic
+set_country_flag = NGA_development_plan_mechanic
+set_country_flag = NGA_dev_plan_bloat_def
+set_country_flag = nga_starting_cabinet
+recruit_character = NGA_attahiru_ibrahim
+#recruit_character = NGA_tamotsu_saito
+recruit_character = Wun_Jhong_Cai
+recruit_character = NGA_lucky_irabor
+recruit_character = NGA_farouk_yahaya
+recruit_character = NGA_awwal_zubairu_gambo
+recruit_character = NGA_olusegun_obasanjo
+recruit_character = NGA_dele_joseph_ezeoba
+recruit_character = NGA_tukur_yusuf_buratai
+recruit_character = Adamu_Adamu
+recruit_character = Adeyinka_Asekun
+recruit_character = Kemi_Adeosun
+recruit_character = Omoniyi_Caleb_Olubolade
+recruit_character = NGA_abdulrahman_bello_dambazau
+recruit_character = Muhammadu_Buhari
+recruit_character = Geoffrey_Onyeama
+recruit_character = Audu_Ogbeh
+recruit_character = Adamu_Waziri
+recruit_character = Jay_Osi_Samuel
+recruit_character = Charles_Soludo
+recruit_character = Shamsuddeen_Usman
+recruit_character = Adetokunbo_Kayode
+recruit_character = Ibrahim_Bio
+recruit_character = Henry_Odein_Ajumogobia
+recruit_character = Diezani_Alison_Madueke
+recruit_character = Mallam_Buhari_Muhammad
+recruit_character = Muhammad_Wader
+recruit_character = Nazifi_Abdullah_Darma
+recruit_character = Rauf_Aregbesola
+recruit_character = Abubakar_Sadiq_Mohammed
+recruit_character = Emmanuel_Iheanacho
+recruit_character = Zubairu_Dada
+recruit_character = Ibrahim_Gambari
+
+recruit_character = NGA_Yusuf_Mamman_Dantalle
+
+recruit_character = NGA_Patrick_Utomi
+
+recruit_character = NGA_Yabagi_Sani
+
+recruit_character = NGA_Kingsley_Chinda
+
+recruit_character = NGA_Darlington_Nwokocha
+
+recruit_character = NGA_Abubakar_Kabir_Abubakar
+
+recruit_character = NGA_Abdullahi_Usman
+
+recruit_character = NGA_Temitope_Adedeji_Adewale
+
+recruit_character = NGA_Shaaban_Ibrahim_Sharada
+
+recruit_character = Abba_Kabir_Yusuf
+recruit_character = NGA_tony_elumelu
+activate_advisor = NGA_muhammadu_buhari
+activate_advisor = NGA_geoffrey_onyeama
+activate_advisor = NGA_audu_ogbeh
+activate_advisor = NGA_abdulrahman_bello_dambazau_minister
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+}
+set_variable = { NGA_NORF_SOUF = 30 }
+set_country_flag = NGA_nga_meter
+NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+set_variable = {
+var = SOCTRENDS_DC
+value = 65
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 1
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 15
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 75
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 45
+}
+tota_variable_clamping = yes
+add_ideas = {
+#NGA_northern_bias
+NGA_crippling_war_fatigue
+NGA_culture_of_violence
+}
+add_dynamic_modifier = {
+	modifier = NGA_bias_mod
+	scope = NGA
+}
+
+oob = "NGA_2021"
+set_naval_oob = "NGA_2021_naval"
+set_convoys = 100
+	declare_war_on = {
+		target = BIA
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = BED
+		type = annex_everything
+	}
+set_popularities = {
+        anarchism = 0
+        conservatism = 10
+        
+        
+        
+        
+        revolutionary_right = 0
+        
+        dissident_right = 15
+        liberalism = 15
+        hardline_socialism = 5
+        
+        autocracy = 40
+        
+        
+        reformist_socialism = 5
+        socdem = 10
+        technocracy = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = autocracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Ibrahim Babangida"
+	desc = ""
+	picture = "gfx/leaders/NGA/Ibrahim Babangida.png"
+	expire = "2040.1.1"
+	ideology = milgov
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Alhassan M. Muhammed"
+	#desc = "POLITICS_BABAGANA_MONGUNO_DESC"
+	picture = "gfx/leaders/NGA/Alhassan Mamman Muhammed.png"
+	expire = "2040.1.1"
+	ideology = natcom
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Emmanuel Dania"
+	#desc = "POLITICS_BABAGANA_MONGUNO_DESC"
+	picture = "gfx/leaders/NGA/Emmanuel Dania.png"
+	expire = "2040.1.1"
+	ideology = classtech
+	traits = {
+	}
+}

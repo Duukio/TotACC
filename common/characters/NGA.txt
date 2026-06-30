@@ -1,0 +1,776 @@
+characters = {
+	NGA_attahiru_ibrahim = {
+		name = NGA_attahiru_ibrahim
+		portraits = {
+			army = {
+				large = "gfx/leaders/NGA/Portrait_NGA_Attahiru_Ibrahim.png"
+			}
+		}
+		field_marshal = {
+			traits = { trickster cautious infantry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	NGA_awwal_zubairu_gambo = {
+		name = NGA_awwal_zubairu_gambo
+		portraits = {
+			army = {
+				large = "gfx/leaders/NGA/Portrait_NGA_Awwal_Zubairu_Gambo.png"
+			}
+		}
+		navy_leader = {
+			traits = { cuts_corners career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 2
+		}
+	}
+	NGA_abdulrahman_bello_dambazau = {
+		name = NGA_abdulrahman_bello_dambazau
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NGA/Civilian Abdulrahman Dambazau.png"
+				small = "GFX_idea_NGA_Abdulrahman_Dambazau"
+			}
+			army = {
+				large = "gfx/leaders/NGA/Abdulrahman Bello Dambazau.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_DAMBAZAU_DESC"
+			ideology = corporatocracy #trust the plan
+		}
+		corps_commander = {
+			traits = { politically_connected career_officer commando }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = nga_starting_cabinet
+			}
+			idea_token = NGA_abdulrahman_bello_dambazau_minister
+			traits = {
+				security_minister
+				sec_prince_of_terror
+				autocracy_minister
+			}
+		}
+	}
+	NGA_olusegun_obasanjo = {
+		name = NGA_olusegun_obasanjo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NGA/Portrait_NGA_Olusegun_Obasanjo.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_STALIN_DESC"
+			ideology = natlib
+		}
+	}
+	NGA_tony_elumelu = {
+		name = NGA_tony_elumelu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NGA/Tony Elumelu.png"
+			}
+		}
+	}
+	NGA_yabagi_yusuf_sani = {
+		name = NGA_yabagi_yusuf_sani
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NGA/Yabagi Yusuf Sani.png"
+			}
+		}
+	}
+	NGA_dele_joseph_ezeoba = {
+		name = NGA_dele_joseph_ezeoba
+		portraits = {
+			army = {
+				large = "gfx/leaders/NGA/Portrait_NGA_Dele_Joseph_Ezeoba.png"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard gunnery_expert cuts_corners }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+	NGA_tukur_yusuf_buratai = {
+		name = NGA_tukur_yusuf_buratai
+		portraits = {
+			army = {
+				large = "gfx/leaders/NGA/Portrait_NGA_Tukur_Yusuf_Buratai.png"
+			}
+		}
+		corps_commander = {
+			traits = { media_personality organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	NGA_farouk_yahaya = {
+		name = NGA_farouk_yahaya
+		portraits = {
+			army = {
+				large = "gfx/leaders/NGA/Portrait_NGA_Farouk_Yahaya.png"
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected war_hero career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	NGA_lucky_irabor = {
+		name = NGA_lucky_irabor
+		portraits = {
+			army = {
+				large = "gfx/leaders/NGA/Portrait_NGA_Lucky_Irabor.png"
+			}
+		}
+		field_marshal = {
+			traits = { engineer urban_assault_specialist harsh_leader }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+
+	Abba_Kabir_Yusuf = {
+			name = "Abba Kabir Yusuf"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/Abba Kabir Yusuf.png" } 
+			}	
+		country_leader = {
+			desc = "POLITICS_STALIN_DESC"
+			ideology = relcon
+		}		
+	}
+	NGA_Yusuf_Mamman_Dantalle = {
+			name = "Yusuf Mamman Dantalle"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Yusuf_Mamman_Dantalle.png" } 
+			}			
+	}
+	NGA_Patrick_Utomi = {
+			name = "Patrick Utomi"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Patrick_Utomi.png" } 
+			}			
+	}
+	NGA_Yabagi_Sani = {
+			name = "Yabagi Sani"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Yabagi_Sani.png" } 
+			}			
+	}
+	NGA_Kingsley_Chinda = {
+			name = "Kingsley Chinda"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Kingsley_Chinda.png" } 
+			}			
+	}
+	NGA_Darlington_Nwokocha = {
+			name = "Darlington Nwokocha"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Darlington_Nwokocha.png" } 
+			}			
+	}
+	NGA_Abubakar_Kabir_Abubakar = {
+			name = "Abubakar Kabir Abubakar"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Abubakar_Kabir_Abubakar.png" } 
+			}			
+	}
+	NGA_Abdullahi_Usman = {
+			name = "Abdullahi Usman"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Abdullahi_Usman.png" } 
+			}			
+	}
+	NGA_Temitope_Adedeji_Adewale = {
+			name = "Temitope Adedeji Adewale"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Temitope_Adedeji_Adewale.png" } 
+			}			
+	}
+	NGA_Shaaban_Ibrahim_Sharada = {
+			name = "Sha'aban Ibrahim Sharada"
+			portraits = {
+				civilian = { large = "gfx/leaders/NGA/NGA_Shaaban_Ibrahim_Sharada.png" } 
+			}			
+	}
+	Adamu_Adamu = {
+			name = "Adamu Adamu"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Adamu_Adamu" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = nga_dambazau_cabinet
+			}
+			idea_token = NGA_adamu_adamu 
+			traits = {
+				head_of_government
+				hog_local_tyrant
+				autocracy_minister
+			}
+		}
+	}
+	Adeyinka_Asekun = {
+			name = "Adeyinka Asekun"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Adeyinka_Asekun" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_dambazau_cabinet
+			}
+			idea_token = NGA_adeyinka_asekun
+			traits = {
+				economy_minister
+				eco_industrialiser
+				autocracy_minister
+			}
+		}
+	}
+	Kemi_Adeosun = {
+			name = "Kemi Adeosun"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Kemi_Adeosun" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_dambazau_cabinet
+			}
+			idea_token = NGA_kemi_adeosun
+			traits = {
+				foreign_minister
+				for_general_staffer
+				autocracy_minister
+			}
+		}
+	}
+	Omoniyi_Caleb_Olubolade = {
+			name = "Omoniyi Caleb Olubolade"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Omoniyi_Caleb_Olubolade" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_dambazau_cabinet
+			}
+			idea_token = NGA_omoniyi_caleb_olubolade
+			traits = {
+				security_minister
+				sec_efficient_sociopath
+				autocracy_minister
+			}
+		}
+	}
+
+###ELDAJAP###
+Wun_Jhong_Cai = {
+			name = "Wun-Jhong Cai"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Muhammadu_Buhari" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = minister_without_portfolio
+			available = {
+				has_country_flag = NGA_ELDAJAP_WIN
+			}
+			idea_token = NGA_wun_jhong_cai 
+			traits = {
+				minister_without_portfolio
+				eco_construction_magnate
+				autocracy_minister
+			}
+		}
+	}
+####STARTING####
+
+Muhammadu_Buhari = {
+			name = "Muhammadu Buhari"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Muhammadu_Buhari" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = nga_starting_cabinet
+			}
+			idea_token = NGA_muhammadu_buhari 
+			traits = {
+				head_of_government
+				hog_naive_optimist
+				socdem_minister
+			}
+		}
+	}
+	Geoffrey_Onyeama = {
+			name = "Geoffrey Onyeama"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Geoffrey_Onyeama" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = nga_starting_cabinet
+			}
+			idea_token = NGA_geoffrey_onyeama
+			traits = {
+				foreign_minister
+				for_iron_fisted_brute
+				autocracy_minister
+			}
+		}
+	}
+	Audu_Ogbeh = {
+			name = "Audu Ogbeh"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Audu_Ogbeh" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_starting_cabinet
+			}
+			idea_token = NGA_audu_ogbeh
+			traits = {
+				economy_minister
+				eco_mixed_economy
+				socdem_minister
+			}
+		}
+	}
+####DANIA####
+
+Adamu_Waziri = {
+			name = "Adamu Waziri"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Adamu_Waziri" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = nga_dania_cabinet
+			}
+			idea_token = NGA_adamu_waziri
+			traits = {
+				security_minister
+				sec_health_and_safety
+				technocracy_minister
+			}
+		}
+	}
+	Jay_Osi_Samuel = {
+			name = "Dr. Jay Osi Samuel"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Jay_Osi_Samuel" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = nga_dania_cabinet
+			}
+			idea_token = NGA_jay_osi_samuel
+			traits = {
+				head_of_government
+				hog_silent_workhorse
+				technocracy_minister
+			}
+		}
+	}
+	Charles_Soludo = {
+			name = "Charles Soludo"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Charles_Soludo" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = nga_dania_cabinet
+			}
+			idea_token = NGA_charles_soludo
+			traits = {
+				foreign_minister
+				for_ideological_crusader
+				technocracy_minister
+			}
+		}
+	}
+	Shamsuddeen_Usman = {
+			name = "Shamsuddeen Usman"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Shamsuddeen_Usman" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_dania_cabinet
+			}
+			idea_token = NGA_shamsuddeen_usman
+			traits = {
+				economy_minister
+				eco_bank_president
+				technocracy_minister
+			}
+		}
+	}
+####ELUMELU####
+
+Adetokunbo_Kayode = {
+			name = "Adetokunbo Kayode"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Adetokunbo_Kayode" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = nga_elumelu_cabinet
+			}
+			idea_token = NGA_adetokunbo_kayode
+			traits = {
+				security_minister
+				sec_man_of_the_people
+				conservatism_minister
+			}
+		}
+	}
+	Ibrahim_Bio = {
+			name = "Ibrahim Bio"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Ibrahim_Bio" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = nga_elumelu_cabinet
+			}
+			idea_token = NGA_ibrahim_bio
+			traits = {
+				head_of_government
+				hog_happy_amateur
+				liberalism_minister
+			}
+		}
+	}
+	Henry_Odein_Ajumogobia = {
+			name = "Henry Odein Ajumogobia"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Henry_Odein_Ajumogobia" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = nga_elumelu_cabinet
+			}
+			idea_token = NGA_charles_soludo
+			traits = {
+				foreign_minister
+				for_great_compromiser
+				conservatism_minister
+			}
+		}
+	}
+	Diezani_Alison_Madueke = {
+			name = "Diezani Alison-Madueke"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Diezani_Alison_Madueke" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_elumelu_cabinet
+			}
+			idea_token = NGA_diezani_alison_madueke
+			traits = {
+				economy_minister
+				eco_laissez_faire_capitalist
+				liberalism_minister
+			}
+		}
+	}
+####NATCOMS####
+
+Mallam_Buhari_Muhammad = {
+			name = "Mallam Buhari Muhammad Bello"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Mallam_Buhari_Muhammed_Bello" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = nga_alhassan_cabinet
+			}
+			idea_token = NGA_mallam_buhari_muhammad
+			traits = {
+				head_of_government
+				hog_young_guard
+				hardline_socialism_minister
+			}
+		}
+	}
+	Muhammad_Wader = {
+			name = "Dr. Muhammad Wader"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Muhammad_Wader" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = nga_alhassan_cabinet
+			}
+			idea_token = NGA_muhammad_wader
+			traits = {
+				foreign_minister
+				for_iron_fisted_brute
+				reformist_socialism_minister
+			}
+		}
+	}
+	Nazifi_Abdullah_Darma = {
+			name = "Dr. Nazifi Abdullah Darma"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Nazifi_Abdullah_Darma" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_alhassan_cabinet
+			}
+			idea_token = NGA_nazifi_abdullah_darma
+			traits = {
+				economy_minister
+				eco_industrialiser
+				hardline_socialism_minister
+			}
+		}
+	}
+	Rauf_Aregbesola = {
+			name = "Rauf Aregbesola"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Rauf_Aregbesola" } 
+				army = {
+					large = "gfx/leaders/NGA/Rauf_Aregbesola.png"
+				}
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = nga_alhassan_cabinet
+			}
+			idea_token = NGA_rauf_aregbesola
+			traits = {
+				security_minister
+				sec_efficient_sociopath
+				reformist_socialism_minister
+			}
+		}
+	}
+####RELDEMS####
+
+Abubakar_Sadiq_Mohammed = {
+			name = "Abubakar Sadiq A. Mohammed"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Abubakar_Sadiq_Mohammed" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = nga_abba_cabinet
+			}
+			idea_token = NGA_abubakar_sadiq_mohammed
+			traits = {
+				head_of_government
+				hog_political_protege
+				conservatism_minister
+			}
+		}
+	}
+	Emmanuel_Iheanacho = {
+			name = "Emmanuel Iheanacho"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Emmanuel_Iheanacho" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = nga_abba_cabinet
+			}
+			idea_token = NGA_emmanuel_iheanacho
+			traits = {
+				economy_minister
+				eco_oil_baron
+				liberalism_minister
+			}
+		}
+	}
+	Zubairu_Dada = {
+			name = "Zubairu Dada"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Zubairu_Dada" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = nga_abba_cabinet
+			}
+			idea_token = NGA_zubairu_dada
+			traits = {
+				foreign_minister
+				for_the_cloak_n_dagger_schemer
+				conservatism_minister
+			}
+		}
+	}
+	Ibrahim_Gambari = {
+			name = "Ibrahim Gambari"
+			portraits = {
+				civilian = { small = "GFX_idea_NGA_Ibrahim_Gambari" } 
+			}
+			advisor = {
+			allowed = {
+				original_tag = NGA
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+				has_country_flag = nga_abba_cabinet
+			}
+			idea_token = NGA_ibrahim_gambari
+			traits = {
+				security_minister
+				sec_compassionate_gentleman
+				conservatism_minister
+			}
+		}
+	}
+
+
+}

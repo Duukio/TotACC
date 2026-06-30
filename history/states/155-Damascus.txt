@@ -1,0 +1,25 @@
+state={
+id=155
+	name="STATE_155"
+    buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	history={
+        victory_points = { 4111 25 }
+        owner = SYR
+        buildings = {
+            school = 2
+            infrastructure = 3
+            arms_factory = 1
+            industrial_complex = 3
+            air_base = 2
+        }
+        add_core_of = SYR
+    }
+	provinces={
+		4111 14027 14028
+	}
+	manpower=3183000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

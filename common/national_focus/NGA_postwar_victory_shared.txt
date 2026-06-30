@@ -1,0 +1,24 @@
+focus_tree = {
+	id = NGA_postwar_victory
+	country = {
+		factor = 0
+	modifier = {
+			add = 1
+			tag = NGA
+			NOT = {
+				OR = {
+				has_war_with = BIA
+				has_war_with = BIU
+				}
+			}
+		}
+	}
+	shared_focus = NGA_looking_inward
+	shared_focus = NGA_unfinished_business
+	shared_focus = NGA_old_friends_and_new_suitors
+	shared_focus = NGA_resolving_the_anglophone_crisis
+	shared_focus = NGA_litigating_liberia
+	shared_focus = NGA_a_headache_in_the_horn
+	shared_focus = NGA_going_down_south
+	shared_focus = NGA_saving_south_sudan
+}

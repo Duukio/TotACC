@@ -1,0 +1,493 @@
+focus_tree = {
+    id = SFL_starting
+    country = {
+        base = 0
+        modifier = {
+            add = 103
+            tag = SFL
+        }
+    }
+	focus = {
+		id = SFL_peace_in_the_panhandle
+		icon = GFX_SFL_peace_in_the_panhandle
+		cost = 3
+		x = 8
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 100
+			hidden_effect = {
+				add_state_core = 793
+				add_state_core = 794
+				add_state_core = 795
+				add_state_core = 987
+				add_state_core = 539
+				add_state_core = 986
+				add_state_core = 1332
+			}
+			custom_effect_tooltip = "Cores Florida States"
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_peace_in_the_panhandle"
+		}
+	}
+	focus = {
+		id = SFL_the_freer_the_market
+		icon = GFX_SFL_the_freer_the_market
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			has_country_flag = SFL_obama_returns
+		}
+		completion_reward = {
+			add_to_variable = { SFL.REAL_GROWTH = 0.01 }
+			custom_effect_tooltip = "SFL_adds_1_gdp" #make it color nt
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_the_freer_the_market"
+		}
+		relative_position_id = SFL_peace_in_the_panhandle
+		prerequisite = { focus = SFL_peace_in_the_panhandle }
+	}
+	focus = {
+		id = SFL_the_freer_the_people
+		icon = GFX_SFL_the_freer_the_people
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			has_country_flag = SFL_obama_returns
+		}
+		completion_reward = {
+			country_event = {
+				id = SFL.99 #ending taxation
+				days = 1
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_the_freer_the_people"
+		}
+		relative_position_id = SFL_the_freer_the_market
+		prerequisite = { focus = SFL_the_freer_the_market }
+	}
+	focus = {
+		id = SFL_stand_your_ground
+		icon = GFX_SFL_stand_your_ground
+		cost = 2
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			has_country_flag = SFL_obama_returns
+		}
+		completion_reward = {
+			795 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			794 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			793 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_stand_your_ground"
+		}
+		relative_position_id = SFL_peace_in_the_panhandle
+		prerequisite = { focus = SFL_peace_in_the_panhandle }
+	}
+	focus = {
+		id = SFL_suns_out_guns_out
+		icon = GFX_SFL_suns_out_guns_out
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			has_country_flag = SFL_obama_returns
+		}
+		completion_reward = {
+			#load_oob = "Florida Free Guards"
+			country_event = { 
+				id = SFL.100
+				days = 1
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_suns_out_guns_out"
+		}
+		relative_position_id = SFL_stand_your_ground
+		prerequisite = { focus = SFL_stand_your_ground }
+	}
+	focus = {
+		id = SFL_an_end_to_the_war_on_drugs
+		icon = GFX_SFL_an_end_to_the_war_on_drugs
+		cost = 2
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			has_country_flag = SFL_obama_returns
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+			add_manpower = 10000
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_an_end_to_the_war_on_drugs"
+		}
+		relative_position_id = SFL_peace_in_the_panhandle
+		prerequisite = { focus = SFL_peace_in_the_panhandle }
+	}
+	focus = {
+		id = SFL_develop_the_everglades
+		icon = GFX_SFL_develop_the_everglades
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			has_country_flag = SFL_obama_returns
+		}
+		completion_reward = {
+			986 = {
+				add_extra_state_shared_building_slots = 4
+			}
+			1332 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_develop_the_everglades"
+		}
+		relative_position_id = SFL_an_end_to_the_war_on_drugs
+		prerequisite = { focus = SFL_an_end_to_the_war_on_drugs }
+	}
+	focus = {
+		id = SFL_hurricane_hussein
+		icon = GFX_SFL_hurricane_hussein
+		cost = 1
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = -0.1
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_hurricane_hussein"
+		}
+		relative_position_id = SFL_peace_in_the_panhandle
+		prerequisite = { focus = SFL_the_freer_the_people  }
+		prerequisite = { focus = SFL_suns_out_guns_out }
+		prerequisite = { focus = SFL_develop_the_everglades }
+		allow_branch = {has_country_flag = SFL_obama_returns}
+	}
+	focus = {
+		id = SFL_with_friends_like_these
+		icon = GFX_SFL_with_friends_like_these
+		cost = 3
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_with_friends_like_these"
+			#add_ideas = SFL_united_against_obamunism
+			country_event = {
+				id = SFL.111
+				days = 1
+			}
+		}
+		relative_position_id = SFL_hurricane_hussein
+		prerequisite = { focus = SFL_hurricane_hussein }
+	}
+	focus = {
+		id = SFL_freedom_flotillas
+		icon = GFX_SFL_freedom_flotillas
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			CUB = {
+				add_stability = -0.1
+			}
+			OBM = {
+				add_stability = -0.15
+			}
+			SFL = {
+				add_opinion_modifier = {
+				    target = CUB
+				    modifier = embargo
+					trade = yes
+				}
+			}
+			SFL = {
+				add_opinion_modifier = {
+				    target = OBM
+				    modifier = embargo
+					trade = yes
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_freedom_flotillas"
+		}
+		relative_position_id = SFL_with_friends_like_these
+		prerequisite = { focus = SFL_with_friends_like_these }
+	}
+	focus = {
+		id = SFL_favors_from_phoenix
+		icon = GFX_SFL_favors_from_phoenix
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			FSA = {
+				country_event = {
+					id = SFL.102
+					days = 1
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_favors_from_phoenix"
+		}
+		relative_position_id = SFL_freedom_flotillas
+		prerequisite = { focus = SFL_freedom_flotillas }
+	}
+	focus = {
+		id = SFL_more_than_just_cigars
+		icon = GFX_SFL_more_than_just_cigars
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_more_than_just_cigars"
+			add_ideas = SFL_salt_life_scavengers
+		}
+		relative_position_id = SFL_hurricane_hussein
+		prerequisite = { focus = SFL_hurricane_hussein }
+	}
+	focus = {
+		id = SFL_diy_workshops
+		icon = GFX_SFL_diy_workshops
+		cost = 3
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+            random_owned_state = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = arms_factory
+			            level = 2
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_diy_workshops"
+		}
+		relative_position_id = SFL_more_than_just_cigars
+		prerequisite = { focus = SFL_more_than_just_cigars }
+	}
+	focus = {
+		id = SFL_one_last_job
+		icon = GFX_SFL_one_last_job
+		cost = 3
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_one_last_job"
+			add_ideas = SFL_veterans_of_unpopular_wars
+		}
+		relative_position_id = SFL_hurricane_hussein
+		prerequisite = { focus = SFL_hurricane_hussein }
+	}
+	focus = {
+		id = SFL_militias_in_the_magic_kingdom
+		icon = GFX_SFL_militias_in_the_magic_kingdom
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			987 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_militias_in_the_magic_kingdom"
+		}
+		relative_position_id = SFL_one_last_job
+		prerequisite = { focus = SFL_one_last_job }
+	}
+	focus = {
+		id = SFL_savage_garden
+		icon = GFX_SFL_savage_garden
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			army_experience = 50
+			986 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_savage_garden"
+		}
+		relative_position_id = SFL_militias_in_the_magic_kingdom
+		prerequisite = { focus = SFL_militias_in_the_magic_kingdom }
+	}
+	focus = {
+		id = SFL_spring_breakthrough
+		icon = GFX_SFL_spring_breakthrough
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = { 
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_spring_breakthrough"
+			add_timed_idea = {
+                idea = SFL_spring_offensive
+                days = 60
+            }
+		}
+		relative_position_id = SFL_diy_workshops
+		prerequisite = { focus = SFL_savage_garden }
+		prerequisite = { focus = SFL_diy_workshops }
+		prerequisite = { focus = SFL_favors_from_phoenix }
+	}
+	focus = {
+		id = SFL_the_eye_of_the_storm
+		icon = GFX_SFL_the_eye_of_the_storm
+		cost = 3
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+    			country_exists = OBM
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = SFL.105
+				days = 1
+			}
+			log = "[GetDateText]: [Root.GetName]: Focus SFL_the_eye_of_the_storm"
+		}
+		relative_position_id = SFL_spring_breakthrough
+		prerequisite = { focus = SFL_spring_breakthrough }
+	}
+}

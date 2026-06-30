@@ -1,0 +1,28 @@
+state={
+id=1084
+	name="STATE_1084"
+    buildings_max_level_factor = 1
+	state_category = large_town
+	
+	history={
+		owner = LEB 
+		victory_points = {
+			13938 10
+		}
+		buildings = {
+            school = 2
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			dockyard = 1
+		}
+		add_core_of = LEB 
+
+	}
+	provinces={
+		13938
+	}
+	manpower=200000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

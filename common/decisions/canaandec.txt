@@ -1,0 +1,733 @@
+canaanperipheryinvest_dec_cat = {
+	ISP_invest_in_periphery_1 = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            917 = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_invest_in_periphery_2 = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            106 = {
+                add_extra_state_shared_building_slots = 5
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = school
+			            level = 3
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_invest_in_periphery_3 = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            918 = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_invest_in_periphery_4 = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            440 = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_invest_in_periphery_5 = {
+		cost = 125
+		fire_only_once = yes
+        available = { 
+            has_country_flag = ISP_canaanmoredecsforperiphery
+        }
+        days_remove = 60
+		remove_effect = {
+            918 = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_invest_in_periphery_6 = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+        available = { 
+            has_country_flag = ISP_canaanmoredecsforperiphery
+        }
+		remove_effect = {
+            959 = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_invest_in_periphery_7 = {
+		cost = 125
+		fire_only_once = yes
+        available = { 
+            has_country_flag = ISP_canaanmoredecsforperiphery
+        }
+        days_remove = 60
+		remove_effect = {
+            107 = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	ISP_invest_in_periphery_8 = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+        available = { 
+            has_country_flag = ISP_canaanmoredecsforperiphery
+        }
+		remove_effect = {
+            105 = {
+                add_extra_state_shared_building_slots = 3
+			        add_building_construction = {
+			            type = infrastructure
+			            level = 1
+			            instant_build = yes
+			        } 
+			        add_building_construction = {
+			            type = industrial_complex
+			            level = 1
+			            instant_build = yes
+			        } 
+            }   
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+}
+arab_canaanites_dec_cat = {
+	support_dhofar = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            DHO = {
+                add_manpower = 10000
+                add_war_support = var:ISP_bonuses_for_dec
+            }
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	support_syemen = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            YE2 = {
+                add_manpower = 10000
+                add_war_support = var:ISP_bonuses_for_dec
+            }
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+}
+nafri_canaanites_dec_cat = {
+	support_tunisianists = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            TUN = {
+                add_popularity = {
+                    ideology = revolutionary_right 
+                    popularity = 0.2
+                }
+                add_stability = -var:ISP_bonuses_for_dec
+            }
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	support_algerianists = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+		remove_effect = {
+            ALG = {
+                add_popularity = {
+                    ideology = reformist_socialism 
+                    popularity = 0.2
+                }
+                add_political_power = 100
+                add_war_support = var:ISP_bonuses_for_dec
+            }
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	support_khedafy = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = TRP
+        }
+		remove_effect = {
+            TRP = {
+                add_manpower = 10000
+                add_war_support = var:ISP_bonuses_for_dec
+            }
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	support_egy_dissidents = {
+		cost = 125
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = EGY
+        }
+		remove_effect = {
+            EGY = {
+                add_stability = -var:ISP_bonuses_for_dec5
+                add_war_support = -0.25
+            }
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+}
+invite_to_benghazi_forum_dec_cat = {
+	invite_alg = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = ALG
+        }
+		remove_effect = {
+                set_variable = { ALG.FACTIONSTATUS = 16 }
+                ISP = {
+		            add_to_faction = ALG
+		        }
+                custom_effect_tooltip = "Dzayria becomes a member of the Benghazi Forum"
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	invite_ita = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = ITA
+        }
+		remove_effect = {
+                set_variable = { ITA.FACTIONSTATUS = 16 }
+                custom_effect_tooltip = "Italy becomes a member of the Benghazi Forum"
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	invite_sgf = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = SGF
+        }
+		remove_effect = {
+                set_variable = { SGF.FACTIONSTATUS = 16 }
+                custom_effect_tooltip = "Austro-Bavaria becomes a member of the Benghazi Forum"
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+}
+invitecommie_to_benghazi_forum_dec_cat = {
+	invite_por = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = POR
+        }
+		remove_effect = {
+            
+                set_variable = { POR.FACTIONSTATUS = 16 }
+            
+                custom_effect_tooltip = "Portugal becomes a member of the Benghazi Forum"
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	invite_ye2 = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = YE2
+        }
+		remove_effect = {
+                set_variable = { YE2.FACTIONSTATUS = 16 }
+             
+                custom_effect_tooltip = "South Yemen becomes a member of the Benghazi Forum"
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	invite_gre = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = GRE
+        }
+		remove_effect = {
+                set_variable = { GRE.FACTIONSTATUS = 16 }
+                  
+                custom_effect_tooltip = "Greece becomes a member of the Benghazi Forum"
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+	invite_rom = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            country_exists = ROM
+            ROM = {
+                is_subject = no
+            }
+        }
+		remove_effect = {
+                set_variable = { ROM.FACTIONSTATUS = 16 }
+                  
+                custom_effect_tooltip = "Romania becomes a member of the Benghazi Forum"
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}
+}
+BRUH_RIZZRAEL_EMBARGOED_ZAZA_AND_THE_SKIBIDI_TOILET_WONT_FLUSH_dec_cat = {
+    BRUH_RIZZRAEL_EMBARGOED_ZAZA_AND_THE_SKIBIDI_TOILET_WONT_FLUSH = {
+        allowed = {
+            original_tag = ISP
+        }
+        activation = {
+            always = no
+        }
+        available = {
+           always = no
+        }
+        visible = {
+             original_tag = ISP
+        }
+        cancel_trigger = {
+            ISP = {
+                has_war = no
+            }
+        }
+        days_mission_timeout = 60
+        timeout_effect = {
+            if = {
+                limit = {
+                    ISP = {
+                        controls_state = 916
+                    }
+                }
+                ISP = {
+                transfer_state = 916
+                    add_stability = 0.1
+                }
+            }
+            else = {
+                add_stability = -0.1
+                add_war_support = -0.1
+            }
+        }
+    }
+    TAKE_ALAWITIA = {
+        allowed = {
+            original_tag = ISP
+        }
+        activation = {
+            always = no
+        }
+        available = {
+           always = no
+        }
+        visible = {
+             original_tag = ISP
+        }
+        cancel_trigger = {
+            ISP = {
+                has_war = no
+            }
+        }
+        days_mission_timeout = 130
+        timeout_effect = {
+            if = {
+                limit = {
+                    ISP = {
+                        controls_state = 1263
+                    }
+                }
+                ISP = {
+                transfer_state = 916
+                    add_stability = 0.1
+                }
+            }
+            else = {
+                add_stability = -0.1
+                add_war_support = -0.1
+            }
+        }       
+    }
+}
+PAX_SEMITICA_dec_cat = {
+	fate_of_mesopotamia = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 30
+        available = {
+            has_completed_focus = ISP_for_an_authentic_final_peace
+        }
+		remove_effect = {
+            if = {
+                limit = {
+                    country_exists = KUR
+                }
+                set_variable = { KUR.FACTIONSTATUS = 16 }
+                custom_effect_tooltip = "Kurdistan becomes a member of the Semitic Confederation."
+                ISP = {
+		            add_to_faction = KUR
+		        }   
+                KUR = {
+                    transfer_state = 1262
+                    transfer_state = 157
+                    transfer_state = 1264
+                    transfer_state = 156
+                    transfer_state = 147
+                    create_country_leader = {
+                    	name = "Asya Abdullah"
+                    	desc = "POLITICS_KUR_FGIK_DESC"
+                    	picture = "gfx/leaders/KUR/Asya Abdullah.png"
+                    	expire = "2040.1.1"
+                    	ideology = lwnat
+                    	traits = {
+                    	}
+                    }
+                    set_party_name = {
+                        ideology = neosoc
+                       long_name = "Democratic Union Party/Semitic Movement for Peace/Young Mesopotamia Society"
+                       name = "Young Mesopotamia Society"
+                    }
+                    set_cosmetic_tag = KUR_EXI
+                }
+                if = {
+                    limit = {
+                        IRA = { has_government = socdem } 
+                            }
+                        custom_effect_tooltip = "The Iraqi People's Republic becomes a member of the Semitic Confederation."
+                            ISP = {
+		                 add_to_faction = IRA
+		                    }
+                    }
+            }
+            else = {
+                KUR = {
+                    transfer_state = 1262
+                    transfer_state = 157
+                    transfer_state = 1264
+                    transfer_state = 156
+                    transfer_state = 147
+                }
+                ISP = {
+		            add_to_faction = KUR
+		        }
+                set_variable = { KUR.FACTIONSTATUS = 16 }
+                custom_effect_tooltip = "We shall establish in the conquered territories a Provisional Government, readying the state machine of the future Mesopotamia."   
+                KUR = {
+                    create_country_leader = {
+                    	name = "Asya Abdullah"
+                    	desc = "POLITICS_KUR_FGIK_DESC"
+                    	picture = "gfx/leaders/KUR/Asya Abdullah.png"
+                    	expire = "2040.1.1"
+                    	ideology = lwnat
+                    	traits = {
+                    	}
+                    }
+                    set_cosmetic_tag = KUR_PUP
+                }
+            }
+
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}   
+	march_into_persian_gulf = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 30
+        available = {
+            has_completed_focus = ISP_for_an_authentic_final_peace
+            NOT = {
+                IRA = { has_government = socdem } 
+            }
+        }
+		remove_effect = {
+            KUR = {
+                declare_war_on = {
+                    target = IRQ
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = IRA
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = TRM
+                    type = annex_everything
+                }
+                declare_war_on = {
+                    target = ALQ
+                    type = annex_everything
+                } 
+                set_cosmetic_tag = KUR_EXI
+            }
+            IRQ = {
+                declare_war_on = {
+                    target = ISP
+                    type = annex_everything
+                }
+            }
+            IRA = {
+                declare_war_on = {
+                    target = ISP
+                    type = annex_everything
+                }
+            }
+            TRM = {
+                declare_war_on = {
+                    target = ISP
+                    type = annex_everything
+                }
+            }
+            ALQ = {
+                declare_war_on = {
+                    target = ISP
+                    type = annex_everything
+                }
+            }
+		}
+        ai_will_do = {
+            base = 100
+        }
+	} 
+    up_the_great_nile = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            has_completed_focus = ISP_for_an_authentic_final_peace
+        }
+		remove_effect = {
+            TRP = {
+                declare_war_on = {
+                    target = SUD
+                    type = annex_everything
+                }
+            }
+            ISP = {
+                declare_war_on = {
+                    target = SUD
+                    type = annex_everything
+                }
+            } 
+		}
+        ai_will_do = {
+            base = 100
+        }
+	} 
+    invite_dzyrai = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            has_completed_focus = ISP_for_an_authentic_final_peace
+        }
+		remove_effect = {
+                custom_effect_tooltip = "Dzyaria will be invited to join the Semitic Confederation."
+                TRP = {
+		            add_to_faction = ALG
+		        } 
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}  
+    invite_dzyrai = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            has_completed_focus = ISP_for_an_authentic_final_peace
+        }
+		remove_effect = {
+                custom_effect_tooltip = "Dzyaria will be invited to join the Semitic Confederation."
+                ISP = {
+		            add_to_faction = ALG
+		        } 
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}  
+    invite_YE2 = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            has_completed_focus = ISP_for_an_authentic_final_peace
+            country_exists = YE2
+        }
+		remove_effect = {
+                custom_effect_tooltip = "South Yemen will be invited to join the Semitic Confederation."
+                ISP = {
+		            add_to_faction = YE2
+		        } 
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}  
+    invite_DHO = {
+		cost = 150
+		fire_only_once = yes
+        days_remove = 60
+        available = {
+            has_completed_focus = ISP_for_an_authentic_final_peace
+            country_exists = DHO
+        }
+		remove_effect = {
+                custom_effect_tooltip = "Dhofar will be invited to join the Semitic Confederation."
+                ISP = {
+		            add_to_faction = DHO
+		        } 
+		}
+        ai_will_do = {
+            base = 100
+        }
+	}  
+}
+        

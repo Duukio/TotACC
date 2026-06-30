@@ -1,0 +1,12 @@
+focus_tree = {
+	id = SEY_moneta
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SEY
+            has_country_flag = moneta_ded
+		}
+	}
+	shared_focus = SEY_buonanotte_moneta
+}

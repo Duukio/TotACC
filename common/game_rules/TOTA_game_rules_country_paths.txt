@@ -1,0 +1,181 @@
+############################
+### Custom Country Paths ###
+############################
+
+BIA_ai_route = {
+	name = "BIA_AI_PATH"
+	group = "RULE_GROUP_TOTA_AI_PATHS"
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = STATUSQUO
+		text = "RULE_OPTION_BIA_STATUSQUO"
+		desc = "RULE_OPTION_BIA_STATUSQUO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CONSERVATIVES
+		text = "RULE_OPTION_BIA_CONS"
+		desc = "RULE_OPTION_BIA_CONS_DESC"
+		allow_achievements = yes
+	}
+}
+
+SEY_ai_route = {
+	name = "SEY_AI_PATH"
+	group = "RULE_GROUP_TOTA_AI_PATHS"
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+	}
+	option = {
+		name = BOUT
+		text = "RULE_OPTION_SEY_BOUT"
+		desc = "RULE_OPTION_SEY_BOUT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPICER
+		text = "RULE_OPTION_SEY_SPICER"
+		desc = "RULE_OPTION_SEY_SPICER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BARLOW
+		text = "RULE_OPTION_SEY_BARLOW"
+		desc = "RULE_OPTION_SEY_BARLOW_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = PRINCE
+		text = "RULE_OPTION_SEY_PRINCE"
+		desc = "RULE_OPTION_SEY_PRINCE_DESC"
+		allow_achievements = yes
+	}
+}
+
+ISP_ai_route = {
+	name = "ISP_AI_PATH"
+	group = "RULE_GROUP_TOTA_AI_PATHS"
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+	}
+	option = {
+		name = ASHKENAZI
+		text = "RULE_OPTION_ISP_ASHKENAZI"
+		desc = "RULE_OPTION_ISP_ASHKENAZI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SIMHON
+		text = "RULE_OPTION_ISP_SIMHON"
+		desc = "RULE_OPTION_ISP_SIMHON_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RAMON
+		text = "RULE_OPTION_ISP_RAMON"
+		desc = "RULE_OPTION_ISP_RAMON_DESC"
+		allow_achievements = yes
+	}
+	#option = {
+	#	name = COUP
+	#	text = "RULE_OPTION_ISP_COUP"
+	#	desc = "RULE_OPTION_ISP_COUP_DESC"
+	#	allow_achievements = yes
+	#} #coup path is the same as sneh
+	option = {
+		name = SNEH
+		text = "RULE_OPTION_ISP_SNEH"
+		desc = "RULE_OPTION_ISP_SNEH_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CANAAN
+		text = "RULE_OPTION_ISP_CANAAN"
+		desc = "RULE_OPTION_ISP_CANAAN_DESC"
+		allow_achievements = yes
+	}
+}
+
+NGA_ai_route = {
+	name = "NGA_AI_PATH"
+	group = "RULE_GROUP_TOTA_AI_PATHS"
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = MILDICT
+		text = "RULE_OPTION_NGA_MILDICT"
+		desc = "RULE_OPTION_NGA_MILDICT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = NATCOM
+		text = "RULE_OPTION_NGA_NATCOM"
+		desc = "RULE_OPTION_NGA_NATCOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = IZLAM
+		text = "RULE_OPTION_NGA_IZLAM"
+		desc = "RULE_OPTION_NGA_IZLAM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = REDDIT
+		text = "RULE_OPTION_NGA_REDDIT"
+		desc = "RULE_OPTION_NGA_REDDIT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = JADEREV
+		text = "RULE_OPTION_NGA_JADEREV"
+		desc = "RULE_OPTION_NGA_JADEREV_DESC"
+		allow_achievements = yes
+	}
+	#option = {
+	#	name = ISLAMDEM
+	#	text = "RULE_OPTION_NGA_ISLAMDEM"
+	#	desc = "RULE_OPTION_NGA_ISLAMDEM_DESC"
+	#	allow_achievements = yes
+	#} #i dont think anyone cares about the specific nigeria elections
+}
+
+MSK_ai_route = {
+	name = "MSK_AI_PATH"
+	group = "RULE_GROUP_TOTA_AI_PATHS"
+
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HENDY
+		text = "RULE_OPTION_MSK_HENDY"
+		desc = "RULE_OPTION_MSK_HENDY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = MCAFEE
+		text = "RULE_OPTION_MSK_MCAFEE"
+		desc = "RULE_OPTION_MSK_MCAFEE_DESC"
+		allow_achievements = yes
+	}
+}

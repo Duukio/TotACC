@@ -1,0 +1,214 @@
+division_template = {
+	name = "Proud Boys"		# Infantry Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 827
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12357
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1678
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12497
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10526
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1719
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 827
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12357
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1678
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12497
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10526
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1719
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 827
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12357
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1678
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 12497
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10526
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1719
+		division_template = "Proud Boys"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
+
+}

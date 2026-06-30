@@ -1,0 +1,9 @@
+NGA_development_plan_dec_cat  = {
+     icon = generic_foreign_policy
+	 allowed = {
+		original_tag = NGA
+	}
+	visible = {
+		has_country_flag = NGA_development_plan_mechanic
+	}
+}

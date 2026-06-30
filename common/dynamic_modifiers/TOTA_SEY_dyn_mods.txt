@@ -1,0 +1,76 @@
+SEY_anational_revolution_mod = {
+	icon = GFX_SEY_anational_revolution
+	enable = {
+        SEY = {
+            has_completed_focus = SEY_moving_beyond_nationhood
+        }
+	}
+    stability_factor = seyanat_stab
+    reformist_socialism_drift = seyanat_drift
+    political_power_gain = seyanat_pp
+    consumer_goods_factor = seyanat_consumer
+    research_speed_factor = seyanat_research
+    war_support_factor = seyanatwars
+    stability_weekly = seyweekstab
+}
+SEY_const_mod = {
+	icon = GFX_SEY_a_new_constitution
+	enable = {
+        SEY = {
+            has_completed_focus = SEY_a_new_constitution
+        }
+	}
+    remove_trigger = {
+        SEY = {
+            has_completed_focus = SEY_the_first_of_many_revolutions
+        }
+    }
+    stability_factor = seyanat_stab_1
+    reformist_socialism_drift = seyanat_drift_1
+    political_power_gain = seyanat_pp_1
+    consumer_goods_factor = seyanat_consumer_1
+    research_speed_factor = seyanat_research_1
+    war_support_factor = seyanatwars_1
+    stability_weekly = seyweekstab_1
+}
+SEY_btnt_mod = {
+icon = GFX_SEY_new_research_frontiers
+ 	enable = {
+        SEY = {
+            has_completed_focus = SEY_building_the_next_tomorrow
+        }
+	}
+    political_power_gain = seybtnt_pp_gain
+    consumer_goods_factor = seybtnt_consumer
+    research_speed_factor = seybtnt_research
+    technocracy_drift = seybtnt_techno_drift
+    decryption_factor = seybtnt_decryption
+    encryption_factor = seybtnt_encryption
+    experience_loss_factor = seybtnt_soldier_exp
+    industrial_capacity_factory = seybtnt_factory_output
+    production_factory_max_efficiency_factor = seybtnt_factory_cap
+    army_org_factor	= seybtnt_org
+    army_speed_factor = seybtnt_divs_speed
+    monthly_soctrends_drift_EE_E1 = seybtnt_soctrends_equality
+    gdp_growth_modifier = seybtnt_gdp_growth
+    stability_factor = seybtnt_stab
+}
+SEY_fort_free = {
+icon = GFX_SEY_new_research_frontiers
+ 	enable = {
+        SEY = {
+            has_completed_focus = SEY_a_fortress_of_freedom
+        }
+	}
+    conscription = SEY_fort_free_conscr
+    army_org_factor = SEY_fort_free_army_org
+    consumer_goods_factor = SEY_fort_free_consumer_goods
+    political_power_gain = SEY_fort_free_pp_gain
+    autocracy_drift = SEY_fort_free_drift
+    gdp_growth_modifier = SEY_fort_free_gdp
+    stability_factor = SEY_fort_free_stab
+    monthly_soctrends_drift_TP_T = SEY_fort_free_trad_drift
+    production_factory_max_efficiency_factor = SEY_fort_free_prod
+    offence = SEY_fort_free_power
+    
+}

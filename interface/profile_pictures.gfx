@@ -1,0 +1,76 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_profile_picture_msn"
+        texturefile = "gfx/interface/pfps/msn.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_profile_picture_chudjak"
+        texturefile = "gfx/interface/pfps/chudjak.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_profile_picture_fulani"
+        texturefile = "gfx/interface/pfps/fulani.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_profile_picture_biafran"
+        texturefile = "gfx/interface/pfps/biafran.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_profile_picture_paul_biya"
+        texturefile = "gfx/interface/pfps/biya.dds"
+    }
+    spriteType = {
+        name = "GFX_profile_picture_awesomeface"
+        texturefile = "gfx/interface/pfps/awesome.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_profile_picture_fsv"
+        texturefile = "gfx/interface/pfps/fsv.dds"
+        transparencecheck = yes
+    }
+	frameAnimatedSpriteType = {
+		name = "GFX_profile_picture_compact_disc"
+		texturefile = "gfx/interface/pfps/compact_disc.dds"
+        noOfFrames = 20
+        animation_rate_fps = 10
+        looping = yes
+        play_on_show = yes
+	}
+    spriteType = {
+        name = "GFX_profile_picture_westfalen"
+        texturefile = "gfx/interface/pfps/westfalen.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_profile_picture_biafratrell"
+        texturefile = "gfx/interface/pfps/biafratrell.dds"
+    }
+    spriteType = {
+        name = "GFX_profile_picture_lightmaga"
+        texturefile = "gfx/interface/pfps/lightmaga.dds"
+        transparencecheck = yes
+    }
+    spriteType = {
+        name = "GFX_profile_picture_cool"
+        texturefile = "gfx/interface/pfps/cool.dds"
+        transparencecheck = yes
+    }
+	frameAnimatedSpriteType = {
+		name = "GFX_profile_picture_aol"
+		texturefile = "gfx/interface/pfps/aol.dds"
+        noOfFrames = 95
+        animation_rate_fps = 30
+        looping = yes
+        play_on_show = yes
+	}
+    spriteType = {
+        name = "GFX_profile_picture_nick_land"
+        texturefile = "gfx/interface/pfps/nick_land.dds"
+        transparencecheck = yes
+    }
+}

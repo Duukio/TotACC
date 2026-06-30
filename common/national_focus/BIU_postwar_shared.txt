@@ -1,0 +1,12 @@
+focus_tree = {
+	id = BIU_postwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 225
+			tag = BIU
+			has_country_flag = BIU_victory
+		}
+	}
+	shared_focus = BIU_the_final_redemption
+}

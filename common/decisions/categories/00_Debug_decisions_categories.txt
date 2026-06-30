@@ -1,0 +1,7 @@
+TOTA_Debug = {
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+	priority = 5
+}

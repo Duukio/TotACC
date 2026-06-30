@@ -1,0 +1,22 @@
+focus_tree = {
+	id = EFF_postwar
+	country = {
+		factor = 0
+		modifier = {
+			add = 125
+			original_tag = EFF
+			NOT =  {
+				has_war_with = RSB
+				has_war_with = SAF
+				has_war_with = AWB
+			}
+			NOT = {
+                has_country_leader = {
+                    name = "Julius Malema"
+                    ruling_only = yes
+                }				
+			}
+		}
+	}
+	shared_focus = EFF_africas_sons_redeemed
+}

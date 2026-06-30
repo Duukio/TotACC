@@ -1,0 +1,32 @@
+state={
+id=126
+	name="STATE_126"
+    buildings_max_level_factor = 1
+	
+	
+	state_category = large_city
+	
+	provinces={
+		729 758 3761 6734 6764 6955 9686 9689 11675 11677 11692 11710 11840 
+	}
+	
+	history={
+        victory_points = { 6955 10 }
+ 		victory_points = { 6734 5 }
+        owner = SPA
+        buildings = {
+            school = 2
+            infrastructure = 4
+			air_base = 3
+			6734 = {
+				naval_base = 4
+
+			}
+        }
+        add_core_of = SPA
+    }
+	
+	manpower = 2144297
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

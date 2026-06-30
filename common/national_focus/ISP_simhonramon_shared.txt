@@ -1,0 +1,20 @@
+focus_tree = {
+	id = ISP_simhonramon
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = ISP
+			OR = {
+			has_country_flag  = ISP_simhon_flag
+			has_country_flag  = ISP_ramon_flag
+			}
+		}
+	}
+	shared_focus = ISP_general_secretary_ramon
+	shared_focus = ISP_general_secretary_simhon
+	shared_focus = ISP_promises_of_reform
+	shared_focus = ISP_the_edf_focus
+	shared_focus = ISP_crisis_at_home
+	shared_focus = ISP_tis_the_final_battle
+}

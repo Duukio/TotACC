@@ -1,0 +1,31 @@
+
+state={
+	id=1094
+	name="STATE_1094"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			12708 10 #Shimla
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		12708 2076 7106 1129
+	}
+	manpower=6864602
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

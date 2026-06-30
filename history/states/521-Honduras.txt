@@ -1,0 +1,36 @@
+state=
+{
+id=521
+	
+	name="STATE_521"
+	manpower=3303771
+	resources={
+		strategic_minerals=15
+	}
+	
+	state_category = city
+	history=
+	{
+		owner = HON
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 5
+			industrial_complex = 3 
+			air_base = 1
+			12865 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = HON
+		victory_points = {
+			12865 25
+		}
+
+	}
+	provinces={
+		 12865 13667 13681 13682 13683 13684
+	}
+
+	local_supplies=0.0 
+}

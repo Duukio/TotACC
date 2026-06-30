@@ -1,0 +1,29 @@
+state={
+id=300
+	name="STATE_300"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	oil = 10
+	}
+	history={
+			victory_points = {
+			8052 5
+		}
+		owner = SUD
+		buildings = {
+            school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = SUD
+
+	}
+	provinces={
+		1960 5060 8052 8103 10739 
+	}
+	manpower=10000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

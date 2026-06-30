@@ -1,0 +1,27 @@
+state={
+id=392
+	name="STATE_392"
+    buildings_max_level_factor = 1
+	state_category = large_town
+	
+	resources = {
+	rubber = 50
+	}
+	history={
+		owner = VIE
+		victory_points = { 4613 5 } #Luang Prabang		
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 5
+		}
+		add_core_of = VIE
+	}
+	provinces={
+	 4339 4613 7075 7218 7356 9961 10103 12392 12433 
+	}
+	manpower=2000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+state={
+id=1311
+	name="STATE_1311"
+    buildings_max_level_factor = 1
+	state_category = large_town
+	
+	history={
+		owner = PAK
+		victory_points = {
+			4893 20 #Herat
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = PAK 
+
+	}
+	provinces={
+	 2101 2017 4893 8053 12788 10476 12871 2062
+	}
+	manpower=4000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

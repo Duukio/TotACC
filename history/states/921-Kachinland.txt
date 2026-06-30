@@ -1,0 +1,39 @@
+
+state={
+	id=921
+	name="STATE_921"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = BUR
+		victory_points = {
+			4425 10 
+		}
+		victory_points = {
+			4318 1 
+		}
+		victory_points = {
+			8063 1 
+		}
+		victory_points = {
+			10920 3 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			school = 2
+
+		}
+		add_core_of = BUR
+
+	}
+
+	provinces={
+		1082 1197 1566 1934 4318 4425 4996 7469 7562 8063 10920 
+	}
+	manpower=1689441
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,0 +1,648 @@
+######CUT FOR NOW########
+#shared_focus = {
+#	id = ISP_general_secretary_khanin
+#	icon = GFX_general_secretary_khanin
+#	cost = 2
+#	x = 7
+#	y = 0
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_general_secretary_khanin"
+#	}
+#}
+#
+#shared_focus = {
+#	id = ISP_legacy_of_hashomer_hatzair
+#	icon = GFX_legacy_of_hashomer_hatzair
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_legacy_of_hashomer_hatzair"
+#	}
+#	relative_position_id = ISP_general_secretary_khanin
+#	prerequisite = { focus = ISP_general_secretary_khanin }
+#}
+#
+#shared_focus = {
+#	id = ISP_towards_a_binational_state
+#	icon = GFX_towards_a_binational_state
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_towards_a_binational_state"
+#	}
+#	relative_position_id = ISP_the_jewishpalestinian_question
+#	prerequisite = { focus = ISP_the_jewishpalestinian_question }
+#	mutually_exclusive = { focus = ISP_civic_nationhood }
+#}
+#
+#shared_focus = {
+#	id = ISP_mending_the_rift
+#	icon = GFX_mending_the_rift
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_mending_the_rift"
+#	}
+#	relative_position_id = ISP_towards_a_binational_state
+#	prerequisite = {
+#		focus = ISP_towards_a_binational_state
+#	}
+#}
+#
+#shared_focus = {
+#	id = ISP_rearranging_histadrut_ranks
+#	icon = GFX_rearranging_histadrut_ranks
+#	cost = 2
+#	x = 5
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_rearranging_histadrut_ranks"
+#	}
+#	relative_position_id = ISP_legacy_of_hashomer_hatzair
+#	prerequisite = { focus = ISP_legacy_of_hashomer_hatzair }
+#}
+#
+#shared_focus = {
+#	id = ISP_civic_nationhood
+#	icon = GFX_civic_nationhood
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_civic_nationhood"
+#	}
+#	relative_position_id = ISP_the_jewishpalestinian_question
+#	prerequisite = { focus = ISP_the_jewishpalestinian_question }
+#	mutually_exclusive = { focus = ISP_towards_a_binational_state }
+#}
+#
+#shared_focus = {
+#	id = ISP_the_jewishpalestinian_question
+#	icon = GFX_the_jewishpalestinian_question
+#	cost = 2
+#	x = -5
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_the_jewishpalestinian_question"
+#	}
+#	relative_position_id = ISP_legacy_of_hashomer_hatzair
+#	prerequisite = { focus = ISP_legacy_of_hashomer_hatzair }
+#}
+#
+#shared_focus = {
+#	id = ISP_recognizing_the_palestinian_nation
+#	icon = GFX_recognizing_the_palestinian_nation
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_recognizing_the_palestinian_nation"
+#	}
+#	relative_position_id = ISP_towards_a_binational_state
+#	prerequisite = { focus = ISP_towards_a_binational_state }
+#}
+#
+#shared_focus = {
+#	id = ISP_a_federal_model
+#	icon = GFX_a_federal_model
+#	cost = 2
+#	x = 0
+#	y = 2
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_federal_model"
+#	}
+#	relative_position_id = ISP_recognizing_the_palestinian_nation
+#	prerequisite = { focus = ISP_recognizing_the_palestinian_nation }
+#}
+#
+#shared_focus = {
+#	id = ISP_a_state_above_nationalism
+#	icon = GFX_a_state_above_nationalism
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_state_above_nationalism"
+#	}
+#	relative_position_id = ISP_civic_nationhood
+#	prerequisite = { focus = ISP_civic_nationhood }
+#}
+#
+#shared_focus = {
+#	id = ISP_promote_mixed_education
+#	icon = GFX_promote_mixed_education
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_promote_mixed_education"
+#	}
+#	relative_position_id = ISP_mending_the_rift
+#	prerequisite = { focus = ISP_mending_the_rift }
+#}
+#
+#shared_focus = {
+#	id = ISP_working_class_unity
+#	icon = GFX_working_class_unity
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_working_class_unity"
+#	}
+#	relative_position_id = ISP_promote_mixed_education
+#	prerequisite = { focus = ISP_promote_mixed_education }
+#	prerequisite = { focus = ISP_emphasize_our_socialist_character }
+#}
+#
+#shared_focus = {
+#	id = ISP_sideline_jewish_characteristics
+#	icon = GFX_sideline_jewish_characteristics
+#	cost = 2
+#	x = 0
+#	y = 2
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_sideline_jewish_characteristics"
+#	}
+#	relative_position_id = ISP_a_state_above_nationalism
+#	prerequisite = { focus = ISP_a_state_above_nationalism }
+#}
+#
+#shared_focus = {
+#	id = ISP_emphasize_our_socialist_character
+#	icon = GFX_emphasize_our_socialist_character
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_emphasize_our_socialist_character"
+#	}
+#	relative_position_id = ISP_mending_the_rift
+#	prerequisite = { focus = ISP_mending_the_rift }
+#}
+#
+#shared_focus = {
+#	id = ISP_a_future_of_peace
+#	icon = GFX_a_future_of_peace
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_future_of_peace"
+#	}
+#	relative_position_id = ISP_working_class_unity
+#	prerequisite = { focus = ISP_working_class_unity }
+#}
+#
+#shared_focus = {
+#	id = ISP_a_green_eber
+#	icon = GFX_a_green_eber
+#	cost = 2
+#	x = -3
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_green_eber"
+#	}
+#	relative_position_id = ISP_rearranging_histadrut_ranks
+#	prerequisite = { focus = ISP_rearranging_histadrut_ranks }
+#}
+#
+#shared_focus = {
+#	id = ISP_a_socialist_eber
+#	icon = GFX_a_socialist_eber
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_socialist_eber"
+#	}
+#	relative_position_id = ISP_rearranging_histadrut_ranks
+#	prerequisite = { focus = ISP_rearranging_histadrut_ranks }
+#}
+#
+#shared_focus = {
+#	id = ISP_a_progressive_eber
+#	icon = GFX_a_progressive_eber
+#	cost = 2
+#	x = 3
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_progressive_eber"
+#	}
+#	relative_position_id = ISP_rearranging_histadrut_ranks
+#	prerequisite = { focus = ISP_rearranging_histadrut_ranks }
+#}
+#
+#shared_focus = {
+#	id = ISP_nuclear_disarmament
+#	icon = GFX_nuclear_disarmament
+#	cost = 2
+#	x = 0
+#	y = 2
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_nuclear_disarmament"
+#	}
+#	relative_position_id = ISP_100_renewable_by_2030
+#	prerequisite = { focus = ISP_100_renewable_by_2030 }
+#}
+#
+#shared_focus = {
+#	id = ISP_100_renewable_by_2030
+#	icon = GFX_100_renewable_by_2030
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_100_renewable_by_2030"
+#	}
+#	relative_position_id = ISP_a_green_eber
+#	prerequisite = { focus = ISP_a_green_eber }
+#}
+#
+#shared_focus = {
+#	id = ISP_reversing_the_privatizations
+#	icon = GFX_reversing_the_privatizations
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_reversing_the_privatizations"
+#	}
+#	relative_position_id = ISP_maintaining_the_socialist_market
+#	prerequisite = { focus = ISP_maintaining_the_socialist_market }
+#}
+#
+#shared_focus = {
+#	id = ISP_renovation_of_public_transport
+#	icon = GFX_renovation_of_public_transport
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_renovation_of_public_transport"
+#	}
+#	relative_position_id = ISP_100_renewable_by_2030
+#	prerequisite = { focus = ISP_100_renewable_by_2030 }
+#	prerequisite = { focus = ISP_maintaining_the_socialist_market }
+#}
+#
+#shared_focus = {
+#	id = ISP_bastion_of_lgbtq_rights
+#	icon = GFX_bastion_of_lgbtq_rights
+#	cost = 2
+#	x = 5
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_bastion_of_lgbtq_rights"
+#	}
+#	relative_position_id = ISP_a_progressive_eber
+#	prerequisite = { focus = ISP_a_progressive_eber }
+#}
+#
+#shared_focus = {
+#	id = ISP_expanding_nature_reserves
+#	icon = GFX_expanding_nature_reserves
+#	cost = 2
+#	x = 0
+#	y = 2
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_expanding_nature_reserves"
+#	}
+#	relative_position_id = ISP_keeping_eber_clean
+#	prerequisite = { focus = ISP_keeping_eber_clean }
+#}
+#
+#shared_focus = {
+#	id = ISP_nationwide_recycling_campaign
+#	icon = GFX_nationwide_recycling_campaign
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_nationwide_recycling_campaign"
+#	}
+#	relative_position_id = ISP_keeping_eber_clean
+#	prerequisite = { focus = ISP_keeping_eber_clean }
+#}
+#
+#shared_focus = {
+#	id = ISP_keeping_eber_clean
+#	icon = GFX_keeping_eber_clean
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_keeping_eber_clean"
+#	}
+#	relative_position_id = ISP_100_renewable_by_2030
+#	prerequisite = { focus = ISP_100_renewable_by_2030 }
+#}
+#
+#shared_focus = {
+#	id = ISP_towards_the_walkable_city
+#	icon = GFX_towards_the_walkable_city
+#	cost = 2
+#	x = 0
+#	y = 2
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_towards_the_walkable_city"
+#	}
+#	relative_position_id = ISP_renovation_of_public_transport
+#	prerequisite = { focus = ISP_renovation_of_public_transport }
+#}
+#
+#shared_focus = {
+#	id = ISP_socialist_humanism
+#	icon = GFX_socialist_humanism
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_socialist_humanism"
+#	}
+#	relative_position_id = ISP_reinforcing_the_welfare_state
+#	prerequisite = { focus = ISP_reinforcing_the_welfare_state }
+#	prerequisite = { focus = ISP_promoting_social_work }
+#}
+#
+#shared_focus = {
+#	id = ISP_maintaining_the_socialist_market
+#	icon = GFX_maintaining_the_socialist_market
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_maintaining_the_socialist_market"
+#	}
+#	relative_position_id = ISP_a_socialist_eber
+#	prerequisite = { focus = ISP_a_socialist_eber }
+#}
+#
+#shared_focus = {
+#	id = ISP_reinforcing_the_welfare_state
+#	icon = GFX_reinforcing_the_welfare_state
+#	cost = 2
+#	x = 2
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_reinforcing_the_welfare_state"
+#	}
+#	relative_position_id = ISP_maintaining_the_socialist_market
+#	prerequisite = { focus = ISP_maintaining_the_socialist_market }
+#}
+#
+#shared_focus = {
+#	id = ISP_arab_development_fund
+#	icon = GFX_arab_development_fund
+#	cost = 2
+#	x = 0
+#	y = 2
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_arab_development_fund"
+#	}
+#	relative_position_id = ISP_reversing_the_privatizations
+#	prerequisite = { focus = ISP_reversing_the_privatizations }
+#}
+#
+#shared_focus = {
+#	id = ISP_investing_in_the_periphery
+#	icon = GFX_investing_in_the_periphery
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_investing_in_the_periphery"
+#	}
+#	relative_position_id = ISP_reversing_the_privatizations
+#	prerequisite = { focus = ISP_reversing_the_privatizations }
+#}
+#
+#shared_focus = {
+#	id = ISP_advancing_womens_liberation
+#	icon = GFX_advancing_womens_liberation
+#	cost = 2
+#	x = 2
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_advancing_womens_liberation"
+#	}
+#	relative_position_id = ISP_a_progressive_eber
+#	prerequisite = { focus = ISP_a_progressive_eber }
+#}
+#
+#shared_focus = {
+#	id = ISP_progressive_education
+#	icon = GFX_progressive_education
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_progressive_education"
+#	}
+#	relative_position_id = ISP_a_progressive_eber
+#	prerequisite = { focus = ISP_a_progressive_eber }
+#}
+#
+#shared_focus = {
+#	id = ISP_gradual_reintroduction_of_planning
+#	icon = GFX_gradual_reintroduction_of_planning
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_gradual_reintroduction_of_planning"
+#	}
+#	relative_position_id = ISP_reversing_the_privatizations
+#	prerequisite = { focus = ISP_reversing_the_privatizations }
+#}
+#
+#shared_focus = {
+#	id = ISP_experimenting_with_workplace_democracy
+#	icon = GFX_experimenting_with_workplace_democracy
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_experimenting_with_workplace_democracy"
+#	}
+#	relative_position_id = ISP_socialist_humanism
+#	prerequisite = { focus = ISP_socialist_humanism }
+#	prerequisite = { focus = ISP_gradual_reintroduction_of_planning }
+#}
+#
+#shared_focus = {
+#	id = ISP_promoting_social_work
+#	icon = GFX_promoting_social_work
+#	cost = 2
+#	x = 1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_promoting_social_work"
+#	}
+#	relative_position_id = ISP_progressive_education
+#	prerequisite = { focus = ISP_progressive_education }
+#}
+#
+#shared_focus = {
+#	id = ISP_social_progress_for_our_arab_countrymen
+#	icon = GFX_social_progress_for_our_arab_countrymen
+#	cost = 2
+#	x = -1
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_social_progress_for_our_arab_countrymen"
+#	}
+#	relative_position_id = ISP_bastion_of_lgbtq_rights
+#	prerequisite = { focus = ISP_bastion_of_lgbtq_rights }
+#	prerequisite = { focus = ISP_advancing_womens_liberation }
+#}
+#
+#shared_focus = {
+#	id = ISP_a_progressive_vanguard_in_a_sea_of_reaction
+#	icon = GFX_a_progressive_vanguard_in_a_sea_of_reaction
+#	cost = 2
+#	x = 0
+#	y = 1
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_a_progressive_vanguard_in_a_sea_of_reaction"
+#	}
+#	relative_position_id = ISP_social_progress_for_our_arab_countrymen
+#	prerequisite = { focus = ISP_social_progress_for_our_arab_countrymen }
+#}
+#
+#shared_focus = {
+#	id = ISP_following_international_guidelines
+#	icon = GFX_following_international_guidelines
+#	cost = 2
+#	x = 0
+#	y = 2
+#	ai_will_do = {
+#		factor = 1
+#	}
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus ISP_following_international_guidelines"
+#	}
+#	relative_position_id = ISP_nuclear_disarmament
+#	prerequisite = { focus = ISP_nuclear_disarmament }
+#}
+#

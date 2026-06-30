@@ -1,0 +1,25 @@
+
+state={
+	id=1270
+	name="STATE_1270"
+	resources={
+		oil=10
+	}
+	history={
+		owner = SAU
+		buildings = {
+			school = 2
+			infrastructure = 0
+
+		}
+		add_core_of = SAU
+
+	}
+	provinces={
+		8101 10815 10901 12455 
+	}
+	manpower=508000
+	buildings_max_level_factor=1.000
+	state_category=pastoral 
+	local_supplies=0.000
+}

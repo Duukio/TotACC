@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+			CAL_the_most_excellent_tahoe_resort = {
+			picture = CAL_the_most_excellent_tahoe_resort
+			allowed = {
+				tag = CAL
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                gdp_growth_modifier = 0.03
+                stability_factor = 0.1
+                political_power_gain = 0.05
+                conscription = 0.01
+                production_speed_buildings_factor = 0.01
+			}
+		}
+	}	
+}

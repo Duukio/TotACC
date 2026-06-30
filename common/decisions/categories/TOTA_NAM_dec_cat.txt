@@ -1,0 +1,11 @@
+NAM_get_ur_shit_back  = {
+     icon = generic_foreign_policy
+	 
+	 allowed = {
+		tag = NAM
+	}
+	 
+     visible = { 
+        tag = NAM
+    }
+}

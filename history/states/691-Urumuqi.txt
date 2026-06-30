@@ -1,0 +1,27 @@
+state={
+id=691
+	name="STATE_691"
+    buildings_max_level_factor = 1
+	
+
+	history={
+		owner = PRC
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+		}
+		add_core_of = PRC
+		add_core_of = XIN
+		victory_points = { 10674 20 }
+	}
+
+	provinces={
+		10674
+	}
+	manpower = 3520000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

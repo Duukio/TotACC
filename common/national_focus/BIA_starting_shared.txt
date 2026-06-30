@@ -1,0 +1,11 @@
+focus_tree = {
+	id = BIA_starting_new
+	country = {
+		factor = 0
+		modifier = {
+			add = 250
+			tag = BIA
+		}
+	}
+	shared_focus = BIA_5_times_over_we_will_win
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=902
+	name="STATE_902"
+    buildings_max_level_factor = 1
+	provinces={
+		4941 13804 14120 14121 14119
+	}
+	manpower=5827128
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = NCD
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			4941 5
+		}
+		add_core_of = NCD
+	}
+}

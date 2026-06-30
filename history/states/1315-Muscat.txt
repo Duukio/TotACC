@@ -1,0 +1,32 @@
+
+state={
+	id=1315
+	name="STATE_1315"
+		resources={
+		oil=100
+	}
+	provinces={
+		14104 14108 
+	}
+	manpower=1302509
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=city
+	history={
+		owner = OMA
+		add_core_of = OMA
+		buildings = {
+			school = 2
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 2
+			14108 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			14108 25
+		}
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=24
+	name="STATE_24"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = NGA
+		buildings = {
+			school = 2
+			infrastructure = 3
+
+		}
+		victory_points = {
+			13640 5 
+		}
+		victory_points = {
+			7978 1 
+		}
+		#add_core_of = BIA
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		13640 1992 4889 13636 13904 13905 7978
+	}
+	manpower=3178950
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

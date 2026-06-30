@@ -1,0 +1,32 @@
+
+state={
+	id=1118
+	name="STATE_1118"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			10001 10 #Srikakulam
+		}
+		buildings = {
+			school = 2
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 5
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		10001 10255 7297 1228 4237
+	}
+	manpower=1003674
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

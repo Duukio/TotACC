@@ -1,0 +1,35 @@
+
+state={
+	id=1017
+	name="STATE_1017"
+    buildings_max_level_factor = 1
+	resources={
+		tungsten = 2
+	}
+
+	history={
+		owner = PRU
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 1
+			13929 = {
+			bunker = 2
+		}
+		}
+		add_core_of = PRU
+		victory_points = {
+			13929 15 
+		}
+
+	}
+
+	provinces={
+		13929
+	}
+	manpower=1000000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=3
+}

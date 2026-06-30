@@ -1,0 +1,36 @@
+
+state={
+id=517
+	
+	name="STATE_517" # Antofagasta
+	manpower = 4000000
+	
+	state_category = city
+
+	history={
+		owner = CHL
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 10
+			air_base = 1
+			12994 = {
+				naval_base = 5
+			}
+			5228 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = CHL
+		victory_points = {
+			12994 25
+		}
+
+	}
+
+	provinces={
+		5131 5146 5171 5192 5228 8217 8231 11000 12914 12994 
+	}
+
+	local_supplies=0.0 
+}

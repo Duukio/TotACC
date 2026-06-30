@@ -1,0 +1,667 @@
+#############
+### INDEX From TNO Thx I Love TNO ###
+#############
+# Use your text editor's Find function using the following keys to jump between parts of the file
+
+# 1. Close_button - Text that appears in the close button
+
+# 2. Poster_image - Scripted Loc refering to the GFX definition of the countries' posters
+
+# 3. Folder_ScriptedLoc - Text that appears in the "folder" buttons
+	# Folder_ScriptedLoc_ANG
+	# Folder_ScriptedLoc_COG
+	# Folder_ScriptedLoc_BRG
+
+# 4. Content_ScriptedLoc - Text that appears in the "content" buttons
+	# Content_ScriptedLoc_COG
+	# Content_ScriptedLoc_BRG
+
+# 5. Content_ScriptedLoc_desc - Long text description that appears corresponding to the "content" button clicked
+	# Content_ScriptedLoc_desc_COG
+	# Content_ScriptedLoc_desc_BRG
+
+# X. Functionality - Must always be at the bottom of the file
+	# Functionality_Tutorials
+	# Functionality_Development
+
+# 1. Close_button
+defined_text = {
+	name = GET_CLOSEBUTTON_TEXT
+	text = {
+		trigger = { tag = BIA }
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_BIA
+	}
+	text = {
+		trigger = { tag = SRW }
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_SRW
+	}
+	text = {
+		trigger = { tag = SEY }
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_SEY
+	}
+	text = {
+		trigger = { tag = SAF }
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_SAF
+	}
+	text = {
+		trigger = { tag = ISP }
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_ISP
+	}
+	text = {
+		trigger = { tag = NGA }
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_NGA
+	}
+	text = {
+		trigger = { tag = MSK }
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_MSK
+	}
+
+	## Default
+	text = {
+		localization_key = TOTA_NATIONAL_INTRO_BUTTON_TEXT_GEN
+	}
+}
+
+# 2. Poster_image
+defined_text = {
+	name = GET_POSTER
+	text = {
+		trigger = { tag = BIA }
+		localization_key = "TOTA_OpeningScreen_Poster_BIA"
+	}
+	text = {
+		trigger = { tag = SEY }
+		localization_key = "TOTA_OpeningScreen_Poster_SEY"
+	}
+	text = {
+		trigger = { tag = SAF }
+		localization_key = "TOTA_OpeningScreen_Poster_SAF"
+	}
+}
+
+# 2. Poster_image
+defined_text = {
+	name = GET_POSTER2
+	text = {
+		trigger = { tag = BIA }
+		localization_key = "TOTA_OpeningScreen_Poster_BIA"
+	}
+	text = {
+		trigger = { tag = SEY }
+		localization_key = "TOTA_OpeningScreen_Poster_SEY"
+	}
+	text = {
+		trigger = { tag = SAF }
+		localization_key = "TOTA_OpeningScreen_Poster_SEY"
+	}
+}
+
+
+
+##=========================##
+### 3. Folder_ScriptedLoc ###
+##=========================##
+defined_text = {
+	name = NationIntro_GET_Folder_Country
+	
+	#-- Ignore --#
+	text = {
+		trigger = {
+			check_variable = { NationIntro_tab = 3 }
+		}
+		localization_key = Get_Tutorial_Folder_key
+	}
+}
+
+	## Folder_ScriptedLoc_BIA
+	defined_text = {
+		name = Get_FolderLoc_BIA
+		
+		text = {
+			trigger = {
+				check_variable = { f = 101 }
+			}
+			localization_key = BIA_NationIntro_Folder.101
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 102 }
+			}
+			localization_key = BIA_NationIntro_Folder.102
+		}
+	}
+	## Folder_ScriptedLoc_SEY
+	defined_text = {
+		name = Get_FolderLoc_SEY
+		
+		text = {
+			trigger = {
+				check_variable = { f = 101 }
+			}
+			localization_key = SEY_NationIntro_Folder.101
+		}
+		text = {
+			trigger = {
+				check_variable = { f = 102 }
+			}
+			localization_key = SEY_NationIntro_Folder.102
+		}
+	}
+
+
+
+##==========================##
+### 4. Content_ScriptedLoc ###
+##==========================##
+defined_text = {
+	name = NationIntro_GET_Content_Country
+	#-- Ignore --#
+	text = {
+		trigger = {
+			check_variable = { NationIntro_tab = 2 }
+		}
+		localization_key = "[Get_Region_Title]"
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_tab = 3 }
+		}
+		localization_key = "[Get_Globe_Pod_Misc_Title]"
+	}
+	#-- UnIgnore --#
+	
+	text = {
+		trigger = {
+			AND={
+				check_variable = { NationIntro_tab = 1 }
+				original_tag = BIA
+			}
+		}
+		localization_key = "[Get_Nation_Title_BIA]"
+	}
+
+	text = {
+		trigger = {
+			AND={
+				check_variable = { NationIntro_tab = 1 }
+				original_tag = SEY
+			}
+		}
+		localization_key = "[Get_Nation_Title_SEY]"
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_tab = 1 }
+		}
+		localization_key = "[Get_Nation_Title_GEN]"
+	}
+
+
+}
+
+	## Content_ScriptedLoc_BIA	
+	defined_text = {
+		name = Get_Nation_Title_BIA
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 1 }
+			}
+			localization_key = BIA_Nation_Title_Content.1
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 2 }
+			}
+			localization_key = BIA_Nation_Title_Content.2
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 3 }
+			}
+			localization_key = BIA_Nation_Title_Content.3
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 4 }
+			}
+			localization_key = BIA_Nation_Title_Content.4
+		}
+
+	}
+	## Content_ScriptedLoc_SEY
+	defined_text = {
+		name = Get_Nation_Title_SEY
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 1 }
+			}
+			localization_key = SEY_Nation_Title_Content.1
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 2 }
+			}
+			localization_key = SEY_Nation_Title_Content.2
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 3 }
+			}
+			localization_key = SEY_Nation_Title_Content.3
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 4 }
+			}
+			localization_key = SEY_Nation_Title_Content.4
+		}
+	}
+
+##===============================##
+### 5. Content_ScriptedLoc_desc ###
+##===============================##
+defined_text = {
+	name = NationIntro_GET_Content_desc_Country_left
+	text = {
+		trigger = {
+			check_variable = { NationIntro_tab = 2 }
+		}
+		localization_key = "[Get_Region_Desc]"
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_tab = 3 }
+		}
+		localization_key = "[Get_Tutorial_Content_Desc]"
+	}
+	#-- UnIgnore --#
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NationIntro_tab = 1 }
+				original_tag = BIA
+			}
+		}
+		localization_key = "[Get_Nation_Desc_BIA_left]"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NationIntro_tab = 1 }
+				original_tag = SEY
+			}
+		}
+		localization_key = "[Get_Nation_Desc_SEY_left]"
+	}
+}
+defined_text = {
+	name = NationIntro_GET_Content_desc_Country_right
+	#-- UnIgnore --#
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NationIntro_tab = 1 }
+				original_tag = BIA
+			}
+		}
+		localization_key = "[Get_Nation_Desc_BIA_right]"
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NationIntro_tab = 1 }
+				original_tag = SEY
+			}
+		}
+		localization_key = "[Get_Nation_Desc_SEY_right]"
+	}
+}
+
+
+
+
+
+	## Content_ScriptedLoc_desc_BIA
+	defined_text = {
+		name = Get_Nation_Desc_BIA_left
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 1 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_left.1
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 2 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_left.2
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 3 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_left.3
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 4 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_left.4
+		}
+	}
+	## Content_ScriptedLoc_desc_BIA
+	defined_text = {
+		name = Get_Nation_Desc_BIA_right
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 1 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_right.1
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 2 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_right.2
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 3 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_right.3
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 4 }
+			}
+			localization_key = BIA_Nation_Title_Content_desc_right.4
+		}
+	}
+
+	## Content_ScriptedLoc_desc_SEY
+	defined_text = {
+		name = Get_Nation_Desc_SEY_left
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 1 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_left.1
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 2 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_left.2
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 3 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_left.3
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 4 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_left.4
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 5 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_left.5
+		}
+	}
+
+	## Content_ScriptedLoc_desc_SEY
+	defined_text = {
+		name = Get_Nation_Desc_SEY_right
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 1 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_right.1
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 2 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_right.2
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 3 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_right.3
+		}
+		text = {
+			trigger = {
+				check_variable = { NationIntro_Selected = 4 }
+			}
+			localization_key = SEY_Nation_Title_Content_desc_right.4
+		}
+	}
+
+
+
+
+
+
+# X. Functionality
+
+defined_text = {
+	name = NationIntro_GET_tab_name
+	text = {
+		trigger = {
+			check_variable = { d = 1 }
+		}
+		localization_key = "[ROOT.GetName]"
+	}
+	text = {
+		trigger = {
+			check_variable = { d = 2 }
+		}
+		localization_key = "NationIntro_tab_name_region"
+	}
+	text = {
+		trigger = {
+			check_variable = { d = 3 }
+		}
+		localization_key = "NationIntro_tab_name_Globe_Pod_Misc"
+	}
+	text = {
+		trigger = {
+			check_variable = { d = 4 }
+		}
+		localization_key = "NationIntro_tab_name_Credits"
+	}
+}
+
+## Functionality_Tutorials ##
+
+defined_text = {
+	name = Get_Tutorial_Folder
+	text = {
+		trigger = {
+			check_variable = { f = 101 } # The Cold War
+		}
+		localization_key = NationIntro_Tutorial_Folder.101
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 102 } # Mechanics
+		}
+		localization_key = NationIntro_Tutorial_Folder.102
+	}
+}
+
+defined_text = {
+	name = Get_Tutorial_Content
+	# Cold War
+	text = {
+		trigger = {
+			check_variable = { f = 1 } # The Superpowers
+		}
+		localization_key = NationIntro_Tutorial_Content.1
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 2 } # Non-Superpowers
+		}
+		localization_key = NationIntro_Tutorial_Content.2
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 3 } # Proxy Wars
+		}
+		localization_key = NationIntro_Tutorial_Content.3
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 4 } # Cold War GUI
+		}
+		localization_key = NationIntro_Tutorial_Content.4
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 5 } # Nuclear Warfare
+		}
+		localization_key = NationIntro_Tutorial_Content.5
+	}
+	
+}
+
+defined_text = {
+	name = Get_Tutorial_Content_Desc
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 1 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.1
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 2 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.2
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 3 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.3
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 4 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.4
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 5 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.5
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 6 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.6
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 7 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.7
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 8 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.8
+	}
+	text = {
+		trigger = {
+			check_variable = { NationIntro_Selected = 10 }
+		}
+		localization_key = NationIntro_Tutorial_Content_desc.10
+	}
+}
+
+## Functionality_Development ##
+
+defined_text = {
+	name = Get_Development_Folder
+	text = {
+		trigger = {
+			check_variable = { f = 101 } # Credits
+		}
+		localization_key = NationIntro_Development_Folder.101
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 102 } # Social Media
+		}
+		localization_key = NationIntro_Development_Folder.102
+	}
+}
+
+defined_text = {
+	name = Get_Development_Content
+	# Cold War
+	text = {
+		trigger = {
+			check_variable = { f = 1 }
+		}
+		localization_key = NationIntro_Development_Content.1
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 2 }
+		}
+		localization_key = NationIntro_Development_Content.2
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 3 }
+		}
+		localization_key = NationIntro_Development_Content.3
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 4 }
+		}
+		localization_key = NationIntro_Development_Content.4
+	}
+}
+
+defined_text = {
+	name = Get_Development_Content_Desc
+	# Cold War
+	text = {
+		trigger = {
+			check_variable = { f = 1 }
+		}
+		localization_key = NationIntro_Development_Content_desc.1
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 2 }
+		}
+		localization_key = NationIntro_Development_Content_desc.2
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 3 }
+		}
+		localization_key = NationIntro_Development_Content_desc.3
+	}
+	text = {
+		trigger = {
+			check_variable = { f = 4 }
+		}
+		localization_key = NationIntro_Development_Content_desc.4
+	}
+}
+

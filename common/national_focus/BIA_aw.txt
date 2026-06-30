@@ -1,0 +1,13 @@
+focus_tree = {
+	id = BIA_aw
+	country = {
+		factor = 0
+		modifier = {
+			add = 250
+			tag = BIA
+			has_global_flag = anglophone_crisis
+		}
+	}
+	shared_focus = BIA_anglophone_crisis_revived
+	shared_focus = BIA_5_times_over_we_will_win
+}

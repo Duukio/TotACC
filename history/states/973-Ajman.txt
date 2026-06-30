@@ -1,0 +1,37 @@
+state={
+    id=973
+        
+    
+        name="STATE_973"
+    
+        manpower = 500000
+        
+        state_category = large_city
+        resources={
+            oil=65
+        }
+    
+        history={
+            owner = UAE
+            buildings = {
+                school = 2
+                infrastructure = 5
+                arms_factory = 2
+                industrial_complex = 2
+                13912 = {
+                    naval_base = 4
+                }
+            }
+            victory_points = {
+                13912 15 #Ajman
+            }
+            add_core_of = UAE
+			add_core_of = PGR
+        }
+    
+        provinces={
+        13912
+        }
+    
+        local_supplies=0.0 
+    }

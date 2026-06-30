@@ -1,0 +1,18 @@
+guiTypes = {
+	containerWindowType = {
+		name = "NGA_nigeria_o_meter_open"
+			position = { x = -373 y = 260 }
+            orientation = UPPER_RIGHT
+			size = { width=100%% height=100%% }
+			scale = 0.8
+		buttonType = {
+			name = "nigeria_o_meter_button"
+			quadTextureSprite ="GFX_nigeria_o_meter_button"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "NGA_nom_tt"
+		}
+	}
+}

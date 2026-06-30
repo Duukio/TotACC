@@ -1,0 +1,31 @@
+
+state={
+	id=744
+	name="STATE_744"
+    buildings_max_level_factor = 1
+	resources={
+		oil=14.000
+	}
+
+	history={
+		owner = USA
+		victory_points = {
+			12791 5 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		5044 12791 
+	}
+	manpower=620220
+	buildings_max_level_factor=2.000
+	state_category=large_town
+	local_supplies=0.000
+}

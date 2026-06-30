@@ -1,0 +1,35 @@
+
+state={
+	id=1245
+	name="STATE_1245"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = SIA
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 2
+            arms_factory = 2
+			air_base = 1
+
+		}
+		add_core_of = SIA
+
+		victory_points = {
+			12417 5 #Ubon Ratchathani
+		}
+
+	}
+
+	provinces={
+		10425 12402 1548 1535 12417 12431 10438 12264 7601
+	}
+	manpower=12017248
+	buildings_max_level_factor=2.000
+	state_category=city
+	
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+id=10
+	name="STATE_10"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = FRA
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 6
+		}
+		add_core_of = FRA
+	}
+	provinces={
+		625 651 669 3493 3621 3626 3655 6644 6648 6651 6688 9609 9629 11596 11611 11631 11869 
+	}
+	manpower=500000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

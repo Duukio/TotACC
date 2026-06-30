@@ -1,0 +1,32 @@
+state={
+id=638
+	name="STATE_638"
+    buildings_max_level_factor = 1
+	manpower=854000
+	
+	state_category = town
+
+	history={
+		add_core_of = WIF
+		owner = WIF
+		buildings = {
+            school = 2
+			infrastructure = 3
+			11350 = {
+				naval_base = 1
+			}
+			7123 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			11350 5
+		}
+	}
+	
+	provinces={
+		379 11106 11350 13009 7123
+	}
+
+	local_supplies=4.0 
+}

@@ -1,0 +1,42 @@
+state= {
+id=614
+	name="STATE_614"
+    buildings_max_level_factor = 1
+	manpower = 1515265
+	
+	
+	state_category = city
+	resources={
+		strategic_minerals=20
+	}
+
+	history=
+	{
+		owner = HEL
+		add_core_of = HEL
+		victory_points = {
+			7193 25
+		}
+		victory_points = {
+			11984 10
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 1
+			7193 = {
+				naval_base = 2
+			}
+			11984 = {
+				naval_base = 2
+			}
+		}
+
+	}
+	provinces= { 7193 11984 }
+
+	local_supplies=0.0 
+}

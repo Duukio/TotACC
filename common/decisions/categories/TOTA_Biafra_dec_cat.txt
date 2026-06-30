@@ -1,0 +1,72 @@
+wrangle_benin  = {
+     icon = generic_foreign_policy
+	 visible_when_empty = yes
+     visible = { 
+        tag = BIA
+		BED = {
+			is_puppet_of = BIA
+		}
+		BIA = {
+		has_country_flag = BIA_wrangle_benin_flag
+		}
+     }
+	 scripted_gui = BIA_wrangle_benin
+}
+help_NWG_or_IND = {
+     icon = generic_foreign_policy
+	 picture = GFX_dec_cat_wpw
+	 visible_when_empty = yes
+     visible = { 
+		tag = BIA
+		IND = {
+		has_country_flag = IND_the_clock_ticks_mission
+		}
+     }
+}
+ambazonia_war_BIA = {
+     icon = generic_foreign_policy
+	 picture = GFX_dec_cat_aw
+     visible = { 
+		tag = BIA
+		has_global_flag = anglophone_crisis
+     }
+}
+CIS_EXPANSION_BIA = {
+     icon = generic_foreign_policy
+     visible = { 
+		tag = BIA
+		has_country_flag = CAN_INVITE_AMBAZONIA
+     }
+}
+planned_cap_dec_biafra_dec = {
+     icon = generic_foreign_policy
+	 picture = GFX_dec_cat_pcbia
+     visible = { 
+		tag = BIA
+		has_country_flag = planned_cap_dec_biafra
+     }
+}
+diversify_economy_biafra_dec = {
+     icon = generic_foreign_policy
+	 picture = GFX_dec_cat_diversify_biafra
+     visible = { 
+		tag = BIA
+		has_country_flag = diversify_economy_biafra
+     }
+}
+NPHS_BIA_dec_cat = {
+     icon = generic_foreign_policy
+	 picture = GFX_dec_cat_NPHS
+     visible = { 
+		tag = BIA
+		has_country_flag = NPHS_BIA
+     }
+}
+connect_bia = {
+     icon = generic_foreign_policy
+	 picture = GFX_dec_cat_connect_bia
+     visible = { 
+		tag = BIA
+		has_country_flag = online_BIA
+     }
+}

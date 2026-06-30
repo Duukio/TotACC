@@ -1,0 +1,36 @@
+state={
+id=1208
+	name="Bakassi"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+	oil = 125
+	}
+
+	history={
+		owner = BKS
+		victory_points = {
+			13947 1
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+			13947 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = AMB
+		add_core_of = CAM
+		add_core_of = BKS
+		add_core_of = BIA
+	}
+	provinces={
+		13947
+	}
+	manpower=300000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

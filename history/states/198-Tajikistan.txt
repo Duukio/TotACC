@@ -1,0 +1,33 @@
+state={
+id=198
+
+
+	name="STATE_198"
+
+	resources={
+		steel=20.000
+		tungsten=40.000
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			1384 10 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1216 1384 1919 4542 4923 7224 8027 10187 10417 12218 12250 12805 13751 13752 13753 13754 
+	}
+	manpower=9537645
+	state_category = large_town
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

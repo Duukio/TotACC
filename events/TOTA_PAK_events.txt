@@ -1,0 +1,57 @@
+
+add_namespace = PAK
+
+country_event = { # Elections
+    id = PAK.1
+    title = PAK.1.t
+    desc = PAK.1.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #What if instead of Durranistan we called it Kekistan
+      name = PAK.1.a
+      ai_chance = { factor = 40 }
+
+	}
+    option = { #Boring muslim christdems
+      name = PAK.1.b
+      ai_chance = { factor = 35 }
+        set_politics = {
+            ruling_party = liberalism
+        }
+	}
+  option = { #Imran Khan LION....PAKISTAN ZINDABAD!!!!!!!!!!!!!!!!!!!!!!!!
+      name = PAK.1.c
+      ai_chance = { factor = 25 }
+        set_politics = {
+            ruling_party = dissident_right
+        }
+        country_event = {
+        id = PAK.2
+        days = 100
+      }
+  }
+}
+
+country_event = { # Uh oh
+    id = PAK.2
+    title = PAK.2.t
+    desc = PAK.2.desc
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #PAKISTAN ZINDABAD!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      name = PAK.2.a
+      ai_chance = { factor = 60 }
+      set_cosmetic_tag = PAK_republic
+      clr_country_flag = zaher
+      clr_country_flag = has_double_leader
+  }
+    option = { #Uh oh
+      name = PAK.2.b
+      ai_chance = { factor = 40 }
+        set_politics = {
+            ruling_party = autocracy
+        }
+  }
+}

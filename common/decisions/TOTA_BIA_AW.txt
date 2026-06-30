@@ -1,0 +1,139 @@
+ambazonia_war_BIA = {
+	speak_UN_against_cameroon = {
+		visible = {
+			original_tag = BIA
+			BIA = {
+				has_completed_focus = BIA_call_for_a_ceasefire
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_political_power = 10
+			CAM = {
+			add_stability = -0.05
+			}
+		}
+	}
+	help_AMB_guns = {
+	days_remove = 10
+	days_re_enable = 20
+	visible = { 
+	original_tag = BIA
+	has_country_flag = BIA_helped_AMB 
+	has_global_flag = anglophone_crisis
+	}
+		custom_cost_trigger = {
+		has_equipment = {
+		infantry_equipment_1 > 499
+			}
+		}
+		custom_cost_text = 500_infantry_equipment
+		modifier = {
+			political_power_cost = 0.08
+		}
+		complete_effect = {
+			add_political_power = 10
+			BIA = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+					producer = BIA
+				}
+			}
+			AMB = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = BIA
+				}
+			}
+		}		
+	}
+	help_AMB_planes = {
+	days_remove = 10
+	days_re_enable = 20
+	visible = { 
+	original_tag = BIA
+	has_country_flag = BIA_helped_AMB 
+	has_country_flag = BIA_helped_AMB_planes
+	has_global_flag = anglophone_crisis
+	}
+		custom_cost_trigger = {
+		has_equipment = {
+		fighter_equipment_0 > 49
+			}
+		}
+		custom_cost_text = 50_planes
+		modifier = {
+			political_power_cost = 0.08
+		}
+		complete_effect = {
+			add_political_power = 10
+			BIA = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = -50
+					producer = BIA
+				}
+			}
+			AMB = {
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 50
+					producer = BIA
+				}
+			}
+		}		
+	}
+	escalate_war_BIA = {
+	fire_only_once = yes
+	visible = { 
+	original_tag = BIA
+	has_country_flag = BIA_helped_AMB 
+	has_country_flag = BIA_helped_AMB_planes
+	has_country_flag = BIA_decided_to_escalate	
+	has_global_flag = anglophone_crisis
+	}
+		custom_cost_trigger = {
+			strength_ratio = {
+				tag = CAM
+				ratio > 0.3
+			}
+		}
+		custom_cost_text = strength_ratio_CAM_BIA
+		complete_effect = {
+			add_political_power = 25
+			BIA = {
+				declare_war_on = {
+					target = CAM
+					type = topple_government
+				}
+			}
+			AMB = {
+			give_military_access = BIA
+			}
+		}		
+	}
+}
+CIS_EXPANSION_BIA = {
+	invite_amb = {
+		visible = {
+			original_tag = BIA
+			BIA = {
+				has_completed_focus = BIA_aiding_african_liberation_movements
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_political_power = 10
+			BIA = {
+			add_to_faction = AMB
+			}
+			AMB = {
+				add_ideas = CIS
+			}
+		}
+	}	
+}

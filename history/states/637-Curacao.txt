@@ -1,0 +1,37 @@
+state={
+id=637
+	name="STATE_637"
+    buildings_max_level_factor = 1
+	manpower = 155000
+	
+	
+	state_category = town
+
+	resources={
+		oil=200 # was: 126
+	}
+
+	history={
+		add_core_of = HOL
+		owner = HOL
+		victory_points = {
+			153 5
+		}
+		buildings = {
+            school = 2
+			fuel_silo = 1
+			dockyard = 2
+			infrastructure = 4
+			153 = {
+				naval_base = 1
+				coastal_bunker = 2
+			}
+		}
+	}
+
+	provinces={
+		153 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,53 @@
+scripted_gui = {
+
+	TOTA_ECON = {
+		context_type = player_context
+		window_name = "TOTA_economy_gui"
+		
+
+		visible = {
+			has_country_flag = all_hungarian_goulash
+		}
+		
+		#dynamic_lists = {
+		#	WORLD_ECONOMY_TOP_10_GRID = {
+			#	array = global.econ_countries
+			#	change_scope = yes
+			#	entry_container = global_econ_entry
+			#}
+		#}
+		
+		triggers = {
+		
+		}
+
+		properties = {
+		
+		}
+
+		effects = {
+			OPEN_ECON_DECISIONS_click = {
+			set_country_flag = all_nigerian_fufu
+			}
+			close_button_economy_click = {
+			clr_country_flag = all_hungarian_goulash
+			clr_country_flag = all_nigerian_fufu
+			}
+			CLIPPY_BUTTON_click = {
+			set_country_flag = all_polish_pierogi
+			}
+		}
+	}
+	TOTA_MODIFIER_LOC_STUFF = {
+	context_type = player_context
+	window_name = "TOTA_MODIFIER_LOC_STUFF"
+		visible = {
+		has_country_flag = all_polish_pierogi
+		}
+	effects = {
+		CLOSE_MODIFIER_LOC_click = {
+		clr_country_flag = all_polish_pierogi
+		}
+	}
+	}
+}

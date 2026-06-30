@@ -1,0 +1,35 @@
+
+state={
+	id=1215
+	name="STATE_1215"
+    buildings_max_level_factor = 1
+	provinces={
+		1208 12905 4216 12283 4396 7443 2117 8091 10285 10269
+	}
+	manpower=4000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_city
+	history={
+		owner = SRW
+		add_core_of = SRW
+		add_core_of = MLY
+		buildings = {
+			school = 2
+			industrial_complex = 8
+			arms_factory = 4
+			infrastructure = 4
+			dockyard = 1
+			12905 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			12905 40
+		}
+		victory_points = {
+			12283 20
+		}
+	}
+}

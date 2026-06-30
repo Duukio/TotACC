@@ -1,0 +1,21 @@
+state={
+id=39
+	name="STATE_39"
+    buildings_max_level_factor = 1
+	state_category = rural
+	
+	history={
+		owner = BKF
+		buildings = {
+            school = 2
+			infrastructure = 2
+		}
+		add_core_of = BKF
+	}
+	provinces={
+		2001 7950 7983 8071 10836 12851 13364 13365 13366 13367 13368 13369 13370 13371 13373 13380 13381 
+	}
+	manpower=18000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

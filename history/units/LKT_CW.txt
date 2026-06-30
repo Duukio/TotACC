@@ -1,0 +1,147 @@
+division_template = {
+	name = "Lakotah Army"		# Infantry Division
+	#division_names_group = ENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7745
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7745
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7745
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7745
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7745
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7745
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7771
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7771
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7771
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7771
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7771
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 7771
+		division_template = "Lakotah Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+
+	}
+}

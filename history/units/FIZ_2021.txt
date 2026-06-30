@@ -1,0 +1,114 @@
+division_template = {
+	name = "People's Militia"
+	division_names_group = FIZ_MIL_01
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Revolutionary Guard"
+	division_names_group = FIZ_MIL_02
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Maquis Fighters"
+	division_names_group = FIZ_MIL_03
+	
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Revolutionary Brigade"
+		location = 14113
+		division_template = "Revolutionary Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "2nd Revolutionary Brigade"
+		location = 14114
+		division_template = "Revolutionary Guard"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Fizi People's Militia"
+		location = 14115
+		division_template = "People's Militia"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Nyongolo's Guard"
+		location = 14113
+		division_template = "Revolutionary Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "Maquis Fighters Battalion"
+		location = 14114
+		division_template = "Maquis Fighters"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+	}
+	
+	division = {
+		name = "People's Liberation Army"
+		location = 14115
+		division_template = "People's Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_0
+		amount = 2000
+		producer = FIZ
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = 500
+		producer = FIZ
+	}
+}

@@ -1,0 +1,16 @@
+focus_tree = {
+	id = ISP_starting
+	country = {
+		factor = 0
+		modifier = {
+			add = 500
+			tag = ISP
+			NOT = {
+			has_country_flag = ISP_simhon_flag
+			has_country_flag = ISP_ramon_flag
+			}
+		}
+	}
+	shared_focus = ISP_70_years_of_mapam_rule
+	#shared_focus = ISP_the_edf_focus
+}

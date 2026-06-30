@@ -1,0 +1,36 @@
+
+state={
+	id=456
+	name="STATE_456"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = MGD
+		add_core_of = MGD
+		victory_points = {
+			2020 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 3
+			industrial_complex = 3
+			dockyard = 2
+			air_base = 1
+			school = 2
+			12840 = {
+				naval_base = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1964 2020 12840 
+	}
+	manpower=3045819
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

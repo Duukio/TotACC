@@ -1,0 +1,39 @@
+
+state={
+	id=331
+	name="STATE_331"
+    buildings_max_level_factor = 1
+	resources={
+		strategic_minerals=100.000
+		steel=50.000
+	}
+
+	history={
+		victory_points = {
+			863 10 
+		}
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			school = 2
+			infrastructure = 5
+			dockyard = 2
+			industrial_complex = 5
+			arms_factory = 1
+			3973 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		863 3864 3973 6930 11786 
+	}
+	manpower=732762
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

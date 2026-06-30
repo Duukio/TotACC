@@ -1,0 +1,139 @@
+ISP_mobilize = {
+	ISP_lim_res_mob = {
+		cost = 0
+		fire_only_once = yes
+        days_remove = 7
+		remove_effect = {
+            add_stability = -0.07
+            add_war_support = -0.01
+            load_oob = "ISP_lim_res_2021"
+            set_country_flag = ISP_lim_res_flag
+		}
+        ai_will_do = {
+            base = 0
+            modifier = {
+                has_war = yes
+                add = 1000
+            }
+        }
+	}
+	ISP_fur_res_mob = {
+		cost = 0
+        available = { 
+            has_country_flag = ISP_lim_res_flag
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                has_war = yes
+                add = 100
+            }
+        }
+		fire_only_once = yes
+        days_remove = 14
+		remove_effect = {
+            add_stability = -0.14
+            add_war_support = -0.02
+            load_oob = "ISP_fur_res_2021"
+		}
+	}
+	ISP_tot_res_mob = {
+		cost = 0
+		fire_only_once = yes
+        available = {
+            ISP = {
+                has_war = yes
+            }
+        }
+        ai_will_do = {
+            base = 0
+            modifier = {
+                has_war = yes
+                add = 10
+            }
+        }
+        days_remove = 1
+		remove_effect = {
+            add_stability = -0.05
+            add_war_support = 0.15
+            delete_unit_template_and_units = {
+                division_template = "EDF Infantry Reserve 1"
+            }
+            delete_unit_template_and_units = {
+                division_template = "EDF Armor Reserve 1"
+            }
+            delete_unit_template_and_units = {
+                division_template = "EDF Nahal Reserve 1"
+            }
+            delete_unit_template_and_units = {
+                division_template = "EDF Infantry Reserve 2"
+            }
+            delete_unit_template_and_units = {
+                division_template = "EDF Nahal Reserve 2"
+            }
+            delete_unit_template_and_units = {
+                division_template = "EDF Armor Reserve 2"
+            }            
+            load_oob = "ISP_tot_res_2021"
+		}
+	}
+}
+ISP_pali_soyrage = {
+    ISP_impending_incident = {
+        activation = {
+            NOT = {
+                has_country_flag = wholesomenoconflict #maybe?
+            }
+            original_tag = ISP
+        }
+        days_mission_timeout = var:terrorism_rate_ISP
+        available = {
+            has_war = yes #TODO: talk with devs on this
+        }
+        fixed_random_seed = no
+        selectable_mission = no
+        timeout_effect = {
+            custom_effect_tooltip = "We aren't quite sure what will happen..."
+            hidden_effect = {
+                random_list = {
+                    5 = {
+                        country_event = ISP.1000
+                    }
+                    9 = {
+                        country_event = ISP.1001
+                    }
+                    8 = {
+                        country_event = ISP.1002
+                    }
+                    3 = {
+                        country_event = ISP.1003
+                    }
+                    4 = {
+                        country_event = ISP.1004
+                    }
+                    2 = {
+                        country_event = ISP.1005
+                    }
+                    8 = {
+                        country_event = ISP.1006
+                    }
+                    8 = {
+                        country_event = ISP.1007
+                    }
+                    10 = {
+                        country_event = ISP.1008
+                    }
+                    4 = {
+                        country_event = ISP.1009
+                    }
+                    8 = {
+                        country_event = ISP.1010
+                    }
+                }
+            }
+        }
+        cancel_trigger = {
+            has_war = yes #hmm
+        }
+    }
+}

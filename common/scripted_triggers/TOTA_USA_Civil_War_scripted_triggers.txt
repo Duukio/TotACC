@@ -1,0 +1,75 @@
+USA_CW_ScriptedTrigger_CanSeeSectorDecisions = {
+	is_in_array = { global.USA_CW_TAGS = THIS }
+}
+
+USA_CW_ScriptedTrigger_WonInOwnSector = {
+	if = {
+		limit = { is_in_array = { array = global.USA_CW_TAGS_Sector_1 value = THIS } }
+		check_variable = { global.USA_CW_TAGS_Sector_1^num = 1 }
+	}
+	else_if = {
+		limit = { is_in_array = { array = global.USA_CW_TAGS_Sector_2 value = THIS } }
+		check_variable = { global.USA_CW_TAGS_Sector_2^num = 1 }
+	}
+	else_if = {
+		limit = { is_in_array = { array = global.USA_CW_TAGS_Sector_3 value = THIS } }
+		check_variable = { global.USA_CW_TAGS_Sector_3^num = 1 }
+	}
+	else_if = {
+		limit = { is_in_array = { array = global.USA_CW_TAGS_Sector_4 value = THIS } }
+		check_variable = { global.USA_CW_TAGS_Sector_4^num = 1 }
+	}
+}
+
+USA_CW_ScriptedTrigger_Sector1Empty = {
+	check_variable = { global.USA_CW_TAGS_Sector_1^num = 0 }
+}
+
+USA_CW_ScriptedTrigger_IsInSector1 = {
+	is_in_array = { array = global.USA_CW_TAGS_Sector_1 value = THIS }
+}
+
+USA_CW_ScriptedTrigger_AtWarWithSector1 = {
+	any_enemy_country = { is_in_array = { array = global.USA_CW_TAGS_Sector_1 value = THIS } }
+}
+
+USA_CW_ScriptedTrigger_Sector2Empty = {
+	check_variable = { global.USA_CW_TAGS_Sector_2^num = 0 }
+}
+
+USA_CW_ScriptedTrigger_IsInSector2 = {
+	is_in_array = { array = global.USA_CW_TAGS_Sector_2 value = THIS }
+}
+
+USA_CW_ScriptedTrigger_AtWarWithSector2 = {
+	any_enemy_country = { is_in_array = { array = global.USA_CW_TAGS_Sector_2 value = THIS } }
+}
+
+USA_CW_ScriptedTrigger_Sector3Empty = {
+	check_variable = { global.USA_CW_TAGS_Sector_3^num = 0 }
+}
+
+USA_CW_ScriptedTrigger_IsInSector3 = {
+	is_in_array = { array = global.USA_CW_TAGS_Sector_3 value = THIS }
+}
+
+USA_CW_ScriptedTrigger_AtWarWithSector3 = {
+	any_enemy_country = { is_in_array = { array = global.USA_CW_TAGS_Sector_3 value = THIS } }
+}
+
+USA_CW_ScriptedTrigger_Sector4Empty = {
+	check_variable = { global.USA_CW_TAGS_Sector_4^num = 0 }
+}
+
+USA_CW_ScriptedTrigger_IsInSector4 = {
+	is_in_array = { array = global.USA_CW_TAGS_Sector_4 value = THIS }
+}
+
+USA_CW_ScriptedTrigger_AtWarWithSector4 = {
+	any_enemy_country = { is_in_array = { array = global.USA_CW_TAGS_Sector_4 value = THIS } }
+}
+
+USA_CW_ScriptedTrigger_WonCW = {
+	is_in_array = { array = global.USA_CW_TAGS value = THIS }
+	check_variable = { global.USA_CW_TAGS^num = 1 }
+}

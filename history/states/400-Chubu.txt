@@ -1,0 +1,33 @@
+state={
+id=400
+	name="STATE_400"
+    buildings_max_level_factor = 4
+	state_category = megalopolis
+	
+	resources = {	
+	oil = 25
+	steel = 100
+	}
+	history={
+		owner = JAP
+		victory_points = { 10125 50 }
+		victory_points = { 12007 20 }
+		buildings = {
+            school = 2
+			infrastructure = 5
+			dockyard = 6
+			industrial_complex = 10
+			arms_factory = 5
+			air_base = 4
+			10125 = {
+			naval_base = 10
+			}
+		}
+		add_core_of = JAP
+	}
+	provinces={
+		998 4000 4069 4172 7087 7102 7187 7217 10015 10032 10100 10125 10128 11908 11989 12007 12097 
+	}
+	manpower=23010276
+	local_supplies=0.000
+}

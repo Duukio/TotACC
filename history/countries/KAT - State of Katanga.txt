@@ -1,0 +1,77 @@
+capital = 114
+oob = ""
+set_variable = { GDP = 120 }
+set_variable = { DEBT = 100 }
+set_variable = { REAL_GROWTH = 4.5 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+
+set_variable = {
+var = SOCTRENDS_DC
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 50
+}
+tota_variable_clamping = yes
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.25
+
+set_popularities = {
+	socdem = 50
+	liberalism = 30
+	conservatism = 0
+	autocracy= 20
+	technocracy= 0
+	dissident_right= 0
+	revolutionary_right= 0
+	anarchism = 0
+	reformist_socialism = 0
+	hardline_socialism = 0
+}
+
+set_politics = {
+	ruling_party = socdem
+	last_election = "1933.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Moïse Katumbi"
+	desc = "POLITICS_MOISE_KATUMBI_DESC"
+	picture = "gfx/leaders/KAT/Moïse Katumbi.png"
+	expire = "2040.1.1"
+	ideology = thway
+	traits = {
+	}
+}

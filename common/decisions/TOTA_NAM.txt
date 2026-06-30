@@ -1,0 +1,27 @@
+NAM_get_ur_shit_back = {
+    NAM_gibz_me_dat_zulu_boy = {
+        visible = { 
+            tag = NAM
+        }
+        ai_will_do = {
+            base = 9999
+        }
+        available = {
+            EFF = {
+                exists = yes
+            }
+            SAF = {
+                exists = no
+            }
+            AWB = {
+                exists = no
+            }
+        }
+        complete_effect = {
+            transfer_state = 473
+            transfer_state = 475
+            transfer_state = 480
+        }
+    }
+}
+

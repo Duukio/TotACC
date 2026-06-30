@@ -1,0 +1,80 @@
+ideas = {
+    country = {
+        BHA_sweatshop_socialism = {
+            picture = BHA_sweatshop_socialism
+            allowed = {
+                tag = BHA
+            }
+
+            available = {
+            	tag = BHA
+            }
+
+            cancel = {
+
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            modifier = {
+                monthly_population = 0.05
+                consumer_goods_factor = 0.03
+                gdp_growth_modifier = 0.25
+            }
+        }
+        BHA_triparty = {
+            picture = BHA_triparty
+            allowed = {
+                tag = BHA
+            }
+
+            available = {
+            	tag = BHA
+            }
+
+            cancel = {
+
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            modifier = {
+                stability_factor = 0.5
+                research_speed_factor = 0.05
+                political_power_cost = -0.15
+            }
+        }
+        BHA_pahla_hamasha_pahla = {
+            picture = BHA_pahla_hamasha_pahla
+            allowed = {
+                tag = BHA
+            }
+
+            available = {
+            	tag = BHA
+            }
+
+            cancel = {
+
+            }
+
+            allowed_civil_war = {
+                always = no
+            }
+            
+            modifier = {
+                army_org_factor = -0.3
+                weekly_manpower = 200
+                war_support_factor = 0.15
+                stability_factor = -0.15
+                army_morale_factor = -0.2
+                army_defence_factor = -0.15
+                army_attack_factor = -0.15
+            }
+        }
+    }    
+}

@@ -1,0 +1,30 @@
+
+state={
+	id=965
+	name="STATE_965"
+    buildings_max_level_factor = 1
+	provinces={
+		13882 13881 13879 13880 13883 13885 13886 13884 13887 13889 13890 13891 13892
+	}
+	manpower=1500000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_city
+	history={
+		victory_points = { 13892 5 } # Fada
+		victory_points = { 13889 50 } # Bodéléville
+		victory_points = { 13890 10 } # Largeau
+		owner = FRA
+		buildings = {
+			school = 4
+			industrial_complex = 2
+			arms_factory = 2
+			infrastructure = 4
+			13889 = {
+				bunker = 1
+			}
+		}
+		add_core_of = FRA
+	}
+}

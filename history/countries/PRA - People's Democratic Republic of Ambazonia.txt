@@ -1,0 +1,182 @@
+﻿capital = 866
+
+oob = "PRA_2021"
+
+add_to_variable = { GDP = 20 } add_to_variable = { DEBT = 10 } add_to_variable = { REAL_GROWTH = 1 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+tota_variable_clamping = yes
+
+
+# Starting tech
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	anti_tank_equipment = 1
+	motorized_equipment = 1
+	mechanized_equipment = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+
+add_ideas = {
+	PRA_soviet_nigerian_backing
+	AMB_falling_apart
+}
+
+set_variable = {
+var = SOCTRENDS_DC
+value = 15
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 15
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 75
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 65
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 20
+}
+set_convoys = 10
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 2
+        revolutionary_right = 4
+        dissident_right = 6
+        liberalism = 12
+        hardline_socialism = 22
+        autocracy = 1
+        reformist_socialism = 23
+        socdem = 15
+        technocracy = 15
+
+}
+
+set_politics = {
+	
+	ruling_party = reformist_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Ebenezer Akwanga"
+	desc = ""
+	picture = "gfx/leaders/AMB/Ebenezer Akwanga.png"
+	expire = "2040.1.1"
+	ideology = sovmarsys
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Benard Kuh"
+	desc = ""
+	picture = "gfx/leaders/AMB/Benard Kuh.png"
+	expire = "2040.1.1"
+	ideology = natpop
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "H.R.H Lekeaka I"
+	desc = ""
+	picture = "gfx/leaders/AMB/Lekeaka.png"
+	expire = "2040.1.1"
+	ideology = absolmon
+	traits = {
+	}
+}

@@ -1,0 +1,36 @@
+
+state={
+	id=245
+	name="STATE_245"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = TUR
+		buildings = {
+            school = 2
+			infrastructure = 4
+			dockyard = 3
+			arms_factory = 2
+			industrial_complex = 3
+			9833 = {
+				naval_base = 10
+
+			}
+			9941 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		947 3786 3851 11811
+	}
+	manpower=24899126
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

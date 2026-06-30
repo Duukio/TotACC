@@ -1,0 +1,79 @@
+ideas = {
+	country = {
+			BRA_ancient_government = {
+			picture = BRA_ancient_government
+			allowed = {
+				tag = BRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.15
+			war_support_factor = -0.25
+			attrition = 0.15
+			custom_modifier_tooltip = "USA_posthuman_tendency_negative"
+			}
+		}
+		BRA_booming_economy = {
+			picture = BRA_booming_economy
+			allowed = {
+				tag = BRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			nuclear_production_factor = 0.02
+			production_speed_buildings_factor = 0.20
+			production_oil_factor = 0.15
+			political_power_gain = 0.15
+			monthly_population = 0.25
+			custom_modifier_tooltip = "BRA_artificial_drift"
+			}
+		}
+		BRA_byzantine_internet_firewalls = {
+			picture = BRA_byzantine_internet_firewalls
+			allowed = {
+				tag = BRA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			research_speed_factor = -0.07
+			custom_modifier_tooltip = "RESISTANCE_BRA"
+			}
+		}
+	}	
+}

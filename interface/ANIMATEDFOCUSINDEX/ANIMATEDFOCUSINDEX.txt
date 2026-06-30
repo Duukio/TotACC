@@ -1,0 +1,70 @@
+###Since the Shinemaker sucks and doesn't let you override stuff, here's the shine of every animated icon
+#	frameAnimatedSpriteType = {
+#		name = "GFX_NGA_our_misguided_friends_shine"
+#		texturefile = "gfx/interface/goals/NGA/fopol/Our Misguided Friends.png"
+#		effectFile = "gfx/FX/buttonstate.lua"
+#		animation = {
+#			animationmaskfile = "gfx/interface/goals/NGA/fopol/Our Misguided Friends.png"
+#			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+#			animationrotation = -90.0
+#			animationlooping = no
+#			animationtime = 0.75
+#			animationdelay = 0
+#			animationblendmode = "add"
+#			animationtype = "scrolling"
+#			animationrotationoffset = { x = 0.0 y = 0.0 }
+#			animationtexturescale = { x = 1.0 y = 1.0 }
+#		}
+#		animation = {
+#			animationmaskfile = "gfx/interface/goals/NGA/fopol/Our Misguided Friends.png"
+#			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+#			animationrotation = 90.0
+#			animationlooping = no
+#			animationtime = 0.75
+#			animationdelay = 0
+#			animationblendmode = "add"
+#			animationtype = "scrolling"
+#			animationrotationoffset = { x = 0.0 y = 0.0 }
+#			animationtexturescale = { x = 1.0 y = 1.0 }
+#		}
+#        noOfFrames = 20
+#        animation_rate_fps = 10
+#        looping = yes
+#        play_on_show = yes
+#		legacy_lazy_load = no
+#	}
+#	frameAnimatedSpriteType = {
+#		name = "GFX_MSK_the_computer_king_of_corn_island_shine"
+#		texturefile = "gfx/interface/goals/MSK/The Computer King of Corn Island.png"
+#		effectFile = "gfx/FX/buttonstate.lua"
+#		animation = {
+#			animationmaskfile = "gfx/interface/goals/MSK/The Computer King of Corn Island.png"
+#			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+#			animationrotation = -90.0
+#			animationlooping = no
+#			animationtime = 0.75
+#			animationdelay = 0
+#			animationblendmode = "add"
+#			animationtype = "scrolling"
+#			animationrotationoffset = { x = 0.0 y = 0.0 }
+#			animationtexturescale = { x = 1.0 y = 1.0 }
+#		}
+#
+#		animation = {
+#			animationmaskfile = "gfx/interface/goals/MSK/The Computer King of Corn Island.png"
+#			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+#			animationrotation = 90.0
+#			animationlooping = no
+#			animationtime = 0.75
+#			animationdelay = 0
+#			animationblendmode = "add"
+#			animationtype = "scrolling"
+#			animationrotationoffset = { x = 0.0 y = 0.0 }
+#			animationtexturescale = { x = 1.0 y = 1.0 }
+#		}
+#        noOfFrames = 25
+#        animation_rate_fps = 10
+#        looping = yes
+#        play_on_show = yes
+#		legacy_lazy_load = no		
+#	}

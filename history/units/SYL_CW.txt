@@ -1,0 +1,43 @@
+division_template = {
+	name = "Islamic Army of Lebanon"		# Infantry Division
+	#
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+}
+
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1108
+		division_template = "Islamic Army of Lebanon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13940
+		division_template = "Islamic Army of Lebanon"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+
+	}
+}
+
+

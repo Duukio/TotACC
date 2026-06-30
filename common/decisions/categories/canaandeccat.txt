@@ -1,0 +1,43 @@
+canaanperipheryinvest_dec_cat = {
+	visible = {
+        has_completed_focus = ISP_investing_in_the_periphery        
+	}
+	priority = 4
+}
+arab_canaanites_dec_cat = {
+	visible = {
+        has_completed_focus = ISP_arabian_peninsula_branch        
+	}
+	priority = 4
+}
+nafri_canaanites_dec_cat = {
+	visible = {
+        has_completed_focus = ISP_north_africa_branch        
+	}
+	priority = 4
+}
+
+invite_to_benghazi_forum_dec_cat = {
+	visible = {
+        has_completed_focus = ISP_a_call_for_all_free_nations        
+	}
+	priority = 4
+}
+invitecommie_to_benghazi_forum_dec_cat = {
+	visible = {
+        has_completed_focus = ISP_swaying_our_socialist_fraternal_nations        
+	}
+	priority = 4
+}
+BRUH_RIZZRAEL_EMBARGOED_ZAZA_AND_THE_SKIBIDI_TOILET_WONT_FLUSH_dec_cat = {
+	visible = {
+        has_completed_focus = ISP_beset_on_all_sides        
+	}
+	priority = 4	
+}
+PAX_SEMITICA_dec_cat = {
+	visible = {
+        has_completed_focus = ISP_for_an_authentic_final_peace        
+	}
+	priority = 4	
+}

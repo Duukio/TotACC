@@ -1,0 +1,99 @@
+division_template = {
+	name = "Antichrist Army"		# Infantry Division
+	#
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10891
+		division_template = "Antichrist Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1966
+		division_template = "Antichrist Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1905
+		division_template = "Antichrist Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8094
+		division_template = "Antichrist Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 2063
+		division_template = "Antichrist Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13854
+		division_template = "Antichrist Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1966
+		division_template = "Antichrist Army"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+
+	}
+}
+
+
+

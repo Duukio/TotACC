@@ -1,0 +1,31 @@
+
+state={
+	id=1093
+	name="STATE_1093"
+    buildings_max_level_factor = 1
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			2086 30 #Faridabad
+		}
+		buildings = {
+			school = 4
+			infrastructure = 4
+			arms_factory = 5
+			industrial_complex = 4
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		2086 12868
+	}
+	manpower=25351462
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

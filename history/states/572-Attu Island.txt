@@ -1,0 +1,29 @@
+state=
+{
+id=572
+	
+	name="STATE_572"
+	manpower=20
+	state_category = tiny_island
+	
+	history=
+	{
+		owner = USA
+		add_core_of = KEK
+		victory_points = {
+			13067 5
+		}
+		buildings = {
+            school = 2
+			infrastructure = 1
+			13067 = {
+				naval_base = 2
+			}
+		}
+	}
+	provinces=
+	{
+13067 	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,28 @@
+state={
+id=28
+	
+	name="STATE_28"
+
+
+	history={
+		owner = NGA
+		victory_points = {
+			13642 1 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 2
+
+		}
+		add_core_of = NGA
+
+	}
+
+	provinces={
+		10820 13641 13642 
+	}
+	manpower=3206531
+	buildings_max_level_factor=2.000
+	state_category=rural
+	local_supplies=0.000
+}

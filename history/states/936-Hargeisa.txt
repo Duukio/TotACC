@@ -1,0 +1,27 @@
+
+state={
+	id=936
+	name="STATE_936"
+    buildings_max_level_factor = 1
+	provinces={
+		5068 10777 10833 
+	}
+	manpower=2800000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category= large_town
+	history={
+		owner = MGD
+		buildings = {
+			school = 2
+			infrastructure = 2
+			industrial_complex = 2
+		}
+		victory_points = {
+			5068 5 
+		}
+		add_core_of = SOM
+		add_core_of = MGD
+	}
+}

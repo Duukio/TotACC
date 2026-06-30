@@ -1,0 +1,30 @@
+state={
+	id=1105
+	name="STATE_1105" #Indore
+	resources={
+	}
+
+	history={
+		owner = BHA
+		victory_points = {
+			12080 15 #Indore
+		}	
+		buildings = {
+			school = 3
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 6
+
+		}
+		add_core_of = BHA
+
+	}
+
+	provinces={
+		7165 12743 8076 11993 12080 4106 1199 7205 2105 10816 11952
+	}
+	manpower=6081322
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

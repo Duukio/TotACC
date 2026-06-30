@@ -1,0 +1,100 @@
+spriteTypes = {
+	# New Opening 
+	spriteType = {
+		name = "GFX_topbar_star_button"
+		textureFile = "gfx/interface/topbar/topbar_star_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NationIntro_background"
+		texturefile = "gfx/interface/national_introducescreen/background.png"
+	}
+	spriteType = {
+		name = "GFX_Start_logo"
+		texturefile = "gfx/interface/national_introducescreen/TOTA_Start_logo_game.png"
+	}
+	spriteType = {
+		name = "GFX_intro_note"
+		texturefile = "gfx/interface/national_introducescreen/note.png"
+	}
+	spriteType = {
+		name = "GFX_flip_right_button"
+		texturefile = "gfx/interface/national_introducescreen/flip_right_button.png"
+	}
+	spriteType = {
+		name = "GFX_flip_left_button"
+		texturefile = "gfx/interface/national_introducescreen/flip_left_button.png"
+	}
+
+	spriteType = {
+		name = "GFX_NationIntro_top_tabs"
+		texturefile = "gfx/interface/national_introducescreen/top_tabs.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_NationIntro_top_tabs_icon_1"
+		texturefile = "gfx/interface/national_introducescreen/top_tabs_icon_1.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_NationIntro_top_tabs_icon_2"
+		texturefile = "gfx/interface/national_introducescreen/top_tabs_icon_2.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_NationIntro_top_tabs_icon_3"
+		texturefile = "gfx/interface/national_introducescreen/top_tabs_icon_3.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_NationIntro_top_tabs_icon_4"
+		texturefile = "gfx/interface/national_introducescreen/top_tabs_icon_2.dds"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_NationIntro_entry_content"
+		texturefile = "gfx/interface/national_introducescreen/fix_entry_folder_2.png"
+		noofframes = 2
+	}
+	spriteType = {
+		name = "GFX_NationIntro_entry_folder"
+		texturefile = "gfx/interface/Nation_Intro_screen/fix_entry_folder_2.png"
+		noofframes = 2
+	}
+
+	# Buttons
+	spriteType = {
+		name = "GFX_opening_button_next_page"
+		textureFile = "gfx/interface/national_introducescreen/opening_button_next_page.dds"
+	}
+	spriteType = {
+		name = "GFX_opening_button_prev_page"
+		textureFile = "gfx/interface/national_introducescreen/opening_button_prev_page.dds"
+	}
+
+
+	##ImageFor Pages
+	spriteType = {
+		name = "GFX_national_intro_Picture_Germany_1"
+		textureFile = "gfx/interface/national_introducescreen/Picture/Germany_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_national_intro_Picture_Germany_2"
+		textureFile = "gfx/interface/national_introducescreen/Picture/Germany_2.png"
+		legacy_lazy_load = no	
+	}
+	spriteType = {
+		name = "GFX_national_intro_Picture_Germany_3"
+		textureFile = "gfx/interface/national_introducescreen/Picture/Germany_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_national_intro_Picture_Germany_4"
+		textureFile = "gfx/interface/national_introducescreen/Picture/Germany_4.png"
+		legacy_lazy_load = no
+	}
+
+
+
+}

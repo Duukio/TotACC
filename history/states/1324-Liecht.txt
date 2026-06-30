@@ -1,0 +1,24 @@
+state={
+id=1324
+	name="STATE_1324"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	
+	history={
+        victory_points = { 14112 5 } #vaduz
+        owner = LIE
+        buildings = {
+            infrastructure = 5
+			school = 5
+        }
+        add_core_of = LIE
+    }
+	
+	provinces={
+		14112
+	}
+	manpower=45000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

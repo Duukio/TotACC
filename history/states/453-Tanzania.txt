@@ -1,0 +1,40 @@
+
+state={
+	id=453
+	name="STATE_453"
+    buildings_max_level_factor = 1
+	resources={
+		rubber=100.000
+		tungsten=100.000
+	}
+
+	history={
+		owner = EAF
+		victory_points = {
+			2196 20 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 5
+			dockyard = 3
+			school = 2
+			2196 = {
+				naval_base = 10
+
+			}
+
+
+		}
+		add_core_of = EAF
+
+	}
+
+	provinces={
+		2196 5224 8183 8205 13825 13834 
+	}
+	manpower=10573632
+	buildings_max_level_factor=2.000
+	state_category=metropolis
+	local_supplies=0.000
+}

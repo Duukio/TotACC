@@ -1,0 +1,258 @@
+capital = 316
+
+oob = "SOV_2021"
+
+set_variable = { GDP = 19000 } set_variable = { DEBT = 12000 } set_variable = { REAL_GROWTH = 3 }
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+set_variable = { GDP_trillion = var:GDP }
+set_variable = { GDP_million = var:GDP }
+multiply_variable = { GDP_trillion = 0.001 }
+multiply_variable = { GDP_million = 1000 }
+multiply_variable = { REAL_GROWTH = 0.01}
+set_variable = { DEBT_trillion = var:DEBT }
+set_variable = { DEBT_million = var:DEBT }
+multiply_variable = { DEBT_trillion = 0.001 }
+multiply_variable = { DEBT_million = 1000 }
+
+
+add_ideas = {
+SOV_everybody_hates_the_soviet_premier
+SOV_digital_proletkult
+SOV_rising_bearers_of_the_bureaucracy
+SOV_orthodoxys_quiet_death
+SOV_socialism_for_the_new_era
+SOV_whispers_from_shadows
+SOV_kurginyans_inauguration_promises
+}
+country_event = {
+	id = SOV.5
+	days = 320
+}
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+set_technology = {
+	tech_support = 1		
+	tech_engineers = 1
+	tech_special_forces= 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	tech_trucks = 1
+	MSPcamo = 1
+	recon_drone = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+ 	infantry_weapons = 1
+	infantry_weapons1 = 1	
+	tech_engineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+interwar_artillery = 1
+
+	
+	basic_light_tank = 1
+	basic_light_tank_chassis = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+gw_artillery = 1
+interwar_artillery = 1
+
+}
+set_variable = {
+var = SOCTRENDS_DC
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 50
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 50
+}
+tota_variable_clamping = yes
+set_convoys = 100
+SOV = {
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = VIE
+			autonomy_state = SOV_ass_govt
+		}
+	}
+	else = {
+		#puppet = VIE
+	}
+}
+set_popularities = {
+   anarchism = 0
+   conservatism = 0
+   revolutionary_right = 0
+   dissident_right = 0
+   liberalism = 0
+   hardline_socialism = 13.5
+   autocracy = 33.3
+   reformist_socialism = 18.9
+   socdem = 10.0
+   technocracy = 24.3
+}
+set_politics = {
+	
+	ruling_party = reformist_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_faction = WARSAW_TREATY_ORGANIZATION
+SOV = { add_to_faction = VIE }
+SOV = { add_to_faction = DDR }
+SOV = { add_to_faction = CZE }
+SOV = { add_to_faction = POL }
+SOV = { add_to_faction = HUN }
+SOV = { add_to_faction = BUL }
+SOV = { add_to_faction = GRE }
+#SOV = { add_to_faction = ISP }
+SOV = { add_to_faction = IRN }
+SOV = { add_to_faction = MON }
+SOV = { add_to_faction = CHL }
+set_variable = { SOV.FACTIONSTATUS = 10 }
+set_variable = { VIE.FACTIONSTATUS = 11 }
+set_variable = { DDR.FACTIONSTATUS = 12 }
+set_variable = { CZE.FACTIONSTATUS = 12 }
+set_variable = { POL.FACTIONSTATUS = 12 }
+set_variable = { BUL.FACTIONSTATUS = 12 }
+set_variable = { HUN.FACTIONSTATUS = 12 }
+set_variable = { GRE.FACTIONSTATUS = 12 }
+set_variable = { YUG.FACTIONSTATUS = 9 }
+set_variable = { ROM.FACTIONSTATUS = 9 }
+set_variable = { ALB.FACTIONSTATUS = 11 }
+set_variable = { FIN.FACTIONSTATUS = 9 }
+set_variable = { ISP.FACTIONSTATUS = 12 }
+set_variable = { IRN.FACTIONSTATUS = 12 }
+set_variable = { MON.FACTIONSTATUS = 9 }
+set_variable = { CHL.FACTIONSTATUS = 9 }
+set_variable = { BHA.FACTIONSTATUS = 9 } #will need to discuss further COMECON members
+#set_variable = { NWG.FACTIONSTATUS = 9 }
+
+create_country_leader = {	
+	name = SOV_sergey_kurginyan
+	desc = "POLITICS_SOV_KURGINYAN_DESC"
+	picture = "gfx/leaders/SOV/kurgin6.png"
+	expire = "2040.1.1"
+	ideology = sovmarsys
+	traits = { SOV_failed_nationalist  }
+}
+create_country_leader = {	
+	name = "Gennady Zyuganov"
+	desc = "POLITICS_SOV_ZYUGANOV_DESC"
+	picture = "gfx/leaders/SOV/Portrait_Soviet_Gennady_Zyuganov.png"
+	expire = "2040.1.1"
+	ideology = natcom
+	traits = {  }
+}
+create_country_leader = {	
+	name = "Pavel Grudinin"
+	desc = "POLITICS_SOV_GRUDININ_DESC"
+	picture = "gfx/leaders/SOV/Pavel Grudinin.png"
+	expire = "2040.1.1"
+	ideology = soctechno
+	traits = {  }
+}
+create_country_leader = {	
+	name = "Alexei Navalny"
+	desc = "POLITICS_SOV_NAVALNY_DESC"
+	picture = "gfx/leaders/SOV/"
+	expire = "2040.1.1"
+	ideology = progre
+	traits = {  }
+}
+create_country_leader = {	
+	name = "Nikolai Patrushev"
+	desc = "POLITICS_SOV_PATRUSHEV_DESC"
+	picture = "gfx/leaders/SOV/"
+	expire = "2040.1.1"
+	ideology = milgov
+	traits = {  }
+}

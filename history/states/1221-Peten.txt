@@ -1,0 +1,37 @@
+
+state={
+	
+id=1221
+	name="STATE_1221" #Petén
+    buildings_max_level_factor = 1
+	manpower = 545600
+	resources={
+		strategic_minerals=5
+		steel = 5
+	}
+	
+	state_category = city
+
+	history={
+		owner = GUA
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 5
+			air_base = 1
+		}
+		add_core_of = GUA
+		victory_points = {
+			4991 4
+		}
+
+	}
+
+	provinces={
+		 4991
+	}
+	
+
+	local_supplies=0.0 
+}

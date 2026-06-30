@@ -1,0 +1,4 @@
+terrain_shimizu = { local_supplies = 0.3 } #
+terrain_washdc = {} #
+terrain_tokyo = {}
+terrain_bodeleville = {}

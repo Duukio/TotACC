@@ -1,0 +1,30 @@
+state={
+id=887
+resources = {
+	uranium = 400
+}	
+
+	name="STATE_887"
+
+	history={
+		owner = SOV
+		victory_points = {
+			4685 10 
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		1879 4670 4685 7317 7708 10202 10235 10630 12616 
+	}
+	manpower=754739
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

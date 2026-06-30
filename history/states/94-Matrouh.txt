@@ -1,0 +1,24 @@
+state={
+id=94
+	name="STATE_94"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		owner = EGY
+		buildings = {
+            school = 2
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = EGY
+
+	}
+	provinces={
+		1143 5078 7079 7148 9989 10061 10127 11910 11967 12033 12091 12764 
+	}
+	manpower=461847
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

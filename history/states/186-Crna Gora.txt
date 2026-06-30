@@ -1,0 +1,30 @@
+state={
+id=186
+	name="STATE_186"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+
+	history={
+		owner = YUG
+		victory_points = { 9809 5 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			9809 = {
+			naval_base = 1
+			}
+		}
+		add_core_of = YUG
+		add_core_of = SRB
+	}
+	provinces={
+		6913 9809 9821 11858 
+	}
+	manpower=621873
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

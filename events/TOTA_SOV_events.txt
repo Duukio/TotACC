@@ -1,0 +1,601 @@
+add_namespace = SOV
+
+country_event = {
+    id = SOV.1 # Székler revolt
+    title = SOV.1.t
+    desc = SOV.1.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = SOV.1.a
+      TRS = {
+        transfer_state = 981
+        load_oob = "TRS_REV"
+      }
+      SIB = {
+        transfer_state = 982
+        load_oob = "SIB_REV"
+      }
+      982 = {
+        add_core_of = SIB
+      }
+      981 = {
+        add_core_of = TRS
+      }
+      TRS = {
+        create_faction = TRS_SIB_ALLIANCE
+         add_to_faction = SIB
+      }
+      ROM = {
+        declare_war_on = {
+         target = TRS
+         type = annex_everything
+        }
+      }
+      ROM = {
+        declare_war_on = {
+         target = SIB
+         type = annex_everything
+        }
+      }
+		every_country = {
+			limit = {
+			is_ai = no	
+			}
+		    news_event = {
+		        id = WNE.53
+		        days = 1
+		    }
+		}
+    SOV = {
+      country_event = {
+        id = SOV.2
+        days = 7
+      }
+    }
+	}
+}
+country_event = {
+    id = SOV.2 # Does SOV intervene
+    title = SOV.2.t
+    desc = SOV.2.desc
+    picture = GFX_report_event_grudinin
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #no
+      name = SOV.2.a
+      ai_chance = { factor = 45 }
+      country_event = {
+        id = SOV.3
+        days = 100
+      }
+		}
+    option = { # yes
+      name = SOV.2.b
+      ai_chance = { factor = 55 }
+      SOV = {
+        declare_war_on = {
+         target = ROM
+         type = annex_everything
+        }
+      }
+		}
+	}
+country_event = {
+    id = SOV.3
+    title = SOV.3.t
+    desc = SOV.3.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #no
+    name = SOV.3.a
+    #ai_chance = { factor = 99 }
+        trigger = {
+        NOT = {
+          ROM = {
+            OR = {
+            has_war_with = TRS
+            has_war_with = SIB
+            }
+          }
+         }
+      }
+		}
+    option = { # yes
+      name = SOV.3.b
+	 	 set_global_flag = show_peace_popup_alert
+		 add_to_variable = { global.peace_popup_dirty = 1 }
+		 set_global_flag = war_won
+			SOV = {
+				save_global_event_target_as = winning_country
+			}
+			ROM = {
+				save_global_event_target_as = losing_country
+			}
+      #TRS = {
+      #  transfer_state = 981
+      #}
+      #SIB ={
+      #  transfer_state = 982
+      #}
+      ROM = {
+        white_peace = TRS
+        white_peace = SIB
+      }
+      TRS = {
+        dismantle_faction = yes
+      }
+			clr_global_flag = skip_default_capitulation
+    	every_country = {
+					limit = {
+					is_ai = no
+				}
+				news_event = {
+				id = WNE.55
+				DAYS = 0
+				}
+			}
+		}
+  } 
+country_event = {
+    id = SOV.4 # Does SOV give land to Hungary
+    title = SOV.4.t
+    desc = SOV.4.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #no
+    ai_chance = { factor = 33 }
+      name = SOV.4.a
+      ROM = {
+        transfer_state = 984
+      }
+      984 = {
+        set_demilitarized_zone = yes
+      }
+		}
+    option = { # yes
+    ai_chance = { factor = 66 }
+      name = SOV.4.b
+      HUN = {
+        transfer_state = 984
+      }
+      984 = {
+        add_core_of = HUN
+      }
+		}
+	}
+  country_event = {
+    id = SOV.5 # Kurginyan crisis
+    title = SOV.5.t
+    desc = SOV.5.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #Time to pick from fifteen million billion people now
+    ai_chance = { factor = 50 }
+      name = SOV.5.a
+     country_event = {
+       id = SOV.6
+     } ##Now we can begin!
+		}
+    option = { # yes
+    ai_chance = { factor = 50 }
+      name = SOV.5.b
+      create_country_leader = {
+      	name = "Alexander Lukashenko"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/BATKA.png"
+      	expire = "2040.1.1"
+      	ideology = sovmarsys
+      	traits = {
+      	}
+      }
+      country_event = {
+        id = SOV.11
+        days = 1337
+      }
+		every_country = {
+			limit = {
+			is_ai = no	
+			}
+		    news_event = {
+		        id = WNE.133
+		        days = 1
+		    }
+		}
+		}
+}
+country_event = {
+    id = SOV.6 # Kurginyan crisis pt. 2
+    title = SOV.6.t
+    desc = SOV.6.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #Kurginyan NatCom
+    ai_chance = { factor = 40 }
+      name = SOV.6.a
+      create_country_leader = {
+      	name = "Sergey Kurginyan"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Komolov.png"
+      	expire = "2040.1.1"
+      	ideology = natcom
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = hardline_socialism
+      }
+      country_event = {
+        id = SOV.7
+        days = 365
+      }
+		#every_country = {
+		#	limit = {
+		#	is_ai = no	
+		#	}
+		#    news_event = {
+		#        id = WNE.180
+		#        days = 1
+		#    }
+		#}
+		}
+    option = { #Aleksandr Lebed
+    ai_chance = { factor = 30 }
+      name = SOV.6.b
+      create_country_leader = {
+      	name = "Aleksandr Lebed"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Aleksandr Lebed (Left-Wing Nationalism).png"
+      	expire = "2040.1.1"
+      	ideology = lwnat
+      	traits = {
+      	}
+      }
+      country_event = {
+        id = SOV.8
+        days = 156
+      }
+		}
+}
+country_event = {
+    id = SOV.7 # Kurginyan crisis pt. 2.1
+    title = SOV.7.t
+    desc = SOV.7.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+    
+    option = { #Kurginyan stays under NatComReich
+    ai_chance = { factor = 60 }
+      name = SOV.7.a
+		}
+      option = { #Igor Girkin Kills Every Tatar Ever (i think?)
+    ai_chance = { factor = 40 }
+      name = SOV.7.b
+      create_country_leader = {
+      	name = "Igor Girkin"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Igor Girkin.png"
+      	expire = "2040.1.1"
+      	ideology = ethnosupr
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = revolutionary_right
+      }
+		}
+}
+country_event = {
+    id = SOV.8 # Kurginyan crisis pt. 2.2
+    title = SOV.8.t
+    desc = SOV.8.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #Tricky Disco (wub wub wub)
+    ai_chance = { factor = 60 }
+      name = SOV.8.a
+      country_event = {
+        id = SOV.9
+        days = 360
+      }
+		}
+    option = { #Kvachkov
+    ai_chance = { factor = 40 }
+      name = SOV.8.b
+      create_country_leader = {
+      	name = "Vladimir Kvachkov"
+      	#desc = "POLITICS_SOV_GRUDININ_DESC"
+      	picture = "gfx/leaders/SOV/Vladimir Kvachkov.png"
+      	expire = "2040.1.1"
+      	ideology = natthirdpos
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = revolutionary_right
+      }
+		}
+}
+country_event = {
+    id = SOV.9 # Want to Fight Russia? Here's Russia Military Power 2023 Massive Fire Russian Army
+    title = SOV.9.t
+    desc = SOV.9.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #one trillion years of Z
+    ai_chance = { factor = 35 }
+      name = SOV.9.a
+      create_country_leader = {
+      	name = "Yuri Boldyrev"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Yury Boldyrev"
+      	expire = "2040.1.1"
+      	ideology = lwnat
+      	traits = {
+      	}
+      }
+		}
+    option = { #What the fak
+    ai_chance = { factor = 40 }
+      name = SOV.9.b
+      create_country_leader = {
+      	name = "Aleksandr Lebed"
+      	#desc = "POLITICS_SOV_GRUDININ_DESC"
+      	picture = "gfx/leaders/SOV/Aleksandr Lebed (Anocratic Dirigisme).png"
+      	expire = "2040.1.1"
+      	ideology = anodir
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = autocracy
+      }
+		}
+    option = { #Erm... that just happened!
+    ai_chance = { factor = 40 }
+      name = SOV.9.c
+      create_country_leader = {
+      	name = "Sergey Kiriyenko"
+      	#desc = "POLITICS_SOV_GRUDININ_DESC"
+      	picture = "gfx/leaders/SOV/Sergey Kiriyenko (Third Way).png"
+      	expire = "2040.1.1"
+      	ideology = thway
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = socdem
+      }
+      country_event = {
+        id = SOV.10
+        days = 720 #tricky disco
+      }
+		}
+}
+country_event = {
+    id = SOV.10 # Want to Fight Liberals? Here's Liberal Military Power 2023 Massive Fire Liberal Army
+    title = SOV.10.t
+    desc = SOV.10.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #tricky disco
+    ai_chance = { factor = 35 }
+      name = SOV.10.a
+      create_country_leader = {
+      	name = "Alexei Safronov"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Yury Boldyrev"
+      	expire = "2040.1.1"
+      	ideology = l_acc
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = technocracy
+      }
+		}
+    option = { #when the disco is tricky
+    ai_chance = { factor = 45 }
+      name = SOV.10.b
+      create_country_leader = {
+      	name = "Sergey Kiriyenko"
+      	#desc = "POLITICS_SOV_GRUDININ_DESC"
+      	picture = "gfx/leaders/SOV/Sergey Kiriyenko (Third Way).png"
+      	expire = "2040.1.1"
+      	ideology = marlib
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = liberalism
+      }
+		}
+}
+country_event = {
+    id = SOV.11 # Want to Fight Lukashenko? Here's Lukashenko Military Power 2023 Massive Fire Lukashenko Army
+    title = SOV.11.t
+    desc = SOV.11.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #tricky disco
+    ai_chance = { factor = 35 }
+      name = SOV.11.a
+      create_country_leader = {
+      	name = "Alexander Lukashenko"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/batkaperdict.png"
+      	expire = "2040.1.1"
+      	ideology = perdict
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = autocracy
+      }
+		}
+    option = { #when the disco is tricky
+    ai_chance = { factor = 25 }
+      name = SOV.11.b
+      create_country_leader = {
+      	name = "Aleksandr Buzgalin"
+      	#desc = "POLITICS_SOV_GRUDININ_DESC"
+      	picture = "gfx/leaders/SOV/Aleksandr Buzgalin.png"
+      	expire = "2040.1.1"
+      	ideology = sovmarsys
+      	traits = {
+      	}
+      }
+      country_event = {
+        id = SOV.12
+        days = 200
+      }
+		}
+}
+country_event = {
+    id = SOV.12 # Want to Fight Huggy Wuggy? Here's Huggy Wuggy Military Power 2023 Massive Fire Huggy Wuggy Army
+    title = SOV.12.t
+    desc = SOV.12.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #KKKagarlitsKKKy
+    ai_chance = { factor = 35 }
+      name = SOV.12.a
+      create_country_leader = {
+      	name = "Boris Kagarlitsky"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Kagarlitsky.png"
+      	expire = "2040.1.1"
+      	ideology = sovmarsys
+      	traits = {
+      	}
+      }
+      country_event = {
+        id = SOV.13
+        days = 365
+      }
+		}
+    option = { #no :-D
+    ai_chance = { factor = 15 }
+      name = SOV.12.b
+		}
+}
+country_event = {
+    id = SOV.13 # Want to Fight Democracy? Here's Democracy Military Power 2023 Massive Fire Democracy Army
+    title = SOV.13.t
+    desc = SOV.13.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #you fucked up NIGGA!
+    ai_chance = { factor = 15 }
+      name = SOV.13.a
+      create_country_leader = {
+      	name = "Anatoly Chubais"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Anatoly Chubais.png"
+      	expire = "2040.1.1"
+      	ideology = demsoc
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = socdem
+      }
+      #this is supposed to lead to some hippie bullshit but its not possible within the current schedule
+		}
+    option = { #congrats you stole his hat
+    ai_chance = { factor = 25 }
+      name = SOV.13.b
+      create_country_leader = {
+      	name = "Boris Kagarlitsky"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Boris Kagarlitsky (Democratic Marxism).png"
+      	expire = "2040.1.1"
+      	ideology = demmarx
+      	traits = {
+      	}
+      }
+		}
+    option = { #congrats you got lwnat again retard
+    ai_chance = { factor = 15 }
+      name = SOV.13.c
+      create_country_leader = {
+      	name = "Anastasia Uldatsova"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Anastasia Uldatsova.png"
+      	expire = "2040.1.1"
+      	ideology = lwnat
+      	traits = {
+      	}
+      }
+		}
+    option = { #i hate paradox
+    ai_chance = { factor = 20 }
+      name = SOV.13.d
+      country_event = {
+        id = SOV.14
+        days = 1
+      }
+		}
+}
+country_event = {
+    id = SOV.14 # Want to Fight Democracy? Here's Democracy Military Power 2023 Massive Fire Democracy Army
+    title = SOV.14.t
+    desc = SOV.14.desc
+    picture = GFX_report_event_kurginyan
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = { #this is supposed to have epilogue content later
+    ai_chance = { factor = 15 }
+      name = SOV.14.a
+      create_country_leader = {
+      	name = "Pavel Grudinin"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Anatoly Chubais.png"
+      	expire = "2040.1.1"
+      	ideology = consoc
+      	traits = {
+      	}
+      }
+      set_politics = {
+        ruling_party = sovmarsys
+      }
+		}
+    option = { #congrats everyone likes you :-D
+    ai_chance = { factor = 25 }
+      name = SOV.14.b
+      create_country_leader = {
+      	name = "Nikolay Platoshkin"
+      	#desc = ""
+      	picture = "gfx/leaders/SOV/Nikolay Platoshkin (Soviet Market System).png"
+      	expire = "2040.1.1"
+      	ideology = sovmarsys
+      	traits = {
+      	}
+      }
+		}
+}

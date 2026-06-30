@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Wrangle_Benin"
+		texturefile = "gfx/interface/decisions/Wrangle Benin.dds"
+	}
+	spriteType = {
+		name = "GFX_dec_cat_wpw"
+		texturefile = "gfx/interface/decisions/West Papuan War.dds"
+	}
+	spriteType = {
+		name = "GFX_dec_cat_aw"
+		texturefile = "gfx/interface/decisions/Ambazonia War.dds"
+	}
+	spriteType = {
+		name = "GFX_dec_cat_pcbia"
+		texturefile = "gfx/interface/decisions/Planned Capital.dds"
+	}
+	spriteType = {
+		name = "GFX_dec_cat_diversify_biafra"
+		texturefile = "gfx/interface/decisions/Economic Diversification.dds"
+	}
+	spriteType = {
+		name = "GFX_dec_cat_NPHS"
+		texturefile = "gfx/interface/decisions/National Public Health Service.dds"
+	}
+	spriteType = {
+		name = "GFX_dec_cat_connect_bia"
+		texturefile = "gfx/interface/decisions/Connect Biafra.dds"
+	}
+	spriteType = {
+		name = "GFX_CCPA_MAP"
+		texturefile = "gfx/interface/decisions/CCPA.png"
+	}
+	spriteType = {
+		name = "GFX_pin"
+		texturefile = "gfx/interface/pin.png"
+	}
+	spriteType = {
+		name = "GFX_CCPA_bg"
+		texturefile = "gfx/interface/decisions/CCPA_bg.png"
+	}
+}

@@ -1,0 +1,13 @@
+focus_tree = {
+	id = BIA_vision_2030_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = BIA
+			has_completed_focus = BIA_vision_2030
+		}
+	}
+	shared_focus = BIA_vision_2030_in_practice
+	shared_focus = BIA_5_times_over_we_will_win
+}

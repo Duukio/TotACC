@@ -1,0 +1,37 @@
+
+state={
+	id=454
+	name="STATE_454"
+    buildings_max_level_factor = 1
+
+	history={
+		owner = EAF
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 10
+			dockyard = 4
+			school = 2
+			5210 = {
+				naval_base = 10
+
+			}
+
+		}
+		victory_points = {
+			1939 25 
+		}
+		victory_points = {
+			5210 20 
+		}
+		add_core_of = EAF
+
+	}
+
+	provinces={
+		1939 5196 5210 6020 10761 10962 10976 13840 13844 13848 
+	}
+	manpower=7847419
+	buildings_max_level_factor=2.000
+	state_category=megalopolis
+	local_supplies=6.000
+}

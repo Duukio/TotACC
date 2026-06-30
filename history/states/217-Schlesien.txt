@@ -1,0 +1,27 @@
+state={
+id=217
+	name="STATE_217"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+	resources={
+		steel=20
+	}
+
+	history={
+		owner = DDR
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = DDR
+
+	}
+	provinces={
+		3438 3572 6595 11517 
+	}
+	manpower=2000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

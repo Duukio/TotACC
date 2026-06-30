@@ -1,0 +1,26 @@
+state={
+id=1066
+	name="STATE_1066" #Nakhon Champassak
+	state_category = town
+	
+	resources = {
+	rubber = 50
+	}
+	history={
+		owner = KMP
+		buildings = {
+            school = 2
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = KMP
+		add_core_of = SIA
+	}
+	provinces={
+		12447 12460 4302 10467 4251 10134 1353 10177
+	}
+	manpower=1000000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

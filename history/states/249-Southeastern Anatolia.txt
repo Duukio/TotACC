@@ -1,0 +1,29 @@
+
+state={
+	id=249
+	name="STATE_249"
+    buildings_max_level_factor = 1
+	resources={
+		steel=10.000
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 3
+
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		9823 11871 12416
+	}
+	manpower=8576391
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

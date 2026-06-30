@@ -1,0 +1,40 @@
+
+state={
+	id=1078
+	name="STATE_1078"
+    buildings_max_level_factor = 1
+	resources={
+		steel=20.000
+	}
+
+	history={
+		owner = JAP
+		victory_points = {
+			4052 30 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 2
+			air_base = 2
+			4052 = {
+				naval_base = 5
+
+			}
+
+		}
+		set_demilitarized_zone = yes
+		add_core_of = PLK
+
+	}
+
+	provinces={
+		4052 
+	}
+	manpower=2000000
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=569
+	name="STATE_569"
+    buildings_max_level_factor = 1
+	resources={
+		steel=110.000
+	}
+
+	history={
+		owner = USA
+		victory_points = {
+			12456 10 
+		}
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 3
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		926 1560 1760 10341 12456 
+	}
+	manpower=918564
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

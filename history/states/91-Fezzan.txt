@@ -1,0 +1,26 @@
+state={
+id=91
+	name="STATE_91"
+    buildings_max_level_factor = 1
+	state_category = rural
+	
+	resources = {
+		oil = 400
+	}
+	history={
+		owner = TRP
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = TRP
+
+	}
+	provinces={
+		4191 
+	}
+	manpower=400000
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+state={
+id=434
+	
+
+	name="STATE_434"
+
+	manpower=557426
+	
+	state_category = enclave
+
+	history={
+		owner = MLD
+		add_core_of = MLD
+		buildings = {
+            school = 2
+			infrastructure = 2
+			4967 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			4967 20
+		}
+	}
+
+	provinces={
+		4967 
+	}
+
+	local_supplies=0.0 
+}

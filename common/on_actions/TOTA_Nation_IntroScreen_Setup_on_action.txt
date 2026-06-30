@@ -1,0 +1,49 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+			
+				# Top tabs
+				#add_to_array = { NationIntro_top_tab_array = 1 }
+				#add_to_array = { NationIntro_top_tab_array = 2 }
+				#add_to_array = { NationIntro_top_tab_array = 3 }
+				add_to_array = { NationIntro_top_tab_array = 4 }
+				set_variable = { NationIntro_tab = 4 }
+				set_variable = { NationIntro_Selected = 1}
+				set_variable = { NationIntro_country_left_page_num = 0}
+				set_variable = { NationIntro_right_page_num = 1}
+				set_variable = { NationIntro_page_max_num = 1}
+				
+				# Set Initial Setting on the
+				    set_variable = { NationIntro_Max = 4}
+
+				set_variable = {NationIntro_page_max_num =NationIntro_Max}
+				multiply_variable = {NationIntro_page_max_num = 2}
+				subtract_from_variable = {NationIntro_page_max_num =1 }
+
+
+				## Ignore parts after this ##
+				if = {
+					limit = {
+						check_variable = { NationIntro_array_main^num > 0 }
+					}
+					for_each_loop = {
+						array = NationIntro_array_main
+						add_to_array = { NationIntro_storage_array = v }
+					}
+				}
+				if = {
+					limit = {
+						THIS = {
+							is_ai = no
+						}
+					}
+				set_country_flag = TOTA_National_IntroduceScreen_Visible
+				}
+				else = {
+					
+				}
+			}
+		}
+	}
+}

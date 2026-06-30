@@ -1,0 +1,35 @@
+
+state={
+	id=330
+	name="STATE_330"
+    buildings_max_level_factor = 1
+	resources={
+		strategic_minerals=200.000
+		tungsten=50.000
+	}
+
+	history={
+		victory_points = {
+			11774 3 
+		}
+		owner = GRE
+		add_core_of = GRE
+		buildings = {
+			school = 2
+			infrastructure = 4
+			dockyard = 4
+			industrial_complex = 4
+			arms_factory = 2
+
+		}
+
+	}
+
+	provinces={
+		9791 9930 11774 11905 
+	}
+	manpower=608182
+	buildings_max_level_factor=2.000
+	state_category=large_city
+	local_supplies=0.000
+}

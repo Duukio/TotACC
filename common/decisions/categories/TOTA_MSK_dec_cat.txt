@@ -1,0 +1,38 @@
+MSK_contras_anxiety  = {
+     icon = generic_foreign_policy
+	 	visible_when_empty = yes
+	 allowed = {
+		original_tag = MSK
+        has_country_flag = contrasanxiety
+	}
+	visible = {
+        has_country_flag = contrasanxiety
+	}
+}
+MSK_CCPA_dec_cat  = {
+     icon = generic_foreign_policy
+	 	visible_when_empty = yes
+	 allowed = {
+		has_dynamic_modifier = {
+		    modifier = CCPA_DYNMOD
+		    scope = MSK
+		}
+	}
+	visible = {
+		has_dynamic_modifier = {
+		    modifier = CCPA_DYNMOD
+		    scope = MSK
+		}
+	}
+	 scripted_gui = MSK_CCPA_scrgui
+}
+MSK_raid_shadow_legends  = {
+	icon = generic_foreign_policy
+		visible_when_empty = yes
+	allowed = {
+	  has_completed_focus = MSK_copirates_of_the_caribbean
+   }
+   visible = {
+	has_completed_focus = MSK_copirates_of_the_caribbean
+   }
+}

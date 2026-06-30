@@ -1,0 +1,29 @@
+state={
+id=187
+	name="STATE_187"
+    buildings_max_level_factor = 1
+	state_category = city
+	
+
+	history={
+		owner = YUG
+		victory_points = { 9627 15 }
+		buildings = {
+            school = 2
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+			#dockyard = 1
+			#599 = {
+			#naval_base = 2
+			#}
+		}
+		add_core_of = YUG
+	}
+	provinces={
+		596 665 3631 3654 6650 6672 9596 9627
+	}
+	manpower=2107126
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

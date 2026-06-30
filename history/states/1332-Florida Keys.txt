@@ -1,0 +1,36 @@
+
+state={
+	id=1332
+	name="STATE_1332"
+	provinces={
+		14126 14125 14124
+	}
+	manpower=82874
+	buildings_max_level_factor=2.000
+	local_supplies=1.000
+#pastoral rural town large_town city large_city metropolis megalopolis
+	state_category=large_town
+	history={
+		owner = USA
+		buildings = {
+			school = 3
+			infrastructure = 4
+			14126 = {
+				naval_base = 5
+
+			}
+			14125 = {
+				naval_base = 2
+
+			}
+			14124 = {
+				naval_base = 2
+
+			}
+		}
+		victory_points = {
+			14126 10 #Key West 
+		}
+		add_core_of = USA
+	}
+}

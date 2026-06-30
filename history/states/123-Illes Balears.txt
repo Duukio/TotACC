@@ -1,0 +1,27 @@
+state={
+id=123
+	name="STATE_123"
+    buildings_max_level_factor = 1
+	
+	
+	state_category = town
+	
+	provinces={
+		7114 9793 9845 
+	}
+	
+	history={
+        victory_points = { 9793 1 }
+        owner = SPA
+        buildings = {
+            school = 2
+            infrastructure = 3
+
+        }
+        add_core_of = SPA
+    }
+	
+	manpower = 1286342
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

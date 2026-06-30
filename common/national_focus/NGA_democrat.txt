@@ -1,0 +1,391 @@
+
+#A Democratic Nigeria
+shared_focus = {
+	id = NGA_a_democratic_nigeria
+	icon = GFX_NGA_a_democratic_nigeria
+	x = 5
+	y = 0
+	cost = 3
+	completion_reward = {
+		set_popularities = {
+			reformist_socialism = 20
+			socdem = 20
+			liberalism = 25
+			conservatism = 25
+			autocracy = 10
+		}
+		add_stability = 0.15
+		add_war_support = -0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_democratic_nigeria"
+	}
+}
+
+#Dismantle the Old Elite
+shared_focus = {
+	id = NGA_dismantle_the_old_elite
+	icon = GFX_NGA_dismantle_the_old_elite
+	x = 3
+	y = 1
+	cost = 3
+	completion_reward = {
+		add_popularity = {
+			ideology = autocracy
+			popularity = -0.1
+		}
+		add_research_slot = 1
+		add_political_power = -150
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_dismantle_the_old_elite"
+	}
+	prerequisite = { focus = NGA_a_democratic_nigeria  }
+}
+
+#Support Secularization
+shared_focus = {
+	id = NGA_support_secularization
+	icon = GFX_NGA_support_secularization
+	x = 7
+	y = 1
+	cost = 3
+	completion_reward = {
+        add_to_variable = { NGA_NORF_SOUF = 40 }
+        NGA_NORF_SOUF_CALC_BIAS_TO_NORTH = yes
+        custom_effect_tooltip = "Adds 40 points to Southern Bias."
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_support_secularization"
+	}
+	prerequisite = { focus = NGA_a_democratic_nigeria  }
+}
+
+#The Fourth Republic's First Steps
+shared_focus = {
+	id = NGA_thefourthrepublicsfirststeps
+	icon = GFX_NGA_thefourthrepublicsfirststeps
+	x = 5
+	y = 2
+	cost = 3
+	completion_reward = {
+		add_political_power = 150
+		add_stability = 0.33
+		add_war_support = 0.25
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_thefourthrepublicsfirststeps"
+	}
+	prerequisite = { focus = NGA_dismantle_the_old_elite  } prerequisite = { focus = NGA_support_secularization  }
+}
+
+#A Country of Councils
+#shared_focus = {
+#	id =NGA_a_country_of_councils
+#	icon = GFX_NGA_a_country_of_councils
+#	x = 1
+#	y = 3
+#	cost = 3
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_country_of_councils"
+#	}
+#	prerequisite = { focus = NGA_thefourthrepublicsfirststeps  }
+#	mutually_exclusive = { focus = NGA_promisesofpeoplespower  } mutually_exclusive = { focus = NGA_vote_with_your_wallet  } mutually_exclusive = { focus = NGA_push_for_privatization  }
+#}
+
+#Promises of People's Power
+shared_focus = {
+	id = NGA_promisesofpeoplespower
+	icon = GFX_NGA_promisesofpeoplespower
+	x = 3
+	y = 3
+	completion_reward = {
+		add_popularity = {
+			ideology = socdem
+			popularity = 0.22
+		}
+		add_to_variable = { NGA.GDP = 50 }
+		add_to_variable = { NGA.REAL_GROWTH = 0.03 }
+		set_variable = { NGA.SOCTRENDS_DE = 80}
+		custom_effect_tooltip = "Adds 50 billion USD to GDP and +3% real growth from seizing military assets. Also changes Social Trends."
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_promisesofpeoplespower"
+	}
+	prerequisite = { focus = NGA_thefourthrepublicsfirststeps  }
+	mutually_exclusive = { focus = NGA_a_country_of_councils  } mutually_exclusive = { focus = NGA_vote_with_your_wallet  } mutually_exclusive = { focus = NGA_push_for_privatization  }
+}
+
+#Vote with Your Wallet
+shared_focus = {
+	id = NGA_vote_with_your_wallet
+	icon = GFX_NGA_vote_with_your_wallet
+	x = 5
+	y = 3
+	cost = 3
+	completion_reward = {
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.22
+		}
+		add_ideas = cologne_capitalism
+		add_to_variable = { NGA.GDP = 50 }
+		add_to_variable = { NGA.REAL_GROWTH = 0.03 }
+		set_variable = { NGA.SOCTRENDS_DE = 66 }
+		set_variable = { NGA.SOCTRENDS_EE = 15 }
+		set_variable = { NGA.SOCTRENDS_TP = 25 }
+		set_variable = { NGA.SOCTRENDS_DC = 65 }
+		custom_effect_tooltip = "Adds 50 billion USD to GDP and +3% real growth from seizing military assets. Also changes Social Trends."		
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_vote_with_your_wallet"
+	}
+	prerequisite = { focus = NGA_thefourthrepublicsfirststeps  }
+	mutually_exclusive = { focus = NGA_a_country_of_councils  } mutually_exclusive = { focus = NGA_promisesofpeoplespower  } mutually_exclusive = { focus = NGA_push_for_privatization  }
+}
+
+#Push for Privatization
+shared_focus = {
+	id = NGA_push_for_privatization
+	icon = GFX_NGA_push_for_privatization
+	x = 7
+	y = 3
+	cost = 3
+	completion_reward = {
+		add_ideas = phoenix_model
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.22
+		}
+		add_to_variable = { NGA.GDP = 100 }
+		add_to_variable = { NGA.REAL_GROWTH = 0.01 }
+		set_variable = { NGA.SOCTRENDS_DE = 60 }
+		set_variable = { NGA.SOCTRENDS_EE = 30 }
+		set_variable = { NGA.SOCTRENDS_TP = 70 }
+		set_variable = { NGA.SOCTRENDS_DC = 55 }
+		custom_effect_tooltip = "Adds 100 billion USD to GDP and +1% real growth from seizing military assets. Also changes Social Trends."		
+
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_push_for_privatization"
+	}
+	prerequisite = { focus = NGA_thefourthrepublicsfirststeps  }
+	mutually_exclusive = { focus = NGA_a_country_of_councils  } mutually_exclusive = { focus = NGA_promisesofpeoplespower  } mutually_exclusive = { focus = NGA_vote_with_your_wallet  }
+}
+
+#A Radical Redirection
+#shared_focus = {
+#	id =NGA_a_radical_redirection
+#	icon = GFX_NGA_a_radical_redirection
+#	x = 1
+#	y = 4
+#	cost = 3
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_radical_redirection"
+#	}
+#	prerequisite = { focus = NGA_a_country_of_councils  }
+#	mutually_exclusive = { focus = NGA_to_defeat_discrimination  } mutually_exclusive = { focus = NGA_a_calm_and_conservative_approach  } mutually_exclusive = { focus = NGA_promote_traditional_values  }
+#}
+
+#To Defeat Discrimination
+shared_focus = {
+	id = NGA_to_defeat_discrimination
+	icon = GFX_NGA_to_defeat_discrimination
+	x = 3
+	y = 4
+	cost = 3
+	completion_reward = {
+		add_ideas = diversity_equity_inclusion
+		add_ideas = dont_ask_dont_tell
+		add_ideas = social_glass_ceilings
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_to_defeat_discrimination"
+	}
+	prerequisite = { focus = NGA_promisesofpeoplespower  }
+mutually_exclusive = { focus = NGA_a_calm_and_conservative_approach  } mutually_exclusive = { focus = NGA_promote_traditional_values  }
+}
+
+#A Calm and Conservative Approach
+shared_focus = {
+	id = NGA_a_calm_and_conservative_approach
+	icon = GFX_NGA_a_calm_and_conservative_approach
+	x = 5
+	y = 4
+	cost = 3
+	completion_reward = {
+		add_ideas = legal_protections
+		add_ideas = sodomy_laws
+		add_ideas = feminine_emancipation
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_calm_and_conservative_approach"
+	}
+	prerequisite = { focus = NGA_vote_with_your_wallet  }
+ mutually_exclusive = { focus = NGA_to_defeat_discrimination  } mutually_exclusive = { focus = NGA_promote_traditional_values  }
+}
+
+#Promote Traditional Values
+shared_focus = {
+	id = NGA_promote_traditional_values
+	icon = GFX_NGA_promote_traditional_values
+	x = 7
+	y = 4
+	cost = 3
+	completion_reward = {
+		add_stability = 0.1
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.22
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_promote_traditional_values"
+	}
+	prerequisite = { focus = NGA_push_for_privatization  }
+	mutually_exclusive = { focus = NGA_to_defeat_discrimination  } mutually_exclusive = { focus = NGA_a_calm_and_conservative_approach  }
+}
+
+#A Self-Defense Force
+#shared_focus = {
+#	id =NGA_a_selfdefense_force
+#	icon = GFX_NGA_a_selfdefense_force
+#	x = 1
+#	y = 5
+#	cost = 3
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_selfdefense_force"
+#	}
+#	prerequisite = { focus = NGA_a_radical_redirection  }
+#	mutually_exclusive = { focus = NGA_ending_the_bloat  } mutually_exclusive = { focus = NGA_copying_mexico  } mutually_exclusive = { focus = NGA_a_military_makeover  }
+#}
+
+#Ending the Bloat
+shared_focus = {
+	id = NGA_ending_the_bloat
+	icon = GFX_NGA_ending_the_bloat
+	x = 3
+	y = 5
+	cost = 3
+	completion_reward = {
+		every_owned_state = {
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 1
+			    instant_build = yes
+			}
+			add_building_construction = {
+			    type = infrastructure
+			    level = 1
+			    instant_build = yes
+			}
+		}
+		add_ideas = disarmed_nation
+		add_ideas = civilian_economy
+		add_ideas = free_trade
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_ending_the_bloat"
+	}
+	prerequisite = { focus = NGA_to_defeat_discrimination  }
+	 mutually_exclusive = { focus = NGA_copying_mexico  } mutually_exclusive = { focus = NGA_a_military_makeover  }
+}
+
+#Copying Mexico
+shared_focus = {
+	id = NGA_copying_mexico
+	icon = GFX_NGA_copying_mexico
+	x = 5
+	y = 5
+	cost = 3
+	completion_reward = {
+		add_ideas = monitored_speech
+		add_ideas = NGA_dominant_party_democracy
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_copying_mexico"
+	}
+	prerequisite = { focus = NGA_a_calm_and_conservative_approach  }
+mutually_exclusive = { focus = NGA_ending_the_bloat  } mutually_exclusive = { focus = NGA_a_military_makeover  }
+}
+
+#A Military Makeover
+shared_focus = {
+	id = NGA_a_military_makeover
+	icon = GFX_NGA_a_military_makeover
+	x = 7
+	y = 5
+	cost = 3
+	completion_reward = {
+		add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 6
+  	 		category = infantry
+		}
+		add_stability = -0.1
+		add_political_power = -50
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_military_makeover"
+	}
+	prerequisite = { focus = NGA_promote_traditional_values  }
+    mutually_exclusive = { focus = NGA_ending_the_bloat  } mutually_exclusive = { focus = NGA_copying_mexico  }
+}
+
+#A Socialist Constitution
+#shared_focus = {
+#	id =NGA_a_socialist_constitution
+#	icon = GFX_NGA_a_socialist_constitution
+#	x = 1
+#	y = 6
+#	cost = 3
+#	completion_reward = {
+#		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_socialist_constitution"
+#	}
+#	prerequisite = { focus = NGA_a_selfdefense_force  }
+#	mutually_exclusive = { focus = NGA_apeoplesconstitution  } mutually_exclusive = { focus = NGA_a_conventional_constitution  } mutually_exclusive = { focus = NGA_a_liberalized_constitution  }
+#}
+
+#A People's Constitution
+shared_focus = {
+	id = NGA_apeoplesconstitution
+	icon = GFX_NGA_apeoplesconstitution
+	x = 3
+	y = 6
+	cost = 3
+	completion_reward = {
+		add_ideas = free_speech
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_apeoplesconstitution"
+	}
+	prerequisite = { focus = NGA_ending_the_bloat  }
+mutually_exclusive = { focus = NGA_a_conventional_constitution  } mutually_exclusive = { focus = NGA_a_liberalized_constitution  }
+}
+
+#A Conventional Constitution
+shared_focus = {
+	id = NGA_a_conventional_constitution
+	icon = GFX_NGA_a_conventional_constitution
+	x = 5
+	y = 6
+	cost = 3
+	completion_reward = {
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_conventional_constitution"
+	}
+	prerequisite = { focus = NGA_copying_mexico  }
+mutually_exclusive = { focus = NGA_apeoplesconstitution  } mutually_exclusive = { focus = NGA_a_liberalized_constitution  }
+}
+
+#A Liberalized Constitution
+shared_focus = {
+	id = NGA_a_liberalized_constitution
+	icon = GFX_NGA_a_liberalized_constitution
+	x = 7
+	y = 6
+	cost = 3
+	completion_reward = {
+		add_ideas = free_speech
+		add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_a_liberalized_constitution"
+	}
+	prerequisite = { focus = NGA_a_military_makeover  }
+mutually_exclusive = { focus = NGA_apeoplesconstitution  } mutually_exclusive = { focus = NGA_a_conventional_constitution  }
+}
+
+#The Fourth Republic's First Election
+shared_focus = {
+	id = NGA_thefourthrepublicsfirstelection
+	icon = GFX_NGA_thefourthrepublicsfirstelection
+	x = 5
+	y = 7
+	cost = 3
+	completion_reward = {
+		custom_effect_tooltip = "Elections will occur every 4 years."
+		set_politics = {
+			ruling_party = var:NGA@ruling_party
+			election_frequency = 48
+			elections_allowed = yes
+		}
+		add_stability = 0.1
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus NGA_thefourthrepublicsfirstelection"
+	}
+	prerequisite = {  focus = NGA_apeoplesconstitution  focus = NGA_a_conventional_constitution  focus = NGA_a_liberalized_constitution  }
+}
+

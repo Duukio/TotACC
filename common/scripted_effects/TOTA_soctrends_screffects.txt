@@ -1,0 +1,192 @@
+pulse_soctrends_display = {
+		add_to_variable = { THIS.SOCTRENDS_DC_DISPLAY = 100 }
+		add_to_variable = { THIS.SOCTRENDS_DE_DISPLAY = 100 }
+		add_to_variable = { THIS.SOCTRENDS_EE_DISPLAY = 100 }
+		add_to_variable = { THIS.SOCTRENDS_TP_DISPLAY = 100 }
+		add_to_variable = { THIS.SOCTRENDS_EA_DISPLAY = 100 }
+}
+soctrends_mpop_clear = {
+	force_update_dynamic_modifier = yes
+	clear_variable = SOCTRENDS_DC_STORE
+	clear_variable = SOCTRENDS_DE_STORE
+	clear_variable = SOCTRENDS_EE_STORE
+	clear_variable = SOCTRENDS_TP_STORE
+	clear_variable = SOCTRENDS_EA_STORE
+	clear_variable = monthly_pop_calc #?
+}
+
+calculate_soctrends_mismatch = {
+	#TIME TO CALCULATE THE SOCTRENDS MISMATCH!
+	#Soctrends mismatch is when your soctrends and laws/ideology dont match
+
+	set_variable = { SOCTRENDS_DC_CALC_MISMATCH = SOCTRENDS_DC }
+	set_variable = { SOCTRENDS_DE_CALC_MISMATCH = SOCTRENDS_DE }
+	set_variable = { SOCTRENDS_EE_CALC_MISMATCH = SOCTRENDS_EE }
+	set_variable = { SOCTRENDS_TP_CALC_MISMATCH = SOCTRENDS_TP }
+	set_variable = { SOCTRENDS_EA_CALC_MISMATCH = SOCTRENDS_EA }
+
+	#oh boy if statements
+
+	if = {
+		limit = {
+			THIS = {
+				has_government = socdem
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 50 } #it doesnt matter much for social democracy to be either way, so we'll do damage control
+		set_variable = { IDEAL_SOCTRENDS_DE = 80 } #should be the 2nd highest level, only anarchists should be more democratic
+		set_variable = { IDEAL_SOCTRENDS_EE = 80} #should be the 3rd highest, hardsoc and neosoc should be higher. maybe anarchist too?
+		set_variable = { IDEAL_SOCTRENDS_TP = 40 } #should lean more reformist than trad i think?
+		set_variable = { IDEAL_SOCTRENDS_EA = 60 } #green politics for the winrar
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = liberalism
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 60 } #I think a more liberal than socdem society would lean more decentralised
+		set_variable = { IDEAL_SOCTRENDS_DE = 65 } #slightly less.
+		set_variable = { IDEAL_SOCTRENDS_EE = 50 } #should be a normal level
+		set_variable = { IDEAL_SOCTRENDS_TP = 40 } #should lean more reformist than trad i think?
+		set_variable = { IDEAL_SOCTRENDS_EA = 50 } #not important
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = conservatism
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 55 } #Something inbetween might be best, since it can go either way really.
+		set_variable = { IDEAL_SOCTRENDS_DE = 60 } #sliiightly less
+		set_variable = { IDEAL_SOCTRENDS_EE = 40 } #should be slightly less egalitarian
+		set_variable = { IDEAL_SOCTRENDS_TP = 55 } #should lean more trad
+		set_variable = { IDEAL_SOCTRENDS_EA = 50 } #not important
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = autocracy
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 30 } #Autocracies are typically not decentralised
+		set_variable = { IDEAL_SOCTRENDS_DE = 25 } #Autocracies are typically not democratic
+		set_variable = { IDEAL_SOCTRENDS_EE = 25 } #Grey autocracies are typically not egalitarian
+		set_variable = { IDEAL_SOCTRENDS_TP = 60 } #should lean more trad
+		set_variable = { IDEAL_SOCTRENDS_EA = 50 } #not important
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = anarchism
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 95 } #Methinks anarchism should be 100, but 95 might be best to avoid any weird calculations
+		set_variable = { IDEAL_SOCTRENDS_DE = 95 } #not much to say here
+		set_variable = { IDEAL_SOCTRENDS_EE = 80 } #some anarchism isnt inherently egalitarian, so we'll be nice and do like 80
+		set_variable = { IDEAL_SOCTRENDS_TP = 10 } #libtard supreme
+		set_variable = { IDEAL_SOCTRENDS_EA = 80 } #muh modafugging planet is being nuked by the fuggin elites brah
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = technocracy
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 10 } #technocracies should be direct rule 
+		set_variable = { IDEAL_SOCTRENDS_DE = 15 } #Technocracy is anti-democratic, even moreso than autocracy since autocracies include anolib
+		set_variable = { IDEAL_SOCTRENDS_EE = 80 } #technocracy is pretty close to egalitarian autocracy so its fine
+		set_variable = { IDEAL_SOCTRENDS_TP = 20 } #slightly less libtard
+		set_variable = { IDEAL_SOCTRENDS_EA = 10 } #NUKE THE PLANET FUKUTONE
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = dissident_right
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 60 } #dissright is typically localist but not too much
+		set_variable = { IDEAL_SOCTRENDS_DE = 50 } #some democracy is OK
+		set_variable = { IDEAL_SOCTRENDS_EE = 20 } #fuck the poor? gross, dont do that! theyre smelly
+		set_variable = { IDEAL_SOCTRENDS_TP = 60 } #more chud than prog
+		set_variable = { IDEAL_SOCTRENDS_EA = 25 } #DRILL BABY DRILL
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = revolutionary_right
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 40 } #revright is typically a dictatorship but some localism can exist
+		set_variable = { IDEAL_SOCTRENDS_DE = 10 } #no durr-muh-crud-cy pls
+		set_variable = { IDEAL_SOCTRENDS_EE = 20 } #fuck the poor? gross, dont do that! theyre smelly
+		set_variable = { IDEAL_SOCTRENDS_TP = 80 } #WAY MORE chud than prog
+		set_variable = { IDEAL_SOCTRENDS_EA = 50 } #can go either way
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = hardline_socialism
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 1 } #direct rule from uh... havana
+		set_variable = { IDEAL_SOCTRENDS_DE = 10 } #no durr-muh-crud-cy pls
+		set_variable = { IDEAL_SOCTRENDS_EE = 100 } #fuck the poor, theyre sexy or something
+		set_variable = { IDEAL_SOCTRENDS_TP = 10 } #cultural rev
+		set_variable = { IDEAL_SOCTRENDS_EA = 10 } #pig iron is all i have to say...
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_government = reformist_socialism
+			}
+		}
+		set_variable = { IDEAL_SOCTRENDS_DC = 20 } #unitary
+		set_variable = { IDEAL_SOCTRENDS_DE = 25 } #some durr-muh-crud-cy is ok locally
+		set_variable = { IDEAL_SOCTRENDS_EE = 80 } #the poor are fine
+		set_variable = { IDEAL_SOCTRENDS_TP = 30 } #cultural reform
+		set_variable = { IDEAL_SOCTRENDS_EA = 10 } #aral sea
+	}
+	else = {} #i think we need this?
+	#mismatch = ABS( current_trend - ideal_value )
+	subtract_from_variable = { SOCTRENDS_DC_CALC_MISMATCH = IDEAL_SOCTRENDS_DC }
+	subtract_from_variable = { SOCTRENDS_DE_CALC_MISMATCH = IDEAL_SOCTRENDS_DE }
+	subtract_from_variable = { SOCTRENDS_EE_CALC_MISMATCH = IDEAL_SOCTRENDS_EE }
+	subtract_from_variable = { SOCTRENDS_TP_CALC_MISMATCH = IDEAL_SOCTRENDS_TP }
+	subtract_from_variable = { SOCTRENDS_EA_CALC_MISMATCH = IDEAL_SOCTRENDS_EA }
+	########now we make sure its not a gigantic number
+	divide_variable = { SOCTRENDS_DC_CALC_MISMATCH = 10 }
+	divide_variable = { SOCTRENDS_DE_CALC_MISMATCH = 10 }
+	divide_variable = { SOCTRENDS_EE_CALC_MISMATCH = 10 }
+	divide_variable = { SOCTRENDS_TP_CALC_MISMATCH = 10 }
+	divide_variable = { SOCTRENDS_EA_CALC_MISMATCH = 10 }
+	multiply_variable = { SOCTRENDS_DC_CALC_MISMATCH = 0.025 }
+	multiply_variable = { SOCTRENDS_DE_CALC_MISMATCH = 0.025 }
+	multiply_variable = { SOCTRENDS_EE_CALC_MISMATCH = 0.025 }
+	multiply_variable = { SOCTRENDS_TP_CALC_MISMATCH = 0.025 }
+	multiply_variable = { SOCTRENDS_EA_CALC_MISMATCH = 0.025 }
+	###now we pool together all the mismatches into modifiers
+	set_variable = { mismatch_stab = SOCTRENDS_DC_CALC_MISMATCH }
+	set_variable = { mismatch_stab = SOCTRENDS_DE_CALC_MISMATCH }
+	set_variable = { mismatch_stab = SOCTRENDS_EE_CALC_MISMATCH }
+	set_variable = { mismatch_stab = SOCTRENDS_TP_CALC_MISMATCH }
+	set_variable = { mismatch_stab = SOCTRENDS_EA_CALC_MISMATCH }
+	set_variable = { mismatch_surrlim = SOCTRENDS_DC_CALC_MISMATCH }
+	set_variable = { mismatch_surrlim = SOCTRENDS_EE_CALC_MISMATCH }
+	set_variable = { mismatch_surrlim = SOCTRENDS_TP_CALC_MISMATCH }
+	set_variable = { mismatch_ws = SOCTRENDS_DC_CALC_MISMATCH }
+	set_variable = { mismatch_ws = SOCTRENDS_DE_CALC_MISMATCH }
+	set_variable = { mismatch_ws = SOCTRENDS_EE_CALC_MISMATCH }
+	set_variable = { mismatch_ws = SOCTRENDS_TP_CALC_MISMATCH }
+	set_variable = { mismatch_pp_gain = SOCTRENDS_DC_CALC_MISMATCH }
+	set_variable = { mismatch_pp_gain = SOCTRENDS_DE_CALC_MISMATCH }
+	set_variable = { mismatch_gdp = SOCTRENDS_EE_CALC_MISMATCH }
+	set_variable = { mismatch_gdp = SOCTRENDS_TP_CALC_MISMATCH }
+	set_variable = { mismatch_gdp = SOCTRENDS_EA_CALC_MISMATCH }
+	set_variable = { mismatch_mpop = SOCTRENDS_EE_CALC_MISMATCH }
+	set_variable = { mismatch_mpop = SOCTRENDS_TP_CALC_MISMATCH }
+	set_variable = { mismatch_mpop = SOCTRENDS_EA_CALC_MISMATCH }
+	set_variable = { mismatch_constspeed = SOCTRENDS_DC_CALC_MISMATCH }
+	set_variable = { mismatch_constspeed = SOCTRENDS_TP_CALC_MISMATCH }
+	set_variable = { mismatch_constspeed = SOCTRENDS_EA_CALC_MISMATCH }
+}

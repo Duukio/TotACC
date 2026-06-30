@@ -1,0 +1,260 @@
+soundeffect = {
+
+	name = usachaos_super
+	#volume = 0.5
+	sounds = { sound = usachaos_super }
+}
+soundeffect = {
+
+	name = biafra_win_super
+	#volume = 0.5
+	sounds = { sound = biafra_win_super }
+}
+soundeffect = {
+
+	name = nigeria_win_super
+	#volume = 0.5
+	sounds = { sound = nigeria_win_super }
+}
+soundeffect = {
+
+	name = saf_cw_super
+	#volume = 0.5
+	sounds = { sound = saf_cw_super }
+}
+soundeffect = {
+
+	name = samson_super
+	#volume = 0.5
+	sounds = { sound = samson_super }
+}
+soundeffect = {
+
+	name = tcw_super
+	#volume = 0.5
+	sounds = { sound = tcw_super }
+}
+soundeffect = {
+
+	name = uae_super
+	#volume = 0.5
+	sounds = { sound = uae_super }
+}
+soundeffect = {
+
+	name = pgr_super
+	#volume = 0.5
+	sounds = { sound = pgr_super }
+}
+soundeffect = {
+
+	name = anticiv_super
+	#volume = 0.5
+	sounds = { sound = anticiv_super }
+}
+soundeffect = {
+
+	name = vaush
+	volume = 0.5
+	sounds = { sound = vaush }
+}
+soundeffect = {
+
+	name = avakian_super
+	#volume = 0.5
+	sounds = { sound = avakian_super }
+}	
+soundeffect = {
+
+	name = der_ewige_boomer_superevent
+	#volume = 0.5
+	sounds = { sound = der_ewige_boomer_superevent }
+}
+soundeffect = {
+
+	name = covington_super
+	#volume = 0.5
+	sounds = { sound = covington_super }
+}
+soundeffect = {
+
+	name = gillis
+	#volume = 0.5
+	sounds = { sound = gillis }
+}
+soundeffect = {
+
+	name = jorjani
+	#volume = 0.5
+	sounds = { sound = jorjani }
+	}
+soundeffect = {
+
+	name = logo_super
+	#volume = 0.5
+	sounds = { sound = logo_super }
+}
+soundeffect = {
+
+	name = lolbert_super
+	#volume = 0.5
+	sounds = { sound = lolbert_super }
+}
+soundeffect = {
+
+	name = neon_genesis_nyxvangelion
+	#volume = 0.5
+	sounds = { sound = neon_genesis_nyxvangelion }
+}
+soundeffect = {
+
+	name = maupin_super
+	#volume = 0.5
+	sounds = { sound = maupin_super }
+}
+soundeffect = {
+
+	name = NWA_super
+	#volume = 0.5
+	sounds = { sound = NWA_super }
+}
+soundeffect = {
+
+	name = nypd_super
+	#volume = 0.5
+	sounds = { sound = nypd_super }
+}
+soundeffect = {
+
+	name = obamaloca
+	#volume = 0.5
+	sounds = { sound = obamaloca }
+}
+soundeffect = {
+
+	name = pelosi_super
+	#volume = 0.5
+	sounds = { sound = pelosi_super }
+}
+soundeffect = {
+
+	name = scientology_unification_fireworks
+	#volume = 0.5
+	sounds = { sound = scientology_unification_fireworks }
+}
+soundeffect = {
+
+	name = spencer_goes_driving_super
+	#volume = 0.5
+	sounds = { sound = spencer_goes_driving_super }
+}
+soundeffect = {
+
+	name = srnicek_super
+	#volume = 0.5
+	sounds = { sound = srnicek_super }
+}
+soundeffect = {
+
+	name = ULTRALIGHTBEAM_pence_super
+	#volume = 0.5
+	sounds = { sound = ULTRALIGHTBEAM_pence_super }
+}
+soundeffect = {
+
+	name = yarvin_super
+	#volume = 0.5
+	sounds = { sound = yarvin_super }
+}
+soundeffect = {
+
+	name = peltier
+	#volume = 0.5
+	sounds = { sound = peltier }
+}
+soundeffect = {
+
+	name = arlo
+	#volume = 0.5
+	sounds = { sound = arlo }
+}
+soundeffect = {
+
+	name = fourthworld
+	#volume = 0.5
+	sounds = { sound = fourthworld }
+}
+soundeffect = {
+
+	name = naarp
+	#volume = 0.5
+	sounds = { sound = naarp }
+}
+soundeffect = {
+
+	name = nikkurando
+	#volume = 0.5
+	sounds = { sound = nikkurando }
+}
+soundeffect = {
+
+	name = alien_life
+	#volume = 0.5
+	sounds = { sound = alien_life }
+}
+soundeffect = {
+
+	name = mars
+	#volume = 0.5
+	sounds = { sound = mars }
+}
+soundeffect = {
+
+	name = mars_death
+	#volume = 0.5
+	sounds = { sound = mars_death }
+}
+soundeffect = {
+
+	name = mathews
+	#volume = 0.5
+	sounds = { sound = mathews }
+}
+soundeffect = {
+
+	name = johnson_se
+	#volume = 0.5
+	sounds = { sound = johnson_se }
+}
+soundeffect = {
+
+	name = mason_se
+	#volume = 0.5
+	sounds = { sound = mason_se }
+}
+soundeffect = {
+
+	name = ezrase
+	#volume = 0.5
+	sounds = { sound = ezrase }
+}
+soundeffect = {
+
+	name = opossumist
+	sounds = { sound = opossumist }
+}
+soundeffect = {
+
+	name = augustus
+	sounds = { sound = augustus }
+}
+soundeffect = {
+
+	name = dragula
+	sounds = { sound = dragula }
+}
+soundeffect = {
+
+	name = preston
+	sounds = { sound = preston }
+}

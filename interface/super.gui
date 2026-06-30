@@ -1,0 +1,292 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "Super_Event_Window"
+		size = { width = 896 height = 956 }
+		position = { x= 0 y= 0 }
+		Orientation = center
+		Origo = center
+		clipping = no	
+		moveable = yes
+
+		background = {
+			name = "Background"
+			spriteType =  "GFX_blank_background"
+		}
+
+		iconType = {
+			name ="Super_Event_Image_American_Chaos"
+			spriteType = "GFX_Super_American_Chaos"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name ="Super_Event_Image_Biafra_Wins"
+			spriteType = "GFX_Super_Biafra_Wins"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name ="Super_Event_Image_Samson"
+			spriteType = "GFX_Super_Event_Image_Samson"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_Nigeria_Wins"
+			spriteType = "GFX_Super_Nigeria_Wins"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_SAF_CW"
+			spriteType = "GFX_Super_SAF_CW"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_PGR_win"
+			spriteType = "GFX_Super_PGR_win"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_UAE_win"
+			spriteType = "GFX_Super_UAE_win"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_TCW"
+			spriteType = "GFX_Super_TCW"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_mason"
+			spriteType = "GFX_Super_mason"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_johnson"
+			spriteType = "GFX_Super_johnson"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_mathews"
+			spriteType = "GFX_Super_mathews"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_anticiv"
+			spriteType = "GFX_Super_anticiv"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_avakian"
+			spriteType = "GFX_Super_avakian"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_big_spence"
+			spriteType = "GFX_Super_big_spence"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_covington"
+			spriteType = "GFX_Super_covington"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_fsa"
+			spriteType = "GFX_Super_fsa"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_gillis"
+			spriteType = "GFX_Super_gillis"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_Jorjani"
+			spriteType = "GFX_Super_Jorjani"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_logo_daedalus"
+			spriteType = "GFX_Super_logo_daedalus"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_Maupin"
+			spriteType = "GFX_Super_Maupin"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_miscavige"
+			spriteType = "GFX_Super_miscavige"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_NWA"
+			spriteType = "GFX_Super_NWA"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_nypd"
+			spriteType = "GFX_Super_nypd"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_nyx"
+			spriteType = "GFX_Super_nyx"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_obamna"
+			spriteType = "GFX_Super_obamna"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_pelosi"
+			spriteType = "GFX_Super_pelosi"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_pence"
+			spriteType = "GFX_Super_pence"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_srnicek"
+			spriteType = "GFX_Super_srnicek"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_threepercenter"
+			spriteType = "GFX_Super_threepercenter"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_Yarvin"
+			spriteType = "GFX_Super_Yarvin"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}	
+		iconType = {
+			name ="Super_Event_Image_opossum"
+			spriteType = "GFX_Super_opossum"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_NWA"
+			spriteType = "GFX_Super_NWA"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_peltier"
+			spriteType = "GFX_Super_peltier"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_vaush"
+			spriteType = "GFX_Super_vaush"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_hoafascism"
+			spriteType = "GFX_Super_hoafascism"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_naarp"
+			spriteType = "GFX_Super_naarp"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_arlo"
+			spriteType = "GFX_Super_arlo"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_cardinal"
+			spriteType = "GFX_Super_cardinal"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_mars"
+			spriteType = "GFX_Super_mars"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_mars_death"
+			spriteType = "GFX_Super_mars_death"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_alien_life"
+			spriteType = "GFX_Super_alien_life"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_augustus"
+			spriteType = "GFX_Super_augustus"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_preston"
+			spriteType = "GFX_Super_preston"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="Super_Event_Image_sharkey"
+			spriteType = "GFX_Super_sharkey"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+            name = "Super_Event_Close"
+            position = { x = 773 y = 10 }
+            quadTextureSprite ="GFX_closebutton_super"
+            clicksound = click_scroll
+			shortcut = ESCAPE
+        }
+	}
+}

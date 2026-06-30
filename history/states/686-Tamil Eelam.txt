@@ -1,0 +1,40 @@
+state={
+id=686
+	
+	name="STATE_686"
+
+	manpower = 4369919
+	
+	state_category = city
+
+	resources={
+		rubber=200
+	}
+
+	history={
+		add_core_of = SRL
+		add_core_of = TML
+		owner = TML
+		victory_points = {
+			10201 20
+		}
+		buildings = {
+            school = 2
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			dockyard = 2
+			air_base = 3
+			10201 = {
+				naval_base = 5
+			}
+		}
+
+	}
+	
+	provinces={
+7344 10201 10229
+	}
+
+	local_supplies=0.0 
+}

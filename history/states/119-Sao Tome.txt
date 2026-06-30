@@ -1,0 +1,25 @@
+state={
+id=119
+	name="STATE_119"
+    buildings_max_level_factor = 1
+	state_category = town
+	
+	history={
+		victory_points = { 13015 5 }
+		owner = CAM
+		buildings = {
+            school = 2
+			infrastructure = 3
+
+		}
+		add_core_of = CAM
+		add_core_of = STF
+
+	}
+	provinces={
+		13015 
+	}
+	manpower=211028
+	buildings_max_level_factor=2.000
+	local_supplies=0.000
+}

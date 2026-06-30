@@ -1,0 +1,37 @@
+
+state={
+	id=301
+	name="STATE_301"
+	resources={
+		oil=200.000
+		steel=10.000
+	}
+
+	history={
+		victory_points = {
+			12806 20 
+		}
+		victory_points = {
+			7925 15 
+		}
+		owner = SUD
+		buildings = {
+			infrastructure = 3
+			#dockyard = 5
+			arms_factory = 2
+			industrial_complex = 6
+			school = 2
+
+		}
+		add_core_of = SUD
+
+	}
+
+	provinces={
+		1914 2016 2088 4918 4961 7925 8084 10743 10784 10795 10827 10851 12806 12826 12862 12881 12887 
+	}
+	manpower=24000000
+	buildings_max_level_factor=2.000
+	state_category=city
+	local_supplies=0.000
+}

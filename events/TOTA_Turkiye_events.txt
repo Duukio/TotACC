@@ -1,0 +1,32 @@
+add_namespace = TUR
+
+country_event = {
+    id = TUR.2 # flavor for albania
+    title = TUR.2.t
+    desc = TUR.2.desc
+    picture = GFX_report_event_bigcomphoxhai
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = TUR.2.a
+      TUR = {
+            add_country_leader_role = {
+                character = TUR_orsan_senalp
+                promote_leader = yes
+                country_leader = {
+                    ideology = l_acc
+                    expire = "2032.1.1.1"
+                }
+            }
+            add_country_leader_role = {
+                character = TUR_dogu_princek
+                promote_leader = yes
+                country_leader = {
+                    ideology = lwnat
+                    expire = "2032.1.1.1"
+                }
+            }
+      }
+	}
+}

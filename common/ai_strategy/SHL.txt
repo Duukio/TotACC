@@ -1,0 +1,18 @@
+SHL_war_is_coming = {
+    allowed = {
+        original_tag = SHL
+    }
+    enable = {
+        SHL = {
+            NOT = {
+                 has_war_with = LEB
+            }
+        }
+    }
+    ai_strategy = {
+            type = prepare_for_war
+            id = SYR
+            value = 100
+        }
+    }
+}
