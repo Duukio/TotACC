@@ -1,0 +1,303 @@
+OBM_unify_wargoals = {
+	# Guerra contra el Clyburniate (Georgia / Deep South)
+	OBM_take_georgia = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = BSD
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = BSD
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra el gobierno de Pelosi / remanentes federales
+	OBM_reclaim_washington_pelosi = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			OR = {
+				country_exists = USA
+				country_exists = GPR
+				country_exists = OBC
+			}
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = { country_exists = USA }
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = GPR }
+				declare_war_on = {
+					target = GPR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = OBC }
+				declare_war_on = {
+					target = OBC
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra la Junta Conservadora / Pence
+	OBM_destroy_rightwing_nutjobs = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			OR = {
+				country_exists = USP
+				country_exists = TPR
+				country_exists = DIX
+			}
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = { country_exists = USP }
+				declare_war_on = {
+					target = USP
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = TPR }
+				declare_war_on = {
+					target = TPR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = DIX }
+				declare_war_on = {
+					target = DIX
+					type = annex_everything
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra Nueva York / Policía y Wall Street
+	OBM_take_manhattan = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = NYP
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = NYP
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra las facciones rojas radicales (Red America / Jersey)
+	OBM_take_red_america = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = RAS
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = RAS
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra California / Tahoe
+	OBM_take_california = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = CAL
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = CAL
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra Free States of America (Phoenix)
+	OBM_take_FSA = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = FSA
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = FSA
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra Northwest Front
+	OBM_take_northwest_front = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = NWF
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = NWF
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra Antifa / Cascadia
+	OBM_take_antifa = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = ATI
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = ATI
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	# Guerra contra Lakota
+	OBM_take_lakota = {
+		cost = 15
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+			country_exists = LKT
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			declare_war_on = {
+				target = LKT
+				type = annex_everything
+			}
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

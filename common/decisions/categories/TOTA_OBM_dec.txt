@@ -1,0 +1,41 @@
+OBM_unify_america = {
+		visible = {
+			tag = OBM
+			has_country_leader = {
+				name = "Barack Obama"
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_war = no
+			OR = {
+				OBM = {
+					all_of_scopes = {
+						array = global.USASTATES
+						is_owned_by = OBM
+					}
+				}
+				AND = {
+					534 = { is_owned_by = OBM }
+					568 = { is_owned_by = OBM }
+					726 = { is_owned_by = OBM }
+					1158 = { is_owned_by = OBM }
+					548 = { is_owned_by = OBM }
+					776 = { is_owned_by = OBM }
+					780 = { is_owned_by = OBM }
+				}
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = { id = WNE.99 }
+			}
+			OBM = {
+				set_cosmetic_tag = USA
+			}
+			choose_capital_USUNIFIER = yes
+		}
+	}

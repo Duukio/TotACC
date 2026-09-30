@@ -1,0 +1,183 @@
+
+music_station = "TOTA_hypnotheque"
+
+music = {
+    song = "Acapulco_Sunset"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "akaiwa_eighty_five"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "back_again"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "beverly_plaza"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "coffee_break"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "conditions"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "consumer"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "desktop"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "digital_water"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "elevation"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "escalator_place"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "headlights_on_the_shore"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "immersion"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "interactive_guide"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "island_sunrise"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "level_two"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "level_zero"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "online_office_420"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "paseo_a_la_orilla_del_oceano"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "relief"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "sky_plaza"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "sport_section"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "STARDUST"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "sunday_shopping"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "swak"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "through_the_endless_inertia"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "traveling_guide"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "varuhuset_an"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "wav"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "welcome_jap"
+    chance = {
+        factor = 1
+    }
+}

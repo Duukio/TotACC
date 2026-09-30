@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USA_military
+    country = {
+        factor = 0
+        modifier = {
+            add = 26
+            tag = USA
+        }
+    }
+    shared_focus = USA_military_matters
+}

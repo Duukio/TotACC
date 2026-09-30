@@ -1,0 +1,189 @@
+capital = 13698
+
+TOTA_startup_funny_business_ignore_this = yes
+starting_econ_modifier_vars = yes
+
+#starting tech
+#recruit_character = Mastercomputer_90_Character #trust me
+recruit_character = USK_case_andrews_cunningham
+recruit_character = USA_brian_kile
+recruit_character = USA_torrence_saxe
+
+set_research_slots = 2
+set_technology = {
+	tech_support = 3		
+	tech_engineers = 3
+	tech_special_forces= 3
+	infantry_weapons = 3
+	infantry_weapons1 = 3
+	support_weapons = 3
+	tech_trucks = 3
+	MSPcamo = 3
+	recon_drone = 3
+}
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		early_submarine = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+set_technology = {
+	infantry_weapons = 3
+	gw_artillery = 3
+interwar_artillery = 3
+
+	early_fighter = 1
+}
+set_technology = {
+				    tech_support = 1
+					transport = 1
+					early_destroyer = 1
+					early_light_cruiser = 1
+					landing_craft = 1
+
+	gw_artillery = 1
+interwar_artillery = 1
+
+
+add_ideas = {
+}
+set_variable = {
+var = SOCTRENDS_DC
+value = 60
+}
+set_variable = {
+var = SOCTRENDS_DE
+value = 80
+}
+set_variable = {
+var = SOCTRENDS_EE
+value = 25
+}
+set_variable = {
+var = SOCTRENDS_TP
+value = 70
+}
+set_variable = {
+var = SOCTRENDS_EA
+value = 30
+}
+tota_variable_clamping = yes
+set_convoys = 10
+
+set_popularities = {
+        anarchism = 0
+        conservatism = 0
+        
+        
+        
+        
+        revolutionary_right = 5
+        
+        dissident_right = 0
+        liberalism = 5
+        hardline_socialism = 10
+        
+        autocracy = 35
+        
+        
+        reformist_socialism = 35 
+        socdem = 10
+        technocracy = 0
+
+}
+
+set_politics = {
+	
+	ruling_party = reformist_socialism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Mikhail Teplinsky"
+	desc = ""
+	picture = "gfx/leaders/SVA/Mikhail-Teplinsky-TOTA.png"
+	expire = "2040.1.1"
+	ideology = sovmarsys
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Valery Gerasimov"
+	desc = ""
+	picture = "gfx/leaders/SVA/Valery-Gerasimov-TOTA.png"
+	expire = "2040.1.1"
+	ideology = milgov
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Mikhail Teplinsky"
+	desc = ""
+	picture = "gfx/leaders/SVA/Mikhail-Teplinsky-TOTA.png"
+	expire = "2040.1.1"
+	ideology = natcom
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Valery Gerasimov"
+	desc = ""
+	picture = "gfx/leaders/SVA/Valery-Gerasimov-TOTA.png"
+	expire = "2040.1.1"
+	ideology = natthirdpos
+	traits = {
+	}
+}

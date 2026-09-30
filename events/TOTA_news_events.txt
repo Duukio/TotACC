@@ -3098,7 +3098,7 @@ news_event = {
 #### Beginning Of Soviet Expanded Content ####
 
 news_event = {
-    id = WNE.180 #SOV: Oleg Komolov
+    id =   #SOV: Oleg Komolov
     title = WNE.180.t
     desc = WNE.180.desc
     picture = GFX_report_event_komolov
@@ -3594,95 +3594,35 @@ news_event = {
       name = WNE.212.a
    }
 }
-#################################################################################
-##   .::::       .::::          .::        .::.::::::::  .:: ::  .::: .::::::.::##
-## .:    .::   .::    .::       .::        .::.::      .::    .::     .::    .::##
-##.::        .::        .::     .::   .:   .::.::       .::           .::    .::##
-##.::        .::        .::     .::  .::   .::.::::::     .::         .::    .: ##
-##.::   .::::.::        .::     .:: .: .:: .::.::            .::      .::    .: ##
-## .::    .:   .::     .::      .: .:    .::::.::      .::    .::     .::       ##
-##  .:::::       .::::          .::        .::.::::::::  .:: ::       .::    .::##
-#################################################################################
-## #     #       #    ##########        #     ######   #    ### 
- #   #  #       #             # ##########            #    ### 
-# # #          #        #    #        ##   ########## ##   ### 
-   #          #          # ##       ## #        #     # #   #  
-  # #       ##           ##       ##   #        #     #  #     
- #   #    ##           ##  #    ##    ##       #      #    ### 
-      # ##           ##     #          #     ##       #    ### 
-                                                               
+
+### TOTER PLUS ###
+
 news_event = {
-    id = WNE.213 # Barry Soetoro Hussein wins
-    title = WNE.213.t
-    desc = WNE.213.desc
-    picture = GFX_report_event_barack
+    id = WNE.612 #newsom election
+    title = WNE.612.t
+    desc = WNE.612.desc
+    picture = GFX_report_event_NEWSOMSWEEP
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
     set_country_flag = event_open
-    }
+    } 
 
     option = {
       clr_country_flag = event_open
-      name = WNE.213.a
-   }
-}
-news_event = {
-    id = WNE.214 # Barry Soetoro Hussein loses
-    title = WNE.214.t
-    desc = WNE.214.desc
-    picture = GFX_report_event_ObungaFAILZ
-    is_triggered_only = yes
-    fire_only_once = yes
-    immediate = {
-    set_country_flag = event_open
-    }
-
-    option = {
-      clr_country_flag = event_open
-      name = WNE.214.a
-   }
-}
-news_event = {
-    id = WNE.215 # sharkey
-    title = WNE.215.t
-    desc = WNE.215.desc
-    picture = GFX_report_event_impaler
-    is_triggered_only = yes
-    fire_only_once = yes
-    immediate = {
-    set_country_flag = event_open
-    }
-
-    option = {
-        trigger = { THIS = { has_global_flag = superevents_ok} }
-        set_variable = {
-          var = global.current_superevent
-          value = 45
-        }
-        set_global_flag = Super_Event_Visible
-		hidden_effect = {
-			sound_effect = "dragula"
-		}
-      clr_country_flag = event_open
-      name = WNE.215.a
-	}
-    option = {
-        trigger = { THIS = { has_global_flag = shut_up_superevents } }
-      clr_country_flag = event_open
-      name = WNE.215.a
+      name = WNE.612.a
 	}
 }
 news_event = {
-    id = WNE.216 # ASI
-    title = WNE.216.t
-    desc = WNE.216.desc
-    picture = GFX_report_event_RICE_COOKER_GRIFTER
+    id = WNE.613 #scott election
+    title = WNE.613.t
+    desc = WNE.613.desc
+    picture = GFX_trickyscott
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
     set_country_flag = event_open
-    }
+    } 
 
     option = {
         trigger = { THIS = { has_global_flag = superevents_ok} }
@@ -3692,52 +3632,38 @@ news_event = {
         }
         set_global_flag = Super_Event_Visible
 		hidden_effect = {
-			sound_effect = "augustus"
+			sound_effect = "phil_scott"
 		}
       clr_country_flag = event_open
-      name = WNE.216.a
+      name = WNE.613.a
 	}
     option = {
         trigger = { THIS = { has_global_flag = shut_up_superevents } }
       clr_country_flag = event_open
-      name = WNE.216.a
+      name = WNE.613.a
 	}
 }
 news_event = {
-    id = WNE.217 # preston
-    title = WNE.217.t
-    desc = WNE.217.desc
-    picture = GFX_report_event_freetribes
+    id = WNE.614 #jones election
+    title = WNE.614.t
+    desc = WNE.614.desc
+    picture = GFX_report_event_ockywayahhpresident
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
     set_country_flag = event_open
-    }
+    } 
 
     option = {
-        trigger = { THIS = { has_global_flag = superevents_ok} }
-        set_variable = {
-          var = global.current_superevent
-          value = 44
-        }
-        set_global_flag = Super_Event_Visible
-		hidden_effect = {
-			sound_effect = "preston"
-		}
       clr_country_flag = event_open
-      name = WNE.217.a
-	}
-    option = {
-        trigger = { THIS = { has_global_flag = shut_up_superevents } }
-      clr_country_flag = event_open
-      name = WNE.217.a
+      name = WNE.614.a
 	}
 }
 news_event = {
-    id = WNE.218 # Michaux
-    title = WNE.218.t
-    desc = WNE.218.desc
-    picture = GFX_report_event_michaux
+    id = WNE.615
+    title = WNE.615.t
+    desc = WNE.615.desc
+    picture = GFX_report_event_ockywayahhpresident
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
@@ -3746,14 +3672,14 @@ news_event = {
 
     option = {
       clr_country_flag = event_open
-      name = WNE.218.a
-   }
+      name = WNE.615.a
+	}
 }
 news_event = {
-    id = WNE.219 # pelosi sworn in
-    title = WNE.219.t
-    desc = WNE.219.desc
-    picture = GFX_report_event_pelosi_sworn_in
+    id = WNE.616 #pelosirisestopower
+    title = WNE.616.t
+    desc = WNE.616.desc
+    picture = GFX_report_event_ockywayahhpresident
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
@@ -3762,14 +3688,14 @@ news_event = {
 
     option = {
       clr_country_flag = event_open
-      name = WNE.219.a
-   }
+      name = WNE.616.a
+	}
 }
 news_event = {
-    id = WNE.220 # pence revolts
-    title = WNE.220.t
-    desc = WNE.220.desc
-    picture = GFX_report_event_pence
+    id = WNE.617 
+    title = WNE.617.t
+    desc = WNE.617.desc
+    picture = ADK_pence1
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
@@ -3778,62 +3704,14 @@ news_event = {
 
     option = {
       clr_country_flag = event_open
-      name = WNE.220.a
-   }
-}
-#news_event = {
-#    id = WNE.221 # Heraklion Communists
-#    title = WNE.221.t
-#    desc = WNE.221.desc
-#    picture = GFX_report_event_elenikos
-#    is_triggered_only = yes
-#    fire_only_once = yes
-#    immediate = {
-#    set_country_flag = event_open
-#    }
-#
-#    option = {
-#      clr_country_flag = event_open
-#      name = WNE.221.a
-#   }
-#}
-#news_event = {
-#    id = WNE.222 # BAP Rising
-#    title = WNE.222.t
-#    desc = WNE.222.desc
-#    picture = GFX_report_event_BAP_rising
-#    is_triggered_only = yes
-#    fire_only_once = yes
-#    immediate = {
-#    set_country_flag = event_open
-#    }
-#
-#    option = {
-#      clr_country_flag = event_open
-#      name = WNE.222.a
-#   }
-#} #deprecated
-news_event = {
-    id = WNE.223 # Death of Tus
-    title = WNE.223.t
-    desc = WNE.223.desc
-    picture = GFX_report_event_anton
-    is_triggered_only = yes
-    fire_only_once = yes
-    immediate = {
-    set_country_flag = event_open
-    }
-
-    option = {
-      clr_country_flag = event_open
-      name = WNE.223.a
-   }
+      name = WNE.617.a
+	}
 }
 news_event = {
-    id = WNE.224 # Death of Yugoslavia
-    title = WNE.224.t
-    desc = WNE.224.desc
-    picture = GFX_report_event_yugcw
+    id = WNE.618 #Scandal
+    title = WNE.618.t
+    desc = WNE.618.desc
+    picture = ADK_scandal2
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
@@ -3842,14 +3720,14 @@ news_event = {
 
     option = {
       clr_country_flag = event_open
-      name = WNE.224.a
-   }
+      name = WNE.618.a
+	}
 }
 news_event = {
-    id = WNE.227
-    title = WNE.227.t
-    desc = WNE.227.desc
-    picture = gfx\interface\event_pictures\BLACK_LENIN.dds
+    id = WNE.619 #Alaska War
+    title = WNE.619.t
+    desc = WNE.619.desc
+    picture = ADK_AlaskaInvasion
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
@@ -3858,16 +3736,14 @@ news_event = {
 
     option = {
       clr_country_flag = event_open
-      name = WNE.227.a
-   }
+      name = WNE.619.a
+	}
 }
-
-
-   news_event = {
-    id = WNE.228
-    title = WNE.228.t
-    desc = WNE.228.desc
-    picture = gfx\interface\event_pictures\isr_intervention_in_lebanon.dds
+news_event = {
+    id = WNE.620 #Hawaii War
+    title = WNE.620.t
+    desc = WNE.620.desc
+    picture = ADK_HawaiiInvasion
     is_triggered_only = yes
     fire_only_once = yes
     immediate = {
@@ -3876,6 +3752,70 @@ news_event = {
 
     option = {
       clr_country_flag = event_open
-      name = WNE.228
-   }
+      name = WNE.620.a
+	}
+}
+news_event = {
+    id = WNE.621 #Alaska Victory
+    title = WNE.621.t
+    desc = WNE.621.desc
+    picture = ADK_USAlaskaVictory
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.621.a
+	}
+}
+news_event = {
+    id = WNE.622 #Hawaii Victory
+    title = WNE.622.t
+    desc = WNE.622.desc
+    picture = ADK_HawaiiVictory
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.622.a
+	}
+}
+news_event = {
+    id = WNE.623 #Congress Reconvene
+    title = WNE.623.t
+    desc = WNE.623.desc
+    picture = ADK_CongressReconvened
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.623.a
+	}
+}
+news_event = {
+    id = WNE.624 #Invade Alaska Diplomacy
+    title = WNE.624.t
+    desc = WNE.624.desc
+    picture = ADK_AlaskaInvasion
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+    set_country_flag = event_open
+    }
+
+    option = {
+      clr_country_flag = event_open
+      name = WNE.624.a
+	}
 }

@@ -1,0 +1,111 @@
+
+music_station = "TOTA_fffr"
+
+music = {
+    song = "Wanderin'"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ain't Got No Use"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "For an Old Kentucky Anarchist"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Fuck Shit Up!"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Witches"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Carry On"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Lonesome Pain"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Creatures In My Forest Blues"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Solidarity Forever"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "PETA Made Me Put Down My Pet Raccoon"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Dirty Kidd Ragg"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Reason to Believe"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "I'm Not A Good Person"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "We don't get tired, we get even"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "No Future (Road Song)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "New Mexico Song"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Make Total Destroy"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Up The Provos"
+    chance = {
+        factor = 1
+    }
+}

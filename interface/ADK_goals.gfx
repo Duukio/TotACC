@@ -1,0 +1,398 @@
+spriteTypes = {
+	SpriteType = { 
+		name = "ADK_end_of_the_world_as_we_know_it"
+		texturefile = "gfx/interface/goals/USA/ADK_end_of_the_world_as_we_know_it.dds"
+	}
+	SpriteType = { 
+		name = "ADK_andIfeelfine"
+		texturefile = "gfx/interface/goals/USA/ADK_andIfeelfine.dds"
+	}
+	SpriteType = { 
+		name = "ADK_1A_Victory"
+		texturefile = "gfx/interface/goals/USA/ADK_1A_Victory.png"
+	}
+	SpriteType = { 
+		name = "ADK_bosnians_pelosi"
+		texturefile = "gfx/interface/goals/USA/ADK_bosnians_pelosi.png"
+	}
+	SpriteType = { 
+		name = "ADK_callupguard"
+		texturefile = "gfx/interface/goals/USA/ADK_callupguard.dds"
+	}
+	SpriteType = { 
+		name = "ADK_CCTV"
+		texturefile = "gfx/interface/goals/USA/ADK_CCTV.png"
+	}
+	SpriteType = { 
+		name = "ADK_discredit_the_spvoets"
+		texturefile = "gfx/interface/goals/USA/ADK_discredit_the_spvoets.png"
+	}
+	SpriteType = { 
+		name = "ADK_emergency_police"
+		texturefile = "gfx/interface/goals/USA/ADK_emergency_police.png"
+	}
+	SpriteType = { 
+		name = "ADK_enlist_RINOs"
+		texturefile = "gfx/interface/goals/USA/ADK_enlist_RINOs.png"
+	}
+	SpriteType = { 
+		name = "ADK_fight_for_the_free"
+		texturefile = "gfx/interface/goals/USA/ADK_fight_for_the_free.png"
+	}
+	SpriteType = { 
+		name = "ADK_freestates"
+		texturefile = "gfx/interface/goals/USA/ADK_freestates.png"
+	}
+	SpriteType = { 
+		name = "ADK_gambit"
+		texturefile = "gfx/interface/goals/USA/ADK_gambit.dds"
+	}
+	SpriteType = { 
+		name = "ADK_itsjohnsonfirst"
+		texturefile = "gfx/interface/goals/USA/ADK_itsjohnsonfirst.dds"
+	}
+	SpriteType = { 
+		name = "ADK_mobilization"
+		texturefile = "gfx/interface/goals/USA/ADK_mobilization.dds"
+	}
+	SpriteType = { 
+		name = "ADK_mountain_combat"
+		texturefile = "gfx/interface/goals/USA/ADK_mountain_combat.dds"
+	}
+	SpriteType = { 
+		name = "ADK_thebear"
+		texturefile = "gfx/interface/goals/USA/ADK_thebear.png"
+	}
+	SpriteType = { 
+		name = "ADK_protect_the_protesters"
+		texturefile = "gfx/interface/goals/USA/ADK_protect_the_protesters.dds"
+	}
+	SpriteType = { 
+		name = "ADK_pump_propaganda"
+		texturefile = "gfx/interface/goals/USA/ADK_pump_propaganda.dds"
+	}
+	SpriteType = { 
+		name = "ADK_lakotah"
+		texturefile = "gfx/interface/goals/USA/ADK_lakotah.dds"
+	}
+	SpriteType = { 
+		name = "ADK_gear_industry"
+		texturefile = "gfx/interface/goals/USA/ADK_gear_industry.dds"
+	}
+	SpriteType = { 
+		name = "ADK_question_their_motives"
+		texturefile = "gfx/interface/goals/USA/ADK_question_their_motives.dds"
+	}
+	SpriteType = { 
+		name = "ADK_end_of_the_world"
+		texturefile = "gfx/interface/goals/USA/ADK_end_of_the_world.dds"
+	}
+	SpriteType = { 
+		name = "ADK_cyutr"
+		texturefile = "gfx/interface/goals/USA/ADK_cyutr.dds"
+	}
+	SpriteType = { 
+		name = "ADK_eagk"
+		texturefile = "gfx/interface/goals/USA/ADK_eagk.dds"
+	}
+	SpriteType = { 
+		name = "ADK_calling_national_guard"
+		texturefile = "gfx/interface/goals/USA/ADK_calling_national_guard.dds"
+	}
+	SpriteType = { 
+		name = "ADK_bluncer"
+		texturefile = "gfx/interface/goals/USA/ADK_bluncer.dds"
+	}
+	SpriteType = { 
+		name = "ADK_liberty"
+		texturefile = "gfx/interface/goals/USA/ADK_liberty.dds"
+	}
+	SpriteType = { 
+		name = "ADK_moonlightofthe"
+		texturefile = "gfx/interface/goals/USA/ADK_moonlightofthe.dds"
+	}
+	SpriteType = { 
+		name = "ADK_New_york_burns"
+		texturefile = "gfx/interface/goals/USA/ADK_New_york_burns.dds"
+	}
+	SpriteType = { 
+		name = "ADK_no_guns"
+		texturefile = "gfx/interface/goals/USA/ADK_no_guns.dds"
+	}
+	SpriteType = { 
+		name = "ADK_law_and_order"
+		texturefile = "gfx/interface/goals/USA/ADK_law_and_order.dds"
+	}
+	SpriteType = { 
+		name = "ADK_exhumingmccarthty"
+		texturefile = "gfx/interface/goals/USA/ADK_exhumingmccarthty.dds"
+	}
+	SpriteType = { 
+		name = "ADK_eyes_everywhere"
+		texturefile = "gfx/interface/goals/USA/ADK_eyes_everywhere.dds"
+	}
+	SpriteType = { 
+		name = "ADK_war_of_survival"
+		texturefile = "gfx/interface/goals/USA/ADK_war_of_survival.dds"
+	}
+	SpriteType = { 
+		name = "ADK_cooled_militia"
+		texturefile = "gfx/interface/goals/USA/ADK_cooled_militia.dds"
+	}
+	SpriteType = { 
+		name = "ADK_SPEAKER_SUPREME"
+		texturefile = "gfx/interface/goals/USA/ADK_SPEAKER_SUPREME.dds"
+	}
+	SpriteType = { 
+		name = "ADK_onfreespeech"
+		texturefile = "gfx/interface/goals/USA/ADK_onfreespeech.dds"
+	}
+	SpriteType = { 
+		name = "ADK_question_governance"
+		texturefile = "gfx/interface/goals/USA/ADK_question_governance.dds"
+	}
+	SpriteType = { 
+		name = "ADK_more_temp_powers"
+		texturefile = "gfx/interface/goals/USA/ADK_more_temp_powers.dds"
+	}
+	SpriteType = { 
+		name = "ADK_congress_gamble"
+		texturefile = "gfx/interface/goals/USA/ADK_congress_gamble.dds"
+	}
+	SpriteType = { 
+		name = "ADK_ourbenefactors"
+		texturefile = "gfx/interface/goals/USA/ADK_ourbenefactors.dds"
+	}
+	SpriteType = { 
+		name = "ADK_dejavu_south"
+		texturefile = "gfx/interface/goals/USA/ADK_dejavu_south.dds"
+	}
+	SpriteType = { 
+		name = "ADK_reconvene_congress"
+		texturefile = "gfx/interface/goals/USA/ADK_reconvene_congress.dds"
+	}
+	SpriteType = { 
+		name = "ADK_a_nod_to_freedom"
+		texturefile = "gfx/interface/goals/USA/ADK_a_nod_to_freedom.dds"
+	}
+	SpriteType = { 
+		name = "ADK_suppressing_dissident"
+		texturefile = "gfx/interface/goals/USA/ADK_suppressing_dissident.dds"
+	}
+	SpriteType = { 
+		name = "ADK_courting_the_french"
+		texturefile = "gfx/interface/goals/USA/ADK_courting_the_french.dds"
+	}
+	SpriteType = { 
+		name = "ADK_1A_UPHELD"
+		texturefile = "gfx/interface/goals/USA/ADK_1A_UPHELD.dds"
+	}
+	SpriteType = { 
+		name = "ADK_FBI_media_division"
+		texturefile = "gfx/interface/goals/USA/ADK_FBI_media_division.dds"
+	}
+	SpriteType = { 
+		name = "ADK_legpower"
+		texturefile = "gfx/interface/goals/USA/ADK_legpower.dds"
+	}
+	SpriteType = { 
+		name = "ADK_phoning_moscow"
+		texturefile = "gfx/interface/goals/USA/ADK_phoning_moscow.dds"
+	}
+	SpriteType = { 
+		name = "ADK_support_the_police"
+		texturefile = "gfx/interface/goals/USA/ADK_support_the_police.dds"
+	}
+	SpriteType = { 
+		name = "ADK_fema_power"
+		texturefile = "gfx/interface/goals/USA/ADK_fema_power.dds"
+	}
+	SpriteType = { 
+		name = "ADK_all_hands_on_deck"
+		texturefile = "gfx/interface/goals/USA/ADK_all_hands_on_deck.dds"
+	}
+	SpriteType = { 
+		name = "ADK_free_tvs"
+		texturefile = "gfx/interface/goals/USA/ADK_free_tvs.dds"
+	}
+	SpriteType = { 
+		name = "ADK_the_speaker_speaks"
+		texturefile = "gfx/interface/goals/USA/ADK_the_speaker_speaks.dds"
+	}
+	SpriteType = { 
+		name = "ADK_cutting_ties"
+		texturefile = "gfx/interface/goals/USA/ADK_cutting_ties.dds"
+	}
+	SpriteType = { 
+		name = "ADK_protecting_borders"
+		texturefile = "gfx/interface/goals/USA/ADK_protecting_borders.dds"
+	}
+	SpriteType = { 
+		name = "ADK_united_opposition"
+		texturefile = "gfx/interface/goals/USA/ADK_united_opposition.dds"
+	}
+	SpriteType = { 
+		name = "ADK_ousted_militias"
+		texturefile = "gfx/interface/goals/USA/ADK_ousted_militias.dds"
+	}
+	SpriteType = { 
+		name = "ADK_mobilize_the_ranks"
+		texturefile = "gfx/interface/goals/USA/ADK_mobilize_the_ranks.dds"
+	}
+	SpriteType = { 
+		name = "ADK_pitch_in"
+		texturefile = "gfx/interface/goals/USA/ADK_pitch_in.dds"
+	}
+	SpriteType = { 
+		name = "ADK_rinoss"
+		texturefile = "gfx/interface/goals/USA/ADK_rinoss.dds"
+	}
+	SpriteType = { 
+		name = "ADK_protesters"
+		texturefile = "gfx/interface/goals/USA/ADK_protesters.dds"
+	}
+	SpriteType = { 
+		name = "ADK_support_militias"
+		texturefile = "gfx/interface/goals/USA/ADK_support_militias.dds"
+	}
+	SpriteType = { 
+		name = "ADK_pissem_off"
+		texturefile = "gfx/interface/goals/USA/ADK_pissem_off.dds"
+	}
+	SpriteType = { 
+		name = "ADK_rollback_emergency"
+		texturefile = "gfx/interface/goals/USA/ADK_rollback_emergency.dds"
+	}
+	SpriteType = { 
+		name = "ADK_incidents"
+		texturefile = "gfx/interface/goals/USA/ADK_incidents.dds"
+	}
+	SpriteType = { 
+		name = "ADK_discredit_soviets"
+		texturefile = "gfx/interface/goals/USA/ADK_discredit_soviets.dds"
+	}
+	SpriteType = { 
+		name = "ADK_lakotah_problem"
+		texturefile = "gfx/interface/goals/USA/ADK_lakotah_problem.dds"
+	}
+	SpriteType = { 
+		name = "ADK_breaching_northwest"
+		texturefile = "gfx/interface/goals/USA/ADK_breaching_northwest.dds"
+	}
+	SpriteType = { 
+		name = "ADK_torch"
+		texturefile = "gfx/interface/goals/USA/ADK_torch.dds"
+	}
+	SpriteType = { 
+		name = "ADK_unitarian"
+		texturefile = "gfx/interface/goals/USA/ADK_unitarian.dds"
+	}
+	SpriteType = { 
+		name = "ADK_direct_control"
+		texturefile = "gfx/interface/goals/USA/ADK_direct_control.dds"
+	}
+	SpriteType = { 
+		name = "ADK_morale"
+		texturefile = "gfx/interface/goals/USA/ADK_morale.dds"
+	}
+	SpriteType = { 
+		name = "ADK_food_stamps"
+		texturefile = "gfx/interface/goals/USA/ADK_food_stamps.dds"
+	}
+	SpriteType = { 
+		name = "ADK_armories"
+		texturefile = "gfx/interface/goals/USA/ADK_armories.dds"
+	}
+	SpriteType = { 
+		name = "ADK_media"
+		texturefile = "gfx/interface/goals/USA/ADK_media.dds"
+	}
+	SpriteType = { 
+		name = "ADK_annihilate"
+		texturefile = "gfx/interface/goals/USA/ADK_annihilate.dds"
+	}
+	SpriteType = { 
+		name = "ADK_blood"
+		texturefile = "gfx/interface/goals/USA/ADK_blood.dds"
+	}
+	SpriteType = { 
+		name = "ADK_feds"
+		texturefile = "gfx/interface/goals/USA/ADK_feds.dds"
+	}
+	SpriteType = { 
+		name = "ADK_munitions"
+		texturefile = "gfx/interface/goals/USA/ADK_munitions.dds"
+	}
+	SpriteType = { 
+		name = "ADK_resupply"
+		texturefile = "gfx/interface/goals/USA/ADK_resupply.dds"
+	}
+	SpriteType = { 
+		name = "ADK_blue_pills"
+		texturefile = "gfx/interface/goals/USA/ADK_blue_pills.dds"
+	}
+	SpriteType = { 
+		name = "ADK_i_am_the_senate"
+		texturefile = "gfx/interface/goals/USA/ADK_i_am_the_senate.dds"
+	}
+	SpriteType = { 
+		name = "ADK_birdtail"
+		texturefile = "gfx/interface/goals/USA/ADK_birdtail.dds"
+	}
+	SpriteType = { 
+		name = "ADK_sunset"
+		texturefile = "gfx/interface/goals/USA/ADK_sunset.dds"
+	}
+	SpriteType = { 
+		name = "ADK_python"
+		texturefile = "gfx/interface/goals/USA/ADK_python.dds"
+	}
+	SpriteType = { 
+		name = "ADK_deer_chase"
+		texturefile = "gfx/interface/goals/USA/ADK_deer_chase.dds"
+	}
+	SpriteType = { 
+		name = "ADK_portlandia"
+		texturefile = "gfx/interface/goals/USA/ADK_portlandia.dds"
+	}
+	SpriteType = { 
+		name = "ADK_guides"
+		texturefile = "gfx/interface/goals/USA/ADK_guides.dds"
+	}
+	SpriteType = { 
+		name = "ADK_midatlantic"
+		texturefile = "gfx/interface/goals/USA/ADK_midatlantic.dds"
+	}
+	SpriteType = { 
+		name = "ADK_borough"
+		texturefile = "gfx/interface/goals/USA/ADK_borough.dds"
+	}
+	SpriteType = { 
+		name = "ADK_offensive_south"
+		texturefile = "gfx/interface/goals/USA/ADK_offensive_south.dds"
+	}
+	SpriteType = { 
+		name = "ADK_tacticians"
+		texturefile = "gfx/interface/goals/USA/ADK_tacticians.dds"
+	}
+	SpriteType = { 
+		name = "ADK_fowl"
+		texturefile = "gfx/interface/goals/USA/ADK_fowl.dds"
+	}
+	SpriteType = { 
+		name = "ADK_command_centers"
+		texturefile = "gfx/interface/goals/USA/ADK_command_centers.dds"
+	}
+	SpriteType = { 
+		name = "ADK_supply_lines"
+		texturefile = "gfx/interface/goals/USA/ADK_supply_lines.dds"
+	}
+	SpriteType = { 
+		name = "ADK_building_defense"
+		texturefile = "gfx/interface/goals/USA/ADK_building_defense.dds"
+	}
+	SpriteType = { 
+		name = "ADK_securing_supply"
+		texturefile = "gfx/interface/goals/USA/ADK_securing_supply.dds"
+	}
+}

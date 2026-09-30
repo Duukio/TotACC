@@ -1,0 +1,566 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_OBM_American_Century"
+		texturefile = "gfx/interface/goals/OBM/American_Century.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_And_the_Thorns_at_Its_Sides"
+		texturefile = "gfx/interface/goals/OBM/And_the_Thorns_at_Its_Sides.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_ausnomics"
+		texturefile = "gfx/interface/goals/OBM/ausnomics.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_begintruefedera"
+		texturefile = "gfx/interface/goals/OBM/begintruefedera.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Bleeding_America"
+		texturefile = "gfx/interface/goals/OBM/Bleeding_America.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Blood_And_Algore"
+		texturefile = "gfx/interface/goals/OBM/Blood_And_Algore.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Brownshirt_Black_Gold"
+		texturefile = "gfx/interface/goals/OBM/Brownshirt_Black_Gold.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_business"
+		texturefile = "gfx/interface/goals/OBM/business.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Cali_Uber_Alles"
+		texturefile = "gfx/interface/goals/OBM/Cali_Uber_Alles.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_California_Mans_Burden"
+		texturefile = "gfx/interface/goals/OBM/California_Mans_Burden.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_call_up_coabana"
+		texturefile = "gfx/interface/goals/OBM/call_up_coabana.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Calming_South"
+		texturefile = "gfx/interface/goals/OBM/Calming_South.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_closeenough"
+		texturefile = "gfx/interface/goals/OBM/closeenough.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_colombia_great_fleet"
+		texturefile = "gfx/interface/goals/OBM/colombia_great_fleet.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Congress_in_line"
+		texturefile = "gfx/interface/goals/OBM/Congress_in_line.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Curb_Bootcamp"
+		texturefile = "gfx/interface/goals/OBM/Curb_Bootcamp.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_curbslegacy"
+		texturefile = "gfx/interface/goals/OBM/curbslegacy.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_DC_busy"
+		texturefile = "gfx/interface/goals/OBM/DC_busy.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Dealing_With_The_Rat_Pack"
+		texturefile = "gfx/interface/goals/OBM/Dealing_With_The_Rat_Pack.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Democracy_Manifest"
+		texturefile = "gfx/interface/goals/OBM/Democracy_Manifest.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_deployment_down_under"
+		texturefile = "gfx/interface/goals/OBM/deployment_down_under.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_develp_rural_indus"
+		texturefile = "gfx/interface/goals/OBM/develp_rural_indus.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Dont_Forget_Farmers"
+		texturefile = "gfx/interface/goals/OBM/Dont_Forget_Farmers.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_doodle_dandy"
+		texturefile = "gfx/interface/goals/OBM/doodle_dandy.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Eagles_dare"
+		texturefile = "gfx/interface/goals/OBM/Eagles_dare.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_epluribusunum"
+		texturefile = "gfx/interface/goals/OBM/epluribusunum.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_equal_pay"
+		texturefile = "gfx/interface/goals/OBM/equal_pay.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_eureka1qa"
+		texturefile = "gfx/interface/goals/OBM/eureka1qa.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Expand_war_dpt"
+		texturefile = "gfx/interface/goals/OBM/Expand_war_dpt.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_expanding_domain"
+		texturefile = "gfx/interface/goals/OBM/expanding_domain.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_failureaaa1"
+		texturefile = "gfx/interface/goals/OBM/failureaaa1.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Finish_Reconstruction"
+		texturefile = "gfx/interface/goals/OBM/Finish_Reconstruction.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Finish_What_Walker_Started"
+		texturefile = "gfx/interface/goals/OBM/Finish_What_Walker_Started.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_finishing_touches"
+		texturefile = "gfx/interface/goals/OBM/finishing_touches.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_For_The_Fans"
+		texturefile = "gfx/interface/goals/OBM/For_The_Fans.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_For_The_Potheads"
+		texturefile = "gfx/interface/goals/OBM/For_The_Potheads.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Freedom_for_all"
+		texturefile = "gfx/interface/goals/OBM/Freedom_for_all.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Fresh_Fade"
+		texturefile = "gfx/interface/goals/OBM/Fresh_Fade.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Friends_They_Tried_To_Warn_Me"
+		texturefile = "gfx/interface/goals/OBM/Friends_They_Tried_To_Warn_Me.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_fullmetaljacker"
+		texturefile = "gfx/interface/goals/OBM/fullmetaljacker.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_gem_ocean"
+		texturefile = "gfx/interface/goals/OBM/gem_ocean.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Gerontocracy"
+		texturefile = "gfx/interface/goals/OBM/Gerontocracy.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_give_and_take"
+		texturefile = "gfx/interface/goals/OBM/give_and_take.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Go_On_Cross_It"
+		texturefile = "gfx/interface/goals/OBM/Go_On_Cross_It.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Good_Morning_2000"
+		texturefile = "gfx/interface/goals/OBM/Good_Morning_2000.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Handsdirty"
+		texturefile = "gfx/interface/goals/OBM/Handsdirty.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_hawk_method"
+		texturefile = "gfx/interface/goals/OBM/hawk_method.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_hear_no_evil"
+		texturefile = "gfx/interface/goals/OBM/hear_no_evil.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Hello2000"
+		texturefile = "gfx/interface/goals/OBM/Hello2000.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Hello_Dad"
+		texturefile = "gfx/interface/goals/OBM/Hello_Dad.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Helping_Freedom_Fighters_Everywhere"
+		texturefile = "gfx/interface/goals/OBM/Helping_Freedom_Fighters_Everywhere.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Holden_Blood_feast"
+		texturefile = "gfx/interface/goals/OBM/Holden_Blood_feast.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Hopping_on_the_Orient_Express"
+		texturefile = "gfx/interface/goals/OBM/Hopping_on_the_Orient_Express.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_How_am_I_doin_sarge"
+		texturefile = "gfx/interface/goals/OBM/How_am_I_doin_sarge.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_I_Held_My_Head_Up"
+		texturefile = "gfx/interface/goals/OBM/I_Held_My_Head_Up.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_ilikemoney"
+		texturefile = "gfx/interface/goals/OBM/ilikemoney.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_in_due_moderation"
+		texturefile = "gfx/interface/goals/OBM/in_due_moderation.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_interstat_highwy"
+		texturefile = "gfx/interface/goals/OBM/interstat_highwy.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_justhow"
+		texturefile = "gfx/interface/goals/OBM/justhow.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_konsultwitbuisnes"
+		texturefile = "gfx/interface/goals/OBM/konsultwitbuisnes.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Ladyboys_and_brunch"
+		texturefile = "gfx/interface/goals/OBM/Ladyboys_and_brunch.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_live_with_youngsters"
+		texturefile = "gfx/interface/goals/OBM/live_with_youngsters.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Look_towards_future"
+		texturefile = "gfx/interface/goals/OBM/Look_towards_future.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_mag_op"
+		texturefile = "gfx/interface/goals/OBM/mag_op.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_MDiB_Focus_Micky_C"
+		texturefile = "gfx/interface/goals/OBM/MDiB_Focus_Micky_C.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_MDiB_Icon_setting_V2"
+		texturefile = "gfx/interface/goals/OBM/MDiB_Icon_setting_V2.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Mexico_Up_In_Arms"
+		texturefile = "gfx/interface/goals/OBM/Mexico_Up_In_Arms.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_missing"
+		texturefile = "gfx/interface/goals/OBM/missing.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Money_with_no_home"
+		texturefile = "gfx/interface/goals/OBM/Money_with_no_home.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_murky_contractors"
+		texturefile = "gfx/interface/goals/OBM/murky_contractors.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_My_Friends_Warned_Me"
+		texturefile = "gfx/interface/goals/OBM/My_Friends_Warned_Me.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_My_Kinda_Place"
+		texturefile = "gfx/interface/goals/OBM/My_Kinda_Place.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_napalm_sticks_to_kids"
+		texturefile = "gfx/interface/goals/OBM/napalm_sticks_to_kids.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Nation_building_101"
+		texturefile = "gfx/interface/goals/OBM/Nation_building_101.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Oh_la_la"
+		texturefile = "gfx/interface/goals/OBM/Oh_la_la.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_One_Step_Forward"
+		texturefile = "gfx/interface/goals/OBM/One_Step_Forward.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Our_Older_Brother"
+		texturefile = "gfx/interface/goals/OBM/Our_Older_Brother.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Pacificshowdown"
+		texturefile = "gfx/interface/goals/OBM/Pacificshowdown.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_pay_caledonia_visit"
+		texturefile = "gfx/interface/goals/OBM/pay_caledonia_visit.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Pentagon"
+		texturefile = "gfx/interface/goals/OBM/Pentagon.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Playing_with_big_boys"
+		texturefile = "gfx/interface/goals/OBM/Playing_with_big_boys.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Prepare_an_Unforgettable_Term"
+		texturefile = "gfx/interface/goals/OBM/Prepare_an_Unforgettable_Term.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Protect_our_assets"
+		texturefile = "gfx/interface/goals/OBM/Protect_our_assets.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Quiet_Night_in_DC"
+		texturefile = "gfx/interface/goals/OBM/Quiet_Night_in_DC.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_reapthemsouls"
+		texturefile = "gfx/interface/goals/OBM/reapthemsouls.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Rebuild_Asian_Support"
+		texturefile = "gfx/interface/goals/OBM/Rebuild_Asian_Support.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Regans_New_Grove"
+		texturefile = "gfx/interface/goals/OBM/Regans_New_Grove.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_reinvigoratusaindus"
+		texturefile = "gfx/interface/goals/OBM/reinvigoratusaindus.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_reorganize_airforce"
+		texturefile = "gfx/interface/goals/OBM/reorganize_airforce.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_respectable_admiral"
+		texturefile = "gfx/interface/goals/OBM/respectable_admiral.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Restructuring_armed_forces"
+		texturefile = "gfx/interface/goals/OBM/Restructuring_armed_forces.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_retrofit_washington"
+		texturefile = "gfx/interface/goals/OBM/retrofit_washington.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Review_the_old_stock"
+		texturefile = "gfx/interface/goals/OBM/Review_the_old_stock.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Right_People_In_the_right_places"
+		texturefile = "gfx/interface/goals/OBM/Right_People_In_the_right_places.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_roll_out_doughboys"
+		texturefile = "gfx/interface/goals/OBM/roll_out_doughboys.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_rollinthunder"
+		texturefile = "gfx/interface/goals/OBM/rollinthunder.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Run_Through_the_jungle"
+		texturefile = "gfx/interface/goals/OBM/Run_Through_the_jungle.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Safeguard_their_borders"
+		texturefile = "gfx/interface/goals/OBM/Safeguard_their_borders.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_safety_scissors"
+		texturefile = "gfx/interface/goals/OBM/safety_scissors.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_save_their_ass"
+		texturefile = "gfx/interface/goals/OBM/save_their_ass.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_seamen_and_flyboys"
+		texturefile = "gfx/interface/goals/OBM/seamen_and_flyboys.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Shake_Hand"
+		texturefile = "gfx/interface/goals/OBM/Shake_Hand.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_shakeonit"
+		texturefile = "gfx/interface/goals/OBM/shakeonit.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Skinner_focus"
+		texturefile = "gfx/interface/goals/OBM/Skinner_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_StateSupport"
+		texturefile = "gfx/interface/goals/OBM/StateSupport.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Statmil"
+		texturefile = "gfx/interface/goals/OBM/Statmil.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Sultans_of_Swing"
+		texturefile = "gfx/interface/goals/OBM/Sultans_of_Swing.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Sup_Fellow_Republics"
+		texturefile = "gfx/interface/goals/OBM/Sup_Fellow_Republics.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Taking_A_Look_Overseas"
+		texturefile = "gfx/interface/goals/OBM/Taking_A_Look_Overseas.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Talkwithregi"
+		texturefile = "gfx/interface/goals/OBM/Talkwithregi.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_The_Beat_Generation"
+		texturefile = "gfx/interface/goals/OBM/The_Beat_Generation.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_The_Finishing_Touches"
+		texturefile = "gfx/interface/goals/OBM/The_Finishing_Touches.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_The_Latest_We_Got"
+		texturefile = "gfx/interface/goals/OBM/The_Latest_We_Got.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_The_Many_As_One"
+		texturefile = "gfx/interface/goals/OBM/The_Many_As_One.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_The_Pinnacle_of_Non_American_Americana"
+		texturefile = "gfx/interface/goals/OBM/The_Pinnacle_of_Non_American_Americana.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_The_Sheriff_of_Nottingham"
+		texturefile = "gfx/interface/goals/OBM/The_Sheriff_of_Nottingham.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Their_Own_Cause"
+		texturefile = "gfx/interface/goals/OBM/Their_Own_Cause.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_totheleft"
+		texturefile = "gfx/interface/goals/OBM/totheleft.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_totheright"
+		texturefile = "gfx/interface/goals/OBM/totheright.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_troubles_minhota"
+		texturefile = "gfx/interface/goals/OBM/troubles_minhota.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Turn_A_Blind_Eye"
+		texturefile = "gfx/interface/goals/OBM/Turn_A_Blind_Eye.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Tying_Loose_Ends"
+		texturefile = "gfx/interface/goals/OBM/Tying_Loose_Ends.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_U_need_a_haircut"
+		texturefile = "gfx/interface/goals/OBM/U_need_a_haircut.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Upgrading_old"
+		texturefile = "gfx/interface/goals/OBM/Upgrading_old.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_USAUrbanization"
+		texturefile = "gfx/interface/goals/OBM/USAUrbanization.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_usda1aq"
+		texturefile = "gfx/interface/goals/OBM/usda1aq.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_usinfraact"
+		texturefile = "gfx/interface/goals/OBM/usinfraact.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_War_daddy"
+		texturefile = "gfx/interface/goals/OBM/War_daddy.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Watchdogs_in_washington"
+		texturefile = "gfx/interface/goals/OBM/Watchdogs_in_washington.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_WE_Have_Technology"
+		texturefile = "gfx/interface/goals/OBM/WE_Have_Technology.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Were_Buddies"
+		texturefile = "gfx/interface/goals/OBM/Were_Buddies.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_When_will_it_trickle_down_to_hell_1"
+		texturefile = "gfx/interface/goals/OBM/When_will_it_trickle_down_to_hell_1.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_When_Will_it_trickle_to_hill"
+		texturefile = "gfx/interface/goals/OBM/When_Will_it_trickle_to_hill.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Where_Eagles_Dare"
+		texturefile = "gfx/interface/goals/OBM/Where_Eagles_Dare.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Where_Women_Glow_And_Men_Plunder"
+		texturefile = "gfx/interface/goals/OBM/Where_Women_Glow_And_Men_Plunder.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Who_Wants_Money"
+		texturefile = "gfx/interface/goals/OBM/Who_Wants_Money.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Why_Not_Both"
+		texturefile = "gfx/interface/goals/OBM/Why_Not_Both.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_work_teamsters"
+		texturefile = "gfx/interface/goals/OBM/work_teamsters.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_Wrangle"
+		texturefile = "gfx/interface/goals/OBM/Wrangle.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_y2kscareend"
+		texturefile = "gfx/interface/goals/OBM/y2kscareend.png"
+	}
+	SpriteType = {
+		name = "GFX_OBM_you_in_army"
+		texturefile = "gfx/interface/goals/OBM/you_in_army.png"
+	}
+}

@@ -1,0 +1,25 @@
+state={
+id=1331
+	
+	name="STATE_1331"
+
+	manpower = 175087
+	state_category = metropolis
+	history={
+		add_core_of = SCO
+		owner = ENG
+		victory_points = {
+			11378 2#Berwick
+		}
+		buildings = {
+			school = 2
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = ENG
+	}
+	provinces={
+		9314 11378
+	}
+	local_supplies=0.0
+}

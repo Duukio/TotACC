@@ -1,0 +1,236 @@
+
+shared_focus = {
+	id = USA_the_newsom_presidency
+	icon = ADK_newsom1
+	cost = 4
+	x = 6
+	y = 0
+	completion_reward = {
+	    country_event = {
+		id = USANEWSOM.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_newsom_presidency"
+	}
+}
+
+shared_focus = {
+	id = USA_question_of_reform
+	icon = ADK_reformperotbayhrefrence
+	cost = 5
+	x = -5
+	y = 1
+	completion_reward = {
+	    country_event = {
+		id = USANEWSOM.3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_question_of_reform"
+	}
+	relative_position_id = USA_the_newsom_presidency
+	prerequisite = { focus = USA_the_newsom_presidency }
+}
+
+shared_focus = {
+	id = USA_rebuilding_america
+	icon = ADK_reconstruction2
+	cost = 5
+	x = 0
+	y = 1
+	completion_reward = {
+	    country_event = {
+		id = USANEWSOM.2
+		}
+	    add_popularity = { ideology = liberalism popularity = 0.03 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rebuilding_america"
+	}
+	relative_position_id = USA_the_newsom_presidency
+	prerequisite = { focus = USA_the_newsom_presidency }
+}
+
+shared_focus = {
+	id = USA_stepping_back_out
+	icon = ADK_nato
+	cost = 5
+	x = 5
+	y = 1
+	completion_reward = {
+	    country_event = {
+		id = USANEWSOM.4
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_stepping_back_out"
+	}
+	relative_position_id = USA_the_newsom_presidency
+	prerequisite = { focus = USA_the_newsom_presidency }
+}
+
+shared_focus = {
+	id = USA_preserving_the_old
+	icon = ADK_oldguylol
+	cost = 4
+	x = -1
+	y = 1
+	completion_reward = {
+	    add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus USA_preserving_the_old"
+	}
+	relative_position_id = USA_question_of_reform
+	prerequisite = { focus = USA_question_of_reform }
+	mutually_exclusive = { focus = USA_a_new_electoral_system }
+}
+
+shared_focus = {
+	id = USA_a_new_electoral_system
+	icon = ADK_voting
+	cost = 4
+	x = 1
+	y = 1
+	completion_reward = {
+	    add_stability = -0.025
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_new_electoral_system"
+	}
+	relative_position_id = USA_question_of_reform
+	prerequisite = { focus = USA_question_of_reform }
+	mutually_exclusive = { focus = USA_preserving_the_old }
+}
+
+shared_focus = {
+	id = USA_clean_up_teams
+	icon = ADK_reconstruction1
+	cost = 4
+	x = -1
+	y = 1
+	completion_reward = {
+	    swap_ideas = {
+		remove_idea = USA_Postwar_Devestation
+		add_idea = USA_Devestation_Lightened
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_clean_up_teams"
+	}
+	relative_position_id = USA_rebuilding_america
+	prerequisite = { focus = USA_rebuilding_america }
+}
+
+shared_focus = {
+	id = USA_repairing_the_power
+	icon = ADK_reconstruction3
+	cost = 4
+	x = 1
+	y = 1
+	completion_reward = {
+	    add_ideas = USA_Building_Projects
+		log = "[GetDateText]: [Root.GetName]: Focus USA_repairing_the_power"
+	}
+	relative_position_id = USA_rebuilding_america
+	prerequisite = { focus = USA_rebuilding_america }
+}
+
+shared_focus = {
+	id = USA_the_old_allies
+	icon = ADK_nato2
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+        FRA = {
+        add_to_faction = USA
+        }
+		hidden_effect = {
+		set_variable = { USA.FACTIONSTATUS = 5 }
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_old_allies"
+	}
+	relative_position_id = USA_stepping_back_out
+	prerequisite = { focus = USA_stepping_back_out }
+}
+
+shared_focus = {
+	id = USA_defending_the_ballot
+	icon = ADK_voting2
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_stability = 0.05
+		add_popularity = { ideology = liberalism popularity = 0.025 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_defending_the_ballot"
+	}
+	relative_position_id = USA_preserving_the_old
+	prerequisite = { focus = USA_preserving_the_old }
+}
+
+shared_focus = {
+	id = USA_new_election_wave
+	icon = ADK_electionwave
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = USA_Reformed_Elections
+		log = "[GetDateText]: [Root.GetName]: Focus USA_new_election_wave"
+	}
+	relative_position_id = USA_a_new_electoral_system
+	prerequisite = { focus = USA_a_new_electoral_system }
+}
+
+shared_focus = {
+	id = USA_reconstruction_bureau
+	icon = ADK_hunger
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+	    swap_ideas = {
+		remove_idea = USA_Devestation_Lightened
+		add_idea = USA_Devestation_Fading
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reconstruction_bureau"
+	}
+	relative_position_id = USA_clean_up_teams
+	prerequisite = { focus = USA_clean_up_teams }
+}
+
+shared_focus = {
+	id = USA_filling_in_the_craters
+	icon = ADK_reconstruction4
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_popularity = { ideology = liberalism popularity = 0.025 }
+		add_stability = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus USA_filling_in_the_craters"
+	}
+	relative_position_id = USA_repairing_the_power
+	prerequisite = { focus = USA_repairing_the_power }
+}
+
+shared_focus = {
+	id = USA_the_cicatrix
+	icon = ADK_cicatrix
+	cost = 4
+	x = 1
+	y = 1
+	completion_reward = {
+	    remove_ideas = USA_Devestation_Fading
+	    add_political_power = 200
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_cicatrix"
+	}
+	relative_position_id = USA_reconstruction_bureau
+	prerequisite = { focus = USA_reconstruction_bureau }
+	prerequisite = { focus = USA_filling_in_the_craters }
+}
+
+shared_focus = {
+	id = USA_america_returns
+	icon = ADK_nato3
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_political_power = 50
+		add_ideas = ALK_intervention
+		log = "[GetDateText]: [Root.GetName]: Focus USA_america_returns"
+	}
+	relative_position_id = USA_the_old_allies
+	prerequisite = { focus = USA_the_old_allies }
+}

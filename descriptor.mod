@@ -46,8 +46,8 @@ replace_path="gfx/loadingscreens"
 version="1.0"
 tags={
 	"Alternative History"
+	"Events"
 	"Gameplay"
-	"National Focuses"
 }
-name="Twilight of the Anthropocene: Community Cut"
-supported_version="1.19.1.0"
+name="Twilight of the Antropocene: Community Cut"
+supported_version="1.19.*"

@@ -1,0 +1,189 @@
+
+music_station = "TOTA_afro_groove"
+
+music = {
+    song = "Free_My_People"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Never_Lagos"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Annie"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Kagani_Kagani"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Nga_Nga"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Chant_To_Mother_Earth"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Born_Black"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ye_Ke_Ye_Ke"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Go_Je_Je"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Nobodys_Bulletproof"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Be_Africa"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Strange_Dream"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cest_Comme_Ca"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Khala_My_Friend"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Let_My_People_Go"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "African_Dialects"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Malunguinho"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Israelites"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Gun_Fever_Blam_Blam_Fever"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "TiLodaIg"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Water_No_Get_Enemy"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Montego_Sunset"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Few_Bana_Zambia"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Crache_La_Douleur"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tahabort"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Lagos_Sisi"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Alghafiat"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tenere_wtz"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Gabes_New_Joint"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Mr_Follow_Follow"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Yere_Faga"
+    chance = {
+        factor = 1
+    }
+}

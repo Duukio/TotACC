@@ -1,0 +1,236 @@
+music_station = "TOTA_ghostbabel"
+
+music = {
+    song = "MJ-XX"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "UNATCO Ambient"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Sons of Liberty Main Titles"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "No.0724FGARK"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Discovery"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ops 1"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Seattle: Emerald Suites"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Oil Rig Data Hub"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Intruder 2"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Interstate 70"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Crew's Quarters"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Black Suit 1a"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Seattle: Tarsus Laboratories"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Warhead Storage"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "PHARCOM Expo Center"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "UNATCO Conversation"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Poseidon Pt. 2 + Mediterranean Crisis"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cairo: The Arcology"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Deus' Theme"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Colosseo"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "CIA Lobby"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Evil Summit Pt. 2"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Burma Streets"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tunnels"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Sediment Pool"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Presidential Palace Library"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Vital Signs"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Training Session"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Georgia Police Station"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cairo: ApostleCorp Facility"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Starboard"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "WombSys"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Bad Diplomacy Pt. 2"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "VersaLife Ambient"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Burma Stress"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Rocky Mountains"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Russian Soldiers from Kasatka"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Datadyne Central Defection"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "New Pulse"
+    chance = {
+        factor = 1
+    }
+}

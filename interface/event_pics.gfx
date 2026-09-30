@@ -599,10 +599,6 @@ SpriteTypes = {
 		name = "GFX_report_event_pelosi"
 		texturefile = "gfx/interface/event_pictures/pelosi.dds"
 	}
-	spriteType = {
-		name = "GFX_report_event_pelosi_sworn_in"
-		texturefile = "gfx/interface/event_pictures/pelosi_sworn_in.dds"
-	}
 		spriteType = {
 		name = "GFX_report_event_nypd"
 		texturefile = "gfx/interface/event_pictures/nypd.dds"
@@ -753,7 +749,7 @@ SpriteTypes = {
 	}
 		spriteType = {
 		name = "GFX_report_event_crystal_palace_opens"
-		texturefile = "gfx/interface/event_pictures/space/CrystalPalace.png"
+		texturefile = "gfx/interface/event_pictures/space/Crystal_palace.png"
 	}
 		spriteType = {
 		name = "GFX_report_event_kemalist_turkey"
@@ -907,80 +903,111 @@ SpriteTypes = {
 		name = "GFX_report_event_michaux"
 		texturefile = "gfx/interface/event_pictures/michaux.dds"
 	}
-	spriteType = {
-		name = "GFX_report_event_rotunda"
-		texturefile = "gfx/interface/event_pictures/yarvintahoeroundt.png"
+
+	################### ADK ###################
+	
+		spriteType = {
+		name = "USA_humvee"
+		texturefile = "gfx/interface/event_pictures/USA_humvee.tga"
 	}
 	spriteType = {
-		name = "GFX_event_pic_attachment"
-		texturefile = "gfx/interface/event_pictures/attachment.png"
+		name = "ADK_the_suck"
+		texturefile = "gfx/interface/event_pictures/ADK_the_suck.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_elenikos"
-		texturefile = "gfx/interface/event_pictures/ellenikos_communistikos.png"
+		name = "ADK_radio"
+		texturefile = "gfx/interface/event_pictures/ADK_radio.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_BAP_rising"
-		texturefile = "gfx/interface/event_pictures/BAP_rising.png"
+		name = "ADK_fireandriots"
+		texturefile = "gfx/interface/event_pictures/ADK_fireandriots.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_shimizu"
-		texturefile = "gfx/interface/event_pictures/yarvinshimizu.png"
+		name = "ADK_pelosi1"
+		texturefile = "gfx/interface/event_pictures/ADK_pelosi1.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_hussein"
-		texturefile = "gfx/interface/event_pictures/hussein.png"
+		name = "ADK_pelosi2"
+		texturefile = "gfx/interface/event_pictures/ADK_pelosi2.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_asi"
-		texturefile = "gfx/interface/event_pictures/asi.png"
+		name = "ADK_pelosi3"
+		texturefile = "gfx/interface/event_pictures/ADK_pelosi3.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_stantontx"
-		texturefile = "gfx/interface/event_pictures/stantontx.png"
+		name = "ADK_military1"
+		texturefile = "gfx/interface/event_pictures/ADK_military1.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_preston"
-		texturefile = "gfx/interface/event_pictures/preston.png"
+		name = "ADK_military2"
+		texturefile = "gfx/interface/event_pictures/ADK_military2.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_sharkey"
-		texturefile = "gfx/interface/event_pictures/sharkey.png"
+		name = "GFX_report_event_pelosi_innagued"
+		texturefile = "gfx/interface/event_pictures/pelosi_innagued.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_anton"
-		texturefile = "gfx/interface/event_pictures/anton.png"
+		name = "GFX_report_event_NEWSOMSWEEP"
+		texturefile = "gfx/interface/event_pictures/GFX_report_event_NEWSOMSWEEP.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_yugcw"
-		texturefile = "gfx/interface/event_pictures/yugcw.png"
+		name = "GFX_trickyscott"
+		texturefile = "gfx/interface/event_pictures/GFX_trickyscott.dds"
 	}
 	spriteType = {
-		name = "GFX_report_event_180_sarawak"
-		texturefile = "gfx/interface/event_pictures/180_sarawak.png"
+		name = "GFX_report_event_ockywayahhpresident"
+		texturefile = "gfx/interface/event_pictures/ADK_ockywayahhpresident.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_negri"
-		texturefile = "gfx/interface/event_pictures/negri.png"
+		name = "GFX_report_event_ADK_reconstruction"
+		texturefile = "gfx/interface/event_pictures/ADK_reconstruction.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_waiting_in_the_country"
-		texturefile = "gfx/interface/event_pictures/waiting_in_the_country.png"
+		name = "GFX_ADK_janitors"
+		texturefile = "gfx/interface/event_pictures/ADK_janitors.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_hello_baton_rouge"
-		texturefile = "gfx/interface/event_pictures/hello_baton_rouge.png"
+		name = "ADK_pence1"
+		texturefile = "gfx/interface/event_pictures/ADK_pence1.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_song_of_the_south"
-		texturefile = "gfx/interface/event_pictures/song_of_the_south.png"
+		name = "ADK_Bar_Destroyed"
+		texturefile = "gfx/interface/event_pictures/ADK_Bar_Destroyed.tga"
+	}	
+	spriteType = {
+		name = "ADK_fires_and_riots2"
+		texturefile = "gfx/interface/event_pictures/ADK_fires_and_riots2.tga"
+	}	
+	spriteType = {
+		name = "ADK_fires_and_riots3"
+		texturefile = "gfx/interface/event_pictures/ADK_fires_and_riots3.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_last_piece_of_the_puzzle"
-		texturefile = "gfx/interface/event_pictures/last_piece_of_the_puzzle.png"
+		name = "ADK_phil1"
+		texturefile = "gfx/interface/event_pictures/ADK_phil1.tga"
 	}
 	spriteType = {
-		name = "GFX_report_event_lions_in_the_street"
-		texturefile = "gfx/interface/event_pictures/lions_in_the_street.png"
+		name = "ADK_AlaskaInvasion"
+		texturefile = "gfx/interface/event_pictures/ADK_AlaskaInvasion.dds"
 	}
+	spriteType = {
+		name = "ADK_scandal"
+		texturefile = "gfx/interface/event_pictures/ADK_scandal.dds"
+	}	
+	spriteType = {
+		name = "ADK_scandal2"
+		texturefile = "gfx/interface/event_pictures/ADK_scandal2.dds"
+	}	
+	spriteType = {
+		name = "ADK_office"
+		texturefile = "gfx/interface/event_pictures/ADK_office.dds"
+	}
+	spriteType = {
+		name = "ADK_office2"
+		texturefile = "gfx/interface/event_pictures/ADK_office2.dds"
+	}
+	spriteType = {
+		name = "ADK_USAlaskaVictory"
+		texturefile = "gfx/interface/event_pictures/ADK_USAlaskaVictory.dds"
+	}			
 }

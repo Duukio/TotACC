@@ -1,0 +1,51 @@
+characters = {
+	USH_Sam_Paparo = {
+		name = USH_Sam_Paparo
+		portraits = {
+			army = {
+				large = "gfx/leaders/USH/Sam-Paparo-TOTA.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	USH_James_Glynn = {
+		name = USH_James_Glynn
+		portraits = {
+			army = {
+				large = "gfx/leaders/USH/James-F-Glynn-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	USH_Kevin_Schneider = {
+		name = USH_Kevin_Schneider
+		portraits = {
+			army = {
+				large = "gfx/leaders/USH/Kevin-Bruce-Schneider-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+}

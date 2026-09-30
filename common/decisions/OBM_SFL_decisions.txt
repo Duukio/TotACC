@@ -1,0 +1,107 @@
+OBM_SFL_decisions_category = {
+
+	# -------------------------------------------------------------
+	# 1. Decisión de inicio rápido (para no esperar meses si juegas con USA)
+	# -------------------------------------------------------------
+	USA_trigger_cw_choice = {
+		icon = generic_civil_support
+		visible = {
+			tag = USA
+		}
+		available = {
+			always = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = { base = 0 }
+
+		complete_effect = {
+			country_event = { id = USA.999 }
+		}
+	}
+
+	# -------------------------------------------------------------
+	# 2. Decisión en Florida (SFL) para cambiar el mando a Obama (OBM)
+	# -------------------------------------------------------------
+	SFL_switch_to_obama = {
+		icon = generic_political_actions
+		visible = {
+			tag = SFL
+		}
+		available = {
+			always = yes
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = { base = 0 }
+
+		complete_effect = {
+			# Si OBM no tiene Miami (estado 986), se lo transfiere con sus tropas
+			if = {
+				limit = { NOT = { OBM = { owns_state = 986 } } }
+				OBM = {
+					transfer_state = 986
+					load_oob = "OBM_CW"
+				}
+			}
+
+			# Cambiar el control a Obama
+			OBM = {
+				change_tag_from = SFL
+			}
+		}
+	}
+
+	# -------------------------------------------------------------
+	# 3. Decisión para que Obama (OBM) reunifique los Estados Unidos
+	# -------------------------------------------------------------
+	OBM_unify = {
+		icon = generic_unite_states
+		visible = {
+			tag = OBM
+		}
+		available = {
+			has_war = no
+			# Requiere controlar Washington D.C. (estado 534)
+			controls_state = 534
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = { base = 100 }
+
+		complete_effect = {
+			set_cosmetic_tag = USA
+
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = USA
+						is_owned_by = ROOT
+					}
+				}
+				add_core_of = ROOT
+			}
+
+			if = {
+				limit = { has_idea = OBM_a_fragmented_movement }
+				remove_ideas = OBM_a_fragmented_movement
+			}
+			if = {
+				limit = { has_idea = OBM_the_hussein_hersey }
+				remove_ideas = OBM_the_hussein_hersey
+			}
+
+			add_political_power = 150
+			add_stability = 0.15
+			add_war_support = 0.10
+
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = WNE.99
+					days = 1
+				}
+			}
+		}
+	}
+}

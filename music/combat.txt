@@ -1,0 +1,189 @@
+
+music_station = "TOTA_combat"
+
+music = {
+    song = "Bombers"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Back In The USSR"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Man Who Sold The World"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Mercenary Song"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "World Destruction (Single Edit)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Killer Queen"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ghosts of American Astronauts"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Jungle Work"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Who Will Save The World"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ashes To Ashes"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "CIA Man"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Two Thousand Man" #game does not like names that start with numbers
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cities In Dust"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Straight To Hell"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Lawyers, Guns And Money"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Starman"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Generals And Majors"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "So It Goes"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Up All Night"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Born In The USA"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Political Science"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Listening Wind"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Envoy"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Citadel"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Everybody Wants To Rule The World"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Yours Truly, 2095"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Life On Mars?"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Blue Monday"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Are 'Friends' Electric?"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Sunday Bloody Sunday"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "99 Luftballons"
+    chance = {
+        factor = 1
+    }
+}

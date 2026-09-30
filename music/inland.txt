@@ -1,0 +1,182 @@
+music_station = "TOTA_inland"
+
+music = {
+    song = "Kiri"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Black Hole Sun"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Another Space Song"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Echoplex"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Pet"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Kill (Bury Me)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Vapour Trail"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Taking Over Me"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Head In The Ceiling Fan"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "In The End"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Smile Like You Mean It"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ataraxia"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Paranoid Android"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cherry Waves"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Hysteria"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Is It Really You?"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Not The Same"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Everlong"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Everyday Is Exactly The Same"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Going Under"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Subterranean Homesick Alien"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "All I Think About Now"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Heart-Shaped Box"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Necrosis"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "To Forgive"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Entombed"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Sunday"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Covet"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Blvd. Nights"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Rotten Apple"
+    chance = {
+        factor = 1
+    }
+}

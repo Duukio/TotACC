@@ -1,0 +1,98 @@
+
+shared_focus = {
+	id = USA_america_wins_again
+	icon = ADK_americawinsagain
+	cost = 2
+	x = 1
+	y = 0
+	completion_reward = {
+		remove_dynamic_modifier = {
+			modifier = USA_Unitarian_Presidency
+		}
+		remove_dynamic_modifier = {
+			modifier = USA_Hardliner_Presidency
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_america_wins_again"
+	}
+}
+
+shared_focus = {
+	id = USA_crossroads
+	icon = ADK_pathtotake
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_crossroads"
+	}
+	relative_position_id = USA_america_wins_again
+	prerequisite = { focus = USA_america_wins_again }
+}
+
+shared_focus = {
+	id = USA_permanent_suspensions
+	icon = ADK_unclesamfingerjob
+	cost = 5
+	x = -1
+	y = 1
+	available = {
+		autocracy > 0.35
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_permanent_suspensions"
+	}
+	relative_position_id = USA_crossroads
+	prerequisite = { focus = USA_crossroads }
+	mutually_exclusive = { focus = USA_removing_the_suspensions }
+}
+
+shared_focus = {
+	id = USA_removing_the_suspensions
+	icon = ADK_freeusa
+	cost = 5
+	x = 1
+	y = 1
+	completion_reward = {
+	country_event = {
+	    id = USAADK.7
+	}
+	add_popularity = { ideology = autocracy popularity = -0.1 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_removing_the_suspensions"
+	}
+	relative_position_id = USA_crossroads
+	prerequisite = { focus = USA_crossroads }
+	mutually_exclusive = { focus = USA_permanent_suspensions }
+}
+
+shared_focus = {
+	id = USA_immediate_elections
+	icon = ADK_happydudeisfree
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+    country_event = {
+	    id = USAADK.6
+	}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_immediate_elections"
+	}
+	relative_position_id = USA_removing_the_suspensions
+	prerequisite = { focus = USA_removing_the_suspensions }
+}
+
+shared_focus = {
+	id = USA_transition_towards_autocracy
+	icon = ADK_transautocracy
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+    country_event = {
+	    id = USAADK.16
+	}
+    add_popularity = { ideology = autocracy popularity = 0.1 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_transition_towards_autocracy"
+	}
+	relative_position_id = USA_permanent_suspensions
+	prerequisite = { focus = USA_permanent_suspensions }
+}

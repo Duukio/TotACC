@@ -1,0 +1,235 @@
+
+shared_focus = {
+	id = USA_jones_presidency
+	icon = ADK_jonesfirst
+	cost = 2
+	x = 6
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_jones_presidency"
+	}
+}
+
+shared_focus = {
+	id = USA_a_progressive_dawn
+	icon = ADK_dovesjones
+	cost = 2
+	x = -5
+	y = 1
+	completion_reward = {
+	    add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_progressive_dawn"
+	}
+	relative_position_id = USA_jones_presidency
+	prerequisite = { focus = USA_jones_presidency }
+}
+
+shared_focus = {
+	id = USA_the_fra
+	icon = ADK_federalagentsareoutsidemyhouse
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_ideas = USA_Building_Projects
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_fra"
+	}
+	relative_position_id = USA_jones_presidency
+	prerequisite = { focus = USA_jones_presidency }
+}
+
+shared_focus = {
+	id = USA_new_diplomacy
+	icon = ADK_natojones1
+	cost = 2
+	x = 5
+	y = 1
+	completion_reward = {
+	    country event thingy
+		log = "[GetDateText]: [Root.GetName]: Focus USA_new_diplomacy"
+	}
+	relative_position_id = USA_jones_presidency
+	prerequisite = { focus = USA_jones_presidency }
+}
+
+shared_focus = {
+	id = USA_helping_minorities
+	icon = ADK_chuddiehappy
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+	    add_popularity = { ideology = socdem popularity = 0.025 }
+	    add_stability = 0.025
+		log = "[GetDateText]: [Root.GetName]: Focus USA_helping_minorities"
+	}
+	relative_position_id = USA_a_progressive_dawn
+	prerequisite = { focus = USA_a_progressive_dawn }
+}
+
+shared_focus = {
+	id = USA_reforming_the_ballot
+	icon = ADK_votes1
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+	    add_stability = -0.05
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reforming_the_ballot"
+	}
+	relative_position_id = USA_a_progressive_dawn
+	prerequisite = { focus = USA_a_progressive_dawn }
+}
+
+shared_focus = {
+	id = USA_deploying_fema
+	icon = ADK_IHATEFEMA
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+	    add_stability = 0.025
+		log = "[GetDateText]: [Root.GetName]: Focus USA_deploying_fema"
+	}
+	relative_position_id = USA_the_fra
+	prerequisite = { focus = USA_the_fra }
+}
+
+shared_focus = {
+	id = USA_issuing_stimuluses
+	icon = ADK_hoodwelfarecheck
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+	    swap_ideas = {
+		remove_idea = USA_Postwar_Devestation
+		add_idea = USA_Devestation_Lightened
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_issuing_stimuluses"
+	}
+	relative_position_id = USA_the_fra
+	prerequisite = { focus = USA_the_fra }
+}
+
+shared_focus = {
+	id = USA_calls_from_paris
+	icon = ADK_jonesbonjour
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_calls_from_paris"
+	}
+	relative_position_id = USA_new_diplomacy
+	prerequisite = { focus = USA_new_diplomacy }
+}
+
+shared_focus = {
+	id = USA_new_welfare
+	icon = ADK_medical1
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_stability = 0.04
+		log = "[GetDateText]: [Root.GetName]: Focus USA_new_welfare"
+	}
+	relative_position_id = USA_helping_minorities
+	prerequisite = { focus = USA_helping_minorities }
+}
+
+shared_focus = {
+	id = USA_a_new_party_system
+	icon = ADK_jonespolitics1
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_ideas = USA_Reformed_Elections
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_new_party_system"
+	}
+	relative_position_id = USA_reforming_the_ballot
+	prerequisite = { focus = USA_reforming_the_ballot }
+}
+
+shared_focus = {
+	id = USA_helping_those_disabled
+	icon = ADK_helpdisabled
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_popularity = { ideology = socdem popularity = 0.025 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_helping_those_disabled"
+	}
+	relative_position_id = USA_deploying_fema
+	prerequisite = { focus = USA_deploying_fema }
+}
+
+shared_focus = {
+	id = USA_restoring_the_cities
+	icon = ADK_jonesrecon1
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    swap_ideas = {
+		remove_idea = USA_Devestation_Lightened
+		add_idea = USA_Devestation_Fading
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_restoring_the_cities"
+	}
+	relative_position_id = USA_issuing_stimuluses
+	prerequisite = { focus = USA_issuing_stimuluses }
+}
+
+shared_focus = {
+	id = USA_new_american_ville
+	icon = ADK_yayyy
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_new_american_ville"
+	}
+	relative_position_id = USA_helping_those_disabled
+	prerequisite = { focus = USA_helping_those_disabled }
+	prerequisite = { focus = USA_restoring_the_cities }
+}
+
+shared_focus = {
+	id = USA_a_meeting_with_macron
+	icon = ADK_macrondatenight
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+        FRA = {
+        add_to_faction = USA
+        }
+		hidden_effect = {
+		set_variable = { USA.FACTIONSTATUS = 5 }
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_meeting_with_macron"
+	}
+	relative_position_id = USA_calls_from_paris
+	prerequisite = { focus = USA_calls_from_paris }
+	mutually_exclusive = { focus = USA_a_shining_city }
+}
+
+shared_focus = {
+	id = USA_a_shining_city
+	icon = ADK_city
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		hidden_effect = {
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_shining_city"
+	}
+	relative_position_id = USA_calls_from_paris
+	prerequisite = { focus = USA_calls_from_paris }
+	mutually_exclusive = { focus = USA_a_meeting_with_macron }
+}

@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USA_newsom
+    country = {
+        factor = 0
+        modifier = {
+            add = 15
+            tag = USA
+        }
+    }
+    shared_focus = USA_the_newsom_presidency
+}

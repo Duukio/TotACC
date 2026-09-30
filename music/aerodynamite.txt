@@ -1,0 +1,164 @@
+music_station = "TOTA_aerodynamite"
+
+music = {
+    song = "Heads Will Roll (A-Trak Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Signatune (Thomas Bangalter Edit)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Hot Chick"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Day N' Nite (Crookers Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "We Are Your Friends"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Door"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "British Mode (Jester Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Big & Dirty Dreams (Original Mix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Pogo"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Emerge"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Gare Du Nord"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Positif"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "We Are Rockstars"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "And Down"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Over and Over"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "To Protect And Entertain (Crookers Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Aerodynamite"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Hand to Phone/La Rock 01"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Singapore Swing"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Lemonade"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Hustler"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Vanished"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Butterslut"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "North American Scum"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "I Get Around (Midnight Juggernaughts Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Playgirl (Felix Da Housecat Glitz Club Mix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "We All Wanna Be Prince"
+    chance = {
+        factor = 1
+    }
+}

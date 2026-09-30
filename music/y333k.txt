@@ -1,0 +1,182 @@
+music_station = "TOTA_y333k"
+
+music = {
+    song = "Ginseng Strip 2002"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Kyoto"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Bliss (ft. FKA Twigs)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Diamonds"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tiger"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Peroxide"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Vanilla Sky"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Obedient"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Be Nice To Me"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Who Goes There"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "HAHAH"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "#IAmDelusional"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "king of the darkness"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "ACTOR"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "white tiger"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "stay back"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "gaspedal w/ Dreamcache"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "walked in"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "ievan polkka (bizarius)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Michael Kors ft. Dion"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "I Don't Care"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Still"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Finesser (ft. Joeyy)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Shirt"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "GOUT"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Garbonzo"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Redact"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Eminem"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Petco"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Four Horses"
+    chance = {
+        factor = 1
+    }
+}

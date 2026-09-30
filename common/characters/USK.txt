@@ -1,0 +1,51 @@
+characters = {
+	USK_case_andrews_cunningham = {
+		name = USK_case_andrews_cunningham
+		portraits = {
+			army = {
+				large = "gfx/leaders/USK/Case-A-Cunningham-TOTA.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+	USA_brian_kile = {
+		name = USA_brian_kile
+		portraits = {
+			army = {
+				large = "gfx/leaders/USK/Kile-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	USA_torrence_saxe = {
+		name = USA_torrence_saxe
+		portraits = {
+			army = {
+				large = "gfx/leaders/USK/Saxe-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

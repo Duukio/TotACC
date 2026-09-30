@@ -1,0 +1,12 @@
+focus_tree = {
+    id = USA_scott
+    country = {
+        factor = 0
+        modifier = {
+            add = 14
+            tag = USA
+        }
+    }
+    shared_focus = USA_the_scott_presidency
+    shared_focus = USA_the_world_watching
+}

@@ -1,0 +1,108 @@
+
+shared_focus = {
+	id = USK_at_the_top_of_denali
+	icon = GFX_USK_at_the_top_of_denali
+	cost = 2
+	x = 2
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USK_at_the_top_of_denali"
+	}
+}
+
+shared_focus = {
+	id = USK_whos_governor_though
+	icon = GFX_USK_whos_governor_though
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USK_whos_governor_though"
+	}
+	relative_position_id = USK_our_next_move
+	prerequisite = { focus = USK_our_next_move }
+}
+
+shared_focus = {
+	id = USK_a_quick_election
+	icon = GFX_USK_a_quick_election
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USK_a_quick_election"
+	}
+	relative_position_id = USK_whos_governor_though
+	prerequisite = { focus = USK_whos_governor_though }
+}
+
+shared_focus = {
+	id = USK_setting_up_the_rest
+	icon = GFX_USK_setting_up_the_rest
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USK_setting_up_the_rest"
+	}
+	relative_position_id = USK_a_quick_election
+	prerequisite = { focus = USK_a_quick_election }
+}
+
+shared_focus = {
+	id = USK_finishing_the_job
+	icon = GFX_USK_finishing_the_job
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USK_finishing_the_job"
+	}
+	relative_position_id = USK_our_next_move
+	prerequisite = { focus = USK_our_next_move }
+}
+
+shared_focus = {
+	id = USK_on_the_fasttrack
+	icon = GFX_USK_on_the_fasttrack
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USK_on_the_fasttrack"
+	}
+	relative_position_id = USK_finishing_the_job
+	prerequisite = { focus = USK_finishing_the_job }
+}
+
+shared_focus = {
+	id = USK_north_to_the_future
+	icon = GFX_USK_north_to_the_future
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+        USA = {
+		    annex_country = {
+			    target = USK
+		    }
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USK_north_to_the_future"
+	}
+	relative_position_id = USK_setting_up_the_rest
+	prerequisite = { focus = USK_setting_up_the_rest }
+	prerequisite = { focus = USK_on_the_fasttrack }
+}
+
+shared_focus = {
+	id = USK_our_next_move
+	icon = GFX_USK_our_next_move
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USK_our_next_move"
+	}
+	relative_position_id = USK_at_the_top_of_denali
+	prerequisite = { focus = USK_at_the_top_of_denali }
+}

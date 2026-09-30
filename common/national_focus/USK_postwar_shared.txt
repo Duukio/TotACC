@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USK_postwar
+    country = {
+        factor = 0
+        modifier = {
+            add = 25
+            tag = USK
+        }
+    }
+    shared_focus = USK_at_the_top_of_denali
+}

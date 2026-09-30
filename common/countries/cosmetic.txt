@@ -42,10 +42,6 @@ SFL_NATANARCH = {
 color = rgb { 71 64 64 }
 color_ui = rgb { 71 64 64 }
 }
-SFL_natanarch_Yankee = {
-color = rgb { 47 56 71 }
-color_ui = rgb { 47 56 71 }
-}
 BSD_PELOSIREICH = {
 	color = rgb { 104 154 209 }
 	color_ui = rgb { 104 154 209 }
@@ -59,23 +55,14 @@ SFL_FSA = {
 	color_ui = rgb { 233 153 31 }
 }
 GPR_MAO = {
-	color = rgb { 158 27 43 } 
+	color = rgb { 158 27 43 }
 	color_ui = rgb { 158 27 43 }
 }
-FIZ_DPROC = {
-	color = rgb { 145 46 78 }
-	color_ui = rgb { 255 20 60 }
+OBC_PHR = {
+	color = rgb { 218 165 32 }
+	color_ui = rgb { 218 165 32 }
 }
-NCD_CONGO = {
-	color = rgb { 39 54 75 }
-	color_ui = rgb { 0 96 212 }
+WES_GER = {
+	color = rgb { 52 52 52 }
+	color_ui = rgb { 52 52 52 }
 }
-IRA_PEOPLES_REPUBLIC = {
-	color = rgb { 151 192 213 }
-	color_ui = rgb { 151 192 213 }
-}
-IRA_REPUBLIC = {
-	color = rgb { 151 192 213 }
-	color_ui = rgb { 151 192 213 }
-}
-

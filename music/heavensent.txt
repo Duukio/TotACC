@@ -1,0 +1,183 @@
+
+music_station = "TOTA_heavensent"
+
+music = {
+    song = "aerowalk"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "moment"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cloud Nine"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Move Me"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Smart Systems"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Selected ID"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Floodlight"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "SILVER STREAM (Rewind Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Happy Happy Hoppy Happy"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Nights"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Fleeting Frozen Heart"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Virtual Paradise"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Supercruiser"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Fine Night"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "WOUNDS WILL HEAL"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "My Head Hurts"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Eversummer Island"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "ZERO>>NOVA>>BLOSSOM>>___"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "GOD RACE"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Discovery"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Storm"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Glacial Activity - Melda Ore Plant"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "MECHANIQ"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cloud Gliding"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Under The Ocean"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Insanely Fast"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Loop Version"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Killing Moon (Akuma's Stage)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "SUPERSONIQ (Tempus Cubiq)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Foregone Destruction"
+    chance = {
+        factor = 1
+    }
+}

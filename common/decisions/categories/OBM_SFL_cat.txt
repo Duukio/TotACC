@@ -1,0 +1,13 @@
+OBM_SFL_decisions_category = {
+	icon = generic_crisis
+	allowed = {
+		always = yes
+	}
+	visible = {
+		OR = {
+			tag = USA
+			tag = SFL
+			tag = OBM
+		}
+	}
+}

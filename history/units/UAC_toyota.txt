@@ -1,0 +1,195 @@
+division_template = { 
+	name = "Command Center Africa Army" 
+	division_names_group = ENGL_INF_01
+
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5139
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5139
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5139
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5139
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 5139
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8207
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8207
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8207
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 8207
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10948
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10948
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10948
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13210
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13210
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13210
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+	division= {	#
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13210
+		division_template = "Command Center Africa Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+}

@@ -1,0 +1,183 @@
+
+music_station = "TOTA_technocapital"
+
+music = {
+    song = "Landmass"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Guardian Angel (Xavier's Edition)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Breathe"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Oceania"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Loops of Fury"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The World To Come"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "take you"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Atom Bomb (Atomix 1)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "SALVIA"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Pasiphae 6"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Moonwar"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tethra"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Xpander"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Thousand Pound Butterfly"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Destiny"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Decoy"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Third Sequence"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Auricom"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "V Six"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Footwork Technique"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "X-Project (100% Pure Mix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "P.E.T.R.O.L. (Final Drop Mix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Organic"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Snyper"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Feisar"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Invaders Must Die"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Paradiselost"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Crystalaria"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Lethal Cut"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Icaras"
+    chance = {
+        factor = 1
+    }
+}

@@ -1,0 +1,1698 @@
+add_namespace = USAADK
+
+add_namespace = USANEWSOM
+
+add_namespace = USASCOTT
+
+add_namespace = USAJONES
+
+add_namespace = USAAUTHPELOSI
+
+add_namespace = USADEBUG
+
+add_namespace = ADKALK
+
+country_event = {
+    id = USAADK.1
+    title = USAADK.1.t
+    desc = USAADK.1.d
+    picture = USA_humvee
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.1.a
+	  add_corps_commander_role = {
+        character = USA_gregory_knight
+        skill = 2
+        attack_skill = 2
+        defense_skill = 2
+        planning_skill = 1
+        logistics_skill = 2
+      }
+	  add_corps_commander_role = {
+        character = USA_james_ring
+        skill = 1
+        attack_skill = 1
+        defense_skill = 3
+        planning_skill = 1
+        logistics_skill = 2
+      }
+	  add_corps_commander_role = {
+        character = USA_janeen_birckhead
+        skill = 1
+        attack_skill = 1
+        defense_skill = 2
+        planning_skill = 2
+        logistics_skill = 1
+      }
+	  add_corps_commander_role = {
+        character = USA_douglas_farnham
+        skill = 1
+        attack_skill = 3
+        defense_skill = 1
+        planning_skill = 1
+        logistics_skill = 1
+      }
+	  add_corps_commander_role = {
+        character = USA_mark_schindler
+        skill = 1
+        attack_skill = 2
+        defense_skill = 2
+        planning_skill = 1
+        logistics_skill = 1
+      }
+	}
+}
+country_event = {
+    id = USAADK.2
+    title = USAADK.2.t
+    desc = USAADK.2.d
+    picture = USA_humvee
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.2.a
+	  add_corps_commander_role = {
+        character = USA_jeffrey_maddrey
+        skill = 2
+        attack_skill = 2
+        defense_skill = 2
+        planning_skill = 1
+        logistics_skill = 2
+      }
+	}
+    option = {
+      name = USAADK.2.b
+	  add_stability = 0.075
+	}
+}
+country_event = {
+    id = USAADK.3
+    title = USAADK.3.t
+    desc = USAADK.3.d
+    picture = ADK_military2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.3.a
+	  add_corps_commander_role = {
+        character = USA_kenneth_mckenzie
+        skill = 3
+        attack_skill = 4
+        defense_skill = 3
+        planning_skill = 4
+        logistics_skill = 3
+        }
+      }
+    option = {
+      name = USAADK.3.b
+	  add_stability = 0.05
+      }
+}
+country_event = {
+    id = USAADK.4
+    title = USAADK.4.t
+    desc = USAADK.4.d
+    picture = ADK_the_suck
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.4.a
+      }
+}
+country_event = {
+    id = USAADK.5 #POST WAR TREE LES GO WERE MAKING PROGRESS, BOOYAH
+    title = USAADK.5.t
+    desc = USAADK.5.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.5.a
+      load_focus_tree = {
+      tree = USA_aftermath
+      keep_completed = yes
+      }
+	  set_party_name = {
+        ideology = conservative
+        long_name = SA_socdem_party_postwar_long
+        name = USA_conservatism_party_postwar
+        }
+	  set_party_name = {
+        ideology = liberalism
+        long_name = USA_liberalism_party_postwar_long
+        name = USA_liberalism_party_postwar
+        }
+	  set_party_name = {
+        ideology = socdem
+        long_name = SA_socdem_party_postwar_long
+        name = USA_socdem_party_postwar
+        }
+	  set_party_name = {
+        ideology = autocracy
+        long_name = USA_autocracy_party_postwar_long
+        name = USA_autocracy_party_postwar
+        }
+	  set_party_name = {
+        ideology = dissident_right
+        long_name = USA_dissident_right_party_postwar_long
+        name = USA_dissident_right_party_postwar
+        }
+	  set_party_name = {
+        ideology = anarchism
+        long_name = USA_anarchism_party_postwar_long
+        name = USA_anarchism_party_postwar
+        }
+		USA = {
+		add_ideas = USA_Postwar_Devestation
+		}
+	  set_country_flag = {
+        flag = USA_postdeathkneel
+        }
+      }
+}
+country_event = {
+    id = USAADK.6 #elections
+    title = USAADK.6.t
+    desc = USAADK.6.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.6.a
+      load_focus_tree = {
+      tree = USA_newsom
+	  }
+	  set_politics = {
+	  ruling_party = liberalism
+	  }
+	  create_country_leader = {
+      	name = "Gavin Newsom"
+      	#desc = ""
+      	picture = "gfx/leaders/USA/Gavin-Newsom-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = soclib
+      	traits = {
+      	}
+      }
+	  news_event = {
+		id = WNE.612
+		days = 2
+	  }
+      keep_completed = yes
+      }
+
+    option = {
+      name = USAADK.6.b
+      load_focus_tree = {
+      tree = USA_scott
+	  }
+	  set_politics = {
+	  ruling_party = liberalism
+	  }
+	  create_country_leader = {
+      	name = "Phil Scott"
+      	#desc = ""
+      	picture = "gfx/leaders/USA/Phil-Scott-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = libcon
+      	traits = {
+      	}
+      }
+	  add_dynamic_modifier = {
+		modifier = USA_Scott_Presidency
+		scope = USA
+	  }
+      keep_completed = yes
+      }
+
+    option = {
+      name = USAADK.6.c
+      load_focus_tree = {
+      tree = USA_jones
+	  }
+	  set_politics = {
+	  ruling_party = socdem
+	  }
+	  create_country_leader = {
+      	name = "Anthony Van Jones"
+      	#desc = ""
+      	picture = "gfx/leaders/USA/Van-Jones-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = progre
+      	traits = {
+      	}
+      }
+      keep_completed = yes
+      }
+}
+country_event = {
+    id = USAADK.7
+    title = USAADK.7.t
+    desc = USAADK.7.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.7.a
+      }
+}
+country_event = {
+    id = USAADK.8
+    title = USAADK.8.t
+    desc = USAADK.8.d
+    picture = ADK_pelosi2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.8.a
+	  add_popularity = { ideology = autocracy popularity = 0.025 }
+	  USA = {
+	  activate_advisor = USA_pete_buttigieg
+	    }
+      }
+    option = {
+      name = USAADK.8.b
+	  USA = {
+	  activate_advisor = USA_mike_duncan
+	    }
+      }
+}
+country_event = {
+    id = USAADK.9
+    title = USAADK.9.t
+    desc = USAADK.9.d
+    picture = ADK_pelosi2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.9.a
+	  add_popularity = { ideology = autocracy popularity = 0.025 }
+	  USA = {
+	  activate_advisor = USA_cath_masto
+	    }
+      }
+    option = {
+      name = USAADK.9.b
+	  USA = {
+	  activate_advisor = USA_ro_khanna
+	    }
+      }
+}
+country_event = {
+    id = USAADK.10
+    title = USAADK.10.t
+    desc = USAADK.10.d
+    picture = ADK_pelosi2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.10.a
+	  add_popularity = { ideology = autocracy popularity = 0.025 }
+	  USA = {
+	  activate_advisor = USA_michael_bennet
+	    }
+      }
+    option = {
+      name = USAADK.10.b
+	  USA = {
+	  activate_advisor = USA_elizabeth_fiedler
+	    }
+      }
+}
+country_event = {
+    id = USAADK.11
+    title = USAADK.11.t
+    desc = USAADK.11.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.11.a
+      }
+}
+country_event = {
+    id = USAADK.12
+    title = USAADK.12.t
+    desc = USAADK.12.d
+    picture = GFX_ADK_janitors
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.12.a
+      }
+}
+country_event = {
+    id = USAADK.13
+    title = USAADK.13.t
+    desc = USAADK.13.d
+    picture = ADK_pelosi3
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.13.a
+      }
+}
+country_event = {
+    id = USAADK.14
+    title = USAADK.14.t
+    desc = USAADK.14.d
+    picture = GFX_ADK_janitors
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.14.a
+      }
+}
+country_event = {
+    id = USAADK.15
+    title = USAADK.15.t
+    desc = USAADK.15.d
+    picture = GFX_ADK_janitors
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.15.a
+      }
+}
+country_event = {
+    id = USAADK.16
+    title = USAADK.16.t
+    desc = USAADK.16.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.16.a
+	  load_focus_tree = {
+      tree = USA_authpelosi
+	     }
+      }
+}
+country_event = {
+    id = USAADK.17
+    title = USAADK.17.t
+    desc = USAADK.17.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.17.a
+      }
+}
+country_event = {
+    id = USAADK.18
+    title = USAADK.18.t
+    desc = USAADK.18.d
+    picture = ADK_Bar_Destroyed
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.18.a
+      }
+}
+country_event = {
+    id = USAADK.19
+    title = USAADK.19.t
+    desc = USAADK.19.d
+    picture = ADK_Bar_Destroyed
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.19.a
+      }
+}
+country_event = {
+    id = USAADK.20
+    title = USAADK.20.t
+    desc = USAADK.20.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.20.a
+      }
+}
+country_event = {
+    id = USAADK.21
+    title = USAADK.21.t
+    desc = USAADK.21.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.21.a
+      }
+}
+country_event = {
+    id = USAADK.22
+    title = USAADK.22.t
+    desc = USAADK.22.d
+    picture = ADK_fires_and_riots2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.22.a
+      }
+}
+country_event = {
+    id = USAADK.23
+    title = USAADK.23.t
+    desc = USAADK.23.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.23.a
+      }
+}
+country_event = {
+    id = USAADK.24 #r dale lyles
+    title = USAADK.24.t
+    desc = USAADK.24.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.24.a
+      set_cosmetic_tag = GPR_PCW
+	  create_country_leader = {
+      	name = "Roger Dale Lyles"
+      	desc = ""
+      	picture = "gfx/leaders/GPR/Roger_Dale_Lyles_TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = milgov
+      	traits = {
+      	}
+      }
+	  add_popularity = { ideology = liberalism popularity = 0.10 }
+	}
+    option = {
+      name = USAADK.24.a
+	  set_politics = {
+	  ruling_party = liberalism
+	  }
+		set_cosmetic_tag = GPR_PRT
+	  create_country_leader = {
+      	name = "JB Pritzker"
+      	#desc = ""
+      	picture = "gfx/leaders/GPR/Jay-Robert-Pritzker-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = soclib
+      	traits = {
+      	}
+      }
+	  add_popularity = { ideology = autocracy popularity = -0.20 }
+	  add_popularity = { ideology = liberalism popularity = 0.40 }
+	}
+}
+country_event = {
+    id = USAADK.25
+    title = USAADK.25.t
+    desc = USAADK.25.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.25.a
+	  create_country_leader = {
+      	name = "Nancy Pelosi"
+      	#desc = "POLITICS_NANCY_PELOSI_DESC"
+      	picture = "gfx/leaders/USA/Portrait_USA_Nancy_Pelosi.png"
+      	expire = "2040.1.1"
+      	ideology = progano
+      	traits = {
+		    USA_pelosi_disarmed
+      	}
+      }
+      }
+}
+country_event = {
+    id = USAADK.26
+    title = USAADK.26.t
+    desc = USAADK.26.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	   name = USAADK.26.a
+      }
+}
+country_event = {
+    id = USAADK.27
+    title = USAADK.27.t
+    desc = USAADK.27.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	   name = USAADK.27.a
+      }
+}
+country_event = {
+    id = USAADK.28 #Invade Alaska USA USA USA!!!
+    title = USAADK.28.t
+    desc = USAADK.28.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	name = USAADK.28.a
+		USK = {
+		transfer_state = 801
+		load_oob = "USK_ALK"
+		add_ideas = USK_Thunderdome
+			declare_war_on = {
+				target = ALK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SVK
+				type = annex_everything
+			}
+		}
+		ai_chance = { factor = 60 }
+      }
+}
+country_event = {
+    id = USAADK.29
+    title = USAADK.29.t
+    desc = USAADK.29.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	   name = USAADK.29.a
+      }
+}
+country_event = {
+    id = USAADK.30
+    title = USAADK.30.t
+    desc = USAADK.30.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	   name = USAADK.30.a
+      }
+}
+country_event = {
+    id = USAADK.31 #Invade Hawaii
+    title = USAADK.31.t
+    desc = USAADK.31.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+  option = {
+	name = USAADK.31.a
+		USH = {
+    transfer_state = 1331
+    transfer_state = 1329
+		set_cosmetic_tag = USH_War
+		load_oob = "USH_WAR"
+		add_ideas = USH_Thunderdome
+			declare_war_on = {
+				target = KOH
+				type = annex_everything
+			}
+		}
+		ai_chance = { factor = 60 }
+      }
+}
+country_event = {
+    id = USAADK.32 #Negotians!!!
+    title = USAADK.32.t
+    desc = USAADK.32.d
+    picture = GFX_report_event_pelosi_innagued
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  name = USAADK.32.a
+    USA = {
+    country_event = {
+		id = USAADK.33
+		}
+    }
+		ai_chance = { factor = 75 }
+      }
+    option = {
+	  name = USAADK.32.b
+    USA = {
+    country_event = {
+		id = USAADK.34
+		}
+    }
+		ai_chance = { factor = 25 }
+      }
+}
+country_event = {
+    id = USAADK.33
+    title = USAADK.33.t
+    desc = USAADK.33.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  name = USAADK.33.a
+		USK = {
+		transfer_state = 796
+		transfer_state = 801
+		transfer_state = 799
+		transfer_state = 572
+		load_oob = "USK_ALKTWO"
+		add_ideas = USK_Thunderdome
+			declare_war_on = {
+				target = ALK
+				type = annex_everything
+			}
+		}
+		news_event = {
+			id = WNE.624
+			days = 1
+		}
+		ai_chance = { factor = 60 }
+      }
+}
+country_event = {
+    id = USAADK.34
+    title = USAADK.34.t
+    desc = USAADK.34.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.34.a
+        USA = {
+		    annex_country = {
+			    target = ALK
+		    }
+		add_popularity = { ideology = dissident_right popularity = 0.05 }
+		add_popularity = { ideology = revolutionary_right popularity = 0.05 }
+        }
+      }
+}
+country_event = {
+    id = USAADK.35
+    title = USAADK.35.t
+    desc = USAADK.35.d
+    picture = ADK_military2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.35.a
+		MPL = {
+		transfer_state = 980
+		load_oob = "MPL_WAR"
+			declare_war_on = {
+				target = ANG
+				type = annex_everything
+			}
+    }
+		ANG = {
+    load_oob = "ANG_WAR"
+    }
+		CAB = {
+    transfer_state = 120
+		every_state = { 
+			limit = {
+				is_controlled_by = CAB
+			}
+			add_core_of = CAB
+		}
+    }
+		every_state = {
+			limit = {
+				is_core_of = ANG
+			}
+			add_core_of = MPL
+		}
+		news_event = {
+			id = WNE.625
+			days = 1
+		}
+      }
+}
+country_event = {
+    id = USAADK.36 # shred victor bout with an m249
+    title = USAADK.36.t
+    desc = USAADK.36.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.36.a
+    USS = {
+        transfer_state = 662
+		annex_country = {
+		  target = SEY
+		}
+		every_state = {
+		limit = {
+		is_core_of = SEY
+		}
+		add_core_of = USS
+		}
+        }
+		news_event = {
+			id = WNE.626
+			days = 1
+	    }
+    }
+}
+country_event = {
+    id = USAADK.37 # hopefully this works
+    title = USAADK.37.t
+    desc = USAADK.37.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.37.a
+	  FRA = {add_to_faction = USA }
+	  set_variable = { USA.FACTIONSTATUS = 5 }
+    }
+}
+country_event = {
+    id = USAADK.38 # invade south africa
+    title = USAADK.38.t
+    desc = USAADK.38.d
+    picture = ADK_military
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.38.a
+    }
+}
+country_event = {
+    id = USAADK.39 # invade libya and kill them lal
+    title = USAADK.39.t
+    desc = USAADK.39.d
+    picture = ADK_military
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.39.a
+	FRA = {
+		give_guarantee = UAC
+		give_military_access = UAC
+	}
+  UAC = {
+    transfer_state = 117
+    load_oob = UAC_toyota
+	every_owned_state = {
+		add_core_of = UAC
+	}
+	give_guarantee = FRA
+	give_military_access = FRA
+    }
+    }
+}
+country_event = {
+    id = USAADK.40
+    title = USAADK.40.t
+    desc = USAADK.40.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAADK.40.a
+      set_cosmetic_tag = OBC_JUM
+	  set_politics = {
+	  ruling_party = autocracy
+	  }
+	  create_country_leader = {
+      	name = "Catherine Jumper"
+      	desc = ""
+      	picture = "gfx/leaders/OBC/Catherine-Jumper-TOTA.png"
+      	expire = "2040.1.1"
+      	ideology = milgov
+      	traits = {
+      	}
+      }
+	  add_popularity = { ideology = technocracy popularity = -0.15 }
+	}
+    option = {
+      name = USAADK.40.b
+      		every_state = {
+			limit = {
+				is_core_of = PHI
+			}
+			add_core_of = PH2
+		}
+	}
+    option = {
+      name = USAADK.40.c
+	  set_politics = {
+	  ruling_party = liberalism
+	  }
+		set_cosmetic_tag = OBC_PHR
+	  create_country_leader = {
+      	name = "Pharrell Williams"
+      	#desc = ""
+      	picture = "gfx/leaders/OBC/Pharrell-Williams-OBC-TOTA.png"
+      	expire = "2040.1.1"
+      	ideology = soclib
+      	traits = {
+      	}
+      }
+	  add_popularity = { ideology = autocracy popularity = -0.20 }
+	  add_popularity = { ideology = liberalism popularity = 0.40 }
+	}
+}
+
+country_event = {
+    id = USAADK.41
+    title = USAADK.41.t
+    desc = USAADK.41.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.41.a
+    PH2 = {
+    transfer_state = 413
+    load_oob = PH2_WAR
+		every_state = {
+		limit = {
+		is_core_of = PHI
+		}
+		add_core_of = PH2
+		}
+		declare_war_on = {
+			target = PHI
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = PHL
+			type = annex_everything
+		}
+    PHL = {
+    	declare_war_on = {
+			target = PHI
+			type = annex_everything
+		  }
+     }
+    }
+	}
+}
+
+country_event = {
+    id = USAADK.42
+    title = USAADK.42.t
+    desc = USAADK.42.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+        name = USAADK.42.a
+	        create_country_leader = {
+      	    name = "Angelic Del Castilho"
+      	    #desc = ""
+      	    picture = "gfx/leaders/SRM/SURINAMElEADERTOTA.png"
+      	    expire = "2040.1.1"
+      	    ideology = libcon 
+      	    traits = {
+      	  }
+        }
+	  }
+}
+
+country_event = {
+    id = USAADK.43
+    title = USAADK.43.t
+    desc = USAADK.43.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.43.a
+	    create_country_leader = {
+      	name = "Cuban Emergency Government"
+      	#desc = ""
+      	picture = "gfx/leaders/CUB/Cuban-Government.png"
+      	expire = "2040.1.1"
+      	ideology = sovmarsys 
+      	traits = {
+      	}
+      }
+	  set_politics = {
+	  ruling_party = reformist_socialism
+	  }
+    country_event = {
+    id = USAADK.44
+    days = 60
+    }
+	  }
+    option = {
+    name = USAADK.43.b
+	    create_country_leader = {
+      	name = "Salvador Valdés Mesa"
+      	#desc = ""
+      	picture = "gfx/leaders/CUB/Salvador-Valdés-Mesa-TOTA.png"
+      	expire = "2040.1.1"
+      	ideology = natcom 
+      	traits = {
+      	}
+      }
+	  }
+    option = {
+    name = USAADK.43.c
+	    create_country_leader = {
+      	name = "Óscar Elías Biscet"
+      	#desc = ""
+      	picture = "gfx/leaders/CUB/Óscar-Elías-Biscet-TOTA.png"
+      	expire = "2040.1.1"
+      	ideology = soccon 
+      	traits = {
+      }
+    }
+    add_popularity = { ideology = conservatism popularity = 0.4 }
+	  set_politics = {
+	  ruling_party = conservatism
+	  }
+	  }
+}
+country_event = {
+    id = USAADK.44
+    title = USAADK.44.t
+    desc = USAADK.44.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.44.a
+	    create_country_leader = {
+      	name = "Maykel Osorbo"
+      	#desc = ""
+      	picture = "gfx/leaders/CUB/Maykel-Osorbo-TOTA.png"
+      	expire = "2040.1.1"
+      	ideology = progre
+      	traits = {
+      }
+    }
+    add_popularity = { ideology = socdem popularity = 0.4 }
+	  set_politics = {
+	  ruling_party = socdem
+	  }
+	  }
+    option = {
+    name = USAADK.44.b
+	    create_country_leader = {
+      	name = "Maykel Osorbo"
+      	#desc = ""
+      	picture = "gfx/leaders/CUB/Maykel-Osorbo-TOTA.png"
+      	expire = "2040.1.1"
+      	ideology = mutan
+      	traits = {
+      }
+    }
+    add_popularity = { ideology = anarchism popularity = 0.5 }
+	  set_politics = {
+	  ruling_party = anarchism
+	  }
+	  }
+    option = {
+    name = USAADK.44.c
+	    create_country_leader = {
+      	name = "Salvador Valdés Mesa"
+      	#desc = ""
+      	picture = "gfx/leaders/CUB/Salvador-Valdés-Mesa-TOTA.png"
+      	expire = "2040.1.1"
+      	ideology = natcom 
+      	traits = {
+      }
+	    set_politics = {
+	    ruling_party = hardline_socialism
+	    }
+    }
+	}
+}
+country_event = {
+    id = USAADK.45
+    title = USAADK.45.t
+    desc = USAADK.45.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.45.a
+    IR2 = {
+    transfer_state = 191
+    transfer_state = 192
+    load_oob = IR2_WR
+		every_state = {
+		limit = {
+		is_core_of = IRN
+		}
+		add_core_of = IR2
+		}
+		declare_war_on = {
+			target = IRN
+			type = annex_everything
+		}
+    }
+	}
+}
+country_event = {
+    id = USAADK.46
+    title = USAADK.46.t
+    desc = USAADK.46.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.46.a
+    SUS = {
+    transfer_state = 464
+    transfer_state = 470
+    load_oob = SUS_WAR
+		every_state = {
+		limit = {
+		is_core_of = SAF
+		}
+		add_core_of = SUS
+		}
+		declare_war_on = {
+			target = AWB
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = EFF
+			type = annex_everything
+		}
+    }
+	}
+}
+country_event = {
+    id = USAADK.47
+    title = USAADK.47.t
+    desc = USAADK.47.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.47.a
+    CH4 = {
+    transfer_state = 1176
+    transfer_state = 1178
+    load_oob = CH4_SPAWN
+		every_state = {
+		limit = {
+		is_core_of = PRC
+		}
+		add_core_of = CH4
+		}
+    }
+    USA = {
+    puppet = {
+    target = CH4
+    end_wars = no
+      }
+    }
+	}
+}
+country_event = {
+    id = USAADK.48
+    title = USAADK.48.t
+    desc = USAADK.48.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.48.a
+    HEL = {
+    load_oob = HEL_WAR
+		declare_war_on = {
+			target = GRE
+			type = annex_everything
+		}
+		every_state = {
+		limit = {
+		is_core_of = GRE
+		}
+		add_core_of = HEL
+		}
+    }
+    GRE = {
+    load_oob = GRE_WAR
+    }
+	}
+}
+country_event = {
+    id = USAADK.49
+    title = USAADK.49.t
+    desc = USAADK.49.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.49.a
+    AZR = {
+    transfer_state = 265
+    load_oob = AZR_WAR
+		declare_war_on = {
+			target = POR
+			type = annex_everything
+		}
+		every_state = {
+		limit = {
+		is_core_of = POR
+		  }
+		add_core_of = AZR
+		  }
+    }
+    POR = {
+    load_oob = POR_WAR
+    }
+	}
+}
+country_event = {
+    id = USAADK.50
+    title = USAADK.50.t
+    desc = USAADK.50.desc
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+    name = USAADK.50.a
+    SVA = {
+    transfer_state = 1039
+    transfer_state = 530
+    transfer_state = 535
+    transfer_state = 992
+    transfer_state = 988
+    transfer_state = 1258
+    transfer_state = 1001
+    transfer_state = 726
+    transfer_state = 728
+    transfer_state = 568
+    load_oob = SVA_WAR
+    add_manpower = 2500000
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+		every_state = {
+		limit = {
+		is_core_of = USA
+		  }
+		add_claim_by = SVA
+		  }
+    }
+    puppet = {
+    target = SVA
+    end_wars = no
+    }
+	}
+}
+country_event = {
+    id = USANEWSOM.1
+    title = USANEWSOM.1.t
+    desc = USANEWSOM.1.d
+    picture = ADK_newsom1
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USANEWSOM.1.a
+    }
+}
+country_event = {
+    id = USANEWSOM.2
+    title = USANEWSOM.2.t
+    desc = USANEWSOM.2.d
+    picture = ADK_reconstruction
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USANEWSOM.2.a
+      }
+}
+country_event = {
+    id = USANEWSOM.3
+    title = USANEWSOM.3.t
+    desc = USANEWSOM.3.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USANEWSOM.3.a
+      }
+}
+country_event = {
+    id = USANEWSOM.4
+    title = USANEWSOM.4.t
+    desc = USANEWSOM.4.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USANEWSOM.4.a
+      }
+}
+country_event = {
+    id = USAJONES.1
+    title = USAJONES.1.t
+    desc = USAJONES.1.d
+    picture = ADK_newsom1
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAJONES.1.a
+      }
+}
+country_event = {
+    id = USAJONES.2
+    title = USAJONES.2.t
+    desc = USAJONES.2.d
+    picture = ADK_newsom1
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAJONES.2.a
+      }
+}
+country_event = {
+    id = USAJONES.3
+    title = USAJONES.3.t
+    desc = USAJONES.3.d
+    picture = ADK_newsom1
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAJONES.3.a
+      }
+}
+country_event = {
+    id = USAJONES.4
+    title = USAJONES.4.t
+    desc = USAJONES.4.d
+    picture = ADK_newsom1
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAJONES.4.a
+      }
+}
+country_event = {
+    id = USASCOTT.1
+    title = USASCOTT.1.t
+    desc = USASCOTT.1.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USASCOTT.1.a
+      }
+}
+country_event = {
+    id = USASCOTT.2
+    title = USASCOTT.2.t
+    desc = USASCOTT.2.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USASCOTT.2.a
+      }
+}
+country_event = {
+    id = USASCOTT.3
+    title = USASCOTT.3.t
+    desc = USASCOTT.3.d
+    picture = ADK_reconstruction
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USASCOTT.3.a
+      }
+}
+country_event = {
+    id = USASCOTT.4
+    title = USASCOTT.4.t
+    desc = USASCOTT.4.d
+    picture = ADK_military4
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USASCOTT.4.a
+      }
+}
+country_event = {
+    id = USASCOTT.5
+    title = USASCOTT.5.t
+    desc = USASCOTT.5.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USASCOTT.5.a
+      }
+}
+country_event = {
+    id = USASCOTT.6
+    title = USASCOTT.6.t
+    desc = USASCOTT.6.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USASCOTT.6.a
+      }
+}
+country_event = {
+    id = USAAUTHPELOSI.1
+    title = USAAUTHPELOSI.1.t
+    desc = USAAUTHPELOSI.1.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAAUTHPELOSI.1.a
+      }
+}
+country_event = {
+    id = USAAUTHPELOSI.2
+    title = USAAUTHPELOSI.2.t
+    desc = USAAUTHPELOSI.2.d
+    picture = ADK_reconstruction
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAAUTHPELOSI.2.a
+      }
+}
+country_event = {
+    id = USAAUTHPELOSI.3
+    title = USAAUTHPELOSI.3.t
+    desc = USAAUTHPELOSI.3.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAAUTHPELOSI.3.a
+      }
+}
+country_event = {
+    id = USAAUTHPELOSI.4
+    title = USAAUTHPELOSI.4.t
+    desc = USAAUTHPELOSI.4.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAAUTHPELOSI.4.a
+      }
+}
+country_event = {
+    id = USAAUTHPELOSI.5
+    title = USAAUTHPELOSI.5.t
+    desc = USAAUTHPELOSI.5.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USAAUTHPELOSI.5.a
+	  create_country_leader = {
+      	name = "Executive Branch"
+      	#desc = ""
+      	picture = "gfx/leaders/USA/Executive-Branch-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = anolib
+      	traits = {
+      	}
+      }
+      }
+}
+country_event = {
+    id = USAAUTHPELOSI.6
+    title = USAAUTHPELOSI.6.t
+    desc = USAAUTHPELOSI.6.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	  set_politics = {
+	  ruling_party = socdem
+	  }
+      name = USAAUTHPELOSI.6.a
+	  create_country_leader = {
+      	name = "Pete Buttigieg"
+      	#desc = ""
+      	picture = "gfx/leaders/OBC/Pete Buttigieg.dds"
+      	expire = "2040.1.1"
+      	ideology = thway
+      	traits = {
+      	}
+      }
+      }
+    option = {
+      name = USAAUTHPELOSI.6.b
+	  create_country_leader = {
+      	name = "Llyold Austin"
+      	#desc = ""
+      	picture = "gfx/leaders/USA/Llyold-Austin-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = anolib
+      	traits = {
+      	}
+      }
+      }
+}
+country_event = {
+    id = USADEBUG.9 # focus tree
+    title = USADEBUG.9.t
+    desc = USADEBUG.9.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USADEBUG.9.a
+	    load_focus_tree = {
+        tree = USA_actualstarting
+	    }
+	}
+	option = {
+		name = USADEBUG.9.b
+	    load_focus_tree = {
+        tree = USA_pelosi
+	    }
+	}
+}
+country_event = {
+    id = USADEBUG.17 # focus tree alaska
+    title = USADEBUG.17.t
+    desc = USADEBUG.17.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = USADEBUG.17.a
+	    load_focus_tree = {
+        tree = USK_postwar
+	    }
+	}
+    option = {
+      name = USADEBUG.17.b
+	    load_focus_tree = {
+        tree = USK_war
+	    }
+	}
+}
+country_event = {
+    id = ADKALK.910 # focus tree change alaska
+    title = ADKALK.910.t
+    desc = ADKALK.910.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ADKALK.910.a
+      	load_focus_tree = {
+          tree = USK_postwar
+	    }
+	}
+}
+country_event = {
+    id = ADKALK.911 # Alaska Election
+    title = ADKALK.911.t
+    desc = ADKALK.911.d
+    picture = GFX_report_event_teddy_ded
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ADKALK.911.a
+	  create_country_leader = {
+      	name = "Mark Begich"
+      	#desc = ""
+      	picture = "gfx/leaders/USK/Begich-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = soclib
+      	traits = {
+      	}
+      }
+	}
+	option = {
+		name = ADKALK.911.b
+	  create_country_leader = {
+      	name = "Al Gross"
+      	#desc = ""
+      	picture = "gfx/leaders/USK/AL-GROSS-TOTA.dds"
+      	expire = "2040.1.1"
+      	ideology = ecolib
+      	traits = {
+      	}
+      }
+	}
+}
+country_event = {
+    id = ADKALK.1
+    title = ADKALK.1.t
+    desc = ADKALK.1.d
+    picture = GFX_ADK_janitors
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+      name = ADKALK.1.a
+      }
+}
+country_event = {
+    id = ADKALK.2
+    title = ADKALK.2.t
+    desc = ADKALK.2.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	   name = ADKALK.2.a
+      }
+}
+country_event = {
+    id = ADKALK.3
+    title = ADKALK.3.t
+    desc = ADKALK.3.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	   name = ADKALK.3.a
+      }
+}
+country_event = {
+    id = ADKALK.4
+    title = ADKALK.4.t
+    desc = ADKALK.4.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    option = {
+	   name = ADKALK.4.a
+      }
+}
+country_event = {
+    id = ADKALK.5
+    title = ADKALK.5.t
+    desc = ADKALK.5.d
+    picture = ADK_office2
+    is_triggered_only = yes
+    fire_only_once = yes 
+
+    #### Tag Switch ####
+    option = {
+	   name = ADKALK.5.a
+	   USA = { change_tag_from = USK }
+         USA = {
+		  annex_country = {
+		  target = USK
+		  }
+        }
+		  ai_chance = { factor = 100 }
+      }
+    #### State Larp ####
+    option = {
+	   name = ADKALK.5.b
+	   set_cosmetic_tag = USKstate
+		every_owned_state = {
+			add_core_of = USK
+		}
+	   USA = { puppet = USK}
+		ai_chance = { factor = 0 }
+      }
+}

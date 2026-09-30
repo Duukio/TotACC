@@ -1,0 +1,29 @@
+add_namespace = USA_CW_CHOICE
+
+# Disparado cuando estalla el conflicto
+country_event = {
+	id = USA_CW_CHOICE.1
+	title = USA_CW_CHOICE.1.t
+	desc = USA_CW_CHOICE.1.desc
+	picture = GFX_report_event_alexander_farewell
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	# Opción 1: Continuar con el Gobierno Federal (USA)
+	option = {
+		name = USA_CW_CHOICE.1.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = USA_CW_stay_usa_tt
+	}
+
+	# Opción 2: Cambiar a Florida (SFL)
+	option = {
+		name = USA_CW_CHOICE.1.b
+		ai_chance = { factor = 0 }
+
+		SFL = {
+			change_tag_from = USA
+		}
+	}
+}

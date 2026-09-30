@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USA_actualstarting
+    country = {
+        factor = 0
+        modifier = {
+            add = 28
+            tag = USA
+        }
+    }
+    shared_focus = USA_the_takeover
+}

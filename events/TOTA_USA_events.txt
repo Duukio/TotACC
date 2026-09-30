@@ -64,108 +64,56 @@ country_event = {
     id = USASKELETON.1 # Step 1: Remove ABJ and change to Pelosi #MUST FIRE JAN 20
     title = USASKELETON.1.t
     desc = USASKELETON.1.desc
-	picture = GFX_report_event_lions_in_the_street
+    picture = GFX_report_event_alexander_farewell
     is_triggered_only = yes
     fire_only_once = yes 
 
     option = {
       name = USASKELETON.1.a
-	  	  hidden_effect = {
 	  	usacw_all_us_states_in_array = yes
 		retire_country_leader = yes
 		set_politics = {
 		ruling_party = autocracy
 		}
-		every_country = {
-			limit = {
-			is_ai = no	
-			}
-		    news_event = {
-		        id = WNE.219
-		        hours = 0
-		    }
-		}
-		}
+	    load_focus_tree = {
+        tree = USA_actualstarting
+	    }
 	}
 }
 country_event = {
     id = USASKELETON.2 # stage 1, American Republic start 
     title = USASKELETON.2.t
     desc = USASKELETON.2.desc
-	picture = GFX_report_event_waiting_in_the_country
+    picture = GFX_report_event_alexander_farewell
 	is_triggered_only = yes
     fire_only_once = yes 
 
     option = {
       name = USASKELETON.2.a
-	  hidden_effect = {
-		USP = {
-			transfer_state = 752
-			transfer_state = 1132
-			transfer_state = 1130
-			transfer_state = 751
-			transfer_state = 1127
-			transfer_state = 1128
-			transfer_state = 1131
-			transfer_state = 549
-			transfer_state = 1129
-			transfer_state = 1012
-			transfer_state = 787
-			transfer_state = 1010
-			transfer_state = 1011
-			transfer_state = 537
-			transfer_state = 543
-	    }
-	    every_country = {
-			limit = {
-			is_ai = no	
-			}
-			news_event = {
-			id = WNE.220
-			hours = 0
-			}
-		}
+	  USP = {
+		transfer_state = 752
+		transfer_state = 1132
+		transfer_state = 1130
+		transfer_state = 751
+		transfer_state = 1127
+		transfer_state = 1128
+		transfer_state = 1131
+		transfer_state = 549
+		transfer_state = 1129
+		transfer_state = 1012
+		transfer_state = 787
+		transfer_state = 1010
+		transfer_state = 1011
+		transfer_state = 537
+		transfer_state = 543
 	  }
-	}
-	option = {
-      name = USASKELETON.2.b
-      hidden_effect = {
-		USP = {
-			transfer_state = 752
-			transfer_state = 1132
-			transfer_state = 1130
-			transfer_state = 751
-			transfer_state = 1127
-			transfer_state = 1128
-			transfer_state = 1131
-			transfer_state = 549
-			transfer_state = 1129
-			transfer_state = 1012
-			transfer_state = 787
-			transfer_state = 1010
-			transfer_state = 1011
-			transfer_state = 537
-			transfer_state = 543
-			change_tag_from = USA
-	    }
-	    every_country = {
-			limit = {
-			is_ai = no	
-			}
-			news_event = {
-			id = WNE.220
-			hours = 0
-			}
-		}
-	  }
-	  custom_effect_tooltip = no_content_in_this_update_warning.tt
 	}
 }
 country_event = {
     id = USASKELETON.3 #Stage 2, Republic expands
     title = USASKELETON.3.t
     desc = USASKELETON.3.desc
-	picture = GFX_report_event_song_of_the_south
+    picture = GFX_report_event_alexander_farewell
     is_triggered_only = yes
     fire_only_once = yes 
 
@@ -205,249 +153,90 @@ country_event = {
 	id = USASKELETON.4 #Stage 3, new africa, florida and lakota, and west coast
 	title = USASKELETON.4.t
     desc = USASKELETON.4.desc
-	picture = GFX_report_event_last_piece_of_the_puzzle
+    picture = GFX_report_event_alexander_farewell
     is_triggered_only = yes
     fire_only_once = yes
 
 	option = {
 		name = USASKELETON.4.a
-		hidden_effect = {
-			SFL = {
-				transfer_state = 793
-				transfer_state = 794
-				transfer_state = 795
-				transfer_state = 987
-				transfer_state = 539
-				transfer_state = 986
-				transfer_state = 987
-		    }
-			BSD = {
-				transfer_state = 792
-				transfer_state = 990
-				transfer_state = 538
-				transfer_state = 991
-				transfer_state = 989
-				transfer_state = 988
-				transfer_state = 992
-				transfer_state = 790
-				transfer_state = 791
-				transfer_state = 993
-				set_cosmetic_tag = BSD_GEORGIA
-				change_tag_from = USA
-			}
-			USP = {
-				transfer_state = 999
-				transfer_state = 998
-				transfer_state = 537
-				transfer_state = 997
-				transfer_state = 996
-				transfer_state = 771
-				transfer_state = 536
-				transfer_state = 995
-				transfer_state = 994
-				transfer_state = 755
-				transfer_state = 754
-				transfer_state = 1053
-				transfer_state = 546
-				transfer_state = 1052
-				transfer_state = 757
-				transfer_state = 1051
-				transfer_state = 547
-				transfer_state = 756
-				transfer_state = 1136
-				transfer_state = 1137
-				transfer_state = 556
-			}
-			CAL = {
-				transfer_state = 733
-				transfer_state = 732
-				transfer_state = 731
-				transfer_state = 552
-				transfer_state = 553
-				transfer_state = 1149
-				transfer_state = 1151
-				transfer_state = 1150
-				transfer_state = 1152
-				transfer_state = 551
-				transfer_state = 1147
-				transfer_state = 742
-				transfer_state = 1148
-				transfer_state = 743
-				transfer_state = 744
-				transfer_state = 1143
-				transfer_state = 745
-				transfer_state = 1142
-				transfer_state = 1141
-				transfer_state = 550
-				transfer_state = 1145
-				transfer_state = 1146
-				transfer_state = 1144
-				transfer_state = 741
-				transfer_state = 555
-				set_cosmetic_tag = CAL_USCCW
-			}
+		SFL = {
+			transfer_state = 793
+			transfer_state = 794
+			transfer_state = 795
+			transfer_state = 987
+			transfer_state = 539
+			transfer_state = 986
+			transfer_state = 987
 		}
-		custom_effect_tooltip = no_content_in_this_update_warning.tt
+		BSD = {
+			transfer_state = 792
+			transfer_state = 990
+			transfer_state = 538
+			transfer_state = 991
+			transfer_state = 989
+			transfer_state = 988
+			transfer_state = 992
+			transfer_state = 790
+			transfer_state = 791
+			transfer_state = 993
+			set_cosmetic_tag = BSD_GEORGIA
+		}
+		USP = {
+			transfer_state = 999
+			transfer_state = 998
+			transfer_state = 537
+			transfer_state = 997
+			transfer_state = 996
+			transfer_state = 771
+			transfer_state = 536
+			transfer_state = 995
+			transfer_state = 994
+			transfer_state = 755
+			transfer_state = 754
+			transfer_state = 1053
+			transfer_state = 546
+			transfer_state = 1052
+			transfer_state = 757
+			transfer_state = 1051
+			transfer_state = 547
+			transfer_state = 756
+			transfer_state = 1136
+			transfer_state = 1137
+			transfer_state = 556
+		}
+		CAL = {
+			transfer_state = 733
+			transfer_state = 732
+			transfer_state = 731
+			transfer_state = 552
+			transfer_state = 553
+			transfer_state = 1149
+			transfer_state = 1151
+			transfer_state = 1150
+			transfer_state = 1152
+			transfer_state = 551
+			transfer_state = 1147
+			transfer_state = 742
+			transfer_state = 1148
+			transfer_state = 743
+			transfer_state = 744
+			transfer_state = 1143
+			transfer_state = 745
+			transfer_state = 1142
+			transfer_state = 1141
+			transfer_state = 550
+			transfer_state = 1145
+			transfer_state = 1146
+			transfer_state = 1144
+			transfer_state = 741
+			transfer_state = 555
+			set_cosmetic_tag = CAL_USCCW
+		}
+		LKT = {
+			drop_cosmetic_tag = yes
+		}
 	}
-	option = {
-		name = USASKELETON.4.b
-		hidden_effect = {
-			SFL = {
-				transfer_state = 793
-				transfer_state = 794
-				transfer_state = 795
-				transfer_state = 987
-				transfer_state = 539
-				transfer_state = 986
-				transfer_state = 987
-				change_tag_from = USA
-		    }
-			BSD = {
-				transfer_state = 792
-				transfer_state = 990
-				transfer_state = 538
-				transfer_state = 991
-				transfer_state = 989
-				transfer_state = 988
-				transfer_state = 992
-				transfer_state = 790
-				transfer_state = 791
-				transfer_state = 993
-				set_cosmetic_tag = BSD_GEORGIA
-			}
-			USP = {
-				transfer_state = 999
-				transfer_state = 998
-				transfer_state = 537
-				transfer_state = 997
-				transfer_state = 996
-				transfer_state = 771
-				transfer_state = 536
-				transfer_state = 995
-				transfer_state = 994
-				transfer_state = 755
-				transfer_state = 754
-				transfer_state = 1053
-				transfer_state = 546
-				transfer_state = 1052
-				transfer_state = 757
-				transfer_state = 1051
-				transfer_state = 547
-				transfer_state = 756
-				transfer_state = 1136
-				transfer_state = 1137
-				transfer_state = 556
-			}
-			CAL = {
-				transfer_state = 733
-				transfer_state = 732
-				transfer_state = 731
-				transfer_state = 552
-				transfer_state = 553
-				transfer_state = 1149
-				transfer_state = 1151
-				transfer_state = 1150
-				transfer_state = 1152
-				transfer_state = 551
-				transfer_state = 1147
-				transfer_state = 742
-				transfer_state = 1148
-				transfer_state = 743
-				transfer_state = 744
-				transfer_state = 1143
-				transfer_state = 745
-				transfer_state = 1142
-				transfer_state = 1141
-				transfer_state = 550
-				transfer_state = 1145
-				transfer_state = 1146
-				transfer_state = 1144
-				transfer_state = 741
-				transfer_state = 555
-				set_cosmetic_tag = CAL_USCCW
-			}
-		}
-		custom_effect_tooltip = SWITCHES_TO_FLORIDA.tt
-	}
-	option = {
-		name = USASKELETON.4.c
-		hidden_effect = {
-			SFL = {
-				transfer_state = 793
-				transfer_state = 794
-				transfer_state = 795
-				transfer_state = 987
-				transfer_state = 539
-				transfer_state = 986
-				transfer_state = 987
-		    }
-			BSD = {
-				transfer_state = 792
-				transfer_state = 990
-				transfer_state = 538
-				transfer_state = 991
-				transfer_state = 989
-				transfer_state = 988
-				transfer_state = 992
-				transfer_state = 790
-				transfer_state = 791
-				transfer_state = 993
-				set_cosmetic_tag = BSD_GEORGIA
-			}
-			USP = {
-				transfer_state = 999
-				transfer_state = 998
-				transfer_state = 537
-				transfer_state = 997
-				transfer_state = 996
-				transfer_state = 771
-				transfer_state = 536
-				transfer_state = 995
-				transfer_state = 994
-				transfer_state = 755
-				transfer_state = 754
-				transfer_state = 1053
-				transfer_state = 546
-				transfer_state = 1052
-				transfer_state = 757
-				transfer_state = 1051
-				transfer_state = 547
-				transfer_state = 756
-				transfer_state = 1136
-				transfer_state = 1137
-				transfer_state = 556
-			}
-			CAL = {
-				transfer_state = 733
-				transfer_state = 732
-				transfer_state = 731
-				transfer_state = 552
-				transfer_state = 553
-				transfer_state = 1149
-				transfer_state = 1151
-				transfer_state = 1150
-				transfer_state = 1152
-				transfer_state = 551
-				transfer_state = 1147
-				transfer_state = 742
-				transfer_state = 1148
-				transfer_state = 743
-				transfer_state = 744
-				transfer_state = 1143
-				transfer_state = 745
-				transfer_state = 1142
-				transfer_state = 1141
-				transfer_state = 550
-				transfer_state = 1145
-				transfer_state = 1146
-				transfer_state = 1144
-				transfer_state = 741
-				transfer_state = 555
-				set_cosmetic_tag = CAL_USCCW
-			}
-		}
-		custom_effect_tooltip = no_content_in_this_update_warning.tt
-	}	
+	
 }
 country_event = {
 	id = USASKELETON.5 # Step 4, go west, western sepratists
@@ -470,10 +259,12 @@ country_event = {
 			transfer_state = 559
 			transfer_state = 735
 			transfer_state = 1167
-			set_cosmetic_tag = ATI_REGIONAL
 		}
 		KOH = {
 			transfer_state = 574
+			transfer_state = 1329
+			transfer_state = 1330
+			transfer_state = 1331
 		}
 		DAK = {
 			transfer_state = 563
@@ -546,10 +337,6 @@ country_event = {
     			target = MOT
     			transfer_troops = no
 			}
-			country_event = {
-				id = NWF.10
-				hours = 0 
-			}
 		}
 		738 = {
 			set_demilitarized_zone = yes
@@ -574,10 +361,6 @@ country_event = {
 			transfer_state = 554
 			transfer_state = 740
 			transfer_state = 1157
-			country_event = {
-				id = NWF.11
-				hours = 0 
-			}
 		}
 		1157 = {
 			set_demilitarized_zone = yes
@@ -597,10 +380,6 @@ country_event = {
 			annex_country = {
 				target = DAK
 				transfer_troops = no
-			}
-			country_event = {
-				id = LKT.10
-				hours = 0 
 			}
 		}
 		746 = {
@@ -624,30 +403,15 @@ country_event = {
 			transfer_state = 1167
 			transfer_state = 735
 			transfer_state = 1153
-			country_event = {
-				id = NWF.13
-				hours = 0 
-			}
 		}
 		NWF = {
 			load_oob = "NWF_CW"
 		}
 		ATI = {
-			create_faction = TURTLE_ISLAND_FACTION
-			add_to_faction = LKT
 			load_oob = "ATI_CW"
 		}
-		ATI = {
-			country_event = {
-				id = ATI.11
-				hours = 0 
-			}
-		}
-		CAL = {
-			country_event = {
-				id = CAL.11
-				hours = 0 
-			}
+		LKT = {
+			load_oob = "LKT_CW"
 		}
 	}
 }
@@ -771,11 +535,11 @@ country_event = {
 	id = USASKELETON.16 # Louisiana joins the republic
     title = USASKELETON.16.t
     desc = USASKELETON.16.desc
-	picture = GFX_report_event_hello_baton_rouge
+    picture = GFX_report_event_alexander_farewell
     is_triggered_only = yes
     fire_only_once = yes
 	option = {
-		name = USASKELETON.16.a
+		name = USASKELETON.12.a
 		USP = {
 			transfer_state = 545
 			transfer_state = 1055
@@ -797,23 +561,13 @@ country_event = {
 			transfer_state = 1159
 			transfer_state = 738
 			transfer_state = 1157
-			country_event = {
-				id = LKT.11
-				hours = 0 
-			}
-		}
-		NWF = {
-			country_event = {
-				id = NWF.12
-				hours = 0 
-			}
 		}
 	}
 }
 country_event = {
 	id = USASKELETON.12 # Step 10, command centres established
-    title = USASKELETON.12.t
-    desc = USASKELETON.12.desc
+    title = USASKELETON.10.t
+    desc = USASKELETON.10.desc
     picture = GFX_report_event_alexander_farewell
     is_triggered_only = yes
     fire_only_once = yes
@@ -974,12 +728,6 @@ country_event = {
 		USA = {
 			add_to_faction = BSD
 		}
-		LKT = {
-			country_event = {
-				id = LKT.12
-				hours = 0 
-			}
-		}
 	}
 }
 country_event = {
@@ -998,13 +746,6 @@ country_event = {
 		}
 		OBM = {
 			transfer_state = 986
-			transfer_state = 1332
-		}
-		SFL = {
-			country_event = {
-				id = SFL.44
-				hours = 0 
-			}
 		}
 	}
 }
@@ -1173,28 +914,10 @@ country_event = {
 		for_each_loop = {
 			array = global.USA_CW_TAGS
 			var:v = {
-				inherit_technology = USA
-				add_ideas = USA_guerilla_warfare
 			}
 		}
 		USA = {
 			set_country_flag = USA_civil_war_began
-			remove_ideas = {
-				USA_rural_paramil_troubles
-				USA_mass_econ_inequality
-			}
-			subtract_from_variable = { USA.GDP = 10000}
-			set_technology = {
-				tech_support = 1		
-				tech_engineers = 1
-				tech_special_forces= 1
-				infantry_weapons = 1
-				infantry_weapons1 = 1
-				support_weapons = 1
-				tech_trucks = 1
-				MSPcamo = 1
-				recon_drone = 1
-			} #FAILSAFE
 		}
 		every_country = {
 			limit = {
@@ -1228,8 +951,18 @@ country_event = {
 			add_ideas = OBM_attack
 	  	}
 		countries_with_specific_econ_systems = yes
+		load_focus_tree = {
+        tree = USA_pelosicivilwar
+	    }
+		country_event = {
+			id = USA_CW_CHOICE.1
+			days = 1
+		}
 	}
 }
+
+
+
 country_event = {
     id = USADEBUG.1 # Alaska teaser
     title = USADEBUG.1.t
@@ -1306,7 +1039,7 @@ country_event = {
 		create_country_leader = {
 			name = "Rt. Rev. Santa Claus"
 			desc = "POLITICS_SANTA_DESC"
-			picture = "gfx/leaders/SVK/Portrait_SVK_Santa.png"
+			picture = "gfx/leaders/SVK/Portrait_SVK_Santa.dds"
 			expire = "2040.1.1"
 			ideology = nl_s
 			traits = {
@@ -1320,7 +1053,7 @@ country_event = {
 		create_country_leader = {
 			name = "Mary Peltola"
 			desc = "POLITICS_SANTA_DESC"
-			picture = "gfx/leaders/SVK/Mary Peltola.png"
+			picture = "gfx/leaders/SVK/Mary Peltola.dds"
 			expire = "2040.1.1"
 			ideology = sovmarsys
 			traits = {
@@ -1329,33 +1062,37 @@ country_event = {
 		# news event later
 	}	
 }
+add_namespace = USA_CW_CHOICE
 
+# Evento: Elección de bando al inicio de la crisis
 country_event = {
-    id = USASKELETON.999 # Negotiate with USP (always fails)
-    title = USASKELETON.999.t
-    desc = USASKELETON.999.desc
-    is_triggered_only = yes
-    fire_only_once = yes 
+	id = USA.999
+	title = "La Fractura de la Unión"
+	desc = "El gobierno federal en Washington pierde el control y la guerra civil se extiende por todo el país. ¿Desde qué frente asumirás el mando?"
+	picture = GFX_report_event_alexander_farewell
+	is_triggered_only = yes
+	fire_only_once = yes
 
-    option = {
-      name = USASKELETON.999.a
-	  USA = {
-		country_event = {
-			id = USASKELETON.1000
-			days = 1
-		}
-	  }
+	option = {
+		name = "Defender la Unión Federal en Washington (Jugar como EE. UU.)"
+		ai_chance = { factor = 100 }
 	}
-}
 
-country_event = {
-    id = USASKELETON.1000 # Negotiate with USP (always fails)
-    title = USASKELETON.1000.t
-    desc = USASKELETON.1000.desc
-    is_triggered_only = yes
-    fire_only_once = yes 
+	option = {
+		name = "Tomar el control de Florida (Jugar como SFL)"
+		ai_chance = { factor = 0 }
+		
+		# Asegurar que Florida exista con sus estados si disparas el evento antes de tiempo
+		if = {
+			limit = { NOT = { SFL = { owns_state = 539 } } }
+			SFL = {
+				transfer_state = 539
+				transfer_state = 986
+			}
+		}
 
-    option = {
-      name = USASKELETON.1000.a
+		SFL = {
+			change_tag_from = USA
+		}
 	}
 }

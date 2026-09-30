@@ -245,16 +245,7 @@ soundeffect = {
 }
 soundeffect = {
 
-	name = augustus
-	sounds = { sound = augustus }
-}
-soundeffect = {
-
-	name = dragula
-	sounds = { sound = dragula }
-}
-soundeffect = {
-
-	name = preston
-	sounds = { sound = preston }
+	name = phil_scott
+	#volume = 0.5
+	sounds = { sound = phil_scott }
 }

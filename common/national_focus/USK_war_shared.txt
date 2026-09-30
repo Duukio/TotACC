@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USK_war
+    country = {
+        factor = 0
+        modifier = {
+            add = 26
+            tag = USK
+        }
+    }
+    shared_focus = USK_a_command_center_in_the_cold
+}

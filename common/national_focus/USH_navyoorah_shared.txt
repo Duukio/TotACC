@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USH_navyoorah
+    country = {
+        factor = 0
+        modifier = {
+            add = 25
+            tag = USH
+        }
+    }
+    shared_focus = USH_back_in_the_usa
+}

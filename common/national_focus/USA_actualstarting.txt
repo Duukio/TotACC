@@ -1,0 +1,217 @@
+
+
+shared_focus = {
+	id = USA_the_takeover
+	icon = GFX_USA_the_takeover
+	cost = 2
+	x = 3
+	y = 0
+	completion_reward = {
+		add_stability = 0.05	
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_takeover"
+	}
+}
+
+shared_focus = {
+	id = USA_washington_burning
+	icon = GFX_USA_washington_burning
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_political_power = 200
+		log = "[GetDateText]: [Root.GetName]: Focus USA_washington_burning"
+	}
+	relative_position_id = USA_the_takeover
+	prerequisite = { focus = USA_the_takeover }
+}
+
+shared_focus = {
+	id = USA_preparing_the_core
+	icon = GFX_USA_preparing_the_core
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 5
+			    instant_build = yes
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_preparing_the_core"
+	}
+	relative_position_id = USA_the_takeover
+	prerequisite = { focus = USA_the_takeover }
+}
+
+shared_focus = {
+	id = USA_activating_the_reserves
+	icon = GFX_USA_activating_the_reserves
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_manpower = 25000
+		log = "[GetDateText]: [Root.GetName]: Focus USA_activating_the_reserves"
+	}
+	relative_position_id = USA_preparing_the_core
+	prerequisite = { focus = USA_preparing_the_core }
+}
+
+shared_focus = {
+	id = USA_getting_on_the_line_with_moscow
+	icon = GFX_USA_getting_on_the_line_with_moscow
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 1350
+		producer = SOV
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_getting_on_the_line_with_moscow"
+	}
+	relative_position_id = USA_washington_burning
+	prerequisite = { focus = USA_washington_burning }
+}
+
+shared_focus = {
+	id = USA_shit_too_late
+	icon = GFX_USA_shit_too_late
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_shit_too_late"
+	}
+	relative_position_id = USA_rushed_barricades_and_chainlink_fences
+	prerequisite = { focus = USA_rushed_barricades_and_chainlink_fences }
+	prerequisite = { focus = USA_rockbottom }
+}
+
+shared_focus = {
+	id = USA_grabbing_who_we_can
+	icon = GFX_USA_grabbing_who_we_can
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		add_manpower = 10000
+		log = "[GetDateText]: [Root.GetName]: Focus USA_grabbing_who_we_can"
+	}
+	relative_position_id = USA_preparing_the_core
+	prerequisite = { focus = USA_preparing_the_core }
+}
+
+shared_focus = {
+	id = USA_lock_congress_down
+	icon = GFX_USA_lock_congress_down
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus USA_lock_congress_down"
+	}
+	relative_position_id = USA_washington_burning
+	prerequisite = { focus = USA_washington_burning }
+}
+
+shared_focus = {
+	id = USA_emergency_federal_controls
+	icon = GFX_USA_emergency_federal_controls
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_timed_idea = {
+			idea = USA_fed_control
+			days = 250
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_emergency_federal_controls"
+	}
+	relative_position_id = USA_lock_congress_down
+	prerequisite = { focus = USA_lock_congress_down }
+}
+
+shared_focus = {
+	id = USA_power_to_fema
+	icon = GFX_USA_power_to_fema
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_timed_idea = {
+			idea = USA_FEMA_takeover
+			days = 250
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_power_to_fema"
+	}
+	relative_position_id = USA_getting_on_the_line_with_moscow
+	prerequisite = { focus = USA_getting_on_the_line_with_moscow }
+}
+
+shared_focus = {
+	id = USA_rerouting_the_power
+	icon = GFX_USA_rerouting_the_power
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rerouting_the_power"
+	}
+	relative_position_id = USA_activating_the_reserves
+	prerequisite = { focus = USA_activating_the_reserves }
+}
+
+shared_focus = {
+	id = USA_tvs_get_your_free_tvs
+	icon = GFX_USA_tvs_get_your_free_tvs
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA.GDP = -1 }
+		add_manpower = 1500
+		log = "[GetDateText]: [Root.GetName]: Focus USA_tvs_get_your_free_tvs"
+	}
+	relative_position_id = USA_grabbing_who_we_can
+	prerequisite = { focus = USA_grabbing_who_we_can }
+}
+
+shared_focus = {
+	id = USA_rushed_barricades_and_chainlink_fences
+	icon = GFX_USA_rushed_barricades_and_chainlink_fences
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_timed_idea = {
+			idea = USA_rushed_barricades_and_chainlink_fences
+			days = 90
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rushed_barricades_and_chainlink_fences"
+	}
+	relative_position_id = USA_rerouting_the_power
+	prerequisite = { focus = USA_rerouting_the_power }
+	prerequisite = { focus = USA_tvs_get_your_free_tvs }
+}
+
+shared_focus = {
+	id = USA_rockbottom
+	icon = GFX_USA_rockbottom
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+	    add_timed_idea = {
+		idea = USA_rockbottom
+		days = 200
+		}
+	}
+	relative_position_id = USA_emergency_federal_controls
+	prerequisite = { focus = USA_emergency_federal_controls }
+	prerequisite = { focus = USA_power_to_fema }
+}

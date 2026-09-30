@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USA_jones
+    country = {
+        factor = 0
+        modifier = {
+            add = 13
+            tag = USA
+        }
+    }
+    shared_focus = USA_jones_presidency
+}

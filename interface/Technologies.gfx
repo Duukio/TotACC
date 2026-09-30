@@ -158,21 +158,41 @@ spriteTypes = {
 		name = "GFX_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/rifle30.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_USA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA_rifle30.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_improved_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/rifle10.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA_rifle10.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/rifle80.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA_rifle80.dds"
 	}		
 	
 	SpriteType = {
 		name = "GFX_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/rifle90.dds"
-	}	
+	}
+	
+	SpriteType = {
+		name = "GFX_USA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/USA_rifle90.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_mechanised_infantry3_medium"
@@ -605,6 +625,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/rifle00.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/USA_rifle00.dds"
 	}	
 
 	SpriteType = {
@@ -615,7 +640,12 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_advanced_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/rifle40.dds"
-	}		
+	}
+
+	SpriteType = {
+		name = "GFX_USA_advanced_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/USA_rifle40.dds"
+	}	
 	
 	### naval doctrines	###
 
@@ -2254,6 +2284,38 @@ spriteTypes = {
 		name = "GFX_generic_super_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/super_heavy_tank.dds"
 	}
+
+	### American Tanks ###
+
+	SpriteType = {
+		name = "GFX_USA_gwtank_medium"
+		texturefile = "gfx/interface/technologies/USA_gw_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_basic_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_improved_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_advanced_medium_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_basic_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/USA_advanced_light_tank.dds"
+	}
 	
 	### Generic Aircrafts ###	
 
@@ -2407,6 +2469,28 @@ spriteTypes = {
 		name = "GFX_scout_plane2_medium"
 		texturefile = "gfx/interface/technologies/empty.dds"
 	}		
+
+	### American Aircrafts ###
+
+	SpriteType = {
+		name = "GFX_USA_fighter1_medium"
+		texturefile = "gfx/interface/technologies/USA_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/USA_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CAS1_medium"
+		texturefile = "gfx/interface/technologies/USA_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_USA_fighter3"
+		texturefile = "gfx/interface/technologies/USA_fighter3.dds"
+	}
 	
 	### German Aircrafts ###
 

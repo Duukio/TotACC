@@ -263,30 +263,17 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		iconType = {
-			name ="Super_Event_Image_augustus"
-			spriteType = "GFX_Super_augustus"
-			position = { x = 0 y = 0 }
-			alwaystransparent = yes
-		}
-		iconType = {
-			name ="Super_Event_Image_preston"
-			spriteType = "GFX_Super_preston"
-			position = { x = 0 y = 0 }
-			alwaystransparent = yes
-		}
-		iconType = {
-			name ="Super_Event_Image_sharkey"
-			spriteType = "GFX_Super_sharkey"
+			name ="Super_Event_Image_Scott"
+			spriteType = "GFX_Super_Scott"
 			position = { x = 0 y = 0 }
 			alwaystransparent = yes
 		}
 
 		buttonType = {
             name = "Super_Event_Close"
-            position = { x = 773 y = 10 }
+            position = { x = 781 y = 13 }
             quadTextureSprite ="GFX_closebutton_super"
             clicksound = click_scroll
-			shortcut = ESCAPE
         }
 	}
 }

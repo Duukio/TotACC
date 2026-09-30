@@ -1,0 +1,105 @@
+
+music_station = "TOTA_tschumi"
+
+music = {
+    song = "Augustus"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "2000"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Atlantica"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Everlasting Well"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Pink Vision"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Simulating Night"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Mild Seven"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Slowly Suffer"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Alfredo"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "sol invictus"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "retrograde"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Blissful Sonata"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tony Was the Devil"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "moreover"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "tower of destruction"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Died randomly"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "cursed memories"
+    chance = {
+        factor = 1
+    }
+}

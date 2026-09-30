@@ -1,0 +1,11 @@
+focus_tree = {
+    id = USA_starting
+    country = {
+        factor = 0
+        modifier = {
+            add = 29
+            tag = USA
+        }
+    }
+    shared_focus = USA_no_way_out
+}

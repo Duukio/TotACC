@@ -947,8 +947,6 @@ units = {
 		start_equipment_factor = 1
 
 	}
-
-	}
 	division= {	#
 		division_name = {
 				is_name_ordered = yes

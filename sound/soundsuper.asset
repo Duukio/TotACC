@@ -45,9 +45,7 @@ category = {
 	vaush
 	ezrase
 	opossumist
-	augustus
-	preston
-	dragula
+	phil_scott
 }
   compressor =  {
 	enabled = yes
@@ -266,19 +264,9 @@ sound = {
 	file = "super_events/opossumist.wav"
 }
 sound = {
-	name = augustus
+	name = phil_scott
 	volume = 0.5
-	file = "super_events/augustus.wav"
-}
-sound = {
-	name = dragula
-	volume = 0.5
-	file = "super_events/dragula.wav"
-}
-sound = {
-	name = preston
-	volume = 0.5
-	file = "super_events/preston.wav"
+	file = "super_events/phil_scott.wav"
 }
 
 

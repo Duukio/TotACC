@@ -39,6 +39,9 @@ set_technology = {
 	recon_drone = 1
 }
 
+recruit_character = NWF_mike_ma
+recruit_character = NWF_jeronimo
+
 if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }

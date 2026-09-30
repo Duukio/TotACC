@@ -1,0 +1,189 @@
+
+music_station = "TOTA_yerevan"
+
+music = {
+    song = "14 Minutes Until Start"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Gharib-E Ashena"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Wondrous Future"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Aquarius"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Refleksja"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ballada o pancernych"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "The Red Rock"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Before The Long Journey"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Jomeh"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Harbor of My Love"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "I'm Leaving"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Gruppa Krovi"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Moscow Nights"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Drive Slowly"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "My Yard"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "It Smells Of Thyme"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Schritte"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "We Are Friends Forever!"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ostavi Trag"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Kavire Del"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cawa jestem w twoich rakach"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Aman yar"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Speak Up"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Heartbeat"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Come Out"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Cheating"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Zhozefino"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Made In The USSR"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Mix Derya"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Sineva"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Baruch's Boots"
+    chance = {
+        factor = 1
+    }
+}

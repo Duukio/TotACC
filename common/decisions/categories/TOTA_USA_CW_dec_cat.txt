@@ -5,6 +5,12 @@ USA_CW_DecisionCategory = {
 		is_in_array = { array = global.USA_CW_TAGS value = THIS }
 	}
 }
+NYP_activate_obamna = {
+	#allowed = { always = yes }
+	visible = {
+		original_tag = NYP
+	}
+}
 USA_CW_unify_cat = {
 	#allowed = { always = yes }
 	visible = {	is_in_array = { array = global.USA_CW_TAGS value = THIS } }
@@ -14,7 +20,4 @@ BSD_enact_TWD = {
 }
 GPR_turn_maoist = {
 	visible = { original_tag = GPR }
-}
-USA_CW_SKELE = {
-	visible = { is_ai = yes }
 }

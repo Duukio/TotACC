@@ -1,0 +1,79 @@
+
+shared_focus = {
+	id = USH_pressing_our_advantage
+	icon = GFX_USH_pressing_our_advantage
+	cost = 2
+	x = 2
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USH_pressing_our_advantage"
+	}
+}
+
+shared_focus = {
+	id = USH_cross_pacific_logistics
+	icon = GFX_USH_cross_pacific_logistics
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USH_cross_pacific_logistics"
+	}
+	relative_position_id = USH_pressing_our_advantage
+	prerequisite = { focus = USH_pressing_our_advantage }
+}
+
+shared_focus = {
+	id = USH_jungle_warfare
+	icon = GFX_USH_jungle_warfare
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USH_jungle_warfare"
+	}
+	relative_position_id = USH_pressing_our_advantage
+	prerequisite = { focus = USH_pressing_our_advantage }
+}
+
+shared_focus = {
+	id = USH_gg_no_re
+	icon = GFX_USH_gg_no_re
+	cost = 2
+	x = 2
+	y = 1
+	available = {
+        NOT = {
+		country_exists = KOH
+        }
+    }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USH_gg_no_re"
+	}
+	relative_position_id = USH_cross_pacific_logistics
+	prerequisite = { focus = USH_cross_pacific_logistics }
+	prerequisite = { focus = USH_jungle_warfare }
+}
+
+shared_focus = {
+	id = USH_back_in_the_usa
+	icon = GFX_USH_back_in_the_usa
+	cost = 2
+	x = 0
+	y = 1
+	available = {
+        NOT = {
+		country_exists = KOH
+        }
+    }
+	completion_reward = {
+        USA = {
+		    annex_country = {
+			    target = USH
+		    }
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USH_back_in_the_usa"
+	}
+	relative_position_id = USH_gg_no_re
+	prerequisite = { focus = USH_gg_no_re }
+}

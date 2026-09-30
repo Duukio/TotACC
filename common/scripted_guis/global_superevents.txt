@@ -5,10 +5,10 @@
 		window_name = "Super_Event_Window"
 
 		visible = {
+			has_global_flag = Super_Event_Visible
 			NOT = {
 				has_global_flag = shut_up_superevents
 			}
-			has_global_flag = Super_Event_Visible
 		}
 
 		triggers = {
@@ -141,14 +141,8 @@
 			Super_Event_Image_alien_life_visible = {
 				check_variable = { global.current_superevent = 42 }
 			}
-			Super_Event_Image_augustus_visible = {
-				check_variable = { global.current_superevent = 43 }
-			}
-			Super_Event_Image_preston_visible = {
-				check_variable = { global.current_superevent = 44 }
-			}
-			Super_Event_Image_sharkey_visible = {
-				check_variable = { global.current_superevent = 45 }
+			Super_Event_Image_Scott_visible = {
+			check_variable = { global.current_superevent = 44 }
 			}
 		}
 

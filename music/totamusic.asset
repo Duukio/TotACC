@@ -1,0 +1,2170 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "maintheme.ogg"
+	volume = 1
+}
+
+#AFROGROOVE
+music = {
+	name = "Free_My_People"
+	file = "Free_My_People.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Never_Lagos"
+	file = "Never_Lagos.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Annie"
+	file = "Annie.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Kagani_Kagani"
+	file = "Kagani_Kagani.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Nga_Nga"
+	file = "Nga_Nga.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Chant_To_Mother_Earth"
+	file = "Chant_To_Mother_Earth.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Born_Black"
+	file = "Born_Black.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Ye_Ke_Ye_Ke"
+	file = "Ye_Ke_Ye_Ke.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Go_Je_Je"
+	file = "Go_Je_Je.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Nobodys_Bulletproof"
+	file = "Nobodys_Bulletproof.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Be_Africa"
+	file = "Be_Africa.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Strange_Dream"
+	file = "Strange_Dream.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Cest_Comme_Ca"
+	file = "Cest_Comme_Ca.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Khala_My_Friend"
+	file = "Khala_My_Friend.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Let_My_People_Go"
+	file = "Let_My_People_Go.ogg"
+	volume = 1
+}
+
+music = {
+	name = "African_Dialects"
+	file = "African_Dialects.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Malunguinho"
+	file = "Malunguinho.ogg"
+	volume = 1
+}
+music = {
+	name = "Israelites"
+	file = "Israelites.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Gun_Fever_Blam_Blam_Fever"
+	file = "Gun_Fever_Blam_Blam_Fever.ogg"
+	volume = 1
+}
+
+music = {
+	name = "TiLodaIg"
+	file = "TiLodaIg.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Water_No_Get_Enemy"
+	file = "Water_No_Get_Enemy.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Montego_Sunset"
+	file = "Montego_Sunset.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Few_Bana_Zambia"
+	file = "Few_Bana_Zambia.ogg"
+	volume = 1
+}
+music = {
+	name = "Crache_La_Douleur"
+	file = "Crache_La_Douleur.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Tahabort"
+	file = "Tahabort.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Lagos_Sisi"
+	file = "Lagos_Sisi.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Alghafiat"
+	file = "Alghafiat.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Tenere_wtz"
+	file = "Tenere_wtz.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Gabes_New_Joint"
+	file = "Gabes_New_Joint.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Mr_Follow_Follow"
+	file = "Mr_Follow_Follow.ogg"
+	volume = 1
+}
+
+music = {
+	name = "Yere_Faga"
+	file = "Yere_Faga.ogg"
+	volume = 1
+}
+
+#hypnotheque
+
+music = {
+    name = "Acapulco_Sunset"
+        volume = 1
+	file = "Acapulco_Sunset.ogg"
+}
+music = {
+    name = "akaiwa_eighty_five"
+        volume = 1
+file = "akaiwa_eighty_five.ogg"
+}
+music = {
+    name = "back_again"
+        volume = 1
+file = "back_again.ogg"
+}
+music = {
+    name = "beverly_plaza"
+        volume = 1
+file = "beverly_plaza.ogg"
+}
+music = {
+    name = "coffee_break"
+        volume = 1
+file = "coffee_break.ogg"
+}
+music = {
+    name = "conditions"
+        volume = 1
+file = "conditions.ogg"
+}
+music = {
+    name = "consumer"
+        volume = 1
+file = "consumer.ogg"
+}
+music = {
+    name = "desktop"
+        volume = 1
+file = "desktop.ogg"
+}
+music = {
+    name = "digital_water"
+        volume = 1
+file = "digital_water.ogg"
+}
+music = {
+    name = "elevation"
+        volume = 1
+file = "elevation.ogg"
+}
+music = {
+    name = "escalator_place"
+        volume = 1
+file = "escalator_place.ogg"
+}
+music = {
+    name = "headlights_on_the_shore"
+        volume = 1
+file = "headlights_on_the_shore.ogg"
+}
+music = {
+    name = "immersion"
+        volume = 1
+file = "immersion.ogg"
+}
+music = {
+    name = "interactive_guide"
+        volume = 1
+file = "interactive_guide.ogg"
+}
+music = {
+    name = "island_sunrise"
+        volume = 1
+file = "island_sunrise.ogg"
+
+}
+music = {
+    name = "level_two"
+        volume = 1
+file = "level_two.ogg"
+}
+music = {
+    name = "level_zero"
+        volume = 1
+file = "level_zero.ogg"
+}
+music = {
+    name = "online_office_420"
+        volume = 1
+file = "online_office_420.ogg"
+}
+music = {
+    name = "paseo_a_la_orilla_del_oceano"
+        volume = 1
+file = "paseo_a_la_orilla_del_oceano.ogg"
+}
+music = {
+    name = "relief"
+        volume = 1
+file = "relief.ogg"
+}
+music = {
+    name = "sky_plaza"
+        volume = 1
+file = "sky_plaza.ogg"
+}
+music = {
+    name = "sport_section"
+        volume = 1
+file = "sport_section.ogg"
+}
+music = {
+    name = "STARDUST"
+        volume = 1
+file = "STARDUST.ogg"
+}
+music = {
+    name = "sunday_shopping"
+        volume = 1
+file = "sunday_shopping.ogg"
+}
+music = {
+    name = "swak"
+        volume = 1
+file = "swak.ogg"
+}
+music = {
+    name = "through_the_endless_inertia"
+        volume = 1
+file = "through_the_endless_inertia.ogg"
+}
+music = {
+    name = "traveling_guide"
+        volume = 1
+file = "traveling_guide.ogg"
+}
+music = {
+    name = "varuhuset_an"
+        volume = 1
+file = "varuhuset_an.ogg"
+}
+music = {
+    name = "wav"
+        volume = 1
+file = "wav.ogg"
+}
+music = {
+    name = "welcome_jap"
+        volume = 1
+file = "welcome_jap.ogg"
+}
+music = {
+    name = "Heads Will Roll (A-Trak Remix)"
+        volume = 1
+file = "Heads Will Roll (A-Trak Remix) [TDyG4YNUXcI].ogg"
+}
+music = {
+    name = "Signatune (Thomas Bangalter Edit)"
+        volume = 1
+file = "DJ Mehdi - Signatune (Thomas Bangalter Edit) [Official Audio] [hbhXQTFRGj4].ogg"
+}
+music = {
+    name = "Hot Chick"
+        volume = 1
+file = "Uffie - Hot Chick [B2TGwvhcNyI].ogg"
+}
+music = {
+    name = "Day N' Nite (Crookers Remix)"
+        volume = 1
+file = "Day 'N' Nite (Crookers Remix) [6JMgLuKrMpo].ogg"
+}
+music = {
+    name = "We Are Your Friends"
+        volume = 1
+file = "We Are Your Friends (Justice Vs. Simian) [C3i8gmaifnI].ogg"
+}
+music = {
+    name = "The Door"
+        volume = 1
+file = "The Door [F3pHwBExfO4].ogg"
+}
+music = {
+    name = "British Mode (Jester Remix)"
+        volume = 1
+file = "British Mode (Jester Remix) [TwqvwhaYETQ].ogg"
+}
+music = {
+    name = "Hand to Phone/La Rock 01"
+        volume = 1
+file = "hand_to_phone_la_rock.ogg"
+}
+music = {
+    name = "And Down"
+        volume = 1
+file = "anddown.ogg"
+}
+music = {
+    name = "Aerodynamite"
+        volume = 1
+file = "Aerodynamite [gdfEIQ7QdLw].ogg"
+}
+music = {
+    name = "Pogo"
+        volume = 1
+file = "Pogo [PzChaAxsM-A].ogg"
+}
+music = {
+    name = "Big & Dirty Dreams (Original Mix)"
+        volume = 1
+file = "Kool Uncle – Big & Dirty Dreams (Original Mix) [2004] [jMn83nPwq5M].ogg"
+}
+music = {
+    name = "Emerge"
+        volume = 1
+file = "Emerge [qTetvhDqfqY].ogg"
+}
+music = {
+    name = "Gare Du Nord"
+        volume = 1
+file = "Carte Blanche - Gare Du Nord (Official audio) [UkTYrJXTm6U].ogg"
+}
+music = {
+    name = "Positif"
+        volume = 1
+file = "Mr. Oizo - Positif (Official Audio) [p2OFUmv1X94].ogg"
+}
+music = {
+    name = "We Are Rockstars"
+        volume = 1
+file = "We Are Rockstars [7A_A5PNbNJk].ogg"
+}
+music = {
+    name = "Over and Over"
+        volume = 1
+file = "Hot Chip - Over and Over (Official Video) (HD) [pDJKgi2e-Aw].ogg"
+}
+music = {
+    name = "To Protect And Entertain (Crookers Remix)"
+        volume = 1
+file = "Busy P - To Protect and Entertain (Crookers Remix) [Official Audio] [UOfV8PhFd2E].ogg"
+}
+music = {
+    name = "Singapore Swing"
+        volume = 1
+file = "SHINICHI OSAWA - SINGAPORE SWING feat. PAUL CHAMBERS [oCACfqT1_4w].ogg"
+}
+music = {
+    name = "Lemonade"
+        volume = 1
+file = "Lemonade [3wt_EbURIzE].ogg"
+}
+music = {
+    name = "Hustler"
+        volume = 1
+file = "Hustler (Club Version) [9QXafKoXzbw].ogg"
+}
+music = {
+    name = "Vanished"
+        volume = 1
+file = "Crystal Castles - Vanished [6e6Hj7MwWaI].ogg"
+}
+music = {
+    name = "Butterslut"
+        volume = 1
+file = "Butterslut [GRwej3Jhp4I].ogg"
+}
+music = {
+    name = "North American Scum"
+        volume = 1
+file = "North American Scum [bu0_YRgZrEQ].ogg"
+}
+music = {
+    name = "I Get Around (Midnight Juggernaughts Remix)"
+        volume = 1
+file = "I Get Around (Midnight Juggernauts Remix) [B8__eb5anmM].ogg"
+}
+music = {
+    name = "Playgirl (Felix Da Housecat Glitz Club Mix)"
+        volume = 1
+file = "Ladytron - Playgirl (Felix Da Housecat Glitz Club Mix) [Audio] [w80vlfjUniQ].ogg"
+}
+music = {
+    name = "We All Wanna Be Prince"
+        volume = 1
+file = "Felix Da Housecat - We All Wanna Be Prince He Was King [n4tmKXAuIns].ogg"
+}
+music = {
+    name = "Wanderin'"
+        volume = 1
+file = "Rail Yard Ghosts - Wanderin' [e0HsbIA4uH4].ogg"
+}
+music = {
+    name = "Ain't Got No Use"
+        volume = 1
+file = "Riley Coyote - Ain't Got No Use [fbaA33yvo0c].ogg"
+}
+music = {
+    name = "For an Old Kentucky Anarchist"
+        volume = 1
+file = "For an Old Kentucky Anarchist [wznk3lXFOcI].ogg"
+}
+music = {
+    name = "Fuck Shit Up!"
+        volume = 1
+file = "Ghost Mice - Fuck Shit Up! [1q-m7VZ7pmI].ogg"
+}
+music = {
+    name = "Carry On"
+        volume = 1
+file = "Carry On [6qMZ5iZSTOQ].ogg"
+}
+
+music = {
+    name = "Lonesome Pain"
+        volume = 1
+file = "2nd St. Rag Stompers - Lonesome Pain [GAkIpJRYz9k].ogg"
+}
+music = {
+    name = "Solidarity Forever"
+        volume = 1
+file = "Solidarity Forever [ZW_1hP0SHSQ].ogg"
+}
+music = {
+    name = "Creatures In My Forest Blues"
+        volume = 1
+file = "The Skeetles - Creatures In My Forest Blues [9DVmbCkxRAg].ogg"
+}
+music = {
+    name = "PETA Made Me Put Down My Pet Raccoon"
+        volume = 1
+file = "The Skeetles - PETA Made Me Put Down My Pet Raccoon [5kYAv_YohqU].ogg"
+}
+music = {
+    name = "Dirty Kidd Ragg"
+        volume = 1
+file = "Rail Yard Ghosts - Dirty Kidd Ragg [Ls7T3PCwyHM].ogg"
+}
+music = {
+    name = "Reason to Believe"
+        volume = 1
+file = "Reason to Believe [KaIukmWayQ0].ogg"
+}
+music = {
+    name = "I'm Not A Good Person"
+        volume = 1
+file = "Pat 'The Bunny' Schneeweis - I'm not a good person [PMyDK3VHYPw].ogg"
+}
+music = {
+    name = "We don't get tired, we get even"
+        volume = 1
+file = "Pat 'The Bunny' Schneeweis - We don't get tired, we get even [w2BU-BeWFLs].ogg"
+}
+music = {
+    name = "No Future (Road Song)"
+        volume = 1
+file = "Wingnut Dishwashers Union - No Future (Road Song) [OtcPNPfPojU].ogg"
+}
+music = {
+    name = "New Mexico Song"
+        volume = 1
+file = "Johnny Hobo & the Freight Trains - New Mexico Song [Q27jB2apvbU].ogg"
+}
+music = {
+    name = "Make Total Destroy"
+        volume = 1
+file = "Pat 'The Bunny' Schneeweis - Make Total Destroy [GYqWq8Lnz-g].ogg"
+}
+music = {
+    name = "Up The Provos"
+        volume = 1
+file = "Up the Provos [KxN4eA4Vj3Y].ogg"
+}
+music = {
+    name = "Bombers"
+        volume = 1
+file = "David Bowie - Bombers (Unreleased Track) [1990 Remastered Version] [-QxS-wZQOCs].ogg"
+}
+music = {
+    name = "Back In The USSR"
+        volume = 1
+file = "Back In The U.S.S.R. (2018 Mix) [yOYArc7mFiE].ogg"
+}
+music = {
+    name = "The Man Who Sold The World"
+        volume = 1
+file = "The Man Who Sold the World (2010 Remaster) [mXHKjFKBC0g].ogg"
+}
+music = {
+    name = "Mercenary Song"
+        volume = 1
+file = "Mercenary Song [18SUtg_dI1s].ogg"
+}
+music = {
+    name = "World Destruction (Single Edit)"
+        volume = 1
+file = "World Destruction (Single Edit) [JiY5hV-psxA].ogg"
+}
+music = {
+    name = "Killer Queen"
+        volume = 1
+file = "Killer Queen (Remastered 2011) [cBMXQrW3VNA].ogg"
+}
+music = {
+    name = "Ghosts of American Astronauts"
+        volume = 1
+file = "Ghosts of American Astronauts [8KoUe3zFJjE].ogg"
+}
+music = {
+    name = "Jungle Work"
+        volume = 1
+file = "Jungle Work [TC3j-9K0pHU].ogg"
+}
+music = {
+    name = "Who Will Save The World"
+        volume = 1
+file = "Who Will Save The World [TXBfxWfnAdY].ogg"
+}
+music = {
+    name = "Ashes To Ashes"
+        volume = 1
+file = "Ashes to Ashes (2017 Remaster) [XS29gl3FwNQ].ogg"
+}
+music = {
+    name = "CIA Man"
+        volume = 1
+file = "CIA Man [vPtYQGTAzYg].ogg"
+}
+music = {
+    name = "Two Thousand Man"
+        volume = 1
+file = "2000 Man (Remastered 2017 Stereo) [Lo1kmT6c4DY].ogg"
+}
+music = {
+    name = "Cities In Dust"
+        volume = 1
+file = "Cities In Dust [Ruq33iAxL5k].ogg"
+}
+music = {
+    name = "Straight To Hell"
+        volume = 1
+file = "The Clash - Straight to Hell (Official Audio) [t7SvtikTkrM].ogg"
+}
+music = {
+    name = "Lawyers, Guns And Money"
+        volume = 1
+file = "Lawyers, Guns and Money [F2HH7J-Sx80].ogg"
+}
+music = {
+    name = "Starman"
+        volume = 1
+file = "Starman (2002 Remaster) [KEnoSwakR18].ogg"
+
+}
+music = {
+    name = "Generals And Majors"
+        volume = 1
+file = "Generals And Majors (2001 Remaster) [WiLuYZNzNyc].ogg"
+}
+music = {
+    name = "So It Goes"
+        volume = 1
+file = "Nick Lowe - So It Goes (Official Audio) [UCaf8woXAeM].ogg"
+}
+music = {
+    name = "Up All Night"
+        volume = 1
+file = "Up All Night [euEma8d6oJk].ogg"
+}
+music = {
+    name = "Born In The USA"
+        volume = 1
+file = "Born in the U.S.A. [tRx212PUa4g].ogg"
+}
+music = {
+    name = "Political Science"
+        volume = 1
+file = "Political Science (Remastered) [R5mAuPg1ZZw].ogg"
+}
+music = {
+    name = "Listening Wind"
+        volume = 1
+file = "Listening Wind (2005 Remaster) [RjWej8fOdR8].ogg"
+}
+music = {
+    name = "The Envoy"
+        volume = 1
+file = "The Envoy (2007 Remaster) [B544fVj1v_s].ogg"
+}
+music = {
+    name = "Citadel"
+        volume = 1
+file = "Citadel (Remastered 2017 Stereo) [5U6jozhS7hE].ogg"
+}
+music = {
+    name = "Everybody Wants To Rule The World"
+        volume = 1
+file = "Everybody Wants To Rule The World [QChwm0w9nxc].ogg"
+}
+music = {
+    name = "Yours Truly, 2095"
+        volume = 1
+file = "Electric Light Orchestra - Yours Truly, 2095 (Audio) [wtfjzmYZvTw].ogg"
+}
+music = {
+    name = "Life On Mars?"
+        volume = 1
+file = "David Bowie - Life On Mars (2021 Remaster) [E7taBfKJjUw].ogg"
+}
+music = {
+    name = "Blue Monday"
+        volume = 1
+file = "Blue Monday (2016 Remaster) [iOEJHNZpeck].ogg"
+}
+music = {
+    name = "Are 'Friends' Electric?"
+        volume = 1
+file = "Are 'Friends' Electric？ [1snv-0jCiWY].ogg"
+}
+music = {
+    name = "Sunday Bloody Sunday"
+        volume = 1
+file = "Sunday Bloody Sunday [Iqlzoz_jH3c].ogg"
+}
+music = {
+    name = "99 Luftballons"
+        volume = 1
+file = "99 Luftballons [TMSlTQmDLx4].ogg"
+}
+music = {
+    name = "Landmass"
+        volume = 1
+file = "WipEout® 2097 OST [PSX]： The Future Sound Of London - Landmass [rGtg2fQOWBw].ogg"
+}
+music = {
+    name = "Guardian Angel (Xavier's Edition)"
+        volume = 1
+file = "TEXHNOLYZE テクノライズ OP FULL 「GUARDIAN ANGEL」 [K0VYSthqzHE].ogg"
+}
+music = {
+    name = "Breathe"
+        volume = 1
+file = "The Prodigy - Breathe [nllmm7Q4sj0].ogg"
+}
+music = {
+    name = "Oceania"
+        volume = 1
+file = "XG3 Extreme-G Racing [Music] - Oceania [ECwKWbju63Y].ogg"
+}
+music = {
+    name = "Loops of Fury"
+        volume = 1
+file = "WipEout® 2097 OST [PSX]： The Chemical Brothers - Loops Of Fury [wTHhZw8WrcI].ogg"
+}
+music = {
+    name = "The World To Come"
+        volume = 1
+file = "The World to Come [2TPfE73W5LE].ogg"
+}
+music = {
+    name = "take you"
+        volume = 1
+file = "goreshit - take you [k2RuprlsXng].ogg"
+}
+music = {
+    name = "Atom Bomb (Atomix 1)"
+        volume = 1
+file = "Atom Bomb (Atomix 1) [Y4UJwumi7wc].ogg"
+}
+music = {
+    name = "SALVIA"
+        volume = 1
+file = "SALVIA [cam9knMSJWs].ogg"
+}
+music = {
+    name = "Pasiphae 6"
+        volume = 1
+file = "XG3 Extreme-G Racing [Music] - Pasiphae 6 [D7wMtMqdvR4].ogg"
+}
+music = {
+    name = "Moonwar"
+        volume = 1
+file = "Moonwar [M2VoKiIQOjw].ogg"
+}
+music = {
+    name = "Tethra"
+        volume = 1
+file = "Extreme-G 2 [PC] - Tethra [9lKLCpcoa6g].ogg"
+}
+music = {
+    name = "Xpander"
+        volume = 1
+file = "Wipeout 3 OST #13 Xpander [V974MkN7v94].ogg"
+}
+music = {
+    name = "Thousand Pound Butterfly"
+        volume = 1
+file = "Thousand Pound Butterfly [8Z4B0v4qo5Q].ogg"
+}
+music = {
+    name = "Destiny"
+        volume = 1
+file = "Ruiner Soundtrack 12 Destiny (доля) by DJ Alina [DAMvju4RP8Y].ogg"
+}
+music = {
+    name = "Decoy"
+        volume = 1
+file = "Decoy [kPK3JdIvYII].ogg"
+}
+music = {
+    name = "The Third Sequence"
+        volume = 1
+file = "WipEout® 2097 OST [PSX] Photek - The Third Sequence [9k_g4Lnu4Mc].ogg"
+}
+music = {
+    name = "Auricom"
+        volume = 1
+file = "Wipeout 3 OST #05 Auricom [DncGhqifhSg].ogg"
+}
+music = {
+    name = "V Six"
+        volume = 1
+file = "WipEout® 2097 OST [PSX] Fluke - V Six [dWIhi3FtO9I].ogg"
+}
+music = {
+    name = "Footwork Technique"
+        volume = 1
+file = "05 - Techno Drive OST - Footwork Technique [U-43nIIA8qs].ogg"
+}
+music = {
+    name = "X-Project (100% Pure Mix)"
+        volume = 1
+file = "X-Project (100% Pure Mix) [aSR43FLXnUw].ogg"
+}
+music = {
+    name = "P.E.T.R.O.L. (Final Drop Mix)"
+        volume = 1
+file = "petrol_final_mix.ogg"
+}
+music = {
+    name = "Organic"
+        volume = 1
+file = "Unreal Tournament - Organic - Impulse Tracker [wRs5ufGPiTY].ogg"
+}
+music = {
+    name = "Snyper"
+        volume = 1
+file = "Hybrid - Snyper [3TTl4d5IqJo].ogg"
+}
+music = {
+    name = "Feisar"
+        volume = 1
+file = "Wipeout 3 OST #01 Feisar [Sti66shLG5g].ogg"
+}
+music = {
+    name = "Invaders Must Die"
+        volume = 1
+file = "The Prodigy - Invaders Must Die (Official Video) [EiqFcc_l_Kk].ogg"
+}
+music = {
+    name = "Paradiselost"
+        volume = 1
+file = "Paradiselost [AJf9By75NX8].ogg"
+}
+music = {
+    name = "Crystalaria"
+        volume = 1
+file = "XG3 Extreme-G Racing [Music] - Crystalaria [ez6JX4PD12w].ogg"
+}
+music = {
+    name = "Lethal Cut"
+        volume = 1
+file = "Wipeout 3 OST #07 Lethal Cut [qNKhj2IcLLY].ogg"
+}
+music = {
+    name = "Icaras"
+        volume = 1
+file = "Wipeout 3 OST #03 Icaras [EpZltydXlkE].ogg"
+}
+music = {
+    name = "aerowalk"
+        volume = 1
+file = "aerowalk newfound.freedom airy jungle dnb [M5Fhi7Khe70].ogg"
+}
+music = {
+    name = "moment"
+        volume = 1
+file = "Vierre Cloud - moment (Official Audio) [1QMG2QjsjdA].ogg"
+}
+music = {
+    name = "Cloud Nine"
+        volume = 1
+file = "Cloud Nine [IcbcLwf6HP4].ogg"
+}
+music = {
+    name = "Move Me"
+        volume = 1
+file = "17 - Move Me - R4 Ridge Racer Type 4 Direct Audio [re1IjZsUGtU].ogg"
+}
+music = {
+    name = "Smart Systems"
+        volume = 1
+file = "Smart Systems [BM9MSvP43m4].ogg"
+}
+music = {
+    name = "Selected ID"
+        volume = 1
+file = "selected_id.ogg"
+}
+music = {
+    name = "Floodlight"
+        volume = 1
+file = "Ridge Racer 6 Soundtrack - 06 - Floodlight [M7DDeariETo].ogg"
+}
+music = {
+    name = "SILVER STREAM (Rewind Remix)"
+        volume = 1
+file = "Rage Racer 20th Remix - SILVER STREAM (Remind Remix) [rCYF9eZ3VLA].ogg"
+}
+music = {
+    name = "Happy Happy Hoppy Happy"
+        volume = 1
+file = "Happy Happy Hoppy Happy [dVb0MUnfuzY].ogg"
+}
+music = {
+    name = "Nights"
+        volume = 1
+file = "Xpressive Records - Nights (1996) [VkHsT-Mq1_0].ogg"
+}
+music = {
+    name = "Fleeting Frozen Heart"
+        volume = 1
+file = "Xxtarlit - Fleeting Frozen Heart [QnvzvKSE3r8].ogg"
+}
+music = {
+    name = "Virtual Paradise"
+        volume = 1
+file = "Virtual Paradise [7alzMkyaL0I].ogg"
+}
+music = {
+    name = "Supercruiser"
+        volume = 1
+file = "RIDGE RACER 7 direct audio (D2;T5) Supercruiser [SnXovNvDwh0].ogg"
+}
+music = {
+    name = "Fine Night"
+        volume = 1
+file = "Fine Night [y9ygGm_rwpg].ogg"
+}
+music = {
+    name = "WOUNDS WILL HEAL"
+        volume = 1
+file = "WOUNDS WILL HEA.L [Elju2EWwyeQ].ogg"
+}
+music = {
+    name = "My Head Hurts"
+        volume = 1
+file = "My Head Hurts [9AFHXWPPAak].ogg"
+}
+music = {
+    name = "Eversummer Island"
+        volume = 1
+file = "Eversummer Island [2WJ9aI1StXs].ogg"
+}
+music = {
+    name = "ZERO>>NOVA>>BLOSSOM>>___"
+        volume = 1
+file = "ZERONOVABLOSSOM___ [QXq-Jr_2oHs].ogg.ogg"
+}
+music = {
+    name = "GOD RACE"
+        volume = 1
+file = "METAROOM - GOD RACE (Temptation Stairway OST) [zKaoDdNZhJE].ogg"
+}
+music = {
+    name = "Discovery"
+        volume = 1
+file = "Discovery - Kaze no Notam-Notam of Wind [u1RNqJ-lTFI].ogg"
+}
+music = {
+    name = "The Storm"
+        volume = 1
+file = "The Storm [UIeBroAzrw4].ogg"
+}
+music = {
+    name = "Glacial Activity - Melda Ore Plant"
+        volume = 1
+file = "Mega Man X Command Mission - Glacial Activity - Melda Ore Plant [sFsoQcmL7As].ogg"
+}
+music = {
+    name = "MECHANIQ"
+        volume = 1
+file = "crossniq+ -MECHANIQ [pMOOWuRXUPQ].ogg"
+}
+music = {
+    name = "Cloud Gliding"
+        volume = 1
+file = "Cloud Gliding [DATwvfbhxPQ].ogg"
+}
+music = {
+    name = "Under The Ocean"
+        volume = 1
+file = "Super Monkey Ball 2 OST - World 3 - Under the Ocean [_epVSjlsEzM].ogg"
+}
+music = {
+    name = "Insanely Fast"
+        volume = 1
+file = "Tetris Splash - Insanely Fast [Bze8bpmU0gI].ogg"
+}
+music = {
+    name = "Loop Version"
+        volume = 1
+file = "Loop Version [dgy_ewjcdLA].ogg"
+}
+music = {
+    name = "Killing Moon (Akuma's Stage)"
+        volume = 1
+file = "Akuma's stage Killing Moon - Arranged [LdMCVDGOdUc].ogg"
+}
+music = {
+    name = "SUPERSONIQ (Tempus Cubiq)"
+        volume = 1
+file = "crossniq+ - SUPERSONIQ (Tempus Cubiq) [NcAnT2en0vE].ogg"
+}
+music = {
+    name = "Foregone Destruction"
+        volume = 1
+file = "Michiel van den Bos - Foregone Destruction UT (1999) - Facing Worlds [mCRibm4kOaE].ogg"
+}
+music = {
+    name = "Augustus"
+        volume = 1
+file = "06. Gudang - Augustus [_0kmaRKCP-8].ogg"
+}
+music = {
+    name = "2000"
+        volume = 1
+file = "2000 [PnVPfKh56eU].ogg"
+}
+music = {
+    name = "Atlantica"
+        volume = 1
+file = "Voyage Futur - Atlantica [-GE7b--FDJ4].ogg"
+}
+music = {
+    name = "The Everlasting Well"
+        volume = 1
+file = "Bubble Keiki - The Everlasting Well (Official Audio) [kJezCJWyCdw].ogg"
+}
+music = {
+    name = "Pink Vision"
+        volume = 1
+file = "F0x3r - Pink Vision [FmpUPW7Bl1I].ogg"
+}
+music = {
+    name = "Simulating Night"
+        volume = 1
+file = "Lindsheaven Virtual Plaza - Simulating Night [22lgJxEm7_Q].ogg"
+}
+music = {
+    name = "Mild Seven"
+        volume = 1
+file = "mild seven [2OEDFPPIw1k].ogg"
+}
+music = {
+    name = "Slowly Suffer"
+        volume = 1
+file = "Macroblank Slowly Suffer [SbAQJL1VpJw].ogg.ogg"
+}
+music = {
+    name = "Rare Psalms Vol 4"
+        volume = 1
+file = "Macroblank - RARE PSALMS COLLECTION VOL.4 [VGA4raGnNfY].ogg"
+}
+music = {
+    name = "sol invictus"
+        volume = 1
+file = "OSCOB - sol invictus [aw6FOr1iy1U].ogg"
+}
+music = {
+    name = "retrograde"
+        volume = 1
+file = "Macroblank & Oblique Occasions - retrograde [6DIkzrLjjCQ].ogg"
+}
+music = {
+    name = "Blissful Sonata"
+        volume = 1
+file = "Macroblank - 至福のソナタ (Blissful Sonata) [uCkJ7VZquIs].ogg"
+
+}
+music = {
+    name = "Tony Was the Devil"
+        volume = 1
+file = "haircuts for men - Tony Was the Devil トニーは悪魔でした [01GHWw7iEPA].ogg"
+}
+music = {
+    name = "moreover"
+        volume = 1
+file = "haircuts for men - moreover [X4CTjv9EkVU].ogg"
+}
+music = {
+    name = "tower of destruction"
+        volume = 1
+file = "tower of destruction [cbXO_ZNNSN4].ogg"
+}
+music = {
+    name = "Died randomly"
+        volume = 1
+file = "Died randomly [6PW4bN7V8Bk].ogg.ogg"
+}
+music = {
+    name = "cursed memories"
+        volume = 1
+file = "cursed memories [110LKtCJNOc].ogg"
+}
+music = {
+    name = "14 Minutes Until Start"
+        volume = 1
+file = "Soviet cosmonaut anthem - 14 minutes to start (english subtitles) [RPAhbqTZR_c].ogg"
+}
+music = {
+    name = "Gharib-E Ashena"
+        volume = 1
+file = "Gharib-E- Ashena [80GZPfmx8fI].ogg"
+}
+music = {
+    name = "Wondrous Future"
+        volume = 1
+file = "prekrasnoe daleko [rb0wk32Y9TA].ogg"
+}
+music = {
+    name = "Aquarius"
+        volume = 1
+file = "Zvonko Špišić & Soul Sound Band - Aquarius [mOW9KCdf564].ogg"
+}
+music = {
+    name = "Refleksja"
+        volume = 1
+file = "Refleksja [7jQrDaWOtvQ].ogg"
+}
+music = {
+    name = "Ballada o pancernych"
+        volume = 1
+file = "Edmund Fetting - Ballada o pancernych [Official Audio] [y6foA9AO60Y].ogg"
+}
+music = {
+    name = "The Red Rock"
+        volume = 1
+file = "The Red Rock [iogZcBk88dw].ogg"
+}
+music = {
+    name = "Before The Long Journey"
+        volume = 1
+file = "The Red Army Choir (1962) - Before the Long Journey (English subtitles) [KUwN_QaZnEE].ogg"
+}
+music = {
+    name = "Jomeh"
+        volume = 1
+file = "Jomeh [xJb_nKr6ALw].ogg"
+}
+music = {
+    name = "Harbor of My Love"
+        volume = 1
+file = "harbor_of_my_love.ogg"
+}
+music = {
+    name = "I'm Leaving"
+        volume = 1
+file = "Valery Petryaev - I'm leaving [tCyUOMzBpGc].ogg"
+}
+music = {
+    name = "Gruppa Krovi"
+        volume = 1
+file = "Gruppa Krovi [xtxjm7ciwmc].ogg"
+}
+music = {
+    name = "Moscow Nights"
+        volume = 1
+file = "Red Army Choir Moscow Nights. [uqccaYkr0E8].ogg"
+}
+music = {
+    name = "Drive Slowly"
+        volume = 1
+file = "Sa Leat [Lfp-Yb0IeKw].ogg"
+}
+music = {
+    name = "My Yard"
+        volume = 1
+file = "My Yard [U-nHkHhDmhA].ogg"
+}
+music = {
+    name = "It Smells Of Thyme"
+        volume = 1
+file = "Verasy - It Smells of Thyme [yiVqTYeIdIg].ogg"
+}
+music = {
+    name = "Schritte"
+        volume = 1
+file = "Inka - Schritte 1989 [vkuqR6skYHg].ogg"
+}
+music = {
+    name = "We Are Friends Forever!"
+        volume = 1
+file = "We Are Friends Forever [QUoNY0dmFU4].ogg"
+}
+music = {
+    name = "Ostavi Trag"
+        volume = 1
+file = "Ostavi trag [wawk71CglL0].ogg"
+}
+music = {
+    name = "Kavire Del"
+        volume = 1
+file = "Marjan - Kavire Del [L9CleuiUHZs].ogg"
+}
+music = {
+    name = "Cawa jestem w twoich rakach"
+        volume = 1
+file = "Cawa jestem w twoich rakach [yKj56xyFO84].ogg"
+}
+music = {
+    name = "Aman yar"
+        volume = 1
+file = "Qaya - Aman yar (1976) [orwMIEhx3Zc].ogg"
+}
+music = {
+    name = "Speak Up"
+        volume = 1
+file = "Speak Up [vWIrSwA8KZ0].ogg"
+}
+music = {
+    name = "Heartbeat"
+        volume = 1
+file = "Heartbeat [UyllStvRy-4].ogg"
+}
+music = {
+    name = "Come Out"
+        volume = 1
+file = "welcome_jap.ogg"
+}
+music = {
+    name = "Cheating"
+        volume = 1
+file = "welcome_jap.ogg"
+}
+music = {
+    name = "Zhozefino"
+        volume = 1
+file = "Zhozefino [d-7MEp8lSLk].ogg"
+}
+music = {
+    name = "Made In The USSR"
+        volume = 1
+file = "Oleg Gazmanov - Made in the USSR [v_9n5tImIjg].ogg"
+}
+music = {
+    name = "Mix Derya"
+        volume = 1
+file = "Mix Derya [E693xh4g1oc].ogg"
+}
+music = {
+    name = "Sineva"
+        volume = 1
+file = "Sineva [h9KZv9buqMk].ogg"
+}
+music = {
+    name = "Baruch's Boots"
+        volume = 1
+file = "Baruchs Boots [qoGM7G7cZJk].ogg"
+}
+music = {
+    name = "Kiri"
+        volume = 1
+file = "Kiri - Monoral [hlgc3_4WL0M].ogg"
+}
+music = {
+    name = "Black Hole Sun"
+        volume = 1
+file = "Soundgarden - Black Hole Sun (HQ) [Y6Kz6aXsBSs].ogg"
+}
+music = {
+    name = "Another Space Song"
+        volume = 1
+file = "Another Space Song [TY5Hq_5FbT0].ogg"
+}
+music = {
+    name = "Echoplex"
+        volume = 1
+file = "Echoplex [_c7ixDZj9DA].ogg"
+}
+music = {
+    name = "Pet"
+        volume = 1
+file = "Pet [TmWhY_irAXE].ogg"
+}
+music = {
+    name = "The Kill (Bury Me)"
+        volume = 1
+file = "30 Seconds to Mars - The Kill [3c4_jTnsegM].ogg"
+}
+music = {
+    name = "Vapour Trail"
+        volume = 1
+file = "Ride- Vapour Trail [ygGw_zo_W8A].ogg"
+}
+music = {
+    name = "Taking Over Me"
+        volume = 1
+file = "Taking Over Me [CdrkL4d88KI].ogg"
+}
+music = {
+    name = "Head In The Ceiling Fan"
+        volume = 1
+file = "Title Fight - Head In The Ceiling Fan [Tu9KgGqXDyw].ogg"
+}
+music = {
+    name = "In The End"
+        volume = 1
+file = "In The End (Official Lyric Video) - Linkin Park [g9j5UzxEhEM].ogg"
+}
+music = {
+    name = "Smile Like You Mean It"
+        volume = 1
+file = "Smile Like You Mean It [Dp4m2v4q_bg].ogg"
+}
+music = {
+    name = "Ataraxia"
+        volume = 1
+file = "Ataraxia [dMNTB_ZhDPE].ogg"
+}
+music = {
+    name = "Paranoid Android"
+        volume = 1
+file = "Paranoid Android [Lt8AfIeJOxw].ogg"
+}
+music = {
+    name = "Cherry Waves"
+        volume = 1
+file = "Cherry Waves [exBw6BVJJ30].ogg"
+}
+music = {
+    name = "Hysteria"
+        volume = 1
+file = "Muse - Hysteria [Official Music Video] [3dm_5qWWDV8].ogg"
+}
+music = {
+    name = "Is It Really You?"
+        volume = 1
+file = "Is It Really You [q2_vW8jN454].ogg"
+}
+music = {
+    name = "Not The Same"
+        volume = 1
+file = "Not the Same [fKtJW3_32n4].ogg"
+}
+music = {
+    name = "Everlong"
+        volume = 1
+file = "Foo Fighters - Everlong [hq0rZ3IiyWw].ogg"
+}
+music = {
+    name = "Everyday Is Exactly The Same"
+        volume = 1
+file = "Every Day Is Exactly The Same [RQoVHqveQ98].ogg"
+}
+music = {
+    name = "Going Under"
+        volume = 1
+file = "Evanescence - Going Under [CdhqVtpR2ts].ogg"
+}
+music = {
+    name = "Subterranean Homesick Alien"
+        volume = 1
+file = "Subterranean Homesick Alien (Remastered) [f-Eu5ZvcLb0].ogg"
+}
+music = {
+    name = "All I Think About Now"
+        volume = 1
+file = "PIXIES - All I Think About Now (Official Audio) [7Nf8o-qhO2g].ogg"
+}
+music = {
+    name = "Heart-Shaped Box"
+        volume = 1
+file = "Heart Shaped Box (2013 Mix) [8vZxDNC9EQs].ogg"
+}
+music = {
+    name = "Necrosis"
+        volume = 1
+file = "Necrosis [XlOs0kXVJfQ].ogg"
+}
+music = {
+    name = "To Forgive"
+        volume = 1
+file = "To Forgive (Remastered 2012) [fIggUxffTN4].ogg"
+}
+music = {
+    name = "Entombed"
+        volume = 1
+file = "Deftones - Entombed [LIbWgTlYoXo].ogg"
+}
+music = {
+    name = "Sunday"
+        volume = 1
+file = "Sonic Youth - Sunday [Vinyl HQ] [htoECowApAs].ogg"
+}
+music = {
+    name = "Covet"
+        volume = 1
+file = "Basement - Covet (Official Audio) [bZrPfq15yJ4].ogg"
+}
+music = {
+    name = "Blvd. Nights"
+        volume = 1
+file = "Blvd. Nights [UW970rB73fw].ogg"
+}
+music = {
+    name = "Rotten Apple"
+        volume = 1
+file = "Rotten Apple [poo2xaEhrHE].ogg"
+}
+music = {
+    name = "Ginseng Strip 2002"
+        volume = 1
+file = "Yung Lean ♦ Ginseng Strip 2002 ♦ [vrQWhFysPKY].ogg"
+}
+music = {
+    name = "Kyoto"
+        volume = 1
+file = "Yung Lean - Kyoto [tMgkt9jdjTU].ogg"
+}
+music = {
+    name = "Bliss (ft. FKA Twigs)"
+        volume = 1
+file = "bliss - yung lean, fka twigs (lyrics) [RH08pZT6lsk].ogg"
+}
+music = {
+    name = "Diamonds"
+        volume = 1
+file = "Yung Lean & Thaiboy Digital - Diamonds [KOFw2UPLdPk].ogg"
+}
+music = {
+    name = "Tiger"
+        volume = 1
+file = "Thaiboy Digital - Tiger [nVXboathW74].ogg"
+}
+music = {
+    name = "Peroxide"
+        volume = 1
+file = "Ecco2K - Peroxide (Official Video) [Rs_kavGKeHI].ogg"
+}
+music = {
+    name = "Vanilla Sky"
+        volume = 1
+file = "bladee & Ecco2K - Vanilla Sky [UU36nuhUwQY].ogg"
+}
+music = {
+    name = "Obedient"
+        volume = 1
+file = "bladee - Obedient (ft.  ECCO2K) [eQpQtg0JE-8].ogg"
+}
+music = {
+    name = "Be Nice To Me"
+        volume = 1
+file = "bladee - Be Nice To Me [vcAp4nmTZCA].ogg"
+}
+music = {
+    name = "Who Goes There"
+        volume = 1
+file = "bladee - Who Goes There [mXxr58D-WiM].ogg"
+}
+music = {
+    name = "HAHAH"
+        volume = 1
+file = "bladee - HAHAH (Official Audio) [m3sIZGXloQM].ogg"
+}
+music = {
+    name = "#IAmDelusional"
+        volume = 1
+file = "#IAmDelusional [_BDqv0w6YwI].ogg"
+}
+music = {
+    name = "king of the darkness"
+        volume = 1
+file = "2hollis - king of the darkness (official video) [qSUfJkMY2_A].ogg"
+}
+music = {
+    name = "ACTOR"
+        volume = 1
+file = "2hollis - actor (official video) [VMU-nOeFy6w].ogg"
+}
+music = {
+    name = "white tiger"
+        volume = 1
+file = "2hollis - white tiger (official audio) [D5QMzx6rXcQ].ogg"
+}
+music = {
+    name = "stay back"
+        volume = 1
+file = "oaf1 - stay back [aCIcfdRFNjU].ogg"
+}
+music = {
+    name = "gaspedal w/ Dreamcache"
+        volume = 1
+file = "oaf1 - gas pedal w [DhGF5UpOotw].ogg"
+}
+music = {
+    name = "walked in"
+        volume = 1
+file = "oaf1 - walked in [R_Hr_MDTzkA].ogg"
+}
+music = {
+    name = "ievan polkka (bizarius)"
+        volume = 1
+file = "Ievan Polkka [haSxjOkQRQw].ogg"
+
+}
+music = {
+    name = "Michael Kors ft. Dion"
+        volume = 1
+file = "Michael Kors (feat. Dion) [3ARB8qGB3WA].ogg"
+}
+music = {
+    name = "I Don't Care"
+        volume = 1
+file = "I Don't Care (feat. Drux) [eJYqiv4pFRI].ogg"
+}
+music = {
+    name = "Still"
+        volume = 1
+file = "Dion - Still (prod Avail) [x3dcEojij7s].ogg"
+}
+music = {
+    name = "Finesser (ft. Joeyy)"
+        volume = 1
+file = "Finesser (feat. Joeyy) [o_Fk4QjZAp4].ogg"
+}
+music = {
+    name = "Shirt"
+        volume = 1
+file = "Joeyy - Shirt (Music Video) [5c_iA_2OiWw].ogg"
+}
+music = {
+    name = "GOUT"
+        volume = 1
+file = "JOEYY - GOUT (MUSIC VIDEO) [0YaO0ZC-B-8].ogg"
+}
+music = {
+    name = "Garbonzo"
+        volume = 1
+file = "Joeyy - garbonzo (Music Video) [LlKqDc4kPVQ].ogg"
+}
+music = {
+    name = "Redact"
+        volume = 1
+file = "Joeyy - Redact (Music Video) [glqglC861Hg].ogg"
+}
+music = {
+    name = "Eminem"
+        volume = 1
+file = "Joeyy - Eminem (Music Video) [J__3UsYk1tU].ogg"
+}
+music = {
+    name = "Petco"
+        volume = 1
+file = "Joeyy - Petco (Music Video) [qP1vRYXc7z0].ogg"
+}
+music = {
+    name = "Four Horses"
+        volume = 1
+file = "Autistic Boys Money Clan - Cash Sphere Penitentiary - 12 Four Horses.ogg"
+}
+music = {
+    name = "Immaterial"
+        volume = 1
+file = "Immaterial [_LFxr2bUEUY].ogg"
+}
+music = {
+    name = "purgatory"
+        volume = 1
+file = "purgatory (feat. oakscreen) [3dcDFjOHWFQ].ogg"
+}
+music = {
+    name = "BABY MY PHONE"
+        volume = 1
+file = "YAMEII - BABY MY PHONE [g_mgqYb-GYw].ogg"
+}
+music = {
+    name = "Once"
+        volume = 1
+file = "ONCE (feat. Jedwill) [OFFICIAL AUDIO] [M7Ng0hIzsIg].ogg"
+}
+music = {
+    name = "Hell Hounds"
+        volume = 1
+file = "Hell Hounds - chloe moriondo (official music video) [tK_eHym3Ms0].ogg"
+}
+music = {
+    name = "grassfield"
+        volume = 1
+file = "grassfield [RmbXb1KyUks].ogg"
+}
+music = {
+    name = "BALENCI"
+        volume = 1
+file = "01. SARAMALACARA - BALENCI (Audio Oficial) [5NZYMl2ntNM].ogg"
+}
+music = {
+    name = "WANNABE"
+        volume = 1
+file = "WANNABE [pxEaUl4yP3E].ogg"
+}
+music = {
+    name = "SHORT+SWEET"
+        volume = 1
+file = "YAMEII- SHORT+SWEET【MV】 [7jNSshpORNw].ogg"
+}
+music = {
+    name = "bad reputation"
+        volume = 1
+file = "bad reputation [mn0JHjzNbxg].ogg"
+}
+music = {
+    name = "Pray4u (with Ninajirachi)"
+        volume = 1
+file = "LUCIANBLOMKAMP - Pray4u (with Ninajirachi) [qTr-_Xv49sc].ogg"
+}
+music = {
+    name = "Real Spring"
+        volume = 1
+file = "Skrillex & Bladee - Real Spring [HmfZk-g0Jfc].ogg"
+}
+music = {
+    name = "GOSSIP"
+        volume = 1
+file = "MISOGI - GOSSIP (LYRIC VIDEO) [O9SqVqB1yEY].ogg"
+}
+music = {
+    name = "Haunted"
+        volume = 1
+file = "Haunted [IartBoBdpwo].ogg"
+}
+music = {
+    name = "I AM SLOWLY BUT SURELY LOSING HOPE"
+        volume = 1
+file = "bladee - I AM SLOWLY BUT SURELY LOSING HOPE (Official Audio) [7xo3vU3Gu5M].ogg"
+}
+music = {
+    name = "i think ur bf is gonna kill me"
+        volume = 1
+file = "Bambi - i think ur bf is gunna kill me (prod. mastercard2k) [zyZ33haDVxo].ogg"
+}
+music = {
+    name = "6FINGERDEATHPUNCH"
+        volume = 1
+file = "6FINGERDEATHPUNCH [KQOO_6DQ8yw].ogg"
+}
+music = {
+    name = "MISA X LIGHT"
+        volume = 1
+file = "MISA & LIGHT [wrmw_6bZLnE].ogg"
+}
+music = {
+    name = "yameii vs the world!!!"
+        volume = 1
+file = "yameii - yameii vs the world!!! [ZGcyMfTydCQ].ogg"
+}
+music = {
+    name = "Full Circle (William Crooks Remix)"
+        volume = 1
+file = "welcome_jap.ogg"
+}
+music = {
+    name = "where'd u go?"
+        volume = 1
+file = "where’d u go [qbIiKSQWue8].ogg"
+}
+music = {
+    name = "Destroy Me"
+        volume = 1
+file = "Destroy Me [SmjegPx65YY].ogg"
+}
+music = {
+    name = "Firefly"
+        volume = 1
+file = "Shygirl - Firefly (Official Video) Midnight Edition [kEmWsCJzIs4].ogg"
+}
+music = {
+    name = "Tramal"
+        volume = 1
+file = "Tramal [loKCiKpIczI].ogg"
+}
+music = {
+    name = "ENOUGH!"
+        volume = 1
+file = "ENOUGH! [9ZIy1jx3xnE].ogg"
+}
+music = {
+    name = "Kiss Me Thru The Phone"
+        volume = 1
+file = "Kiss Me Thru the Phone [ZqUgEmUAGYM].ogg"
+}
+music = {
+    name = "9 Lives"
+        volume = 1
+file = "ELIO - 9 Lives [z56TgwD9mqo].ogg"
+}
+music = {
+    name = "DEVIL IN MY HEAD"
+        volume = 1
+file = "DEVIL IN MY HEAD [IM0qMe7Gm5E].ogg"
+}
+music = {
+    name = "downhill (ft. kmoe)"
+        volume = 1
+file = "downhill (feat. kmoe) [jHSYfnqk_lQ].ogg"
+}
+music = {
+    name = "minnesota is a place that exists"
+        volume = 1
+file = "glaive - minnesota is a place that exists (official lyric video) [7aTLCinzeL0].ogg"
+}
+music = {
+    name = "if u cant beat em join em"
+        volume = 1
+file = "if u cant beat em join em [mDP4ejpXy9I].ogg"
+}
+music = {
+    name = "MJ-XX"
+        volume = 1
+file = "Akira Takemoto-MJ-XX [b3B5RziSNRI].ogg"
+}
+music = {
+    name = "UNATCO Ambient"
+        volume = 1
+file = "Deus Ex - 009 - UNATCO - Ambient [7md_gd3HuMQ].ogg"
+}
+music = {
+    name = "Sons of Liberty Main Titles"
+        volume = 1
+file = "Metal Gear Solid 2 [Sons of Liberty] - Complete Soundtrack - 102 - Sons of Liberty Main Titles [E3KU10Tp73M].ogg"
+}
+music = {
+    name = "No.0724FGARK"
+        volume = 1
+file = "Ergo Proxy soundtrack - 4 - No.0724FGARK [I] [kuUQYbfOGck].ogg"
+}
+music = {
+    name = "Discovery (KCE)"
+        volume = 1
+file = "03 - Discovery [VVlXUIJjQGo].ogg"
+}
+music = {
+    name = "Ops 1"
+        volume = 1
+file = "System Shock 2 OST： Ops 1 [Aw3qIKQUhNc].ogg"
+}
+music = {
+    name = "Seattle: Emerald Suites"
+        volume = 1
+file = "Deus Ex： Invisible War Soundtrack - Seattle： Emerald Suites [vs-eabuLyA0].ogg"
+}
+music = {
+    name = "Oil Rig Data Hub"
+        volume = 1
+file = "Splinter Cell 1 HD OST - Oil Rig Data Hub [6-2P-pT2148].ogg"
+}
+music = {
+    name = "Intruder 2"
+        volume = 1
+file = "07 - Intruder 2 [df6YYlTYmZs].ogg"
+}
+music = {
+    name = "Interstate 70"
+        volume = 1
+file = "Syphon Filter 2 OST - Interstate 70 [KE2bRuprY_A].ogg"
+}
+music = {
+    name = "Crew's Quarters"
+        volume = 1
+file = "Metal Gear Solid 2 [Sons of Liberty] - Complete Soundtrack - 105 - Crew's Quarters [XUt0vJiOWDM].ogg"
+}
+music = {
+    name = "Black Suit 1a"
+        volume = 1
+file = "Akira Takemoto-Black Suit 1a (Extended) [dHgnxS6TLj0].ogg"
+}
+music = {
+    name = "Seattle: Tarsus Laboratories"
+        volume = 1
+file = "Deus Ex： Invisible War Soundtrack - Seattle： Tarsus Laboratories [f55mDF-2sxE].ogg"
+}
+music = {
+    name = "Warhead Storage"
+        volume = 1
+file = "08 - Warhead Storage [6Xxmzej5O7k].ogg"
+}
+music = {
+    name = "PHARCOM Expo Center"
+        volume = 1
+file = "Syphon Filter 2 OST - PHARCOM Expo Center [HHeNvHSbUas].ogg"
+}
+music = {
+    name = "UNATCO Conversation"
+        volume = 1
+file = "Deus Ex - 012 - UNATCO - Conversation [jT-qjyJKtzU].ogg"
+}
+music = {
+    name = "Poseidon Pt. 2 + Mediterranean Crisis"
+        volume = 1
+file = "Poseidon Pt. 2 & Mediterranean Crisis [iAr7TUW9mL0].ogg"
+}
+music = {
+    name = "Cairo: The Arcology"
+        volume = 1
+file = "Deus Ex： Invisible War Soundtrack - Cairo： The Arcology [04kPLSKx7VM].ogg"
+}
+music = {
+    name = "Deus' Theme"
+        volume = 1
+file = "Akira Takemoto-Deus' Theme [Iu_VKyxvRZs].ogg"
+}
+music = {
+    name = "Colosseo"
+        volume = 1
+file = "15 - Colosseo [r9xd3p9JowI].ogg"
+}
+music = {
+    name = "CIA Lobby"
+        volume = 1
+file = "Splinter Cell 1 HD OST - CIA Lobby [COAoNzSG7EY].ogg"
+}
+music = {
+    name = "Evil Summit Pt. 2"
+        volume = 1
+file = "Evil Summit Pt. 2 [gowsKJCsXl8].ogg"
+}
+music = {
+    name = "Burma Streets"
+        volume = 1
+file = "Splinter Cell 1 HD OST - Burma Streets [oV4vdi0pHGI].ogg"
+}
+music = {
+    name = "Tunnels"
+        volume = 1
+file = "Deus Ex Tunnels Music [SRw2P4OPA_M].ogg"
+}
+music = {
+    name = "Sediment Pool"
+        volume = 1
+file = "Metal Gear Solid 2 [Sons of Liberty] - Complete Soundtrack - 217 - Sediment Pool [szVsh1tuhmQ].ogg"
+}
+music = {
+    name = "Presidential Palace Library"
+        volume = 1
+file = "Splinter Cell 1 HD OST - Presidential Palace Library [MFxuSg9BoAY].ogg"
+}
+music = {
+    name = "Vital Signs"
+        volume = 1
+file = "Ergo Proxy soundtrack - 12 - Vital Signs [I] [XFezPfRaD5g].ogg"
+}
+music = {
+    name = "Training Session"
+        volume = 1
+file = "Deus Ex - 003 - Training Session [raTY6x-WyFI].ogg"
+}
+music = {
+    name = "Georgia Police Station"
+        volume = 1
+file = "Splinter Cell 1 HD OST - Georgia Police Station [DV_ArrqERl8].ogg"
+}
+music = {
+    name = "Cairo: ApostleCorp Facility"
+        volume = 1
+file = "Deus Ex： Invisible War Soundtrack - Cairo： ApostleCorp Facility [UlC6ClSJrAk].ogg"
+}
+music = {
+    name = "Starboard"
+        volume = 1
+file = "Metal Gear Solid 2 [Sons of Liberty] - Complete Soundtrack - 106 - Starboard [RLf79IIOLCo].ogg"
+}
+music = {
+    name = "WombSys"
+        volume = 1
+file = "Ergo Proxy soundtrack - 14 - WombSys [I] [YHswghv2F1w].ogg"
+}
+music = {
+    name = "Bad Diplomacy Pt. 2"
+        volume = 1
+file = "Bad Diplomacy Pt. 2 [YODYFh5m7Fg].ogg"
+}
+music = {
+    name = "VersaLife Ambient"
+        volume = 1
+file = "Deus Ex - 057 - VersaLife - Ambient [rF09vGckSAc].ogg"
+}
+music = {
+    name = "Burma Stress"
+        volume = 1
+file = "Splinter Cell 1 HD OST - Burma Stress [tRl-QHByL4c].ogg"
+}
+music = {
+    name = "Rocky Mountains"
+        volume = 1
+file = "Syphon Filter 2 OST - Rocky Mountains [sXY1w2Y0DEw].ogg"
+}
+music = {
+    name = "Russian Soldiers from Kasatka"
+        volume = 1
+file = "Metal Gear Solid 2 [Sons of Liberty] - Complete Soundtrack - 104 - Russian Soldiers from Kasatka [c_spfX57ygA].ogg"
+}
+music = {
+    name = "Datadyne Central Defection"
+        volume = 1
+file = "Perfect Dark - Datadyne Central Defection [ZLDJhm4Arzk].ogg"
+}
+music = {
+    name = "New Pulse"
+        volume = 1
+file = "Ergo Proxy OST - New pulse [1RyDuyjgd2Q].ogg"
+}
+music = {
+    name = "Häschenparty"
+        volume = 1
+file = "Schnuffel ft. Michael Wendler - Häschenparty (nightcore) [2609p8fPGkY].ogg"
+}
+music = {
+    name = "All The Things She Said"
+        volume = 1
+file = "All The Things She Said [ujpvNvSgcic].ogg"
+}
+music = {
+    name = "Butterfly"
+        volume = 1
+file = "Smile - Butterfly (Official Music Video) [QzcvRDWgRIE].ogg"
+}
+music = {
+    name = "Caramelldansen (Speedycake Remix)"
+        volume = 1
+file = "Caramelldansen (Speedy Mixes) [UwTt2Ox_0AE].ogg"
+}
+music = {
+    name = "We Like To Party"
+        volume = 1
+file = "We like to Party! (The Vengabus) Six Flags (Six Flags) [N4Db0oYKXvw].ogg"
+}
+music = {
+    name = "Call On Me"
+        volume = 1
+file = "Call On Me (Radio Edit) [SMrlanOZNEE].ogg"
+}
+music = {
+    name = "Under My Skin (Speedycake Remix)"
+        volume = 1
+file = "Under My Skin-Paffendorf Feat Leyla De Vaar (Speedy Mix) [_fl-CPbPSPI].ogg"
+}
+music = {
+    name = "Bumble Bee"
+        volume = 1
+file = "Bumble Bee [IYT4Hzgmgm4].ogg"
+}
+music = {
+    name = "Ievan Polkka (Miku)"
+        volume = 1
+file = "Hatsune Miku - Ievan Polkka [widZEAJc0QM].ogg"
+}
+music = {
+    name = "I Can Walk On Water"
+        volume = 1
+file = "10. Basshunter - I Can Walk On Water [06OorOtnUtQ].ogg"
+}
+music = {
+    name = "Little Kandi Raver"
+        volume = 1
+file = "Little Kandi Raver (Original Mix) [tEtdnyLR2Fc].ogg"
+}
+music = {
+    name = "Everytime We Touch"
+        volume = 1
+file = "Everytime We Touch [84sHTvn6xf8].ogg"
+}
+music = {
+    name = "Honeymoon"
+        volume = 1
+file = "「DJ MAX」 Honeymoon - Humming Urban Stereo [MT-PXlygsuk].ogg"
+}
+music = {
+    name = "Caipirinha (IOSYS Remix)"
+        volume = 1
+file = "Caipirinha (IOSYS Remix) [2juGaxjRNDI].ogg"
+}
+music = {
+    name = "You're Gonna Go Far Kid (Nightcore)"
+        volume = 1
+file = "[Nightcore] You're Gonna Go Far Kid [ttoTFeYqCtg].ogg"
+}
+music = {
+    name = "Doctor Jones"
+        volume = 1
+file = "Aqua - Doctor Jones [-1jPUB7gRyg].ogg"
+}
+music = {
+    name = "Stratosphere"
+        volume = 1
+file = "Miku Hatsune - Stratosphere [8ZEeiIZWRpk].ogg"
+}
+music = {
+    name = "Bad Apple"
+        volume = 1
+file = "Bad Apple!! - Full Version w video [Lyrics in Romaji, Translation in English] [9lNZ_Rnr7Jc].ogg"
+}
+music = {
+    name = "Electro Gypsy"
+        volume = 1
+file = "Electro Gypsy Savlonic  animated music video MrWeebl [-wX8AbBWc08].ogg"
+}
+music = {
+    name = "Bulletproof"
+        volume = 1
+file = "La Roux - Bulletproof [Kk8eJh4i8Lo].ogg"
+}
+music = {
+    name = "Trance"
+        volume = 1
+file = "Trance - 009 Sound System Dreamscape (HD) [TKfS5zVfGBc].ogg"
+}
+music = {
+    name = "Tunak Tunak Tun"
+        volume = 1
+file = "Tunak Tunak Tun [_T_MOxNGsks].ogg"
+}
+music = {
+    name = "Rainbow Tylenol"
+        volume = 1
+file = "Kitsune-2 - Rainbow Tylenol [5K7Frc2lTI8].ogg"
+}
+music = {
+    name = "Balla Da Li"
+        volume = 1
+file = "Boom Boxx Feat Linda O. - Balla Da Li [V2ydY-iRPX0].ogg"
+}
+music = {
+    name = "D.A.N.C.E."
+        volume = 1
+file = "Justice - D.A.N.C.E. (Official Audio) [tCnBrrnOefs].ogg"
+}
+music = {
+    name = "Breathe"
+        volume = 1
+file = "The Prodigy - Breathe [nllmm7Q4sj0].ogg"
+}
+music = {
+    name = "Harder, Better, Faster, Stronger"
+        volume = 1
+file = "Daft Punk - Harder, Better, Faster, Stronger (Official Audio) [yydNF8tuVmU].ogg"
+}
+music = {
+    name = "God Is A Girl (Nightcore)"
+        volume = 1
+file = "Nightcore - God Is A Girl [TiVIFMbwxOc].ogg"
+}
+music = {
+    name = "PONPONPON"
+        volume = 1
+file = "きゃりーぱみゅぱみゅ - PONPONPON , Kyary Pamyu Pamyu - PONPONPON [yzC4hFK5P3g].ogg"
+}
+music = {
+    name = "DotA"
+        volume = 1
+file = "14. Basshunter - DOTA [y60OnY4q3JA].ogg"
+}
+music = {
+    name = "Always"
+        volume = 1
+file = "Always (2009 - Remaster) [Ce7eiDlMVKs].ogg"
+}
+music = {
+    name = "Dragostea din tei"
+        volume = 1
+file = "Dragostea din tei [uukQ7hGygRc].ogg"
+}
+music = {
+    name = "Better Off Alone"
+        volume = 1
+file = "Alice Deejay - Better Off Alone (Official Video) [Lgs9QUtWc3M].ogg"
+}
+music = {
+    name = "What Is Love"
+        volume = 1
+file = "Haddaway - What is Love (Audio) [OFNrN_6Ta5I].ogg"
+}
+music = {
+    name = "Lisa Frank 420 - Modern Computing"
+        volume = 1
+file = "MACINTOSH PLUS - FLORAL SHOPPE - 02 リサフランク420 - 現代のコンピュー [bAgmGZ9iQ2Y].ogg"
+}
+music = {
+    name = "Oboeteitatoni"
+        volume = 1
+file = "Oboeteitatoni.ogg"
+}
+music = {
+    name = "weekend_in_my_ROOM"
+        volume = 1
+file = "weekend_in_my_ROOM.ogg"
+}
+music = {
+    name = "sweet_soul_revue"
+        volume = 1
+file = "sweet_soul_revue.ogg"
+}
+music = {
+    name = "lady_brown"
+        volume = 1
+file = "lady_brown.ogg"
+}
+music = {
+    name = "luv_u_tokio"
+        volume = 1
+file = "luv_u_tokio.ogg"
+}
+music = {
+    name = "summer_jam_95"
+        volume = 1
+file = "summer_jam_95.ogg"
+}
+music = {
+    name = "Soldissimo"
+        volume = 1
+file = "Soldissimo.ogg"
+}
+music = {
+    name = "baby_love_child"
+        volume = 1
+file = "baby_love_child.ogg"
+}
+music = {
+    name = "camera_full_of_kisses"
+        volume = 1
+file = "camera_full_of_kisses.ogg"
+}
+music = {
+    name = "blue_be-bop"
+        volume = 1
+file = "blue_be-bop.ogg"
+}
+music = {
+    name = "camera_full_of_kisses"
+        volume = 1
+file = "camera_full_of_kisses.ogg"
+}
+music = {
+    name = "Romance"
+        volume = 1
+file = "Romance.ogg"
+}
+music = {
+    name = "stepping_out"
+        volume = 1
+file = "stepping_out.ogg"
+}
+music = {
+    name = "british_summertime"
+        volume = 1
+file = "british_summertime.ogg"
+}
+music = {
+    name = "dreams_never_end"
+        volume = 1
+file = "dreams_never_end.ogg"
+}
+music = {
+    name = "l_aventure_fantastique"
+        volume = 1
+file = "l_aventure_fantastique.ogg"
+}

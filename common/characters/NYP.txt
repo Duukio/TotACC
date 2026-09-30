@@ -1,0 +1,10 @@
+characters = {
+NYP_jeffrey_maddrey = {
+		name = "NYP_jeffrey_maddrey"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NYP/Jeffrey-Maddrey-TOTA.dds"
+			}
+		}
+	}
+}

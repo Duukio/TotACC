@@ -1,50 +1,377 @@
 characters = {
-    USA_janeen = {
-		name = "Janeen L. Birckhead"
+	USA_randy_george = {
+		name = USA_randy_george
 		portraits = {
 			army = {
-				large = "gfx/leaders/USA/Janeen L. Birckhead.png"
-			}
-		}
-		corps_commander = {
-			traits = { }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
-    USA_andrew_collins = {
-		name = "Andrew W. Collins"
-		portraits = {
-			army = {
-				large = "gfx/leaders/USA/Andrew W. Collins.png"
-			}
-		}
-		corps_commander = {
-			traits = { }
-			skill = 3
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
-    USA_davidharry = {
-		name = "David C. Harry"
-		portraits = {
-			army = {
-				large = "gfx/leaders/USA/David C. Harry.png"
+				large = "gfx/leaders/USA/Portrait_USA_Randy_George.dds"
 			}
 		}
 		field_marshal = {
-			traits = { }
+			traits = { Career_Officer }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	USA_christopher_cavoli = {
+		name = USA_christopher_cavoli
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Christopher-Cavoli-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	USA_charles_brown = {
+		name = USA_charles_brown
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Charles-Q-Brown-TOTA.dds"
+			}
+		}
+		field_marshal = {
+			traits = { infantry_officer }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	USA_mark_milley = {
+		name = USA_mark_milley
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Mark-A-Milley-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	USA_micheal_langely = {
+		name = USA_micheal_langely
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Micheal-E-Langely-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 5
+		}
+	}
+	USA_allan_pepin = {
+		name = USA_allan_pepin
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Allan-M-Pepin-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	USA_andrew_poppas = {
+		name = USA_andrew_poppas
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Andrew-Poppas-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
+		}
+	}
+	USA_Paul_LaCamera = {
+		name = USA_Paul_LaCamera
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Paul-LaCamera-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	USA_Edward_Daly = {
+		name = USA_Edward_Daly
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Edward-Daly-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	USA_Charles_Hamilton = {
+		name = USA_Charles_Hamilton
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Charles-R-Hamilton-TOTA.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
 			planning_skill = 3
-			logistics_skill = 4
+			logistics_skill = 3
+		}
+	}
+USA_gregory_knight = {
+		name = "USA_gregory_knight"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Gregory-C-Knight-TOTA.dds"
+			}
+		}
+	}
+	USA_douglas_farnham = {
+		name = "USA_douglas_farnham"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Douglas-A-Farnham-TOTA.dds"
+			}
+		}
+	}
+	USA_mark_schindler = {
+		name = "USA_mark_schindler"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Mark-J-Schindler-TOTA.dds"
+			}
+		}
+	}
+	USA_janeen_birckhead = {
+		name = "USA_janeen_birckhead"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/Janeen-L-Birckhead-TOTA.dds"
+			}
+		}
+	}
+	USA_james_ring = {
+		name = "USA_james_ring"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USA/James-W-Ring-TOTA.dds"
+			}
+		}
+	}
+    USA_jeffrey_maddrey = {
+		name = "USA_jeffrey_maddrey"
+		portraits = {
+			army = {
+				large = "gfx/leaders/NYP/Jeffrey-Maddrey-TOTA.dds"
+			}
+		}
+	}
+    USA_kenneth_mckenzie = {
+		name = "USA_kenneth_mckenzie"
+		portraits = {
+			army = {
+				large = "gfx/leaders/USP/Kenneth-McKenzie-Jr-TOTA.dds"
+			}
+		}
+	}
+	USA_llyold_austin = {
+			name = "Lloyd James Austin III"
+			portraits = {
+				civilian = { small = "GFX_idea_USA_llyold_austin" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = USA
+				}
+			}
+			cost = 150
+			slot = head_of_government
+			available = {
+				has_country_flag = pelosi_cabinet
+			}
+			idea_token = USA_llyold_austin
+			traits = {
+			    head_of_government
+				autocracy_minister
+			}
+		}
+	}
+	USA_pete_buttigieg = {
+			name = "Peter Montgomery Buttigieg"
+			portraits = {
+				civilian = { small = "GFX_idea_USA_pete_buttigieg" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = USA
+				}
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = pelosi_cabinet
+			}
+			idea_token = USA_pete_buttigieg
+			traits = {
+			    foreign_minister
+				autocracy_minister
+			}
+		}
+	}
+	USA_mike_duncan = {
+			name = "Michael William Duncan"
+			portraits = {
+				civilian = { small = "GFX_idea_USA_mike_duncan" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = USA
+				}
+			}
+			cost = 150
+			slot = foreign_minister
+			available = {
+				has_country_flag = pelosi_cabinet
+			}
+			idea_token = USA_mike_duncan
+			traits = {
+			    foreign_minister
+				liberalism_minister
+			}
+		}
+	}
+	USA_michael_bennet = {
+			name = "Michael Farrand Bennet"
+			portraits = {
+				civilian = { small = "GFX_idea_USA_micheal_bennet" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = USA
+				}
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+				has_country_flag = pelosi_cabinet
+			}
+			idea_token = USA_micheal_bennet
+			traits = {
+			political_power_cost = 0.15
+			    economy_minister
+				autocracy_minister
+			}
+		}
+	}
+	USA_ro_khanna = {
+			name = "Rohit Khanna"
+			portraits = {
+				civilian = { small = "GFX_idea_USA_ro_khanna" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = USA
+				}
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+			}
+			idea_token = USA_ro_khanna
+			traits = {
+			    security_minister
+				liberalism_minister
+			}
+		}
+	}
+	USA_cath_masto = {
+			name = "Catherine Marie Cortez Masto"
+			portraits = {
+				civilian = { small = "GFX_idea_USA_cath_masto" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = USA
+				}
+			}
+			cost = 150
+			slot = security_minister
+			available = {
+			}
+			idea_token = USA_cath_masto
+			traits = {
+			    security_minister
+				autocracy_minister
+			}
+		}
+	}
+	USA_elizabeth_fiedler = {
+			name = "Elizabeth Fiedler"
+			portraits = {
+				civilian = { small = "GFX_idea_USA_elizabeth_fiedler" } 
+			}
+			advisor = {
+			allowed = {
+				OR = {
+				original_tag = USA
+				}
+			}
+			cost = 150
+			slot = economy_minister
+			available = {
+			}
+			idea_token = USA_elizabeth_fiedler
+			traits = {
+			    economy_minister
+				liberalism_minister
+			}
 		}
 	}
 }

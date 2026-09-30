@@ -1,4 +1,4 @@
-capital = 780
+﻿capital = 780
 
 oob = ""
 
@@ -20,6 +20,7 @@ set_country_flag = american_cw_polity
 
 #starting tech
 #recruit_character = Mastercomputer_90_Character #trust me
+recruit_character = NYP_jeffrey_maddrey
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -156,9 +157,18 @@ set_politics = {
 create_country_leader = {
 	name = "Mike Bloomberg"
 	desc = "POLITICS_DEMOMAN_SHEEEEIT_DESC"
-	picture = "gfx/leaders/NYP/Mike Bloomberg.png"
+	picture = "gfx/leaders/NYP/Mike Bloomberg.dds"
 	expire = "2040.1.1"
 	ideology = milgov
+	traits = {
+	}
+}
+create_country_leader = {
+	name = "Barack H. Obama"
+	desc = "POLITICS_DEMOMAN_SHEEEEIT_DESC"
+	picture = "gfx/leaders/NYP/Obama.dds"
+	expire = "2040.1.1"
+	ideology = progre
 	traits = {
 	}
 }

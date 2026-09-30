@@ -1,0 +1,1486 @@
+
+shared_focus = {
+	id = USA_end_of_the_world_as_we_know_it
+	icon = ADK_end_of_the_world_as_we_know_it
+	cost = 1
+	x = 24
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_end_of_the_world_as_we_know_it"
+	}
+}
+
+shared_focus = {
+	id = USA_and_i_feel_fine
+	icon = ADK_andIfeelfine
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+        add_stability = 0.01
+		log = "[GetDateText]: [Root.GetName]: Focus USA_and_i_feel_fine"
+	}
+	relative_position_id = USA_end_of_the_world_as_we_know_it
+	prerequisite = { focus = USA_end_of_the_world_as_we_know_it }
+}
+
+shared_focus = {
+	id = USA_emergency_police_deployments
+	icon = ADK_emergency_police
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+	    hidden_effect = {
+		load_oob = USA_PELOSIPOLICE
+		}
+	    custom_effect_tooltip = "Deploys Police Units to the Frontline"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_emergency_police_deployments"
+	}
+	relative_position_id = USA_phone_the_national_guard
+	prerequisite = { focus = USA_phone_the_national_guard }
+}
+
+shared_focus = {
+	id = USA_fool_me_twice
+	icon = GFX_USA_fool_me_twice
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fool_me_twice"
+	}
+	relative_position_id = USA_deja_vu
+	prerequisite = { focus = USA_deja_vu }
+}
+
+shared_focus = {
+	id = USA_phone_the_national_guard
+	icon = ADK_callupguard
+	cost = 1
+	x = -21
+	y = 4
+	completion_reward = {
+	    country_event = {
+		id = USAADK.1
+		}
+		hidden_effect = {
+		load_oob = USA_NATGUARD
+		}
+	    custom_effect_tooltip = "Deploys National Guard Divisions and Generals"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_phone_the_national_guard"
+	}
+	relative_position_id = USA_and_i_feel_fine
+	prerequisite = { focus = USA_and_i_feel_fine }
+}
+
+shared_focus = {
+	id = USA_let_them_come
+	icon = GFX_USA_let_them_come
+	cost = 2
+	x = 1
+	y = 1
+	bypass = {
+        NOT = {
+        country_exists = USP
+        }
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_let_them_come"
+	}
+	relative_position_id = USA_fool_me_twice
+	prerequisite = { focus = USA_fool_me_twice }
+	mutually_exclusive = { focus = USA_go_go_go }
+}
+
+shared_focus = {
+	id = USA_go_go_go
+	icon = GFX_USA_go_go_go
+	cost = 2
+	x = -1
+	y = 1
+	bypass = {
+        NOT = {
+        country_exists = USP
+        }
+	}
+	completion_reward = {
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus USA_go_go_go"
+	}
+	relative_position_id = USA_fool_me_twice
+	prerequisite = { focus = USA_fool_me_twice }
+	mutually_exclusive = { focus = USA_let_them_come }
+}
+
+shared_focus = {
+	id = USA_open_the_caches
+	icon = GFX_USA_open_the_caches
+	cost = 2
+	x = 1
+	y = 2
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 5000
+		    producer = USA
+		}
+		add_equipment_to_stockpile = {
+		    type = train_equipment
+		    amount = 5
+		    producer = USA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_open_the_caches"
+	}
+	relative_position_id = USA_emergency_police_deployments
+	prerequisite = { focus = USA_emergency_police_deployments }
+}
+
+shared_focus = {
+	id = USA_scrape_for_resources
+	icon = GFX_USA_scrape_for_resources
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_resource = {
+		    type = tungsten
+		    amount = 25
+		    state = 781
+		}
+		add_resource = {
+		    type = aluminium
+		    amount = 25
+		    state = 781
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_scrape_for_resources"
+	}
+	relative_position_id = USA_open_the_caches
+	prerequisite = { focus = USA_open_the_caches }
+}
+
+shared_focus = {
+	id = USA_operation_grant
+	icon = GFX_USA_operation_grant
+	cost = 2
+	x = 0
+	y = 1
+	bypass = {
+        NOT = {
+        country_exists = USP
+        }
+	}
+	completion_reward = {
+	    add_timed_idea = { 
+		idea = USA_Operation_Grant
+		days = 150
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_grant"
+	}
+	relative_position_id = USA_go_go_go
+	prerequisite = { focus = USA_go_go_go }
+}
+
+shared_focus = {
+	id = USA_operation_aegis
+	icon = GFX_USA_operation_aegis
+	cost = 2
+	x = 0
+	y = 1
+	bypass = {
+        NOT = {
+        country_exists = USP
+        }
+	}
+	completion_reward = {
+	    add_ideas = { 
+		idea = USA_Northern_Shield
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_aegis"
+	}
+	relative_position_id = USA_let_them_come
+	prerequisite = { focus = USA_let_them_come }
+}
+
+shared_focus = {
+	id = USA_the_big_uneasy
+	icon = GFX_USA_the_big_uneasy
+	cost = 2
+	x = 1
+	y = 1
+	available = {
+	NOT = {
+	country_exists = USP
+		  }
+	}
+	completion_reward = {
+		country_event = {
+		id = USAADK.3
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_big_uneasy"
+	}
+	relative_position_id = USA_operation_grant
+	prerequisite = { focus = USA_operation_aegis focus = USA_operation_grant }
+}
+
+shared_focus = {
+	id = USA_the_hardliner_clique
+	icon = ADK_pelosiilluminatiscary
+	cost = 2
+	x = -7
+	y = 4
+	completion_reward = {
+	  add_dynamic_modifier = {
+		modifier = USA_Hardliner_Presidency
+		scope = USA
+	  }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_hardliner_clique"
+	}
+	relative_position_id = USA_and_i_feel_fine
+	prerequisite = { focus = USA_and_i_feel_fine }
+	mutually_exclusive = { focus = USA_unitarian_wing }
+}
+
+shared_focus = {
+	id = USA_the_congressional_gambit
+	icon = GFX_USA_the_congressional_gambit
+	cost = 2
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_congressional_gambit"
+	}
+	relative_position_id = USA_the_hardliner_clique
+	prerequisite = { focus = USA_the_hardliner_clique }
+}
+
+shared_focus = {
+	id = USA_cutting_the_connections
+	icon = GFX_USA_cutting_the_connections
+	cost = 2
+	x = 4
+	y = 1
+	completion_reward = {
+		country_event = {
+		id = USAADK.26
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cutting_the_connections"
+	}
+	relative_position_id = USA_the_hardliner_clique
+	prerequisite = { focus = USA_the_hardliner_clique }
+}
+
+shared_focus = {
+	id = USA_fight_for_the_free
+	icon = GFX_USA_fight_for_the_free
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fight_for_the_free"
+	}
+	relative_position_id = USA_the_hardliner_clique
+	prerequisite = { focus = USA_the_hardliner_clique }
+}
+
+shared_focus = {
+	id = USA_unite_an_opposition
+	icon = GFX_USA_unite_an_opposition
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_stability = -0.1
+		add_popularity = { ideology = conservatism popularity = 0.025 }
+		add_popularity = { ideology = socdem popularity = 0.025 }
+		add_popularity = { ideology = liberalism popularity = 0.025 }
+		add_to_variable = {
+			var = USA_hardliner_core_offense
+			value = 0.02
+		}
+		custom_effect_tooltip = "Adds a 2% attack factor on Cores"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_unite_an_opposition"
+	}
+	relative_position_id = USA_the_congressional_gambit
+	prerequisite = { focus = USA_the_congressional_gambit }
+}
+
+shared_focus = {
+	id = USA_mobilize_the_ousted
+	icon = GFX_USA_mobilize_the_ousted
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_manpower = 10000
+		add_stability = -0.025
+		add_war_support = 0.05
+		OBC = {
+	        country_event = {
+		    id = USAADK.40
+		    }
+		}
+		add_to_variable = {
+			var = USA_hardliner_core_offense
+			value = 0.02
+		}
+		add_to_variable = {
+			var = USA_hardliner_conscription_factor
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_hardliner_morale
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mobilize_the_ousted"
+	}
+	relative_position_id = USA_the_congressional_gambit
+	prerequisite = { focus = USA_the_congressional_gambit }
+}
+
+shared_focus = {
+	id = USA_discontent_against_the_machine
+	icon = GFX_USA_discontent_against_the_machine
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_stability = -0.005
+		add_popularity = { ideology = autocracy popularity = -0.075 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_discontent_against_the_machine"
+	}
+	custom_effect_tooltip = "Sows discontent in Pelosi's government, making it easier to advance our agenda."
+	relative_position_id = USA_fight_for_the_free
+	prerequisite = { focus = USA_fight_for_the_free }
+}
+
+shared_focus = {
+	id = USA_pitch_in
+	icon = GFX_USA_pitch_in
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA.GDP = -5 }
+		add_to_variable = {
+			var = USA_hardliner_manpower
+			value = 500
+		}
+		add_to_variable = {
+			var = USA_hardliner_attr
+			value = -0.05
+		}
+		custom_effect_tooltip = "Maybe we could harness the Militias... Adds 500 manpower weekly and modifies attrition by -5%"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_pitch_in"
+	}
+	relative_position_id = USA_fight_for_the_free
+	prerequisite = { focus = USA_fight_for_the_free }
+}
+
+shared_focus = {
+	id = USA_enlist_the_rinos
+	icon = GFX_USA_enlist_the_rinos
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+	    add_war_support = 0.15
+		add_popularity = { ideology = conservatism popularity = 0.025 }
+		country_event = {
+		id = USAADK.29
+		}
+		custom_effect_tooltip = "Recruiting republicans distant from Pence's regime will help us kneecap some of Pelosi's political power."
+		log = "[GetDateText]: [Root.GetName]: Focus USA_enlist_the_rinos"
+	}
+	relative_position_id = USA_cutting_the_connections
+	prerequisite = { focus = USA_cutting_the_connections }
+}
+
+shared_focus = {
+	id = USA_protect_the_protesters
+	icon = GFX_USA_protect_the_protesters
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_timed_idea = { 
+		idea = USA_The_DC_Protests
+		days = 65
+        }
+		add_stability = -0.05
+		add_to_variable = {
+			var = USA_hardliner_pp
+			value = -0.015
+		}
+		add_to_variable = {
+			var = USA_hardliner_consumer
+			value = 0.025
+		}
+		custom_effect_tooltip = "Letting people protest will help our case, although this comes with the drawback of a 2.5% increase on consumer goods."
+		log = "[GetDateText]: [Root.GetName]: Focus USA_protect_the_protesters"
+	}
+	relative_position_id = USA_discontent_against_the_machine
+	prerequisite = { focus = USA_discontent_against_the_machine }
+}
+
+shared_focus = {
+	id = USA_support_the_militias
+	icon = GFX_USA_support_the_militias
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_war_support = 0.05
+	    swap_ideas = {
+		remove_idea = USA_rural_paramil_troubles
+		add_idea = USA_Militia_Tensions_Cooled
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_support_the_militias"
+	}
+	relative_position_id = USA_pitch_in
+	prerequisite = { focus = USA_pitch_in }
+}
+
+shared_focus = {
+	id = USA_piss_em_off
+	icon = GFX_USA_piss_em_off
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		GPR = {
+	    country_event = {
+		id = USAADK.24
+		}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_piss_em_off"
+	}
+	relative_position_id = USA_mobilize_the_ousted
+	prerequisite = { focus = USA_mobilize_the_ousted }
+}
+
+shared_focus = {
+	id = USA_rollback_emergency_measures
+	icon = GFX_USA_rollback_emergency_measures
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_war_support = 0.25
+		add_popularity = { ideology = conservatism popularity = 0.025 }
+		add_popularity = { ideology = socdem popularity = 0.025 }
+		add_popularity = { ideology = liberalism popularity = 0.025 }
+		add_to_variable = {
+			var = USA_hardliner_break
+			value = 0.025
+		}
+		custom_effect_tooltip = "Adds a 2.5% breakthrough bonus"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rollback_emergency_measures"
+	}
+	relative_position_id = USA_unite_an_opposition
+	prerequisite = { focus = USA_unite_an_opposition }
+}
+
+shared_focus = {
+	id = USA_question_their_motives
+	icon = GFX_USA_question_their_motives
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_question_their_motives"
+	}
+	relative_position_id = USA_cutting_the_connections
+	prerequisite = { focus = USA_cutting_the_connections }
+}
+
+shared_focus = {
+	id = USA_stage_an_incident
+	icon = GFX_USA_stage_an_incident
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		country_event = {
+		id = USAADK.30
+		}
+		SOV = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = large_decrease
+			}
+		}
+		SOV = {
+		add_ideas = SOV_deathkneel_fuckyouamerikansy
+		}
+		news_event = {
+			id = WNE.618
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_stage_an_incident"
+	}
+	relative_position_id = USA_enlist_the_rinos
+	prerequisite = { focus = USA_enlist_the_rinos }
+}
+
+shared_focus = {
+	id = USA_discredit_the_soviets
+	icon = GFX_USA_discredit_the_soviets
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		USA = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = large_decrease
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_discredit_the_soviets"
+	}
+	relative_position_id = USA_question_their_motives
+	prerequisite = { focus = USA_question_their_motives }
+}
+
+shared_focus = {
+	id = USA_the_lakota_problem
+	icon = GFX_USA_the_lakota_problem
+	cost = 2
+	x = 4
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_lakota_problem"
+	}
+	relative_position_id = USA_deja_vu
+	prerequisite = { focus = USA_deja_vu }
+}
+
+shared_focus = {
+	id = USA_breaching_northwest
+	icon = GFX_USA_breaching_northwest
+	cost = 2
+	x = 8
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_breaching_northwest"
+	}
+	relative_position_id = USA_deja_vu
+	prerequisite = { focus = USA_deja_vu }
+}
+
+shared_focus = {
+	id = USA_operation_torch
+	icon = GFX_USA_operation_torch
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_timed_idea = { 
+		idea = USA_Kill_Nazis
+		days = 150
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_torch"
+	}
+	relative_position_id = USA_breaching_northwest
+	prerequisite = { focus = USA_breaching_northwest }
+}
+
+shared_focus = {
+	id = USA_specialized_mountain_combat
+	icon = GFX_USA_specialized_mountain_combat
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    load_oob = USA_RANGERS
+		log = "[GetDateText]: [Root.GetName]: Focus USA_specialized_mountain_combat"
+	}
+	relative_position_id = USA_the_bear
+	prerequisite = { focus = USA_the_bear }
+}
+
+shared_focus = {
+	id = USA_the_bear
+	icon = GFX_USA_the_bear
+	cost = 2
+	x = 6
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_bear"
+	}
+	relative_position_id = USA_deja_vu
+	prerequisite = { focus = USA_deja_vu }
+}
+
+shared_focus = {
+	id = USA_unitarian_wing
+	icon = GFX_USA_unitarian_wing
+	cost = 2
+	x = 8
+	y = 4
+	completion_reward = {
+	  add_dynamic_modifier = {
+		modifier = USA_Unitarian_Presidency
+		scope = USA
+	  }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_unitarian_wing"
+	}
+	relative_position_id = USA_and_i_feel_fine
+	prerequisite = { focus = USA_and_i_feel_fine }
+	mutually_exclusive = { focus = USA_the_hardliner_clique }
+}
+
+shared_focus = {
+	id = USA_unified_executive_command
+	icon = GFX_USA_unified_executive_command
+	cost = 2
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_unified_executive_command"
+	}
+	relative_position_id = USA_unitarian_wing
+	prerequisite = { focus = USA_unitarian_wing }
+}
+
+shared_focus = {
+	id = USA_guns
+	icon = GFX_USA_guns
+	cost = 2
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_guns"
+	}
+	relative_position_id = USA_unitarian_wing
+	prerequisite = { focus = USA_unitarian_wing }
+}
+
+shared_focus = {
+	id = USA_harnessing_the_masses
+	icon = GFX_USA_harnessing_the_masses
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	add_manpower = 25000
+		log = "[GetDateText]: [Root.GetName]: Focus USA_harnessing_the_masses"
+	}
+	relative_position_id = USA_unitarian_wing
+	prerequisite = { focus = USA_unitarian_wing }
+}
+
+shared_focus = {
+	id = USA_direct_control_from_washington
+	icon = GFX_USA_direct_control_from_washington
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+	    add_timed_idea = { 
+		idea = USA_Governors_Sidelined
+		days = 365
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_direct_control_from_washington"
+	}
+	relative_position_id = USA_unified_executive_command
+	prerequisite = { focus = USA_unified_executive_command }
+}
+
+shared_focus = {
+	id = USA_urbanconscription_drives
+	icon = GFX_USA_urbanconscription_drives
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_unitarian_manpower
+			value = 500
+		}
+		add_to_variable = {
+			var = USA_unitarian_conscription_factor
+			value = 0.05
+		}
+		custom_effect_tooltip = "Adds 500 Weekly Manpower and adds a 5% conscription buff"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_urbanconscription_drives"
+	}
+	relative_position_id = USA_unified_executive_command
+	prerequisite = { focus = USA_unified_executive_command }
+}
+
+shared_focus = {
+	id = USA_improving_our_morale
+	icon = GFX_USA_improving_our_morale
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_unitarian_morale
+			value = 0.15
+		}
+		custom_effect_tooltip = "Adds a 15% morale bonus"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_improving_our_morale"
+	}
+	relative_position_id = USA_harnessing_the_masses
+	prerequisite = { focus = USA_harnessing_the_masses }
+}
+
+shared_focus = {
+	id = USA_mandatory_food_stamps
+	icon = GFX_USA_mandatory_food_stamps
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_unitarian_effeciency
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_unitarian_consumer
+			value = -0.085
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mandatory_food_stamps"
+	}
+	relative_position_id = USA_harnessing_the_masses
+	prerequisite = { focus = USA_harnessing_the_masses }
+}
+
+shared_focus = {
+	id = USA_taking_from_the_soviet_armories
+	icon = GFX_USA_taking_from_the_soviet_armories
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2575
+		producer = SOV
+		}
+	    SOV = {
+	    add_ideas = SOV_deathkneel_intervention
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = SOV
+				modifier = large_increase
+			}
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_taking_from_the_soviet_armories"
+	}
+	relative_position_id = USA_guns
+	prerequisite = { focus = USA_guns }
+}
+
+shared_focus = {
+	id = USA_propagandizing_the_media
+	icon = GFX_USA_propagandizing_the_media
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_ideas = restricted_speech
+		add_popularity = { ideology = autocracy popularity = 0.075 } 
+		add_to_variable = {
+			var = USA_unitarian_stab
+			value = 0.075
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_propagandizing_the_media"
+	}
+	relative_position_id = USA_improving_our_morale
+	prerequisite = { focus = USA_improving_our_morale }
+}
+
+shared_focus = {
+	id = USA_annihilating_the_militias
+	icon = GFX_USA_annihilating_the_militias
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    remove_ideas = USA_rural_paramil_troubles
+		add_idea = USA_Militia_Crackdown
+		add_war_support = -0.05
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 5000
+		    producer = USA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_annihilating_the_militias"
+	}
+	relative_position_id = USA_mandatory_food_stamps
+	prerequisite = { focus = USA_mandatory_food_stamps }
+}
+
+shared_focus = {
+	id = USA_blood_circulates_the_machine
+	icon = GFX_USA_blood_circulates_the_machine
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_unitarian_manpower
+			value = 400
+		}
+		add_to_variable = {
+			var = USA_unitarian_core_defense
+			value = 0.03
+		}
+		add_to_variable = {
+			var = USA_unitarian_core_offense
+			value = 0.03
+		}
+		add_to_variable = {
+			var = USA_unitarian_attr
+			value = -0.065
+		}
+		custom_effect_tooltip = "400 Weekly Manpower, 3% plus in core defense and offense, minus 0.065 attrition"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_blood_circulates_the_machine"
+	}
+	relative_position_id = USA_urbanconscription_drives
+	prerequisite = { focus = USA_urbanconscription_drives }
+}
+
+shared_focus = {
+	id = USA_federal_deployments
+	icon = GFX_USA_mass_fema_deployments
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.125
+		add_to_variable = {
+			var = USA_unitarian_org
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_unitarian_core_defense
+			value = 0.065
+		}
+		custom_effect_tooltip = "Adds a 6.5% buff in core defense and a 7.5% organization buff."
+		log = "[GetDateText]: [Root.GetName]: Focus USA_federal_deployments"
+	}
+	relative_position_id = USA_direct_control_from_washington
+	prerequisite = { focus = USA_direct_control_from_washington }
+}
+
+shared_focus = {
+	id = USA_emergency_munition_plants
+	icon = GFX_USA_emergency_munition_plants
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+			add_building_construction = {
+			    type = arms_factory
+			    level = 7
+			    instant_build = yes
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_emergency_munition_plants"
+	}
+	relative_position_id = USA_guns
+	prerequisite = { focus = USA_guns }
+}
+
+shared_focus = {
+	id = USA_tactical_resupply
+	icon = GFX_USA_tactical_resupply
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_unitarian_attr
+			value = -0.05
+		}
+		add_to_variable = {
+			var = USA_unitarian_consumption
+			value = -0.06
+		}
+		add_to_variable = {
+			var = USA_unitarian_supply
+			value = -0.06
+		}
+		add_to_variable = {
+			var = USA_unitarian_node_range
+			value = 0.15
+		}
+		custom_effect_tooltip = "-5% attrition, -6% supply consumption, -6% in supply factor, and a 15% buff in supply node range."
+		log = "[GetDateText]: [Root.GetName]: Focus USA_tactical_resupply"
+	}
+	relative_position_id = USA_taking_from_the_soviet_armories
+	prerequisite = { focus = USA_taking_from_the_soviet_armories }
+}
+
+shared_focus = {
+	id = USA_whip_the_factory_workers
+	icon = GFX_USA_whip_the_factory_workers
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_unitarian_effeciency
+			value = 0.175
+		}
+		add_war_support = -0.75
+		add_building_construction = {
+			 type = industrial_complex
+			 level = 7
+			 instant_build = yes
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_whip_the_factory_workers"
+	}
+	relative_position_id = USA_emergency_munition_plants
+	prerequisite = { focus = USA_emergency_munition_plants }
+}
+
+shared_focus = {
+	id = USA_lots_of_guns
+	icon = GFX_USA_lots_of_guns
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 5000
+		    producer = USA
+		}
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 500
+		    producer = USA
+		}
+		add_equipment_to_stockpile = {
+		    type = artillery_equipment
+		    amount = 750
+		    producer = USA
+		}
+		custom_effect_tooltip = "Adds equipment to our stockpiles."
+		log = "[GetDateText]: [Root.GetName]: Focus USA_lots_of_guns"
+	}
+	relative_position_id = USA_tactical_resupply
+	prerequisite = { focus = USA_tactical_resupply }
+	prerequisite = { focus = USA_whip_the_factory_workers }
+}
+
+shared_focus = {
+	id = USA_dropping_the_blue_pills
+	icon = GFX_USA_dropping_the_blue_pills
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.15
+		add_ideas = USA_bluepilled_masses
+		log = "[GetDateText]: [Root.GetName]: Focus USA_dropping_the_blue_pills"
+	}
+	relative_position_id = USA_propagandizing_the_media
+	prerequisite = { focus = USA_propagandizing_the_media }
+	prerequisite = { focus = USA_annihilating_the_militias }
+}
+
+shared_focus = {
+	id = USA_i_am_the_senate
+	icon = GFX_USA_i_am_the_senate
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_ideas = USA_i_am_the_senate_idea
+		add_war_support = 0.125
+		log = "[GetDateText]: [Root.GetName]: Focus USA_i_am_the_senate"
+	}
+	relative_position_id = USA_blood_circulates_the_machine
+	prerequisite = { focus = USA_blood_circulates_the_machine }
+	prerequisite = { focus = USA_federal_deployments }
+}
+
+shared_focus = {
+	id = USA_the_speaker_supreme
+	icon = GFX_USA_the_speaker_supreme
+	cost = 2
+	x = -4
+	y = 3
+	completion_reward = {
+		add_ideas = USA_Speaker_Supreme
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_speaker_supreme"
+	}
+	relative_position_id = USA_lots_of_guns
+	prerequisite = { focus = USA_lots_of_guns }
+	prerequisite = { focus = USA_dropping_the_blue_pills }
+	prerequisite = { focus = USA_i_am_the_senate }
+}
+
+shared_focus = {
+	id = USA_talks_with_paris
+	icon = GFX_USA_talks_with_paris
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+	    FRA = {
+	    add_ideas = FRA_pulling_out
+		}
+		WES = {
+		add_ideas = WES_deathkneel_intervention
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_talks_with_paris"
+	}
+	relative_position_id = USA_stage_an_incident
+	prerequisite = { focus = USA_stage_an_incident }
+	prerequisite = { focus = USA_discredit_the_soviets }
+}
+
+shared_focus = {
+	id = USA_uphold_1a
+	icon = GFX_USA_uphold_1a
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_popularity = { ideology = autocracy popularity = -0.05 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_uphold_1a"
+	}
+	relative_position_id = USA_protect_the_protesters
+	prerequisite = { focus = USA_protect_the_protesters }
+	prerequisite = { focus = USA_support_the_militias }
+}
+
+shared_focus = {
+	id = USA_reconvene_congress
+	icon = GFX_USA_reconvene_congress
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_war_support = 0.075
+		add_stability = -0.05
+		add_ideas = USA_The_Congress_Rebate
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reconvene_congress"
+	}
+	relative_position_id = USA_piss_em_off
+	prerequisite = { focus = USA_piss_em_off }
+	prerequisite = { focus = USA_rollback_emergency_measures }
+}
+
+shared_focus = {
+	id = USA_great_success
+	icon = GFX_USA_great_success
+	cost = 2
+	x = -4
+	y = 3
+	completion_reward = {
+	    add_timed_idea = {
+		idea = USA_For_Democracy
+		days = 500
+        }
+		add_popularity = { ideology = autocracy popularity = -0.075 }
+	    country_event = {
+		id = USAADK.25
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_great_success"
+	}
+	relative_position_id = USA_talks_with_paris
+	prerequisite = { focus = USA_talks_with_paris }
+	prerequisite = { focus = USA_uphold_1a }
+	prerequisite = { focus = USA_reconvene_congress }
+}
+
+shared_focus = {
+	id = USA_deja_vu
+	icon = GFX_USA_deja_vu
+	cost = 2
+	x = 23
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_deja_vu"
+	}
+	relative_position_id = USA_and_i_feel_fine
+	prerequisite = { focus = USA_and_i_feel_fine }
+}
+
+shared_focus = {
+	id = USA_operation_birdtail
+	icon = GFX_USA_operation_birdtail
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_timed_idea = { 
+		idea = USA_Kill_Natives
+		days = 90
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_birdtail"
+	}
+	relative_position_id = USA_the_lakota_problem
+	prerequisite = { focus = USA_the_lakota_problem }
+}
+
+shared_focus = {
+	id = USA_operation_sunset
+	icon = GFX_USA_operation_sunset
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_timed_idea = { 
+		idea = USA_Kill_Californians
+		days = 180
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_sunset"
+	}
+	relative_position_id = USA_specialized_mountain_combat
+	prerequisite = { focus = USA_specialized_mountain_combat }
+}
+
+shared_focus = {
+	id = USA_operation_python
+	icon = GFX_USA_operation_python
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_timed_idea = { 
+		idea = USA_Kill_Lolberts
+		days = 150
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_python"
+	}
+	relative_position_id = USA_the_free_states
+	prerequisite = { focus = USA_the_free_states }
+}
+
+shared_focus = {
+	id = USA_the_free_states
+	icon = GFX_USA_the_free_states
+	cost = 2
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_free_states"
+	}
+	relative_position_id = USA_deja_vu
+	prerequisite = { focus = USA_deja_vu }
+}
+
+shared_focus = {
+	id = USA_operation_deer_chase
+	icon = GFX_USA_operation_deer_chase
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_timed_idea = { 
+		idea = USA_Kill_Anarchists
+		days = 150
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_deer_chase"
+	}
+	relative_position_id = USA_portlandia_and_its_consequences
+	prerequisite = { focus = USA_portlandia_and_its_consequences }
+}
+
+shared_focus = {
+	id = USA_portlandia_and_its_consequences
+	icon = GFX_USA_portlandia_and_its_consequences
+	cost = 2
+	x = 12
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_portlandia_and_its_consequences"
+	}
+	relative_position_id = USA_deja_vu
+	prerequisite = { focus = USA_deja_vu }
+}
+
+shared_focus = {
+	id = USA_ready_the_rear
+	icon = GFX_USA_ready_the_rear
+	cost = 2
+	x = -1
+	y = 2
+	completion_reward = {
+			add_building_construction = {
+			    type = industrial_complex
+			    level = 7
+			    instant_build = yes
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_ready_the_rear"
+	}
+	relative_position_id = USA_emergency_police_deployments
+	prerequisite = { focus = USA_emergency_police_deployments }
+}
+
+shared_focus = {
+	id = USA_distribute_guides
+	icon = GFX_USA_distribute_guides
+	cost = 2
+	x = -3
+	y = 2
+	completion_reward = {
+		add_stability = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus USA_distribute_guides"
+	}
+	relative_position_id = USA_emergency_police_deployments
+	prerequisite = { focus = USA_emergency_police_deployments }
+}
+
+shared_focus = {
+	id = USA_pump_up_propaganda
+	icon = GFX_USA_pump_up_propaganda
+	cost = 2
+	x = 3
+	y = 2
+	completion_reward = {
+		add_war_support = 0.075
+		add_political_power = 75
+		add_popularity = { ideology = anarchism popularity = -0.025 }
+		add_popularity = { ideology = revolutionary_right popularity = -0.025 }
+		add_popularity = { ideology = hardline_socialism popularity = -0.025 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_pump_up_propaganda"
+	}
+	relative_position_id = USA_emergency_police_deployments
+	prerequisite = { focus = USA_emergency_police_deployments }
+}
+
+shared_focus = {
+	id = USA_raise_the_industry
+	icon = ADK_gear_industry
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+			add_building_construction = {
+			    type = arms_factory
+			    level = 7
+			    instant_build = yes
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_raise_the_industry"
+	}
+	relative_position_id = USA_ready_the_rear
+	prerequisite = { focus = USA_ready_the_rear }
+}
+
+shared_focus = {
+	id = USA_total_mobilization
+	icon = GFX_USA_total_mobilization
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_manpower = 12500
+		add_ideas = extensive_conscription
+		add_ideas = war_economy
+		log = "[GetDateText]: [Root.GetName]: Focus USA_total_mobilization"
+	}
+	relative_position_id = USA_scrape_for_resources
+	prerequisite = { focus = USA_scrape_for_resources }
+	prerequisite = { focus = USA_raise_the_industry }
+}
+
+shared_focus = {
+	id = USA_attack_into_the_midatlantic
+	icon = GFX_USA_attack_into_the_midatlantic
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_attack_into_the_midatlantic"
+	}
+	relative_position_id = USA_the_big_uneasy
+	prerequisite = { focus = USA_the_big_uneasy }
+}
+
+shared_focus = {
+	id = USA_big_apple_burning
+	icon = GFX_USA_big_apple_burning
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_big_apple_burning"
+	}
+	relative_position_id = USA_attack_into_the_midatlantic
+	prerequisite = { focus = USA_attack_into_the_midatlantic }
+}
+
+shared_focus = {
+	id = USA_liberty_bell_ringing
+	icon = GFX_USA_liberty_bell_ringing
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_liberty_bell_ringing"
+	}
+	relative_position_id = USA_attack_into_the_midatlantic
+	prerequisite = { focus = USA_attack_into_the_midatlantic }
+}
+
+shared_focus = {
+	id = USA_operation_borough
+	icon = GFX_USA_operation_borough
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+			USA = {
+				declare_war_on = {
+					target = RAS
+					type = topple_government					
+				}
+				declare_war_on = {
+					target = NYP
+					type = topple_government					
+				}
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_borough"
+	}
+	relative_position_id = USA_big_apple_burning
+	prerequisite = { focus = USA_big_apple_burning }
+	prerequisite = { focus = USA_liberty_bell_ringing }
+}
+
+shared_focus = {
+	id = USA_offensive_into_the_south
+	icon = GFX_USA_offensive_into_the_south
+	cost = 2
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_offensive_into_the_south"
+	}
+	relative_position_id = USA_the_big_uneasy
+	prerequisite = { focus = USA_the_big_uneasy }
+}
+
+shared_focus = {
+	id = USA_ready_the_tacticians
+	icon = GFX_USA_ready_the_tacticians
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_ready_the_tacticians"
+	}
+	relative_position_id = USA_offensive_into_the_south
+	prerequisite = { focus = USA_offensive_into_the_south }
+}
+
+shared_focus = {
+	id = USA_prepare_fema
+	icon = GFX_USA_prepare_fema
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_prepare_fema"
+	}
+	relative_position_id = USA_offensive_into_the_south
+	prerequisite = { focus = USA_offensive_into_the_south }
+}
+
+shared_focus = {
+	id = USA_operation_fowl
+	icon = GFX_USA_operation_fowl
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+			USA = {
+				declare_war_on = {
+					target = SFL
+					type = topple_government					
+				}
+				declare_war_on = {
+					target = OBM
+					type = topple_government					
+				}
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_operation_fowl"
+	}
+	relative_position_id = USA_ready_the_tacticians
+	prerequisite = { focus = USA_ready_the_tacticians }
+	prerequisite = { focus = USA_prepare_fema }
+}
+
+shared_focus = {
+	id = USA_helping_the_command_centers
+	icon = GFX_USA_helping_the_command_centers
+	cost = 2
+	x = -5
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_helping_the_command_centers"
+	}
+	relative_position_id = USA_deja_vu
+	prerequisite = { focus = USA_deja_vu }
+}
+
+shared_focus = {
+	id = USA_connect_the_supply_lines
+	icon = GFX_USA_connect_the_supply_lines
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_connect_the_supply_lines"
+	}
+	relative_position_id = USA_helping_the_command_centers
+	prerequisite = { focus = USA_helping_the_command_centers }
+}
+
+shared_focus = {
+	id = USA_send_what_we_can_spare
+	icon = GFX_USA_send_what_we_can_spare
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1250
+			target = OBC
+		}
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1250
+			target = GPR
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_send_what_we_can_spare"
+	}
+	relative_position_id = USA_helping_the_command_centers
+	prerequisite = { focus = USA_helping_the_command_centers }
+}
+
+shared_focus = {
+	id = USA_building_a_defense
+	icon = GFX_USA_building_a_defense
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_building_a_defense"
+	}
+	relative_position_id = USA_send_what_we_can_spare
+	prerequisite = { focus = USA_send_what_we_can_spare }
+}
+
+shared_focus = {
+	id = USA_securing_the_supply
+	icon = GFX_USA_securing_the_supply
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_securing_the_supply"
+	}
+	relative_position_id = USA_connect_the_supply_lines
+	prerequisite = { focus = USA_connect_the_supply_lines }
+}

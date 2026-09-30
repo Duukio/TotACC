@@ -1,7 +1,7 @@
 capital = 534
 
 set_variable = { GDP = 19000.230 } set_variable = { DEBT = 24000 } set_variable = { REAL_GROWTH = 2.3 }
-
+oob = "USA_2021"
 TOTA_startup_funny_business_ignore_this = yes
 starting_econ_modifier_vars = yes
 set_variable = { GDP_trillion = var:GDP }
@@ -18,18 +18,47 @@ set_country_flag = american_cw_polity
 
 #starting tech
 #recruit_character = Mastercomputer_90_Character #trust me
-set_technology = {
-	tech_support = 1		
-	tech_engineers = 1
-	tech_special_forces= 1
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	support_weapons = 1
-	tech_trucks = 1
-	MSPcamo = 1
-	recon_drone = 1
-}
+recruit_character = USA_randy_george
+recruit_character = USA_christopher_cavoli
+recruit_character = USA_charles_brown
+recruit_character = USA_mark_milley
+recruit_character = USA_micheal_langely
+recruit_character = USA_allan_pepin
+recruit_character = USA_andrew_poppas
+recruit_character = USA_gregory_knight
+recruit_character = USA_douglas_farnham
+recruit_character = USA_mark_schindler
+recruit_character = USA_janeen_birckhead
+recruit_character = USA_james_ring
+recruit_character = USA_jeffrey_maddrey
+recruit_character = USA_kenneth_mckenzie
+recruit_character = USA_llyold_austin
+recruit_character = USA_pete_buttigieg
+recruit_character = USA_michael_bennet
+recruit_character = USA_cath_masto
+recruit_character = USA_mike_duncan
+recruit_character = USA_joe_kennedy_third
+recruit_character = USA_rachel_maddow
+recruit_character = USA_michele_martinez
+recruit_character = USA_ro_khanna
+recruit_character = USA_elizabeth_fiedler
+recruit_character = USA_Paul_LaCamera
+recruit_character = USA_Edward_Daly
+recruit_character = USA_Charles_Hamilton
 
+set_research_slots = 4
+set_technology = {
+	tech_support = 3		
+	tech_engineers = 3
+	tech_special_forces= 3
+	infantry_weapons = 3
+	infantry_weapons1 = 3
+	support_weapons = 3
+	tech_trucks = 3
+	MSPcamo = 3
+	recon_drone = 3
+	train_equipment = 1
+}
 if = {
 	limit = {
 		NOT = { has_dlc = "By Blood Alone" }
@@ -88,9 +117,9 @@ if = {
 	}
 }
 set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-interwar_artillery = 1
+	infantry_weapons = 3
+	gw_artillery = 3
+interwar_artillery = 3
 
 	early_fighter = 1
 }
@@ -104,7 +133,45 @@ set_technology = {
 	gw_artillery = 1
 interwar_artillery = 1
 
-
+country_event = {
+id = USAADK.14
+days = 2
+}
+country_event = {
+id = USAADK.22
+days = 5
+}
+country_event = {
+	id = USASKELETON.1
+	days = 20
+}
+country_event = {
+id = USAADK.15
+days = 22
+}
+country_event = {
+id = USAADK.18
+days = 41
+}
+country_event = {
+id = USAADK.19
+days = 42
+}
+country_event = {
+id = USAADK.17
+days = 61
+}
+country_event = {
+	id = USASKELETON.2
+	days = 62
+}
+news_event = {
+	id = WNE.617
+	days = 63
+}
+country_event = {
+id = USAADK.20
+days = 64
 }
 country_event = {
 	id = USASKELETON.3
@@ -123,16 +190,24 @@ country_event = {
 	days = 77
 }
 country_event = {
+id = USAADK.12
+days = 98
+}
+country_event = {
+id = USAADK.13
+days = 99
+}
+country_event = {
 	id = USASKELETON.6
-	days = 109
+	days = 108
 }
 country_event = {
 	id = USASKELETON.7
-	days = 113
+	days = 112
 }
 country_event = {
 	id = USASKELETON.17
-	days = 115
+	days = 113
 }
 country_event = {
 	id = USASKELETON.8
@@ -160,7 +235,7 @@ country_event = {
 }
 country_event = {
 	id = USASKELETON.13
-	days = 135
+	days = 134
 }
 country_event = {
 	id = USASKELETON.14
@@ -168,16 +243,12 @@ country_event = {
 }
 country_event = {
 	id = USASKELETON.15
-	days = 140
+	days = 139
 }
 country_event = {
 	id = USASKELETON.9
 	days = 142
 }
-#country_event = {
-#id = USADEBUG.1
-#days = 215
-#}
 
 
 add_ideas = {
@@ -243,17 +314,16 @@ set_politics = {
 #create_country_leader = {
 #	name = "Bernie Sanders"
 #	desc = "POLITICS_BERNIE_SANDERS_DESC"
-#	picture = "gfx/leaders/USA/Portrait_USA_Bernie_Sanders.png"
+#	picture = "gfx/leaders/USA/Portrait_USA_Bernie_Sanders.dds"
 #	expire = "2040.1.1"
 #	ideology = demsoc
 #	traits = {
 #	}
 #}
-recruit_character = USA_davidharry
 create_country_leader = {
 	name = "Alexander B. Johnson"
 	desc = "POLITICS_NOT_FUCKING_BORIS_DESC"
-	picture = "gfx/leaders/USA/Portrait_USA_Alexander_Johnson.png"
+	picture = "gfx/leaders/USA/Portrait_USA_Alexander_Johnson.dds"
 	expire = "2040.1.1"
 	ideology = marlib
 	traits = { unpopular_compromise }
@@ -268,5 +338,3 @@ create_country_leader = {
 	USA_iron_lady_america
 	}
 }
-recruit_character = USA_janeen
-recruit_character = USA_andrew_collins

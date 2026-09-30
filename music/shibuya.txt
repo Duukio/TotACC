@@ -1,0 +1,93 @@
+
+music_station = "TOTA_shibuya"
+
+music = {
+    song = "Oboeteitatoni"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "weekend_in_my_ROOM"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "sweet_soul_revue"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "lady_brown"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "luv_u_tokio"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "summer_jam_95"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Soldissimo"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "baby_love_child"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "blue_be-bop"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "camera_full_of_kisses"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Romance"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "stepping_out"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "british_summertime"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "dreams_never_end"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "l_aventure_fantastique"
+    chance = {
+        factor = 1
+    }
+}

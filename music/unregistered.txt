@@ -1,0 +1,224 @@
+music_station = "TOTA_unregistered"
+
+music = {
+    song = "Häschenparty"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "All The Things She Said"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Butterfly"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Caramelldansen (Speedycake Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "We Like To Party"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Call On Me"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Under My Skin (Speedycake Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Bumble Bee"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Ievan Polkka (Miku)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "I Can Walk On Water"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Little Kandi Raver"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Everytime We Touch"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Honeymoon"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Caipirinha (IOSYS Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "You're Gonna Go Far Kid (Nightcore)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Doctor Jones"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Stratosphere"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Bad Apple"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Electro Gypsy"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Bulletproof"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Trance"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tunak Tunak Tun"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Rainbow Tylenol"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Balla Da Li"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "D.A.N.C.E."
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Breathe"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Harder, Better, Faster, Stronger"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "God Is A Girl (Nightcore)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "PONPONPON"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "DotA"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Always"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Dragostea din tei"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Better Off Alone"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "What Is Love"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Always"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "DotA"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Lisa Frank 420 - Modern Computing"
+    chance = {
+        factor = 1
+    }
+}

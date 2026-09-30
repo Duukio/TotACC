@@ -1,0 +1,265 @@
+
+shared_focus = {
+	id = USA_military_matters
+	icon = GFX_USA_military_matters
+	cost = 5
+	x = -13
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_military_matters"
+	}
+}
+
+shared_focus = {
+	id = USA_get_gumps
+	icon = GFX_USA_get_gumps
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = robotics
+		}
+		add_equipment_to_stockpile = {
+		type = gump_equipment
+		amount = 950
+		producer = USA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_get_gumps"
+	}
+	relative_position_id = USA_military_matters
+	prerequisite = { focus = USA_military_matters }
+}
+
+shared_focus = {
+	id = USA_fighter_development_intiative
+	icon = GFX_USA_fighter_development_intiative
+	cost = 3
+	x = 4
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = light_air
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fighter_development_intiative"
+	}
+	relative_position_id = USA_military_matters
+	prerequisite = { focus = USA_military_matters }
+}
+
+shared_focus = {
+	id = USA_conscript_noobber
+	icon = GFX_USA_conscript_noobber
+	cost = 3
+	x = 1
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		type = dozer_equipment
+		amount = 950
+		producer = USA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_conscript_noobber"
+	}
+	mutually_exclusive = { focus = USA_box_em }
+	relative_position_id = USA_get_gumps
+	prerequisite = { focus = USA_get_gumps }
+}
+
+shared_focus = {
+	id = USA_general_army_development
+	icon = GFX_USA_general_army_development
+	cost = 3
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_general_army_development"
+	}
+	relative_position_id = USA_military_matters
+	prerequisite = { focus = USA_military_matters }
+}
+
+shared_focus = {
+	id = USA_box_em
+	icon = GFX_USA_box_em
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		type = boxer_equipment
+		amount = 950
+		producer = USA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_box_em"
+	}
+	mutually_exclusive = { focus = USA_conscript_noobber }
+	relative_position_id = USA_get_gumps
+	prerequisite = { focus = USA_get_gumps }
+}
+
+shared_focus = {
+	id = USA_rifle_development_program
+	icon = GFX_USA_rifle_development_program
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+		    bonus = 0.66
+		    uses = 2
+		    category = infantry_weapons
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rifle_development_program"
+	}
+	relative_position_id = USA_general_army_development
+	prerequisite = { focus = USA_general_army_development }
+}
+
+shared_focus = {
+	id = USA_bring_the_boom
+	icon = GFX_USA_bring_the_boom
+	cost = 3
+	x = -2
+	y = 1
+	completion_reward = {
+		add_tech_bonus = {
+		    bonus = 0.66
+		    uses = 3
+		    category = artillery
+		}
+		add_equipment_to_stockpile = {
+		type = artillery
+		amount = 950
+		producer = USA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_bring_the_boom"
+	}
+	relative_position_id = USA_general_army_development
+	prerequisite = { focus = USA_general_army_development }
+}
+
+shared_focus = {
+	id = USA_support_infantry_research
+	icon = GFX_USA_support_infantry_research
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+		    bonus = 0.66
+		    uses = 5
+		    category = support_tech
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_support_infantry_research"
+	}
+	relative_position_id = USA_rifle_development_program
+	prerequisite = { focus = USA_rifle_development_program }
+}
+
+shared_focus = {
+	id = USA_the_war
+	icon = GFX_USA_general_army_development
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+		    bonus = 0.66
+		    uses = 1
+		    category = infantry_tech
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_war"
+	}
+	relative_position_id = USA_bring_the_boom
+	prerequisite = { focus = USA_bring_the_boom }
+}
+
+shared_focus = {
+	id = USA_the_mastercomputing_complex
+	icon = GFX_USA_the_mastercomputing_complex
+	cost = 3
+	x = -1
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = robotics
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_mastercomputing_complex"
+	}
+	relative_position_id = USA_conscript_noobber
+	prerequisite = { focus = USA_box_em focus = USA_conscript_noobber }
+}
+
+shared_focus = {
+	id = USA_airsupport_projects
+	icon = GFX_USA_airsupport_projects
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_airsupport_projects"
+	}
+	relative_position_id = USA_fighter_development_intiative
+	prerequisite = { focus = USA_fighter_development_intiative }
+}
+
+shared_focus = {
+	id = USA_bomber_wing_blitz
+	icon = GFX_USA_bomber_wing_blitz
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = heavy_air
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_bomber_wing_blitz"
+	}
+	relative_position_id = USA_airsupport_projects
+	prerequisite = { focus = USA_airsupport_projects }
+}
+
+shared_focus = {
+	id = USA_old_ironsides
+	icon = GFX_USA_old_ironsides
+	cost = 3
+	x = 0
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = armor
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_old_ironsides"
+	}
+	relative_position_id = USA_hot_wheels
+	prerequisite = { focus = USA_hot_wheels }
+}
+
+shared_focus = {
+	id = USA_hot_wheels
+	icon = GFX_USA_hot_wheels
+	cost = 3
+	x = 6
+	y = 1
+	completion_reward = {
+			add_tech_bonus = {
+ 	   		bonus = 0.75
+ 			uses = 3
+  	 		category = motorized_equipment
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_hot_wheels"
+	}
+	relative_position_id = USA_military_matters
+	prerequisite = { focus = USA_military_matters }
+}

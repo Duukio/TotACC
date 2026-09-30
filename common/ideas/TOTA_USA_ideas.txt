@@ -55,6 +55,32 @@ ideas = {
 			weekly_manpower = 200
 			}
 		}
+		OBM_attack = {
+			picture = OBM_attack
+			allowed = {
+				tag = ATI
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+				supply_factor = 0.3
+				attrition = -0.44
+				offence = 0.33
+				conscription_factor = -0.9
+				weekly_manpower = 1000
+			}
+		}
 		USA_rural_paramil_troubles = {
 		picture = USA_unruly
 		allowed = {
@@ -154,10 +180,164 @@ ideas = {
 			custom_modifier_tooltip = "USA_drift_ecological_slightly_plus_junk"
 			}
 		}
-		USA_guerilla_warfare = {
-			picture = guerilla
+		USA_Attack_Bonus_Commies = {
+			picture = ADK_exhumingmccarthty
 			allowed = {
-				is_in_array = { global.USA_CW_TAGS = THIS }
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+                        tag = RAS
+                        attack_bonus_against = 0.1
+                        breakthrough_bonus_against = 0.05
+						
+				add_timed_idea = {
+			    idea = USA_Attack_Bonus_Coppers
+				days = 150
+					    }
+                 }
+		}
+		USA_Attack_Bonus_Coppers = {
+			picture = USA_rust_belt
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+                        tag = NYP
+                        attack_bonus_against = 0.1
+                        breakthrough_bonus_against = 0.05
+						
+			add_timed_idea = {
+			    idea = USA_Attack_Bonus_Coppers
+				days = 150
+					}
+                 }
+			}
+			USA_War_For_Survival = {
+			picture = USA_rust_belt
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+		modifier = {
+                    conscription = 0.003
+                    army_core_defence_factor = 0.025
+					army_org_regain = 0.05
+              }
+		}
+		USA_Militia_Tensions_Cooled = {
+		picture = USA_rust_belt
+		allowed = {
+			tag = USA
+		}
+
+        available = {
+
+        }
+
+        cancel = {
+
+        }
+
+		allowed_civil_war = {
+			always = no
+		}
+			
+		modifier = {
+		land_reinforce_rate = 0.05
+		stability_factor = -0.075
+        war_support_factor = 0.105
+                 }
+			}
+		USA_Eyes_Everywhere = {
+		picture = USA_rust_belt
+		allowed = {
+			tag = USA
+		}
+
+        available = {
+
+        }
+
+        cancel = {
+
+        }
+
+		allowed_civil_war = {
+		always = no
+		}
+			
+	    modifier = {
+		army_speed_factor = 0.05
+        stability_factor = 0.1
+                }
+			}
+
+		USA_The_DC_Protests = {
+		picture = USA_rust_belt
+		allowed = {
+			tag = USA
+		}
+
+        available = {
+
+        }
+
+        cancel = {
+
+        }
+
+		allowed_civil_war = {
+		always = no
+		}
+			
+	    modifier = {
+		autocracy_drift = -0.025
+        stability_factor = -0.15
+                }
+			}
+
+			USA_Speaker_Supreme = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
 			}
 
             available = {
@@ -173,8 +353,1441 @@ ideas = {
 			}
 			
 			modifier = {
-				supply_factor = 0.3
-				out_of_supply_factor = -0.1
+			political_power_factor = 0.5
+			political_power_cost = -0.1
+			custom_modifier_tooltip = "USA_autocracy_drift"
+			monthly_soctrends_drift_DE_E = 0.03
+			}
+		}
+			USA_Media_Division = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			autocracy_drift = 0.02
+			political_power_gain = 0.3
+			political_power_cost = -0.5
+			custom_modifier_tooltip = "USA_autocracy_drift"
+			monthly_soctrends_drift_DE_E = 0.02
+			}
+		}
+			USA_The_French_Connection = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			research_speed_factor = 0.03
+			political_power_gain = 0.3
+			political_power_cost = -0.5
+			}
+		}
+			USA_The_Russian_Connection = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			research_speed_factor = 0.03
+			political_power_gain = 0.3
+			political_power_cost = -0.5
+			}
+		}
+			USA_The_Congress_Rebate = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			autocracy_drift = -0.01
+			political_power_gain = -0.05
+			}
+		}
+		WES_deathkneel_intervention = {
+			picture = ADK_german_angry
+			allowed = {
+				tag = WES
+				USA = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = WES
+				USA = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = 0
+			}
+		}
+		SOV_deathkneel_intervention = {
+			picture = ADK_sov_angry
+			allowed = {
+				tag = SOV
+				USA = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SOV
+				USA = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				send_volunteer_divisions_required = -0.99
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+				send_volunteers_tension = 0
+			}
+		}
+		SOV_deathkneel_fuckyouamerikansy = {
+			picture = ADK_sov_angry
+			allowed = {
+				tag = SOV
+				USA = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = SOV
+				USA = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			}
+		}
+		FRA_pulling_out = {
+			picture = FRA_aw_fuck_nah
+			allowed = {
+				tag = FRA
+				USA = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = FRA
+				USA = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			}
+		}
+		USA_Operation_Grant = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+                tag = USP
+                attack_bonus_against = 0.10
+				breakthrough_bonus_against = 0.20
+			}
+			targeted_modifier = {
+                tag = DIX
+                attack_bonus_against = 0.10
+				breakthrough_bonus_against = 0.20
+			}
+			targeted_modifier = {
+                tag = TPR
+                attack_bonus_against = 0.10
+				breakthrough_bonus_against = 0.20
+			}
+		}
+		USA_Northern_Shield = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			army_morale_factor = 0.25
+			}
+			
+			targeted_modifier = {
+                tag = USP
+                defense_bonus_against  = 0.075
+			}
+		}
+		USA_No_Rest_For_The_Wicked = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.1
+			conscription = -0.003
+		    army_speed_factor = 0.075
+			}
+		}
+		USA_Kill_Nazis = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = NWF
+            attack_bonus_against = 0.3
+            breakthrough_bonus_against = 0.25
+			}
+		}
+		USA_Kill_Natives = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = LKT
+            attack_bonus_against = 0.3
+            breakthrough_bonus_against = 0.25
+			}
+		}
+		USA_Kill_Californians = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = CAL
+            attack_bonus_against = 0.3
+            breakthrough_bonus_against = 0.25
+			}
+		}
+		USA_Kill_Lolberts = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = FSA
+            attack_bonus_against = 0.3
+            breakthrough_bonus_against = 0.25
+			}
+		}
+		USA_Kill_Anarchists = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = ATI
+            attack_bonus_against = 0.3
+            breakthrough_bonus_against = 0.25
+			}
+		}
+		USA_Postwar_Devestation = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.5
+			war_support_factor = -0.2
+			consumer_goods_factor = 0.40
+			}
+		}
+		USA_Devestation_Lightened = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.3
+			war_support_factor = -0.1
+			consumer_goods_factor = 0.20
+			}
+		}
+		USA_Devestation_Fading = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.05
+			consumer_goods_factor = 0.1
+			}
+		}
+		USA_Building_Projects = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			production_speed_infrastructure_factor = 0.35
+			industry_repair_factor = 0.2
+			}
+		}
+		USA_Reformed_Elections = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+            autocracy_drift = -0.02
+			stability_factor = -0.05
+			stability_weekly_factor = 0.02
+			}
+		}
+		USA_For_Democracy = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+                conscription = 0.02
+                army_core_defence_factor = 0.025
+				army_core_attack_factor = 0.025
+				army_org_regain = 0.05
+				stability_factor = -0.05
+				war_support_factor = 0.15
+				monthly_soctrends_drift_DE_D = 0.02
+			}
+		}
+		ALK_intervention = {
+			picture = ADK_intervention
+			allowed = {
+				tag = USA
+				ALK = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = USA
+				ALK = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				send_volunteer_size = 1
+			}
+		}
+		USA_intervention = {
+			picture = ADK_intervention
+			allowed = {
+				tag = USA
+				ALK = {
+					has_war = yes
+				}
+			}
+
+            available = {
+				tag = USA
+				ALK = {
+					has_war = yes
+				}
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+				send_volunteer_size = 5
+				air_volunteer_cap = 250
+			}
+		}
+		USA_FEMA_takeover = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			army_speed_factor = 0.025
+			army_org_regain = 0.015
+            army_core_defence_factor = 0.0125
+			}
+		}
+		USA_fed_control = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			army_speed_factor = 0.025
+			}
+		}
+		USK_Thunderdome = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			army_speed_factor = 0.025
+			army_org_regain = 0.025
+			acclimatization_cold_climate_gain_factor = 0.05
+			}
+		}
+		USK_Bring_Order_To_Chaos = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			war_support_weekly = 0.015
+			stability_weekly = 0.015
+			}
+		}
+		USK_Full_Force = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			}
+			targeted_modifier = {
+            tag = SVK
+            attack_bonus_against = 0.1
+            breakthrough_bonus_against = 0.1
+			surrender_limit = -0.25
+			}
+			targeted_modifier = {
+            tag = ALK
+            attack_bonus_against = 0.095
+            breakthrough_bonus_against = 0.095
+			surrender_limit = -0.25
+			}
+		}
+		USA_rushed_barricades_and_chainlink_fences = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			production_speed_military_production_factor = 0.3
+			production_speed_land_fort _factor = 0.3
+			}
+		}
+		USA_rockbottom = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+            war_support_weekly = 0.1
+			}
+		}
+		USA_militia_hunting = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+            war_support_weekly = -0.005
+			}
+		} 
+		USH_thunderdome = {	`
+			picture = ADK_intervention
+			allowed = {
+			}
+
+            available = {
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}			
+			modifier = {
+			army_speed_factor = 0.075
+			army_org_regain = 0.025
+			acclimatization_hot_climate_gain_factor = 0.25
+			}
+		} 
+		USA_Socially_Shellshocked = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.2
+			war_support_factor = -0.2
+			hardline_socialism_drift = 0.01
+			revolutionary_right = 0.01
+			anarchism_drift = 0.02
+			}
+		}
+		USA_Socially_Scarred = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.05
+			war_support_factor = -0.05
+			}
+		}
+		USA_Postwar_Devestation = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.3
+			war_support_factor = -0.1
+			consumer_goods_factor = 0.40
+			}
+		}
+		USA_Devestation_Lightened = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.2
+			war_support_factor = -0.05
+			consumer_goods_factor = 0.20
+			}
+		}
+		USA_Devestation_Fading = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.1
+			war_support_factor = -0.025
+			consumer_goods_factor = 0.1
+			gdp_growth_modifier = 0.02
+			}
+		}
+		USA_Memories_Of_Devestation = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = -0.025
+			war_support_factor = -0.025
+			}
+		}
+		USA_Building_Projects = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			production_speed_buildings_factor = 0.1
+			production_speed_infrastructure_factor = 0.35
+			industry_repair_factor = 0.2
+			}
+		}
+		USA_Reformed_Elections = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+            autocracy_drift = -0.02
+			stability_factor = -0.045
+			stability_weekly_factor = 0.02
+			}
+		}
+		USA_Industrial_Development_Act = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			production_speed_industrial_complex_factor = 0.2
+			production_speed_buildings_factor = 0.2
+			production_factory_max_effeciency_gain_factor = 0.15
+			gdp_growth_modifier = 0.01
+			}
+		}
+		USA_Enterprise_Act = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			gdp_growth_modifier = 0.03
+			consumer_goods_factor = 0.025
+			supply_node_range = 0.2
+			attrition = -0.05
+			supply_factor = 0.15
+			research_speed_factor = 0.05
+			weekly_debt_modifier = -0.02
+			production_speed_buildings_factor = 0.1
+			local_resources_factor = 1
+			}
+		}
+		USA_Americas_Finest_Industry = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			production_speed_arms_factory_factor = 0.2
+            local_supplies = 0.1
+            training_time_factor = -0.075
+            equipment bonus
+            attrition = -0.75
+            supply_consumption_factor = -0.05
+            mobilization_speed = 0.05
+			}
+		}
+		USA_Economic_Repair_Act_Idea = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			}
+		}
+		USA_The_Violence_Prevention_Task_Force = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.15
+			army_speed_factor = 0.05
+			resistance_growth_on_our_occupied_states = -0.15
+			political_power_gain = 0.02
+			stability_weekly = 0.01
+			}
+		}
+		USA_Urban_Design_Act_Idea = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.05
+			production_speed_infastructure_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			gdp_growth_modifier = 0.01
+			}
+		}
+		USA_Urban_Design_Act_Idea = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.05
+			production_speed_infastructure_factor = 0.1
+			production_speed_buildings_factor = 0.1
+			gdp_growth_modifier = 0.01
+			}
+		}
+		USA_Mainland_Logistics = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			production_speed_infastructure_factor = 0.1
+			production_speed_arms_factory_factor = 0.1
+            local_supplies = 0.15
+            training_time_factor = -0.18
+            attrition = -0.2
+            supply_consumption_factor = -0.15
+            mobilization_speed = 0.1
+			}
+		}
+		USA_family_support  = {
+			picture = USA_big_tech
+			allowed = {
+				tag = USA
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			modifier = {
+			stability_factor = 0.15
+			stability_weekly = 0.01
+			}
+		}
+		SAU_buff  = {
+			picture = USA_big_tech
+			allowed = {
+				tag = SAU
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = YE2
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.125
+			}
+			targeted_modifier = {
+            tag = DHO
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.125
+			}
+			targeted_modifier = {
+            tag = PGR
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.125
+			}
+		}
+		TOY_buff  = {
+			picture = USA_big_tech
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = TRP
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+            tag = GUN
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+            tag = MLI
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+            tag = BKF
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+            tag = BEN
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+            tag = GBS
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+            tag = LUR
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+            tag = CHD
+            attack_bonus_against = 0.1
+            defense_bonus_against  = 0.05
+			}
+		}
+		TOY_logistics  = {
+			picture = USA_big_tech
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+			acclimatization_hot_climate_gain_factor = 0.15
+			supply_factor = 0.2
+			attrition = -0.1
+			}
+		}
+		PH2_buff = {
+			picture = USA_big_tech
+			allowed = {
+				tag = PH2
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = PHI
+            attack_bonus_against = 0.1
+			breakthrough_bonus_against = 0.1
+			}
+			targeted_modifier = {
+            tag = PHL
+            attack_bonus_against = 0.1
+			breakthrough_bonus_against = 0.1
+			}
+		}
+		MSK_buff = {
+			picture = USA_big_tech
+			allowed = {
+				tag = MSK
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			targeted_modifier = {
+            tag = HON
+            attack_bonus_against = 0.1
+			breakthrough_bonus_against = 0.125
+			}
+			targeted_modifier = {
+            tag = ELS
+            attack_bonus_against = 0.1
+			breakthrough_bonus_against = 0.125
+			}
+			targeted_modifier = {
+            tag = EMR
+            attack_bonus_against = 0.1
+			breakthrough_bonus_against = 0.125
+			}
+			targeted_modifier = {
+            tag = GUA
+            attack_bonus_against = 0.1
+			breakthrough_bonus_against = 0.125
+			}
+			targeted_modifier = {
+            tag = COS
+            attack_bonus_against = 0.1
+			breakthrough_bonus_against = 0.125
+			}
+		}
+		VIE_buff = {
+			picture = USA_big_tech
+			allowed = {
+				tag = PH2
+			}
+
+            available = {
+
+            }
+
+            cancel = {
+
+            }
+
+			allowed_civil_war = {
+				always = no
 			}
 		}
 	}	

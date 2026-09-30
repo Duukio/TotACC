@@ -1,0 +1,194 @@
+music_station = "TOTA_playhouse"
+
+music = {
+    song = "Immaterial"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "purgatory"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "BABY MY PHONE"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Once"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Hell Hounds"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "grassfield"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "BALENCI"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "WANNABE"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "SHORT+SWEET"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "bad reputation"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Pray4u (with Ninajirachi)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Real Spring"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "GOSSIP"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Haunted"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "I AM SLOWLY BUT SURELY LOSING HOPE"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "i think ur bf is gonna kill me"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "6FINGERDEATHPUNCH"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "MISA X LIGHT"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "yameii vs the world!!!"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Full Circle (William Crooks Remix)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "where'd u go?"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Destroy Me"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Firefly"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Tramal"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Augustus"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "ENOUGH!"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "Kiss Me Thru The Phone"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "9 Lives"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "DEVIL IN MY HEAD"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "downhill (ft. kmoe)"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "minnesota is a place that exists"
+    chance = {
+        factor = 1
+    }
+}
+music = {
+    song = "if u cant beat em join em"
+    chance = {
+        factor = 1
+    }
+}

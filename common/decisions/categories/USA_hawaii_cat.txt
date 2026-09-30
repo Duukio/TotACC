@@ -1,0 +1,11 @@
+USA_hawaii_cat = {
+    USA_hawaii = {
+	icon = eng_organize_the_blackshirts
+    visible = { 
+        tag = USA
+		USA = {
+		has_completed_focus = USA_america_returns
+        }
+	}
+    }
+}

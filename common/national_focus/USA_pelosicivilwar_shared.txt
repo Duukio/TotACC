@@ -1,0 +1,12 @@
+focus_tree = {
+    id = USA_pelosicivilwar
+    country = {
+        factor = 0
+        modifier = {
+            add = 27
+            tag = USA
+        }
+    }
+    shared_focus = USA_end_of_the_world_as_we_know_it
+    shared_focus = USA_military_matters
+}

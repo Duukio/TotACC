@@ -152,6 +152,12 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+		iconType = {
+			name = "new_content"
+			position = { x = 110 y = 180 }
+			spriteType = "GFX_unplayed_content_notification"
+			alwaystransparent = yes
+		}
 
 		iconType = {
 			name = "country_flag"
@@ -184,6 +190,13 @@ guiTypes = {
 			size = { x = 110 y = 51 }
 			clicksound = click_checkbox
 		}
+
+		iconType = {
+			name = "new_content"
+			position = { x = 100 y = 15 }
+			spriteType = "GFX_unplayed_content_notification"
+			alwaystransparent = yes
+		}
 	}
 
 	### country entry
@@ -204,9 +217,30 @@ guiTypes = {
 			position = { x=0 y =0 }
 			clicksound = click_checkbox
 		}
+
+		iconType = {
+			name = "new_content"
+			position = { x = 42 y = 0 }
+			spriteType = "GFX_unplayed_content_notification"
+			alwaystransparent = yes
+		}
 	}
 
+	### country filter
+	containerWindowType = {
+		name = "country_filter"
+		size = { width = 149 height = 33 }
 
+		buttonType = {
+			name = "button"
+			quadTextureSprite = "GFX_country_filter_entry"
+			buttonText = "FILTER"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			oversound = ui_menu_over
+			frame = 2
+		}
+	}
 	### LOAD GAME
 	containerWindowType = {
 		name ="gamesetup_load"
@@ -246,7 +280,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "localgames_tab"
-			position = { x = 30  y = 84 }
+			position = { x = 30 y = 84 }
 			quadTextureSprite ="GFX_save_load_file_btn"
 			Orientation = "UPPER_LEFT"
 			clicksound = click_checkbox
@@ -394,7 +428,7 @@ guiTypes = {
 
 		checkboxType = {
 			name = "localgames_tab"
-			position = { x = 105  y = 124 }
+			position = { x = 105 y = 124 }
 			quadTextureSprite ="GFX_save_load_file_btn"
 			Orientation = "UPPER_LEFT"
 		}
@@ -473,7 +507,7 @@ guiTypes = {
 			position = { x = 115 y = 485 }
 			name = "game_name"
 			font = "sf_16mbs"
-			borderSize = { x = 4 y = 8  }
+			borderSize = { x = 4 y = 8 }
 			size = { x=262 y=42 }
 			text = ""
 			orientation = "UPPER_LEFT"
@@ -509,7 +543,7 @@ guiTypes = {
 		clipping = no
 		orientation = center
 		show_position = { x = 0 y = 0 }
-		hide_position = { x = -100% y = 0 } 
+		hide_position = { x = -100% y = 0 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 200
@@ -607,7 +641,7 @@ guiTypes = {
 	#		quadTextureSprite ="GFX_date_extra"
 	#		Orientation = "UPPER_RIGHT"
 	#	}
-	
+
 		iconType = {
 			name = "TOTALOGO"
 			position = { x = -920 y = 430 }
@@ -2251,3 +2285,4 @@ guiTypes = {
 		}
 	}
 }
+#Patch Creator: Mr_Straws

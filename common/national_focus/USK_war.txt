@@ -1,0 +1,137 @@
+
+shared_focus = {
+	id = USK_a_command_center_in_the_cold
+	icon = GFX_USK_a_command_center_in_the_cold
+	cost = 2
+	x = 2
+	y = 0
+	completion_reward = {
+		country_event = {
+			id = ADKALK.1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USK_a_command_center_in_the_cold"
+	}
+}
+
+shared_focus = {
+	id = USK_our_duty
+	icon = GFX_USK_our_duty
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_war_support = 0.075
+		log = "[GetDateText]: [Root.GetName]: Focus USK_our_duty"
+	}
+	relative_position_id = USK_a_command_center_in_the_cold
+	prerequisite = { focus = USK_a_command_center_in_the_cold }
+}
+
+shared_focus = {
+	id = USK_to_bring_order_to_chaos
+	icon = GFX_USK_to_bring_order_to_chaos
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_timed_idea = { 
+		idea = USK_Bring_Order_To_Chaos
+		days = 60
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USK_to_bring_order_to_chaos"
+	}
+	relative_position_id = USK_our_duty
+	prerequisite = { focus = USK_our_duty }
+}
+
+shared_focus = {
+	id = USK_help_from_the_mounties
+	icon = GFX_USK_help_from_the_mounties
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 500
+		    producer = CAN
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USK_help_from_the_mounties"
+	}
+	relative_position_id = USK_to_bring_order_to_chaos
+	prerequisite = { focus = USK_to_bring_order_to_chaos }
+}
+
+shared_focus = {
+	id = USK_supply_from_back_home
+	icon = GFX_USK_supply_from_back_home
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment
+		    amount = 1750
+		    producer = USA
+		}
+		add_equipment_to_stockpile = {
+		    type = artillery_equipment
+		    amount = 100
+		    producer = USA
+		}
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 200
+		    producer = USA
+		}
+		add_equipment_to_stockpile = {
+		    type = train_equipment
+		    amount = 2
+		    producer = USA
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USK_supply_from_back_home"
+	}
+	relative_position_id = USK_to_bring_order_to_chaos
+	prerequisite = { focus = USK_to_bring_order_to_chaos }
+}
+
+shared_focus = {
+	id = USK_full_force
+	icon = GFX_USK_full_force
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		add_ideas = USK_Full_Force
+		log = "[GetDateText]: [Root.GetName]: Focus USK_full_force"
+	}
+	relative_position_id = USK_help_from_the_mounties
+	prerequisite = { focus = USK_help_from_the_mounties }
+	prerequisite = { focus = USK_supply_from_back_home }
+}
+
+shared_focus = {
+	id = USK_raising_old_glory
+	icon = GFX_USK_raising_old_glory
+	cost = 2
+	x = 0
+	y = 1
+	available = {
+        NOT = {
+        country_exists = ALK
+		country_exists = SVK
+        }
+    }
+	completion_reward = {
+		country_event = {
+			id = ADKALK.910
+		}
+		news_event = {
+			id = WNE.621
+			days = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USK_raising_old_glory"
+	}
+	relative_position_id = USK_full_force
+	prerequisite = { focus = USK_full_force }
+}

@@ -172,15 +172,7 @@ SpriteTypes = {
 		texturefile = "gfx/interface/superevents/ezrase.png"
 	}
 	spriteType = {
-		name = "GFX_Super_augustus"
-		texturefile = "gfx/interface/superevents/augustus.png"
-	}
-	spriteType = {
-		name = "GFX_Super_preston"
-		texturefile = "gfx/interface/superevents/preston.png"
-	}
-	spriteType = {
-		name = "GFX_Super_sharkey"
-		texturefile = "gfx/interface/superevents/sharkey.png"
+		name = "GFX_Super_Scott"
+		texturefile = "gfx/interface/superevents/GFX_Scott_Reunification.png"
 	}
 }

@@ -1,0 +1,1525 @@
+
+shared_focus = {
+	id = USA_the_scott_presidency
+	icon = GFX_USA_the_scott_presidency
+	cost = 2
+	x = 35
+	y = 0
+	completion_reward = {
+		add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_scott_presidency"
+	}
+}
+
+shared_focus = {
+	id = USA_the_everything_crisis
+	icon = GFX_USA_the_everything_crisis
+	cost = 2
+	x = 18
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_everything_crisis"
+	}
+	relative_position_id = USA_the_scott_presidency
+	prerequisite = { focus = USA_the_scott_presidency }
+}
+
+shared_focus = {
+	id = USA_politics_101
+	icon = GFX_USA_politics_101
+	cost = 2
+	x = -18
+	y = 3
+	completion_reward = {
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus USA_politics_101"
+	}
+	relative_position_id = USA_the_scott_presidency
+	prerequisite = { focus = USA_the_scott_presidency }
+}
+
+shared_focus = {
+	id = USA_the_war_on_terror
+	icon = GFX_USA_the_war_on_terror
+	cost = 2
+	x = -10
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_stab
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_speed
+			value = 0.075
+		}
+	    add_to_variable = { USA.GDP = -3 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_war_on_terror"
+	}
+	relative_position_id = USA_the_scott_presidency
+	prerequisite = { focus = USA_the_scott_presidency }
+}
+
+shared_focus = {
+	id = USA_managing_the_enemy_excombatants
+	icon = GFX_USA_managing_the_enemy_excombatants
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+	    add_manpower = 47500
+	    add_war_support = 0.075
+		log = "[GetDateText]: [Root.GetName]: Focus USA_managing_the_enemy_excombatants"
+	}
+	relative_position_id = USA_politics_101
+	prerequisite = { focus = USA_politics_101 }
+}
+
+shared_focus = {
+	id = USA_cooling_the_political_climate
+	icon = GFX_USA_cooling_the_political_climate
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+	    add_stability = 0.05
+	    add_war_support = 0.05
+		add_popularity = { ideology = liberalism popularity = 0.025 }
+		add_popularity = { ideology = conservatism popularity = 0.01 }
+		add_popularity = { ideology = socdem popularity = 0.01 }
+		add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cooling_the_political_climate"
+	}
+	relative_position_id = USA_politics_101
+	prerequisite = { focus = USA_politics_101 }
+}
+
+shared_focus = {
+	id = USA_police_recruitment
+	icon = GFX_USA_police_recruitment
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA_scott_core_defense = 0.05 }
+		add_to_variable = {
+			var = USA_scott_core_defense
+			value = 0.055
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_police_recruitment"
+	}
+	relative_position_id = USA_the_war_on_terror
+	prerequisite = { focus = USA_the_war_on_terror }
+}
+
+shared_focus = {
+	id = USA_violence_prevention_task_force
+	icon = GFX_USA_violence_prevention_task_force
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+	    add_ideas = USA_The_Violence_Prevention_Task_Force
+		log = "[GetDateText]: [Root.GetName]: Focus USA_violence_prevention_task_force"
+	}
+	relative_position_id = USA_the_war_on_terror
+	prerequisite = { focus = USA_the_war_on_terror }
+}
+
+shared_focus = {
+	id = USA_cities_in_dust
+	icon = GFX_USA_cities_in_dust
+	cost = 2
+	x = -5
+	y = 2
+	completion_reward = {
+	    add_to_variable = { USA_scott_build_speed = 0.025 }
+		add_to_variable = {
+			var = USA_scott_build_speed
+			value = 0.025
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cities_in_dust"
+	}
+	relative_position_id = USA_the_everything_crisis
+	prerequisite = { focus = USA_the_everything_crisis }
+}
+
+shared_focus = {
+	id = USA_philonomics
+	icon = GFX_USA_philonomics
+	cost = 2
+	x = 19
+	y = 2
+	completion_reward = {
+		add_to_variable = { USA.GDP = 5 }
+		add_to_variable = {
+			var = USA_scott_gdp
+			value = 0.25
+		}
+		add_ideas = rockefeller_scott_capitalism
+		log = "[GetDateText]: [Root.GetName]: Focus USA_philonomics"
+	}
+	relative_position_id = USA_the_everything_crisis
+	prerequisite = { focus = USA_the_everything_crisis }
+}
+
+shared_focus = {
+	id = USA_bringing_on_the_scaffolding
+	icon = GFX_USA_bringing_on_the_scaffolding
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA.GDP = -3 }
+		add_to_variable = { USA.DEBT = 3 }
+		add_to_variable = {
+			var = USA_scott_build_speed
+			value = 0.088
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_bringing_on_the_scaffolding"
+	}
+	relative_position_id = USA_cities_in_dust
+	prerequisite = { focus = USA_cities_in_dust }
+}
+
+shared_focus = {
+	id = USA_cutting_the_fat
+	icon = GFX_USA_cutting_the_fat
+	cost = 2
+	x = -3
+	y = 3
+	completion_reward = {
+		add_to_variable = { USA.DEBT = -50 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cutting_the_fat"
+	}
+	relative_position_id = USA_philonomics
+	prerequisite = { focus = USA_philonomics }
+}
+
+shared_focus = {
+	id = USA_recycling_the_waste
+	icon = GFX_USA_recycling_the_waste
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		add_to_variable = { USA.DEBT = -50 }
+		add_to_variable = { weekly_debt_modifier = -0.02 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_recycling_the_waste"
+	}
+	relative_position_id = USA_cutting_the_fat
+	prerequisite = { focus = USA_cutting_the_fat }
+}
+
+shared_focus = {
+	id = USA_crackdown_season
+	icon = GFX_USA_crackdown_season
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		add_timed_idea = {
+			idea = USA_militia_hunting
+			days = 90
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_crackdown_season"
+	}
+	relative_position_id = USA_police_recruitment
+	prerequisite = { focus = USA_police_recruitment }
+	prerequisite = { focus = USA_violence_prevention_task_force }
+}
+
+shared_focus = {
+	id = USA_loan_the_proprietors
+	icon = GFX_USA_loan_the_proprietors
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA.GDP = 3 }
+		add_to_variable = { USA.DEBT = 3 }
+		add_to_variable = {
+			var = USA_scott_build_speed
+			value = 0.088
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_loan_the_proprietors"
+	}
+	relative_position_id = USA_cities_in_dust
+	prerequisite = { focus = USA_cities_in_dust }
+}
+
+shared_focus = {
+	id = USA_economic_repair_act
+	icon = GFX_USA_economic_repair_act
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+	    IF = {
+	        limit = {
+	        	has_idea = USA_Postwar_Devestation
+	        }
+			    swap_ideas = {
+	    		remove_idea = USA_Postwar_Devestation
+	    		add_idea = USA_Devestation_Lightened
+	    	}
+	    }
+	    else_if = {
+	        limit = {
+	    	    has_idea = USA_Devestation_Lightened
+	        }
+	   	 	swap_ideas = {
+	    		remove_idea = USA_Devestation_Lightened
+	    		add_idea = USA_Devestation_Fading
+	    	}
+	    }
+	    else_if = {
+	        limit = {
+	        has_idea = USA_Devestation_Fading
+	        }
+	    swap_ideas = {
+	    remove_idea = USA_Devestation_Fading
+	    add_idea = USA_Memories_Of_Devestation
+	    }
+	    }
+		else = {}
+	    add_ideas = USA_Economic_Repair_Act_Idea
+	    custom_effect_tooltip = "§RHEALS Devestation.§"	
+		log = "[GetDateText]: [Root.GetName]: Focus USA_economic_repair_act"
+	}
+	relative_position_id = USA_bringing_on_the_scaffolding
+	prerequisite = { focus = USA_bringing_on_the_scaffolding }
+	prerequisite = { focus = USA_loan_the_proprietors }
+}
+
+shared_focus = {
+	id = USA_pretty_fly_for_phil_scott
+	icon = GFX_USA_pretty_fly_for_phil_scott
+	cost = 2
+	x = 2
+	y = 3
+	completion_reward = {
+		add_popularity = { ideology = liberalism popularity = 0.05 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_pretty_fly_for_phil_scott"
+	}
+	relative_position_id = USA_managing_the_enemy_excombatants
+	prerequisite = { focus = USA_managing_the_enemy_excombatants }
+	prerequisite = { focus = USA_cooling_the_political_climate }
+}
+
+shared_focus = {
+	id = USA_meeting_with_whitmer
+	icon = GFX_USA_meeting_with_whitmer
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_political_power = 115
+		add_to_variable = {
+			var = USA_scott_pp
+			value = 0.04
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_meeting_with_whitmer"
+	}
+	relative_position_id = USA_cooling_the_political_climate
+	prerequisite = { focus = USA_cooling_the_political_climate }
+}
+
+shared_focus = {
+	id = USA_pardons_and_amnesty
+	icon = GFX_USA_pardons_and_amnesty
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_war_support = 0.15
+		army_experience = 90
+		log = "[GetDateText]: [Root.GetName]: Focus USA_pardons_and_amnesty"
+	}
+	relative_position_id = USA_managing_the_enemy_excombatants
+	prerequisite = { focus = USA_managing_the_enemy_excombatants }
+}
+
+shared_focus = {
+	id = USA_fixing_the_housing_problem
+	icon = GFX_USA_fixing_the_housing_problem
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA.GDP = -3 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fixing_the_housing_problem"
+	}
+	relative_position_id = USA_economic_repair_act
+	prerequisite = { focus = USA_economic_repair_act }
+}
+
+shared_focus = {
+	id = USA_trade_and_tech
+	icon = GFX_USA_trade_and_tech
+	cost = 2
+	x = 6
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_research
+			value = 0.075
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_trade_and_tech"
+	}
+	relative_position_id = USA_economic_repair_act
+	prerequisite = { focus = USA_economic_repair_act }
+}
+
+shared_focus = {
+	id = USA_stimulating_the_contractors
+	icon = GFX_USA_stimulating_the_contractors
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA.GDP = -3 }
+		add_to_variable = {
+			var = USA_scott_build_speed
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_stimulating_the_contractors"
+	}
+	relative_position_id = USA_fixing_the_housing_problem
+	prerequisite = { focus = USA_fixing_the_housing_problem }
+}
+
+shared_focus = {
+	id = USA_cutting_the_tape
+	icon = GFX_USA_cutting_the_tape
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_build_speed
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_scott_research
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cutting_the_tape"
+	}
+	relative_position_id = USA_fixing_the_housing_problem
+	prerequisite = { focus = USA_fixing_the_housing_problem }
+}
+
+shared_focus = {
+	id = USA_repealing_the_zoning_laws
+	icon = GFX_USA_repealing_the_zoning_laws
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_stab
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_build_speed
+			value = 0.088
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_repealing_the_zoning_laws"
+	}
+	relative_position_id = USA_cutting_the_tape
+	prerequisite = { focus = USA_cutting_the_tape }
+}
+
+shared_focus = {
+	id = USA_federal_money_grants
+	icon = GFX_USA_federal_money_grants
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = { USA.GDP = -3 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_federal_money_grants"
+	}
+	relative_position_id = USA_stimulating_the_contractors
+	prerequisite = { focus = USA_stimulating_the_contractors }
+}
+
+shared_focus = {
+	id = USA_finishing_off_the_anarchists
+	icon = GFX_USA_finishing_off_the_anarchists
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+	    add_popularity = { ideology = anarchism popularity = -0.05 }
+	    add_stability = 0.05
+		add_to_variable = {
+			var = USA_scott_core_offense
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_core_defense
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_finishing_off_the_anarchists"
+	}
+	relative_position_id = USA_crackdown_season
+	prerequisite = { focus = USA_crackdown_season }
+}
+
+shared_focus = {
+	id = USA_housing_stimulus_act
+	icon = GFX_USA_housing_stimulus_act
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    remove_ideas = USA_mass_econ_inequality
+	    add_stability = 0.1
+		add_to_variable = {
+			var = USA_scott_volsize
+			value = 1
+		}
+		add_to_variable = {
+			var = USA_scott_month_pop
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_scott_gdp
+			value = 0.75
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_housing_stimulus_act"
+	}
+	relative_position_id = USA_federal_money_grants
+	prerequisite = { focus = USA_federal_money_grants }
+}
+
+shared_focus = {
+	id = USA_urban_design_act
+	icon = GFX_USA_urban_design_act
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_ideas = USA_Urban_Design_Act_Idea
+		log = "[GetDateText]: [Root.GetName]: Focus USA_urban_design_act"
+	}
+	relative_position_id = USA_repealing_the_zoning_laws
+	prerequisite = { focus = USA_repealing_the_zoning_laws }
+}
+
+shared_focus = {
+	id = USA_negotiating_with_the_tech_bros
+	icon = GFX_USA_negotiating_with_the_tech_bros
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		add_popularity = { ideology = technocracy popularity = 0.05 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_negotiating_with_the_tech_bros"
+	}
+	relative_position_id = USA_trade_and_tech
+	prerequisite = { focus = USA_trade_and_tech }
+}
+
+shared_focus = {
+	id = USA_the_community_centers
+	icon = GFX_USA_the_community_centers
+	cost = 2
+	x = 2
+	y = 2
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_volsize
+			value = 1
+		}
+		add_to_variable = {
+			var = USA_scott_gdp
+			value = 0.15
+		}
+		add_to_variable = {
+			var = USA_scott_recruit
+			value = 0.025
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_community_centers"
+	}
+	relative_position_id = USA_urban_design_act
+	prerequisite = { focus = USA_urban_design_act }
+}
+
+shared_focus = {
+	id = USA_the_sims
+	icon = GFX_USA_the_sims
+	cost = 2
+	x = -2
+	y = 2
+	completion_reward = {
+		add_popularity = { ideology = liberalism popularity = 0.025 }
+		add_to_variable = {
+			var = USA_scott_volsize
+			value = 1
+		}
+		add_to_variable = {
+			var = USA_scott_stab
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_month_pop
+			value = 0.075
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_sims"
+	}
+	relative_position_id = USA_urban_design_act
+	prerequisite = { focus = USA_urban_design_act }
+}
+
+shared_focus = {
+	id = USA_rebuilding_our_tech_industry
+	icon = GFX_USA_rebuilding_our_tech_industry
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_research
+			value = 0.05
+		}
+		add_research_slot = 1
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rebuilding_our_tech_industry"
+	}
+	relative_position_id = USA_negotiating_with_the_tech_bros
+	prerequisite = { focus = USA_negotiating_with_the_tech_bros }
+}
+
+shared_focus = {
+	id = USA_community_defibrillation
+	icon = GFX_USA_community_defibrillation
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_volsize
+			value = 3
+		}
+		add_to_variable = {
+			var = USA_scott_stab
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_scott_month_pop
+			value = 0.075
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_community_defibrillation"
+	}
+	relative_position_id = USA_the_community_centers
+	prerequisite = { focus = USA_the_community_centers }
+	prerequisite = { focus = USA_the_sims }
+}
+
+shared_focus = {
+	id = USA_fueling_wall_street
+	icon = GFX_USA_fueling_wall_street
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+        add_to_variable = { USA.REAL_GROWTH = 0.04 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fueling_wall_street"
+	}
+	relative_position_id = USA_trade_and_tech
+	prerequisite = { focus = USA_trade_and_tech }
+}
+
+shared_focus = {
+	id = USA_exporting_america
+	icon = GFX_USA_exporting_america
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+        add_to_variable = { USA.REAL_GROWTH = 0.09 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_exporting_america"
+	}
+	relative_position_id = USA_fueling_wall_street
+	prerequisite = { focus = USA_fueling_wall_street }
+}
+
+shared_focus = {
+	id = USA_swatting_the_compounds
+	icon = GFX_USA_swatting_the_compounds
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+	    add_stability = 0.05
+	    add_political_power = 100
+	    add_popularity = { ideology = autocracy popularity = 0.033 }
+		add_to_variable = {
+			var = USA_scott_speed
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_swatting_the_compounds"
+	}
+	relative_position_id = USA_crackdown_season
+	prerequisite = { focus = USA_crackdown_season }
+}
+
+shared_focus = {
+	id = USA_the_rot_problem
+	icon = GFX_USA_the_rot_problem
+	cost = 2
+	x = 10
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_rot_problem"
+	}
+	relative_position_id = USA_the_everything_crisis
+	prerequisite = { focus = USA_the_everything_crisis }
+}
+
+shared_focus = {
+	id = USA_figuring_on_biggering
+	icon = GFX_USA_figuring_on_biggering
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_attr
+			value = -0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_figuring_on_biggering"
+	}
+	relative_position_id = USA_the_rot_problem
+	prerequisite = { focus = USA_the_rot_problem }
+}
+
+shared_focus = {
+	id = USA_rust_belt_revival
+	icon = GFX_USA_rust_belt_revival
+	cost = 2
+	x = -2
+	y = 3
+	completion_reward = {
+	    remove_ideas = USA_the_moldy_rusty_depressed_belt
+		log = "[GetDateText]: [Root.GetName]: Focus USA_rust_belt_revival"
+	}
+	relative_position_id = USA_figuring_on_biggering
+	prerequisite = { focus = USA_figuring_on_biggering }
+}
+
+shared_focus = {
+	id = USA_americas_best_industry
+	icon = GFX_USA_americas_best_industry
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		add_ideas = USA_Americas_Finest_Industry
+		log = "[GetDateText]: [Root.GetName]: Focus USA_americas_best_industry"
+	}
+	relative_position_id = USA_figuring_on_biggering
+	prerequisite = { focus = USA_figuring_on_biggering }
+}
+
+shared_focus = {
+	id = USA_highway_empire
+	icon = GFX_USA_highway_empire
+	cost = 2
+	x = 2
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_attr
+			value = -0.1
+		}
+		add_to_variable = {
+			var = USA_scott_infrastructure_speed
+			value = 0.15
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_highway_empire"
+	}
+	relative_position_id = USA_figuring_on_biggering
+	prerequisite = { focus = USA_figuring_on_biggering }
+}
+
+shared_focus = {
+	id = USA_the_memphis_project
+	icon = GFX_USA_the_memphis_project
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 10 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_memphis_project"
+	}
+	relative_position_id = USA_rust_belt_revival
+	prerequisite = { focus = USA_rust_belt_revival }
+}
+
+shared_focus = {
+	id = USA_swimming_in_ammo
+	icon = GFX_USA_swimming_in_ammo
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		add_offsite_building = { type = arms_factory level = 13 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_swimming_in_ammo"
+	}
+	relative_position_id = USA_americas_best_industry
+	prerequisite = { focus = USA_americas_best_industry }
+}
+
+shared_focus = {
+	id = USA_mainland_logistics
+	icon = GFX_USA_mainland_logistics
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+	    add_ideas = USA_Mainland_Logistics
+		add_to_variable = {
+			var = USA_scott_attr
+			value = -0.15
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mainland_logistics"
+	}
+	relative_position_id = USA_highway_empire
+	prerequisite = { focus = USA_highway_empire }
+}
+
+shared_focus = {
+	id = USA_industrial_efficiency_and_development_act
+	icon = GFX_USA_industrial_efficiency_and_development_act
+	cost = 2
+	x = 2
+	y = 3
+	completion_reward = {
+	    IF = {
+	        limit = {
+	        	has_idea = USA_Postwar_Devestation
+	        }
+			    swap_ideas = {
+	    		remove_idea = USA_Postwar_Devestation
+	    		add_idea = USA_Devestation_Lightened
+	    	}
+	    }
+	    else_if = {
+	        limit = {
+	    	    has_idea = USA_Devestation_Lightened
+	        }
+	   	 	swap_ideas = {
+	    		remove_idea = USA_Devestation_Lightened
+	    		add_idea = USA_Devestation_Fading
+	    	}
+	    }
+	    else_if = {
+	        limit = {
+	        has_idea = USA_Devestation_Fading
+	        }
+	    swap_ideas = {
+	    remove_idea = USA_Devestation_Fading
+	    add_idea = USA_Memories_Of_Devestation
+	    }
+	    }
+		else = {} #needed iirc
+	    add_ideas = USA_Industrial_Development_Act
+	    custom_effect_tooltip = "§RHEALS Devestation.§"	
+	}
+	relative_position_id = USA_the_memphis_project
+	prerequisite = { focus = USA_the_memphis_project }
+	prerequisite = { focus = USA_swimming_in_ammo }
+	prerequisite = { focus = USA_mainland_logistics }
+}
+
+shared_focus = {
+	id = USA_our_victory
+	icon = GFX_USA_our_victory
+	cost = 1
+	x = 0
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_our_victory"
+	}
+	relative_position_id = USA_the_scott_presidency
+	prerequisite = { focus = USA_the_scott_presidency }
+}
+
+shared_focus = {
+	id = USA_getting_back_on_track
+	icon = GFX_USA_getting_back_on_track
+	cost = 1
+	x = -1
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_getting_back_on_track"
+	}
+	relative_position_id = USA_our_victory
+	prerequisite = { focus = USA_our_victory }
+}
+
+shared_focus = {
+	id = USA_calming_everyone_down
+	icon = GFX_USA_calming_everyone_down
+	cost = 1
+	x = 1
+	y = 3
+	completion_reward = {
+		add_to_variable = { USA.REAL_GROWTH = 0.02 }
+		add_to_variable = {
+			var = USA_scott_speed
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_calming_everyone_down"
+	}
+	relative_position_id = USA_our_victory
+	prerequisite = { focus = USA_our_victory }
+}
+
+shared_focus = {
+	id = USA_encouraging_moderation
+	icon = GFX_USA_encouraging_moderation
+	cost = 1
+	x = 0
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_pp
+			value = 0.03
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_encouraging_moderation"
+	}
+	relative_position_id = USA_calming_everyone_down
+	prerequisite = { focus = USA_calming_everyone_down }
+}
+
+shared_focus = {
+	id = USA_reorganizing_the_government
+	icon = GFX_USA_reorganizing_the_government
+	cost = 1
+	x = -2
+	y = 3
+	completion_reward = {
+	    add_political_power = 150
+		add_to_variable = {
+			var = USA_scott_pp
+			value = 0.04
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_reorganizing_the_government"
+	}
+	relative_position_id = USA_getting_back_on_track
+	prerequisite = { focus = USA_getting_back_on_track }
+}
+
+shared_focus = {
+	id = USA_prioritizing_efficiency
+	icon = GFX_USA_prioritizing_efficiency
+	cost = 1
+	x = 0
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_speed
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_build_speed
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_prioritizing_efficiency"
+	}
+	relative_position_id = USA_getting_back_on_track
+	prerequisite = { focus = USA_getting_back_on_track }
+}
+
+shared_focus = {
+	id = USA_beating_disinformation
+	icon = GFX_USA_beating_disinformation
+	cost = 1
+	x = 2
+	y = 3
+	completion_reward = {
+	    add_stability = 0.025
+		add_to_variable = {
+			var = USA_scott_speed
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_scott_core_defense
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_scott_core_offense
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_scott_morale
+			value = 0.075
+		}
+		add_to_variable = {
+			var = USA_scott_volsize
+			value = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_beating_disinformation"
+	}
+	relative_position_id = USA_calming_everyone_down
+	prerequisite = { focus = USA_calming_everyone_down }
+}
+
+shared_focus = {
+	id = USA_laying_down_safety_pins
+	icon = GFX_USA_laying_down_safety_pins
+	cost = 1
+	x = 2
+	y = 3
+	completion_reward = {
+	    add_political_power = 150
+		log = "[GetDateText]: [Root.GetName]: Focus USA_laying_down_safety_pins"
+	}
+	relative_position_id = USA_reorganizing_the_government
+	prerequisite = { focus = USA_reorganizing_the_government }
+	prerequisite = { focus = USA_prioritizing_efficiency }
+}
+
+shared_focus = {
+	id = USA_getting_pelosi_onboard
+	icon = GFX_USA_getting_pelosi_onboard
+	cost = 1
+	x = 0
+	y = 3
+	completion_reward = {
+	    add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus USA_getting_pelosi_onboard"
+	}
+	relative_position_id = USA_encouraging_moderation
+	prerequisite = { focus = USA_encouraging_moderation }
+	prerequisite = { focus = USA_beating_disinformation }
+}
+
+shared_focus = {
+	id = USA_all_star
+	icon = GFX_USA_all_star
+	cost = 1
+	x = 1
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_core_defense
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_core_offense
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_army_attack
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_core_defense
+			value = 0.05
+		}
+		add_to_variable = {
+			var = USA_scott_morale
+			value = 0.125
+		}
+		add_to_variable = {
+			var = USA_scott_pp
+			value = 0.03
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_all_star"
+	}
+	relative_position_id = USA_laying_down_safety_pins
+	prerequisite = { focus = USA_laying_down_safety_pins }
+	prerequisite = { focus = USA_getting_pelosi_onboard }
+}
+
+shared_focus = {
+	id = USA_social_stretching
+	icon = GFX_USA_social_stretching
+	cost = 2
+	x = -29
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_social_stretching"
+	}
+	relative_position_id = USA_the_scott_presidency
+	prerequisite = { focus = USA_the_scott_presidency }
+}
+
+shared_focus = {
+	id = USA_including_the_lgbtq
+	icon = GFX_USA_including_the_lgbtq
+	cost = 2
+	x = -4
+	y = 1
+	completion_reward = {
+		add_war_support = 0.075
+		add_to_variable = {
+			var = USA_scott_recruit
+			value = 0.075
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_including_the_lgbtq"
+	}
+	relative_position_id = USA_social_stretching
+	prerequisite = { focus = USA_social_stretching }
+}
+
+shared_focus = {
+	id = USA_good_old_fashioned_values
+	icon = GFX_USA_good_old_fashioned_values
+	cost = 2
+	x = 4
+	y = 1
+	completion_reward = {
+		add_stability = 0.075
+		log = "[GetDateText]: [Root.GetName]: Focus USA_good_old_fashioned_values"
+	}
+	relative_position_id = USA_social_stretching
+	prerequisite = { focus = USA_social_stretching }
+}
+
+shared_focus = {
+	id = USA_patchwork_policy
+	icon = GFX_USA_patchwork_policy
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_to_variable = {
+			var = USA_scott_volsize
+			value = 2
+		}
+		add_to_variable = {
+			var = USA_scott_recruit
+			value = 0.075
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_patchwork_policy"
+	}
+	relative_position_id = USA_including_the_lgbtq
+	prerequisite = { focus = USA_including_the_lgbtq }
+}
+
+shared_focus = {
+	id = USA_fostering_the_orphans
+	icon = GFX_USA_fostering_the_orphans
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		add_manpower = 30000
+		add_stability = 0.025
+		log = "[GetDateText]: [Root.GetName]: Focus USA_fostering_the_orphans"
+	}
+	relative_position_id = USA_good_old_fashioned_values
+	prerequisite = { focus = USA_good_old_fashioned_values }
+}
+
+shared_focus = {
+	id = USA_protecting_their_rights
+	icon = GFX_USA_protecting_their_rights
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus USA_protecting_their_rights"
+	}
+	relative_position_id = USA_including_the_lgbtq
+	prerequisite = { focus = USA_including_the_lgbtq }
+}
+
+shared_focus = {
+	id = USA_family_support_act
+	icon = GFX_USA_family_support_act
+	cost = 4
+	x = 2
+	y = 1
+	completion_reward = {
+		add_ideas = USA_family_support 
+		add_to_variable = {
+			var = USA_scott_volsize
+			value = 1
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_family_support_act"
+	}
+	relative_position_id = USA_fostering_the_orphans
+	prerequisite = { focus = USA_fostering_the_orphans }
+	prerequisite = { focus = USA_parental_support_options }
+}
+
+shared_focus = {
+	id = USA_parental_support_options
+	icon = GFX_USA_parental_support_options
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		add_war_support = 0.1
+		add_stability = 0.075
+		add_to_variable = {
+			var = USA_scott_manpower 
+			value = 500
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_parental_support_options"
+	}
+	relative_position_id = USA_good_old_fashioned_values
+	prerequisite = { focus = USA_good_old_fashioned_values }
+}
+
+shared_focus = {
+	id = USA_equal_families_act
+	icon = GFX_USA_equal_families_act
+	cost = 4
+	x = 2
+	y = 1
+	completion_reward = {
+		add_ideas = USA_equal_families_idea
+		log = "[GetDateText]: [Root.GetName]: Focus USA_equal_families_act"
+	}
+	relative_position_id = USA_patchwork_policy
+	prerequisite = { focus = USA_patchwork_policy }
+	prerequisite = { focus = USA_protecting_their_rights }
+}
+
+shared_focus = {
+	id = USA_a_digital_renaissance
+	icon = GFX_USA_a_digital_renaissance
+	cost = 2
+	x = 1
+	y = 3
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = electronics
+			}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_a_digital_renaissance"
+	}
+	relative_position_id = USA_rebuilding_our_tech_industry
+	prerequisite = { focus = USA_rebuilding_our_tech_industry }
+}
+
+shared_focus = {
+	id = USA_training_the_next_generation_of_scientists
+	icon = GFX_USA_training_the_next_generation_of_scientists
+	cost = 2
+	x = -1
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_research
+			value = 0.1
+		}
+		add_research_slot = 1
+		log = "[GetDateText]: [Root.GetName]: Focus USA_training_the_next_generation_of_scientists"
+	}
+	relative_position_id = USA_rebuilding_our_tech_industry
+	prerequisite = { focus = USA_rebuilding_our_tech_industry }
+}
+
+shared_focus = {
+	id = USA_nextgeneration_technologies_act
+	icon = GFX_USA_nextgeneration_technologies_act
+	cost = 2
+	x = -1
+	y = 2
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = robotics
+			}
+		add_tech_bonus = {
+			bonus = 0.3
+			uses = 1
+			category = electronics
+			}
+		add_research_slot = 1
+		add_to_variable = {
+			var = USA_scott_research
+			value = 0.075
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_nextgeneration_technologies_act"
+	}
+	relative_position_id = USA_a_digital_renaissance
+	prerequisite = { focus = USA_a_digital_renaissance }
+	prerequisite = { focus = USA_training_the_next_generation_of_scientists }
+}
+
+shared_focus = {
+	id = USA_incentivising_business
+	icon = GFX_USA_incentivising_business
+	cost = 2
+	x = 3
+	y = 3
+	completion_reward = {
+		add_to_variable = { USA.REAL_GROWTH = 0.02 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_incentivising_business"
+	}
+	relative_position_id = USA_philonomics
+	prerequisite = { focus = USA_philonomics }
+}
+
+shared_focus = {
+	id = USA_deregulating_corporate
+	icon = GFX_USA_deregulating_corporate
+	cost = 2
+	x = -1
+	y = 3
+	completion_reward = {
+		add_to_variable = { USA.REAL_GROWTH = 0.01 }
+		add_to_variable = { USA.GDP = 25 }
+		add_to_variable = { USA.DEBT = -750 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_deregulating_corporate"
+	}
+	relative_position_id = USA_incentivising_business
+	prerequisite = { focus = USA_incentivising_business }
+}
+
+shared_focus = {
+	id = USA_pushing_market_confidence
+	icon = GFX_USA_pushing_market_confidence
+	cost = 2
+	x = 1
+	y = 3
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_gdp
+			value = 0.85
+		}
+		add_to_variable = { USA.GDP = 250 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_pushing_market_confidence"
+	}
+	relative_position_id = USA_incentivising_business
+	prerequisite = { focus = USA_incentivising_business }
+}
+
+shared_focus = {
+	id = USA_american_enterprise_act
+	icon = GFX_USA_american_enterprise_act
+	cost = 2
+	x = 1
+	y = 3
+	completion_reward = {
+	    IF = {
+	        limit = {
+	        	has_idea = USA_Postwar_Devestation
+	        }
+			    swap_ideas = {
+	    		remove_idea = USA_Postwar_Devestation
+	    		add_idea = USA_Devestation_Lightened
+	    	}
+	    }
+	    else_if = {
+	        limit = {
+	    	    has_idea = USA_Devestation_Lightened
+	        }
+	   	 	swap_ideas = {
+	    		remove_idea = USA_Devestation_Lightened
+	    		add_idea = USA_Devestation_Fading
+	    	}
+	    }
+	    else_if = {
+	        limit = {
+	        has_idea = USA_Devestation_Fading
+	        }
+	    swap_ideas = {
+	    remove_idea = USA_Devestation_Fading
+	    add_idea = USA_Memories_Of_Devestation
+	    }
+	    }
+		else = {}
+	    custom_effect_tooltip = "§RHEALS Devestation.§"	
+		add_to_variable = { USA.GDP = 750 }
+		add_to_variable = { USA.REAL_GROWTH = 0.04 }
+		add_to_variable = { USA.DEBT = -750 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_american_enterprise_act"
+	}
+	relative_position_id = USA_deregulating_corporate
+	prerequisite = { focus = USA_deregulating_corporate }
+	prerequisite = { focus = USA_pushing_market_confidence }
+}
+
+shared_focus = {
+	id = USA_efficient_budgeting_act
+	icon = GFX_USA_efficient_budgeting_act
+	cost = 2
+	x = 0
+	y = 3
+	completion_reward = {
+		add_to_variable = { USA.DEBT = -9500 }
+		add_to_variable = { weekly_debt_modifier = -9.95 }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_efficient_budgeting_act"
+	}
+	relative_position_id = USA_recycling_the_waste
+	prerequisite = { focus = USA_recycling_the_waste }
+}
+
+shared_focus = {
+	id = USA_questions_of_reform
+	icon = GFX_USA_questions_of_reform
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_questions_of_reform"
+	}
+	relative_position_id = USA_pretty_fly_for_phil_scott
+	prerequisite = { focus = USA_pretty_fly_for_phil_scott }
+}
+
+shared_focus = {
+	id = USA_making_newground
+	icon = GFX_USA_making_newground
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_war_support
+			value = 0.088
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_making_newground"
+	}
+	relative_position_id = USA_questions_of_reform
+	prerequisite = { focus = USA_questions_of_reform }
+	mutually_exclusive = { focus = USA_an_eternal_three_party_system }
+}
+
+shared_focus = {
+	id = USA_an_eternal_three_party_system
+	icon = GFX_USA_an_eternal_three_party_system
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		add_stability = 0.088
+		log = "[GetDateText]: [Root.GetName]: Focus USA_an_eternal_three_party_system"
+	}
+	relative_position_id = USA_questions_of_reform
+	prerequisite = { focus = USA_questions_of_reform }
+	mutually_exclusive = { focus = USA_making_newground }
+}
+
+shared_focus = {
+	id = USA_cooperation_with_the_other_parties
+	icon = GFX_USA_cooperation_with_the_other_parties
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		add_political_power = 150
+		add_to_variable = {
+			var = USA_scott_pp
+			value = 0.04
+		}
+		add_stability = 0.075
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cooperation_with_the_other_parties"
+	}
+	relative_position_id = USA_an_eternal_three_party_system
+	prerequisite = { focus = USA_an_eternal_three_party_system }
+}
+
+shared_focus = {
+	id = USA_the_bipartisan_reform_committee
+	icon = GFX_USA_the_bipartisan_reform_committee
+	cost = 1
+	x = 1
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_war_support
+			value = 0.095
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_bipartisan_reform_committee"
+	}
+	relative_position_id = USA_making_newground
+	prerequisite = { focus = USA_making_newground }
+}
+
+shared_focus = {
+	id = USA_game_was_rigged_from_the_start
+	icon = GFX_USA_game_was_rigged_from_the_start
+	cost = 4
+	x = 0
+	y = 1
+	completion_reward = {
+		add_stability = 0.15
+		log = "[GetDateText]: [Root.GetName]: Focus USA_game_was_rigged_from_the_start"
+	}
+	relative_position_id = USA_cooperation_with_the_other_parties
+	prerequisite = { focus = USA_cooperation_with_the_other_parties }
+}
+
+shared_focus = {
+	id = USA_wrangling_the_other_parties
+	icon = GFX_USA_wrangling_the_other_parties
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+		add_to_variable = {
+			var = USA_scott_stab
+			value = 0.05
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_wrangling_the_other_parties"
+	}
+	relative_position_id = USA_the_bipartisan_reform_committee
+	prerequisite = { focus = USA_the_bipartisan_reform_committee }
+}
+
+shared_focus = {
+	id = USA_electoral_reform_act
+	icon = GFX_USA_electoral_reform_act
+	cost = 4
+	x = -1
+	y = 1
+	completion_reward = {
+		add_timed_idea = {
+			idea = USA_Reformed_Elections
+			days = 135
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_electoral_reform_act"
+	}
+	relative_position_id = USA_wrangling_the_other_parties
+	prerequisite = { focus = USA_wrangling_the_other_parties }
+	prerequisite = { focus = USA_throwing_a_bone_to_the_forth_parties }
+}
+
+shared_focus = {
+	id = USA_throwing_a_bone_to_the_forth_parties
+	icon = GFX_USA_throwing_a_bone_to_the_forth_parties
+	cost = 1
+	x = 0
+	y = 1
+	completion_reward = {
+		add_popularity = { ideology = reformist_socialism popularity = 0.025 }
+		add_popularity = { ideology = autocracy popularity = 0.025 }
+		add_popularity = { ideology = liberalism popularity = 0.025 }
+		add_war_support = 0.025
+		log = "[GetDateText]: [Root.GetName]: Focus USA_throwing_a_bone_to_the_forth_parties"
+	}
+	relative_position_id = USA_unrestricting_elections
+	prerequisite = { focus = USA_unrestricting_elections }
+}
+
+shared_focus = {
+	id = USA_unrestricting_elections
+	icon = GFX_USA_unrestricting_elections
+	cost = 1
+	x = -1
+	y = 1
+	completion_reward = {
+	    add_war_support = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus USA_unrestricting_elections"
+	}
+	relative_position_id = USA_making_newground
+	prerequisite = { focus = USA_making_newground }
+}

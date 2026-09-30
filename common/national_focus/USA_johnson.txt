@@ -1,0 +1,11 @@
+shared_focus = {
+	id = USA_no_way_out
+	icon = ADK_itsjohnsonfirst
+	cost = 3
+	x = 3
+	y = 2
+	completion_reward = {
+	    custom_effect_tooltip = "Well, we're fucked"
+		log = "[GetDateText]: [Root.GetName]: Focus USA_no_way_out"
+	}
+}

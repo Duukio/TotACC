@@ -1,0 +1,226 @@
+
+shared_focus = {
+	id = USA_the_american_autocracy
+	icon = ADK_theamericanautocracy
+	cost = 2
+	x = 6
+	y = 0
+	completion_reward = {
+	    country_event = {
+	    id = USAAUTHPELOSI.1
+	    }
+        country_event = {
+        id = USAAUTHPELOSI.5
+        days = 150
+        }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_american_autocracy"
+	}
+}
+
+shared_focus = {
+	id = USA_aint_that_a_kick_in_the_head
+	icon = ADK_falloutnv
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+	    country_event = {
+	    id = USAAUTHPELOSI.2
+	    }
+	    swap_ideas = {
+		remove_idea = USA_Postwar_Devestation
+		add_idea = USA_Devestation_Lightened
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_aint_that_a_kick_in_the_head"
+	}
+	relative_position_id = USA_the_american_autocracy
+	prerequisite = { focus = USA_the_american_autocracy }
+}
+
+shared_focus = {
+	id = USA_lockin_it_down
+	icon = ADK_angryfuckingdude
+	cost = 2
+	x = -4
+	y = 2
+	completion_reward = {
+	    country_event = {
+	    id = USAAUTHPELOSI.3
+	    }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_lockin_it_down"
+	}
+	relative_position_id = USA_the_american_autocracy
+	prerequisite = { focus = USA_the_american_autocracy }
+}
+
+shared_focus = {
+	id = USA_around_the_world
+	icon = ADK_pelosiforgeinpolcy
+	cost = 2
+	x = 5
+	y = 2
+	completion_reward = {
+	    country_event = {
+	    id = USAAUTHPELOSI.4
+	    }
+		log = "[GetDateText]: [Root.GetName]: Focus USA_around_the_world"
+	}
+	relative_position_id = USA_the_american_autocracy
+	prerequisite = { focus = USA_the_american_autocracy }
+}
+
+shared_focus = {
+	id = USA_cementing_it
+	icon = GFX_USA_cementing_it
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+        add_stability = 0.05
+		log = "[GetDateText]: [Root.GetName]: Focus USA_cementing_it"
+	}
+	relative_position_id = USA_lockin_it_down
+	prerequisite = { focus = USA_lockin_it_down }
+}
+
+shared_focus = {
+	id = USA_appointing_governors
+	icon = ADK_pelosiarmyrun
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+	    add_political_power = 100
+		log = "[GetDateText]: [Root.GetName]: Focus USA_appointing_governors"
+	}
+	relative_position_id = USA_lockin_it_down
+	prerequisite = { focus = USA_lockin_it_down }
+}
+
+shared_focus = {
+	id = USA_mass_fema_deployments
+	icon = ADK_femapelosi
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+	    add_stability = 0.075
+		log = "[GetDateText]: [Root.GetName]: Focus USA_mass_fema_deployments"
+	}
+	relative_position_id = USA_aint_that_a_kick_in_the_head
+	prerequisite = { focus = USA_aint_that_a_kick_in_the_head }
+}
+
+shared_focus = {
+	id = USA_laying_the_bricks
+	icon = ADK_rebuildshit
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+	    swap_ideas = {
+		remove_idea = USA_Devestation_Lightened
+		add_idea = USA_Devestation_Fading
+		}
+		log = "[GetDateText]: [Root.GetName]: Focus USA_laying_the_bricks"
+	}
+	relative_position_id = USA_mass_fema_deployments
+	prerequisite = { focus = USA_mass_fema_deployments }
+	prerequisite = { focus = USA_turning_on_the_power }
+}
+
+shared_focus = {
+	id = USA_turning_on_the_power
+	icon = ADK_turningonthepower
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+	    add_ideas = USA_Building_Projects
+		log = "[GetDateText]: [Root.GetName]: Focus USA_turning_on_the_power"
+	}
+	relative_position_id = USA_aint_that_a_kick_in_the_head
+	prerequisite = { focus = USA_aint_that_a_kick_in_the_head }
+}
+
+shared_focus = {
+	id = USA_revival_of_industry
+	icon = ADK_factoryjobsslop
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		remove_ideas = USA_Devestation_Fading
+		log = "[GetDateText]: [Root.GetName]: Focus USA_revival_of_industry"
+	}
+	relative_position_id = USA_laying_the_bricks
+	prerequisite = { focus = USA_laying_the_bricks }
+}
+
+shared_focus = {
+	id = USA_knocking_resistance
+	icon = ADK_pelosikillpeoplism
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+        add_stability = 0.1
+		log = "[GetDateText]: [Root.GetName]: Focus USA_knocking_resistance"
+	}
+	relative_position_id = USA_cementing_it
+	prerequisite = { focus = USA_cementing_it }
+}
+
+shared_focus = {
+	id = USA_centralization_outset
+	icon = ADK_pelosiisevildude
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+	    add_political_power = 250
+		log = "[GetDateText]: [Root.GetName]: Focus USA_centralization_outset"
+	}
+	relative_position_id = USA_appointing_governors
+	prerequisite = { focus = USA_appointing_governors }
+}
+
+shared_focus = {
+	id = USA_silent_treatment
+	icon = ADK_newciaman
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_silent_treatment"
+	}
+	relative_position_id = USA_around_the_world
+	prerequisite = { focus = USA_around_the_world }
+}
+
+shared_focus = {
+	id = USA_washing_our_hands
+	icon = ADK_washingourhands
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_washing_our_hands"
+	}
+	relative_position_id = USA_around_the_world
+	prerequisite = { focus = USA_around_the_world }
+}
+
+shared_focus = {
+	id = USA_the_new_cia_man
+	icon = ADK_americandad
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus USA_the_new_cia_man"
+	}
+	relative_position_id = USA_silent_treatment
+	prerequisite = { focus = USA_silent_treatment }
+	prerequisite = { focus = USA_washing_our_hands }
+}
